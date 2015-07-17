@@ -234,8 +234,8 @@
   .links {
 	 position: absolute;
 	 top: 20%;
-	 padding-left: 5%;
-	 padding-right: 5%;
+	 padding-left: 10%;
+	 padding-right: 10%;
 	 font-size: 2.8vw;
 	 line-height: 2em;
 	 font-family: 'Lato', sans-serif;
@@ -250,6 +250,11 @@
   a:visited {
 	 text-decoration: none;
 	 color: #E6E6E6;
+  }
+
+  .sublink {
+	 font-size: 1.5vw;
+	 line-height: 0em;
   }
 
 
