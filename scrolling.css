@@ -93,6 +93,7 @@
     transform: translate(-50%, -50%);
 	 z-index: 100;
 	 font-family: 'Lato', sans-serif;
+	 color: #9B0400;
   }
 
 
@@ -104,7 +105,8 @@
     z-index: 6; /* slide over group 2 */
   }
   #group1 .parallax__layer--base {
-    background: #E6E6E6;
+    /* background: #f2f2f2; */
+	 background-color: #B8C3C1;
   }
   #me {
 	 height: 100%;
@@ -116,13 +118,20 @@
 	 top: 10%;
 	 font-size: 8vw;
 	 text-align: left;
-	 color: #003380;
+	 /* color: #1e85f2; */
+	 text-shadow: 2px 2px 2px gray;
   }
 
   .nav {
 	 background-color: transparent;
-	 color: black;
+	 /* color: black; */
+	 color: #9B0400;
 	 font-family: 'Lato', sans-serif;
+  }
+
+  .nav:hover {
+	 /* color: #1e85f2; */
+	 color: #F45651;
   }
 
   ul {
@@ -145,13 +154,12 @@
     z-index: 3; /* slide under groups 1 and 3 */
   }
   #group2 .parallax__layer--back {
-    background: #E6E6E6;
+    /* background: #E6E6E6; */
+	 background-color: #879C99;
   }
   #group2 .title {
 	 top: 75%;
 	 font-weight: bold;
-	 /* color: #B2B2B2; */
-	 color: black;
 	 }
 
   #pm {
@@ -198,7 +206,7 @@
 
   #group3 {
     z-index: 4; /* slide over group 2 and 4 */
-	 background: #A9A9A9;
+	 background: #B8C3C1;
   }
   #group3 .parallax__layer--base {
     /* background: #E6E6E6; */
@@ -206,15 +214,10 @@
   #group3 .title {
 	 top: 7%;
 	 left: 25%;
-	 color: black;
 	 /* color: #003380; */
 	 font-family: 'Lato', sans-serif;
 	 font-weight: bold;
 	 text-align: left;
-	 /*
-	 -webkit-text-stroke-width: 0.13vw;
-	 -webkit-text-stroke-color: white;	 
-	 */
 	 }
 
   #aboutme {
@@ -243,12 +246,18 @@
 
   a { 
 	 text-decoration: none;
-	 color: #E6E6E6;
-	 background-color: #335270;
+	 color: white;
+	 /* background-color: #335270; dark blue */
+	 /* background-color: #1e85f2; light blue */
+	 background-color: #F45651;
 	 }
 
   a:visited {
 	 text-decoration: none;
+	 color: white;
+  }
+  
+  a:hover {
 	 color: #E6E6E6;
   }
 
@@ -262,7 +271,7 @@
     z-index: 2; /* slide under group 3 and 5 */
   }
   #group4 .parallax__layer--deep {
-    background: #E6E6E6;
+    background: #879C99;
   }
   #group4 .title {
 	 font-weight: bold;
@@ -272,7 +281,7 @@
 
   #group5 {
     z-index: 3; /* slide over group 4 and 6 */
-	 background: #A9A9A9;
+	 background: #B8C3C1;
   }
   #group5 .parallax__layer--base {
     /* background: #E6E6E6; */
@@ -299,7 +308,6 @@
 	 top: 70%;
 	 left: 45%;
 	 font-weight: bold;
-	 /* text-shadow: 3px 5px 10px #000; */
 	 margin: 2em;
 	 padding: 01em;
 	 background-color: white;
