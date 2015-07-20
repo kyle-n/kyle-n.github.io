@@ -121,8 +121,12 @@
 	 /* color: #1e85f2; */
 	 text-shadow: 2px 2px 2px gray;
   }
+  #name {
+	 background-color: #9B3D00;
+  }
   #name:visited {
 	 color: white;
+	 background-color: #719A98;
   }
 
   .nav {
@@ -250,19 +254,19 @@
 
   a { 
 	 text-decoration: none;
-	 color: white;
+	 color: #487E7C;
 	 /* background-color: #335270; dark blue */
 	 /* background-color: #1e85f2; light blue */
-	 background-color: #719A98;
+	 /* background-color: #9B3D00; */
 	 }
 
   a:visited {
 	 text-decoration: none;
-	 color: #E6E6E6;
+	 color: #8cb5b3;
   }
   
   a:hover {
-	 color: #E6E6E6;
+	 color: #8cb5b3;
   }
 
   .sublink {
