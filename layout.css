@@ -1,0 +1,42 @@
+html, body {
+	width: 100%;
+}
+
+div {
+	height: 100%;
+	/* margin: 0px 0px 0px 0px; */
+	float: left;
+	max-width: 99%;
+}
+
+.light {
+	background-color: white;
+}
+
+.dark {
+	background-color: gray;
+}
+
+#top {
+	/* padding: 10vh 10vw 10vh 0vw; */
+	width: 100%;
+}
+h1 {
+	font-weight: bold;
+	text-transform: uppercase;
+	float: right;
+	font-size: 8vw;
+	text-shadow: 2px 2px 2px gray;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#me {
+	position: absolute;
+	top: 5%;
+	max-width: 99%;
+	clear: none;
+}
+
+img {
+	display: block;
+	clear: both;
+}

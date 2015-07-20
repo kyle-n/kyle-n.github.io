@@ -1,114 +1,78 @@
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width; initial-scale=1.0;">
 <title>Meet Kyle Nazario</title>
-<link rel="stylesheet" type="text/css" href="desktop.css">
-<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="layout.css">
 </head>
 
-<body onload=' location.href="#group1" '>
+<body onload=' location.href="#top" '>
 
-<!-- 
-  <div class="demo__info">
-			 Website designed and hosted by Kyle Nazario. <a href="#group5">Contact Me</a>
-  </div>
--->
+	<!-- First segment, to welcome visitors -->
+	<div id="top" class="dark">
+		<h1><b>Kyle<br>Nazario</b></h1>
+		<img src="01.png" id="me">
+		<ul>
+			<li><a href="#about"><h2>about me</h2></a></li>
+			<li><a href="#previous"><h2>previous jobs</h2></a></li>
+			<li><a href="#work"><h2>my work</h2></a></li>
+			<li><a href="#contact"><h2>contact me</h2</a></li>
+		</ul>
+		<a href="#group2"><img id="arrow" src="arrow.png"></a>
 
-  <div class="parallax">
-    <div id="group1" class="parallax__group">
-      <div class="parallax__layer parallax__layer--base">
-				  <div class="title"><a href="#group1" id="name"><b>kyle</b><br>nazario</a></div>
-				  <img id="me" src="01.png" />
-				  <ul>
-							 <li><a href="#group2"><div class="nav">previous jobs</div></a></li>
-							 <li><a href="#group3"><div class="nav">about me</div></a></li>
-							 <li><a href="#group4"><div class="nav">my work</div></a></li>
-							 <li><a href="#group5"><div class="nav">contact me</div></a></li>
-				  </ul>
-				  <a href="#group2"><img id="arrow" src="arrow.png"></a>
-      </div>
-    </div>
+	</div>
 
+	<!-- Second segment, to say something about me -->
+	<div id="about" class="light">
+		<h2>about me</h2>
+			<p>I'm Kyle. I'm a journalist with experience working at newspapers, magazines, and most of all, the web. I've worked as a reporter, writer, editor, copyeditor, video producer, photographer and web producer. I currently work for the Ledger-Enquirer in Columbus, Ga., as a digital producer.</p>
+			<p>I specialize in producing longform features and telling traditional journalism in new and exciting ways online. The internet is the next great frontier in journalism, and I help news outlets expand in it.</p>
+			<p>I graduated from Auburn University with a bachelor's degree in journalism and computer science. I chose computer science as my minor to learn how to code and produce content for the Web. I am proficient in HTML, CSS, Java and C++.</p>
+			<p>Before graduating, I was an editor for The Auburn Plainsman. I wrote a <a href="http://www.theplainsman.com/article/2013/10/from-david-to-darcy-student-embraces-new-identity?">front-page feature</a> on a transgender woman that was responsible for Auburn University adding gender identity as a protected class within university policy.</p>
+			<p>I also published a <a href="http://www.theplainsman.com/article/2015/03/building-paves-over-snakes">three-month investigation</a> into Auburn's development practices with respect to their environmental impact.</p>
+	</div>
 
-    <div id="group2" class="parallax__group">
-      <div class="parallax__layer parallax__layer--back">
-        <div class="title">previous jobs</div>
+	<!-- Set of logos for my previous jobs, in the order in which
+		  I worked there -->
+	<div id="previous" class="dark">
+		<h2>previous jobs</h2>
 		  <a href="http://www.theplainsman.com/search/?a=1&o=date&s=nazario"><img src="pmlogo.png" id="pm"></a>
 		  <a href="http://www.ledger-enquirer.com/search_results?q=Nazario"><img src="lelogo.png" id="le"></a>
 		  <a href="http://www.technorms.com/author/kyle"><img src="tnlogo.png" id="tn"></a>
 		  <a href="http://www.freepresshouston.com/?s=Nazario"><img src="fphlogo.png" id="fph"></a>
 		  <a href="http://www.itpro.co.uk/authors/kyle-nazario"><img src="itprologo.png" id="it"></a>
 		  <a href="https://vimeo.com/119772590"><img src="eelogo.png" id="ee"></a>
-      </div>
-    </div>
+	</div>
 
-
-    <div id="group3" class="parallax__group">
-      <div class="parallax__layer parallax__layer--fore">
-        <div class="title">about me</div>		
-		  <div id="aboutme">
-					 <p>I'm Kyle. I'm a journalist with experience working at newspapers, magazines, and most of all, the web. I've worked as a reporter, writer, editor, copyeditor, video producer, photographer and web producer. I currently work for the Ledger-Enquirer in Columbus, Ga., as a digital producer.</p>
-					 <p>I specialize in producing longform features and telling traditional journalism in new and exciting ways online. The internet is the next great frontier in journalism, and I help news outlets expand in it.</p>
-					 <p>I graduated from Auburn University with a bachelor's degree in journalism and computer science. I chose computer science as my minor to learn how to code and produce content for the Web. I am proficient in HTML, CSS, Java and C++.</p>
-					 <p>Before graduating, I was an editor for The Auburn Plainsman. I wrote a <a href="http://www.theplainsman.com/article/2013/10/from-david-to-darcy-student-embraces-new-identity?">front-page feature</a> on a transgender woman that was responsible for Auburn University adding gender identity as a protected class within university policy.</p>
-					 <p>I also published a <a href="http://www.theplainsman.com/article/2015/03/building-paves-over-snakes">three-month investigation</a> into Auburn's development practices with respect to their environmental impact.</p>
-		  </div>
-      </div>
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title"></div>
-      </div>
-    </div>
-
-
-    <div id="group4" class="parallax__group">
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title">my work</div>
-		  <div class="links">
-					 <p><a href="http://www.ledger-enquirer.com/2015/06/24/3784714/photo-of-columbus-state-couple.html#storylink=misearch">The internet hates this Columbus couple, but they're too happy to care</a>&nbsp;&nbsp;<a href="http://abcnews.go.com/GMA/video/mismatched-couple-fires-back-facebook-photo-viral-32514356">(Featured on "Good Morning America"!)</a></p>
+	<!-- Links to my work so people can check out my awesome 
+		  clips -->
+	<div id="work" class="light">
+		<h2>my work</h2>
+			<p><a href="http://www.ledger-enquirer.com/2015/06/24/3784714/photo-of-columbus-state-couple.html#storylink=misearch">The internet hates this Columbus couple, but they're too happy to care</a>&nbsp;|&nbsp;<a href="http://abcnews.go.com/GMA/video/mismatched-couple-fires-back-facebook-photo-viral-32514356">(Featured on "Good Morning America"!)</a></p>
 		  <p><a href="http://www.ledger-enquirer.com/2015/06/26/3787806_muscogee-county-immediately-prepared.html?rh=1">Muscogee County issues first same-sex marriage license</a></p>
 		  <p><a href="http://www.theplainsman.com/article/2015/03/building-paves-over-snakes">Building paves over snake habitat</a></p>
 		  <p><a href="http://www.freepresshouston.com/you-are-homeless/">You Are Homeless</a></p>
 		  <p><a href="http://www.freepresshouston.com/how-one-mans-parking-dispute-became-a-hunger-strike/">How one man's parking dispute became a hunger strike</a></p>
 		  <p><a href="http://www.itpro.co.uk/security/22013/critical-heartbleed-security-bug-found-in-openssl-protocol">Critical "Heartbleed" security bug found in OpenSSL protocol</a></p>
 		  <p><a href="https://www.youtube.com/watch?v=27FqUggApQk">Video: Syrup Sopping Day in Loachapoka, Ala.</a></p>
-</div>
-      </div>
-      <div class="parallax__layer parallax__layer--back">
-        <div class="title"></div>
-      </div>
-      <div class="parallax__layer parallax__layer--deep">
-        <div class="title"></div>
-      </div>
-    </div>
-    <div id="group5" class="parallax__group">
-      <div class="parallax__layer parallax__layer--fore">
-        <div class="title">contact me</div>
-		  <div class="links">
-					 <p><a href="mailto:kylebnazario@gmail.com">Email Me</a></p>
-					 <p><a href="https://twitter.com/kbn_le">Follow me on Twitter</a></p>
-					 <p><a href="https://www.facebook.com/knazario">Check out my Facebook</a></p>
-					 <p><a href="https://twitter.com/LedgerEnquirer">Follow the Ledger-Enquirer on Twitter</a></p>
-					 <p><a href="https://www.facebook.com/columbusledgerenquirer?ref=aymt_homepage_panel">Find the Ledger-Enquirer on Facebook</a></p>
-		  </div>
-      </div>
-      <div class="parallax__layer parallax__layer--base">
-        <div class="title"></div>
-      </div>
-    </div>
+	</div>
 
-  </div>
-
-  <script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-ga('create', 'UA-10812217-1', 'auto');
-ga('send', 'pageview');
-</script>
+	<!-- Links to contact me and find me on social media. Please
+		  stalk responsibly. -->
+	<div id="contact" class="dark">
+		<h2>contact me</h2>
+			<p><a href="mailto:kylebnazario+contact@gmail.com">
+				Email Me</a></p>
+			<p><a href="https://twitter.com/kbn_le">
+				Follow me on Twitter</a></p>
+			<p><a href="https://www.facebook.com/knazario">
+				Check out my Facebook</a></p>
+			<p><a href="https://twitter.com/LedgerEnquirer">
+				Follow the Ledger-Enquirer on Twitter</a></p>
+			<p><a href="https://www.facebook.com/columbusledgerenquirer?ref=aymt_homepage_panel">
+				Find the Ledger-Enquirer on Facebook</a></p>
+	</div>
 
 </body>
 </html>
