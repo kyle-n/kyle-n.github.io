@@ -4,45 +4,61 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width; initial-scale=1.0;">
 <title>Meet Kyle Nazario</title>
-<link rel="stylesheet" type="text/css" href="layout.css">
+<link rel="stylesheet" type="text/css" href="layout2.css">
 </head>
 
-<body onload=' location.href="#top" '>
+<body onload=' location.href="#topwrapper" '>
 
 	<!-- First segment, to welcome visitors -->
-	<div id="top" class="dark">
-		<h1><b>Kyle<br>Nazario</b></h1>
-		<img src="01.png" id="me">
-		<ul>
-			<li><a href="#about"><h2>about me</h2></a></li>
-			<li><a href="#previous"><h2>previous jobs</h2></a></li>
-			<li><a href="#work"><h2>my work</h2></a></li>
-			<li><a href="#contact"><h2>contact me</h2</a></li>
-		</ul>
-		<a href="#group2"><img id="arrow" src="arrow.png"></a>
+	<div id="topwrapper" class="dark">
+
+	<div id="title" class="dark">
+		<h1><b>Kyle Nazario</b></h1>
+ 	</div>
+	
+	<div id="container">
+		<div id="content">
+			<img style="float:left" src="01.png" id="me" />
+			<div id="nav">
+				<ul>
+					<li><a href="#about"><h2>about me</h2></a></li>
+					<li><a href="#previous"><h2>previous jobs</h2></a></li>
+					<li><a href="#work"><h2>my work</h2></a></li>
+					<li><a href="#contact"><h2>contact me</h2></a></li>
+				</ul>
+			</div>
+			<div style="clear:both"></div>
+			<!-- Necessary bit to get the divs to float next to each
+			other on desktop and on top of each other on mobile -->
+    	</div>
+	</div>
 
 	</div>
 
 	<!-- Second segment, to say something about me -->
 	<div id="about" class="light">
 		<h2>about me</h2>
-			<p>I'm Kyle. I'm a journalist with experience working at newspapers, magazines, and most of all, the web. I've worked as a reporter, writer, editor, copyeditor, video producer, photographer and web producer. I currently work for the Ledger-Enquirer in Columbus, Ga., as a digital producer.</p>
-			<p>I specialize in producing longform features and telling traditional journalism in new and exciting ways online. The internet is the next great frontier in journalism, and I help news outlets expand in it.</p>
-			<p>I graduated from Auburn University with a bachelor's degree in journalism and computer science. I chose computer science as my minor to learn how to code and produce content for the Web. I am proficient in HTML, CSS, Java and C++.</p>
-			<p>Before graduating, I was an editor for The Auburn Plainsman. I wrote a <a href="http://www.theplainsman.com/article/2013/10/from-david-to-darcy-student-embraces-new-identity?">front-page feature</a> on a transgender woman that was responsible for Auburn University adding gender identity as a protected class within university policy.</p>
-			<p>I also published a <a href="http://www.theplainsman.com/article/2015/03/building-paves-over-snakes">three-month investigation</a> into Auburn's development practices with respect to their environmental impact.</p>
+			<div id="bio">
+				<p>I'm Kyle. I'm a journalist with experience working at newspapers, magazines, and most of all, the web. I've worked as a reporter, writer, editor, copyeditor, video producer, photographer and web producer.</p>
+				<p>I currently work for the Ledger-Enquirer in Columbus, Ga., as a digital producer.</p>
+				<p>I specialize in producing longform features and telling traditional journalism in new and exciting ways online. The internet is the next great frontier in journalism, and I help news outlets expand in it.</p>
+				<p>I graduated from Auburn University with a bachelor's degree in journalism and computer science. I chose computer science as my minor to learn how to code and produce content for the Web. I am proficient in HTML, CSS, Java and C++.</p>
+				<p>Before graduating, I was an editor for The Auburn Plainsman. I managed a team of writers while also contributing weekly features. One of the best was a <a href="http://www.theplainsman.com/article/2013/10/from-david-to-darcy-student-embraces-new-identity?">front-page feature</a> on a transgender woman that was responsible for Auburn University adding gender identity as a protected class within university policy.</p>
+				<p>I also published a <a href="http://www.theplainsman.com/article/2015/03/building-paves-over-snakes">three-month investigation</a> into Auburn's development practices with respect to their environmental impact.</p>
+				<p>Please feel free to <a href="#contact">contact me</a> or look through some of my stories.</p>
+			</div>
 	</div>
 
 	<!-- Set of logos for my previous jobs, in the order in which
 		  I worked there -->
 	<div id="previous" class="dark">
 		<h2>previous jobs</h2>
-		  <a href="http://www.theplainsman.com/search/?a=1&o=date&s=nazario"><img src="pmlogo.png" id="pm"></a>
-		  <a href="http://www.ledger-enquirer.com/search_results?q=Nazario"><img src="lelogo.png" id="le"></a>
-		  <a href="http://www.technorms.com/author/kyle"><img src="tnlogo.png" id="tn"></a>
-		  <a href="http://www.freepresshouston.com/?s=Nazario"><img src="fphlogo.png" id="fph"></a>
-		  <a href="http://www.itpro.co.uk/authors/kyle-nazario"><img src="itprologo.png" id="it"></a>
-		  <a href="https://vimeo.com/119772590"><img src="eelogo.png" id="ee"></a>
+		  <a href="http://www.theplainsman.com/search/?a=1&o=date&s=nazario"><img src="pmlogo.png" class="job" id="pm"></a>
+		  <a href="http://www.ledger-enquirer.com/search_results?q=Nazario"><img src="lelogo.png" class="job" id="le"></a>
+		  <a href="http://www.itpro.co.uk/authors/kyle-nazario"><img src="itprologo.png" class="job" id="it"></a>
+		  <a href="http://www.freepresshouston.com/?s=Nazario"><img src="fphlogo.png" class="job" id="fph"></a>
+		  <a href="http://www.technorms.com/author/kyle"><img src="tnlogo.png" class="job" id="tn"></a>
+		  <a href="https://vimeo.com/119772590"><img src="eelogo.png" class="job" id="ee"></a>
 	</div>
 
 	<!-- Links to my work so people can check out my awesome 
