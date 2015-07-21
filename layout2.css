@@ -26,11 +26,20 @@ h1 {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 3em;
 	text-align: center;
-	color: #9B0400;
+	color: white;
+	background-color: #076998;
+	font-weight: normal;
+}
+#name {
+	width: 18em;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 h2 {
 	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom: 3%;
+	color: #055075;
 }
 
 ul {
@@ -66,6 +75,9 @@ ul {
 		padding: 3% 5% 3% 5%;
 		line-height: 2em;
 	}
+	#backupnav:hover {
+		color: #076998;
+	}
 
 	h2 { 
 		display: inline;
@@ -74,6 +86,14 @@ ul {
 
 a {
 	text-decoration: none;
+	/* color: #346A84; */
+	color: #1D81B2;
+}
+a:hover {
+	color: #0D4058;
+}
+a:visited {
+	color: #0D4058;
 }
 
 img {
