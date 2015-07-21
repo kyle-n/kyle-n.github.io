@@ -41,6 +41,37 @@ ul {
 	padding-right: 5%;
 	}
 
+#backupnav { /* Horizontal nav for small screens */
+	display: none; /* Hidden unless on a phone or something */
+}
+	
+@media screen and (max-width: 950px) {
+	ul li {
+		display: inline;
+	}
+	#nav {
+		clear: both;
+		float: left;
+		width: 100%;
+		display: none;
+	}
+	#backupnav {
+		display: inline;
+		clear: both;
+		float: left;
+		width: 90%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 1.1em;
+		text-align: center;
+		padding: 3% 5% 3% 5%;
+		line-height: 2em;
+	}
+
+	h2 { 
+		display: inline;
+	}
+}
+
 a {
 	text-decoration: none;
 }
@@ -58,6 +89,7 @@ img {
 	clear: both;
 	padding-left: 5%;
 	padding-right: 5%;
+	padding-bottom: 3%;
 	}
 
 #bio {
