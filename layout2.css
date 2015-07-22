@@ -186,3 +186,11 @@ p {
 	width: 20%;
 	border: 1% solid black;
 }
+#contact h2 {
+	margin-bottom: 1%;
+}
+
+table {
+	margin-left: auto;
+	margin-right: auto;
+}

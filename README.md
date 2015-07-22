@@ -7,3 +7,9 @@ my abilities with HTML and CSS as well. I'm no expert, but I know enough to crea
 useful for other projects, such as unique stories on the web. 
 
 Feel free to look through the code and assets. They're a work in progress- I'm still building the site and fixing the assets. 
+
+## Progress report 7-21-15
+
+I've finished the majority of the site layout and content on the main page. I plan to spice up the colors for the landing page and add text copies of my old stories (which will take much longer). 
+
+Ideally, I'll have a complete archive of what I've written for you lovely potential employers. We'll see how it goes. 
