@@ -1,3 +1,17 @@
+/* This design meets the challenge of laying out a page when you
+ * don't know the exact dimensions through which the user will 
+ * see your content. Old web design says to design for the 
+ * desktop, but this is not reflective of 2015. Whenever I told 
+ * someone to test my website, they immediately pulled out their
+ * smartphone. 
+ *
+ * This design uses blocks of content that intelligently reflow 
+ * and adjust based on the width of the screen being used. 
+ * It works on the devices I used to test it. If you find a 
+ * glaring flaw with the design, email me at 
+ * kylebnazario+code@gmail.com and I'll take a look at it.
+ */
+
 body, html { /* Center content and prevent overflows */
 	margin-top: 0px;
 	max-width: 100%;
@@ -5,9 +19,10 @@ body, html { /* Center content and prevent overflows */
 	margin-left: auto;
 	margin-right: auto;
 	vertical-align: baseline;
-	font-family: 'Lato', sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Nice alternating pattern to delineate sections */
 .light {
 	background-color: white;
 }
@@ -25,8 +40,8 @@ body, html { /* Center content and prevent overflows */
 	float: left;
 }
 
+/* Header bit for my name */
 h1 {
-	/* font-family: Arial, Helvetica, sans-serif; */
 	font-size: 3em;
 	text-align: center;
 	color: white;
@@ -34,16 +49,19 @@ h1 {
 	font-weight: normal;
 	margin-top: 0px; /* Stop weird whitespace at top */
 }
-#name {
+#name { /* Container div to keep name centered */
 	width: 18em;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+/* Used for the nav and subheads */
 h2 {
 	color: #3D6E94;
+	font-weight: normal;
 }
 
+/* Used for the desktop nav */
 ul {
 	font-size: 1.1em;
 	list-style-type: none;
@@ -58,25 +76,33 @@ ul li a {
 	font-weight: normal;
 }
 
-#backupnav { /* Horizontal nav for small screens */
+/* Horizontal nav for small screens */
+#backupnav { 
 	display: none; /* Hidden unless on a phone or something */
 }
 
+/* Hide mobile layout on desktop */
 #mobileLogos {
 	display: none;
 }
 	
-/* Code for handling mobile or tablet views */
+/* Separate styles for handling mobile or tablet views */
 @media screen and (max-width: 950px) {
-	ul li {
-		display: inline;
+	body, html {
+		font-family: Arial, Helvetica, sans-serif;
 	}
+
+	/* Thin fonts don't look good on small screens */
+	h2 { font-weight: bold; }
+
+	/* Hide desktop nav */
 	#nav {
 		clear: both;
 		float: left;
 		width: 100%;
 		display: none;
 	}
+	/* Mobile nav, only shown on small screens */
 	#backupnav {
 		display: inline;
 		clear: both;
@@ -95,31 +121,17 @@ ul li a {
 		display: inline;
 	}
 
+	/* Show redesigned logo layout */
 	#mobileLogos {
 		display: block;
 		margin-top: 7%;
 		margin-bottom: 7%;
 	}
-	#logos {
+	/* Hide desktop logos */
+	#logos { 
 		display: none;
 	}
 }
-
-/* 
-a {
-	text-decoration: none;
-	/* color: #346A84; */
-	/* color: #1D81B2; 
-	color: white;
-	background-color: #8BB1CE;
-}
-a:hover {
-	color: #0D4058;
-}
-a:visited {
-	color: #46589C;
-}
-*/
 
 img {
 	max-width: 100%;
@@ -129,6 +141,7 @@ img {
 	max-height: 100%;
 	}
 
+/* Proper spacing for the about div */
 #about {
 	margin-top: 3%;
 	clear: both;
@@ -140,6 +153,10 @@ img {
 	margin-bottom: 0%;
 }
 
+/* Responsive columns that reflow based on the viewer size. If 
+ * you're on a wide desktop screen, they show multiple columns 
+ * that are much easier to read. If you're on mobile, it's just 
+ * one stack. */
 #bio {
 	-webkit-column-width: 250px; /* Chrome, Safari, Opera */
 	-moz-column-width: 250px; /* Firefox */
@@ -150,13 +167,14 @@ img {
 	padding-top: 1em;
 }
 
+/* Get in a standard serif font to make it easier to read. Also
+ * provides a nice contrast against the subheads. Font size is 
+ * bumped up to provide easier legibility, which is especially 
+ * important on mobile. */
 p {
 	margin-top: 0px;
-	font-family: Arial, Helvetica, sans-serif;
-}
-
-.job {
-	margin: 1% 1% 1% 1%;
+	font-family: "Times New Roman", serif;
+	font-size: 1.2em;
 }
 
 #previous {
@@ -165,11 +183,11 @@ p {
 	padding-top: 2%;
 	padding-bottom: 2%;
 }
-#tn {
-	height: 70px;
-	width: auto;
-}
 
+/* Float my previous work next to the contact box. I like having
+ * those two side by-side, so the box doesn't automatically reflow
+ * based on screen size. Looks alright on mobile, so may as well
+ * keep it. */
 #work {
 	float: left;
 	padding-left: 5%;
@@ -189,6 +207,7 @@ p {
 	margin-bottom: 1%;
 }
 
+/* Extra code to center the mobile nav, which lives in a table */
 table {
 	margin-left: auto;
 	margin-right: auto;
