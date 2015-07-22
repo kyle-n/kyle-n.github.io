@@ -5,6 +5,7 @@ body, html { /* Center content and prevent overflows */
 	margin-left: auto;
 	margin-right: auto;
 	vertical-align: baseline;
+	font-family: 'Lato', sans-serif;
 }
 
 .light {
@@ -25,7 +26,7 @@ body, html { /* Center content and prevent overflows */
 }
 
 h1 {
-	font-family: Arial, Helvetica, sans-serif;
+	/* font-family: Arial, Helvetica, sans-serif; */
 	font-size: 3em;
 	text-align: center;
 	color: white;
@@ -40,12 +41,10 @@ h1 {
 }
 
 h2 {
-	font-family: Arial, Helvetica, sans-serif;
 	color: #3D6E94;
 }
 
 ul {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 1.1em;
 	list-style-type: none;
 	text-align: right;
@@ -56,6 +55,7 @@ ul li a h2:hover { /* Some hyper-targeting for the nav */
 }
 ul li a {
 	text-decoration: none;
+	font-weight: normal;
 }
 
 #backupnav { /* Horizontal nav for small screens */
@@ -82,7 +82,6 @@ ul li a {
 		clear: both;
 		float: left;
 		width: 90%;
-		font-family: Arial, Helvetica, sans-serif;
 		font-size: 1.1em;
 		text-align: center;
 		padding: 3% 5% 3% 5%;
