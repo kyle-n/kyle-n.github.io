@@ -1,8 +1,10 @@
-body, html {
+body, html { /* Center content and prevent overflows */
+	margin-top: 0px;
 	max-width: 100%;
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+	vertical-align: baseline;
 }
 
 .light {
@@ -27,8 +29,9 @@ h1 {
 	font-size: 3em;
 	text-align: center;
 	color: white;
-	background-color: #076998;
+	background-color: #5D8AAD;
 	font-weight: normal;
+	margin-top: 0px; /* Stop weird whitespace at top */
 }
 #name {
 	width: 18em;
@@ -38,8 +41,7 @@ h1 {
 
 h2 {
 	font-family: Arial, Helvetica, sans-serif;
-	margin-bottom: 3%;
-	color: #055075;
+	color: #3D6E94;
 }
 
 ul {
@@ -49,11 +51,22 @@ ul {
 	text-align: right;
 	padding-right: 5%;
 	}
+ul li a h2:hover { /* Some hyper-targeting for the nav */
+	color: #06263E;
+}
+ul li a {
+	text-decoration: none;
+}
 
 #backupnav { /* Horizontal nav for small screens */
 	display: none; /* Hidden unless on a phone or something */
 }
+
+#mobileLogos {
+	display: none;
+}
 	
+/* Code for handling mobile or tablet views */
 @media screen and (max-width: 950px) {
 	ul li {
 		display: inline;
@@ -75,26 +88,39 @@ ul {
 		padding: 3% 5% 3% 5%;
 		line-height: 2em;
 	}
-	#backupnav:hover {
-		color: #076998;
+	#backupnav a {
+		text-decoration: none;
 	}
 
-	h2 { 
+	#backupnav h2 { 
 		display: inline;
+	}
+
+	#mobileLogos {
+		display: block;
+		margin-top: 7%;
+		margin-bottom: 7%;
+	}
+	#logos {
+		display: none;
 	}
 }
 
+/* 
 a {
 	text-decoration: none;
 	/* color: #346A84; */
-	color: #1D81B2;
+	/* color: #1D81B2; 
+	color: white;
+	background-color: #8BB1CE;
 }
 a:hover {
 	color: #0D4058;
 }
 a:visited {
-	color: #0D4058;
+	color: #46589C;
 }
+*/
 
 img {
 	max-width: 100%;
@@ -111,12 +137,18 @@ img {
 	padding-right: 5%;
 	padding-bottom: 3%;
 	}
+#about h2 {
+	margin-bottom: 0%;
+}
 
 #bio {
 	-webkit-column-width: 250px; /* Chrome, Safari, Opera */
 	-moz-column-width: 250px; /* Firefox */
 	column-width: 250px;
+	-webkit-column-gap: 2em;
+	-moz-column-width: 2em;
 	text-indent: 1em;
+	padding-top: 1em;
 }
 
 p {
