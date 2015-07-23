@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0;">
+<title>Critical "Heartbleed" security bug found in OpenSSL protocol</title>
+<link rel="stylesheet" type="text/css" href="layout3.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+		<h1>Critical "Heartbleed" security bug found in OpenSSL protocol</h1>
+			<img src="heartbleed.jpg" alt="Heartbleed">
+<p>Security group Codonomicon has found a critical bug in OpenSSL that compromises the protocol&rsquo;s security.</p>
+
+<p>&ldquo;Your popular social site, your company&rsquo;s site, commerce site, hobby site, site you install software from or even sites run by your government might be using vulnerable OpenSSL,&rdquo; Codonomicon wrote. &ldquo;Many of online services [sic] use TLS to identify themselves to you and to protect your privacy and transactions.&rdquo;</p>
+
+<p>The bug, nicknamed <a href="http://heartbleed.com/">Heartbleed</a>, &ldquo;allows attackers to eavesdrop communications, steal data directly from the services and users and to impersonate services and users.&rdquo;</p>
+
+<p>Codonomicon tested the vulnerability on their own systems and found they could steal their own user names, passwords, emails, IMs, and other documents without leaving a trace.</p>
+
+<p>&ldquo;It&rsquo;s pretty serious,&rdquo; independent security expert Graham Cluley told IT Pro.</p>
+
+<p>The Heartbleed exploit takes advantage of a programming mistake in the heartbeat extension of OpenSSL. The faulty code reveals 64KB of memory that the user should not be able to access. Attackers could automate this process to scrape vulnerable documents, 64KB at a time.</p>
+
+<p>The bug has been in place for two years.</p>
+
+<p>&ldquo;Considering the long exposure, ease of exploitation and attacks leaving no trace, this exposure should be taken seriously,&rdquo; Codonomicon wrote.</p>
+
+<p>Problems with OpenSSL have wide-ranging implications, as it is widely used to secure online connections. Sixty six per cent of web servers (Apache and nginx), all email programs (SMTP, POP, IMAP), chat programs (XMPP), and SSL-based virtual private networks can be compromised with this bug.</p>
+
+<p>Businesses should check if they are using a <a href="http://filippo.io/Heartbleed/">compromised version</a> of a VPN, as it could expose their data to anyone.</p>
+
+<p>Heartbleed makes it possible to read traffic from Linux distributions such as Debian, Ubuntu, Fedora, OpenSuse, OpenBSD, and FreeBSD.</p>
+
+<p>It also compromises websites such as Paypal, Craigslist, Barclays Mobile Banking, and Amazon Web Services. Amazon has <a href="https://forums.aws.amazon.com/thread.jspa?threadID=149734&tstart=0">confirmed</a> it is upgrading its services right now.</p>
+
+<p>OpenSSL users concerned about fixing their systems should adopt Fixed OpenSSL, the new version without Heartbleed. Alternatively, they can recompile OpenSSL with the TLS handshake removed.</p>
+
+<p>&ldquo;OpenSSL users should upgrade to the latest version (1.0.1g) immediately, and regenerate their private keys,&rdquo; Cluley said.</p>
+
+<p>Upgrading to a safe version is essential now that Heartbleed is public. More attackers know about the vulnerability and can check if a system has not fixed it yet.</p>
+
+<p>Codonomicon does not know if the bug has been used to compromise other systems, as it leaves no traces in any logs.</p>
+<p><a href="http://www.itpro.co.uk/security/22013/critical-heartbleed-security-bug-found-in-openssl-protocol">Original Story</a> | <a href="../index.html">Back to home</a></p>
+	</div>
+
+</body>
+</html>
