@@ -21,14 +21,24 @@ body, html { /* Center content and prevent overflows */
 	vertical-align: baseline;
 	font-family: Arial, Helvetica, sans-serif;
 }
+html {
+	background: -webkit-linear-gradient(white, #3D6E94);
+	background: -o-linear-gradient(white, #3D6E94);
+	background: -moz-linear-gradient(white, #3D6E94);
+	background: linear-gradient(white, #91B4CF);
+}
+
+div {
+	background-color: transparent;
+}
 
 /* Nice alternating pattern to delineate sections */
 .light {
-	background-color: white;
+	/* background-color: white; */
 }
 
 .dark {
-	background-color: #f2f2f2;
+	/* background-color: #f2f2f2; */
 }
 
 #topwrapper {
@@ -61,6 +71,11 @@ h2 {
 	font-weight: normal;
 	font-size: 2em;
 }
+/* Highlight the subheads */
+.subhead {
+	/* background-color: #CE8B30; */
+	display: inline;
+}
 
 /* Used for the desktop nav */
 ul {
@@ -70,11 +85,14 @@ ul {
 	padding-right: 5%;
 	}
 ul li a h2:hover { /* Some hyper-targeting for the nav */
-	color: #06263E;
+	color: #CE8B30;
 }
 ul li a {
 	text-decoration: none;
 	font-weight: normal;
+}
+ul li a h2 {
+	color: #3D6E94;
 }
 
 /* Horizontal nav for small screens */
@@ -120,6 +138,7 @@ ul li a {
 
 	#backupnav h2 { 
 		display: inline;
+		color: #3D6E94;
 	}
 
 	/* Show redesigned logo layout */
@@ -212,4 +231,16 @@ p {
 table {
 	margin-left: auto;
 	margin-right: auto;
+}
+
+/* Change link color to match subheads */
+a {
+	color: #1F1F73;
+}
+/* Default visited color to help users */
+a:visited {
+	color: #551A8B;
+}
+a:hover {
+	color: #CE8B30;
 }
