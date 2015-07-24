@@ -105,54 +105,6 @@ ul li a h2 {
 	display: none;
 }
 	
-/* Separate styles for handling mobile or tablet views */
-@media screen and (max-width: 950px) {
-	body, html {
-		font-family: Arial, Helvetica, sans-serif;
-	}
-
-	/* Thin fonts don't look good on small screens */
-	h2 { font-weight: bold; }
-
-	/* Hide desktop nav */
-	#nav {
-		clear: both;
-		float: left;
-		width: 100%;
-		display: none;
-	}
-	/* Mobile nav, only shown on small screens */
-	#backupnav {
-		display: inline;
-		clear: both;
-		float: left;
-		width: 90%;
-		font-size: 1em;
-		text-align: center;
-		padding: 3% 5% 3% 5%;
-		line-height: 2em;
-	}
-	#backupnav a {
-		text-decoration: none;
-	}
-
-	#backupnav h2 { 
-		display: inline;
-		color: #3D6E94;
-	}
-
-	/* Show redesigned logo layout */
-	#mobileLogos {
-		display: block;
-		margin-top: 7%;
-		margin-bottom: 7%;
-	}
-	/* Hide desktop logos */
-	#logos { 
-		display: none;
-	}
-}
-
 img {
 	max-width: 100%;
 }
@@ -244,4 +196,65 @@ a:visited {
 }
 a:hover {
 	color: #CE8B30;
+}
+
+/* Separate styles for handling mobile or tablet views */
+@media screen and (max-width: 950px) {
+	body, html {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	/* Thin fonts don't look good on small screens */
+	h2 { font-weight: bold; }
+
+	/* Hide desktop nav */
+	#nav {
+		clear: both;
+		float: left;
+		width: 100%;
+		display: none;
+	}
+	/* Mobile nav, only shown on small screens */
+	#backupnav {
+		display: inline;
+		clear: both;
+		float: left;
+		width: 90%;
+		font-size: 1em;
+		text-align: center;
+		padding: 3% 5% 3% 5%;
+		line-height: 2em;
+	}
+	#backupnav a {
+		text-decoration: none;
+	}
+
+	#backupnav h2 { 
+		display: inline;
+		color: #3D6E94;
+	}
+
+	/* Show redesigned logo layout */
+	#mobileLogos {
+		display: block;
+		margin-top: 7%;
+		margin-bottom: 7%;
+	}
+	/* Hide desktop logos */
+	#logos { 
+		display: none;
+	}
+
+	/* Separate work and contact divs on mobile, screen is too
+	 * narrow for them to be next to each other */
+	#work {
+		width: 90%;
+		clear: both;
+	}
+
+	#contact {
+		width: 90%;
+		clear: both;
+		float: left;
+	}
 }
