@@ -81,9 +81,10 @@ h2 {
 	/* Bold fonts for mobile */
 	h2 {
 		font-weight: bold;
+		font-family: Arial, Helvetica, sans-serif;
 	}
 	h1 {
 		font-weight: bold;
-		letter-spacing: 0.01em;
+		font-family: Arial, Helvetica, sans-serif;
 	}
 }
