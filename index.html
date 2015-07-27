@@ -27,6 +27,10 @@
 <meta name="twitter:url" content="http://kylenazario.com">
 <meta name="twitter:image:src" content="01.png">
 
+<!-- Scrolling animation content: Credit to http://plugins.compzets.com/animatescroll/ -->
+<script src="as/jquery-1.8.3.min.js"></script>
+<script src="as/animatescroll.js"></script>
+
 </head>
 
 <body>
@@ -48,10 +52,10 @@
 			<!-- Desktop navigation -->
 			<div id="nav">
 				<ul>
-					<li><a href="#about"><h2>about me</h2></a></li>
-					<li><a href="#previous"><h2>experience</h2></a></li>
-					<li><a href="#work"><h2>my work</h2></a></li>
-					<li><a href="#contact"><h2>contact me</h2></a></li>
+						  <li><a onclick="$('#about').animatescroll({scrollSpeed:700});" href="#about"><h2>about me</h2></a></li>
+					<li><a onclick="$('#previous').animatescroll({scrollSpeed:700});" href="#previous"><h2>experience</h2></a></li>
+					<li><a onclick="$('#work').animatescroll({scrollSpeed:700});" href="#work"><h2>my work</h2></a></li>
+					<li><a onclick="$('#contact').animatescroll({scrollSpeed:700});" href="#contact"><h2>contact me</h2></a></li>
 				</ul>
 			</div>
 
@@ -59,14 +63,14 @@
 			<div id="backupnav">
 				<table>
 					<tr>
-						<td><a href="#about"><h2>about me</h2></a></td>
+						<td><a onclick="$('#about').animatescroll({scrollSpeed:700});" href="#about"><h2>about me</h2></a></td>
 						<td><h2 style="color: black"> | </h2></td>
-						<td><a href="#previous"><h2>experience</h2></a></td>
+						<td><a onclick="$('#previous').animatescroll({scrollSpeed:700});" href="#previous"><h2>experience</h2></a></td>
 					</tr>
 					<tr>
-						<td><a href="#work"><h2>my work</h2></a></td>
+						<td><a onclick="$('#work').animatescroll({scrollSpeed:700});" href="#work"><h2>my work</h2></a></td>
 						<td><h2 style="color: black"> | </h2></td>
-						<td><a href="#contact"><h2>contact me</h2></a></td>
+						<td><a onclick="$('#contact').animatescroll({scrollSpeed:700});" href="#contact"><h2>contact me</h2></a></td>
 					</tr>
 				</table>
 			</div>
@@ -83,11 +87,11 @@
 	<div id="about" class="light">
 		<h2><span class="subhead">about me</span></h2>
 			<div id="bio">
-				<p>I'm a journalist with experience working at newspapers, magazines, and most of all, the web. I've worked as a reporter, writer, editor, copyeditor, video producer, photographer and web producer.</p>
+				<p>I'm a journalist with experience working on newspapers, magazines, and most of all, the web. I've worked as a reporter, writer, editor, copyeditor, video producer, photographer and web producer.</p>
 				<p>I currently work for the Ledger-Enquirer in Columbus, Ga., as a digital producer.</p>
 				<p>I specialize in producing longform features and telling traditional journalism in new and exciting ways online. The internet is the next great frontier in journalism, and I help news outlets expand in it.</p>
 				<p>I graduated from Auburn University with a bachelor's degree in journalism and computer science. I chose computer science as my minor to learn how to code and produce content for the Web. I am proficient in HTML, CSS, Java and C++.</p>
-				<p>Before graduating, I was an editor for The Auburn Plainsman. I managed a team of writers while also contributing weekly features. One of the best was a <a href="http://www.theplainsman.com/article/2013/10/from-david-to-darcy-student-embraces-new-identity?" target="_blank">front-page feature</a> on a transgender woman that was responsible for Auburn University adding gender identity as a protected class within university policy.</p>
+				<p>Before graduating, I was an editor for The Auburn Plainsman. I managed a team of writers while also contributing weekly features. One of the best was a <a href="stories/darcy.html">front-page feature</a> on a transgender woman that was responsible for Auburn University adding gender identity as a protected class within university policy.</p>
 				<p>I also published a <a href="stories/snakes.html">three-month investigation</a> into Auburn's development practices with respect to their environmental impact.</p>
 				<p>Please feel free to <a href="#contact">contact me</a> or look through some of my stories.</p>
 			</div>
