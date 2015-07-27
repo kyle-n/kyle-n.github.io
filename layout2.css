@@ -19,7 +19,10 @@ body, html { /* Center content and prevent overflows */
 	margin-left: auto;
 	margin-right: auto;
 	vertical-align: baseline;
+	/* 
 	font-family: Arial, Helvetica, sans-serif;
+	*/
+	font-family: 'Open Sans', sans-serif;
 }
 html {
 	background: -webkit-linear-gradient(white, #3D6E94);
@@ -145,8 +148,12 @@ img {
  * important on mobile. */
 p {
 	margin-top: 0px;
+	/*
 	font-family: "Times New Roman", serif;
-	font-size: 1.2em;
+	*/
+	font-family: 'Merriweather', serif;
+	font-size: 1em;
+	line-height: 1.4em;
 }
 
 #previous {
