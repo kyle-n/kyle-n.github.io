@@ -84,6 +84,6 @@ h2 {
 	}
 	h1 {
 		font-weight: bold;
-		letter-spacing: normal;
+		letter-spacing: 0.01em;
 	}
 }
