@@ -6,6 +6,10 @@ I set this website up to show my journalistic work to potential employers. This 
 
 Feel free to look through the code and assets. They're a work in progress- I'm still building the site and fixing the assets. 
 
+### Progress report 7-28-15
+
+Started work on using Jekyll, a static site generator, to create a blog for rehosting my old stories. I can't keep manually creating the HTML for them. There's an easier way to automate that. It's also terrible when I want to change one thing and have to go through and change it for all the stories. 
+
 ### Progress report 7-23-15
 
 The homepage is basically finished. The content works, it fits on desktop and mobile, and I have most of the materials I'd like. Might need some more photos. Also still not entirely happy with the gradient background.
