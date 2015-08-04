@@ -19,29 +19,20 @@ body, html { /* Center content and prevent overflows */
 	margin-left: auto;
 	margin-right: auto;
 	vertical-align: baseline;
-	font-family: Helvetica, sans-serif;
-	/*
 	font-family: 'Open Sans', sans-serif;
-	*/
 }
 html {
+/* 
 	background: -webkit-linear-gradient(white, #3D6E94);
 	background: -o-linear-gradient(white, #3D6E94);
 	background: -moz-linear-gradient(white, #3D6E94);
 	background: linear-gradient(white, #91B4CF);
+	*/
+	background-color: #c0dfd9;
 }
 
 div {
 	background-color: transparent;
-}
-
-/* Nice alternating pattern to delineate sections */
-.light {
-	/* background-color: white; */
-}
-
-.dark {
-	/* background-color: #f2f2f2; */
 }
 
 #topwrapper {
@@ -58,25 +49,29 @@ h1 {
 	font-size: 3em;
 	text-align: center;
 	color: white;
+	/* 
 	background-color: #5D8AAD;
-	font-weight: normal;
+	*/
+	font-weight: bold;
 	margin-top: 0px; /* Stop weird whitespace at top */
 }
 #name { /* Container div to keep name centered */
-	width: 18em;
+	width: 20em;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 /* Used for the nav and subheads */
 h2 {
+		  /*
 	color: #3D6E94;
+	*/
+	color: #3b3a36;
 	font-weight: normal;
 	font-size: 2em;
 }
-/* Highlight the subheads */
+
 .subhead {
-	/* background-color: #CE8B30; */
 	display: inline;
 }
 
@@ -88,14 +83,20 @@ ul {
 	padding-right: 5%;
 	}
 ul li a h2:hover { /* Some hyper-targeting for the nav */
+		  /*
 	color: #CE8B30;
+	*/
+	color: #3b3a36;
 }
 ul li a {
 	text-decoration: none;
 	font-weight: normal;
 }
 ul li a h2 {
+		  /*
 	color: #3D6E94;
+	*/
+	color: white;
 }
 
 /* Horizontal nav for small screens */
@@ -148,10 +149,6 @@ img {
  * important on mobile. */
 p {
 	margin-top: 0px;
-	/*
-	font-family: "Times New Roman", serif;
-	*/
-	font-family: 'Merriweather', serif;
 	font-size: 1em;
 	line-height: 1.4em;
 }
@@ -207,9 +204,6 @@ a:hover {
 
 /* Separate styles for handling mobile or tablet views */
 @media screen and (max-width: 950px) {
-	body, html {
-		font-family: Arial, Helvetica, sans-serif;
-	}
 
 	/* Thin fonts don't look good on small screens */
 	h2 { font-weight: bold; }
