@@ -51,12 +51,16 @@
 			<img style="float:left" src="01.png" id="me" />
 			<!-- Desktop navigation -->
 			<div id="nav">
+				<div class="parallelogram">
+				<div class="skewback">
 				<ul>
 						  <li><a onclick="$('#about').animatescroll({scrollSpeed:700});" href="#about"><h2>about me</h2></a></li>
 					<li><a onclick="$('#previous').animatescroll({scrollSpeed:800});" href="#previous"><h2>experience</h2></a></li>
 					<li><a onclick="$('#work').animatescroll({scrollSpeed:900});" href="#work"><h2>my work</h2></a></li>
 					<li><a onclick="$('#contact').animatescroll({scrollSpeed:1000});" href="#contact"><h2>contact me</h2></a></li>
 				</ul>
+	 			</div>
+	 			</div>
 			</div>
 
 			<!-- Mobile navigation -->
@@ -86,7 +90,9 @@
 	<!-- Second segment, to say something about me -->
 	<div id="about" class="light">
 		<h2><span class="subhead">about me</span></h2>
-			<div id="bio">
+			<br>
+			<div class="parallelogram">
+			<div id="bio" class="skewback">
 				<p>I'm a journalist with experience working on newspapers, magazines, and most of all, the web. I've worked as a reporter, writer, editor, copyeditor, video producer, photographer and web producer.</p>
 				<p>I currently work for the Ledger-Enquirer in Columbus, Ga., as a digital producer.</p>
 				<p>I specialize in producing longform features and telling traditional journalism in new and exciting ways online. The internet is the next great frontier in journalism, and I help news outlets expand in it.</p>
@@ -95,6 +101,7 @@
 				<p>I also published a <a href="stories/snakes.html">three-month investigation</a> into Auburn's development practices with respect to their environmental impact.</p>
 				<p>Please feel free to <a href="#contact">contact me</a> or look through some of my stories.</p>
 			</div>
+ 			</div>
 	</div>
 
 	<!-- Set of logos for my previous jobs, with one image for
@@ -109,6 +116,8 @@
 		  clips -->
 	<div id="work" class="light">
 		<h2><span class="subhead">my work</span></h2>
+		<div class="parallelogram">
+			<div class="skewback">
 			<p><a href="stories/couple.html">The internet hates this Columbus couple, but they're too happy to care</a>&nbsp;|&nbsp;<a href="http://abcnews.go.com/GMA/video/mismatched-couple-fires-back-facebook-photo-viral-32514356">(Featured on "Good Morning America"!)</a></p>
 		  <p><a href="stories/license.html">Muscogee County issues first same-sex marriage license</a></p>
 		  <p><a href="stories/snakes.html">Building paves over snake habitat</a></p>
@@ -117,6 +126,8 @@
 		  <p><a href="stories/heartbleed.html">Critical "Heartbleed" security bug found in OpenSSL protocol</a></p>
 		  <p><a href="https://www.youtube.com/watch?v=27FqUggApQk" target="_blank">Video: Syrup Sopping Day in Loachapoka, Ala.</a></p>
 		  <p><a href="ssg/_site/index.html">Archive of my published stories</a></p>
+			</div>
+		</div>
 	</div>
 
 	<!-- Links to contact me and find me on social media. Please
@@ -124,14 +135,24 @@
 	<div id="contact" class="dark">
 		<h2><span class="subhead">contact me</span></h2>
 			<br>
+			<!-- 
 			<p><a href="mailto:kylebnazario+contact@gmail.com">
 				Email Me</a></p>
 			<p><a href="https://twitter.com/kbn_le" target="_blank">
 				Follow me on Twitter</a></p>
 			<p><a href="https://www.facebook.com/knazario" target="_blank">Check out my Facebook</a></p>
+			-->
+			<div id="contactIcons">
+				<a href="mailto:kylebnazario+contact@gmail.com"><img src="mail-ico.png" alt="email me" class="icon"></a>
+				<a href="https://twitter.com/kbn_le" target="_blank"><img src="twitter-ico.png" alt="Follow me on Twitter" class="icon"></a>
+				<a href="https://www.facebook.com/knazario" target="_blank"><img src="fb-ico.png" alt="Find me on Facebook" class="icon"></a>
+				<a href="https://www.linkedin.com/profile/view?id=174709239&trk=hp-identity-name" target="_blank"><img src="l-ico.png" alt="Check out my experience on LinkedIn" class="icon"></a>
+ 			</div>
+			<div id="ledgerLinks">
 			<p><a href="https://twitter.com/LedgerEnquirer" target="_blank">Follow the Ledger-Enquirer on Twitter</a></p>
 			<p><a href="https://www.facebook.com/columbusledgerenquirer?ref=aymt_homepage_panel" target="_blank">
 				Find the Ledger-Enquirer on Facebook</a></p>
+			</div>
 	</div>
 
 </body>
