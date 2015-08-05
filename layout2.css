@@ -79,8 +79,7 @@ h2 {
 ul {
 	font-size: 1.1em;
 	list-style-type: none;
-	text-align: right;
-	padding-right: 5%;
+	text-align: left;
 	}
 ul li a h2:hover { /* Some hyper-targeting for the nav */
 		  /*
@@ -241,6 +240,18 @@ a:hover {
 	-webkit-transform: skew(-5deg);
 	   -moz-transform: skew(-5deg);
 	     -o-transform: skew(-5deg);
+}
+
+#pnav {
+	max-width: 20%;
+	display: inline-block;
+	float: right;
+	-webkit-transform: skew(-5deg);
+	   -moz-transform: skew(-5deg);
+	     -o-transform: skew(-5deg);
+	background: #3b3a36;
+	padding-bottom: 3%;
+	padding-right: 3%;
 }
 
 /* Separate styles for handling mobile or tablet views */
