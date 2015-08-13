@@ -99,7 +99,7 @@ p {
 	display: inline-block;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 950px) {
 
 	html {
 		height: 200vh;
