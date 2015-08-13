@@ -26,6 +26,10 @@ p {
 #hintDesktop {
 	color: white;
 }
+#hintMobile {
+	display: none;
+	color: white;
+}
 
 #wrapper {
 	margin-left: auto;
@@ -107,6 +111,16 @@ p {
 
 	.hangar {
 		max-width: 80%;
+	}
+
+	#hintMobile {
+		display: block;
+		text-align: center;
+		margin-top: 2%;
+		margin-bottom: 5%;
+	}
+	#hintDesktop {
+		display: none;
 	}
 
 }
