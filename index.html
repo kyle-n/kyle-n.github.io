@@ -1,158 +1,42 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width; initial-scale=1.0;">
-<title>Meet Kyle Nazario</title>
+---
+layout: default
+title: Archive
+---
 
-<!-- My CSS and styling -->
-<link rel="stylesheet" type="text/css" href="layout2.css">
-
-<!-- Google Fonts -->
-<link href='http://fonts.googleapis.com/css?family=Merriweather:300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
-<!-- Meta content for Facebook -->
-<meta property="og:site_name" content="Kyle Nazario">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Kyle Nazario's Website">
-<meta property="og:description" content="Everything published by Kyle Nazario.">
-<meta property="og:url" content="http://kylenazario.com">
-<meta property="og:image" content="01.png">
-
-<!-- Twitter meta content -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Meet Kyle Nazario">
-<meta name="twitter:description" content="Everything published by Kyle Nazario">
-<meta name="twitter:url" content="http://kylenazario.com">
-<meta name="twitter:image:src" content="01.png">
-
-<!-- Scrolling animation content: Credit to http://plugins.compzets.com/animatescroll/ -->
-<script src="as/jquery-1.8.3.min.js"></script>
-<script src="as/animatescroll.js"></script>
-
-</head>
-
-<body>
-
-	<!-- First segment, to welcome visitors -->
-	<div id="topwrapper" class="dark">
-
-	<!-- Name at the top -->
-	<div id="title" class="dark">
-		<div id="name">
-			<h1>Kyle Nazario</h1>
+<!-- Loop through paginated posts -->
+{% for post in paginator.posts %}
+<div class="teaserWrapper" style="max-width: 100%";>
+<div class="teaser" style="{% if post.image != null %}max-width: 75%;{% endif %}display: inline-block;margin-bottom: 5%;margin-top: 5%;margin-right: 5%">
+		  <h3><a href="{{ post.url }}"> {{ i }} {{ post.title }}</a></h3>
+	<p class="author">
+		<span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+		<div class="content">
+			{{ post.content | split:'<!--break-->' | first }}
 		</div>
- 	</div>
-	
-	<!-- Wrapper for image and nav at the top -->
-	<div id="container">
-		<div id="content">
-			<img style="float:left" src="01.png" id="me" />
-			<!-- Desktop navigation -->
-			<div id="nav">
-				<div id="pnav">
-				<div class="skewback2">
-				<ul>
-						  <li><a onclick="$('#about').animatescroll({scrollSpeed:700});" href="#about"><h2>about me</h2></a></li>
-					<li><a onclick="$('#previous').animatescroll({scrollSpeed:800});" href="#previous"><h2>experience</h2></a></li>
-					<li><a onclick="$('#work').animatescroll({scrollSpeed:900});" href="#work"><h2>my work</h2></a></li>
-					<li><a onclick="$('#contact').animatescroll({scrollSpeed:1000});" href="#contact"><h2>contact me</h2></a></li>
-				</ul>
-	 			</div>
-	 			</div>
-			</div>
-
-			<!-- Mobile navigation -->
-			<div id="backupnav">
-				<table>
-					<tr>
-						<td><a onclick="$('#about').animatescroll({scrollSpeed:700});" href="#about"><h2>about me</h2></a></td>
-						<td><h2 style="color: black"> | </h2></td>
-						<td><a onclick="$('#previous').animatescroll({scrollSpeed:900});" href="#previous"><h2>experience</h2></a></td>
-					</tr>
-					<tr>
-						<td><a onclick="$('#work').animatescroll({scrollSpeed:1000});" href="#work"><h2>my work</h2></a></td>
-						<td><h2 style="color: black"> | </h2></td>
-						<td><a onclick="$('#contact').animatescroll({scrollSpeed:1200});" href="#contact"><h2>contact me</h2></a></td>
-					</tr>
-				</table>
-			</div>
-
-			<div style="clear:both"></div>
-			<!-- Necessary bit to get the divs to float next to each
-			other on desktop and on top of each other on mobile -->
-    	</div>
+	</p>
 	</div>
-
+	{% if post.image != null %}
+	<div class="teaserImage" style="max-width: 20%;display: block;float: right;margin-bottom: 5%;margin-top: 5%;max-height: 100%;">
+			  <img src-"assets/{{ post.image }}">		
 	</div>
+	{% endif %}
+	<hr style="max-width: 100%;clear: both;">
+</div>
+{% endfor %}
 
-	<!-- Second segment, to say something about me -->
-	<div id="about" class="light">
-		<h2><span class="subhead">about me</span></h2>
-			<br>
-			<div class="parallelogram">
-			<div id="bio" class="skewback">
-				<p>I'm a journalist with experience working on newspapers, magazines, and most of all, the web. I've worked as a reporter, writer, editor, copyeditor, video producer, photographer and web producer.</p>
-				<p>I currently work for the Ledger-Enquirer in Columbus, Ga., as a digital producer.</p>
-				<p>I specialize in producing longform features and telling traditional journalism in new and exciting ways online. The internet is the next great frontier in journalism, and I help news outlets expand in it.</p>
-				<p>I graduated from Auburn University with a bachelor's degree in journalism and computer science. I chose computer science as my minor to learn how to code and produce content for the Web. I am proficient in HTML, CSS, Java and C++.</p>
-				<p>Before graduating, I was an editor for The Auburn Plainsman. I managed a team of writers while also contributing weekly features. One of the best was a <a href="stories/darcy.html">front-page feature</a> on a transgender woman that was responsible for Auburn University adding gender identity as a protected class within university policy.</p>
-				<p>I also published a <a href="stories/snakes.html">three-month investigation</a> into Auburn's development practices with respect to their environmental impact.</p>
-				<p>Please feel free to <a href="#contact">contact me</a> or look through some of my stories.</p>
-			</div>
- 			</div>
-	</div>
+<br>
 
-	<!-- Set of logos for my previous jobs, with one image for
-		  mobile and one for desktop -->
-	<div id="previous" class="dark">
-		<h2><span class="subhead">experience</span></h2>
-			<img src="logos.png" alt="I've worked at the Ledger-Enquirer, The Auburn Plainsman, Eagle Eye TV, TechNorms.com, Free Press Houston and IT Pro." id="logos">
-			<img src="logos-mobile.png" alt="I've worked at the Ledger-Enquirer, The Auburn Plainsman, Eagle Eye TV, TechNorms.com, Free Press Houston and IT Pro." id="mobileLogos">
-	</div>
-
-	<!-- Links to my work so people can check out my awesome 
-		  clips -->
-	<div id="work" class="light">
-		<h2><span class="subhead">my work</span></h2>
-		<div class="parallelogram">
-			<div class="skewback" style="padding-top: 5%;">
-			<p><a href="stories/couple.html">The internet hates this Columbus couple, but they're too happy to care</a>&nbsp;|&nbsp;<a href="http://abcnews.go.com/GMA/video/mismatched-couple-fires-back-facebook-photo-viral-32514356">(Featured on "Good Morning America"!)</a></p>
-		  <p><a href="stories/license.html">Muscogee County issues first same-sex marriage license</a></p>
-		  <p><a href="stories/snakes.html">Building paves over snake habitat</a></p>
-		  <p><a href="stories/homeless.html">You Are Homeless</a></p>
-		  <p><a href="stories/parking.html">How one man's parking dispute became a hunger strike</a></p>
-		  <p><a href="stories/heartbleed.html">Critical "Heartbleed" security bug found in OpenSSL protocol</a></p>
-		  <p><a href="https://www.youtube.com/watch?v=27FqUggApQk" target="_blank">Video: Syrup Sopping Day in Loachapoka, Ala.</a></p>
- 			</div>
-		</div>
-	</div>
-
-	<!-- Links to contact me and find me on social media. Please
-		  stalk responsibly. -->
-	<div id="contact" class="dark">
-		<h2><span class="subhead">contact me</span></h2>
-			<br>
-			<!-- 
-			<p><a href="mailto:kylebnazario+contact@gmail.com">
-				Email Me</a></p>
-			<p><a href="https://twitter.com/kbn_le" target="_blank">
-				Follow me on Twitter</a></p>
-			<p><a href="https://www.facebook.com/knazario" target="_blank">Check out my Facebook</a></p>
-			-->
-			<div id="contactIcons">
-				<a href="https://twitter.com/kbn_le" target="_blank"><img src="twitter-ico.png" alt="Follow me on Twitter" class="icon"></a>
-				<a href="https://www.facebook.com/knazario" target="_blank"><img src="fb-ico.png" alt="Find me on Facebook" class="icon"></a>
-				<a href="mailto:kylebnazario+contact@gmail.com"><img src="mail-ico.png" alt="email me" class="icon"></a>
-				<a href="https://www.linkedin.com/profile/view?id=174709239&trk=hp-identity-name" target="_blank"><img src="l-ico.png" alt="Check out my experience on LinkedIn" class="icon"></a>
- 			</div>
-			<div id="ledgerLinks">
-			<p><a href="https://twitter.com/LedgerEnquirer" target="_blank">Follow the Ledger-Enquirer on Twitter</a></p>
-			<p><a href="https://www.facebook.com/columbusledgerenquirer?ref=aymt_homepage_panel" target="_blank">
-				Find the Ledger-Enquirer on Facebook</a></p>
-			</div>
-	</div>
-
-</body>
-</html>
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>

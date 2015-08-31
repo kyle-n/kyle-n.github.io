@@ -1,0 +1,42 @@
+---
+layout: default
+title: Archive
+---
+
+<!-- Loop through paginated posts -->
+{% for post in paginator.posts %}
+<div class="teaserWrapper" style="max-width: 100%";>
+<div class="teaser" style="{% if post.image != null %}max-width: 75%;{% endif %}display: inline-block;margin-bottom: 5%;margin-top: 5%;margin-right: 5%">
+		  <h3><a href="{{ post.url }}"> {{ i }} {{ post.title }}</a></h3>
+	<p class="author">
+		<span class="date">{{ post.date | date: "%B %d, %Y" }}</span>
+		<div class="content">
+			{{ post.content | split:'<!--break-->' | first }}
+		</div>
+	</p>
+	</div>
+	{% if post.image != null %}
+	<div class="teaserImage" style="max-width: 20%;display: block;float: right;margin-bottom: 5%;margin-top: 5%;max-height: 100%;">
+			  <img src="{{ site.url }}/blog/assets/{{ post.image }}">		
+	</div>
+	{% endif %}
+	<hr style="max-width: 100%;clear: both;">
+</div>
+{% endfor %}
+
+<br>
+
+<!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% else %}
+    <span class="previous">Previous</span>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% else %}
+    <span class="next ">Next</span>
+  {% endif %}
+</div>

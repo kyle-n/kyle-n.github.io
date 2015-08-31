@@ -1,0 +1,16 @@
+# Site settings
+title: Stories by Kyle Nazario
+email: kylebnazario@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Everything I've had published at previous positions. Feel free to 
+  browse my published works and see what I've covered for previous 
+  and current jobs.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://kylenazario.com" # the base hostname & protocol for your site
+twitter_username: kbn_le
+github_username:  kyle-n
+paginate: 10
+paginate_path: "/blog/page:num/"
+
+# Build settings
+markdown: kramdown
