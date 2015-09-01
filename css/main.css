@@ -309,25 +309,30 @@ pre {
       .post-content h4 {
         font-size: 18px; } }
 
-/* My added code */
+/* My added code
+ * Layout for teaser blocks to juggle title, image, description
+ */
 .teaser {
   display: inline-block;
   margin-bottom: 5%;
   margin-top: 5%;
   margin-right: 5%;
-  max-width: 75%; }
+  max-width: 75%;
+  /* Fill full screen on mobile */ }
   @media screen and (max-width: 600px) {
     .teaser {
       max-width: 100%;
       margin-bottom: 1%; } }
 
+/* Keep teaser image to right side on desktop */
 .teaserImage {
   max-width: 20%;
   display: block;
   float: right;
   margin-bottom: 5%;
   margin-top: 5%;
-  max-height: 100%; }
+  max-height: 100%;
+  /* Let teaser image take up full width on mobile */ }
   @media screen and (max-width: 600px) {
     .teaserImage {
       max-width: 100%;
