@@ -309,6 +309,32 @@ pre {
       .post-content h4 {
         font-size: 18px; } }
 
+/* My added code */
+.teaser {
+  display: inline-block;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  margin-right: 5%;
+  max-width: 75%; }
+  @media screen and (max-width: 600px) {
+    .teaser {
+      max-width: 100%;
+      margin-bottom: 1%; } }
+
+.teaserImage {
+  max-width: 20%;
+  display: block;
+  float: right;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  max-height: 100%; }
+  @media screen and (max-width: 600px) {
+    .teaserImage {
+      max-width: 100%;
+      float: left;
+      clear: both;
+      margin-top: 1%; } }
+
 /**
  * Syntax highlighting styles
  */

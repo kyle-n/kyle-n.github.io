@@ -19,21 +19,6 @@ p {
 	line-height: 1.4em;
 }
 
-.navlink {
-	clear: both;
-}
-
-.navimg {
-	max-width: 20%;
-	display: inline-block;
-	float: right;
-}
-
-.item {
-	max-width: 79%;
-	display: inline-block;
-}
-
 .teaser {
 	display: inline-block;
 	vertical-align: top;
