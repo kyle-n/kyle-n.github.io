@@ -6,8 +6,8 @@
 </description>
     <link>http://kylenazario.com/</link>
     <atom:link href="http://kylenazario.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Sep 2015 11:50:19 -0400</pubDate>
-    <lastBuildDate>Tue, 15 Sep 2015 11:50:19 -0400</lastBuildDate>
+    <pubDate>Tue, 15 Sep 2015 13:21:29 -0400</pubDate>
+    <lastBuildDate>Tue, 15 Sep 2015 13:21:29 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -96,11 +96,17 @@
 
 &lt;p&gt;The unofficial statement reads as follows:&lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;CSU students, faculty and staff,&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;CSU students, faculty and staff,&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;em&gt;It is with great sadness that we report the death of a Columbus State University freshman, Mariah Farrow, 19, an undeclared first-term, first-year student from Columbus. She was apparently involved in an off-campus shooting last evening.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;It is with great sadness that we report the death of a Columbus State University freshman, Mariah Farrow, 19, an undeclared first-term, first-year student from Columbus. She was apparently involved in an off-campus shooting last evening.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;em&gt;Please keep the family in your thoughts and prayers.&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Please keep the family in your thoughts and prayers.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;Anyone with additional information on the case should contact the Phenix City Police Department Criminal Investigations Division. The police dispatch number is 334-298-0611.&lt;/p&gt;
 
