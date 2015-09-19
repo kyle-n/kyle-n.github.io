@@ -4,7 +4,11 @@
 
 I set this website up to show my journalistic work to potential employers. This GitHub repository is set up as a way to view my abilities with HTML and CSS as well. I'm no expert, but I know enough to create modify code extensively into a something useful for other projects, such as unique stories on the web. 
 
-Feel free to look through the code and assets. They're a work in progress- I'm still building the site and fixing the assets. 
+Feel free to look through the code and assets. They're a mostly finished, though I'm ironing out the bugs.
+
+### Progress report 9-17-15
+
+The website is mostly finished. I've set up all the features I want for rehosting my stories. I've managed to get Facebook and Twitter robust sharing working (no mean feat, given how finicky Facebook's crawler is). Now I'm just fixing bugs as they pop up, trying to boost my spot on Google and updating the site with more stories as they come in. 
 
 ### Progress report 8-31-15
 
