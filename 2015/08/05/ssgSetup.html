@@ -161,25 +161,12 @@
 
 <p>At the top of every .markdown file for your content, you also must put an info box. Enter it like this: </p>
 
-<blockquote>
-  <hr />
-</blockquote>
-
-<blockquote>
-  <p>layout: post</p>
-</blockquote>
-
-<blockquote>
-  <p>title: title here</p>
-</blockquote>
-
-<blockquote>
-  <hr />
-</blockquote>
-
-<blockquote>
-  <p>Content starts here</p>
-</blockquote>
+<pre><code>---
+layout: post
+title: title here
+---
+Content starts here
+</code></pre>
 
 <p>Everthing between those sets of three dashes won’t appear within the body of the story but is instead accessed as a variable. If you look within your other page templates, you might see: </p>
 
