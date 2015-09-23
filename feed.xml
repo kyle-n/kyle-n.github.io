@@ -6,9 +6,54 @@
 </description>
     <link>http://www.kylenazario.com/</link>
     <atom:link href="http://www.kylenazario.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 22 Sep 2015 14:29:46 -0400</pubDate>
-    <lastBuildDate>Tue, 22 Sep 2015 14:29:46 -0400</lastBuildDate>
+    <pubDate>Wed, 23 Sep 2015 16:19:08 -0400</pubDate>
+    <lastBuildDate>Wed, 23 Sep 2015 16:19:08 -0400</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Phenix City native looks to raise for heart transplant</title>
+        <description>&lt;p&gt;Steven Moore has a bad heart.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;“I do well enough,” Moore said. “I get tired easily and can’t work.”&lt;/p&gt;
+
+&lt;p&gt;The Phenix City native is attempting to raise money through a &lt;a href=&quot;https://www.gofundme.com/Steven-Moore&quot;&gt;GoFundMe page&lt;/a&gt;. After years of working as a volunteer firefighter in Seale and youth group leader for St. Mark Free Will Baptist Church, he’s hoping people will give back for a surgery.&lt;/p&gt;
+
+&lt;p&gt;Moore said he was born and bred in Phenix City, graduating from Central High School. In 1973, he left to join the Army where he worked as a Morse code translator. In 1977, Moore started a 25-year career in aviation. The job took him all over the country as he worked his way up from cleaner to regional manager of the Northeast.&lt;/p&gt;
+
+&lt;p&gt;After he couldn’t do the work any more, Moore kept himself busy as a volunteer firefighter in Seale. He worked as a first responder and firefighter, burning buildings and all.&lt;/p&gt;
+
+&lt;p&gt;For the last three to four years, though, he said he stuck to “engineer” duties to stay out of the front line.&lt;/p&gt;
+
+&lt;p&gt;When he felt the defibulator shock his pacemaker twice during a traffic accident, though, Moore said he knew it was time to retire.&lt;/p&gt;
+
+&lt;p&gt;Moore’s heart has been bad for a while. After five heart attacks and six stents and two pacemakers, it can’t pump blood like most people’s hearts can. According to &lt;a href=&quot;http://www.cpmc.org/services/heart/tx/ejectionfraction.html&quot;&gt;Sutter Health Network&lt;/a&gt;, a normal heart can pump out 55 to 75 percent of the blood within it with every heartbeat.&lt;/p&gt;
+
+&lt;p&gt;Moore said his heart can pump 15 percent, well below the norm. It means he can’t drink more than two liters of liquids a day or his lungs fill up with fluid. A bad heart means he could drown on dry land.&lt;/p&gt;
+
+&lt;p&gt;“The heart’s worn out,” Moore said. “The muscle, it’s not there.”&lt;/p&gt;
+
+&lt;p&gt;This April was the tipping point. Moore suffered a fifth heart attack while in the hospital for a GI bleed from an ulcer. It was time for a change.&lt;/p&gt;
+
+&lt;p&gt;Moore is on the heart transplant list. In six months to a year, he’ll have to move to Birmingham to stay close to the hospital at UAB for the surgery and recovery. Medicare covers 70 percent of the $300,000 surgery, but not all of it. It also doesn’t cover the drugs that will keep his body from rejecting the heart, or the costs of moving close to Birmingham to stay close to the hospital.&lt;/p&gt;
+
+&lt;p&gt;Moore doesn’t have a lot of other financial options. He can’t work. His wife, Kathy, has had two strokes, an elbow injury from a car crash and is legally blind.&lt;/p&gt;
+
+&lt;p&gt;“It’s been a journey for us,” he said.&lt;/p&gt;
+
+&lt;p&gt;Moore said he needs the transplant so he can go back to work. He doesn’t know when it’ll be his turn for a transplant. If it doesn’t work out, it means trying to get a &lt;a href=&quot;http://www.webmd.com/heart-disease/heart-failure/left-ventricular-assist-device&quot;&gt;left ventricular assist device&lt;/a&gt; (LVAD, &lt;a href=&quot;http://sm.stanford.edu/archive/stanmed/2014spring/article3.html&quot;&gt;the thing Dick Cheney used&lt;/a&gt;) or accepting the worst.&lt;/p&gt;
+
+&lt;p&gt;Moore said he hopes people will help with some of his costs for the transplant.&lt;/p&gt;
+
+&lt;p&gt;“With the faith I have, God puts no more on you than you can handle,” Moore said. “Seems like a pretty hard test of faith sometimes. God has a plan for all of us. He has something else for me out there.”&lt;/p&gt;
+</description>
+        <pubDate>Wed, 23 Sep 2015 00:00:00 -0400</pubDate>
+        <link>http://www.kylenazario.com/2015/09/23/stevenMoore.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/09/23/stevenMoore.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Help Phenix City police find this robbery suspect</title>
@@ -376,161 +421,6 @@
         <pubDate>Fri, 28 Aug 2015 00:00:00 -0400</pubDate>
         <link>http://www.kylenazario.com/2015/08/28/infantDeath.html</link>
         <guid isPermaLink="true">http://www.kylenazario.com/2015/08/28/infantDeath.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>4 Things To Know About the Command Line Before You Start Using Linux</title>
-        <description>&lt;p&gt;If you get started on Linux (like &lt;a href=&quot;http://www.technorms.com/39938/a-mac-users-experience-of-using-linux-ubuntu&quot;&gt;I, a Mac user, did after getting curious&lt;/a&gt;), getting used to the platforms quirks can be challenging. Linux doesn’t work like other platforms. It requires rethinking how a computer “should” work and understanding a whole different paradigm with its own strengths and weaknesses.&lt;/p&gt;
-
-&lt;!--break--&gt;
-
-&lt;p&gt;One of the biggest changes is the command line. Windows has Command Prompt (which any good sysadmin will spend a good bit of time in) and Mac has Terminal, but both prefer to keep command line stuff as a last resort. Mac and Windows (and some Linux brands, such as Ubuntu) would first present a GUI for managing programs and updating your OS.&lt;/p&gt;
-
-&lt;p&gt;Linux, however, runs mostly on the command line. Doing all the cool (and useful) things in the operating system requires understanding how some funny-sounding commands can operate your system. However, the command line can be intimidating. To help you understand it and work in it better, here are some things you should know before starting on Linux.&lt;/p&gt;
-
-&lt;h2 id=&quot;things-about-the-command-line-to-know-before-using-linux&quot;&gt;Things About the Command Line to Know Before Using Linux&lt;/h2&gt;
-
-&lt;h3 id=&quot;what-is-a-command-line&quot;&gt;What is a command line?&lt;/h3&gt;
-
-&lt;p&gt;As &lt;a href=&quot;https://help.ubuntu.com/community/UsingTheTerminal&quot;&gt;humorously documented in the Ubuntu beginner’s guide&lt;/a&gt;, terminal commands can look bizarre and intimidating.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;sudo gobbledegook blah_blah -w -t -h –long-switch aWkward/ComBinationOf/mixedCase/underscores_strokes/and.dots&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;At its core, a command line is a way to input orders into a computer with special bits of text the computer knows. It’s confusing because you have to remember what command does what. However, once you learn the commands, it can be very fast and powerful (especially since Linux will let you change almost everything).&lt;/p&gt;
-
-&lt;p&gt;When you input commands in a terminal window, a program called a shell takes those and translates them into computer code. There are several different shells, but for our purposes we’ll focus on the most popular, bash.&lt;/p&gt;
-
-&lt;h3 id=&quot;command-line-grammar&quot;&gt;Command-line grammar&lt;/h3&gt;
-
-&lt;p&gt;If you break it down, you can understand some of the weirdness in command lines. There’s a kind of rough grammar to it (with plenty of exceptions).&lt;/p&gt;
-
-&lt;p&gt;Many commands will start with the word “sudo.” What that means is instead of executing the command with regular privileges, you want to do it as a superuser (hence “su”). This gives you access to system files and all the important stuff.&lt;/p&gt;
-
-&lt;p&gt;Next is a program name. This tells the system what to invoke. For example, a command that reads:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;sudo apt-get update&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Tells the shell to execute the apt program as a superuser. The -get part is an additional flag that tells apt what to do. “Update” is the other part of telling apt what to do (update its source list).&lt;/p&gt;
-
-&lt;p&gt;You might see a lot of these kinds of modifiers. Generally letters after dashes are modifying flags on a base command.&lt;/p&gt;
-
-&lt;p&gt;When you see something like /var/etc/test.txt, that’s a reference to a file. All files stored on a Linux computer’s hard drive can be found with some kind of file reference, just like on Mac and Windows.&lt;/p&gt;
-
-&lt;p&gt;Sometimes files are used as modifiers to commands. For example, you might tell the command line to copy a file to the desktop like so:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;cp test.txt ~/Desktop/&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Notice something: in this case, we referred to test.txt without a long preceding string to reference its absolute path. Each terminal window runs at a certain location on your computer, referenced by the bit before the dollar sign but after the colon. For example, this:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;kylenazario@ubuntu:~$&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Is me at my home directory. If I type:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;cd ~/Downloads&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Or:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;pushd Downloads&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;It changes the Terminal window’s location to my downloads folder. You can always check what’s within your current folder by simply typing:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;ls&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Now, why does it matter where the terminal process is running? Because it means you can cheat a little. Instead of referring to a file’s absolute, complete path and name (e.g. ~/Desktop/cmdline.txt), you can just call it by the name (cmdline.txt). Definitely makes things easier to type.&lt;/p&gt;
-
-&lt;h3 id=&quot;what-is-the-command-line-good-for&quot;&gt;What is the command line good for?&lt;/h3&gt;
-
-&lt;p&gt;The previous section was all about using the command line for file management, but I would not recommend it unless you’re doing batch renaming or something you need to automate. Honestly, basic file management is awkward on the command line. It’s much easier to drag and drop a file onto your desktop than it is to type out the full cp command (in my opinion).&lt;/p&gt;
-
-&lt;p&gt;However, say you wanted to automatically copy that file into your Dropbox folder at 11pm every night to save your work. In that case, a script of commands would be perfect.&lt;/p&gt;
-
-&lt;p&gt;The command line is also great for installing and managing software utilities. It’s better to just type in sudo apt-get install whatever when you’re downloading the ten dependencies needed for Ruby than it is to go to Ruby’s website and download every zip you need.&lt;/p&gt;
-
-&lt;p&gt;Lastly, the command line rewards expertise. While it’ll be hard at first, it’ll reward you with some really awesome time-saving shortcuts once you get the hang of it.&lt;/p&gt;
-
-&lt;h3 id=&quot;always-useful-basic-commands&quot;&gt;Always useful basic commands&lt;/h3&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;cd [directory]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Go to [directory]&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;sudo apt-get update&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Refresh the list of available software&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;sudo apt-get upgrade&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Download updates for your installed software&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;&amp;amp;&amp;amp;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Put between commands to make the computer execute the first, then the second. For example, you might enter sudo apt-get update &amp;amp;&amp;amp; sudo apt-get upgrade to download all new software without having to type in commands twice.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;rm -r [directory or file]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Delete file or everything in that directory. Use with caution.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;pwd&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Print working directory. Tells you where you are so you can cd somewhere else.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;man [program]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Show the manual of a certain program. Useful for checking how to use a command-line program without Google.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;sudo [command]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Do as superuser. Use with caution.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;[Up Arrow]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Autofills last command.&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;[Tab]&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Autocompletes filenames or commands. Saves typing!&lt;/p&gt;
-
-&lt;p&gt;If you’re interested, there’s a &lt;a href=&quot;https://help.ubuntu.com/community/UsingTheTerminal&quot;&gt;good list of guides&lt;/a&gt; on Ubuntu’s website.&lt;/p&gt;
-</description>
-        <pubDate>Tue, 25 Aug 2015 00:00:00 -0400</pubDate>
-        <link>http://www.kylenazario.com/2015/08/25/commandLineStarter.html</link>
-        <guid isPermaLink="true">http://www.kylenazario.com/2015/08/25/commandLineStarter.html</guid>
         
         
       </item>

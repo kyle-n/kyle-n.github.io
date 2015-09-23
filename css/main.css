@@ -123,6 +123,18 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .teaserImage { max-width: 20%; display: block; float: right; margin-bottom: 5%; margin-top: 5%; max-height: 100%; /* Let teaser image take up full width on mobile */ }
 @media screen and (max-width: 600px) { .teaserImage { max-width: 100%; float: left; clear: both; margin-top: 1%; } }
 
+.imgLeft { display: inline-block; float: left; margin: 2% 2% 2% 0%; }
+@media screen and (max-width: 600px) { .imgLeft { display: block; clear: both; width: 100%; margin-top: 0%; margin-bottom: 3%; } }
+
+.imgRight { display: inline-block; float: right; margin: 2% 0% 2% 2%; }
+@media screen and (max-width: 600px) { .imgRight { display: block; clear: both; width: 100%; margin-top: 0%; margin-bottom: 3%; } }
+
+.imgMiddle { display: block; clear: both; margin-left: auto; margin-right: auto; }
+@media screen and (max-width: 600px) { .imgMiddle { display: block; clear: both; width: 100%; margin-top: 0%; margin-bottom: 3%; } }
+
+.imgFullMiddle { display: block; width: 100%; }
+@media screen and (max-width: 600px) { .imgFullMiddle { display: block; clear: both; width: 100%; margin-top: 0%; margin-bottom: 3%; } }
+
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
 .highlight .c { color: #998; font-style: italic; }
