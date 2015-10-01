@@ -123,6 +123,8 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .teaserImage { max-width: 20%; display: block; float: right; margin-bottom: 5%; margin-top: 5%; max-height: 100%; /* Let teaser image take up full width on mobile */ }
 @media screen and (max-width: 600px) { .teaserImage { max-width: 100%; float: left; clear: both; margin-top: 1%; } }
 
+.imgLeft, .imgRight, .imgMiddle { max-width: 40%; }
+
 .imgLeft { display: inline-block; float: left; margin: 2% 2% 2% 0%; }
 @media screen and (max-width: 600px) { .imgLeft { display: block; clear: both; width: 100%; margin-top: 0%; margin-bottom: 3%; } }
 
