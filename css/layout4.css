@@ -23,3 +23,7 @@ p {
 	display: inline-block;
 	vertical-align: top;
 }
+
+.blog-name {
+	color: black;
+}
