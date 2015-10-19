@@ -3,6 +3,7 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { m
 
 /** Basic styling */
 body { font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; font-weight: 300; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; }
+@media screen and (max-width: 600px) { body { font-size: 18px; } }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
@@ -136,6 +137,9 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .imgFullMiddle { display: block; width: 100%; }
 @media screen and (max-width: 600px) { .imgFullMiddle { display: block; clear: both; width: 100%; margin-top: 0%; margin-bottom: 3%; } }
+
+.article-text { max-width: 85%; margin-right: auto; }
+@media screen and (max-width: 600px) { .article-text { max-width: 97.5%; } }
 
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
