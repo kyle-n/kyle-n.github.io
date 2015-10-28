@@ -75,14 +75,14 @@ p {
 	padding-right: 35px;
 }
 
-.capbox:hover > .cap, .capbox:focus > .cap {
+.no-touch .capbox:hover > .cap, .capbox.cs-hover > .cap {
 	display: block;
 	opacity: 1.0;
 }
-.capbox:hover > p, .capbox:focus > p {
+.no-touch .capbox:hover > p, .capbox.cs-hover > p {
 	margin-bottom: 10px;
 }
-.capbox:hover > .guide, .capbox:focus > .guide {
+.no-touch .capbox:hover > .guide, .capbox.cs-hover > .guide {
 	display: none;
 }
 
