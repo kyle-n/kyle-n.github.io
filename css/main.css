@@ -85,7 +85,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .footer-col-2 { width: -webkit-calc(20% - (30px / 2)); width: calc(20% - (30px / 2)); }
 
-.footer-col-3 { width: -webkit-calc(45% - (30px / 2)); width: calc(45% - (30px / 2)); }
+.footer-col-3 { width: -webkit-calc(75% - (30px / 2)); width: calc(75% - (30px / 2)); margin-left: 3%; }
 
 @media screen and (max-width: 800px) { .footer-col-1, .footer-col-2 { width: -webkit-calc(50% - (30px / 2)); width: calc(50% - (30px / 2)); }
   .footer-col-3 { width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
@@ -127,19 +127,22 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .imgLeft, .imgRight, .imgMiddle { max-width: 40%; }
 
 .imgLeft { display: inline-block; float: left; margin: 2% 2% 2% 0%; }
-@media screen and (max-width: 600px) { .imgLeft { display: block; clear: both; width: 100%; margin-top: 0%; margin-bottom: 3%; } }
+@media screen and (max-width: 600px) { .imgLeft { display: block; clear: both; max-width: 100%; margin-top: 0%; margin-bottom: 3%; } }
 
-.imgRight { display: inline-block; float: right; margin: 2% 0% 2% 2%; }
-@media screen and (max-width: 600px) { .imgRight { display: block; clear: both; width: 100%; margin-top: 0%; margin-bottom: 3%; } }
+.imgRight { display: inline-block; float: right; position: relative; top: 0; margin: 2% 3% 2% 2%; }
+@media screen and (max-width: 600px) { .imgRight { display: block; clear: both; max-width: 100%; margin-top: 0%; margin-bottom: 3%; margin-right: 0%; } }
 
 .imgMiddle { display: block; clear: both; margin-left: auto; margin-right: auto; }
-@media screen and (max-width: 600px) { .imgMiddle { display: block; clear: both; width: 100%; margin-top: 0%; margin-bottom: 3%; } }
+@media screen and (max-width: 600px) { .imgMiddle { display: block; clear: both; max-width: 100%; margin-top: 0%; margin-bottom: 3%; } }
 
 .imgFullMiddle { display: block; width: 100%; }
 @media screen and (max-width: 600px) { .imgFullMiddle { display: block; clear: both; width: 100%; margin-top: 0%; margin-bottom: 3%; } }
 
 .article-text { max-width: 85%; margin-right: auto; }
 @media screen and (max-width: 600px) { .article-text { max-width: 97.5%; } }
+
+.guide:before { content: "(hover)"; }
+@media screen and (max-width: 600px) { .guide:before { content: "(tap)"; } }
 
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
