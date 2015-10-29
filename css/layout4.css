@@ -79,7 +79,7 @@ p {
 Display caption if hovered or tapped 
 .capbox:hover > .cap, .capbox:active > .cap {
 		  */
-.visible, .capbox:hover > .cap {
+.visible, .capbox:hover > .cap, .capbox.hover > .cap {
 	display: block;
 	opacity: 1.0;
 }
@@ -92,7 +92,7 @@ Display caption if hovered or tapped
 /* 
  .capbox:hover > .guide, .capbox:active > .guide {
  */
-.vanished, .capbox:hover > .guide {
+.vanished, .capbox:hover > .guide, .capbox.hover > .guide {
 	display: none;
 }
 
