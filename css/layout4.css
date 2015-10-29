@@ -75,20 +75,30 @@ p {
 	padding-right: 35px;
 }
 
-/* Display caption if hovered or tapped */
+/*
+Display caption if hovered or tapped 
 .capbox:hover > .cap, .capbox:active > .cap {
+		  */
+.visible, .capbox:hover > .cap {
 	display: block;
 	opacity: 1.0;
 }
+/*
 .capbox:hover > p, .capbox:active > p {
+*/
+.marginized {
 	margin-bottom: 10px;
 }
-.capbox:hover > .guide, .capbox:active > .guide {
+/* 
+ .capbox:hover > .guide, .capbox:active > .guide {
+ */
+.vanished, .capbox:hover > .guide {
 	display: none;
 }
 
-/* Don't select image to save */
+/* Don't select image to save 
 .hover {
 	-webkit-user-select: none;
 	-webkit-touch-callout: none;
 }
+*/

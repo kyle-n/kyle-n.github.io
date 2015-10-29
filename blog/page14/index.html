@@ -62,6 +62,7 @@
   <!--Scripts-->
   <script src="/js/modernizr.custom.js"></script>
   <script src="/js/toucheffects.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 </head>
 
@@ -75,7 +76,18 @@
 	}
 </style>
 
-  <body ontouchstart="">
+<!--Touch event capturing-->
+<script>
+
+	$(document).ready(function(){
+		$(".capbox").on("tap",function(){
+			$(this > .cap).toggleClass("visible");
+		});
+	});
+
+</script>
+
+  <body>
 
     <header class="site-header">
 
