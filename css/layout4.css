@@ -77,18 +77,20 @@ p {
 
 /*
 Display caption if hovered or tapped */
-.capbox:hover > .cap, .capbox:active > .cap {
-/* .visible, .capbox:hover > .cap, .capbox.hover > .cap, .capbox:active > .guide { */
+/* .capbox:hover > .cap, .capbox:active > .cap { */
+.visible, .capbox:hover > .cap, .capbox.hover > .cap, .capbox:active > .guide {
 	display: block;
 	opacity: 1.0;
 }
+/*
 .capbox:hover > p, .capbox:active > p {
 	margin-bottom: 10px;
 }
- .capbox:hover > .guide, .capbox:active > .guide {
-/* 
+*/
+ /*
+  * .capbox:hover > .guide, .capbox:active > .guide {
+  */
 .vanished, .capbox:hover > .guide, .capbox.hover > .guide, .capbox:active > .guide { 
- */
 	display: none;
 }
 
