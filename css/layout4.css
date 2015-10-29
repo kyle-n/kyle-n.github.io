@@ -76,14 +76,14 @@ p {
 }
 
 /* Display caption if hovered or tapped */
-.capbox:hover > .cap, .capbox.hover_effect > .cap {
+.capbox:hover > .cap, .capbox:active > .cap {
 	display: block;
 	opacity: 1.0;
 }
-.capbox:hover > p, .capbox.hover_effect > p {
+.capbox:hover > p, .capbox:active > p {
 	margin-bottom: 10px;
 }
-.capbox:hover > .guide, .capbox.hover_effect > .guide {
+.capbox:hover > .guide, .capbox:active > .guide {
 	display: none;
 }
 
