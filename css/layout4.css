@@ -75,14 +75,20 @@ p {
 	padding-right: 35px;
 }
 
-.no-touch .capbox:hover > .cap, .capbox.cs-hover > .cap {
+/* Display caption if hovered or tapped */
+.capbox:hover > .cap, .capbox.hover_effect {
 	display: block;
 	opacity: 1.0;
 }
-.no-touch .capbox:hover > p, .capbox.cs-hover > p {
+.capbox:hover > p, .capbox.hover_effect {
 	margin-bottom: 10px;
 }
-.no-touch .capbox:hover > .guide, .capbox.cs-hover > .guide {
+.capbox:hover > .guide .capbox.hover_effect {
 	display: none;
 }
 
+/* Don't select image to save */
+.hover {
+	-webkit-user-select: none;
+	-webkit-touch-callout: none;
+}
