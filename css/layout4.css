@@ -3,7 +3,7 @@
 .topImg,iframe {
 	display: block;
 	margin-right: auto;
-	margin-bottom: 3%;
+	margin-bottom: 0%;
 	max-width: 100%;
 }
 
@@ -49,54 +49,3 @@ p {
 	width: 100%;
 	height: 100%;
 }
-
-/* Put translucent black shade behind hidden caption */
-.cap {
-	background-color: rgba(0,0,0,0.75);
-	opacity: 0;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	-webkit-transition: opacity 0.3s linear;
-	-moz-transition: opacity 0.3s linear;
-	transition: opacity 0.3s linear;
-	text-shadow: #000 1px 1px 0;
-	color: #ccc;
-	padding: 20px 40px 20px 20px;
-}
-
-/* Center caption on image */
-.cap p {
-	position: relative;
-	top: 30%;
-	max-width: 100%;
-	padding-right: 35px;
-}
-
-/*
-Display caption if hovered or tapped */
-/* .capbox:hover > .cap, .capbox:active > .cap { */
-.visible, .capbox:hover > .cap, .capbox.hover > .cap, .capbox:active > .guide {
-	display: block;
-	opacity: 1.0;
-}
-/*
-.capbox:hover > p, .capbox:active > p {
-	margin-bottom: 10px;
-}
-*/
- /*
-  * .capbox:hover > .guide, .capbox:active > .guide {
-  */
-.vanished, .capbox:hover > .guide, .capbox.hover > .guide, .capbox:active > .guide { 
-	display: none;
-}
-
-/* Don't select image to save 
-.hover {
-	-webkit-user-select: none;
-	-webkit-touch-callout: none;
-}
-*/
