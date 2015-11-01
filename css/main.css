@@ -83,10 +83,19 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .footer-col-1 { width: -webkit-calc(35% - (30px / 2)); width: calc(35% - (30px / 2)); }
 
-.footer-col-2 { width: -webkit-calc(20% - (30px / 2)); width: calc(20% - (30px / 2)); }
+.footer-col-2 { width: 35%; display: inline-block; float: right; }
 
-.footer-col-3 { width: -webkit-calc(75% - (30px / 2)); width: calc(75% - (30px / 2)); margin-left: 3%; }
+.footer-col-2 td { padding-right: 1em; }
 
+.footer-col-3 { width: 60%; display: inline-block; float: left; }
+
+#mobileContact { display: none; }
+
+/* Shorter box for side-by-side on desktop */
+@media screen and (max-width: 600px) { .footer-col-3, .footer-col-2 { width: 100%; clear: both; }
+  #mobileContact { display: block; }
+  #desktopContact { display: none; }
+  #mobileContact ul li { display: inline; padding: 0.2em; } }
 @media screen and (max-width: 800px) { .footer-col-1, .footer-col-2 { width: -webkit-calc(50% - (30px / 2)); width: calc(50% - (30px / 2)); }
   .footer-col-3 { width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
 @media screen and (max-width: 600px) { .footer-col { float: none; width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
