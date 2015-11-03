@@ -30,7 +30,7 @@ a:visited { color: #1756a9; }
 a:hover { color: #111; text-decoration: underline; }
 
 /** Blockquotes */
-blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; font-style: italic; }
+blockquote { color: #828282; border-left: 4px solid #e8e8e8; padding-left: 15px; font-size: 18px; letter-spacing: -1px; }
 blockquote > :last-child { margin-bottom: 0; }
 
 /** Code formatting */
@@ -83,22 +83,29 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .footer-col-1 { width: -webkit-calc(35% - (30px / 2)); width: calc(35% - (30px / 2)); }
 
+/* Contact information, right block */
 .footer-col-2 { width: 35%; display: inline-block; float: right; }
 
 .footer-col-2 td { padding-right: 1em; }
 
+/* Site description, left block */
 .footer-col-3 { width: 60%; display: inline-block; float: left; }
 
 #mobileContact { display: none; }
 
 /* Shorter box for side-by-side on desktop */
-@media screen and (max-width: 600px) { .footer-col-3, .footer-col-2 { width: 100%; clear: both; }
-  #mobileContact { display: block; }
+@media screen and (max-width: 600px) { .footer-col-3, .footer-col-2 { width: 100%; clear: both; margin-bottom: 0; }
+  #mobileContact { display: block; margin: 0 -3% 0 -3%; }
   #desktopContact { display: none; }
   #mobileContact ul li { display: inline; padding: 0.2em; } }
-@media screen and (max-width: 800px) { .footer-col-1, .footer-col-2 { width: -webkit-calc(50% - (30px / 2)); width: calc(50% - (30px / 2)); }
-  .footer-col-3 { width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
-@media screen and (max-width: 600px) { .footer-col { float: none; width: -webkit-calc(100% - (30px / 2)); width: calc(100% - (30px / 2)); } }
+/*
+@include media-query($on-laptop) { .footer-col-1, .footer-col-2 { width: -webkit-calc(50% - (30px / 2)); width:         calc(50% - (30px / 2)); }
+ .footer-col-3 { width: -webkit-calc(100% - (30px / 2)); width:         calc(100% - (30px / 2)); }
+}
+
+@include media-query($on-palm) { .footer-col { float: none; width: -webkit-calc(100% - (30px / 2)); width:         calc(100% - (30px / 2)); }
+}
+*/
 /** Page content */
 .page-content { padding: 30px 0; }
 
@@ -125,14 +132,19 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .post-content h4 { font-size: 20px; }
 @media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
 
-/* My added code Layout for teaser blocks to juggle title, image, description */
-.teaser { display: inline-block; margin-bottom: 5%; margin-top: 5%; margin-right: 5%; max-width: 75%; /* Fill full screen on mobile */ }
-@media screen and (max-width: 600px) { .teaser { max-width: 100%; margin-bottom: 1%; } }
+/* Div layouts for teaser blocks */
+.teaserWrapper { display: inline-block; margin: 0 5% 3% 5%; max-width: 100%; }
+@media screen and (max-width: 600px) { .teaserWrapper { max-width: 100%; } }
 
-/* Keep teaser image to right side on desktop */
-.teaserImage { max-width: 20%; display: block; float: right; margin-bottom: 5%; margin-top: 5%; max-height: 100%; /* Let teaser image take up full width on mobile */ }
+/* Move image to right on desktop */
+.teaserImage { max-width: 20%; display: block; float: right; margin-bottom: 5%; margin-top: 5%; max-height: 100%; }
 @media screen and (max-width: 600px) { .teaserImage { max-width: 100%; float: left; clear: both; margin-top: 1%; } }
 
+/* Limit title width */
+.teaserTitle, .descrip { max-width: 75%; display: block; float: left; margin-top: 0; clear: left; }
+@media screen and (max-width: 600px) { .teaserTitle, .descrip { max-width: 100%; display: block; clear: both; } }
+
+/* descrip */
 .imgLeft, .imgRight, .imgMiddle { max-width: 40%; }
 
 .imgLeft { display: inline-block; float: left; margin: 2% 2% 2% 0%; }
