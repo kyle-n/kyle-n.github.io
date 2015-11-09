@@ -6,290 +6,542 @@
 </description>
     <link>http://www.kylenazario.com/</link>
     <atom:link href="http://www.kylenazario.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 03 Nov 2015 23:33:29 -0500</pubDate>
-    <lastBuildDate>Tue, 03 Nov 2015 23:33:29 -0500</lastBuildDate>
+    <pubDate>Mon, 09 Nov 2015 00:33:59 -0500</pubDate>
+    <lastBuildDate>Mon, 09 Nov 2015 00:33:59 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
-        <title>The Beginner’s Guide to Using Static Site Generators For Creating Superior Websites</title>
-        <description>&lt;p&gt;When I began to look at &lt;a href=&quot;http://www.technorms.com/45118/guide-to-host-website-github-pages&quot;&gt;creating my own website&lt;/a&gt;, I ran across quite a few blogs advising me to use a static site generator like &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; or &lt;a href=&quot;http://middlemanapp.com/&quot;&gt;Middleman&lt;/a&gt;. The problem was, no one bothered to explain in layman’s terms what a static site generator &lt;em&gt;was&lt;/em&gt;. How am I supposed to work with something when I don’t even know why it’s useful? &lt;/p&gt;
+        <title>See the Sibley Horticultural Center at Callaway Gardens for free before it closes</title>
+        <description>&lt;p&gt;Callaway Gardens will admit all guests for free this Friday in honor of the birthday of founder Cason J. Callaway.&lt;/p&gt;
 
 &lt;!--break--&gt;
 
-&lt;p&gt;After some research, I found out that static site generators are tremendously promising tools that can deliver a superior website, though they require a tremendous amount of upfront work as well. Consider this your introduction to static site generators and why they’re important. &lt;/p&gt;
+&lt;p&gt;There will be an organ concert from noon to 4 p.m. at the Ida Cason Callaway Memorial Chapel to mark the occasion, according to a release. The concert will be played on a custom-built Möller pipe organ in a chapel that was designed and built as a tribute to Ida.&lt;/p&gt;
 
-&lt;h2 id=&quot;the-beginners-guide-to-static-site-generators&quot;&gt;The Beginner’s Guide to Static Site Generators&lt;/h2&gt;
+&lt;p&gt;The &lt;a href=&quot;http://www.callawaygardens.com/events/2015-11-06&quot;&gt;day calendar&lt;/a&gt; on the website also lists a free birds of prey show featuring owls, hawks and other raptors at 10:30 a.m.&lt;/p&gt;
 
-&lt;h3 id=&quot;what-is-a-static-site&quot;&gt;What is a static site?&lt;/h3&gt;
+&lt;p&gt;There will also be a classic Southern buffet between 5 p.m. and 9 p.m. at The Plant Room Restaurant. Cost to attend is $25.95 per adult and $12.50 per child ages 6-10. Children 5 and under are free.&lt;/p&gt;
 
-&lt;p&gt;First of all, let’s define a static site. Websites can be generally divided into two categories- static and dynamic. &lt;/p&gt;
+&lt;p&gt;The free admission comes just days before Callaway Gardens’ &lt;a href=&quot;http://www.ledger-enquirer.com/news/business/article41968617.html&quot;&gt;planned closure&lt;/a&gt; of the Sibley Horticultural Center.&lt;/p&gt;
 
-&lt;p&gt;A static website is one that is designed, stored and delivered to the user as-is. It doesn’t change between the point when you hit save and when the user clicks on it. You write the HTML, format it with CSS, and upload the page to your server. &lt;/p&gt;
+&lt;p&gt;“The closure of the Sibley Horticultural Center is a measure that allows us to focus on a better gardens experience and put the polish on another jewel, the Day Butterfly Center,” said William “Bill” Doyle III, president and CEO. “That work is already under way, with measurable progress by mid- to late-November. Guests should mark their calendars to visit this spring to see the new, colorful displays.”&lt;/p&gt;
 
-&lt;p&gt;Dynamic websites, conversely, are constructed by a server-side controller that can substitute content into the site through another program. A simple example of this is WordPress. You use a simple browser-based interface to input content and the server backend renders it on a webpage dynamically using PHP. &lt;/p&gt;
+&lt;p&gt;Mr. Cason’s Vegetable Garden has already been closed, apparently to be relocated. It and the Sibley Center have &lt;a href=&quot;http://www.callawaygardens.com/about-us/history/timeline&quot;&gt;long histories&lt;/a&gt; at Callaway Gardens, which was founded out of farm and forest lands in 1952 by Cason J. and Virginia Hand Callaway.&lt;/p&gt;
 
-&lt;p&gt;Dynamic web pages are useful for hosting updated content and adding content through a simpler interface than raw HTML. Imagine running a blog in a static format where you have to hand-code every new post from scratch- talk about a nightmare. &lt;/p&gt;
+&lt;p&gt;The Sibley Center is located on five ares and was built with private donations. It uses 300 tons of Tennessee fieldstone, 7,000 glass blocks and 26 folding doors. Each door is 24 feet tall and weighs 1,600 pounds. There is also a 22-foot waterfall with 350 gallons of water cascading downward each minute.&lt;/p&gt;
 
-&lt;p&gt;Each type of website has its own advantages. Dynamic websites tend to be capable of more fancy stuff than their static counterparts, as well as being easier to manage. &lt;/p&gt;
-
-&lt;p&gt;However, static websites are cheap to store, easy to build, and load much faster. If you’re making a website without a lot of dynamic or interactive elements, it’s worth looking at using a static site of HTML, CSS and some JavaScript. &lt;/p&gt;
-
-&lt;p&gt;In a world where mobile devices are quickly becoming the dominant type of device people use to browse the web, having a fast and lightweight website is crucially important. Users’ attention spans grow shorter every year, and every second your site spends loading that super cool client-side scripting increases the chances users will bail. &lt;/p&gt;
-
-&lt;p&gt;Web designers also have a tendency to over-design. You can add in a bunch of crazy scripts, but you probably shouldn’t. &lt;/p&gt;
-
-&lt;p&gt;You should make your website as simple as possible for the sake of good design and loading quickly. Look at &lt;a href=&quot;http://bettermotherfuckingwebsite.com&quot;&gt;this&lt;/a&gt; and tell me they don’t have a point. &lt;/p&gt;
-
-&lt;h3 id=&quot;what-is-a-static-site-generator&quot;&gt;What is a static site generator?&lt;/h3&gt;
-
-&lt;p&gt;A static site generator is a set of tools for building static websites automatically based on a set of input files. You give it some text files and content, and the generator will give you back a complete website. &lt;/p&gt;
-
-&lt;p&gt;For this guide, we’ll just look at using &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt;, the static site generator cooked up by one of the founders of GitHub. &lt;/p&gt;
-
-&lt;p&gt;In Jekyll, you have a set of nested templates. Each one has a bit of content you’ll put on every webpage. For example, head.html has a bit of code the generator will paste into the head of every HTML page you create. Change head.html and you change the head of every HTML page. This makes updating and managing the site infinitely easier. &lt;/p&gt;
-
-&lt;p&gt;The whole generation system works like this. You leave holes in the HTML pages and put in special placeholders that tell the generator what to fill in there. &lt;/p&gt;
-
-&lt;h3 id=&quot;how-do-i-generate-content&quot;&gt;How do I generate content?&lt;/h3&gt;
-
-&lt;p&gt;Content comes when you feed in specially formatted .markdown files. Markdown is a special markup language that is &lt;a href=&quot;http://www.technorms.com/44197/write-in-markdown-on-wordpress&quot;&gt;amazing for blogging&lt;/a&gt;. You can type in plain English with a few symbols for formatting and the computer converts it into HTML. &lt;/p&gt;
-
-&lt;p&gt;At the top of every .markdown file for your content, you also must put an info box. Enter it like this: &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;---
-layout: post
-title: title here
----
-Content starts here
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Everthing between those sets of three dashes won’t appear within the body of the story but is instead accessed as a variable. If you look within your other page templates, you might see: &lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The Beginner’s Guide to Using Static Site Generators For Creating Superior Websites&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This tells the static site generator to substitute whatever you put after the colon beside “title” in each individual post. That way you can define a page title once within the text and the generator pastes it everywhere in the HTML for you. &lt;/p&gt;
-
-&lt;p&gt;The really cool part is that you can roll your own variables and use those to substitute in content. &lt;/p&gt;
-
-&lt;p&gt;For example, I started putting together a blog with links to all my old stories. My HTML template has a link at the bottom of every page with “Original Link” as a link. The code looks like this: &lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;&amp;gt; &amp;lt;p&amp;gt;&amp;lt;a href=&quot;http://www.technorms.com/45284/beginners-guide-static-site-generators&quot; target=&quot;_blank&quot;&amp;gt;Original Story&amp;lt;/a&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In this case, the generator knows to fill in whatever link I define under “original: (link)” in every post to substitute there. Simple, and so much more efficient than manual editing. &lt;/p&gt;
-
-&lt;p&gt;That’s the real reward of static site generators. They’re an absolute pain to set up and get right, but once they’re ready adding new content and maintaining the system is incredibly easy. &lt;/p&gt;
-
-&lt;h3 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h3&gt;
-
-&lt;p&gt;Hopefully this helped clear up some differences between static and dynamic websites and why it matters. Static websites have tremendous potential, especially in a mobile-first world. A good website that’s done the work to set up its static generator could do well. &lt;/p&gt;
+&lt;p&gt;The facility, at one time marketed by Callaway Gardens as “one of the most advanced garden/greenhouse complexes in the world,” is about 22,000 square feet, with an additional 30,000 square feet of greenhouse production space. The complex, with floral and plant displays inside and out, underwent a $3.5 million renovation in 2003.&lt;/p&gt;
 </description>
-        <pubDate>Wed, 05 Aug 2015 00:00:00 -0400</pubDate>
-        <link>http://www.kylenazario.com/2015/08/05/ssgSetup.html</link>
-        <guid isPermaLink="true">http://www.kylenazario.com/2015/08/05/ssgSetup.html</guid>
+        <pubDate>Wed, 04 Nov 2015 00:00:00 -0500</pubDate>
+        <link>http://www.kylenazario.com/2015/11/04/callaway-gardens-free-day-close.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/11/04/callaway-gardens-free-day-close.html</guid>
         
         
-        <category>web,</category>
+        <category>opening,</category>
         
-        <category>tech,</category>
+        <category>business,</category>
         
-        <category>technorms,</category>
+        <category>environment,</category>
         
-        <category>guide</category>
+        <category>ledger,</category>
+        
+        <category>briefs</category>
         
       </item>
     
       <item>
-        <title>Building paves over snake habitat</title>
-        <description>&lt;p&gt;Auburn University shattered an unusual ecological system when it gave land for a new medical college, leaving only “fragments,” according to John Kush, research fellow in the School of Forestry and Wildlife Sciences.&lt;/p&gt;
+        <title>Red Cross needs blood during the holidays</title>
+        <description>&lt;p&gt;The American Red Cross is encouraging people around Columbus and Phenix City to donate blood during the holidays.&lt;/p&gt;
 
 &lt;!--break--&gt;
 
-&lt;p&gt;The Edward Via College of Osteopathic Medicine building, which began construction in February 2013, sits atop 15 of 21 acres in a plot of land which Kush said was managed by the School of Forestry and Wildlife Sciences since the 1950s.&lt;/p&gt;
+&lt;p&gt;“A seasonal decline in donations often occurs from Thanksgiving to New Year’s Day when donors get busy with family gatherings and travel,” a spokeswoman said in a release. “However, patients don’t get a holiday vacation from needing lifesaving transfusions.”&lt;/p&gt;
 
-&lt;p&gt;“Most people didn’t realize (the site) had a remarkable amount of what an ecologist might call residual biodiversity,” said Sharon Hermann, assistant professor of biological sciences. “The natural native ecosystem was not really intact, but there were a surprising number of individuals scattered around, of both plants and animals, that were once there 200-300 years ago.”&lt;/p&gt;
+&lt;p&gt;Everyone who donates between Nov. 25 and Nov. 29 will receive a Red Cross mixing spoon and celebrity chef recipe set while supplies last.&lt;/p&gt;
 
-&lt;p&gt;Hermann said the VCOM site was useful because it showed the Southeast as it existed in the past. The site held animals and plants such as trillium, mayapple and the cardinal flower.&lt;/p&gt;
+&lt;p&gt;The Red Cross said donors of all blood types are needed, especially those with O-negative, B-negative, A-negative and AB blood. Anyone who would like to donate needs a blood donor card, driver’s license or two other forms of identification. You must be at least 17, weigh 110 pounds and be in “generally good health.” High school students and other donors 18 and younger may also have to meet “certain height and weight requirements.”&lt;/p&gt;
 
-&lt;p&gt;Hermann said she and her students also found eastern kingsnakes on the property. According to her field notes, her undergraduate students spotted the snakes four times between Oct. 28, 2012, and June 30, 2013. The eastern kingsnake is a protected species in the state of Alabama, according to Craig Guyer, professor of biological sciences and the herpetologist who positively identified the snakes found by the students. Guyer said the black-and-white-banded serpents have been hard to find in the Southeastern United States since the early 1980s, though they are not federally protected.&lt;/p&gt;
+&lt;p&gt;To make an appointment to donate blood, download the Red Cross Blood Donor App (Android and iPhone), visit the Red Cross’ website or call 1-800-733-2767.&lt;/p&gt;
 
-&lt;p&gt;Kingsnakes are considered useful, Guyer said, because they generally leave people alone, are not venomous and eat other venomous snakes.&lt;/p&gt;
+&lt;p&gt;The release also listed several blood donation opportunities at these times:&lt;/p&gt;
 
-&lt;p&gt;&lt;span class=&quot;quote&quot;&gt;“there’s a lot of money involved.”&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;11/16/2015: 11 a.m. - 7 p.m., Columbus Blood Donation Center, 7490 Veterans Parkway&lt;/li&gt;
+  &lt;li&gt;11/16/2015: 2 - 7 p.m., Baptist Tabernacle Church, 849 South Davis Road&lt;/li&gt;
+  &lt;li&gt;11/17/2015: 11 a.m. - 7 p.m., Columbus Blood Donation Center, 7490 Veterans Parkway&lt;/li&gt;
+  &lt;li&gt;11/17/2015: 11:30 a.m. - 3:30 p.m., Department of Public Works, 1152 Cusseta Road&lt;/li&gt;
+  &lt;li&gt;11/17/2015: 3 - 7 p.m., Webster County Schools, 7168 Washington St. Preston&lt;/li&gt;
+  &lt;li&gt;11/18/2015: 12 - 7 p.m., Columbus Blood Donation Center, 7490 Veterans Parkway&lt;/li&gt;
+  &lt;li&gt;11/19/2015: 12 - 7 p.m., Columbus Blood Donation Center, 7490 Veterans Parkway&lt;/li&gt;
+  &lt;li&gt;11/20/2015: 8 a.m. - 2 p.m., Columbus Blood Donation Center, 7490 Veterans Parkway&lt;/li&gt;
+  &lt;li&gt;11/21/2015: 7 a.m. - 2 p.m., Columbus Blood Donation Center, 7490 Veterans Parkway&lt;/li&gt;
+  &lt;li&gt;11/21/2015: 12 - 5 p.m., LaGrange Mall, 1501 LaFayette Parkway&lt;/li&gt;
+  &lt;li&gt;11/23/2015: 11 a.m. - 7 p.m., Columbus Blood Donation Center, 7490 Veterans Parkway&lt;/li&gt;
+  &lt;li&gt;11/24/2015: 11 a.m. - 7 p.m., Columbus Blood Donation Center, 7490 Veterans Parkway&lt;/li&gt;
+  &lt;li&gt;11/25/2015: 7 a.m. - 2 p.m., Columbus Blood Donation Center, 7490 Veterans Parkway&lt;/li&gt;
+  &lt;li&gt;11/27/2015: 8 a.m. - 2 p.m., Columbus Blood Donation Center, 7490 Veterans Parkway&lt;/li&gt;
+  &lt;li&gt;11/27/2015: 1 - 6 p.m., The Church of Jesus Christ of Latter Day Saints, 4400 Reese Road&lt;/li&gt;
+  &lt;li&gt;11/28/2015: 7 a.m. - 2 p.m., Columbus Blood Donation Center, 7490 Veterans Parkway&lt;/li&gt;
+  &lt;li&gt;11/30/2015: 11 a.m. - 7 p.m., Columbus Blood Donation Center, 7490 Veterans Parkway&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 03 Nov 2015 00:00:00 -0500</pubDate>
+        <link>http://www.kylenazario.com/2015/11/03/red-cross-needs-donations.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/11/03/red-cross-needs-donations.html</guid>
+        
+        
+        <category>thanksgiving,</category>
+        
+        <category>holidays,</category>
+        
+        <category>health,</category>
+        
+        <category>psa,</category>
+        
+        <category>ledger,</category>
+        
+        <category>briefs</category>
+        
+      </item>
+    
+      <item>
+        <title>This family lost their home in a fire, but the community gave back</title>
+        <description>&lt;p&gt;For the Robinson family, Halloween was Christmas.&lt;/p&gt;
 
-&lt;p&gt;The University announced in October 2013 its plan to give the land to VCOM for development. &lt;/p&gt;
+&lt;!--break--&gt;
 
-&lt;p&gt;Becky Barlow, professor of biological sciences, and Kush said despite a letter-writing campaign from themselves and students who had used the area for research projects, the University still used the land.&lt;/p&gt;
+&lt;p&gt;Anthony St. Pierre, a Columbus firefighter paramedic, &lt;a href=&quot;/2015/09/29/batman.html&quot;&gt;collected donations&lt;/a&gt; of toys, blankets and clothing for the family for the past month. On Halloween, he presented the family with the collection.&lt;/p&gt;
 
-&lt;p&gt;“The site had tremendous potential,” Hermann said. “It was hard to lose that site, even though I understand the University needed someplace to put that building and that there’s a lot of money involved.”&lt;/p&gt;
+&lt;p&gt;The Robinsons have had a hard month. On Sept. 15, Tuesday, John Robinson’s mother passed away. Her funeral was on Friday. On Saturday, the Robinson’s rental trailer caught fire. Sunday was Robin’s fifth birthday.&lt;/p&gt;
 
-&lt;p&gt;Auburn University architect Jim Carroll said the Office of Facilities Management recommended the site because of its advantageous location.&lt;/p&gt;
+&lt;p&gt;“We lost it all,” John said. “Every bit.”&lt;/p&gt;
 
-&lt;p&gt;“Long term, we are master-planning that for the health sciences sector,” Carroll said.&lt;/p&gt;
+&lt;p&gt;John said what wasn’t ruined by the fire was stolen when the family was living out of a motel. He said the “scavengers” took kitchen appliances, DVD players (only one worked) and a TV bought for $3 at a garage sale.&lt;/p&gt;
 
-&lt;p&gt;Carroll said his office selected the site because its proximity to campus and the research park could encourage collaborative research between the College of Osteopathic Medicine and the planned nursing school.&lt;/p&gt;
+&lt;p&gt;St. Pierre said when he saw Raven Rose Robinson, 2, and Robin Renee Robinson, 5, he thought of his own children and wanted to give them a good Halloween. He originally planned to have the kids go to fire stations all over Columbus for a private trick-or-treat, but the Robinson parents John and Jessica decided it would be better to stay at fire station #4 on North Oakley Drive.&lt;/p&gt;
 
-&lt;p&gt;“It’s our job to evaluate the highest and best use of every piece of property the University owns,” Carroll said. “You could argue that we could have had that on Wire Road, or it could have been down by the veterinary school, but that did not have the strength of having it adjacent to the health science sector.”&lt;/p&gt;
+&lt;p&gt;For their private Halloween, Robin and Raven dressed up as princesses. St. Pierre, a comic book fan, came as Batman. His friend Caitlin Norton drove in from Atlanta and dressed as Batgirl to help present the donations to the family.&lt;/p&gt;
 
-&lt;p&gt;Mike Kensler, director of the Office of Sustainability, said the University has been working with VCOM and contractor Brasfield and Gorrie to develop the building in an environmentally friendly manner.&lt;/p&gt;
+&lt;iframe src=&quot;http://www.ledger-enquirer.com/incoming/article42072678.html/video-embed&quot; width=&quot;640&quot; height=&quot;380&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;Kensler said if done properly, developing campus land did not have to affect the stormwater runoff and remaining habitat.&lt;/p&gt;
+&lt;p&gt;“The oldest one, Robin, she almost started crying when she saw all of this,” Norton said. “Even Raven was starting to cry because all of the stuff was for them. That’s what it’s all about right there.”&lt;/p&gt;
 
-&lt;p&gt;&lt;span class=&quot;quote&quot;&gt;“What they left were little fragments.”&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Robin and Raven got to play with dozens of toys donated by people as far away as Los Angeles and Ohio.&lt;/p&gt;
 
-&lt;p&gt;Kush, who worked on the VCOM land for 12 years, said he doubted the contractors could handle the flooding. Kush also said the building would inevitably impact the environment.&lt;/p&gt;
+&lt;p&gt;St. Pierre said news of the family’s plight spread over social media and inspired an outpouring of donations. He said he filled up one of the ambulances several times over with all the blankets and toys people donated.&lt;/p&gt;
 
-&lt;p&gt;“You’re taking something that was 21 acres and paving over most of it,” Kush said. “What they left were little fragments that couldn’t support the whole variety [of species].”&lt;/p&gt;
+&lt;p&gt;“(This) gives our girls things they haven’t had for a month,” John said. “We appreciate it. It’s nice to see people willing to help.”&lt;/p&gt;
 
-&lt;p&gt;Kush said the exact spot where Hermann found the rare kingsnakes is now a parking lot.&lt;/p&gt;
+&lt;p&gt;If you’d like to donate gently used goods or toys, drop them off at the fire station at 200 North Oakley Drive, Columbus, GA 31907.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 31 Oct 2015 00:00:00 -0400</pubDate>
+        <link>http://www.kylenazario.com/2015/10/31/halloween-charity-batman.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/10/31/halloween-charity-batman.html</guid>
+        
+        
+        <category>halloween,</category>
+        
+        <category>holidays,</category>
+        
+        <category>humaninterest,</category>
+        
+        <category>ledger,</category>
+        
+        <category>viral</category>
+        
+      </item>
+    
+      <item>
+        <title>ToDo this Halloween- Trunk-or-treat, Spooktacular and a Paw-rade</title>
+        <description>&lt;p&gt;If you haven’t already carved your pumpkin, you only have a couple more days left to dig out those seeds.&lt;/p&gt;
 
-&lt;p&gt;No one who spoke to The Plainsman said they knew what happened to the eastern kingsnakes found on the VCOM site.&lt;/p&gt;
+&lt;!--break--&gt;
 
-&lt;p&gt;Guyer said it is “virtually certain” the snakes stayed on the site through construction in spring 2014 because they had begun reproducing.&lt;/p&gt;
+&lt;p&gt;Halloween is Saturday and there are numerous things going on around town for your fall festival pleasure.&lt;/p&gt;
 
-&lt;p&gt;Carroll said the Office of Facilities Management commissioned a study by BioResources, LLC., an outside contractor, to check the site for federally listed plant and animal species.&lt;/p&gt;
+&lt;p&gt;Trick-or-treat times in the area vary a little: Columbus 6-9 p.m., Phenix City 5:30-8:30 p.m., Fort Benning 6-8 p.m. and Hamilton 5-7 p.m.&lt;/p&gt;
 
-&lt;p&gt;Carroll said though he knew kingsnakes were on the property, he did not know if they lived on the 15 acres occupied by the VCOM building.&lt;/p&gt;
+&lt;p&gt;Of course, be careful crossing the streets if you’re out asking for candy. Drivers, be wary of kids and keep an eye out especially when it gets dark.&lt;/p&gt;
 
-&lt;p&gt;Roger Clay, marine biologist for the Alabama Department of Conservation and Natural Resources, said his department would need proof of the kingsnakes being killed during construction to pursue action against Auburn University.&lt;/p&gt;
+&lt;p&gt;Here are some Halloween events going on in the area. If we’re missing any, email me at knazario@ledger-enquirer.com and I’ll add it.&lt;/p&gt;
 
-&lt;p&gt;He called chances of any legal consequences “slim to none.” With the VCOM building almost complete, Guyer said it’s too late to save rare species such as the eastern kingsnake on that particular site.&lt;/p&gt;
+&lt;h3 id=&quot;friday&quot;&gt;FRIDAY&lt;/h3&gt;
 
-&lt;p&gt;The best plan for the future, according to Guyer, is to map every plant and animal species on campus.&lt;/p&gt;
+&lt;p&gt;ZOMBIE ZIP: Zip over the Chattahoochee and enjoy two towers full of terrors. 10 percent of proceeds benefit the Springer Opera House. Friday and Saturday. $40, 8 p.m. 1000 Bay Ave. Columbus 31901&lt;/p&gt;
 
-&lt;p&gt;“I’d love to see it,” Guyer said. “We’d like to provide that so that the campus will be armed with that when they think about developing in the future.”&lt;/p&gt;
+&lt;p&gt;NORTH HIGHLAND PUMPKIN PATCH: Runs through Saturday. Call 706-561-7777 for group reservations. $2 and up per pumpkin, 10 a.m.-dark Friday and Saturday. 7300 Whittlesey Blvd Columbus 31909&lt;/p&gt;
+
+&lt;p&gt;SUMMERVILLE PUMPKIN PATCH: Runs through Saturday. Free, 1-7 p.m. 1201 32nd St., Phenix City 36867&lt;/p&gt;
+
+&lt;p&gt;JACK-O-LANTERN LANE: Come see the beautiful country setting, pumpkin patch, fresh corn meal, train rides, pony rides and farm animals. Admission includes a wagon ride and pumpkin, but other activities cost extra. $7, Noon-5 p.m. Friday, 9 a.m.-6 p.m. Saturday. 18151 Veterans Memorial Parkway, LaFayette, Ala. 36862&lt;/p&gt;
+
+&lt;p&gt;GEORGIA PUMPKIN PATCH: Celebrate the harvest with corn stalks, decorative gourds, terra-cotta pumpkins, marigolds, mums, autumn merchandise, and every pumpkin related food you can imagine. Free, 8 a.m.-6 p.m. Friday and Saturday. 9616 Fortson Road Fortson, Ga. 31808&lt;/p&gt;
+
+&lt;p&gt;ALL HALLOWS EVE: Columbus Public Library will host family fun with movies and treats in the auditorium. There is limited space. Free, 3-6 p.m. 3000 Macon Road, Columbus 31906&lt;/p&gt;
+
+&lt;p&gt;FALL FESTIVAL AT THE Y: D.A. Turner YMCA will host a festival with a treat trail, pumpkin carving contest, costume contest, face painting, arts and crafts, carnival games and a bounce house. No masks or weapons. Free, 4 p.m. 4384 Warm Springs Road, Columbus 31909&lt;/p&gt;
+
+&lt;p&gt;ROCK-O-WEEN: Treadstone Climbing Gym will have candy, prizes, a costume party, games and black light climbing. $25 per person, $5 off with costume, 6-10 p.m. 4209 Milgren Road, Suite 7. Columbus 31907&lt;/p&gt;
+
+&lt;p&gt;HALLELUJAH NIGHT: New Birth Outreach Church will have hay rides, face painting, a wing-eating contest, cake walk, cotton handy, hula-hoop contest and free food. Free, 6:30-8:30 p.m. 10107 Veterans Parkway, Midland, Ga. 31820&lt;/p&gt;
+
+&lt;p&gt;TRUNK OR TREAT: Rose Hill Church is having a night of family fun with dinner, games, hay rides and more. Free, 6:30 p.m. 7479 Old Moon Road, Columbus 31909&lt;/p&gt;
+
+&lt;p&gt;THE ROCKY HORROR SHOW: See the spooky rock-n-roll musical that inspired the cult movie. Also plays at 7:30 p.m. and 11 p.m. Saturday. $20 for adults, $17 for seniors/active duty military/groups of 10+, $12 for children 12 and under. 7:30 p.m. 6 W. 10th St. Columbus 31901&lt;/p&gt;
+
+&lt;p&gt;HALLOWEEN HOTEL HORROR: See the dinner theater show that will have you guessing who the villain is to win a special prize. Guests are encouraged to come in costume and compete for best costume. Two audience roles will be assigned each evening to the most promising actors as well. Runs at the same times on Saturday. $30, with discounts for groups, 12 a.m. and 9:30 p.m. 8701 Garrett Road Midland, Ga. 31820&lt;/p&gt;
+
+&lt;h3 id=&quot;saturday&quot;&gt;SATURDAY&lt;/h3&gt;
+
+&lt;p&gt;OPERATION TROOP TREATS: Kool Smiles Columbus is encouraging children to bring their Halloween candy to any area Kool Smiles dental offices in exchange for a toy. The candy will be sent in care packages to U.S. soldiers overseas as part of Operation Gratitude. Children will receive one toy for every 25 pieces of unopened candy in its original packaging. Limit three toys per child. Runs through Nov. 4. Free, All Day, 4519 Woodruff Road, Columbus 31904&lt;/p&gt;
+
+&lt;p&gt;SPOOKTACULAR HALLOWEEN FESTIVAL: A free and safe environment for children to enjoy an afternoon of ghosts and goblins, spooky activities, candy and lots of fun. There will be a costume contest. Free, 2-4 p.m. 25 W. 10th St., Ste 4, Columbus 31901&lt;/p&gt;
+
+&lt;p&gt;TRUNK OR TREAT: Candy, rides, inflatables, games, a petting zoo, pony rides and a rock wall. $5, 5-7 p.m. 7300 Whittlesey Blvd. Columbus 31909&lt;/p&gt;
+
+&lt;p&gt;HALLOWEEN AT BUTTS MILL FARM: Celebrate Halloween at Butts Mill Farm. The first 100 kids will receive a free pumpkin to collect candy, which will be given out for free by staff throughout the farm. There will be carnival games, a bonfire, carnival food and a free mini-pumpkin to paint for the first 50 kids. $10, 10 a.m.-4 p.m., 2280 Butts Mill Road, Pine Mountain, Ga. 31822&lt;/p&gt;
+
+&lt;p&gt;BROADWAY PAW-RADE: The fourth annual Broadway Paw-rade at Market Days raises money for Paws Humane and the Columbus Animal Care &amp;amp; Control Center. There will be a costume contets for the dogs and a live DJ. $10, 9:30 a.m. Broadway, in the median in front of The Loft&lt;/p&gt;
+
+&lt;p&gt;NOT SO SPOOKY HALLOWEEN FESTIVAL: The Rock Ranch will have magic shows, a children’s costume contest, pet costume contest, trick-or-treating, the Frisbee dog state championship, a pumpkin cannon and a magician. $15, 10 a.m.-8 p.m. 5020 Barnesville Highway, The Rock, Ga. 30285&lt;/p&gt;
+
+&lt;p&gt;SUMMERVILLE UMC FALL FESTIVAL: Summerville United Methodist Church is hosting a Fall Festival every Saturday during October. This week will have games, inflatables, baked goods, a pumpkin patch and a huge corn bin. Games and inflatables are free. $1 per person for groups, 10 a.m.-2 p.m. 1201 32nd St., Phenix City 36867&lt;/p&gt;
+
+&lt;p&gt;FARM HOUSE PUMPKIN PATCH: Take a hay ride over to the pumpkin field and enjoy lunch with fall activities. Price not listed, 10 a.m., 469 Farmhouse Road, Ellerslie, Ga. 31807&lt;/p&gt;
+
+&lt;p&gt;FALL FESTIVAL: Redeemer Lutheran Church will have a Fall Festival with carnival games, a bounce house, food, fall crafts, a cupcake walk and Trunk or Treat. Bring a canned good to support Feeding the Valley. Free, 11 a.m.-2 p.m. 4700 Armour Road, Columbus 31904&lt;/p&gt;
+
+&lt;p&gt;HALLOWEEN STORYTIME: Barnes &amp;amp; Noble will feature Halloween stories and complete a craft. Children are encouraged to come in costume and parade around the store for trick-or-treat goodies. Free, 11 a.m.-12 p.m. 5555 Whittlesey Blvd No. 1800, Columbus 31909&lt;/p&gt;
+
+&lt;p&gt;TRICK-OR-TREAT AROUND THE LIBRARY: Come hear not-so-scary stories at the Columbus Public Library. Free, 2-4 p.m. 3000 Macon Road, Columbus 31906&lt;/p&gt;
+
+&lt;p&gt;BLOCK PARTY: There will be a free block party behind the Huddle House with free food, refreshments, giveaways, and free candy for children. Free, 2-4 p.m. 1811 Victory Drive, Suite 3 Columbus 31901&lt;/p&gt;
+
+&lt;p&gt;HALLELUJAH FESTIVAL: Mt. Zion UMC will have games, a costume contest, Trunk or Treat, a cake walk, inflatables and Elsa and Anna from “Frozen.” Free, 3-5 p.m. 2616 Lee Road 243 Smiths Station, Ala. 36877&lt;/p&gt;
+
+&lt;p&gt;TRICK OR TREAT AT PUBLIX: Come to Publix to get a coloring sheet and candy. Free, 4-7 p.m. 3201 Macon Road Ste 201, Columbus 31906&lt;/p&gt;
+
+&lt;p&gt;FALL FESTIVAL: Epworth UMC will have a festival with food, music, inflatables and Trunk or Treat. 4 p.m. 3763 U.S. 280, Phenix City 36867&lt;/p&gt;
+
+&lt;p&gt;TRICK OR TRUNK: The Way Church will host a Trick or Trunk. Free, 1593 Lee Road 242 Smiths Station, Ala. 36877&lt;/p&gt;
+
+&lt;p&gt;HALLOWEEN AT THE SPEEDWAY: The East Alabama Motor Speedway will celebrate Halloween with trick-or-treating, face painting, balloon animals, and a costume contest. Free with price of admission, 5-7 p.m. 4238 U.S. 80 Phenix City 36869&lt;/p&gt;
+
+&lt;p&gt;ARK IN THE PARK: Join Britt David Baptist Church for a safe, Christ-centered trick-or-treat alternative with candy, games, rides, inflatables, food and prizes. Free, 5:30-7:30 p.m. 5560 Armour Road, Columbus 31909&lt;/p&gt;
+
+&lt;p&gt;HALLOWEEN BASH: Stop by Fuddruckers for a special Halloween party with live music from Johnny Kempt. Free kids’ meals for children 12 and under in costume. 6-9 p.m. 5524 Whitesville Road, Columbus 31904&lt;/p&gt;
+
+&lt;h3 id=&quot;sunday&quot;&gt;SUNDAY&lt;/h3&gt;
+
+&lt;p&gt;FALL BACK SERVICE AND FESTIVAL: Join RiverTown Church for a Fall Back Worship Service and festival with hay rides, a petting zoo, popcorn, a bake sale and barbecue. A $10 lunch includes chicken or pork, sides, bread and drinks. Proceeds support missions in Guatemala. $10, 6953 Schomburg Road, Columbus 31909&lt;/p&gt;
+</description>
+        <pubDate>Fri, 30 Oct 2015 00:00:00 -0400</pubDate>
+        <link>http://www.kylenazario.com/2015/10/30/halloween-todo-events.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/10/30/halloween-todo-events.html</guid>
+        
+        
+        <category>halloween,</category>
+        
+        <category>holidays,</category>
+        
+        <category>psa,</category>
+        
+        <category>ledger,</category>
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>Eufaula latex plant to restart under Steve Harvey, Greg Calhoun</title>
+        <description>&lt;p&gt;Comedian Steve Harvey and Montgomery businessman Greg Calhoun are reopening a latex plant in Eufaula next year, according to Calhoun.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;“We wanted to put people back to work,” Calhoun said. “It’s a blessed opportunity.”&lt;/p&gt;
+
+&lt;p&gt;Calhoun, who has been friends with Steve Harvey for 15 years, said the two were interested in Eufaula because it has the only latex plant in the United States.&lt;/p&gt;
+
+&lt;p&gt;Eufaula Mayor Jack Tibbs Jr. said the plant now known as Ameritex closed down in 2008 when it lost its contract with USAID producing condoms for AIDS prevention. Tibbs estimated that contract was 95 percent of the plant’s business.&lt;/p&gt;
+
+&lt;p&gt;Calhoun said he plans to have the factory produce mostly latex gloves for major organizations such as Wal-Mart, the Transportation Security Administration, poultry producers and hospitals.&lt;/p&gt;
+
+&lt;p&gt;He said he’s already spoken with Rob Walton, chairman of Wal-Mart, who has indicated interest in buying gloves from the factory as part of the retailer’s initiative to move jobs back to the United States.&lt;/p&gt;
+
+&lt;p&gt;Calhoun said he hopes to have the first two lines operational by January 2016 and the whole plant online in four phases through 2018.&lt;/p&gt;
+
+&lt;p&gt;Although Calhoun said it was “nice to have Wal-Mart to start out with,” he doesn’t plan on having only one major customer like the plant did before.&lt;/p&gt;
+
+&lt;p&gt;“(Walton) didn’t want to be our only customer,” Calhoun said. “He wanted us to get out there and find others.”&lt;/p&gt;
+
+&lt;p&gt;Calhoun said the output from one line in Ameritex could supply Wal-Mart, leaving several others for different customers.&lt;/p&gt;
+
+&lt;p&gt;Jim Bradley, director of economic development for the city of Eufaula, said there are about 10 people working on retooling the four production lines to make them ready to produce latex gloves instead of condoms. He said only one of the four was already set up to do gloves.&lt;/p&gt;
+
+&lt;p&gt;Tibbs said there is a great deal of excitement for the plant, which is estimated to bring 300 jobs over two years. Each line will require 65-70 people, plus supervisors, management and warehouse employees.&lt;/p&gt;
+
+&lt;p&gt;Bradley said the plant will slowly staff up as more of it comes online. He estimates that 27 people will be working there on Jan. 4, 2016, and 100 by the end of 2016. By 2018, there should be 350 people hired.&lt;/p&gt;
+
+&lt;p&gt;“It’s a long, complicated process, but Mr. Harvey and Mr. Calhoun have a terrific vision for the future of latex,” Bradley said.&lt;/p&gt;
+
+&lt;p&gt;Tibbs said he was happy to see jobs returning to Alabama and especially Eufaula.&lt;/p&gt;
+
+&lt;p&gt;“(Harvey) can be a serious guy,” Tibbs said. “He wants to put people back to work.”&lt;/p&gt;
+
+&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;
+&lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = &quot;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.3&quot;;  fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;
+&lt;div class=&quot;fb-post&quot; data-href=&quot;https://www.facebook.com/helpeufaulaalabamalive/posts/980656351997870&quot; data-width=&quot;500&quot;&gt;&lt;div class=&quot;fb-xfbml-parse-ignore&quot;&gt;&lt;blockquote cite=&quot;https://www.facebook.com/helpeufaulaalabamalive/posts/980656351997870&quot;&gt;&lt;p&gt;***STEVE HARVEY TALKING JOBS FOR EUFAULA***&lt;/p&gt;Posted by &lt;a href=&quot;https://www.facebook.com/helpeufaulaalabamalive/&quot;&gt;Help Eufaula Alabama Live&lt;/a&gt; on&amp;nbsp;&lt;a href=&quot;https://www.facebook.com/helpeufaulaalabamalive/posts/980656351997870&quot;&gt;Friday, October 23, 2015&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;
+</description>
+        <pubDate>Thu, 29 Oct 2015 00:00:00 -0400</pubDate>
+        <link>http://www.kylenazario.com/2015/10/29/steve-harvey-eufaula-condom-factory-plant.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/10/29/steve-harvey-eufaula-condom-factory-plant.html</guid>
+        
+        
+        <category>eufaula,</category>
+        
+        <category>opening,</category>
+        
+        <category>business,</category>
+        
+        <category>ledger,</category>
+        
+        <category>news</category>
+        
+      </item>
+    
+      <item>
+        <title>That Secret Society letter is as fake as it sounds</title>
+        <description>&lt;p&gt;The Better Business Bureau sent out a warning about a scam that may show up in postal service mailboxes.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;The letter from the “Secret Society” asks for $135 for “10 miracles that will transform your life,” including:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Slim down to a body others will envy&lt;/li&gt;
+  &lt;li&gt;Become a genius&lt;/li&gt;
+  &lt;li&gt;Unlock your hidden creativity&lt;/li&gt;
+  &lt;li&gt;Live as a VIP&lt;/li&gt;
+  &lt;li&gt;Make $5,000 a month&lt;/li&gt;
+  &lt;li&gt;The service offers to send you a Secret Manuscript explaining how to obtain these rewards.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The Bureau called the whole system a pyramid scheme that would require victims to recruit more people into the scam.&lt;/p&gt;
+
+&lt;p&gt;The Bureau advised consumers to avoid letters that offer pie-in-the-sky statements, say they’ll give benefits if you recruit others, ask that you keep information confidential, or require you to send a check or credit card.&lt;/p&gt;
+
+&lt;p&gt;As always with scams: If it sounds too good to be true, it probably is.&lt;/p&gt;
+</description>
+        <pubDate>Thu, 29 Oct 2015 00:00:00 -0400</pubDate>
+        <link>http://www.kylenazario.com/2015/10/29/secret-society-letter-scam.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/10/29/secret-society-letter-scam.html</guid>
+        
+        
+        <category>scams,</category>
+        
+        <category>psa,</category>
+        
+        <category>ledger,</category>
+        
+        <category>briefs</category>
+        
+      </item>
+    
+      <item>
+        <title>Traveling, the way he would have wanted</title>
+        <description>&lt;p&gt;William Nathan Thomas Daniels died too soon.&lt;!--break--&gt; The 23-year-old Phenix City resident ran off Randolph County Road 82 at 6 a.m. and &lt;a href=&quot;http://www.al.com/news/anniston-gadsden/index.ssf/2015/10/phenix_city_man_killed_when_ve.html&quot;&gt;struck an embankment&lt;/a&gt;. He was pronounced dead at the scene by Alabama state troopers.&lt;/p&gt;
+
+&lt;p&gt;The loss of the beloved son, older brother and boyfriend turned his loved ones’ world upside down.&lt;/p&gt;
+
+&lt;p&gt;Overton said she met Daniels at his house in Phenix City on June 14, 2015.&lt;/p&gt;
+
+&lt;p&gt;“It was instant,” she said. “He told me within the first week we were soulmates. I thought he was crazy. I just shrugged it off… [but] it didn’t take me long before I realized he was onto something.”&lt;/p&gt;
+
+&lt;p&gt;Overton and Daniels connected over a shared love of travel and music. They loved discovering new bands together and sharing them with the other person. They had already booked a hotel and bought tickets to a Zeds Dead concert in Nashville in November.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/assets/overton2.jpg&quot; class=&quot;imgRight&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Overton said the two wanted to wait to have kids until their 30s so they could travel the world. They made plans to go to Europe the following year. Daniels, an Army brat who moved around the world, spent three years in Baumholder, Germany, when he was a baby and wanted to visit again.&lt;/p&gt;
+
+&lt;p&gt;The couple had planned to rent a house in LaGrange in February. They’d already picked out a favorite.&lt;/p&gt;
+
+&lt;p&gt;Overton said she loved Daniels’ passion for life, travel, music and his small circle of close friends.&lt;/p&gt;
+
+&lt;p&gt;“If he loved you, then you knew it,” Overton said. “He gave it his all in everything.”&lt;/p&gt;
+
+&lt;p&gt;Overton said when she collected his possessions after the wreck, she pressed play on his Galaxy S6 and received a shock.&lt;/p&gt;
+
+&lt;p&gt;“It was in the middle of a song… it was our band,” she said. “The whole band was about love and passion and that one song was about losing that love. It was just bone-chilling.”&lt;/p&gt;
+
+&lt;p&gt;Overton said she wants to make sure William Nathan Thomas Daniels is remembered. She is planning a cross-country road trip with his ashes. Daniels’ father Tom Daniels said he hopes he can go for some of the trip, if circumstances allow.&lt;/p&gt;
+
+&lt;p&gt;Overton’s plan starts with renting a car and driving out to El Paso, Texas, where Daniels lived. After that, Las Vegas and Fort Irvin, Calif., where Daniels was born. From there she’ll drive up to Portland, Ore., and Seattle, where one of Daniels’ friends lives.&lt;/p&gt;
+
+&lt;p&gt;She’s running a &lt;a href=&quot;https://www.gofundme.com/r76j58ws&quot;&gt;GoFundMe drive&lt;/a&gt; to help collect money for the trip. If Overton raises enough, she is thinking about flying to Germany and spending time in Europe. She said they had planned to go to Italy next summer. She’d love to see the country and backpack around as much as possible. Overton does not plan to leave until next spring break, so the plans are still in motion.&lt;/p&gt;
+
+&lt;p&gt;Overton said she’s also applied for as many overtime shifts as is legally possible at her job as a lab assistant at Columbus Regional Medical Center. It helps save money for the trip and keep her mind off of her loss.&lt;/p&gt;
+
+&lt;p&gt;“I just want to go as many places as I possibly can,” Overton said. “It is my last gift to him. It’s something I want to do to make sure he’s remembered. I don’t want him to just go away. I don’t want him to just sit up on a shelf and collect dust. I want him to be where his heart wanted to be.”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/assets/overton3.jpg&quot; class=&quot;ImgMiddle&quot; /&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 27 Oct 2015 00:00:00 -0400</pubDate>
+        <link>http://www.kylenazario.com/2015/10/27/samOverton.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/10/27/samOverton.html</guid>
+        
+        
+        <category>humaninterest,</category>
+        
+        <category>living,</category>
+        
+        <category>ledger,</category>
+        
+        <category>features,</category>
+        
+      </item>
+    
+      <item>
+        <title>Videos filmed for heroin project</title>
+        <description>&lt;p&gt;The effects of heroin addiction, as told by those involved. &lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;I filmed these videos while assisting Ledger reporter Alva James-Johnson with her Red Ribbon Week series on heroin addiction. The paper does not have any professional video equipment, so I jury-rigged a tripod stand for an iPad Air 2 and filmed heroin addict Joseph Sibold in the quietest room the jail had. &lt;/p&gt;
+
+&lt;iframe src=&quot;http://www.ledger-enquirer.com/incoming/article41210955.html/video-embed&quot; width=&quot;640&quot; height=&quot;380&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe src=&quot;http://www.ledger-enquirer.com/incoming/article41198343.html/video-embed&quot; width=&quot;640&quot; height=&quot;380&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;iframe src=&quot;http://www.ledger-enquirer.com/incoming/article40976757.html/video-embed&quot; width=&quot;640&quot; height=&quot;380&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Heroin crisis series: &lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.ledger-enquirer.com/news/local/article41368176.html&quot;&gt;Part 1&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.ledger-enquirer.com/news/local/article41419356.html&quot;&gt;Part 2&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.ledger-enquirer.com/news/local/article41512062.html&quot;&gt;Part 3&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.ledger-enquirer.com/news/local/article41645310.html&quot;&gt;Part 4&lt;/a&gt;&lt;/td&gt;
+      &lt;td&gt;&lt;a href=&quot;http://www.ledger-enquirer.com/incoming/article41882292.html&quot;&gt;Part 5&lt;/a&gt;&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</description>
+        <pubDate>Sun, 25 Oct 2015 00:00:00 -0400</pubDate>
+        <link>http://www.kylenazario.com/2015/10/25/heroin-series-videos.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/10/25/heroin-series-videos.html</guid>
+        
+        
+        <category>heroin,</category>
+        
+        <category>drugs,</category>
+        
+        <category>crime,</category>
+        
+        <category>ledger,</category>
+        
+        <category>video</category>
+        
+      </item>
+    
+      <item>
+        <title>Katherine McCarron is mad because Bengals players were shown changing on TV</title>
+        <description>&lt;p&gt;Katherine McCarron, a Phenix City native and wife of former Alabama quarterback AJ McCarron, was not happy about an invasion of the Cincinnati Bengals’ privacy.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;The NFL Network conducted an interview with Adam “Pacman” Jones with several of his teammates nude in the background. They were showering and changing into street clothes.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;No missing the point. Players should have their privacy. I&amp;#39;m sure female reports would rather not be in there &lt;a href=&quot;https://t.co/1FjAXHQxPH&quot;&gt;https://t.co/1FjAXHQxPH&lt;/a&gt;&lt;/p&gt;&amp;mdash; Katherine McCarron (@_KatherineWebb) &lt;a href=&quot;https://twitter.com/_KatherineWebb/status/656216906165329924&quot;&gt;October 19, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;An NFL Network told ESPN the interview was “a regrettable mistake.”&lt;/p&gt;
+
+&lt;p&gt;Bengals offensive lineman Andrew Whitworth also took to Twitter to vent his frustrations over the choice of interview location.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot; lang=&quot;en&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;why do I have to explain to my kids why their dad is naked on tv? &amp;#10;&lt;a href=&quot;https://twitter.com/nflcommish&quot;&gt;@nflcommish&lt;/a&gt; ?? &amp;#10;&lt;a href=&quot;https://twitter.com/nflnetwork&quot;&gt;@nflnetwork&lt;/a&gt; ??&amp;#10;Time for a media policy change!!&lt;/p&gt;&amp;mdash; Andrew Whitworth (@BigWhit77_fndn) &lt;a href=&quot;https://twitter.com/BigWhit77_fndn/status/656107615588626433&quot;&gt;October 19, 2015&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;//platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;Katherine McCarron  was raised in the Columbus-Phenix City area and graduated from Auburn University. She first entered the national spotlight after some &lt;a href=&quot;http://www.ledger-enquirer.com/news/local/article29325652.html&quot;&gt;odd comments&lt;/a&gt; were made about her during a national championship. She has also appeared in the Sports Illustrated Swimsuit Issue and competed on reality show “Splash.”&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.ledger-enquirer.com/news/local/article29291965.html&quot;&gt;Overnight celebrity: Katherine Webb aims to prove she’s ‘more than just a pretty face’&lt;/a&gt; - Our 2013 profile of Webb.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;[&lt;a href=&quot;http://www.foxsports.com/nfl/story/cincinnati-bengals-katherine-webb-loses-it-over-players-being-shown-nude-in-locker-room-101915&quot;&gt;h/t Fox Sports&lt;/a&gt;]&lt;/em&gt;&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Oct 2015 00:00:00 -0400</pubDate>
+        <link>http://www.kylenazario.com/2015/10/20/mccarronLockerRoom.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/10/20/mccarronLockerRoom.html</guid>
+        
+        
+        <category>nfl,</category>
+        
+        <category>sports,</category>
+        
+        <category>ledger,</category>
+        
+        <category>viral</category>
+        
+      </item>
+    
+      <item>
+        <title>Cigarette taxes went up in Alabama, so why aren’t smokers coming to Georgia?</title>
+        <description>&lt;p&gt;Alabama hiked the tax on cigarettes this year, but it doesn’t seem to be affecting smokers’ behavior.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;On Sept. 17, Gov. Robert Bentley signed Act No. 2015-535 into law and raised the tax on a pack of 20 cigarettes from $0.43 to $0.675. The price hike took effect on Oct. 1. &lt;/p&gt;
+
+&lt;p&gt;Alabama’s tax is now more than 30 cents higher than Georgia’s statewide rate of 37 cents per pack. The retail price is affected by other things like store markup, but the tax is still a factor. &lt;/p&gt;
+
+&lt;p&gt;The price of a pack of Marlboro Red cigarettes was $6.35 at the Marathon Gas at 410 Martin Luther King Jr. Parkway in Phenix City. That same pack cost only $5.46 at the Circle K at 1445 Veterans Parkway in Columbus. &lt;/p&gt;
+
+&lt;p&gt;The effect on smokers’ behavior, however, seems to be minimal. In a strictly unscientific survey of several convenience stores and gas stations close to the Chattahoochee River, employees said they had not seen any noticeable shift in their businesses. &lt;/p&gt;
+
+&lt;p&gt;Rhonda Montalbo, manager of the Bizzy Bee Mart at 2100 Crawford Road in Phenix City, said her customers were not changing their behavior. &lt;/p&gt;
+
+&lt;p&gt;“Just a lot of fussin’,” Montalbo said. “A smoker is going to pay what they are going to pay for the convenience of wherever they are.”&lt;/p&gt;
+
+&lt;p&gt;Christine Mudd, who manages the Circle K at 215 4th Street in Columbus, said she hadn’t seen many new faces at her store, though she’d heard customers discuss the tax hike.&lt;/p&gt;
+
+&lt;p&gt;Kenneth Justice, the manager of Justice Food Mart at 1403 11th Ave. in Phenix City, said he’s less worried about the higher tax than he is about bootleggers who resell packs by the cigarette. &lt;/p&gt;
+
+&lt;p&gt;“Cigarette smokers don’t go that far to buy their cigarettes unless they’re buying in bulk,” said Paresh Patel, manager of the Liberty gas station at 400 3rd Ave. He said he has not seen a lot of new customers either. &lt;/p&gt;
+
+&lt;p&gt;Patel pointed out that the cost of a pack of cigarettes is more than its retail price. It may not be worth spending the time, effort and gas to cross the river just to save money on a single pack. &lt;/p&gt;
+
+&lt;p&gt;Frank J. Chaloupka, professor of economics at the University of Illinois at Chicago, &lt;a href=&quot;http://tigger.uic.edu/~fjc/Presentations/Papers/taxes_consump_rev.pdf&quot;&gt;said&lt;/a&gt; changes in behavior from new cigarette taxes take a long time to become noticeable. It may be too soon to measure any significant change just weeks in. &lt;/p&gt;
+
+&lt;p&gt;Alabama Arise executive director Kimble Forrister said legislators and interest groups expected little change from this hike.  &lt;/p&gt;
+
+&lt;p&gt;Forrister said a tobacco industry lobbyist was present during committee hearings over the tax increase and told Alabama legislators a 25-cent increase was acceptable. &lt;/p&gt;
+
+&lt;p&gt;“If you keep the tax increase as low as 25 cents a pack, it’s not gonna affect behavior that much,” Forrister said.&lt;/p&gt;
+
+&lt;p&gt;Alabama Arise supported a higher tax increase for its beneficial health effects, according to Forrister.&lt;/p&gt;
+
+&lt;p&gt;A &lt;a href=&quot;http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3228562/#b4-ijerph-08-04118&quot;&gt;review of studies&lt;/a&gt; on cigarette taxes found that raising cigarette prices made low-income families more likely to quit buying them. Any decrease in smokering is a financial and health benefit to Alabama, Forrister said, especially if it saves money with Medicaid. &lt;/p&gt;
+
+&lt;p&gt;“It should be at least 55 cents, preferably a dollar,” Forrister said. “That’s going to be a fight for another day.” &lt;/p&gt;
 
 &lt;p&gt;Why it’s a highlight: &lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;I spent several months investigating, reporting and re-reporting this story. The final product you see here is an abridged version of the original 1,500 word version. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The story sparked a decent bit of controversy within Auburn when it was published. Guyer told me later that an anonymous donor read the story and wanted to give the School of Forestry money to investigate what happened to the kingsnakes. &lt;/p&gt;
+  &lt;p&gt;This story was featured on the front page, above the fold for the Ledger-Enquirer for Oct. 19, 2015. We also wrote an &lt;a href=&quot;http://www.ledger-enquirer.com/opinion/article40282173.html&quot;&gt;editorial&lt;/a&gt; about the issue. I’m proud of this story because of the reporting involved and how it localized a state story. &lt;/p&gt;
 &lt;/blockquote&gt;
 </description>
-        <pubDate>Tue, 17 Mar 2015 00:00:00 -0400</pubDate>
-        <link>http://www.kylenazario.com/2015/03/17/snakes.html</link>
-        <guid isPermaLink="true">http://www.kylenazario.com/2015/03/17/snakes.html</guid>
+        <pubDate>Mon, 19 Oct 2015 00:00:00 -0400</pubDate>
+        <link>http://www.kylenazario.com/2015/10/19/smokingTax.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/10/19/smokingTax.html</guid>
         
         
-        <category>environment,opening,business,plainsman,features</category>
+        <category>alabama,</category>
         
-      </item>
-    
-      <item>
-        <title>From David to Darcy, student embraces new identity</title>
-        <description>&lt;p&gt;On May 11, 2013, Darcy Corbitt was born at 21 years of age.&lt;/p&gt;
-
-&lt;p&gt;With her friends gone for the summer, Corbitt moved a couch, three bookshelves and more than 350 books into an apartment to start her new life.&lt;/p&gt;
-
-&lt;!--break--&gt;
-
-&lt;p&gt;She had $70 in her checking account. It was the day before her birthday.&lt;/p&gt;
-
-&lt;p&gt;The Auburn University senior no longer wanted to go by her birth name, David Hall. She wanted to start again as Darcy.&lt;/p&gt;
-
-&lt;p&gt;“When I was really little, 3, 4, I thought I was a girl,” Corbitt said. “I went by a girl’s name in my mind, but I never told anyone because I knew it was socially unacceptable.”&lt;/p&gt;
-
-&lt;p&gt;Corbitt struggled with such feelings throughout her childhood and said despite being born biologically male, she never felt like a man.&lt;/p&gt;
-
-&lt;p&gt;“I tried to be that person for 18 years and it didn’t fit me,” Corbitt said.&lt;/p&gt;
-
-&lt;p&gt;With help from her friends, she began exploring the idea of living as a woman.&lt;/p&gt;
-
-&lt;p&gt;Bonnie Wilson in the Women’s Initiatives Office said she recalled a poignant conversation about gender identity with Corbitt when she still went by David.&lt;/p&gt;
-
-&lt;p&gt;“I asked her, ‘if there weren’t any barriers, what would you be?’” Wilson said. “And (Corbitt) said, ‘a woman.’ And I said, ‘then that’s what you are.’”&lt;/p&gt;
-
-&lt;p&gt;&lt;span class=&quot;quote&quot;&gt;“My whole life, all the decisions I’ve ever made, I’ve made for love.”&lt;/span&gt;&lt;/p&gt;
-
-&lt;p&gt;Corbitt said she also credits Spectrum, Auburn’s Gay-Straight Alliance, with helping her come to understand her identity.&lt;/p&gt;
-
-&lt;p&gt;“If I didn’t have the GSA, I don’t know what I would have done,” Corbitt said. “I’d have probably killed myself.”&lt;/p&gt;
-
-&lt;p&gt;When she still used the name David, Corbitt said she came within seconds of committing suicide after being outed as someone attracted to men.&lt;/p&gt;
-
-&lt;p&gt;“The only thing stopping me was I couldn’t break the razor blade out of my razor,” Corbitt said.&lt;/p&gt;
-
-&lt;p&gt;“I just kind of thought that was funny. I laughed, and I thought, ‘I can’t really kill myself. I’ve got so much I can do in the world.’”&lt;/p&gt;
-
-&lt;p&gt;Corbitt fully accepted being Darcy last May, on her 21st birthday.&lt;/p&gt;
-
-&lt;p&gt;The transition hasn’t been easy. Some friends offered minimal support for her new public identity.&lt;/p&gt;
-
-&lt;p&gt;Corbitt said her best friend from high school, a girl who drove three hours from the University of Montevallo to see her during their freshman year, unfriended her on Facebook last summer.&lt;/p&gt;
-
-&lt;p&gt;“You post a lot of gay stuff,” Corbitt said the friend told her.&lt;/p&gt;
-
-&lt;p&gt;Corbitt said she recently ran into her former best friend. When Corbitt tried to start a conversation, the friend showed little pleasure in seeing her.&lt;/p&gt;
-
-&lt;p&gt;Other groups have reacted differently to the news.&lt;/p&gt;
-
-&lt;p&gt;Corbitt sent an email to every professor she’s worked with in the past to let them know about the change.&lt;/p&gt;
-
-&lt;p&gt;The faculty responded with immediate and overwhelming support.&lt;/p&gt;
-
-&lt;p&gt;“The University was really classy about it,” Corbitt said.&lt;/p&gt;
-
-&lt;p&gt;Today, Corbitt said she embraces her identity as a woman. She dresses in a women’s suit with thick-frame glasses, a red-and-orange scarf and a purple shirt to match her purple wristwatch.&lt;/p&gt;
-
-&lt;p&gt;Silver eye shadow and lipstick adorn her face. Her fingernails bear pink Ballet Slippers nail polish, which she said she fidgets with when nervous.&lt;/p&gt;
-
-&lt;p&gt;Her friends admire the change, citing its positive effects.&lt;/p&gt;
-
-&lt;p&gt;“I saw how it truly made her happy to do that,” said Alyssa Patterson, a junior who shared English classes with Corbitt. “She’s so much more confident in who she is.”&lt;/p&gt;
-
-&lt;p&gt;In conversation, Corbitt appears confident. She laughs easily and jokes about blasting “Dancing Queen” by ABBA, her favorite song, at annoying neighbors.&lt;/p&gt;
-
-&lt;p&gt;In her new life, the senior majoring in English and psychology serves as director of social affairs for Spectrum, an advocacy group for lesbian, bisexual, gay and transgender (LBGT) students.&lt;/p&gt;
-
-&lt;p&gt;Corbitt said she hopes to attend graduate school to become a therapist for LBGT teens.&lt;/p&gt;
-
-&lt;p&gt;Her friends spoke highly of her academic work.&lt;/p&gt;
-
-&lt;p&gt;“She’s a good G–d— student,” said Kelly Tsaltas, senior in psychology.&lt;/p&gt;
-
-&lt;p&gt;Corbitt’s peers said they also admire her intelligence.&lt;/p&gt;
-
-&lt;p&gt;“She’s really smart and cognizant in how people think and feel and express themselves,” Wilson said.&lt;/p&gt;
-
-&lt;p&gt;Corbitt said she would prefer to remain at Auburn for graduate school, but thinks she’ll probably attend another institution.&lt;/p&gt;
-
-&lt;p&gt;Until she leaves, she also wants to stay close to her parents. They declined to comment for this story.&lt;/p&gt;
-
-&lt;p&gt;Corbitt said she understands her transition has been difficult for her mother and father, but she would have been unhappy any other way.&lt;/p&gt;
-
-&lt;p&gt;“My whole life, all the decisions I’ve ever made, I’ve made for love,” Corbitt said. “I came out for myself, the second time because I wanted to be happy.”&lt;/p&gt;
-
-&lt;p&gt;Why it’s a highlight:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;This is the best story I’ve ever written. The characterization, the material, everything just works. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The Plainsman editor at the time, Kelsey Davis, made a bold choice and put this on the front page, above the fold. Remember, this was fall 2013. Most people couldn’t tell you what “transgender” meant if you asked, and Auburn is still a conservative school in a conservative town. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;The story was a huge hit and &lt;a href=&quot;http://blog.al.com/spotnews/2014/02/ive_always_been_darcy_transgen.html&quot;&gt;got picked up by AL.com&lt;/a&gt;. Apparently it made one of our photographers cry. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;It was also responsible for passing transgender protections into university law at Auburn. The Gay-Straight Alliance had been trying to get protections for trans people passed for three years. They got the bill all the way to President Jay Gouge’s desk and there it sat for a year. Four days after we published Darcy’s story, Gouge signed the bill. &lt;/p&gt;
-&lt;/blockquote&gt;
-</description>
-        <pubDate>Wed, 30 Oct 2013 00:00:00 -0400</pubDate>
-        <link>http://www.kylenazario.com/2013/10/30/darcy.html</link>
-        <guid isPermaLink="true">http://www.kylenazario.com/2013/10/30/darcy.html</guid>
+        <category>health,</category>
         
+        <category>politics,</category>
         
-        <category>lgbt,</category>
-        
-        <category>plainsman,</category>
+        <category>ledger,</category>
         
         <category>features</category>
         
