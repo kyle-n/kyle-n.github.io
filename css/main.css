@@ -98,14 +98,6 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
   #mobileContact { display: block; margin: 0 -3% 0 -3%; }
   #desktopContact { display: none; }
   #mobileContact ul li { display: inline; padding: 0.2em; } }
-/*
-@include media-query($on-laptop) { .footer-col-1, .footer-col-2 { width: -webkit-calc(50% - (30px / 2)); width:         calc(50% - (30px / 2)); }
- .footer-col-3 { width: -webkit-calc(100% - (30px / 2)); width:         calc(100% - (30px / 2)); }
-}
-
-@include media-query($on-palm) { .footer-col { float: none; width: -webkit-calc(100% - (30px / 2)); width:         calc(100% - (30px / 2)); }
-}
-*/
 /** Page content */
 .page-content { padding: 30px 0; }
 
