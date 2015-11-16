@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+<!-- Set animation length for fade in -->
+<style>
+	#pageContent {
+		-webkit-animation-duration: 1s;
+			-moz-animation-duration: 1s;
+				  animation-duration: 1s;
+	}
+</style>
+
+  <body>
+
+    {% include header.html %}
+
+    <div id="pageContent" class="animated fadeIn page-content">
+      <div class="wrapper">
+        {{ content }}
+
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  {% include google_analytics.html %}
+
+  </body>
+
+</html>

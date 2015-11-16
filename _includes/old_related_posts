@@ -1,0 +1,25 @@
+{% assign categories_list = page.categories %}
+{% assign prevTitle = "" %}
+{% assign max_count = 3 %}
+{% assign count = 1 %}
+{% for post in site.posts %}
+{% assign index_post = forloop.index %}
+{% assign post_categories = post.categories %}
+   {% if count <= max_count %}
+     {% if categories_list == post_categories %}
+       {% if post.title != page.title %}
+       <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+		 {% assign prevTitle = post.title %}
+       {% assign count = count | plus:'1' %}
+       {% endif %}
+     {% else %}
+      {% for cat in post_categories %}
+        {% if cat == categories_list[forloop.index0] and post.title != prevTitle %}
+           <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+			 {% assign prevTitle = post.title %}
+          {% assign count = count | plus:'1' %}
+        {% endif %}
+      {% endfor %}
+     {% endif %}
+   {% endif %}
+{% endfor %}

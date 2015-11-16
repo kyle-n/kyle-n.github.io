@@ -1,0 +1,45 @@
+# Site settings
+title: Stories by Kyle Nazario
+email: kylebnazario@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  I built this website to store my previous work, some of which
+  has vanished since publication. News stories tend not to have an
+  incredibly long lifespan, especially on the internet. This site
+  is a way to preserve my old stories and show my talents to 
+  employers. Please feel free to contact me with any questions.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.kylenazario.com" # the base hostname & protocol for your site
+twitter_username: kbn_le
+github_username:  kyle-n
+facebook_username: knazario
+linkedin_username: kylenazario
+googleplus_username: +KyleNazario
+email: kylebnazario@gmail.com
+paginate: 10
+paginate_path: "/blog/page:num/"
+permalink: /:year/:month/:day/:title.html
+
+# Add Google Analytics tracking
+analytics :
+  provider : google
+  google : 
+      tracking_id : 'UA-67452206-1'
+
+# Array builder
+array: []
+
+# Build settings
+markdown: kramdown
+safe : true
+related_posts_max : 3
+
+# Social settings
+locale : en_us
+timezone : America/New_York
+icon : "{{ site.url }}/blog/assets/me.png"
+author : 
+   facebook : knazario
+   twitter : kbn_le
+   google_plus : KyleNazario
+fb_admins : '1184042582'
+fb_appid : 794821543963847

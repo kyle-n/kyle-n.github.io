@@ -1,0 +1,36 @@
+<br>
+<div class="teaserWrapper" style="max-width: 100%";>
+<div class="teaserTitle"
+{% if post.image == null %}style="max-width: 100%;"{% endif %}>
+		  <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+</div>
+
+	<!-- Post image, if there -->
+	{% if post.image != null %}
+	<div class="teaserImage">
+			  <img src="{{ site.url }}/blog/assets/{{ post.image }}">		
+	</div>
+	{% endif %}
+
+	<div class="descrip" 
+	{% if post.image == null %}style="max-width: 100%;"{% endif %}>
+		<p class="author">
+			<span class="date">{{ post.date | date: "%B %d, %Y" }}{% if post.org %} &nbsp;| &nbsp;<a class="blog-name" href="{{ site.baseurl }}
+			{% if post.org == 'Columbus Ledger-Enquirer' %}
+				/blog/ledger.html
+			{% elsif post.org == 'Free Press Houston' %}
+				/blog/fph.html
+			{% elsif post.org == 'The Plainsman' %}
+				/blog/plainsman.html
+			{% elsif post.org == 'TechNorms' %}
+				/blog/tn.html
+			{% endif %}
+						 ">{{ post.org }}</a>{% endif %}</span>
+			<div class="content">
+				{{ post.content | split:'<!--break-->' | first }}
+			</div>
+		</p>
+	</div>
+
+	<hr style="max-width: 100%;clear: both;">
+</div>
