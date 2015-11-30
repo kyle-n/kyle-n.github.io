@@ -38,7 +38,7 @@ Games from these companies tend to show up several months after the game's origi
 
 ### Wrappers
 
-The other way Windows games run on Mac is through wrappers. [Wine](https://en.wikipedia.org/wiki/Wine_(software) is the base standard here. It's a free and open-source compatibility layer for running Windows programs on Unix-like systems such as OS X or Linux. 
+The other way Windows games run on Mac is through wrappers. [Wine](https://en.wikipedia.org/wiki/Wine_(software)) is the base standard here. It's a free and open-source compatibility layer for running Windows programs on Unix-like systems such as OS X or Linux. 
 
 Wine offers inconsistent and occasionally useful performance for games. It really depends on the title. There's a [database](https://appdb.winehq.org) of performance reports, but the whole thing is really a crapshoot. 
 
