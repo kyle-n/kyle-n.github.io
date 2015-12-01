@@ -10,4 +10,7 @@ included. -->
 			<p>{{ include.cap }}</p>
 		</div>
 	{% endif %}
+	{% if include.style != "topImg" %}
+	<hr>
+	{% endif %}
 </div>

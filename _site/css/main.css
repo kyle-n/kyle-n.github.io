@@ -2,7 +2,7 @@
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font-family: Helvetica, Arial, sans-serif; font-size: 16px; line-height: 1.5; font-weight: 300; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; }
+body { font-family: Helvetica, Arial, sans-serif; font-size: 17px; line-height: 1.5; font-weight: 300; color: #111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; }
 @media screen and (max-width: 600px) { body { font-size: 18px; } }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
@@ -14,7 +14,7 @@ img { max-width: 100%; vertical-align: middle; }
 /** Figures */
 figure > img { display: block; }
 
-figcaption { font-size: 14px; }
+figcaption { font-size: 14.875px; }
 
 /** Lists */
 ul, ol { margin-left: 30px; }
@@ -106,7 +106,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .post-list { margin-left: 0; list-style: none; }
 .post-list > li { margin-bottom: 30px; }
 
-.post-meta { font-size: 14px; color: #828282; }
+.post-meta { font-size: 14.875px; color: #828282; }
 
 .post-link { display: block; font-size: 24px; }
 
@@ -123,6 +123,8 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 @media screen and (max-width: 800px) { .post-content h3 { font-size: 22px; } }
 .post-content h4 { font-size: 20px; }
 @media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
+
+.post-content p { line-height: 1.65; }
 
 /* Div layouts for teaser blocks */
 .teaserWrapper { display: inline-block; margin: 0 5% 3% 5%; max-width: 100%; }
@@ -158,9 +160,9 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .cap { display: block; width: 100%; color: #828282; }
 
-.cap p { padding: 1% 1% 3% 1%; font-size: 14px; }
+.cap p { padding: 2% 1% 3% 1%; font-size: 14.875px; }
 
-.footnotes ol li { color: #828282; font-size: 14px; }
+.footnotes ol li { color: #828282; font-size: 14.875px; }
 
 sup { font-size: 0.9em; }
 
