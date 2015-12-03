@@ -124,7 +124,7 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .post-content h4 { font-size: 20px; }
 @media screen and (max-width: 800px) { .post-content h4 { font-size: 18px; } }
 
-.post-content p { line-height: 1.65; }
+.post-content p { line-height: 1.5; }
 
 /* Div layouts for teaser blocks */
 .teaserWrapper { display: inline-block; margin: 0 5% 3% 5%; max-width: 100%; }
