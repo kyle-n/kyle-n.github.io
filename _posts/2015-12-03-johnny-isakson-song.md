@@ -11,6 +11,8 @@ categories: music, ledger, viral
 
 Georgia Senator Johnny Isakson drew my attention this morning when he tweeted his thanks to a band for writing a song about... Sen. Johnny Isakson.
 
+<!--break-->
+
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">Wow, never had a song written about me. Thanks <a href="https://twitter.com/hashtag/PapaRazziAndThePhotogs?src=hash">#PapaRazziAndThePhotogs</a>. I&#39;m undeserving but flattered nonetheless. <a href="https://t.co/SdPaMKVgOI">https://t.co/SdPaMKVgOI</a></p>&mdash; Johnny Isakson (@SenatorIsakson) <a href="https://twitter.com/SenatorIsakson/status/672423470349832192">December 3, 2015</a></blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 I've linked another copy of the song below, and it is... something.
