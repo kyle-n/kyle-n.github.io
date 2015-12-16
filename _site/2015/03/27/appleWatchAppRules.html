@@ -158,47 +158,47 @@ included. -->
 
 <h2 id="put-it-all-on-the-iphone">Put it all on the iPhone</h2>
 
-<p>Third-party apps don’t work on the Apple Watch without an iPhone in part because of how Apple has set up the technical aspect of watch apps. </p>
+<p>Third-party apps don’t work on the Apple Watch without an iPhone in part because of how Apple has set up the technical aspect of watch apps.</p>
 
 <p>Every Apple Watch app contains a WatchKit app that runs on the user’s wrist. However, this app technically has only the resources (graphics, sound, text strings, etc) associated with the app.</p>
 
-<p>The WatchKit app is really run from the iPhone through a WatchKit extension used by the developer’s iPhone app. </p>
+<p>The WatchKit app is really run from the iPhone through a WatchKit extension used by the developer’s iPhone app.</p>
 
-<p>All that make sense? For example, Uber’s iPhone app uses the WatchKit extension to talk to the Uber WatchKit app, which is really just an extension of the iPhone app. </p>
+<p>All that make sense? For example, Uber’s iPhone app uses the WatchKit extension to talk to the Uber WatchKit app, which is really just an extension of the iPhone app.</p>
 
 <h3 id="glances-can-only-be-one-glance">Glances can only be one glance</h3>
 
-<p>The Apple Watch uses a design paradigm called a “glance” to provide quick bits of information. </p>
+<p>The Apple Watch uses a design paradigm called a “glance” to provide quick bits of information.</p>
 
-<p>Third-party apps can create glances, but these must fit into a single screen with no scrolling and contain no buttons. </p>
+<p>Third-party apps can create glances, but these must fit into a single screen with no scrolling and contain no buttons.</p>
 
 <h3 id="dont-do-as-much-as-a-phone-app">Don’t do as much as a phone app</h3>
 
-<p>Apple has some guidelines that it says are not allowed and not recommended, though it does not mark which is which. </p>
+<p>Apple has some guidelines that it says are not allowed and not recommended, though it does not mark which is which.</p>
 
-<p>Apple Watch apps should not ask for user permissions, like location. Imagine starting up Uber’s watch app with your phone in your pocket - you wouldn’t even see the location request prompt. </p>
+<p>Apple Watch apps should not ask for user permissions, like location. Imagine starting up Uber’s watch app with your phone in your pocket - you wouldn’t even see the location request prompt.</p>
 
-<p>Watch apps also cannot run in the background, as Apple envisions them working only while the app is in the foreground. Basically, don’t run unless the user wants you to. </p>
+<p>Watch apps also cannot run in the background, as Apple envisions them working only while the app is in the foreground. Basically, don’t run unless the user wants you to.</p>
 
-<p>This goes back to letting the iPhone app do the heavy lifting. Apple is dodging the battery/CPU troubles most wearables run into by offloading the hard work to its more-than-capable iPhone AX CPUs. </p>
+<p>This goes back to letting the iPhone app do the heavy lifting. Apple is dodging the battery/CPU troubles most wearables run into by offloading the hard work to its more-than-capable iPhone AX CPUs.</p>
 
 <h3 id="put-it-in-pages">Put it in pages</h3>
 
-<p>With the Apple Watch showing little data on screen at any given time, Apple reminds developers in its documentation how important it is to paginate their app’s information to make it easy to swipe through. </p>
+<p>With the Apple Watch showing little data on screen at any given time, Apple reminds developers in its documentation how important it is to paginate their app’s information to make it easy to swipe through.</p>
 
 <p>“A page-based interface contains two or more independent interface controllers, only one of which is displayed at any given time. At runtime, the user navigates between interface controllers by swiping left or right on the screen.”</p>
 
 <h3 id="use-as-little-space-as-possible">Use as little space as possible</h3>
 
-<p>Apple allows the app to cache image assets (the boxes used to display the interface, a user’s profile picture) on the Apple Watch itself. </p>
+<p>Apple allows the app to cache image assets (the boxes used to display the interface, a user’s profile picture) on the Apple Watch itself.</p>
 
-<p>However, it only allows each third-party app up to 5 MB of storage. This does not leave a ton of space, especially for the high-quality PNGs Apple recommends developers use. </p>
+<p>However, it only allows each third-party app up to 5 MB of storage. This does not leave a ton of space, especially for the high-quality PNGs Apple recommends developers use.</p>
 
-<p>Basically, watch apps won’t have a lot of room to sprawl out. Expect them to be fairly minimalistic. </p>
+<p>Basically, watch apps won’t have a lot of room to sprawl out. Expect them to be fairly minimalistic.</p>
 
 <h3 id="final-thoughts">Final Thoughts</h3>
 
-<p>The Apple Watch guidelines seem restrictive, and I’m curious to see which ones loosen over time. This is a first-generation Apple product, so some strictness is to be expected. Remember, the first iPhone didn’t even have third-party apps. </p>
+<p>The Apple Watch guidelines seem restrictive, and I’m curious to see which ones loosen over time. This is a first-generation Apple product, so some strictness is to be expected. Remember, the first iPhone didn’t even have third-party apps.</p>
 
 <p>Until the rules change, app developers will have to work under 5 MB and system font-only restrictions.</p>
 

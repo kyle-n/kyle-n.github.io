@@ -35,9 +35,7 @@ Ed Furr said the case will have a hearing on Dec. 8.
 
 "We simply hope the legal reasons we've laid out will prevail," he said.
 
-The full text of Penny Furr's statement is below:[^1]
-
-[^1]: I reached out to Thomas Hoffman, but he did not answer a call. That was fine, he said he's often out of cell phone reach. I texted him as well and received only cryptic answers. "If I get served it's going to court," he replied tersely to several questions. 
+The full text of Penny Furr's statement is below:{% include footnote num='1' note="I reached out to Thomas Hoffman, but he did not answer a call. That was fine, he said he's often out of cell phone reach. I texted him as well and received only cryptic answers. 'If I get served it's going to court,' he replied tersely to several questions." %}
 
 > This family does not now nor have they ever wanted to be a party in a lawsuit. However, this appears to be the only way they have a chance of getting Spot, their beloved dog, back. If there were other options they would be taking them.
 

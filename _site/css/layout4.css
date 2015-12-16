@@ -56,3 +56,19 @@ p {
 	height: 1em;
 	fill: currentColor;
 }
+
+/* Hide, keep footnotes centered */
+.footnoting {
+	color: white;
+	font-size: 1.4em; 
+	width: 300px; 
+	float: left;
+	background: #1a1a1a;
+	padding: 0.8em;
+	border-radius: 5px;
+	}
+
+/* special link styling for footnotes */
+sup a:hover {
+	color: grey;
+}

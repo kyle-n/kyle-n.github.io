@@ -164,12 +164,19 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 
 .footnotes ol li { color: #828282; font-size: 14.875px; }
 
-sup { font-size: 0.9em; }
+/* 
+sup {
+	font-size: 0.9em;
+}
 
-sup a:before { content: "("; }
-
-sup a:after { content: ")"; }
-
+// Add brackets for easier tapping footnotes
+sup a:before {
+	content: "(";
+}
+sup a:after {
+	content: ")";
+}
+*/
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
 .highlight .c { color: #998; font-style: italic; }

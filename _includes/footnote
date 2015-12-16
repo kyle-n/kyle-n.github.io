@@ -1,0 +1,30 @@
+<style>
+#footnote_{{ include.num }} {
+	-webkit-animation-duration: .3s;
+	-moz-animation-duration: .3s;
+	animation-duration: .3s;
+}
+</style>
+<sup><button class="fn_button" onclick="showDiv()" style="position: relative; left: 0px;">{{ include.num }}
+<span class="footnoting animated fadeIn" id="footnote_{{ include.num }}"
+	style="display: none;">{{ include.note }}</span>
+</button></sup>
+<script>
+	function showDiv() {
+		if (document.getElementById('footnote_{{ include.num }}').style.display 
+			== "none") {
+			document.getElementById('footnote_{{ include.num }}').style.display 
+				= "inline";
+			document.getElementById('footnote_{{ include.num }}').style.position 
+				= "absolute";
+			document.getElementById('footnote_{{ include.num }}').style.top = "30px";
+			document.getElementById('footnote_{{ include.num }}').style.right = "0px";
+			document.getElementById('footnote_{{ include.num }}').style.left = "-120px";
+		}
+		else {
+			document.getElementById('footnote_{{ include.num }}').style.display = "none";
+			document.getElementById('footnote_{{ include.num }}').className 
+				= "footnoting animated fadeIn";
+		}
+	}
+</script>

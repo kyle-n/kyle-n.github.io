@@ -13,7 +13,7 @@
    <!-- Article -->
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:title" content="How to Surf the Web Anonymously Without Leaving a Trace">
-		<meta name="twitter:description" content="Privacy is quickly becoming the rarest of commodities on the internet. Between advertisers, Google, your Internet Service Provider (ISP) and the NSA, doing anything secret online is almost impossible. 
+		<meta name="twitter:description" content="Privacy is quickly becoming the rarest of commodities on the internet. Between advertisers, Google, your Internet Service Provider (ISP) and the NSA, doing anything secret online is almost impossible.
 
 ">
 	
@@ -150,84 +150,84 @@ included. -->
 
 	 <!-- Article content -->
 	 <div class="article-text">
-    <p>Privacy is quickly becoming the rarest of commodities on the internet. Between advertisers, Google, your Internet Service Provider (ISP) and the NSA, doing anything secret online is almost impossible. </p>
+    <p>Privacy is quickly becoming the rarest of commodities on the internet. Between advertisers, Google, your Internet Service Provider (ISP) and the NSA, doing anything secret online is almost impossible.</p>
 
 <!--break-->
 
-<p>Almost- but not completely. There are a few steps you can take to make your movements much harder to track online. They all involve suffering inconveniences, but that’s the price of security. </p>
+<p>Almost- but not completely. There are a few steps you can take to make your movements much harder to track online. They all involve suffering inconveniences, but that’s the price of security.</p>
 
-<p>It’s also worth remembering that there is no 100 percent guarantee of security in anything. Any sufficiently powerful third party can probably track you if you catch their interest. Bear in mind that no setup is perfect. </p>
+<p>It’s also worth remembering that there is no 100 percent guarantee of security in anything. Any sufficiently powerful third party can probably track you if you catch their interest. Bear in mind that no setup is perfect.</p>
 
-<p>That said, you can at least make them work to track you. Here’s how. </p>
+<p>That said, you can at least make them work to track you. Here’s how.</p>
 
 <h2 id="step-one-the-os">Step One: The OS</h2>
 
-<p>Here’s the sad, sad truth: You can’t trust Windows or OS X. They are closed-source products made by large corporations who can be forced to put in backdoors for third-party snooping. Researchers have found NSA backdoors built into Windows and OS X as far back as 1999. </p>
+<p>Here’s the sad, sad truth: You can’t trust Windows or OS X. They are closed-source products made by large corporations who can be forced to put in backdoors for third-party snooping. Researchers have found NSA backdoors built into Windows and OS X as far back as 1999.</p>
 
-<p>The only sort-of secure operating system is Tails, the OS Snowden uses. Tails is a community-developed, open-source OS built around security. It doesn’t even need a partition - you install it to a flash drive and live boot from it. </p>
+<p>The only sort-of secure operating system is Tails, the OS Snowden uses. Tails is a community-developed, open-source OS built around security. It doesn’t even need a partition - you install it to a flash drive and live boot from it.</p>
 
-<p>That way, there aren’t any incriminating files stored on the PC used for live booting. If you want to keep files on the drive, throw them in the encrypted partition. </p>
+<p>That way, there aren’t any incriminating files stored on the PC used for live booting. If you want to keep files on the drive, throw them in the encrypted partition.</p>
 
-<p>Before downloading Tails, it’s worth taking a look at the OS’s extensive documentation. This isn’t a product for newbies. </p>
+<p>Before downloading Tails, it’s worth taking a look at the OS’s extensive documentation. This isn’t a product for newbies.</p>
 
-<p>To try Tails, download the ISO from the website. Be sure to follow all the listed instructions about verifying the ISO to make sure it was not compromised during the download. </p>
+<p>To try Tails, download the ISO from the website. Be sure to follow all the listed instructions about verifying the ISO to make sure it was not compromised during the download.</p>
 
-<p>Installing Tails is as simple as writing the ISO to a flash drive… which actually isn’t all that simple. </p>
+<p>Installing Tails is as simple as writing the ISO to a flash drive… which actually isn’t all that simple.</p>
 
-<p>To do it on Mac, open up Terminal and enter: </p>
+<p>To do it on Mac, open up Terminal and enter:</p>
 
 <pre><code>diskutil list
 </code></pre>
 
-<p>This will give a list and identifier for every hard disk connected to your machine. For example, it listed my hard drive, SD card, USB stick and virtual hard disk (the mounted Tails ISO) when I entered the command. </p>
+<p>This will give a list and identifier for every hard disk connected to your machine. For example, it listed my hard drive, SD card, USB stick and virtual hard disk (the mounted Tails ISO) when I entered the command.</p>
 
-<p>Now enter: </p>
+<p>Now enter:</p>
 
 <pre><code>diskutil unmountDisk [USB identifier]
 </code></pre>
 
-<p>Next, we’ll write the Tails ISO to the removable media. Enter the following. For [tails], drag the Tails ISO from Finder into the Terminal window. For [device], put the identifier you got from diskutil list. </p>
+<p>Next, we’ll write the Tails ISO to the removable media. Enter the following. For [tails], drag the Tails ISO from Finder into the Terminal window. For [device], put the identifier you got from diskutil list.</p>
 
 <pre><code>sudo dd if=[tails] of=[device]
 </code></pre>
 
-<p>That should take some time to finish, so don’t worry if it looks like it’s not working. Give it time to finish. </p>
+<p>That should take some time to finish, so don’t worry if it looks like it’s not working. Give it time to finish.</p>
 
-<p>On Windows, the process is even easier with a neat program called Pen Drive Linux. To use that, download the program from its website. </p>
+<p>On Windows, the process is even easier with a neat program called Pen Drive Linux. To use that, download the program from its website.</p>
 
-<p>Select Tails as the distro you want to install and point the program to where you have the ISO stored on your hard drive. Select your removable drive for step 3, though be careful to pick the right one. After that, it’s as easy as pressing create. </p>
+<p>Select Tails as the distro you want to install and point the program to where you have the ISO stored on your hard drive. Select your removable drive for step 3, though be careful to pick the right one. After that, it’s as easy as pressing create.</p>
 
 <h3 id="booting-tails">Booting Tails</h3>
 
-<p>To boot tails, you have to select the right drive. On OS X, this is as easy as holding down the left Option key when the computer is booting. After that, use the arrow keys and enter to pick the hard disk with the USB icon. </p>
+<p>To boot tails, you have to select the right drive. On OS X, this is as easy as holding down the left Option key when the computer is booting. After that, use the arrow keys and enter to pick the hard disk with the USB icon.</p>
 
-<p>Getting into Tails on a PC might be harder. A PC’s BIOS determines which device it goes to when booting up. Your PC may be programmed to use DVDs or USB sticks first when booting. If so, you’ll reboot right into Tails with the stick plugged in. </p>
+<p>Getting into Tails on a PC might be harder. A PC’s BIOS determines which device it goes to when booting up. Your PC may be programmed to use DVDs or USB sticks first when booting. If so, you’ll reboot right into Tails with the stick plugged in.</p>
 
-<p>If not, you’ll have to go into the BIOS settings and rearrange the device boot order. This can be done by holding down F1, F2, F10 or Escape when booting. Google your PC model to see which key it uses. </p>
+<p>If not, you’ll have to go into the BIOS settings and rearrange the device boot order. This can be done by holding down F1, F2, F10 or Escape when booting. Google your PC model to see which key it uses.</p>
 
-<p>The program will start up by itself. If everything goes right and the Debian base code plays nicely with your hardware, everything should work. </p>
+<p>The program will start up by itself. If everything goes right and the Debian base code plays nicely with your hardware, everything should work.</p>
 
-<p>This being Linux, Tails did not work with my MacBook Air’s wireless card. Fixing that requires some tinkering, so your mileage may vary. </p>
+<p>This being Linux, Tails did not work with my MacBook Air’s wireless card. Fixing that requires some tinkering, so your mileage may vary.</p>
 
 <h3 id="step-two-the-web-browser">Step Two: The Web Browser</h3>
 
-<p>The next thing keeping you safe is Tails’s copy of The Onion Router, better known as TOR. While not completely secure, TOR is the best option available for privacy-minded users. </p>
+<p>The next thing keeping you safe is Tails’s copy of The Onion Router, better known as TOR. While not completely secure, TOR is the best option available for privacy-minded users.</p>
 
-<p>When you connect to TOR, data coming and going from your PC is routed through a network of anonymizers. By the time it comes out the other side, it is (theoretically) anonymous. </p>
+<p>When you connect to TOR, data coming and going from your PC is routed through a network of anonymizers. By the time it comes out the other side, it is (theoretically) anonymous.</p>
 
-<p>There are two major caveats to TOR. First, it does not disguise your data once it leaves the anonymizing network. Snoopers can see everything you do, they just can’t tell it’s you. </p>
+<p>There are two major caveats to TOR. First, it does not disguise your data once it leaves the anonymizing network. Snoopers can see everything you do, they just can’t tell it’s you.</p>
 
-<p>Two, TOR relies on the user keeping up good habits. For example, if you log onto your Gmail from TOR, anyone watching now knows your identity. </p>
+<p>Two, TOR relies on the user keeping up good habits. For example, if you log onto your Gmail from TOR, anyone watching now knows your identity.</p>
 
-<p>Tail developers recommend you reboot between sessions to disguise yourself. For example, if you have to post to an account you’d rather not associate with yourself and need to move around some Bitcoin, post on the account, reboot, then move the Bitcoin. </p>
+<p>Tail developers recommend you reboot between sessions to disguise yourself. For example, if you have to post to an account you’d rather not associate with yourself and need to move around some Bitcoin, post on the account, reboot, then move the Bitcoin.</p>
 
 <h3 id="final-thoughts">Final Thoughts</h3>
 
-<p>While total security is impossible, TOR and Tails are both great options for keeping yourself secure online. TOR keeps your traffic anonymous, and Tails erases any trail from the computer you use. </p>
+<p>While total security is impossible, TOR and Tails are both great options for keeping yourself secure online. TOR keeps your traffic anonymous, and Tails erases any trail from the computer you use.</p>
 
-<p>Remember also, though, that privacy demands good habits. Use long, varied passwords for your accounts. Don’t do anything that could personally identify you. </p>
+<p>Remember also, though, that privacy demands good habits. Use long, varied passwords for your accounts. Don’t do anything that could personally identify you.</p>
 
-<p>Above all, good luck. Online privacy is a rapidly vanishing commodity in our age, and carving out even a semblance of it is difficult. Hopefully TOR and Tails will help you do that. </p>
+<p>Above all, good luck. Online privacy is a rapidly vanishing commodity in our age, and carving out even a semblance of it is difficult. Hopefully TOR and Tails will help you do that.</p>
 
 	 </div>
 

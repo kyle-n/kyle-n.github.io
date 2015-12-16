@@ -13,7 +13,7 @@
    <!-- Article -->
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:title" content="How to Autofill KeePass Passwords in Chrome, Firefox and Safari">
-		<meta name="twitter:description" content="We at TechNorms love KeePass. It’s a free (as in beer and as in freedom) and open-source password manager that also happens to be available on every major computing platform. What’s not to love? 
+		<meta name="twitter:description" content="We at TechNorms love KeePass. It’s a free (as in beer and as in freedom) and open-source password manager that also happens to be available on every major computing platform. What’s not to love?
 
 ">
 	
@@ -150,65 +150,65 @@ included. -->
 
 	 <!-- Article content -->
 	 <div class="article-text">
-    <p>We at TechNorms <a href="http://www.technorms.com/162/the-best-open-source-password-manager-keepass-password-safe">love KeePass</a>. It’s a free (as in beer and as in freedom) and open-source password manager that also happens to be available on every major computing platform. What’s not to love? </p>
+    <p>We at TechNorms <a href="http://www.technorms.com/162/the-best-open-source-password-manager-keepass-password-safe">love KeePass</a>. It’s a free (as in beer and as in freedom) and open-source password manager that also happens to be available on every major computing platform. What’s not to love?</p>
 
 <!--break-->
 
-<p>Well, there is one thing that needs some work. Its browser integration. Despite its <a href="https://blog.lastpass.com/2015/06/lastpass-security-notice.html/">propensity for being hacked</a>, it’s great at autofilling your passwords within your browser, no input needed. That’s damn convenient. Turns out KeePass has a similar feature- it just takes some setting up. Here’s how to autofill KeePass passwords in a browser. </p>
+<p>Well, there is one thing that needs some work. Its browser integration. Despite its <a href="https://blog.lastpass.com/2015/06/lastpass-security-notice.html/">propensity for being hacked</a>, it’s great at autofilling your passwords within your browser, no input needed. That’s damn convenient. Turns out KeePass has a similar feature- it just takes some setting up. Here’s how to autofill KeePass passwords in a browser.</p>
 
 <h2 id="how-to-autofill-keepass-passwords-in-a-browser">How to Autofill KeePass Passwords in a Browser</h2>
 
 <h3 id="edit-entries">Edit Entries</h3>
 
-<p>Here’s the not fun part. In order to use the login data within your KeePass database, it means adding information to the URL field for every login entry. </p>
+<p>Here’s the not fun part. In order to use the login data within your KeePass database, it means adding information to the URL field for every login entry.</p>
 
-<p>Go to whatever page you login to a website on. For example, mine would be <a href="https://login.yahoo.com/config/login?.src=fpctx&amp;.intl=us&amp;.done=https%3A%2F%2Fwww.yahoo.com%2F">this one</a> for Yahoo. Copy that URL. Open your KeePass database and enter that into the URL field. </p>
+<p>Go to whatever page you login to a website on. For example, mine would be <a href="https://login.yahoo.com/config/login?.src=fpctx&amp;.intl=us&amp;.done=https%3A%2F%2Fwww.yahoo.com%2F">this one</a> for Yahoo. Copy that URL. Open your KeePass database and enter that into the URL field.</p>
 
-<p>Do that for whatever login entries you want to use within a browser. </p>
+<p>Do that for whatever login entries you want to use within a browser.</p>
 
 <h3 id="setup-keepass-data-transfer">Setup KeePass Data Transfer</h3>
 
-<p>For this tutorial, we’ll assume you’re using KeePassX. It’s the free, cross platform version that runs on Windows, Mac and Linux. You’ll also need the <a href="https://www.keepassx.org/news/2014/04/433">alpha</a> version that creates KeePass 2.0 databases. </p>
+<p>For this tutorial, we’ll assume you’re using KeePassX. It’s the free, cross platform version that runs on Windows, Mac and Linux. You’ll also need the <a href="https://www.keepassx.org/news/2014/04/433">alpha</a> version that creates KeePass 2.0 databases.</p>
 
-<p>To transfer data from KeePassX to a browser, it means keeping your database open. This is also a security issue, so be careful with what you leave running. </p>
+<p>To transfer data from KeePassX to a browser, it means keeping your database open. This is also a security issue, so be careful with what you leave running.</p>
 
-<p>Next, you need <a href="https://github.com/pfn/keepasshttp/">keepasshttp</a>, a bit of software that securely transfers password data by http. Installation varies by platform. </p>
+<p>Next, you need <a href="https://github.com/pfn/keepasshttp/">keepasshttp</a>, a bit of software that securely transfers password data by http. Installation varies by platform.</p>
 
-<p>On Windows, download <a href="https://chocolatey.org">Chocolatey</a>. It’s a command-line package manager for Microsoft’s OS and it’s much easier than doing the manual installation of keepasshttp. </p>
+<p>On Windows, download <a href="https://chocolatey.org">Chocolatey</a>. It’s a command-line package manager for Microsoft’s OS and it’s much easier than doing the manual installation of keepasshttp.</p>
 
-<p>Once that’s installed, enter: </p>
+<p>Once that’s installed, enter:</p>
 
 <blockquote>
   <p>choco install keepass-keepasshttp</p>
 </blockquote>
 
-<p>And let it do its thing. </p>
+<p>And let it do its thing.</p>
 
-<p>For Linux and Mac, you need to run KeePass under <a href="http://keepass.info/help/v2/setup.html#mono">Mono</a>. Downloading a 2.0 version of KeePass should do the trick there. </p>
+<p>For Linux and Mac, you need to run KeePass under <a href="http://keepass.info/help/v2/setup.html#mono">Mono</a>. Downloading a 2.0 version of KeePass should do the trick there.</p>
 
-<p>Next, <a href="https://raw.github.com/pfn/keepasshttp/master/KeePassHttp.plgx">download keepasshtml</a>. This will give you a .plgx file, which is a KeePass plugin. To install, you drop it in the KeePass directory. This is located wherever you keep the KeePass executable. </p>
+<p>Next, <a href="https://raw.github.com/pfn/keepasshttp/master/KeePassHttp.plgx">download keepasshtml</a>. This will give you a .plgx file, which is a KeePass plugin. To install, you drop it in the KeePass directory. This is located wherever you keep the KeePass executable.</p>
 
-<p>On Windows, that is under Program Files (unless you have the portable version). On Mac, it’s under Applications. On Linux, it’s /usr/lib/keepass2/ by default. </p>
+<p>On Windows, that is under Program Files (unless you have the portable version). On Mac, it’s under Applications. On Linux, it’s /usr/lib/keepass2/ by default.</p>
 
 <h3 id="browser-extensions">Browser Extensions</h3>
 
-<p>I dug up compatible browser extensions for Chrome, Firefox and Safari. All three do more or less the same thing- auto-filling your password data. </p>
+<p>I dug up compatible browser extensions for Chrome, Firefox and Safari. All three do more or less the same thing- auto-filling your password data.</p>
 
-<p>Chrome has <a href="https://chrome.google.com/webstore/detail/chromeipass/ompiailgknfdndiefoaoiligalphfdae?hl=en">chromeIPass</a>. It’s free, useful and functional. No complaints there. </p>
+<p>Chrome has <a href="https://chrome.google.com/webstore/detail/chromeipass/ompiailgknfdndiefoaoiligalphfdae?hl=en">chromeIPass</a>. It’s free, useful and functional. No complaints there.</p>
 
-<p>ChromeIPass autofills a page if it’s your only login. If you have multiple accounts, it’ll let you choose an account by clicking the icon in the menu bar. You can also add login data to your database when you enter a password at a URL that’s not stored in KeePass, which is neat. Just be sure not to add duplicate entries for previous entries that don’t have a URL. </p>
+<p>ChromeIPass autofills a page if it’s your only login. If you have multiple accounts, it’ll let you choose an account by clicking the icon in the menu bar. You can also add login data to your database when you enter a password at a URL that’s not stored in KeePass, which is neat. Just be sure not to add duplicate entries for previous entries that don’t have a URL.</p>
 
-<p>Firefox has <a href="https://addons.mozilla.org/En-us/firefox/addon/passifox/">PassIFox</a>. Users have mixed reviews of it, but it’s also the only game in town for Firefox people. </p>
+<p>Firefox has <a href="https://addons.mozilla.org/En-us/firefox/addon/passifox/">PassIFox</a>. Users have mixed reviews of it, but it’s also the only game in town for Firefox people.</p>
 
-<p>Safari offers <a href="https://github.com/mmichaa/passafari.safariextension">passafari</a>. It’s functional, but development looks frozen with no sign of continuing. Even the documentation isn’t finished. </p>
+<p>Safari offers <a href="https://github.com/mmichaa/passafari.safariextension">passafari</a>. It’s functional, but development looks frozen with no sign of continuing. Even the documentation isn’t finished.</p>
 
 <h3 id="final-thoughts">Final Thoughts</h3>
 
-<p>Honestly, all the setup and janky extensions and needing to fill in URLs makes KeePass a less attractive prospect than something like LastPass. LastPass might charge you money, but at least it abstracts away login data and makes it even more convenient. </p>
+<p>Honestly, all the setup and janky extensions and needing to fill in URLs makes KeePass a less attractive prospect than something like LastPass. LastPass might charge you money, but at least it abstracts away login data and makes it even more convenient.</p>
 
-<p>There’s also no good way to implement this kind of setup on mobile. Android, maybe. iOS, never. Your best bet there is still to use a basic KeePass app and copy and paste your data into the form. </p>
+<p>There’s also no good way to implement this kind of setup on mobile. Android, maybe. iOS, never. Your best bet there is still to use a basic KeePass app and copy and paste your data into the form.</p>
 
-<p>However, for people who don’t mind putting in a little elbow grease, KeePass and keepasshttp is a viable alternative. Plus, it’s open source, and who doesn’t like that? </p>
+<p>However, for people who don’t mind putting in a little elbow grease, KeePass and keepasshttp is a viable alternative. Plus, it’s open source, and who doesn’t like that?</p>
 
 	 </div>
 

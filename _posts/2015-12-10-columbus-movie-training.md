@@ -2,8 +2,6 @@
 layout: post
 title: Welcome to 'Y'allywood' (also known as Columbus, Georgia)
 original: http://www.ledger-enquirer.com/news/local/education/article49094135.html#storylink=mainstage
-image: payden.jpg
-cap: Payden Evans, left, is a senior at Auburn University who works on the "Divergent" movie series. Shailene Woodley, right, is the lead actress in the films. This photo of the two leaked onto "Divergent" fan sites.
 org: Columbus Ledger-Enquirer
 keywords: payden evans, shailene woodley, divergent, georgia film industry, movies
 categories: movies, csu, columbus, georgia, education, ledger, news
@@ -16,9 +14,7 @@ If all goes well, Columbus is going into show business.
 
 Columbus State, the Springer Opera House and the state of Georgia are starting a special program to train Georgians to work on the sets of movies and TV shows.
 
-Springer artistic director Paul Pierce said film has become a $6 billion industry in Georgia because of the state's [generous tax credits](http://www.ledger-enquirer.com/opinion/opn-columns-blogs/article29456854.html). With 157 feature films produced in this state in fiscal year 2015, Pierce said, there are more jobs in the movie industry than ever before. However, there aren't enough Georgians to fill these jobs. [^1]
-
-[^1]: There is a [major debate](http://www.boston.com/news/opinion/2015/03/06/what-wrong-with-film-industry-tax-incentives-they-don-work/wRzsGm3OegxBjDCgINEj9L/story.html) over whether these things actually work. I would love to explore that, but this story was already pushing it at a thousand words. 
+Springer artistic director Paul Pierce said film has become a $6 billion industry in Georgia because of the state's [generous tax credits](http://www.ledger-enquirer.com/opinion/opn-columns-blogs/article29456854.html). With 157 feature films produced in this state in fiscal year 2015, Pierce said, there are more jobs in the movie industry than ever before. However, there aren't enough Georgians to fill these jobs.{% include footnote num="1" note="There is a <a href='http://www.boston.com/news/opinion/2015/03/06/what-wrong-with-film-industry-tax-incentives-they-don-work/wRzsGm3OegxBjDCgINEj9L/story.html'>major debate</a> over whether these things actually work. I would love to explore that, but this story was already pushing it at a thousand words." %} 
 
 "Georgia just doesn't have the volume of scenic carpenters, scene painters, set decorators, lighting electricians, grips, prop masters, audio engineers or wardrobe professionals to crew all these films," Pierce said. "Jets are landing in Hartsfield-Jackson every day with film workers from other states who are going directly to work sites. Gov. Deal is determined to put a stop to that, and we are determined to help him."
 
