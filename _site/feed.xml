@@ -6,9 +6,119 @@
 </description>
     <link>http://www.kylenazario.com/</link>
     <atom:link href="http://www.kylenazario.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 15 Dec 2015 16:24:27 -0500</pubDate>
-    <lastBuildDate>Tue, 15 Dec 2015 16:24:27 -0500</lastBuildDate>
+    <pubDate>Fri, 18 Dec 2015 14:30:26 -0500</pubDate>
+    <lastBuildDate>Fri, 18 Dec 2015 14:30:26 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>The University of Alabama is testing fraternity brothers for drug use</title>
+        <description>&lt;p&gt;The University of Alabama has quietly started testing members of Greek organizations as part of an extensive mandatory screening program, according to &lt;a href=&quot;http://www.al.com/news/index.ssf/2015/12/university_of_alabama_quietly.html#incart_big-photo&quot;&gt;AL.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;Six current and former members of organizations such as Sigma Nu and Sigma Alpha Epsilon told the site the groups’ Alabama chapters require members to undergo periodic urinalysis “in order to maintain good standing with organizations and the school.” UA administration confirmed to AL.com that it is testing some Greek organizations without saying which ones.&lt;/p&gt;
+
+&lt;p&gt;Brothers who fail or miss tests receive escalating warnings from their fraternity. If they fail or miss enough tests they can be kicked out of the organization and have the school notified.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.al.com/news/index.ssf/2015/12/university_of_alabama_quietly.html#incart_big-photo&quot;&gt;Read the full story&lt;/a&gt;.&lt;/p&gt;
+</description>
+        <pubDate>Fri, 18 Dec 2015 00:00:00 -0500</pubDate>
+        <link>http://www.kylenazario.com/2015/12/18/bama-frat-drug-test.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/12/18/bama-frat-drug-test.html</guid>
+        
+        
+        <category>bama,</category>
+        
+        <category>drugs,</category>
+        
+        <category>ledger,</category>
+        
+        <category>viral</category>
+        
+      </item>
+    
+      <item>
+        <title>How to track when someone links to your website on Twitter</title>
+        <description>&lt;p&gt;It’s always useful to keep track of who’s mentioning your website on Twitter. You can see where the buzz is and engage with your fans, building community and hopefully driving more traffic to your brand.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;You can keep track of anytime someone links to your website with some free web tools- it’s just a matter of connecting them together.&lt;/p&gt;
+
+&lt;p&gt;Twitter has a lot of advanced features under the hood. If you know where to look there’s a lot of great ways to find content.&lt;/p&gt;
+
+&lt;p&gt;Twitter accepts special search terms to narrow down content. You can search for tweets in a specific geographic area, tweets mentioning a topic, tweets to a person or tweets with a link.&lt;/p&gt;
+
+&lt;p&gt;The last bit is how you can track any time someone links to your website. Open TweetDeck and create a new column. Search for:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“domain.com” filter:links -from:yourTwitterNameWithNo@ -from:yourWriters&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;The “-from:name” can be repeated as many times as you’d like to filter out your own writers or employees. Obviously it’s not as big a deal if they’re tweeting out your content.&lt;/p&gt;
+
+&lt;p&gt;The domain and link bit cuts it down to only tweets that include a link to your website. Twitter stores all links secretly as t.co links, but it still knows where they all link to and searches that. This search works across all link shorteners.&lt;/p&gt;
+
+&lt;h3 id=&quot;how-to-get-notified-when-someone-links-to-your-site-on-twitter&quot;&gt;How to get notified when someone links to your site on Twitter&lt;/h3&gt;
+
+&lt;p&gt;Maybe you don’t use TweetDeck, or maybe you’d rather have them notify you and not have to check a column yourself. To do that, we’re going to string together &lt;a href=&quot;https://warble.co/&quot;&gt;Warble&lt;/a&gt; and &lt;a href=&quot;https://ifttt.com/&quot;&gt;IFTTT&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;You may want to set up a new email account to avoid having your email flooded with notifications.&lt;/p&gt;
+
+&lt;p&gt;Next, sign into Warble and create a new alert. Input the same search as above. Whenever the results for that search change, Warble will email you.&lt;/p&gt;
+
+&lt;p&gt;The next-level system involved IFTTT. You can connect your email account within the system and set it to do something else whenever you get a new email from Warble. Check out our &lt;a href=&quot;http://www.technorms.com/20934/create-powerful-connections-with-ifttt&quot;&gt;review of IFTTT&lt;/a&gt; and &lt;a href=&quot;http://www.technorms.com/43294/10-clever-recipes-ifttt-do-apps&quot;&gt;10 clever recipes for the service&lt;/a&gt;. IFTTT is genius because you can have it do whatever you want when you get an email from Warble: text message, &lt;a href=&quot;https://www.pushbullet.com&quot;&gt;Pushbullet&lt;/a&gt;, another email (not sure why you’d want that), an Android or iPhone notification or a tweet.&lt;/p&gt;
+
+&lt;h3 id=&quot;think-before-you-retweet&quot;&gt;Think before you retweet&lt;/h3&gt;
+
+&lt;p&gt;Fair warning: I have found that you need to be careful with who you interact with on Twitter. They may have tweeted your story but they may not be someone you want associated with your brand.&lt;/p&gt;
+
+&lt;p&gt;Be sure to also check the links they tweet to be sure they work- I saw one guy tweeting a “story” from us that was just a 404.&lt;/p&gt;
+
+&lt;h3 id=&quot;final-thoughts&quot;&gt;Final Thoughts&lt;/h3&gt;
+
+&lt;p&gt;It’s fascinating to see who tweets your stories and what they think of them. Hopefully this helps you grow your site and interact with your users.&lt;/p&gt;
+</description>
+        <pubDate>Wed, 16 Dec 2015 00:00:00 -0500</pubDate>
+        <link>http://www.kylenazario.com/2015/12/16/twitter-link-blog.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/12/16/twitter-link-blog.html</guid>
+        
+        
+        <category>twitter,</category>
+        
+        <category>social,</category>
+        
+        <category>tech,</category>
+        
+        <category>technorms,</category>
+        
+        <category>guide</category>
+        
+      </item>
+    
+      <item>
+        <title>Columbus rated sixth-worst city for dating in America</title>
+        <description>&lt;!--break--&gt;
+
+&lt;script id=&quot;infogram_0_dating_in_columbus&quot; title=&quot;Dating in Columbus&quot; src=&quot;//e.infogr.am/js/embed.js?aL7&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&lt;div style=&quot;width:100%;padding:8px 0;font-family:Arial;font-size:13px;line-height:15px;text-align:center;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://infogr.am/dating_in_columbus&quot; style=&quot;color:#989898;text-decoration:none;&quot;&gt;Dating in Columbus&lt;/a&gt;&lt;br /&gt;&lt;a style=&quot;color:#989898;text-decoration:none;&quot; href=&quot;https://infogr.am&quot; target=&quot;_blank&quot;&gt;Create your own infographics&lt;/a&gt;&lt;/div&gt;
+</description>
+        <pubDate>Wed, 16 Dec 2015 00:00:00 -0500</pubDate>
+        <link>http://www.kylenazario.com/2015/12/16/columbus-worst-city-dating.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/12/16/columbus-worst-city-dating.html</guid>
+        
+        
+        <category>dating,</category>
+        
+        <category>columbus,</category>
+        
+        <category>living,</category>
+        
+        <category>ledger,</category>
+        
+        <category>news</category>
+        
+      </item>
     
       <item>
         <title>Welcome to &#39;Y&#39;allywood&#39; (also known as Columbus, Georgia)</title>
@@ -393,157 +503,6 @@ included. --&gt;
         <category>ledger,</category>
         
         <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Hundreds fed at Valley Rescue Mission</title>
-        <description>&lt;p&gt;Volunteers and needy families filled the large white tent by Valley Rescue Mission on Thanksgiving to both give and be served.&lt;/p&gt;
-
-&lt;!--break--&gt;
-
-&lt;p&gt;“I just really wanted to serve the Lord,” said Kathy Hutto, who drove in from LaGrange to help. “He’s been really good to me lately and I wanted to serve Him.”&lt;/p&gt;
-
-&lt;p&gt;Mitzi Oxford, the Mission’s development director, estimates that they served more than 800 people at the tent. The women and children’s center, Damascus Way, also fed everyone at the shelter and delivered meals to more than 300 elderly shut-ins.&lt;/p&gt;
-
-&lt;p&gt;The event required more than 100 volunteers, donations from around the community and a great deal of food.&lt;/p&gt;
-
-&lt;script id=&quot;infogram_0_thanksgiving_charity&quot; title=&quot;Thanksgiving charity&quot; src=&quot;//e.infogr.am/js/embed.js?y1o&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
-&lt;div style=&quot;width:100%;padding:8px 0;font-family:Arial;font-size:13px;line-height:15px;text-align:center;&quot;&gt;&lt;a target=&quot;_blank&quot; href=&quot;https://infogr.am/thanksgiving_charity&quot; style=&quot;color:#989898;text-decoration:none;&quot;&gt;Thanksgiving charity&lt;/a&gt;&lt;br /&gt;&lt;a style=&quot;color:#989898;text-decoration:none;&quot; href=&quot;https://infogr.am&quot; target=&quot;_blank&quot;&gt;Create your own infographics&lt;/a&gt;&lt;/div&gt;
-
-&lt;p&gt;Masterbuilt smoked more than 100 turkeys so the Downtown Rotary Club could de-bone them. Summerville Road Baptist Church delivered desserts, and St. Luke School made the table centerpieces.&lt;/p&gt;
-
-&lt;p&gt;Abigail Pritchett, 10, came with her grandparents Christopher and Debbie Kearns from Ellersly to help serve others.&lt;/p&gt;
-
-&lt;p&gt;“I just love to see their happy faces,” Pritchett said.&lt;/p&gt;
-
-&lt;p&gt;Hutto agreed, calling it “a worthwhile trip.”&lt;/p&gt;
-</description>
-        <pubDate>Thu, 26 Nov 2015 00:00:00 -0500</pubDate>
-        <link>http://www.kylenazario.com/2015/11/26/valley-rescue-mission-thanksgiving.html</link>
-        <guid isPermaLink="true">http://www.kylenazario.com/2015/11/26/valley-rescue-mission-thanksgiving.html</guid>
-        
-        
-        <category>thanksgiving,</category>
-        
-        <category>holidays,</category>
-        
-        <category>charity,</category>
-        
-        <category>ledger,</category>
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Lonely, poor and addicted invited to charitable Thanksgiving</title>
-        <description>&lt;p&gt;Trevor Morris just wanted to help some people for Thanksgiving. On Monday, he posted to Facebook that his restaurant, the Trevioli Artisan Pasta Company, would close to the public and instead open to people who needed a good Thanksgiving.&lt;/p&gt;
-
-&lt;!--break--&gt;
-
-&lt;div id=&quot;fb-root&quot;&gt;&lt;/div&gt;
-&lt;script&gt;(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = &quot;//connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.3&quot;;  fjs.parentNode.insertBefore(js, fjs);}(document, &#39;script&#39;, &#39;facebook-jssdk&#39;));&lt;/script&gt;
-&lt;div class=&quot;fb-post&quot; data-href=&quot;https://www.facebook.com/permalink.php?story_fbid=1189041907797068&amp;amp;id=648844985150099&amp;amp;substory_index=0&quot; data-width=&quot;500&quot;&gt;&lt;div class=&quot;fb-xfbml-parse-ignore&quot;&gt;&lt;blockquote cite=&quot;https://www.facebook.com/permalink.php?story_fbid=1189041907797068&amp;amp;id=648844985150099&amp;amp;substory_index=0&quot;&gt;&lt;p&gt;Trevioli will be closed to the public this Thursday, November 26th. Conversely, we will be opening our doors to the less...&lt;/p&gt;Posted by &lt;a href=&quot;https://www.facebook.com/Trevioli-artisan-pasta-company-648844985150099/&quot;&gt;Trevioli artisan pasta company&lt;/a&gt; on&amp;nbsp;&lt;a href=&quot;https://www.facebook.com/permalink.php?story_fbid=1189041907797068&amp;amp;id=648844985150099&amp;amp;substory_index=0&quot;&gt;Monday, November 23, 2015&lt;/a&gt;&lt;/blockquote&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;The post, which Facebook said was viewed by more than 50,000 people, attracted around a dozen customers and 20-25 volunteers in the first hour. The event was Thursday from 3 p.m. to 6 p.m.&lt;/p&gt;
-
-&lt;p&gt;The Company gave away food donated by groups around the Valley. Morris estimated he could feed up to 500 with everything he had received. He said he wasn’t sure what to do with the extra food, but would probably give it to another charity or hand it out to the needy.&lt;/p&gt;
-
-&lt;p&gt;It was the first time Morris has tried something like this charitable Thanksgiving dinner.&lt;/p&gt;
-
-&lt;p&gt;He said it was just something good he wanted to try, especially after experiencing the other end of charity as a child.&lt;/p&gt;
-
-&lt;p&gt;“There was a time in my life when I was on the other side of the coin, when I was in line to get a free meal,” Morris said. “I was thankful to whoever did it. So I feel like if you can, you should.”&lt;/p&gt;
-
-&lt;p&gt;The restaurant owner said he grew up in a family with a lot of kids and little money. Welfare, food stamps and free lunches at school were what Morris said got his family by. In a &lt;a href=&quot;http://www.ledger-enquirer.com/news/local/article29435938.html&quot;&gt;Job Spotlight from March 2015&lt;/a&gt;, he also told the Ledger-Enquirer his upbringing included a mother addicted to drugs and his own depression.&lt;/p&gt;
-
-&lt;p&gt;“I remember that there was a local bakery that would find needy families like ours and they would bring stuff by all the time,” Morris said. “I always thought that was super cool as a kid.”&lt;/p&gt;
-
-&lt;p&gt;Natalie Blackwell, 26, said she volunteered to help the dinner as part of a joint decision with her mother. Her brother is in Atlanta and her mother is in South Carolina and they could not get together for Thanksgiving. Instead, Blackwell and her mother decided to do charity for the holiday.&lt;/p&gt;
-
-&lt;p&gt;“That’s the whole purpose of Thanksgiving,” Blackwell said. “What better way is there to give back?”&lt;/p&gt;
-
-&lt;p&gt;Morris said he asked for the lonely and anxious to visit as well because of the problems associated with the holidays.&lt;/p&gt;
-
-&lt;p&gt;“This is the time of the year where your suicide rate goes up,” he said. “If there’s a chance that somebody came in today who needed just one more day of being around people to save them from going over the edge or relapsing or suicide or whatever, it would be so awesome if we could be something that prevents that from happening.”&lt;/p&gt;
-</description>
-        <pubDate>Thu, 26 Nov 2015 00:00:00 -0500</pubDate>
-        <link>http://www.kylenazario.com/2015/11/26/trevioli-thanksgiving-meal.html</link>
-        <guid isPermaLink="true">http://www.kylenazario.com/2015/11/26/trevioli-thanksgiving-meal.html</guid>
-        
-        
-        <category>thanksgiving,</category>
-        
-        <category>holidays,</category>
-        
-        <category>charity,</category>
-        
-        <category>ledger,</category>
-        
-        <category>news</category>
-        
-      </item>
-    
-      <item>
-        <title>Crime briefs for 11/26/15</title>
-        <description>&lt;p&gt;An unknown suspect robbed the Mystik Gas Station at 645 Brown Ave., according to a report.&lt;/p&gt;
-
-&lt;!--break--&gt;
-
-&lt;p&gt;Police said a young black man in a black hoodie with a white emblem and red mask, blue gloves, dark jeans and black and white shoes entered through the east-facing door. The report said the suspect used a black semi-automatic handgun to rob the store between 6 p.m. and 6:18 p.m. Wednesday.&lt;/p&gt;
-
-&lt;p&gt;Police did not list what was taken and are still investigating.&lt;/p&gt;
-
-&lt;h3 id=&quot;man-arrested-for-possession-of-crack-cocaine-and-pills&quot;&gt;Man arrested for possession of crack cocaine and pills&lt;/h3&gt;
-
-&lt;!-- Imports an image and styles it properly, with caption if 
-included. --&gt;
-
-&lt;div class=&quot;imgRight capbox &quot; style=&quot;overflow: hidden;&quot;&gt;
-	&lt;img class=&quot;inline capped &quot; src=&quot;/blog/assets/gardner.jpg&quot; alt=&quot;Antoine Gardner, 31&quot; /&gt;
-	
-		&lt;div class=&quot;cap&quot;&gt;
-			&lt;p&gt;Antoine Gardner, 31&lt;/p&gt;
-		&lt;/div&gt;
-	
-	
-	&lt;hr /&gt;
-	
-&lt;/div&gt;
-
-&lt;p&gt;Columbus police arrested a man for possession of multiple types of drugs, a report said.&lt;/p&gt;
-
-&lt;p&gt;Several officers were at 947 Illges Road in an attempt to locate a wanted person. Police said at the residence they found .1 grams of crack cocaine (street value $10) and 5 Zolpidem Tartrate pills, also known as Ambien (street value $50).&lt;/p&gt;
-
-&lt;p&gt;Antoine Gardner, 31, was arrested and charged with possession of Schedule IV and II drugs and possession of a Walther .22 pistol, the report said. Police are not planning a follow-up.&lt;/p&gt;
-
-&lt;h3 id=&quot;police-4-year-old-girl-molested&quot;&gt;Police: 4-year-old girl molested&lt;/h3&gt;
-
-&lt;p&gt;Columbus police responded to a call about an alleged molestation of a 4-year-old girl, according to a report.&lt;/p&gt;
-
-&lt;p&gt;The victim’s mother called police around 1 p.m. Wednesday to report an incident that happened between 8 p.m. Nov. 20 and 8 p.m. Nov. 22, according to police. The report does not list any suspects, only that the assailant was not a stranger and the incident occurred somewhere on Avery Street.&lt;/p&gt;
-
-&lt;p&gt;The case remains under investigation.&lt;/p&gt;
-
-&lt;h3 id=&quot;chevy-malibu-reported-stolen-from-woodruff-farm-road&quot;&gt;Chevy Malibu reported stolen from Woodruff Farm Road&lt;/h3&gt;
-
-&lt;p&gt;A car was stolen in the 3000 block of Woodruff Farm Road, according to a police report.&lt;/p&gt;
-
-&lt;p&gt;Columbus police said a gold four-door 2007 Chevy Malibu with the temporary tag 14944327 was stolen between 12 a.m. and 7 a.m. Wednesday morning. The report does not list how much the car is worth.&lt;/p&gt;
-
-&lt;p&gt;Police are investigating.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 26 Nov 2015 00:00:00 -0500</pubDate>
-        <link>http://www.kylenazario.com/2015/11/26/drug-arrest-cocaine-pills-robbery.html</link>
-        <guid isPermaLink="true">http://www.kylenazario.com/2015/11/26/drug-arrest-cocaine-pills-robbery.html</guid>
-        
-        
-        <category>crime,</category>
-        
-        <category>ledger,</category>
-        
-        <category>briefs</category>
         
       </item>
     
