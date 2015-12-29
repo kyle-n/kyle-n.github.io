@@ -89,7 +89,27 @@
 	}
 </style>
 
-  <body>
+<!-- For hiding footnotes -->
+<script> 
+
+function toggle(displayState) {
+	var elements = document.getElementsByClassName('footnoting')
+	var showing = false;
+	for (var i = 0; i < elements.length; i++) {
+		if (elements[i].style.display == 'inline') {
+			showing = true;
+			elements[i].style.display = displayState;
+			elements[i].style.className = "footnoting animated fadeIn";
+		}
+	}
+}
+
+function hideDiv() {
+}
+
+</script>
+
+  <body onclick="hideDiv()" >
 
     <header class="site-header">
 
@@ -134,6 +154,42 @@
   <p style="text-align: center;"><a href="/blog/ledger.html">Ledger-Enquirer</a> &nbsp;|&nbsp; <a href="/blog/plainsman.html">The Plainsman</a> &nbsp;|&nbsp; <a href="/blog/fph.html">Free Press Houston</a> &nbsp;|&nbsp; <a href="/blog/tn.html">TechNorms</a></p>
 
 <!-- Loop through paginated posts -->
+
+
+<br>
+<div class="teaserWrapper" style="max-width: 100%";>
+<div class="teaserTitle"
+>
+		  <h4><a href="/2015/06/08/shade.html">How to Clean Your Mac’s Desktop in One Click</a></h4>
+</div>
+
+	<!-- Post image, if there -->
+	
+	<div class="teaserImage">
+			  <img src="http://www.kylenazario.com/blog/assets/shade-title.png">		
+	</div>
+	
+
+	<div class="descrip" 
+	>
+		<p class="author">
+			<span class="date">June 08, 2015 &nbsp;| &nbsp;<a class="blog-name" href="
+			
+				/blog/tn.html
+			
+						 ">TechNorms</a></span>
+			<div class="content">
+				<p>Few things bother me as much as a messy desktop. Logging onto someone else’s computer or a shared machine and seeing items scattered across the desktop bothers me. It bothers me on a level few other things to on PCs, except <a href="http://www.technorms.com/44679/fix-wifi-trouble-mac-os">WiFi that keeps disconnecting</a>. It’s hard to concentrate and <a href="http://lifehacker.com/5893054/an-overly-cluttered-desktop-can-seriously-slow-down-your-mac--clean-it-up-for-a-noticeable-speed-boost">it slows down your Mac</a>.</p>
+
+
+			</div>
+		</p>
+	</div>
+
+</div>
+	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
+
+
 
 
 <br>
@@ -436,38 +492,6 @@ style="max-width: 100%;">
 						 ">Columbus Ledger-Enquirer</a></span>
 			<div class="content">
 				<p>A short burst of rain couldn’t keep a crowd of veterans and their families from gathering outside the National Infantry Museum on Memorial Day morning to celebrate the addition of 224 new paver stones to its memorial.</p>
-
-
-			</div>
-		</p>
-	</div>
-
-</div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
-
-
-
-
-<br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
-style="max-width: 100%;">
-		  <h4><a href="/2015/05/22/steammillrobbery.html">Columbus men robbed at gunpoint on Steam Mill Road</a></h4>
-</div>
-
-	<!-- Post image, if there -->
-	
-
-	<div class="descrip" 
-	style="max-width: 100%;">
-		<p class="author">
-			<span class="date">May 22, 2015 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/ledger.html
-			
-						 ">Columbus Ledger-Enquirer</a></span>
-			<div class="content">
-				<p>Two Columbus men were robbed at gunpoint in the 5000 block of Steam Mill Road, according to a report from police.</p>
 
 
 			</div>

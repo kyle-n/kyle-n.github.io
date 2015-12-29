@@ -88,7 +88,27 @@
 	}
 </style>
 
-  <body>
+<!-- For hiding footnotes -->
+<script> 
+
+function toggle(displayState) {
+	var elements = document.getElementsByClassName('footnoting')
+	var showing = false;
+	for (var i = 0; i < elements.length; i++) {
+		if (elements[i].style.display == 'inline') {
+			showing = true;
+			elements[i].style.display = displayState;
+			elements[i].style.className = "footnoting animated fadeIn";
+		}
+	}
+}
+
+function hideDiv() {
+}
+
+</script>
+
+  <body onclick="hideDiv()" >
 
     <header class="site-header">
 
@@ -156,7 +176,37 @@ included. -->
 
 <p>R. Edward Furr, their attorney, said he hoped to commence legal action in the Superior Court of Chattahoochee County on Friday.</p>
 
-<p>“We have tried mild and lenient measures,” Furr said. “It’s pretty clear to us based on what we’ve learned today that we just have to file suit.” <sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup></p>
+<p>“We have tried mild and lenient measures,” Furr said. “It’s pretty clear to us based on what we’ve learned today that we just have to file suit.” <style>
+#footnote_1 {
+	-webkit-animation-duration: .3s;
+	-moz-animation-duration: .3s;
+	animation-duration: .3s;
+}
+</style>
+<sup><button class="fn_button" onclick="showDiv_1()" style="position: relative; left: 0px;">•••
+<span class="footnoting animated fadeIn" id="footnote_1" style="display: none;">Unsurprisingly, both parties told me they feel they have the moral high ground and feel sorry for the other, who are nice people who just got caught up in the wrong thing.</span></button></sup>
+<script>
+	var shown_1 = false;
+	function showDiv_1() {
+		if (document.getElementById('footnote_1').style.display 
+			== "none") {
+			document.getElementById('footnote_1').style.display 
+				= "inline";
+			document.getElementById('footnote_1').style.position 
+				= "absolute";
+			document.getElementById('footnote_1').style.top = "30px";
+			document.getElementById('footnote_1').style.right = "0px";
+			document.getElementById('footnote_1').style.left = "-120px";
+			shown_1 = true;
+		}
+		else {
+			document.getElementById('footnote_1').style.display = "none";
+			document.getElementById('footnote_1').className 
+				= "footnoting animated fadeIn";
+			shown_1 = false;
+		}
+	}
+</script></p>
 
 <p>The conflict began when 21-year-old Blake Lechner, a specialist in the 3rd Infantry Division, received news that he would be transferred to Korea. The transfer would happen between January and August 2016, according to his wife, Ashley Lechner, 23.</p>
 
@@ -168,7 +218,37 @@ included. -->
 
 <p>The Tri County Rescue offers a 12-hour window in which owners who change their mind can take their dogs back. Furr said the Lechners did not receive a fair 12-hour period.</p>
 
-<p>The story, <a href="http://www.fox5atlanta.com/news/46939711-story">originally reported by Fox 5 in Atlanta</a>, has sparked a reaction that strikes the employees of the Tri County Rescue as misguided. <sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup></p>
+<p>The story, <a href="http://www.fox5atlanta.com/news/46939711-story">originally reported by Fox 5 in Atlanta</a>, has sparked a reaction that strikes the employees of the Tri County Rescue as misguided. <style>
+#footnote_2 {
+	-webkit-animation-duration: .3s;
+	-moz-animation-duration: .3s;
+	animation-duration: .3s;
+}
+</style>
+<sup><button class="fn_button" onclick="showDiv_2()" style="position: relative; left: 0px;">•••
+<span class="footnoting animated fadeIn" id="footnote_2" style="display: none;">It looks like Fox 5 tried to get the rescue’s side but they did not give it to them at the time. The backlash after the first story definitely changed staffs’ minds.</span></button></sup>
+<script>
+	var shown_2 = false;
+	function showDiv_2() {
+		if (document.getElementById('footnote_2').style.display 
+			== "none") {
+			document.getElementById('footnote_2').style.display 
+				= "inline";
+			document.getElementById('footnote_2').style.position 
+				= "absolute";
+			document.getElementById('footnote_2').style.top = "30px";
+			document.getElementById('footnote_2').style.right = "0px";
+			document.getElementById('footnote_2').style.left = "-120px";
+			shown_2 = true;
+		}
+		else {
+			document.getElementById('footnote_2').style.display = "none";
+			document.getElementById('footnote_2').className 
+				= "footnoting animated fadeIn";
+			shown_2 = false;
+		}
+	}
+</script></p>
 
 <p>“The truth of the whole thing is completely different,” said Andrea Hoffman, who works at the shelter.</p>
 
@@ -195,16 +275,6 @@ included. -->
 <p>Ashley Lechner said she realizes the family made a mistake and wants Spot back, even if it means going to court.</p>
 
 <p>“Our family did not want to come to this,” Lechner said. “It’s not cheap, but for our family this is what we have to do.”</p>
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>Perhaps unsurprisingly, both parties told me they feel they have the moral high ground and feel sorry for the other, who are nice people who just got caught up in the wrong thing. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-    <li id="fn:2">
-      <p>It looks like Fox 5 tried to get the rescue’s side but they did not give it to them at the time. The backlash after the first story definitely changed staffs’ minds. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 
 	 </div>
 

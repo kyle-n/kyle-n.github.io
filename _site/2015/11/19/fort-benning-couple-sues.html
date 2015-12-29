@@ -88,7 +88,27 @@
 	}
 </style>
 
-  <body>
+<!-- For hiding footnotes -->
+<script> 
+
+function toggle(displayState) {
+	var elements = document.getElementsByClassName('footnoting')
+	var showing = false;
+	for (var i = 0; i < elements.length; i++) {
+		if (elements[i].style.display == 'inline') {
+			showing = true;
+			elements[i].style.display = displayState;
+			elements[i].style.className = "footnoting animated fadeIn";
+		}
+	}
+}
+
+function hideDiv() {
+}
+
+</script>
+
+  <body onclick="hideDiv()" >
 
     <header class="site-header">
 
@@ -183,11 +203,11 @@ included. -->
 	animation-duration: .3s;
 }
 </style>
-<sup><button class="fn_button" onclick="showDiv()" style="position: relative; left: 0px;">1
-<span class="footnoting animated fadeIn" id="footnote_1" style="display: none;">I reached out to Thomas Hoffman, but he did not answer a call. That was fine, he said he’s often out of cell phone reach. I texted him as well and received only cryptic answers. ‘If I get served it’s going to court,’ he replied tersely to several questions.</span>
-</button></sup>
+<sup><button class="fn_button" onclick="showDiv_1()" style="position: relative; left: 0px;">•••
+<span class="footnoting animated fadeIn" id="footnote_1" style="display: none;">I reached out to Thomas Hoffman, but he did not answer a call. That was fine, he said he’s often out of cell phone reach. I texted him as well and received only cryptic answers. ‘If I get served it’s going to court,’ he replied tersely to several questions.</span></button></sup>
 <script>
-	function showDiv() {
+	var shown_1 = false;
+	function showDiv_1() {
 		if (document.getElementById('footnote_1').style.display 
 			== "none") {
 			document.getElementById('footnote_1').style.display 
@@ -197,11 +217,13 @@ included. -->
 			document.getElementById('footnote_1').style.top = "30px";
 			document.getElementById('footnote_1').style.right = "0px";
 			document.getElementById('footnote_1').style.left = "-120px";
+			shown_1 = true;
 		}
 		else {
 			document.getElementById('footnote_1').style.display = "none";
 			document.getElementById('footnote_1').className 
 				= "footnoting animated fadeIn";
+			shown_1 = false;
 		}
 	}
 </script></p>

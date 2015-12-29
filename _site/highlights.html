@@ -89,7 +89,27 @@
 	}
 </style>
 
-  <body>
+<!-- For hiding footnotes -->
+<script> 
+
+function toggle(displayState) {
+	var elements = document.getElementsByClassName('footnoting')
+	var showing = false;
+	for (var i = 0; i < elements.length; i++) {
+		if (elements[i].style.display == 'inline') {
+			showing = true;
+			elements[i].style.display = displayState;
+			elements[i].style.className = "footnoting animated fadeIn";
+		}
+	}
+}
+
+function hideDiv() {
+}
+
+</script>
+
+  <body onclick="hideDiv()" >
 
     <header class="site-header">
 
@@ -131,6 +151,8 @@
 
   <article class="post-content">
     <!-- Loop through paginated posts -->
+
+
 
 
 

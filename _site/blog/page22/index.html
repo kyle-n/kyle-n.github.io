@@ -89,7 +89,27 @@
 	}
 </style>
 
-  <body>
+<!-- For hiding footnotes -->
+<script> 
+
+function toggle(displayState) {
+	var elements = document.getElementsByClassName('footnoting')
+	var showing = false;
+	for (var i = 0; i < elements.length; i++) {
+		if (elements[i].style.display == 'inline') {
+			showing = true;
+			elements[i].style.display = displayState;
+			elements[i].style.className = "footnoting animated fadeIn";
+		}
+	}
+}
+
+function hideDiv() {
+}
+
+</script>
+
+  <body onclick="hideDiv()" >
 
     <header class="site-header">
 
@@ -134,6 +154,40 @@
   <p style="text-align: center;"><a href="/blog/ledger.html">Ledger-Enquirer</a> &nbsp;|&nbsp; <a href="/blog/plainsman.html">The Plainsman</a> &nbsp;|&nbsp; <a href="/blog/fph.html">Free Press Houston</a> &nbsp;|&nbsp; <a href="/blog/tn.html">TechNorms</a></p>
 
 <!-- Loop through paginated posts -->
+
+
+<br>
+<div class="teaserWrapper" style="max-width: 100%";>
+<div class="teaserTitle"
+>
+		  <h4><a href="/2014/03/07/glass.html">Google Glass- Is the world ready?</a></h4>
+</div>
+
+	<!-- Post image, if there -->
+	
+	<div class="teaserImage">
+			  <img src="http://www.kylenazario.com/blog/assets/glass.jpg">		
+	</div>
+	
+
+	<div class="descrip" 
+	>
+		<p class="author">
+			<span class="date">March 07, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
+			
+						 ">IT Pro</a></span>
+			<div class="content">
+				<p>The world isn’t ready for Google Glass. Despite Google’s planned 2014 launch, its Android-powered spectacles face a multitude of problems.</p>
+
+
+			</div>
+		</p>
+	</div>
+
+</div>
+	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
+
+
 
 
 <br>
@@ -452,46 +506,6 @@
 				<p>On May 11, 2013, Darcy Corbitt was born at 21 years of age.</p>
 
 <p>With her friends gone for the summer, Corbitt moved a couch, three bookshelves and more than 350 books into an apartment to start her new life.</p>
-
-
-			</div>
-		</p>
-	</div>
-
-</div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
-
-
-
-
-<br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4><a href="/2013/10/02/bandProf.html">Auburn professor, student marches his dream, trumpet in hand</a></h4>
-</div>
-
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/bandprof.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">October 02, 2013 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/plainsman.html
-			
-						 ">The Plainsman</a></span>
-			<div class="content">
-				<p>Joseph Fetsch has no hobbies. In his spare time, he studies. On bus rides with the band, he does homework.</p>
-
-<p>Afterward, he goes home, sleeps for four-six hours and does it again.</p>
-
-<p>His schedule leaves no spare time. Fetsch, 47, is a full-time student, instructor and member of the Auburn University Marching Band.</p>
 
 
 			</div>

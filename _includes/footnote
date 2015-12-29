@@ -5,12 +5,12 @@
 	animation-duration: .3s;
 }
 </style>
-<sup><button class="fn_button" onclick="showDiv()" style="position: relative; left: 0px;">{{ include.num }}
+<sup><button class="fn_button" onclick="showDiv_{{ include.num }}()" style="position: relative; left: 0px;">&bull;&bull;&bull;
 <span class="footnoting animated fadeIn" id="footnote_{{ include.num }}"
-	style="display: none;">{{ include.note }}</span>
-</button></sup>
+	style="display: none;">{{ include.note }}</span></button></sup>
 <script>
-	function showDiv() {
+	var shown_{{ include.num }} = false;
+	function showDiv_{{ include.num }}() {
 		if (document.getElementById('footnote_{{ include.num }}').style.display 
 			== "none") {
 			document.getElementById('footnote_{{ include.num }}').style.display 
@@ -20,11 +20,13 @@
 			document.getElementById('footnote_{{ include.num }}').style.top = "30px";
 			document.getElementById('footnote_{{ include.num }}').style.right = "0px";
 			document.getElementById('footnote_{{ include.num }}').style.left = "-120px";
+			shown_{{ include.num }} = true;
 		}
 		else {
 			document.getElementById('footnote_{{ include.num }}').style.display = "none";
 			document.getElementById('footnote_{{ include.num }}').className 
 				= "footnoting animated fadeIn";
+			shown_{{ include.num }} = false;
 		}
 	}
 </script>

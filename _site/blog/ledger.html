@@ -89,7 +89,27 @@
 	}
 </style>
 
-  <body>
+<!-- For hiding footnotes -->
+<script> 
+
+function toggle(displayState) {
+	var elements = document.getElementsByClassName('footnoting')
+	var showing = false;
+	for (var i = 0; i < elements.length; i++) {
+		if (elements[i].style.display == 'inline') {
+			showing = true;
+			elements[i].style.display = displayState;
+			elements[i].style.className = "footnoting animated fadeIn";
+		}
+	}
+}
+
+function hideDiv() {
+}
+
+</script>
+
+  <body onclick="hideDiv()" >
 
     <header class="site-header">
 
@@ -138,6 +158,74 @@
 </p>
 
 <!--Find and show Plainsman posts-->
+
+
+
+<br>
+<div class="teaserWrapper" style="max-width: 100%";>
+<div class="teaserTitle"
+>
+		  <h4><a href="/2015/12/28/best-videos-2015.html">6 Videos from 2015's biggest stories</a></h4>
+</div>
+
+	<!-- Post image, if there -->
+	
+	<div class="teaserImage">
+			  <img src="http://www.kylenazario.com/blog/assets/gunarms.jpg">		
+	</div>
+	
+
+	<div class="descrip" 
+	>
+		<p class="author">
+			<span class="date">December 28, 2015 &nbsp;| &nbsp;<a class="blog-name" href="
+			
+				/blog/ledger.html
+			
+						 ">Columbus Ledger-Enquirer</a></span>
+			<div class="content">
+				<p>Ledger-Enquirer staffers took a lot of video in 2015, from Sunday Interviews to breaking news. These were the six videos that turned the most heads. <style>
+#footnote_1 {
+	-webkit-animation-duration: .3s;
+	-moz-animation-duration: .3s;
+	animation-duration: .3s;
+}
+</style>
+<sup><button class="fn_button" onclick="showDiv_1()" style="position: relative; left: 0px;">•••
+<span class="footnoting animated fadeIn" id="footnote_1" style="display: none;">For clarity, I did not create any of these videos but did write the recap.</span></button></sup>
+<script>
+	var shown_1 = false;
+	function showDiv_1() {
+		if (document.getElementById('footnote_1').style.display 
+			== "none") {
+			document.getElementById('footnote_1').style.display 
+				= "inline";
+			document.getElementById('footnote_1').style.position 
+				= "absolute";
+			document.getElementById('footnote_1').style.top = "30px";
+			document.getElementById('footnote_1').style.right = "0px";
+			document.getElementById('footnote_1').style.left = "-120px";
+			shown_1 = true;
+		}
+		else {
+			document.getElementById('footnote_1').style.display = "none";
+			document.getElementById('footnote_1').className 
+				= "footnoting animated fadeIn";
+			shown_1 = false;
+		}
+	}
+</script></p>
+
+
+			</div>
+		</p>
+	</div>
+
+</div>
+	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
+
+
+
 
 
 

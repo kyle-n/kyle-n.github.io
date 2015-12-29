@@ -6,9 +6,115 @@
 </description>
     <link>http://www.kylenazario.com/</link>
     <atom:link href="http://www.kylenazario.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 18 Dec 2015 14:30:26 -0500</pubDate>
-    <lastBuildDate>Fri, 18 Dec 2015 14:30:26 -0500</lastBuildDate>
+    <pubDate>Mon, 28 Dec 2015 22:32:42 -0500</pubDate>
+    <lastBuildDate>Mon, 28 Dec 2015 22:32:42 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>6 Videos from 2015&#39;s biggest stories</title>
+        <description>&lt;p&gt;Ledger-Enquirer staffers took a lot of video in 2015, from Sunday Interviews to breaking news. These were the six videos that turned the most heads. &lt;style&gt;
+#footnote_1 {
+	-webkit-animation-duration: .3s;
+	-moz-animation-duration: .3s;
+	animation-duration: .3s;
+}
+&lt;/style&gt;
+&lt;sup&gt;&lt;button class=&quot;fn_button&quot; onclick=&quot;showDiv_1()&quot; style=&quot;position: relative; left: 0px;&quot;&gt;•••
+&lt;span class=&quot;footnoting animated fadeIn&quot; id=&quot;footnote_1&quot; style=&quot;display: none;&quot;&gt;For clarity, I did not create any of these videos but did write the recap.&lt;/span&gt;&lt;/button&gt;&lt;/sup&gt;
+&lt;script&gt;
+	var shown_1 = false;
+	function showDiv_1() {
+		if (document.getElementById(&#39;footnote_1&#39;).style.display 
+			== &quot;none&quot;) {
+			document.getElementById(&#39;footnote_1&#39;).style.display 
+				= &quot;inline&quot;;
+			document.getElementById(&#39;footnote_1&#39;).style.position 
+				= &quot;absolute&quot;;
+			document.getElementById(&#39;footnote_1&#39;).style.top = &quot;30px&quot;;
+			document.getElementById(&#39;footnote_1&#39;).style.right = &quot;0px&quot;;
+			document.getElementById(&#39;footnote_1&#39;).style.left = &quot;-120px&quot;;
+			shown_1 = true;
+		}
+		else {
+			document.getElementById(&#39;footnote_1&#39;).style.display = &quot;none&quot;;
+			document.getElementById(&#39;footnote_1&#39;).className 
+				= &quot;footnoting animated fadeIn&quot;;
+			shown_1 = false;
+		}
+	}
+&lt;/script&gt;&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;h3 id=&quot;video-police-officer-body-cam-shows-him-shooting-suspect&quot;&gt;Video: Police officer body cam shows him shooting suspect&lt;/h3&gt;
+
+&lt;p&gt;By far the most popular video this year was the raw footage showing a Columbus police officer shooting Towon Earl on Nov. 2. Earl was arrested after injuring three officers when he put his car into drive, &lt;a href=&quot;http://www.ledger-enquirer.com/news/local/article43373514.html&quot;&gt;striking two and injuring a third&lt;/a&gt;. Four different police cameras captured Earl’s actions before he was shot. The Columbus Police Department says it is equipping more officers with the cameras in a &lt;a href=&quot;http://www.ledger-enquirer.com/news/local/article44944272.html&quot;&gt;three-month test program&lt;/a&gt;.&lt;/p&gt;
+
+&lt;iframe src=&quot;http://www.ledger-enquirer.com/news/local/crime/article44936805.html/video-embed&quot; width=&quot;640&quot; height=&quot;380&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;muscogee-county-jail-officials-inmate-get-in-fight&quot;&gt;Muscogee County jail officials, inmate get in fight&lt;/h3&gt;
+
+&lt;p&gt;The Columbus branch of the NAACP &lt;a href=&quot;http://www.ledger-enquirer.com/news/local/article29450245.html&quot;&gt;released video&lt;/a&gt; in May of a fight that happened on July 13, 2013, between an inmate of Muscogee County Jail and two officers. Christopher Russell, a diabetic, had complained to deputies about his meals arriving late, according to those involved. The two officers who allegedly attacked him, Deputy Anthony Ermi and Correctional Officer Anthony Merritt, were investigated. Ermi was suspended for 36 hours without pay. Merritt was terminated after being charged with an unrelated crime before the investigation was completed.&lt;/p&gt;
+
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/dJ_QQVFScYs&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;home-owners-say-john-rusty-houser-destroyed-their-house&quot;&gt;Home owners say John ‘Rusty’ Houser destroyed their house&lt;/h3&gt;
+
+&lt;p&gt;The gunman who &lt;a href=&quot;http://www.ledger-enquirer.com/news/local/article29489611.html&quot;&gt;killed two women and himself in a Louisiana movie theater&lt;/a&gt; in July was the same John Russell “Rusty” Houser who &lt;a href=&quot;http://www.ledger-enquirer.com/news/local/crime/article29490280.html&quot;&gt;vandalized and bobby-trapped the Phenix City house&lt;/a&gt; a Columbus man bought 18 months ago for his daughter out of foreclosure – years after they went to church with Houser and considered him incapable of such horror. Norman Bone, 77, and his daughter, Beth Bone, said the 32nd Street home still isn’t fit to be occupied a year and a half after police accompanied them to seize the house and evict Houser.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/BJfVrJaUsfY&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;rangers-help-8-year-old-boy-with-cystic-fibrosis-fulfill-dream-at-fort-benning&quot;&gt;Rangers help 8-year-old boy with cystic fibrosis fulfill dream at Fort Benning&lt;/h3&gt;
+
+&lt;p&gt;8-year-old Eleck Stone donned his Army Combat Uniform and boots to &lt;a href=&quot;http://www.ledger-enquirer.com/news/local/military/article29435566.html&quot;&gt;spend time with the 3rd Battalion of the 75th Ranger Regiment in March&lt;/a&gt;. Eleck, who has cystic fibrosis, was granted a two-day visit with the elite soldiers through the Make-A-Wish Foundation. Although cystic fibrosis is a life-threatening disorder that causes severe damage to the lungs and digestive system, Eleck joined the Rangers on Thursday and Friday to fire weapons, wear night-vision equipment on a raid, ride in vehicles and take part in other activities.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/VvO5ifDC3fQ&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;big-smoove-curses-superior-court&quot;&gt;Big Smoove curses Superior Court&lt;/h3&gt;
+
+&lt;p&gt;Michael Jerome Johnson, better known as Big Smoove, let Superior Court Judge William Rumer have a piece of his mind before being sentenced for the &lt;a href=&quot;http://www.ledger-enquirer.com/news/local/article29462842.html&quot;&gt;2011 murder of Steve Toms&lt;/a&gt;. Johnson showed no remorse and refused to apologize to Toms’ family and friends. He was sentenced to life without parole plus 10 years for the murder of Toms, manager of the Gold &amp;amp; Silver Trading Center, and a strong of armed robberies.&lt;/p&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/IoDYoIm80wM&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;female-ranger-candidates-tackle-darby-queen-obstacle-course&quot;&gt;Female ranger candidates tackle Darby Queen obstacle course&lt;/h3&gt;
+
+&lt;p&gt;Before 1st Lt. Shaye Haver and Capt. Kristen Griest became &lt;a href=&quot;http://www.ledger-enquirer.com/news/local/military/article31477890.html&quot;&gt;the first two women to graduate Ranger School&lt;/a&gt; (followed quickly by &lt;a href=&quot;http://www.ledger-enquirer.com/news/local/military/article39408834.html&quot;&gt;Maj. Lisa Jaster&lt;/a&gt;), they had to tackle the infamous Darby Queen obstacle course during the Camp Darby phase of Ranger School.&lt;/p&gt;
+
+&lt;iframe src=&quot;http://www.ledger-enquirer.com/news/local/military/article31373627.html/video-embed&quot; width=&quot;640&quot; height=&quot;380&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen=&quot;true&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;honorable-mentions&quot;&gt;Honorable mentions:&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;http://www.ledger-enquirer.com/news/article48602655.html&quot;&gt;Young ballerina dances The Nutcracker following a liver transplant&lt;/a&gt; for being incredibly adorable&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=Nl4xOArXwLs&quot;&gt;Maj. Gen. Scott Miller answers questions about Ranger School class with two female graduates&lt;/a&gt; because of the subtext of &lt;a href=&quot;http://www.ledger-enquirer.com/news/local/military/article44300643.html&quot;&gt;people questioning Ranger School&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 28 Dec 2015 00:00:00 -0500</pubDate>
+        <link>http://www.kylenazario.com/2015/12/28/best-videos-2015.html</link>
+        <guid isPermaLink="true">http://www.kylenazario.com/2015/12/28/best-videos-2015.html</guid>
+        
+        
+        <category>2015,</category>
+        
+        <category>recap,</category>
+        
+        <category>video,</category>
+        
+        <category>rangerwomen,</category>
+        
+        <category>army,</category>
+        
+        <category>crime,</category>
+        
+        <category>police,</category>
+        
+        <category>ledger</category>
+        
+      </item>
     
       <item>
         <title>The University of Alabama is testing fraternity brothers for drug use</title>
@@ -135,11 +241,11 @@
 	animation-duration: .3s;
 }
 &lt;/style&gt;
-&lt;sup&gt;&lt;button class=&quot;fn_button&quot; onclick=&quot;showDiv()&quot; style=&quot;position: relative; left: 0px;&quot;&gt;1
-&lt;span class=&quot;footnoting animated fadeIn&quot; id=&quot;footnote_1&quot; style=&quot;display: none;&quot;&gt;There is a &lt;a href=&quot;http://www.boston.com/news/opinion/2015/03/06/what-wrong-with-film-industry-tax-incentives-they-don-work/wRzsGm3OegxBjDCgINEj9L/story.html&quot;&gt;major debate&lt;/a&gt; over whether these things actually work. I would love to explore that, but this story was already pushing it at a thousand words.&lt;/span&gt;
-&lt;/button&gt;&lt;/sup&gt;
+&lt;sup&gt;&lt;button class=&quot;fn_button&quot; onclick=&quot;showDiv_1()&quot; style=&quot;position: relative; left: 0px;&quot;&gt;•••
+&lt;span class=&quot;footnoting animated fadeIn&quot; id=&quot;footnote_1&quot; style=&quot;display: none;&quot;&gt;There is a &lt;a href=&quot;http://www.boston.com/news/opinion/2015/03/06/what-wrong-with-film-industry-tax-incentives-they-don-work/wRzsGm3OegxBjDCgINEj9L/story.html&quot;&gt;major debate&lt;/a&gt; over whether these things actually work. I would love to explore that, but this story was already pushing it at a thousand words.&lt;/span&gt;&lt;/button&gt;&lt;/sup&gt;
 &lt;script&gt;
-	function showDiv() {
+	var shown_1 = false;
+	function showDiv_1() {
 		if (document.getElementById(&#39;footnote_1&#39;).style.display 
 			== &quot;none&quot;) {
 			document.getElementById(&#39;footnote_1&#39;).style.display 
@@ -149,11 +255,13 @@
 			document.getElementById(&#39;footnote_1&#39;).style.top = &quot;30px&quot;;
 			document.getElementById(&#39;footnote_1&#39;).style.right = &quot;0px&quot;;
 			document.getElementById(&#39;footnote_1&#39;).style.left = &quot;-120px&quot;;
+			shown_1 = true;
 		}
 		else {
 			document.getElementById(&#39;footnote_1&#39;).style.display = &quot;none&quot;;
 			document.getElementById(&#39;footnote_1&#39;).className 
 				= &quot;footnoting animated fadeIn&quot;;
+			shown_1 = false;
 		}
 	}
 &lt;/script&gt;&lt;/p&gt;
@@ -443,66 +551,6 @@
         <category>ledger,</category>
         
         <category>viral</category>
-        
-      </item>
-    
-      <item>
-        <title>Sergeant in marshals honored for rushing into house fire while injured</title>
-        <description>&lt;p&gt;Sgt. Kurt Weathered of the Muscogee County Marshals was honored with the department’s first-ever Medal of Bravery at the Government Center Tuesday.&lt;/p&gt;
-
-&lt;!--break--&gt;
-
-&lt;!-- Imports an image and styles it properly, with caption if 
-included. --&gt;
-
-&lt;div class=&quot;imgRight capbox &quot; style=&quot;overflow: hidden;&quot;&gt;
-	&lt;img class=&quot;inline capped &quot; src=&quot;/blog/assets/1125_COLO_fire2.jpg&quot; alt=&quot;Kevin Flowers, left, lost his home to a fire. Kurt Weatherd, right, said he rushed inside the home to make sure Flowers wasn&#39;t asleep inside.&quot; /&gt;
-	
-		&lt;div class=&quot;cap&quot;&gt;
-			&lt;p&gt;Kevin Flowers, left, lost his home to a fire. Kurt Weatherd, right, said he rushed inside the home to make sure Flowers wasn&#39;t asleep inside.&lt;/p&gt;
-		&lt;/div&gt;
-	
-	
-	&lt;hr /&gt;
-	
-&lt;/div&gt;
-
-&lt;p&gt;Weathered said he was on his couch at home, recovering from surgery on his Achilles tendon and about to watch “Gunsmoke,” when he saw smoke coming from his neighbor’s house. He said he put his boot on his bad foot and &lt;a href=&quot;/2015/11/25/man-rushes-burning-house.html&quot;&gt;hopped across the street without crutches into the house&lt;/a&gt;. He said he was afraid his neighbor Kevin Flowers was asleep inside the burning house.&lt;/p&gt;
-
-&lt;p&gt;“We are here because Sergeant Weathered saw the need to lay down his own life and go into a burning house to save the life of his friend and neighbor,” said Muscogee County Marshal Greg Countryman. “He did not know if he would come out of that burning house. This was a very heroic act.”&lt;/p&gt;
-
-&lt;p&gt;For his bravery, Weathered received the Medal of Bravery. Countryman said the department has had the award but never given it before.&lt;/p&gt;
-
-&lt;p&gt;“We never do anything expecting to get anything in return,” Weathered said. “It means a lot to me.”&lt;/p&gt;
-
-&lt;p&gt;Weathered said he tried to open the door by smashing a window with his ASP baton. When he saw the door had a chain on it, he hopped in front of it, stood on his boot and used his good foot to smash open the front door.&lt;/p&gt;
-
-&lt;p&gt;A quick search of the living room revealed a collapsing ceiling but not Flowers. Weathered ran back outside, got a flashlight from his wife Angela and went back into the house. He said he kicked down the bedroom door looking for Flowers.&lt;/p&gt;
-
-&lt;p&gt;“My heart dropped because I thought he was on the bed,” Weathered said, choking up as he spoke at the ceremony. “He wasn’t.”&lt;/p&gt;
-
-&lt;p&gt;When Weathered saw Flowers’ car was not in the garage, he left the house. Flowers told the Ledger-Enquirer he was at the bank at the time.&lt;/p&gt;
-
-&lt;p&gt;“I just thank God for giving me the courage not to follow my mind saying, ‘Man, get out of here. It’s hot,’” Weathered said. “Thank god for my training. I’m just glad (Flowers) is safe.”&lt;/p&gt;
-
-&lt;p&gt;Weathered said he was also glad to provide a &lt;a href=&quot;/2015/10/09/stickers.html&quot;&gt;positive example of public service&lt;/a&gt; to contrast with &lt;a href=&quot;http://www.ledger-enquirer.com/news/nation-world/article46184715.html&quot;&gt;negative news about law enforcement&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;“It’s good to do some good because that’s what you signed up for,” he said. “The badge that you wear don’t make you a god. It sets you out to be that example and be that one to help when someone’s in need.”&lt;/p&gt;
-</description>
-        <pubDate>Tue, 01 Dec 2015 00:00:00 -0500</pubDate>
-        <link>http://www.kylenazario.com/2015/12/01/marshal-medal-bravery-fire.html</link>
-        <guid isPermaLink="true">http://www.kylenazario.com/2015/12/01/marshal-medal-bravery-fire.html</guid>
-        
-        
-        <category>localhero,</category>
-        
-        <category>fire,</category>
-        
-        <category>police,</category>
-        
-        <category>ledger,</category>
-        
-        <category>news</category>
         
       </item>
     

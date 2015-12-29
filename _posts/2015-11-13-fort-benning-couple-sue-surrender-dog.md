@@ -14,9 +14,7 @@ A Fort Benning couple is going to court to get their dog back after giving it up
 
 R. Edward Furr, their attorney, said he hoped to commence legal action in the Superior Court of Chattahoochee County on Friday.
 
-"We have tried mild and lenient measures," Furr said. "It's pretty clear to us based on what we've learned today that we just have to file suit." [^1]
-
-[^1]: Perhaps unsurprisingly, both parties told me they feel they have the moral high ground and feel sorry for the other, who are nice people who just got caught up in the wrong thing. 
+"We have tried mild and lenient measures," Furr said. "It's pretty clear to us based on what we've learned today that we just have to file suit." {% include footnote num="1" note="Unsurprisingly, both parties told me they feel they have the moral high ground and feel sorry for the other, who are nice people who just got caught up in the wrong thing." %}
 
 The conflict began when 21-year-old Blake Lechner, a specialist in the 3rd Infantry Division, received news that he would be transferred to Korea. The transfer would happen between January and August 2016, according to his wife, Ashley Lechner, 23.
 
@@ -28,9 +26,7 @@ Ashley said they tried calling the Tri County Animal Rescue, which handles stray
 
 The Tri County Rescue offers a 12-hour window in which owners who change their mind can take their dogs back. Furr said the Lechners did not receive a fair 12-hour period.
 
-The story, [originally reported by Fox 5 in Atlanta](http://www.fox5atlanta.com/news/46939711-story), has sparked a reaction that strikes the employees of the Tri County Rescue as misguided. [^2]
-
-[^2]: It looks like Fox 5 tried to get the rescue's side but they did not give it to them at the time. The backlash after the first story definitely changed staffs' minds. 
+The story, [originally reported by Fox 5 in Atlanta](http://www.fox5atlanta.com/news/46939711-story), has sparked a reaction that strikes the employees of the Tri County Rescue as misguided. {% include footnote num="2" note="It looks like Fox 5 tried to get the rescue's side but they did not give it to them at the time. The backlash after the first story definitely changed staffs' minds." %}
 
 "The truth of the whole thing is completely different," said Andrea Hoffman, who works at the shelter.
 

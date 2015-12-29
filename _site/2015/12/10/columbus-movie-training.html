@@ -88,7 +88,27 @@
 	}
 </style>
 
-  <body>
+<!-- For hiding footnotes -->
+<script> 
+
+function toggle(displayState) {
+	var elements = document.getElementsByClassName('footnoting')
+	var showing = false;
+	for (var i = 0; i < elements.length; i++) {
+		if (elements[i].style.display == 'inline') {
+			showing = true;
+			elements[i].style.display = displayState;
+			elements[i].style.className = "footnoting animated fadeIn";
+		}
+	}
+}
+
+function hideDiv() {
+}
+
+</script>
+
+  <body onclick="hideDiv()" >
 
     <header class="site-header">
 
@@ -147,11 +167,11 @@
 	animation-duration: .3s;
 }
 </style>
-<sup><button class="fn_button" onclick="showDiv()" style="position: relative; left: 0px;">1
-<span class="footnoting animated fadeIn" id="footnote_1" style="display: none;">There is a <a href="http://www.boston.com/news/opinion/2015/03/06/what-wrong-with-film-industry-tax-incentives-they-don-work/wRzsGm3OegxBjDCgINEj9L/story.html">major debate</a> over whether these things actually work. I would love to explore that, but this story was already pushing it at a thousand words.</span>
-</button></sup>
+<sup><button class="fn_button" onclick="showDiv_1()" style="position: relative; left: 0px;">•••
+<span class="footnoting animated fadeIn" id="footnote_1" style="display: none;">There is a <a href="http://www.boston.com/news/opinion/2015/03/06/what-wrong-with-film-industry-tax-incentives-they-don-work/wRzsGm3OegxBjDCgINEj9L/story.html">major debate</a> over whether these things actually work. I would love to explore that, but this story was already pushing it at a thousand words.</span></button></sup>
 <script>
-	function showDiv() {
+	var shown_1 = false;
+	function showDiv_1() {
 		if (document.getElementById('footnote_1').style.display 
 			== "none") {
 			document.getElementById('footnote_1').style.display 
@@ -161,11 +181,13 @@
 			document.getElementById('footnote_1').style.top = "30px";
 			document.getElementById('footnote_1').style.right = "0px";
 			document.getElementById('footnote_1').style.left = "-120px";
+			shown_1 = true;
 		}
 		else {
 			document.getElementById('footnote_1').style.display = "none";
 			document.getElementById('footnote_1').className 
 				= "footnoting animated fadeIn";
+			shown_1 = false;
 		}
 	}
 </script></p>
