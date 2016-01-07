@@ -237,6 +237,9 @@
         @include media-query($on-laptop) {
             font-size: 22px;
         }
+		  @include media-query($on-palm) {
+				font-weight: 500;
+		  }
     }
 
     h4 {

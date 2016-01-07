@@ -4,6 +4,7 @@ title: Columbus rated sixth-worst city for dating in America
 original: http://www.ledger-enquirer.com/news/local/article50057385.html#storylink=mainstage
 keywords: columbus ga, worst city for dating, bad, poor, economic issues
 categories: dating, columbus, living, ledger, news
+org: Columbus Ledger-Enquirer
 ---
 
 <!--break-->

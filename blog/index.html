@@ -16,7 +16,7 @@ outlet: true;
 
 <br>
 
-<!-- Pagination links -->
+<!-- Next and previous page links -->
 <div class="pagination">
   {% if paginator.previous_page %}
     <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
@@ -30,6 +30,8 @@ outlet: true;
     <span class="next ">Next</span>
   {% endif %}
 
+  {% if paginator.total_pages < 10 %}
+
   {% for page in (1..paginator.total_pages) %}
 		{% if page == paginator.page %}
 			<em>{{ page}}</em>
@@ -39,4 +41,60 @@ outlet: true;
 			<a href="{{ site.paginate_path | prepend: site.url | replace: '//','/' | replace: ':num', page }}">{{ page }}</a>
 		{% endif %}
 	{% endfor %}
+	{% endif %}
+
+	<!-- Too many page numbers, have to add ellipses -->
+	{% if paginator.total_pages > 10 %}
+
+		{% assign prev = paginator.page | minus:'2' %}
+
+		<!-- First page, if there's a gap -->
+		{% if prev > 1 %}
+			<a href="{{ site.baseurl }}/blog/index.html">1</a>
+			{% if prev > 2 %}
+				<em>...</em>
+			{% endif %}
+		{% endif %}
+
+		<!-- Find page two back -->
+		{% if prev > 0 %}
+			{% if prev == 1 %}
+				<a href="{{ site.baseurl }}/blog/index.html">1</a>
+			{% else %}
+				<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//','/' | replace: ':num', prev }}">{{ prev }}</a>				
+			{% endif %}
+		{% endif %}
+
+		<!-- Find previous page -->
+		{% if paginator.previous_page %}
+			{% if paginator.previous_page == 1 %}
+				<a href="{{ site.baseurl }}/blog/index.html">1</a>
+			{% else %}
+				<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//','/' | replace: ':num', paginator.previous_page }}">{{ paginator.previous_page }}</a>
+			{% endif %}
+		{% endif %}
+
+		<!-- Mark current page -->
+		<em>{{ paginator.page }}</em>
+
+		<!-- Find next page -->
+		{% if paginator.next_page %}
+			<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//','/' | replace: ':num', paginator.next_page }}">{{ paginator.next_page }}</a>
+		{% endif %}
+
+		<!-- Find two pages down -->
+		{% assign next = paginator.page | plus:'2' %}
+		{% if next <= paginator.total_pages %}
+			<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//','/' | replace: ':num', next }}">{{ next }}</a>
+		{% endif %}
+
+		{% assign nextCheck = paginator.total_pages | minus:'1' %}
+		{% if next < nextCheck %}
+			<em>...</em>
+		{% endif %}
+		{% if next < paginator.total_pages %}
+			<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//','/' | replace: ':num', paginator.total_pages }}">{{ paginator.total_pages }}</a>
+		{% endif %}			
+
+	{% endif %}
 </div>
