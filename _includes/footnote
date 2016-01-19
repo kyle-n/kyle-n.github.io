@@ -5,7 +5,7 @@
 	animation-duration: .3s;
 }
 </style>
-<sup><button class="fn_button" onclick="showDiv_{{ include.num }}()" style="position: relative; left: 0px;">&bull;&bull;&bull;
+<sup><button class="fn_button" onclick="showDiv_{{ include.num }}()" style="position: relative; left: 0px;"><span class="fn_label">&bull;&bull;&bull;</span>
 <span class="footnoting animated fadeIn" id="footnote_{{ include.num }}"
 	style="display: none;">{{ include.note }}</span></button></sup>
 <script>

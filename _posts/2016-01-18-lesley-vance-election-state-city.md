@@ -21,7 +21,7 @@ In past State of the City addresses, Tomlinson has spoken of accomplishments in 
 
 ### Phenix City special election
 
-{% include image src="blackshear.jpeg" cap="Phenix City councilman Chris Blackshear is running to replace Lesley Vance in District 80 of the Alabama House." style="imgMiddle"
+{% include image src="blackshear.jpeg" cap="Phenix City councilman Chris Blackshear is running to replace Lesley Vance in District 80 of the Alabama House." style="imgMiddle" %}
 
 After the [sad passing of Lesley Vance](http://www.ledger-enquirer.com/news/local/article42725541.html) last November, three Republicans are [vying to take his place](http://www.ledger-enquirer.com/news/local/article55235195.html) to represent District 80 in the Alabama House of Representatives. Today is the vote between civil engineer James McGill, Phenix City councilman Chris Blackshear and Russell County School Board representative Tommy Pugh. Polls will be open 8 a.m.-8 p.m. EST in Phenix City and Smiths Station.
 

@@ -156,6 +156,8 @@ pre > code { border: 0; padding-right: 0; padding-left: 0; }
 .imgFullMiddle { display: block; width: 100%; }
 @media screen and (max-width: 600px) { .imgFullMiddle { display: block; clear: both; width: 100%; margin-top: 0%; margin-bottom: 3%; } }
 
+.imgMiddle hr, .imgFullMiddle hr { display: none; }
+
 .article-text { max-width: 85%; margin-right: auto; margin-left: auto; }
 @media screen and (max-width: 600px) { .article-text { max-width: 97.5%; } }
 

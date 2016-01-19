@@ -370,6 +370,10 @@
 		}
 }
 
+.imgMiddle hr, .imgFullMiddle hr {
+	display: none;
+}
+
 //Narrow the desktop layout
 .article-text {
 	max-width: 85%;
