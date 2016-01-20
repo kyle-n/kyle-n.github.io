@@ -402,16 +402,18 @@
 	font-size: $small-font-size;
 }
 
-/* 
-sup {
-	font-size: 0.9em;
-}
+/* Hide, keep footnotes centered */
+.footnoting {
+	color: white;
+	font-size: $small-font-size; 
+	width: 300px; 
+	float: left;
+	background: #1a1a1a;
+	padding: 0.8em;
+	border-radius: 5px;
 
-// Add brackets for easier tapping footnotes
-sup a:before {
-	content: "(";
-}
-sup a:after {
-	content: ")";
-}
-*/
+	@include media-query($on-palm) {
+		font-size: $mobile-base-font-size;
+	}
+
+	}
