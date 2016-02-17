@@ -2,9 +2,13 @@
 
 ## About this project
 
-I set this website up to show my journalistic work to potential employers. This GitHub repository is set up as a way to view my abilities with HTML and CSS as well. I'm no expert, but I know enough to create modify code extensively into a something useful for other projects, such as unique stories on the web. 
+I created this website to show my journalistic work to potential employers. This GitHub repository is also set up as a way to view my abilities with HTML and CSS as well. I'm no expert, but I know enough to create modify code extensively into a something useful for other projects. 
 
-Feel free to look through the code and assets. They're a mostly finished, though I'm ironing out the bugs.
+Feel free to look through the code and assets. They're mostly finished, though I'm ironing out the bugs.
+
+### Progress report 2-17-16
+
+I've stopped adding features to the site. Now it's just a matter of keeping it updated with new stories and making sure nothing breaks. 
 
 ### Progress report 9-17-15
 

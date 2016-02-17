@@ -13,7 +13,7 @@ All CSS fading effects are done through [Animate.css](https://daneden.github.io/
 
 Posts are written in [Markdown](https://en.wikipedia.org/wiki/Markdown), the absolute easiest way to produce content HTML-formatted content for the web. 
 
-Related posts are created through a homemade algorithm that does a deep dive on every tag. It slows down site build time prodigiously, but hey, it's a static site generator so the render speed doesn't affect the end user. Just takes a while to push changes. 
+Related posts are created through a [homemade algorithm](https://github.com/kyle-n/kyle-n.github.io/blob/master/_includes/related_posts.html) that does a deep dive on every tag. It slows down site build time prodigiously, but hey, it's a static site generator so the build speed doesn't affect the end user. Besides, it's plenty fast when GitHub servers are doing the work.  
 
 > What's that tracking me? 
 
