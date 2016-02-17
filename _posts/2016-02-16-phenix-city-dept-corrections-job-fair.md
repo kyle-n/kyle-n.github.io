@@ -15,6 +15,6 @@ They're hiring for a correctional officer trainee with an annual salary of $28,5
 
 Applicants need to pass a physical ability, written, drug and background test. High school diploma or GED required. Applicants must have no convictions for felonies or domestic violence. They should also be at least 19 years old and U.S. citizens.
 
-More on the job.
+[More on the job](https://www.facebook.com/Phenix-City-Career-Center-215389885294585/).
 
-[h/t @kimolive]
+[h/t [@kimolive](https://twitter.com/kimolive/status/699617902736121856)]

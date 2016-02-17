@@ -9,7 +9,7 @@ keywords: monday storms, debris, crawford, tornado
 categories: tornados, weather, ledger, news
 ---
 
-The storms that buffeted the Chattahoochee Valley Monday night left a trail of damage, according to Robert Franklin, director of Russell County Emergency Management.
+The storms that buffeted the Chattahoochee Valley Monday night left a trail of damage, according to Robert Franklin, director of Russell County Emergency Management. {% include footnote num="4" note="I have never heard someone sound as tired as this guy did. Bob is a champ for taking a nosy reporter's calls the day after staying up 'till 4 a.m. clearing trees from the roads around Russell County." %}
 
 <!--break-->
 

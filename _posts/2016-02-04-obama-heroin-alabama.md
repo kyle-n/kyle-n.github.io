@@ -13,9 +13,7 @@ Barack Obama, writing in an exclusive editorial on AL.com:
 
 <!--break-->
 
-> As the use of prescription drugs has increased over the past 15 or 20 years, so has their misuse – as well as the wreckage caused by other opioids like heroin.  In fact, four in five heroin users started out by misusing prescription drugs, and then switched to heroin.  As a consequence, between 2002 and 2013, the rate of heroin-related deaths in America nearly quadrupled.  More Americans now die of drug overdoses than they do in motor vehicle crashes.  In Alabama, overdoses claimed 723 lives in 2014 alone.
-
-> ...
+> As the use of prescription drugs has increased over the past 15 or 20 years, so has their misuse – as well as the wreckage caused by other opioids like heroin.  In fact, four in five heroin users started out by misusing prescription drugs, and then switched to heroin.  As a consequence, between 2002 and 2013, the rate of heroin-related deaths in America nearly quadrupled.  More Americans now die of drug overdoses than they do in motor vehicle crashes.  In Alabama, overdoses claimed 723 lives in 2014 alone. [...]
 
 > But we need to do more to help families like Cary's.  That's why the budget I'm sending to Congress includes $1.1 billion in new funding to stop the opioid overdose epidemic – funding to help every American seeking treatment get the care they need.  It will help states like Alabama expand their treatment capacity and make services more affordable.
 
