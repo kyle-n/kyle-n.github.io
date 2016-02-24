@@ -6,6 +6,7 @@ cap: This sign was posted on the door of Ryan's the morning of Feb. 4. The store
 original: http://www.ledger-enquirer.com/news/business/article58477353.html
 keywords: ryan's, manchester expressway, closed, no warning, food, ovation brands
 categories: closing, business, ledger, news
+org: Columbus Ledger-Enquirer
 ---
 
 Ryan’s in Columbus was shut down this morning with no warning.
