@@ -11,6 +11,8 @@ categories: trump, rprimary16, elections, politics, ledger, viral
 
 Bloomberg Politics published a poll conducted by Purple Strategies that found Donald Trump led the other Republican candidates in Southern states due to vote by March 1.
 
+<!--break-->
+
 An online Bloomberg Politics poll shows the billionaire is backed by 37 percent of likely Republican presidential primary voters in the seven states surveyed, while Senators Marco Rubio of Florida and Ted Cruz of Texas are tied at 20 percent. [...]
 
 The findings demonstrate the broad-based nature of Trump's support and how primary voters -- even conservatives and evangelicals who might find issues with his personal history -- have accepted him, making it harder for his rivals to take him down.
