@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Kick-Six' named most iconic SEC play of the decade by ESPN
+title: Kick-Six named most iconic SEC play of the decade by ESPN
 original: http://www.ledger-enquirer.com/sports/college/sec/article64064002.html
 image: kicksix.jpg
 cap: In this Nov. 30, 2013, file photo, Auburn cornerback Chris Davis (11) returns a missed field goal attempt 100-plus yards to score the game-winning touchdown as time expired in the fourth quarter of an NCAA college football game against Alabama in Auburn, Ala. Alabama players have agonized over the Iron Bowl's ending, and the Auburn Tigers get giddy at replaying that memorable "one second" that turned their seasons. (AP Photo/Dave Martin)
