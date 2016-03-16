@@ -124,7 +124,6 @@ blockquote {
 }
 
 
-
 /**
  * Code formatting
  */
@@ -157,8 +156,8 @@ pre {
  * Wrapper
  */
 .wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 5));
+    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 5));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -204,4 +203,9 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+/* Set teaser titles, body text, to proper sans format */
+.teaserTitle {
+	font-family: $base-font-family;
 }

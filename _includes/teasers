@@ -2,7 +2,7 @@
 <div class="teaserWrapper" style="max-width: 100%";>
 <div class="teaserTitle"
 {% if post.image == null %}style="max-width: 100%;"{% endif %}>
-		  <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+		  <h4 class="teaserTitle"><a href="{{ post.url }}">{{ post.title }}</a></h4>
 </div>
 
 	<!-- Post image, if there -->

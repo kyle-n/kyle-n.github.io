@@ -5,6 +5,7 @@ original: http://www.ledger-enquirer.com/sports/college/sec/university-of-alabam
 image: starr.jpg
 keywords: bart starr, hazing, alabama, quarterback, college, injury, crimson tide
 categories: bama, cfl, sports, ledger, viral
+org: Columbus Ledger-Enquirer
 ---
 
 Alabama fans with long memories may remember Bart Starr, the hall of Fame quarterback who played for the Tide and the Green Bay Packers. His wife Cherry Starr recently spoke with AL.com to explain the real reason behind Bart's back injuries:

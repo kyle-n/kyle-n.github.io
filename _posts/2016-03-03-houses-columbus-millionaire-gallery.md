@@ -8,6 +8,6 @@ org: Columbus Ledger-Enquirer
 categories: realestate, living, ledger, viral
 ---
 
-Quick gallery of nice houses around town I put together. 
+Quick gallery of nice houses around town I put together. Click the link below. 
 
 <!--break-->

@@ -61,3 +61,13 @@ p {
 sup a:hover {
 	color: grey;
 }
+
+/* Change fonts in body text */
+.post-content {
+	font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+/* Extra spacing between title and date info and content */
+.article-text {
+	margin-top: -.75em;
+}
