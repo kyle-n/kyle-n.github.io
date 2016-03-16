@@ -5,7 +5,7 @@ original: http://www.ledger-enquirer.com/news/local/article65018562.html
 image: carcrash.jpg
 org: Columbus Ledger-Enquirer
 keywords: car crash, columbus, car, recall, carfax
-org: cars, safety, psa, ledger, news
+categories: cars, safety, psa, ledger, news
 ---
 
 Columbus earned the dubious honor of being the city in Georgia with the highest rate of cars on the road with recalled parts, according to a release from Carfax.
