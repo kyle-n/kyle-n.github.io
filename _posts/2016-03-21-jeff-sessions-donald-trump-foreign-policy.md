@@ -11,6 +11,8 @@ categories: trump, alabama, elections, politics, ledger, viral
 
 Alabama's own Sen. Jeff Sessions has been chosen as the chairman of Donald Trump's foreign affairs team. He announced the team in a meeting with the [Washington Post](https://www.washingtonpost.com/news/post-politics/wp/2016/03/21/donald-trump-reveals-foreign-policy-team-in-meeting-with-the-washington-post/?hpid=hp_hp-top-table-main_trump-foreign-1pm%3Ahomepage%2Fstory). The rest of the team includes Keith Kellogg, Carter Page, George Papadopoulos, Walid Phares and Joseph Schmitz.
 
+<!--break-->
+
 Sessions, the junior senator from Alabama, was the first U.S. senator to endorse Trump. His endorsement was a major milestone for the New York billionaire because it carries so much weight within conservative circles. [Politico](http://www.politico.com/story/2016/02/sen-jeff-sessions-endorses-trump-219939) called him a "tea party idol" for his work in Congress, especially on immigration. Ted Cruz, who also wanted Sessions' seal of approval, said Sessions is "the strongest opponent of amnesty in the United States Congress."
 
 Sessions promises to bring an anti-illegal imigration and anti-overseas trade perspective to Trump's campaign. The Alabama senator strongly opposed President Barack Obama's international trade deal, the [Trans-Pacific Partnership](http://www.ledger-enquirer.com/news/politics-government/article29459011.html), and putting a halt to most immigration.
