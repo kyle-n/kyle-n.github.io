@@ -7,9 +7,9 @@ image: me.png
 
 I'm a journalist with experience working on newspapers, magazines, and most of all, the web. I've worked as a reporter, writer, editor, copyeditor, video producer, photographer and web producer.
 
-I currently work for the Ledger-Enquirer in Columbus, Ga., as a digital reporter.
+I currently work for the Atlanta-Journal Constitution as a producer. 
 
-I specialize in producing unique online content, whether it's the latest news or an unusual feature story. During my time at the Ledger-Enquirer, I've helped push our online traffic stats to record highs in McClatchy. 
+I specialize in producing unique online content, whether it's the latest news or an unusual feature story. During my time at the Ledger-Enquirer, I helped push our online traffic stats to record highs in McClatchy. 
 
 I graduated from Auburn University with a bachelor's degree in journalism and computer science. I chose computer science as my minor to learn how to code and produce content for the Web. I am proficient in HTML, CSS and a little JavaScript. 
 

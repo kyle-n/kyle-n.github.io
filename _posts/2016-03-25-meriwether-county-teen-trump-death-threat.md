@@ -5,7 +5,7 @@ original: http://www.ledger-enquirer.com/news/local/crime/article68288637.html
 org: Columbus Ledger-Enquirer
 keywords: trump, meriwether county, teen, death threats, secret service
 image: trump-book.jpg
-cap: Republican presidential candidate Donald Trump holds up a copy of his 1987 book, 'Trump: The Art of the Deal' during a town hall event. (Mary Schwalm - AP)
+cap: Republican presidential candidate Donald Trump holds up a copy of his 1987 book, Trump: The Art of the Deal during a town hall event. (Mary Schwalm - AP)
 categories: trump, crime, ledger, briefs
 ---
 
