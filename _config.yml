@@ -40,7 +40,7 @@ timezone : America/New_York
 icon : "{{ site.url }}/blog/assets/me.png"
 author : 
    facebook : knazario
-   twitter : kbn_le
+   twitter : kbn_ajc
    google_plus : KyleNazario
 fb_admins : '1184042582'
 fb_appid : 794821543963847
