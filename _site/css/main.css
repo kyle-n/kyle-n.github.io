@@ -17,9 +17,10 @@ img { max-width: 90%; }
 
 .teaser { max-width: 100%; position: relative; max-height: 22em; overflow: hidden; }
 
-.pagination { clear: both; }
+.teaser-title { position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 17px; }
 
-@media screen and (min-width: 700px) { html { max-width: 700px; } }
+@media screen and (min-width: 700px) { html { max-width: 700px; }
+  .teaser-title { font-size: 2em; } }
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
 .highlight .c { color: #998; font-style: italic; }

@@ -68,14 +68,20 @@ img {
 	max-height: 22em;
 	overflow: hidden;
 }
-
-.pagination {
-	clear: both;
+.teaser-title {
+	position: absolute;
+	bottom: -5%;
+	max-width: 60%;
+	padding: 0.1em 0.5em 0.1em 0.5em;
+	font-size: $base-font-size;
 }
 
 //Desktop formatting
 @media screen and (min-width: 700px) {
 	html {
 		max-width: 700px;
+	}
+	.teaser-title {
+		font-size: 2em;
 	}
 }
