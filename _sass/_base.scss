@@ -70,8 +70,8 @@ img {
 }
 .teaser-title {
 	position: absolute;
-	bottom: -5%;
-	max-width: 60%;
+	bottom: -2%;
+	max-width: 80%;
 	padding: 0.1em 0.5em 0.1em 0.5em;
 	font-size: $base-font-size;
 }
@@ -83,5 +83,6 @@ img {
 	}
 	.teaser-title {
 		font-size: 2em;
+		bottom: -5%;
 	}
 }
