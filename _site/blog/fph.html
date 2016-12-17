@@ -53,10 +53,12 @@
 
   <!-- Stylesheets -->
   <link rel="stylesheet" href="/css/main.css">
+  <!--
   <link rel="stylesheet" href="/css/layout4.css">
   <link rel="stylesheet" href="/css/animate.css">
-  <link rel="alternate" type="application/rss+xml" title="Stories by Kyle Nazario" href="http://www.kylenazario.com/feed.xml" />
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+-->
+  <link rel="alternate" type="application/rss+xml" title="Stories by Kyle Nazario" href="http://www.kylenazario.com/feed.xml" />
 
   <!-- Favicon -->
   <link rel="shortcut icon" href="/blog/assets/favicon.ico">
@@ -81,56 +83,22 @@
 </head>
 
 
-<!-- Set animation length for fade in -->
-<style>
-	#pageContent {
-		-webkit-animation-duration: 1s;
-			-moz-animation-duration: 1s;
-				  animation-duration: 1s;
-	}
-</style>
-
-<!-- For hiding footnotes -->
-<script> 
-
-function toggle(displayState) {
-	var elements = document.getElementsByClassName('footnoting')
-	var showing = false;
-	for (var i = 0; i < elements.length; i++) {
-		if (elements[i].style.display == 'inline') {
-			showing = true;
-			elements[i].style.display = displayState;
-			elements[i].style.className = "footnoting animated fadeIn";
-		}
-	}
-}
-
-function hideDiv() {
-}
-
-</script>
-
-  <body onclick="hideDiv()" >
+<body>
 
     <header class="site-header">
 
   <div class="wrapper">
 
-    <a class="site-title" href="/">Stories by Kyle Nazario</a>
+	<a class="site-title" href="/">Stories by Kyle Nazario</a>
 
     <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
 
 		<!-- Top-level navigation -->
       <div class="trigger">
 			<a class="page-link" href="/">Home</a>
+			&nbsp;&nbsp;|&nbsp;&nbsp;
 			<a class="page-link" href="/blog/index.html">Archive</a>
+			&nbsp;&nbsp;|&nbsp;&nbsp;
 			<a class="page-link" href="/highlights.html">Highlights</a>
       </div>
     </nav>
@@ -621,37 +589,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/07/21/houstonGameDev.html">The hidden Houston game development scene</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/houston.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">July 21, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Houston has got an established arts scene, a growing population, and a strong economy. People come here in droves because it’s a great place to live.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/houston.jpg" alt="The hidden Houston game development scene"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/07/21/houstonGameDev.html" style="text-decoration: none; color: white;">
+						The hidden Houston game development scene</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -659,37 +614,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/07/15/houstonTaxis.html">Houston's taxis Uber-concerned about ride-sharing apps</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/taxis.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">July 15, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>What makes a taxi company a taxi company? Is it ferrying riders for money? Is it dispatching vehicles all over the city? Is it having a fleet of cars bearing the same fetching shade of yellow?</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/taxis.jpg" alt="Houston's taxis Uber-concerned about ride-sharing apps"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/07/15/houstonTaxis.html" style="text-decoration: none; color: white;">
+						Houston's taxis Uber-concerned about ride-sharing apps</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -697,37 +639,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/07/08/cubans.html">Two Cubans make a perilous journey to America</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/borderwall.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">July 08, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>They would never pass the third checkpoint. The first two had been a breeze, but every car got stopped here. The federales would find them and send them home and the whole journey would be a waste.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/borderwall.jpg" alt="Two Cubans make a perilous journey to America"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/07/08/cubans.html" style="text-decoration: none; color: white;">
+						Two Cubans make a perilous journey to America</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -735,37 +664,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/07/02/starOfHope.html">Star of Hope homeless shelter- The scandal that isn't</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/soh.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">July 02, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Star of Hope shelter caught my attention when one homeless man called it a “prison.”</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/soh.jpg" alt="Star of Hope homeless shelter- The scandal that isn't"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/07/02/starOfHope.html" style="text-decoration: none; color: white;">
+						Star of Hope homeless shelter- The scandal that isn't</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -773,37 +689,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/07/01/eroCritique.html">Houston news outlets criticized for Equal Rights Ordinance coverage</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/erofox.png">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">July 01, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>You can tell a lot about a news organization’s viewpoint by how they approach coverage of an issue. For example, when The New Yorker spends thousands of words describing the difficulties of prison alternatives on lower-income Americans, you know it has a progressive slant (though you should have already known that by seeing “New Yorker” on the cover).</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/erofox.png" alt="Houston news outlets criticized for Equal Rights Ordinance coverage"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/07/01/eroCritique.html" style="text-decoration: none; color: white;">
+						Houston news outlets criticized for Equal Rights Ordinance coverage</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -811,37 +714,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/06/27/hungerStrike.html">How one man's parking dispute became a hunger strike</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/alex.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">June 27, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Alex Nizini woke up surrounded by paramedics. He had passed out from not eating for almost four weeks. That and standing outside for city hall for hours wearing a sign that proclaims injustice and a colorful umbrella hat for protection.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/alex.jpg" alt="How one man's parking dispute became a hunger strike"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/06/27/hungerStrike.html" style="text-decoration: none; color: white;">
+						How one man's parking dispute became a hunger strike</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -849,37 +739,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/06/24/youAreHomeless.html">You Are Homeless</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/hand.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">June 24, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Wake up.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/hand.jpg" alt="You Are Homeless"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/06/24/youAreHomeless.html" style="text-decoration: none; color: white;">
+						You Are Homeless</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -887,37 +764,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/06/17/breweries.html">Slow Boil- Prospective brewers tied up in red tape</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/beer.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">June 17, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>All Justin Engle wanted was a good local microbrewery.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/beer.jpg" alt="Slow Boil- Prospective brewers tied up in red tape"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/06/17/breweries.html" style="text-decoration: none; color: white;">
+						Slow Boil- Prospective brewers tied up in red tape</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -925,37 +789,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/06/16/dangerkids.html">Dangerkids play Warped Tour</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/dangerkids.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">June 16, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Seriously, what is up with these weirdly racial outfits?</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/dangerkids.jpg" alt="Dangerkids play Warped Tour"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/06/16/dangerkids.html" style="text-decoration: none; color: white;">
+						Dangerkids play Warped Tour</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -963,37 +814,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/06/11/houstonPoliceCandle.html">Families light a candle to victims of Houston police</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/policecandle.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">June 11, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Jocelyn Dickson entered the hospital on February 14, 2011. She had a piece of food lodged in her throat. She never left. Dickson was 22 years old.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/policecandle.jpg" alt="Families light a candle to victims of Houston police"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/06/11/houstonPoliceCandle.html" style="text-decoration: none; color: white;">
+						Families light a candle to victims of Houston police</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1001,37 +839,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/06/09/tontons.html">Tontons make up for lost time at Fitzgerald's</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/tontons.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">June 09, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Fitzgerald’s let in the crowds last Friday for a free show. This was the makeup for the bands that got rained out at Free Press Summer Fest on Saturday, something the bands themselves suggested.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/tontons.jpg" alt="Tontons make up for lost time at Fitzgerald's"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/06/09/tontons.html" style="text-decoration: none; color: white;">
+						Tontons make up for lost time at Fitzgerald's</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1039,37 +864,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/06/07/allRealRadio.html">All Real Radio prepares launch to bring good local music to Houston and fight assholes</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/zin.png">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">June 07, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Zin is done with corporate radio and negativity.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/zin.png" alt="All Real Radio prepares launch to bring good local music to Houston and fight assholes"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/06/07/allRealRadio.html" style="text-decoration: none; color: white;">
+						All Real Radio prepares launch to bring good local music to Houston and fight assholes</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1077,37 +889,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/06/05/houstonSize.html">How Houston's size hurts the poor</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/houston.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">June 05, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Joe Nunoz sits in traffic for an hour and twenty minutes every day, just to get to work.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/houston.jpg" alt="How Houston's size hurts the poor"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/06/05/houstonSize.html" style="text-decoration: none; color: white;">
+						How Houston's size hurts the poor</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1115,37 +914,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/06/04/bitcoinHouston.html">Bitcoin is coming to Houston</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/bitcoin.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">June 04, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Put away the credit card, You might pay your next bar tab with only your phone.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/bitcoin.jpg" alt="Bitcoin is coming to Houston"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/06/04/bitcoinHouston.html" style="text-decoration: none; color: white;">
+						Bitcoin is coming to Houston</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1153,37 +939,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/06/03/santorumHouston.html">6 Things I learned from Rick Santorum's Houston visit</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/santorum.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">June 03, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Rick Santorum came to Houston. Yes, that Rick Santorum, the guy who ran for president in 2012.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/santorum.jpg" alt="6 Things I learned from Rick Santorum's Houston visit"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/06/03/santorumHouston.html" style="text-decoration: none; color: white;">
+						6 Things I learned from Rick Santorum's Houston visit</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1191,39 +964,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/06/02/rawVegan.html">Raw veganism is pointless, don't do it</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/veggies.png">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">June 02, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Raw veganism is having a moment.</p>
-
-<p>The diet has become fashionable among celebrities and athletes. Venus Williams, Demi Moore, Woody Harrelson and Pierce Brosnan have embraced raw foods or veganism or both publicly.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/veggies.png" alt="Raw veganism is pointless, don't do it"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/06/02/rawVegan.html" style="text-decoration: none; color: white;">
+						Raw veganism is pointless, don't do it</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1231,37 +989,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/06/02/fpsfRecap.html">FPSF 2014 recap</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/fpsf.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">June 02, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Another year, another festival in the bag. The 2014 Free Press Summer Fest will live on through our tweets and Instagrammed photos. Those who were there know what it was like.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/fpsf.jpg" alt="FPSF 2014 recap"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/06/02/fpsfRecap.html" style="text-decoration: none; color: white;">
+						FPSF 2014 recap</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1269,37 +1014,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/05/30/graffitiArtist.html">Graffiti artist paints his mark on Houston</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/graffiticans.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">May 30, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Miguel Figueroa is a hard guy to meet.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/graffiticans.jpg" alt="Graffiti artist paints his mark on Houston"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/05/30/graffitiArtist.html" style="text-decoration: none; color: white;">
+						Graffiti artist paints his mark on Houston</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1307,37 +1039,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/05/29/gamingBars.html">Gaming bars play Kickstarter for funding</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/gaming-bars.gif">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">May 29, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>If Ryan Thauburn and Jonathan Niess succeed, Houston’s downtown scene will have two more levels to master.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/gaming-bars.gif" alt="Gaming bars play Kickstarter for funding"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/05/29/gamingBars.html" style="text-decoration: none; color: white;">
+						Gaming bars play Kickstarter for funding</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1345,39 +1064,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/05/29/eroPasses.html">Houston passes Equal Rights Ordinance</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/gay-flag.gif">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">May 29, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>It finally passed.</p>
-
-<p>After nine hours of debate last night, the Houston City Council passed the Equal Rights Ordinance by an 11-6 vote. It updated city code to include sexual orientation and gender identity as protected characteristics for hiring, firing, housing, and public services.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/gay-flag.gif" alt="Houston passes Equal Rights Ordinance"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/05/29/eroPasses.html" style="text-decoration: none; color: white;">
+						Houston passes Equal Rights Ordinance</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1385,37 +1089,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/05/27/comicpalooza.html">Comicpalooza attracts fans of all kinds</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/comicpalooza.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">May 27, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Aquaman. Harley Quinn. Spiderman. The Doctor. No, it’s not the next superhero mashup movie. They’re the people I saw in the first half hour at Comicpalooza.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/comicpalooza.jpg" alt="Comicpalooza attracts fans of all kinds"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/05/27/comicpalooza.html" style="text-decoration: none; color: white;">
+						Comicpalooza attracts fans of all kinds</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1423,37 +1114,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/05/26/eroNetPositive.html">How the Equal Rights Ordinance compromise is a net positive for the LBGT community</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/transflag.png">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">May 26, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>The revised Equal Rights Ordinance may make matters worse for the people who changed it, in an unexpected bit of irony.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/transflag.png" alt="How the Equal Rights Ordinance compromise is a net positive for the LBGT community"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/05/26/eroNetPositive.html" style="text-decoration: none; color: white;">
+						How the Equal Rights Ordinance compromise is a net positive for the LBGT community</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1461,37 +1139,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/05/21/energyHealing.html">Powered down- My pointless night with energy healing</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/energy-healing.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">May 21, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Ever had one of those “What the hell am I doing here?” moments?</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/energy-healing.jpg" alt="Powered down- My pointless night with energy healing"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/05/21/energyHealing.html" style="text-decoration: none; color: white;">
+						Powered down- My pointless night with energy healing</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1501,37 +1166,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/05/16/houstonTraffic.html">Can anyone solve Houston's traffic problem?</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/traffic.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">May 16, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>I was driving to work along one of Houston’s crowded corridors. Cars packed the freeways, inching forward a few feet at a time. Basically, a regular morning in Houston.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/traffic.jpg" alt="Can anyone solve Houston's traffic problem?"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/05/16/houstonTraffic.html" style="text-decoration: none; color: white;">
+						Can anyone solve Houston's traffic problem?</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1541,37 +1193,24 @@ function hideDiv() {
 
 
 <br>
-<div class="teaserWrapper" style="max-width: 100%";>
-<div class="teaserTitle"
->
-		  <h4 class="teaserTitle"><a href="/2014/05/13/busroutes.html">Houston buses in new routes</a></h4>
-</div>
+<div class="teasers" style="max-width: 100%";>
 
-	<!-- Post image, if there -->
-	
-	<div class="teaserImage">
-			  <img src="http://www.kylenazario.com/blog/assets/houstonbus.jpg">		
-	</div>
-	
-
-	<div class="descrip" 
-	>
-		<p class="author">
-			<span class="date">May 13, 2014 &nbsp;| &nbsp;<a class="blog-name" href="
-			
-				/blog/fph.html
-			
-						 ">Free Press Houston</a></span>
-			<div class="content">
-				<p>Houston Metro is going to improve the bus system across the city. Buses will run more frequently to more parts of the city. The best part? They’ll do it for no extra cost by moving around the routes.</p>
-
-
+	<div class="teaser">
+		
+			<img src="http://www.kylenazario.com/blog/assets/houstonbus.jpg" alt="Houston buses in new routes"
+				width="100%">
+		
+		<div>
+			<h3 style="position: absolute; bottom: -5%; max-width: 60%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 2em;">
+				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
+						  <a href="/2014/05/13/busroutes.html" style="text-decoration: none; color: white;">
+						Houston buses in new routes</a>
+				</span>
+	 		</h4>
 			</div>
-		</p>
 	</div>
-
+	
 </div>
-	<hr style="max-width: 90%; clear: both; margin-left: auto; margin-right: auto; text-align: center;">
 
 
 
@@ -1630,42 +1269,35 @@ function hideDiv() {
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">Stories by Kyle Nazario</h2>
+			 <hr>
 
     <div class="footer-col-wrapper">
-				<!--
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>Stories by Kyle Nazario</li>
-          <li><a href="mailto:kylebnazario@gmail.com">kylebnazario@gmail.com</a></li>
-			 <li><a href="/about.html">About this website</a></li>
-        </ul>
-      </div>
--->
 
-      <div class="footer-col  footer-col-3" style="max-width: 100%;">
+		<!-- Site description -->
+      <div style="max-width: 100%;">
 				  <p class="text">I built this website to store my previous work, some of which has vanished since publication. News stories tend not to have an incredibly long lifespan, especially on the internet. Please feel free to contact me with any questions. <a href="/about.html">More about this site</a>.
 </p>
       </div>
 
-      <div id="desktopContact" class="footer-col  footer-col-2">
-        <table class="social-media-list">
-		  <tr>
+		<!-- Contact link email section -->
+      <div>
 
+			<!-- Email me. No job offers yet, only PR people :( -->
 			
-			<td>
+			<div class="contact-link">
 				<a href="mailto:kylebnazario@gmail.com">
-				<span class="icon  icon--twitter">
+				<span class="icon ">
 					<svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>
-					<span>
+				</span>
 
 				<span class="username">Email</span>
 	 			</a>
-	 		</td>
+	 		</div>
 	 		
 
+			<!-- Facebook link -->
 			
-			<td>
+			<div class="contact-link">
 			<a href="https://www.facebook.com/knazario">
 			<span class="icon  icon--twitter">
 				<svg viewBox="80 70 350 400"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/></svg>
@@ -1673,14 +1305,13 @@ function hideDiv() {
 
 			<span class="username">knazario</span>
  			</a>
- 			</td>
+ 			</div>
  			
- </tr>
- <tr>
 
-
-          <td>
-            <a href="https://twitter.com/kbn_le">
+			<!-- Twitter profile -->
+			
+          <div class="contact-link">
+            <a href="https://twitter.com/kbn_au">
               <span class="icon  icon--twitter">
                 <svg viewBox="0 0 16 16">
                   <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
@@ -1688,13 +1319,14 @@ function hideDiv() {
                 </svg>
               </span>
 
-              <span class="username">@kbn_le</span>
+              <span class="username">@kbn_au</span>
             </a>
-          </td>
+          </div>
           
 
+			<!-- LinkedIn -->
 			
-			<td>
+			<div class="contact-link">
 				<a href="https://www.linkedin.com/in/kylenazario">
 				<span class="icon  icon--twitter">
 					<svg viewBox="80 70 350 400"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/></svg>
@@ -1702,13 +1334,12 @@ function hideDiv() {
 
 				<span class="username">kylenazario</span>
 	 			</a>
-			</td>
+			</div>
 	 		
- </tr>
- <tr>
 
+			 <!-- GitHub profile -->
           
-          <td>
+          <div class="contact-link">
             <a href="https://github.com/kyle-n">
               <span class="icon  icon--github">
                 <svg viewBox="0 0 16 16">
@@ -1718,11 +1349,12 @@ function hideDiv() {
 
               <span class="username">kyle-n</span>
             </a>
-          </td>
+          </div>
           
 
+			<!-- I never use my G+ -->
 			
-			<td>
+			<div class="contact-link">
 				<a href="https://plus.google.com/+KyleNazario">
 				<span class="icon  icon--twitter">
 					<svg viewBox="80 70 350 400"><path d="M179.7 237.6L179.7 284.2 256.7 284.2C253.6 304.2 233.4 342.9 179.7 342.9 133.4 342.9 95.6 304.4 95.6 257 95.6 209.6 133.4 171.1 179.7 171.1 206.1 171.1 223.7 182.4 233.8 192.1L270.6 156.6C247 134.4 216.4 121 179.7 121 104.7 121 44 181.8 44 257 44 332.2 104.7 393 179.7 393 258 393 310 337.8 310 260.1 310 251.2 309 244.4 307.9 237.6L179.7 237.6 179.7 237.6ZM468 236.7L429.3 236.7 429.3 198 390.7 198 390.7 236.7 352 236.7 352 275.3 390.7 275.3 390.7 314 429.3 314 429.3 275.3 468 275.3"/></svg>
@@ -1730,98 +1362,12 @@ function hideDiv() {
 
 		 <span class="username">+KyleNazario</span>
 		 </a>
-		 </td>
+		 </div>
 		 			 
-		 </tr>
 		 <!-- SVG icon thanks to http://codepen.io/ruandre/pen/howFi -->
 			 
-        </table>
       </div>
 
-		      <div id="mobileContact" class="footer-col  footer-col-2">
-        <ul class="social-media-list">
-
-			
-			<li>
-				<a href="mailto:kylebnazario@gmail.com">
-				<span class="icon  icon--twitter">
-					<svg viewBox="0 0 512 512"><path d="M101.3 141.6v228.9h0.3 308.4 0.8V141.6H101.3zM375.7 167.8l-119.7 91.5 -119.6-91.5H375.7zM127.6 194.1l64.1 49.1 -64.1 64.1V194.1zM127.8 344.2l84.9-84.9 43.2 33.1 43-32.9 84.7 84.7L127.8 344.2 127.8 344.2zM384.4 307.8l-64.4-64.4 64.4-49.3V307.8z"/></svg>
-					<span>
-
-				<span class="username">Email</span>
-	 			</a>
-	 		</li>
-	 		
-
-			
-			<li>
-			<a href="https://www.facebook.com/knazario">
-			<span class="icon  icon--twitter">
-				<svg viewBox="80 70 350 400"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/></svg>
-	 		</span>
-
-			<span class="username">knazario</span>
- 			</a>
- 			</li>
- 			
-
-
-          <li>
-            <a href="https://twitter.com/kbn_le">
-              <span class="icon  icon--twitter">
-                <svg viewBox="0 0 16 16">
-                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
-                  c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
-                </svg>
-              </span>
-
-              <span class="username">@kbn_le</span>
-            </a>
-          </li>
-          
-
-			
-			<li>
-				<a href="https://www.linkedin.com/in/kylenazario">
-				<span class="icon  icon--twitter">
-					<svg viewBox="80 70 350 400"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/></svg>
-				</span>
-
-				<span class="username">kylenazario</span>
-	 			</a>
-			</li>
-	 		
-
-          
-          <li>
-            <a href="https://github.com/kyle-n">
-              <span class="icon  icon--github">
-                <svg viewBox="0 0 16 16">
-                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
-                </svg>
-              </span>
-
-              <span class="username">kyle-n</span>
-            </a>
-          </li>
-          
-
-			
-			<li>
-				<a href="https://plus.google.com/+KyleNazario">
-				<span class="icon  icon--twitter">
-					<svg viewBox="80 70 350 400"><path d="M179.7 237.6L179.7 284.2 256.7 284.2C253.6 304.2 233.4 342.9 179.7 342.9 133.4 342.9 95.6 304.4 95.6 257 95.6 209.6 133.4 171.1 179.7 171.1 206.1 171.1 223.7 182.4 233.8 192.1L270.6 156.6C247 134.4 216.4 121 179.7 121 104.7 121 44 181.8 44 257 44 332.2 104.7 393 179.7 393 258 393 310 337.8 310 260.1 310 251.2 309 244.4 307.9 237.6L179.7 237.6 179.7 237.6ZM468 236.7L429.3 236.7 429.3 198 390.7 198 390.7 236.7 352 236.7 352 275.3 390.7 275.3 390.7 314 429.3 314 429.3 275.3 468 275.3"/></svg>
-		 </span>
-
-		 <span class="username">+KyleNazario</span>
-		 </a>
-		 </li>
-		 			 
-		 </li>
-		 <!-- SVG icon thanks to http://codepen.io/ruandre/pen/howFi -->
-			 
-        </ul>
-      </div>
 
     </div>
 

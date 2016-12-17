@@ -9,7 +9,7 @@ description: > # this means to ignore newlines until "baseurl:"
   employers. Please feel free to contact me with any questions.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://www.kylenazario.com" # the base hostname & protocol for your site
-twitter_username: kbn_le
+twitter_username: kbn_au
 github_username:  kyle-n
 facebook_username: knazario
 linkedin_username: kylenazario
@@ -40,7 +40,7 @@ timezone : America/New_York
 icon : "{{ site.url }}/blog/assets/me.png"
 author : 
    facebook : knazario
-   twitter : kbn_ajc
+   twitter : kbn_au
    google_plus : KyleNazario
 fb_admins : '1184042582'
 fb_appid : 794821543963847
