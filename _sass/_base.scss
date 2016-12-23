@@ -20,6 +20,11 @@ a {
 	display:inline-block;
 	float: left;
 	clear: left;
+	font-family: 'Lato', $base-font-family;	
+}
+
+h1, h2, h3 {
+	font-family: 'Lato', $base-font-family;	
 }
 
 //Nav spacing
@@ -28,6 +33,7 @@ nav {
 	display: inline-block;
 	float: right;
 	clear: left;
+	font-family: 'Lato', $base-font-family;	
 }
 
 //Prevent post title from jumping up
@@ -71,9 +77,24 @@ img {
 .teaser-title {
 	position: absolute;
 	bottom: -2%;
-	max-width: 80%;
+	max-width: 90%;
 	padding: 0.1em 0.5em 0.1em 0.5em;
-	font-size: $base-font-size;
+	font-size: $base-font-size * 0.6;
+}
+
+//Make blockquotes stand out
+blockquote {
+	font-style: italic;
+	background-color: #d0def4;
+	margin: 1em;
+	padding: 0.05em 1em 0.05em 1em;
+}
+
+//Image captions
+.cap {
+	color: $grey-color;
+	font-size: $small-font-size;
+	margin-top: -1em;
 }
 
 //Desktop formatting

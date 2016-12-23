@@ -2,9 +2,11 @@ html { font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 a { text-decoration: none; font-weight: bold; }
 
-.site-title { font-size: 42.5px; display: inline-block; float: left; clear: left; }
+.site-title { font-size: 42.5px; display: inline-block; float: left; clear: left; font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
-nav { margin: 1em 0em 1em 0em; display: inline-block; float: right; clear: left; }
+h1, h2, h3 { font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+nav { margin: 1em 0em 1em 0em; display: inline-block; float: right; clear: left; font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .post-title { display: block; clear: both; }
 
@@ -17,7 +19,11 @@ img { max-width: 90%; }
 
 .teaser { max-width: 100%; position: relative; max-height: 22em; overflow: hidden; }
 
-.teaser-title { position: absolute; bottom: -2%; max-width: 80%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 17px; }
+.teaser-title { position: absolute; bottom: -2%; max-width: 90%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 10.2px; }
+
+blockquote { font-style: italic; background-color: #d0def4; margin: 1em; padding: 0.05em 1em 0.05em 1em; }
+
+.cap { color: #828282; font-size: 14.875px; margin-top: -1em; }
 
 @media screen and (min-width: 700px) { html { max-width: 700px; }
   .teaser-title { font-size: 2em; bottom: -5%; } }
