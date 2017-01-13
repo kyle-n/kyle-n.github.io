@@ -1,4 +1,4 @@
-html { font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 17px; text-color: #111; max-width: 90%; margin-left: auto; margin-right: auto; }
+html { font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 17px; text-color: #111; max-width: 90%; margin-left: auto; margin-right: auto; background-color: #DBF0F0; }
 
 a { text-decoration: none; font-weight: bold; }
 
@@ -6,7 +6,7 @@ a { text-decoration: none; font-weight: bold; }
 
 h1, h2, h3 { font-family: "Lato", "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif; }
 
-nav { margin: 1em 0em 1em 0em; display: inline-block; float: right; clear: left; font-family: "Lato", "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif; }
+nav { margin: 1em 0em 1em 0em; display: inline-block; float: right; clear: left; font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif; }
 
 .post-title { display: block; clear: both; }
 
@@ -15,11 +15,11 @@ img { max-width: 90%; }
 .icon > svg { display: inline-block; width: 16px; height: 16px; vertical-align: middle; }
 .icon > svg path { fill: #828282; }
 
-.contact-link { margin: 0em 1em 0em 0em; display: inline-block; }
+.contact-link { margin: 0em .75em 0em 0em; display: inline-block; }
 
 .teaser { max-width: 100%; position: relative; max-height: 22em; overflow: hidden; }
 
-.teaser-title { position: absolute; bottom: -2%; max-width: 90%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 10.2px; }
+.teaser-title { position: absolute; bottom: -2%; max-width: 85%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 10.2px; }
 
 blockquote { font-style: italic; background-color: #d0def4; margin: 1em; padding: 0.05em 1em 0.05em 1em; }
 

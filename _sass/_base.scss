@@ -6,6 +6,7 @@ html {
 	max-width: 90%;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #DBF0F0;
 }
 
 // Remove link underlines and boldface them
@@ -33,7 +34,7 @@ nav {
 	display: inline-block;
 	float: right;
 	clear: left;
-	font-family: 'Lato', $base-font-family;	
+	font-family: $base-font-family;	
 }
 
 //Prevent post title from jumping up
@@ -63,7 +64,7 @@ img {
 
 //Increase contact spacing
 .contact-link {
-	margin: 0em 1em 0em 0em;
+	margin: 0em .75em 0em 0em;
 	display: inline-block;
 }
 
@@ -77,7 +78,7 @@ img {
 .teaser-title {
 	position: absolute;
 	bottom: -2%;
-	max-width: 90%;
+	max-width: 85%;
 	padding: 0.1em 0.5em 0.1em 0.5em;
 	font-size: $base-font-size * 0.6;
 }

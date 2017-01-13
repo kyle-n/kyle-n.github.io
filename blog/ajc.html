@@ -1,6 +1,6 @@
 ---
 layout: page
-title: TechNorms
+title: Atlanta Journal-Constitution
 ---
 
 <p style="text-align: center;">
@@ -8,15 +8,14 @@ title: TechNorms
 <a href="/blog/ledger.html">Ledger-Enquirer</a> &nbsp;|&nbsp; 
 <a href="/blog/plainsman.html">The Plainsman</a> &nbsp;|&nbsp; 
 <a href="/blog/fph.html">Free Press Houston</a> &nbsp;|&nbsp; 
-<a href="/blog/ajc.html">AJC</a>
+<a href="/blog/tn.html">TechNorms</a>
 </p>
 
-<!--Find and show Plainsman posts-->
+<!-- Find and show AJC posts-->
 {% for post in site.posts %}
-{% if post.org == 'TechNorms' %}
+{% if post.org == 'AJC' %}
 
 {% include teasers2.html %}
 
 {% endif %}
 {% endfor %}
-

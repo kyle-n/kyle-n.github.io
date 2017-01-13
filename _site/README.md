@@ -6,6 +6,10 @@ I created this website to show my journalistic work to potential employers. This
 
 Feel free to look through the code and assets. They're mostly finished, though I'm ironing out the bugs.
 
+## Progress report 1-13-17
+
+I tore out all the CSS and started from scratch. Was taking way too long to load. 
+
 ### Progress report 2-17-16
 
 I've stopped adding features to the site. Now it's just a matter of keeping it updated with new stories and making sure nothing breaks. 
