@@ -2,6 +2,7 @@
 <div class="teasers" style="max-width: 100%";>
 
 	<div class="teaser">
+		<a href="{{ post.url }}" style="text-decoration: none; color: white;">
 		{% if post.image != null %}
 			<img src="{{ site.url }}/blog/assets/{{ post.image }}" alt="{{ post.title }}"
 				width="100%">
@@ -11,11 +12,11 @@
 		<div>
 			<h3 class="teaser-title">
 				<span style="background: rgb(0, 0, 0); background: rgba(0, 0, 0, 0.8);">
-					<a href="{{ post.url }}" style="text-decoration: none; color: white;">
-						{{ post.title }}</a>
+						{{ post.title }}
 				</span>
 	 		</h3>
 			</div>
+		</a>
 	</div>
 	
 </div>
