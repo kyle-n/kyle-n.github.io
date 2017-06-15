@@ -1,4 +1,4 @@
-html { font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 17px; text-color: #111; max-width: 90%; margin-left: auto; margin-right: auto; background-color: #DBF0F0; }
+html { font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 17px; text-color: #111; max-width: 90%; margin-left: auto; margin-right: auto; background-color: white; }
 
 a { text-decoration: none; font-weight: bold; }
 
@@ -19,7 +19,7 @@ img { max-width: 90%; }
 
 .teaser { max-width: 100%; position: relative; max-height: 22em; overflow: hidden; }
 
-.teaser-title { position: absolute; bottom: -2%; max-width: 85%; padding: 0.1em 0.5em 0.1em 0.5em; font-size: 10.2px; }
+.teaser-title { position: absolute; bottom: -2%; max-width: 85%; padding: 0.1em 0.5em 0.1em 0.5em; }
 
 blockquote { font-style: italic; background-color: #d0def4; margin: 1em; padding: 0.05em 1em 0.05em 1em; }
 
