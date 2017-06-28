@@ -6,7 +6,7 @@ image: scarlett.jpg
 cap: (Gage Skidmore)
 org: Columbus Ledger-Enquirer
 keywords: scarlett johansson, columbus ga, viral clickbait, disprove
-categories: columbus, ledger, viral
+categories: celebrity, columbus, ledger, viral
 ---
 
 A bit of viral fluff content has been making the rounds on Facebook claiming that Scarlett Johansson, star of "The Avengers" and "Her," is moving to Columbus. From the "article:"
