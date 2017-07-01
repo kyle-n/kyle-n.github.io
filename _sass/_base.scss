@@ -24,7 +24,7 @@ a {
 	clear: left;
 	font-family: 'Lato', $base-font-family;	
 }
-.site-title > a:visited {
+#title-of-site > a:visited {
 	color: blue;
 }
 
@@ -33,7 +33,7 @@ h1, h2, h3 {
 }
 
 h2 {
-	border-botton: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
 }
 
 //Nav spacing
@@ -53,7 +53,7 @@ nav {
 
 //Limit img size for mobile
 img {
-	max-width: 90%;
+	max-width: 100%;
 }
 
 //Small contact icons
@@ -96,8 +96,8 @@ blockquote {
 	background-color: #dcdfe5;
 	margin: 1em;
 	padding: 0.05em 1em 0.05em 1em;
-	border-left: 4px solid #DDD;
-	color: #777;
+	border: 1px #3a3a3a;
+	border-radius: 1em;
 }
 
 //Image captions
