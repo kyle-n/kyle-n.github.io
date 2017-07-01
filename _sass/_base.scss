@@ -28,6 +28,10 @@ h1, h2, h3 {
 	font-family: 'Lato', $base-font-family;	
 }
 
+h2 {
+	border-botton: 1px solid #ccc;
+}
+
 //Nav spacing
 nav {
 	margin: 1em 0em 1em 0em;
@@ -88,6 +92,9 @@ blockquote {
 	background-color: #d0def4;
 	margin: 1em;
 	padding: 0.05em 1em 0.05em 1em;
+	border-left: 4px solid #DDD;
+	padding 0 15px;
+	color: #777;
 }
 
 //Image captions
