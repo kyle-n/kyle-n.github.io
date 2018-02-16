@@ -1,16 +1,30 @@
 html { font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 17px; text-color: #111; max-width: 90%; margin-left: auto; margin-right: auto; background-color: white; }
 
-a { text-decoration: none; font-weight: bold; }
+a { text-decoration: none; font-weight: bold; color: blue; }
 
 .site-title { font-size: 42.5px; display: inline-block; float: left; clear: left; font-family: "Lato", "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif; }
 
+#title-of-site > a:visited { color: blue; }
+
 h1, h2, h3 { font-family: "Lato", "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif; }
+
+h2 { border-bottom: 1px solid #ccc; }
 
 nav { margin: 1em 0em 1em 0em; display: inline-block; float: right; clear: left; font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif; }
 
 .post-title { display: block; clear: both; }
 
-img { max-width: 90%; }
+img { max-width: 100%; }
+
+.imgLeft, .imgRight, .imgMiddle { max-width: 35%; display: inline-block; margin: 1em; }
+
+.imgLeft { float: left; }
+
+.imgRight { float: right; }
+
+.imgMiddle { clear: both; margin-left: auto; margin-right: auto; max-width: 60%; display: block; }
+
+.imgSplash, .imgFullMiddle { max-width: 100%; clear: both; margin: 1em; display: block; }
 
 .icon > svg { display: inline-block; width: 16px; height: 16px; vertical-align: middle; }
 .icon > svg path { fill: #828282; }
@@ -21,7 +35,7 @@ img { max-width: 90%; }
 
 .teaser-title { position: absolute; bottom: -2%; max-width: 85%; padding: 0.1em 0.5em 0.1em 0.5em; }
 
-blockquote { font-style: italic; background-color: #d0def4; margin: 1em; padding: 0.05em 1em 0.05em 1em; }
+blockquote { font-style: italic; background-color: #dcdfe5; margin: 1em; padding: 0.05em 1em 0.05em 1em; border: 1px #3a3a3a; border-radius: 1em; }
 
 .cap { color: #828282; font-size: 14.875px; margin-top: -1em; }
 
