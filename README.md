@@ -6,11 +6,15 @@ I created this website to show my journalistic work to potential employers. This
 
 Feel free to look through the code and assets. They're mostly finished, though I'm ironing out the bugs.
 
-## Progress report 6-27-17
+### Progress report 2-15-18
+
+Updated with more AJC-written stories. Also fixed up some CSS issues with inline images displaying. Text should wrap around them fine now.
+
+### Progress report 6-27-17
 
 Been a while since I've updated this with AJC stories. Adding those now. No new features, just stories. 
 
-## Progress report 1-13-17
+### Progress report 1-13-17
 
 I tore out all the CSS and started from scratch. Was taking way too long to load. 
 
