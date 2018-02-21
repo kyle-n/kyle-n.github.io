@@ -1,6 +1,6 @@
-html { font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 17px; text-color: #111; max-width: 90%; margin-left: auto; margin-right: auto; background-color: white; }
+html { font-family: "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif; font-size: 17px; text-color: #111; max-width: 90%; margin-left: auto; margin-right: auto; background-color: #fffff0; }
 
-a { text-decoration: none; font-weight: bold; color: blue; }
+a { text-decoration: none; font-weight: bold; color: #335da0; }
 
 .site-title { font-size: 42.5px; display: inline-block; float: left; clear: left; font-family: "Lato", "Open Sans", "Helvetica Neue", Arial, Helvetica, sans-serif; }
 
