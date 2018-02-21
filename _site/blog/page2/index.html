@@ -414,6 +414,19 @@
 					
 
 	
+
+	<!-- Input page to go to -->
+	<script>
+		  function process()
+		  {
+					 var url="/blog/page" + document.getElementById("pageNum").value + "/";
+					 location.href=url;
+					 return false;
+		  }
+		  </script>
+		  <form onSubmit="return process();" style="display: inline-block;">
+					 &nbsp;|&nbsp; Jump to page: <input type="text" name="pageNum" id="pageNum" style="max-width: 3em;"> <input type="submit" value=">">
+		  </form>
 </div>
 
   </article>
