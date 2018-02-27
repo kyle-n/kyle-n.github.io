@@ -16,7 +16,7 @@ linkedin_username: kylenazario
 googleplus_username: +KyleNazario
 email: kylebnazario@gmail.com
 gems: [jekyll-paginate]
-paginate: 10
+paginate: 5
 paginate_path: "/blog/page:num/"
 permalink: /:year/:month/:day/:title.html
 
