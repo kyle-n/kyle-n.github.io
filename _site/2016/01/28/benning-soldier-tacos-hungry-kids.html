@@ -142,37 +142,7 @@ included. -->
 
 <p>“They’re both soaking wet,” Risdon said. “Clearly they’re cold and hungry. I said, ‘Let’s get you some food.’”</p>
 
-<p>Gibson pulled out his phone and filmed Risdon asking the boys what they wanted to eat. Gibson posted it on Facebook Tuesday. The video has been viewed 132,121 times and shared by more than 3,000 people. Risdon said he’s received supportive messages from as far away as Australia. Gibson said several media outlets, including “Good Morning America” and “The Today Show” have contacted him. <style>
-#footnote_1 {
-	-webkit-animation-duration: .3s;
-	-moz-animation-duration: .3s;
-	animation-duration: .3s;
-}
-</style>
-<sup><button class="fn_button" onclick="showDiv_1()" style="position: relative; left: 0px;"><span class="fn_label">•••</span>
-<span class="footnoting animated fadeIn" id="footnote_1" style="display: none;">As far as I can tell, I was the first person to interview Risdon specifically. Fox 5 beat us to Gibson but it was a quick-and-sloppy post that didn’t even talk to the guy involved.</span></button></sup>
-<script>
-	var shown_1 = false;
-	function showDiv_1() {
-		if (document.getElementById('footnote_1').style.display 
-			== "none") {
-			document.getElementById('footnote_1').style.display 
-				= "inline";
-			document.getElementById('footnote_1').style.position 
-				= "absolute";
-			document.getElementById('footnote_1').style.top = "30px";
-			document.getElementById('footnote_1').style.right = "0px";
-			document.getElementById('footnote_1').style.left = "-120px";
-			shown_1 = true;
-		}
-		else {
-			document.getElementById('footnote_1').style.display = "none";
-			document.getElementById('footnote_1').className 
-				= "footnoting animated fadeIn";
-			shown_1 = false;
-		}
-	}
-</script></p>
+<p>Gibson pulled out his phone and filmed Risdon asking the boys what they wanted to eat. Gibson posted it on Facebook Tuesday. The video has been viewed 132,121 times and shared by more than 3,000 people. Risdon said he’s received supportive messages from as far away as Australia. Gibson said several media outlets, including “Good Morning America” and “The Today Show” have contacted him. <button class="fn_button">•••</button><span class="fn_text">As far as I can tell, I was the first person to interview Risdon specifically. Fox 5 beat us to Gibson but it was a quick-and-sloppy post that didn’t even talk to the guy involved.</span></p>
 
 <p>The Lions coach said he filmed the interaction because he wanted people to see the good that soldiers do on the home front.</p>
 
@@ -358,5 +328,26 @@ included. -->
 
 
   </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <!-- For footnotes -->
+  <script>
+	
+	function main() {
+		var visible = false;
+		$('.fn_button').on('click', function() {
+			if (visible) {
+				$(this).next().css('display', 'none');
+				visible = false;
+			}
+			else {
+				$(this).next().css('display', 'block');
+				visible = true;
+			}
+		});
+	}
+	$(document).ready(main);
+
+  </script>
 
 </html>

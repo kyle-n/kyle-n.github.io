@@ -13,10 +13,7 @@
    <!-- Article -->
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:title" content="Monday storms leave trail of debris near Crawford">
-		<meta name="twitter:description" content="The storms that buffeted the Chattahoochee Valley Monday night left a trail of damage, according to Robert Franklin, director of Russell County Emergency Management. 
-•••
-I have never heard someone sound as tired as this guy did. Bob is a champ for taking a nosy reporter’s calls the day after staying up ‘till 4 a.m. clearing trees from the roads around Russell County.
-
+		<meta name="twitter:description" content="The storms that buffeted the Chattahoochee Valley Monday night left a trail of damage, according to Robert Franklin, director of Russell County Emergency Management. •••I have never heard someone sound as tired as this guy did. Bob is a champ for taking a nosy reporter’s calls the day after staying up ‘till 4 a.m. clearing trees from the roads around Russell County.
 
 ">
 	
@@ -137,37 +134,7 @@ included. -->
 
 	 <!-- Article content -->
 	 <div class="article-text">
-    <p>The storms that buffeted the Chattahoochee Valley Monday night left a trail of damage, according to Robert Franklin, director of Russell County Emergency Management. <style>
-#footnote_4 {
-	-webkit-animation-duration: .3s;
-	-moz-animation-duration: .3s;
-	animation-duration: .3s;
-}
-</style>
-<sup><button class="fn_button" onclick="showDiv_4()" style="position: relative; left: 0px;"><span class="fn_label">•••</span>
-<span class="footnoting animated fadeIn" id="footnote_4" style="display: none;">I have never heard someone sound as tired as this guy did. Bob is a champ for taking a nosy reporter’s calls the day after staying up ‘till 4 a.m. clearing trees from the roads around Russell County.</span></button></sup>
-<script>
-	var shown_4 = false;
-	function showDiv_4() {
-		if (document.getElementById('footnote_4').style.display 
-			== "none") {
-			document.getElementById('footnote_4').style.display 
-				= "inline";
-			document.getElementById('footnote_4').style.position 
-				= "absolute";
-			document.getElementById('footnote_4').style.top = "30px";
-			document.getElementById('footnote_4').style.right = "0px";
-			document.getElementById('footnote_4').style.left = "-120px";
-			shown_4 = true;
-		}
-		else {
-			document.getElementById('footnote_4').style.display = "none";
-			document.getElementById('footnote_4').className 
-				= "footnoting animated fadeIn";
-			shown_4 = false;
-		}
-	}
-</script></p>
+    <p>The storms that buffeted the Chattahoochee Valley Monday night left a trail of damage, according to Robert Franklin, director of Russell County Emergency Management. <button class="fn_button">•••</button><span class="fn_text">I have never heard someone sound as tired as this guy did. Bob is a champ for taking a nosy reporter’s calls the day after staying up ‘till 4 a.m. clearing trees from the roads around Russell County.</span></p>
 
 <!--break-->
 
@@ -343,5 +310,26 @@ included. -->
 
 
   </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <!-- For footnotes -->
+  <script>
+	
+	function main() {
+		var visible = false;
+		$('.fn_button').on('click', function() {
+			if (visible) {
+				$(this).next().css('display', 'none');
+				visible = false;
+			}
+			else {
+				$(this).next().css('display', 'block');
+				visible = true;
+			}
+		});
+	}
+	$(document).ready(main);
+
+  </script>
 
 </html>

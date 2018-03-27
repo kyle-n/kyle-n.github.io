@@ -308,5 +308,26 @@ included. -->
 
 
   </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <!-- For footnotes -->
+  <script>
+	
+	function main() {
+		var visible = false;
+		$('.fn_button').on('click', function() {
+			if (visible) {
+				$(this).next().css('display', 'none');
+				visible = false;
+			}
+			else {
+				$(this).next().css('display', 'block');
+				visible = true;
+			}
+		});
+	}
+	$(document).ready(main);
+
+  </script>
 
 </html>

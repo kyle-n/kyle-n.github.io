@@ -143,3 +143,21 @@ blockquote {
 		bottom: -5%;
 	}
 }
+
+//Footnote buttons
+.fn_button {
+	position: relative;
+}
+
+//Hide footnotes
+.fn_text {
+	display: none;
+	background-color: black;
+	border-radius: 0.5em;
+	z-index: 1;
+	padding: 1em;
+	color: white;
+	top: 1em;
+	max-width: 20em;
+	margin: 1em auto 1em auto;
+}

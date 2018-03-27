@@ -13,10 +13,7 @@
    <!-- Article -->
 		<meta name="twitter:card" content="summary">
 		<meta name="twitter:title" content="David Brooks- I miss Obama">
-		<meta name="twitter:description" content="David Brooks, in a column which has received a great deal of national attention:
-•••
-I wrote this link post because our sister site in Kansas City had Brooks’ column and we did not. Wasn’t on the national wires, for some reason.
-
+		<meta name="twitter:description" content="David Brooks, in a column which has received a great deal of national attention:•••I wrote this link post because our sister site in Kansas City had Brooks’ column and we did not. Wasn’t on the national wires, for some reason.
 
 ">
 	
@@ -137,37 +134,7 @@ included. -->
 
 	 <!-- Article content -->
 	 <div class="article-text">
-    <p>David Brooks, in a <a href="http://www.kansascity.com/opinion/opn-columns-blogs/syndicated-columnists/article59342008.html">column</a> which has received a great deal of national attention:<style>
-#footnote_3 {
-	-webkit-animation-duration: .3s;
-	-moz-animation-duration: .3s;
-	animation-duration: .3s;
-}
-</style>
-<sup><button class="fn_button" onclick="showDiv_3()" style="position: relative; left: 0px;"><span class="fn_label">•••</span>
-<span class="footnoting animated fadeIn" id="footnote_3" style="display: none;">I wrote this link post because our sister site in Kansas City had Brooks’ column and we did not. Wasn’t on the national wires, for some reason.</span></button></sup>
-<script>
-	var shown_3 = false;
-	function showDiv_3() {
-		if (document.getElementById('footnote_3').style.display 
-			== "none") {
-			document.getElementById('footnote_3').style.display 
-				= "inline";
-			document.getElementById('footnote_3').style.position 
-				= "absolute";
-			document.getElementById('footnote_3').style.top = "30px";
-			document.getElementById('footnote_3').style.right = "0px";
-			document.getElementById('footnote_3').style.left = "-120px";
-			shown_3 = true;
-		}
-		else {
-			document.getElementById('footnote_3').style.display = "none";
-			document.getElementById('footnote_3').className 
-				= "footnoting animated fadeIn";
-			shown_3 = false;
-		}
-	}
-</script></p>
+    <p>David Brooks, in a <a href="http://www.kansascity.com/opinion/opn-columns-blogs/syndicated-columnists/article59342008.html">column</a> which has received a great deal of national attention:<button class="fn_button">•••</button><span class="fn_text">I wrote this link post because our sister site in Kansas City had Brooks’ column and we did not. Wasn’t on the national wires, for some reason.</span></p>
 
 <!--break-->
 
@@ -335,5 +302,26 @@ included. -->
 
 
   </body>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+  <!-- For footnotes -->
+  <script>
+	
+	function main() {
+		var visible = false;
+		$('.fn_button').on('click', function() {
+			if (visible) {
+				$(this).next().css('display', 'none');
+				visible = false;
+			}
+			else {
+				$(this).next().css('display', 'block');
+				visible = true;
+			}
+		});
+	}
+	$(document).ready(main);
+
+  </script>
 
 </html>

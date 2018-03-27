@@ -41,6 +41,10 @@ blockquote { font-style: italic; background-color: #dcdfe5; margin: 1em; padding
 
 @media screen and (min-width: 700px) { html { max-width: 700px; }
   .teaser-title { font-size: 2em; bottom: -5%; } }
+.fn_button { position: relative; }
+
+.fn_text { display: none; background-color: black; border-radius: 0.5em; z-index: 1; padding: 1em; color: white; top: 1em; max-width: 20em; margin: 1em auto 1em auto; }
+
 /** Syntax highlighting styles */
 .highlight { background: #fff; }
 .highlight .c { color: #998; font-style: italic; }
