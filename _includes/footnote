@@ -1,1 +1,1 @@
-<button class='fn_button'>&bull;&bull;&bull;</button><span class='fn_text'>{{ include.note }}</span>
+<span class='footnote'><button class='fn_button'>&bull;&bull;&bull;</button><span class='fn_text'>{{ include.note }}</span></span>

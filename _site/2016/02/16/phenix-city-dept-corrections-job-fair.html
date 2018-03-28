@@ -118,7 +118,7 @@
 
 	 <!-- Article content -->
 	 <div class="article-text">
-    <p>It’s last-minute, but if you’re interested in a job with the Alabama Dept. of Corrections there is a fair happening between 10 a.m. and 2 p.m. today in Phenix City.<button class="fn_button">•••</button><span class="fn_text">Obviously, the fair has since ended.</span></p>
+    <p>It’s last-minute, but if you’re interested in a job with the Alabama Dept. of Corrections there is a fair happening between 10 a.m. and 2 p.m. today in Phenix City.<span class="footnote"><button class="fn_button">•••</button><span class="fn_text">Obviously, the fair has since ended.</span></span></p>
 
 <!--break-->
 
@@ -278,11 +278,14 @@
 
 
   </body>
+
+  <!-- Import jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
   <!-- For footnotes -->
   <script>
 	
+	//Show and hide footnotes when the button is clicked
 	function main() {
 		var visible = false;
 		$('.fn_button').on('click', function() {

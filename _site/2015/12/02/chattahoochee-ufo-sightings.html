@@ -140,7 +140,8 @@ included. -->
 
 <p>The National UFO Reporting Center collects anonymous reports from around the country on strange and unexplainable sights. They have reports of sightings going back to the ’60s, and from every state. We put together an infographic of reports from the Chattahoochee Valley over the last two years, as well as Alabama and Georgia for the previous seven.</p>
 
-<p><strong>Take all of this with a huge grain of salt</strong>.<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> These are unconfirmed, anonymous reports about things that sound a lot like military aircraft. The CIA <a href="http://www.popularmechanics.com/space/a3995/4304207/">estimated</a> that more than half of all UFO sightings in the ’50s and ’60s were actually secret U-2 and SR-71 spy planes.</p>
+<p><strong>Take all of this with a huge grain of salt</strong>. <span class="footnote"><button class="fn_button">•••</button><span class="fn_text">Considering the quality of the database, I felt it best to be as upfront with readers as possible.</span></span>
+  These are unconfirmed, anonymous reports about things that sound a lot like military aircraft. The CIA <a href="http://www.popularmechanics.com/space/a3995/4304207/">estimated</a> that more than half of all UFO sightings in the ’50s and ’60s were actually secret U-2 and SR-71 spy planes.</p>
 
 <p>One British journalist who produced “<a href="http://www.amazon.com/Mirage-Men-Adventure-Espionage-Psychological/dp/1602398003">Mirage Men: An Adventure into Paranoia, Espionage, Psychological Warfare, and UFOs</a>” said the government actually encouraged UFO theories and conspiracies to cover up experimental aircraft.</p>
 
@@ -150,14 +151,6 @@ included. -->
 <div style="width:100%;padding:8px 0;font-family:Arial;font-size:13px;line-height:15px;text-align:center;"><a target="_blank" href="https://infogr.am/ufo_sightings-120" style="color:#989898;text-decoration:none;">UFO Sightings</a><br /><a style="color:#989898;text-decoration:none;" href="https://infogr.am" target="_blank">Create your own infographics</a></div>
 
 <p>The National UFO Reporting Center was founded in 1974 by UFO investigator Robert J. Gribble. The Center’s primary purpose, according to its <a href="http://www.nuforc.org/General.html">biography</a>, is to record and document reports from individuals who have witnessed unusual or UFO-related events. Its data has been used by other outlets to create products like <a href="http://metrocosm.com/ufo-sightings-map.html">this US map of sightings</a>.</p>
-
-<div class="footnotes">
-  <ol>
-    <li id="fn:1">
-      <p>I considered trying to make excuses for the quality of this database but quickly realized that was impossible. <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
-    </li>
-  </ol>
-</div>
 
 	 </div>
 
@@ -307,11 +300,14 @@ included. -->
 
 
   </body>
+
+  <!-- Import jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
   <!-- For footnotes -->
   <script>
 	
+	//Show and hide footnotes when the button is clicked
 	function main() {
 		var visible = false;
 		$('.fn_button').on('click', function() {

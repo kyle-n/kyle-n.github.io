@@ -133,17 +133,6 @@ blockquote {
 	margin-top: -1em;
 }
 
-//Desktop formatting
-@media screen and (min-width: 700px) {
-	html {
-		max-width: 700px;
-	}
-	.teaser-title {
-		font-size: 2em;
-		bottom: -5%;
-	}
-}
-
 //Footnote buttons
 .fn_button {
 	position: relative;
@@ -158,6 +147,32 @@ blockquote {
 	padding: 1em;
 	color: white;
 	top: 1em;
+	right: -10em;
 	max-width: 20em;
 	margin: 1em auto 1em auto;
+	width: 80%;
+	//height: 8em;
+	overflow: scroll;
+	clear: both;
+}
+.footnote {
+	position: relative;
+	z-index: 0;
+}
+
+//Desktop formatting
+@media screen and (min-width: 700px) {
+	html {
+		max-width: 700px;
+	}
+	.teaser-title {
+		font-size: 2em;
+		bottom: -5%;
+	}
+	.fn_text {
+		position: absolute;
+		right: -10em;
+		width: 15em;
+		clear: none;
+	}
 }

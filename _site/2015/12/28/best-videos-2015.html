@@ -134,7 +134,7 @@ included. -->
 
 	 <!-- Article content -->
 	 <div class="article-text">
-    <p>Ledger-Enquirer staffers took a lot of video in 2015, from Sunday Interviews to breaking news. These were the six videos that turned the most heads. <button class="fn_button">•••</button><span class="fn_text">For clarity, I did not create any of these videos but did write the recap.</span></p>
+    <p>Ledger-Enquirer staffers took a lot of video in 2015, from Sunday Interviews to breaking news. These were the six videos that turned the most heads. <span class="footnote"><button class="fn_button">•••</button><span class="fn_text">For clarity, I did not create any of these videos but did write the recap.</span></span></p>
 
 <!--break-->
 
@@ -333,11 +333,14 @@ included. -->
 
 
   </body>
+
+  <!-- Import jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
   <!-- For footnotes -->
   <script>
 	
+	//Show and hide footnotes when the button is clicked
 	function main() {
 		var visible = false;
 		$('.fn_button').on('click', function() {

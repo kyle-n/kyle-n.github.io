@@ -134,7 +134,7 @@ included. -->
 
 	 <!-- Article content -->
 	 <div class="article-text">
-    <p>David Brooks, in a <a href="http://www.kansascity.com/opinion/opn-columns-blogs/syndicated-columnists/article59342008.html">column</a> which has received a great deal of national attention:<button class="fn_button">•••</button><span class="fn_text">I wrote this link post because our sister site in Kansas City had Brooks’ column and we did not. Wasn’t on the national wires, for some reason.</span></p>
+    <p>David Brooks, in a <a href="http://www.kansascity.com/opinion/opn-columns-blogs/syndicated-columnists/article59342008.html">column</a> which has received a great deal of national attention:<span class="footnote"><button class="fn_button">•••</button><span class="fn_text">I wrote this link post because our sister site in Kansas City had Brooks’ column and we did not. Wasn’t on the national wires, for some reason.</span></span></p>
 
 <!--break-->
 
@@ -302,11 +302,14 @@ included. -->
 
 
   </body>
+
+  <!-- Import jQuery -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
   <!-- For footnotes -->
   <script>
 	
+	//Show and hide footnotes when the button is clicked
 	function main() {
 		var visible = false;
 		$('.fn_button').on('click', function() {
