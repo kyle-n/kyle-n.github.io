@@ -283,14 +283,17 @@
 	
 	//Show and hide footnotes when the button is clicked
 	function main() {
+		//Can't use toggle because need span to render as block
 		var visible = false;
 		$('.fn_button').on('click', function() {
+			$fn = $(this).next();
 			if (visible) {
-				$(this).next().css('display', 'none');
+				$fn.fadeOut();
 				visible = false;
 			}
 			else {
-				$(this).next().css('display', 'block');
+				$fn.fadeIn();
+				$fn.css('display', 'block');
 				visible = true;
 			}
 		});

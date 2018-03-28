@@ -1,4 +1,4 @@
-// Formatting for whole page
+//Formatting for whole page
 html {
 	font-family: $base-font-family;
 	font-size: $base-font-size;
@@ -9,7 +9,7 @@ html {
 	background-color: #fffff0;
 }
 
-// Remove link underlines and boldface them
+//Remove link underlines and boldface them
 a {
 	text-decoration: none;
 	font-weight: bold;
@@ -151,7 +151,6 @@ blockquote {
 	max-width: 20em;
 	margin: 1em auto 1em auto;
 	width: 80%;
-	//height: 8em;
 	overflow: scroll;
 	clear: both;
 }
