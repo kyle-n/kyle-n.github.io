@@ -7,7 +7,7 @@ I built this website using [Jekyll](https://jekyllrb.com), an amazing static sit
 
 I designed my website to use static pages and minimal assets because this website is text, images and video and doesn't need much more. I wish more news sites approached site design like this ([besides Vox Media](https://product.voxmedia.com/2014/7/29/5863004/take-a-peek-at-the-code-that-powered-the-verge-50)). Keeping pages light is vital in a world where most readers are on underpowered smartphones. [More on static websites and why they're important.]({% post_url 2015-08-05-ssgSetup %})
 
-*Side note: The site is a bit plain at the moment because I am rebuilding the CSS from scratch. Jekyll's prebuilt CSS was too heavy. You'll have to excuse the aesthetics. While I am a good writer, I am not the greatest artist. I'm also trying to keep the pages loading quickly. No point using a static site generator if you have 10 `<script>` tags for fancy visual effects.*
+*Side note: The site is a bit plain at the moment because I am rebuilding the CSS from scratch. Jekyll's prebuilt CSS was too heavy. You'll have to excuse the aesthetics. While I am a good writer, I am not the greatest artist.*
 
 Thanks also to GitHub for [hosting my site](https://github.com/kyle-n/kyle-n.github.io) on [GitHub Pages](https://pages.github.com) for free. Much obliged for the server space and helpful setup guides. 
 

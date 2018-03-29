@@ -216,7 +216,7 @@ included. -->
 		<!-- Site description -->
       <div style="max-width: 100%;">
 				  <p class="text">I built this website to store my previous work, some of which has vanished since publication. News stories tend not to have an incredibly long lifespan, especially on the internet. Please feel free to contact me with any questions. <a href="/about.html">More about this site</a>.
-</p>
+ <button id="nightmode">&#9790;</button></p>
       </div>
 
 		<!-- Contact link email section -->
@@ -351,6 +351,79 @@ included. -->
 				$fn.fadeIn();
 				$fn.css('display', 'block');
 				visible = true;
+			}
+		});
+
+		//isNight=false; _ga=GA1.1.868655742.1522355517; _gat=1; _gid=GA1.1.1879936712.1522355517; isNight=true
+		//Parse night mode from cookie
+		function checkCookieValue(key, value) {
+			var answer = false;
+			var c = document.cookie;
+			var cookieData = c.split(';');
+			var cookiePairs = [];
+			for (var i = 0; i < cookieData.length; i++) {
+				cookiePairs[i] = cookieData[i].split('=');
+			}
+			for (var i = 0; i < cookiePairs.length; i++) {
+				if (cookiePairs[i][0] === key && cookiePairs[i][1] === value) {
+					answer = true;
+					break;
+				}
+			}
+			return answer;
+		}
+
+		//Set value of cookie
+		function setCookie(key, value) {
+			var result = '';
+			var c = document.cookie;
+			var cookieData = c.split(';');
+			var cookiePairs = [];
+			for (var i = 0; i < cookieData.length; i++) {
+				cookiePairs[i] = cookieData[i].split('=');
+			}
+			var preexisting = false;
+			for (var i = 0; i < cookiePairs.length; i++) {
+				if (cookiePairs[i][0] === key) {
+					cookiePairs[i][1] = value;
+					preexisting = true;
+					break;
+				}
+				result += cookiePairs[i][0] + '=' + cookiePairs[i][1] + '; ';
+			}
+			if (preexisting) {
+				result = result.slice(0, result.length - 2);
+			}
+			else {
+				result += key + '=' + value;
+			}
+
+			return result;
+		}
+
+		//Night mode toggle
+		var isNight = checkCookieValue('isNight', 'true');
+
+		if (isNight) {
+			$('html').css('color', 'white');
+			$('html').css('background-color', 'black');
+			$('#nightmode').html('&#9728;');
+		}
+
+		$('#nightmode').on('click', () => {
+			if (isNight) {
+				$('html').css('color', '#111');
+				$('html').css('background-color', '#fffff0');
+				$('#nightmode').html('&#9790;');
+				isNight = false;
+				setCookie('isNight', 'false');
+			}
+			else {
+				$('html').css('color', 'white');
+				$('html').css('background-color', 'black');
+				$('#nightmode').html('&#9728;');
+				isNight = true;
+				setCookie('isNight', 'true');
 			}
 		});
 	}
