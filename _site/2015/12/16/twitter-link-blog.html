@@ -323,10 +323,28 @@ included. -->
 
   <!-- For footnotes -->
   <script>
-	
-	//Show and hide footnotes when the button is clicked
+
 	function main() {
-		//Can't use toggle because need span to render as block
+
+		//Grab background color settings, if they exist
+	   var nightIn = '';
+		var night = false;
+	   try {
+			nightIn = localStorage.getItem('nightMode');
+
+			//Set night mode on page load
+			if (nightIn === 'y') {
+				night = true;
+				$('html').css('background-color', 'black');
+				$('html').css('color', 'white');
+				$(this).html('&#9728;');
+			}
+		}
+		catch (error) {
+		  localStorage.setItem('nightMode', 'n')
+		}
+
+		//Toggle footnotes when button is clicked
 		var visible = false;
 		$('.fn_button').on('click', function() {
 			$fn = $(this).next();
@@ -341,78 +359,32 @@ included. -->
 			}
 		});
 
-		//isNight=false; _ga=GA1.1.868655742.1522355517; _gat=1; _gid=GA1.1.1879936712.1522355517; isNight=true
-		//Parse night mode from cookie
-		function checkCookieValue(key, value) {
-			var answer = false;
-			var c = document.cookie;
-			var cookieData = c.split(';');
-			var cookiePairs = [];
-			for (var i = 0; i < cookieData.length; i++) {
-				cookiePairs[i] = cookieData[i].split('=');
-			}
-			for (var i = 0; i < cookiePairs.length; i++) {
-				if (cookiePairs[i][0] === key && cookiePairs[i][1] === value) {
-					answer = true;
-					break;
-				}
-			}
-			return answer;
-		}
+		//Background color settings
+		$('#nightmode').on('click', function() {
 
-		//Set value of cookie
-		function setCookie(key, value) {
-			var result = '';
-			var c = document.cookie;
-			var cookieData = c.split(';');
-			var cookiePairs = [];
-			for (var i = 0; i < cookieData.length; i++) {
-				cookiePairs[i] = cookieData[i].split('=');
-			}
-			var preexisting = false;
-			for (var i = 0; i < cookiePairs.length; i++) {
-				if (cookiePairs[i][0] === key) {
-					cookiePairs[i][1] = value;
-					preexisting = true;
-					break;
-				}
-				result += cookiePairs[i][0] + '=' + cookiePairs[i][1] + '; ';
-			}
-			if (preexisting) {
-				result = result.slice(0, result.length - 2);
-			}
-			else {
-				result += key + '=' + value;
-			}
+			 //Night is on, turn it off
+			 if (night) {
+				$('html').css('background-color', '#fdfdfd');
+				$('html').css('color', 'black');
+				$(this).html('&#9790;');
 
-			return result;
-		}
+				//Set var and memory
+				night = false;
+				localStorage.setItem('nightMode', 'n');
+			 }
 
-		//Night mode toggle
-		var isNight = checkCookieValue('isNight', 'true');
-
-		if (isNight) {
-			$('html').css('color', 'white');
-			$('html').css('background-color', 'black');
-			$('#nightmode').html('&#9728;');
-		}
-
-		$('#nightmode').on('click', () => {
-			if (isNight) {
-				$('html').css('color', '#111');
-				$('html').css('background-color', '#fffff0');
-				$('#nightmode').html('&#9790;');
-				isNight = false;
-				setCookie('isNight', 'false');
-			}
-			else {
-				$('html').css('color', 'white');
+			 //Night is off, turn it on
+			 else {
 				$('html').css('background-color', 'black');
-				$('#nightmode').html('&#9728;');
-				isNight = true;
-				setCookie('isNight', 'true');
-			}
+				$('html').css('color', 'white');
+				$(this).html('&#9728;');
+
+				//Set var and memory
+				night = true;
+				localStorage.setItem('nightMode', 'y');
+			 }
 		});
+
 	}
 	$(document).ready(main);
 
