@@ -58,4 +58,24 @@ $(document).ready(function() {
 			night = false;
 			localStorage.setItem('nightMode', 'n');
 	}
+	/*
+	 //Toggle footnotes when button is clicked
+	 var visible = false;
+    document.querySelector('.fn_button').addEventListener('click', 
+      function(e) {
+        var fn = e.nextSibling();
+		  if (visible) {
+            fn.classList.remove('.fn_text_showing')
+				  .classList.add('fn_text_hidden')
+				  .style['display'] = 'none';
+				visible = false;
+		  }
+		  else {
+				fn.classList.remove('.fn_text_hidden')
+				  .classList.add('fn_text_hidden')
+				  .style['display'] = 'block';
+				visible = true;
+		  }
+	 });
+	 */
 });
