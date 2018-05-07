@@ -8,10 +8,7 @@ $(document).ready(function() {
 
 		//Set night mode on page load
 		if (nightIn === 'y') {
-			night = true;
-			$('html').css('background-color', 'black');
-			$('html').css('color', 'white');
-			$('#nightmode').html('&#9728;');
+			goNight();
 		}
 	}
 	catch (error) {
@@ -35,27 +32,30 @@ $(document).ready(function() {
 
 	//Background color settings
 	$('#nightmode').on('click', function() {
-
-		//Night is on, turn it off
 		if (night) {
-			$('html').css('background-color', '#fdfdfd');
-			$('html').css('color', 'black');
-			$(this).html('&#9790;');
-
-			//Set var and memory
-			night = false;
-			localStorage.setItem('nightMode', 'n');
+			goDay();
 		}
-
-		//Night is off, turn it on
 		else {
-			$('html').css('background-color', 'black');
-			$('html').css('color', 'white');
-			$(this).html('&#9728;');
-
-			//Set var and memory
-			night = true;
-			localStorage.setItem('nightMode', 'y');
+			goNight();
 		}
 	});
+
+	//Activate night mode
+	function goNight() {
+		$('html').css('background-color', 'black')
+			.css('color', 'white');
+		$('#nightmode').html('&#9728;');
+		$('blockquote p').css('color', 'black');
+		night = true;
+		localStorage.setItem('nightMode', 'y');
+	}
+
+	//Activate day mode
+	function goDay() {
+			$('html').css('background-color', '#fdfdfd')
+				.css('color', 'black');
+			$('#nightmode').html('&#9790;');
+			night = false;
+			localStorage.setItem('nightMode', 'n');
+	}
 });
