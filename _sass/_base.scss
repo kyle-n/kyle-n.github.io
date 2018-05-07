@@ -153,18 +153,25 @@ blockquote {
 	width: 80%;
 	overflow: scroll;
 	clear: both;
+	opacity: 0;
 }
 .footnote {
 	position: relative;
 	z-index: 0;
 }
 .fn_text_showing {
-	opacity: 1;
-	transition: opacity 1s;
+	display: block;
+	animation: toggle_footnote 0.5s forwards;
 }
 .fn_text_hidden {
-	opacity: 0;
-	transition: opacity 1s;
+	display: none;
+	animation: toggle_footnote 0.5s backwards;
+}
+
+//Display footnote animation
+@keyframes toggle_footnote {
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
 
 //Desktop formatting

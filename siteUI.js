@@ -1,4 +1,5 @@
-$(document).ready(function() {
+//On DOM load (Before images and all other scripts
+document.addEventListener('DOMContentLoaded', function() {
 
 	//Grab background color settings, if they exist
 	var nightIn = '';
@@ -17,15 +18,17 @@ $(document).ready(function() {
 
 	//Toggle footnotes when button is clicked
 	var visible = false;
-	$('.fn_button').on('click', function() {
-		var $fn = $(this).next();
+	document.querySelector('.fn_button').addEventListener('click', 
+		function(e) {
+		var fn = this.nextSibling;
 		if (visible) {
-			$fn.fadeOut();
+			fn.classList.remove('fn_text_showing');
+			fn.classList.add('fn_text_hidden');
 			visible = false;
 		}
 		else {
-			$fn.fadeIn();
-			$fn.css('display', 'block');
+			fn.classList.remove('fn_text_hidden');
+			fn.classList.add('fn_text_showing');
 			visible = true;
 		}
 	});
@@ -60,22 +63,6 @@ $(document).ready(function() {
 	}
 	/*
 	 //Toggle footnotes when button is clicked
-	 var visible = false;
-    document.querySelector('.fn_button').addEventListener('click', 
-      function(e) {
-        var fn = e.nextSibling();
-		  if (visible) {
-            fn.classList.remove('.fn_text_showing')
-				  .classList.add('fn_text_hidden')
-				  .style['display'] = 'none';
-				visible = false;
-		  }
-		  else {
-				fn.classList.remove('.fn_text_hidden')
-				  .classList.add('fn_text_hidden')
-				  .style['display'] = 'block';
-				visible = true;
-		  }
-	 });
 	 */
 });
+
