@@ -1,0 +1,114 @@
+<!-- Grab the page categories to know what you're looking for. I don't use the 
+	  categories as they are because of the commas in tags-->
+{% assign base_cats = "" | split:'' %}
+{% for cat in page.categories %}
+	{% assign new_cat = cat | remove:' ' | remove:',' %}
+	{% assign base_cats = base_cats | push:new_cat %}
+{% endfor %}
+
+<!-- To make sure a post isn't related to itself -->
+{% assign base_title = page.title %}
+
+<!-- collect each post and its score within an array -->
+{% assign scores = "" | split:'' %}
+{% for other in site.posts %}
+
+	<!-- Counts score for related posts. Counter counts relevance -->
+	{% assign other_score = 0 %}
+	{% assign counter = 20 %}
+	
+	<!-- Collect other categories into an array with commas stripped -->
+	{% assign other_cats = "" | split:'' %}
+	{% for other_cat in other.categories %}
+		{% assign new_cat = other_cat | remove:' ' | remove:',' %}
+		{% assign other_cats = other_cats | push:new_cat %}
+	{% endfor %}
+
+	<!-- Check each tag on this post against each other tag on the given other post -->
+	{% for base_cat in base_cats %}
+		{% for other_cat in other_cats %}
+			{% if base_cat == other_cat %}
+				<!-- Increment related score by how relavant the tag is -->
+				{% assign other_score = other_score | plus:counter %}
+			{% endif %}
+			<!-- Tag is less important in the related post -->
+			{% assign counter = counter | minus:'0.5' %}
+		{% endfor %}
+		<!-- Tag is definitely less related to the base post -->
+		{% assign counter = counter | minus:'1' %}
+	{% endfor %}
+
+	<!-- Torpedo score if it's the same post -->
+	{% if base_title == other.title %}
+		{% assign other_score = -5000 %}
+	{% endif %}
+
+	<!-- Boost score if it shares a specific topic, always the first tag -->
+	{% if other_cats[0] == base_cats[0] %}
+		{% assign other_score = other_score | plus:'30' %}
+	{% endif %}
+
+	<!-- Boost score for highlights from same outlet -->
+	{% if other.org == page.org and other.hl and page.hl %}
+		{% assign other_score = other_score | plus:'15' %}
+	{% endif %}
+
+	<!-- Store array with post, its score within scores array -->
+	{% assign score_push = "" | split:'' %}
+	{% assign score_push = score_push | push:other %}
+	{% assign score_push = score_push | push:other_score %}
+	{% assign scores = scores | push:score_push %}
+
+{% endfor %}
+
+<!-- Create related array for storing related posts.
+	  Also requires a placeholder loop because you can't overwrite the current item
+	  in an iteration within Liquid -->
+{% assign related = "" | split:'' %}
+{% assign p_loop = "" | split:'' %}
+{% assign p_post = page %}
+{% assign p_score = 0 %}
+{% assign placeholder = "" | split:'' %}
+{% assign placeholder = placeholder | push:p_post | push:p_score %}
+{% assign p_loop = related | push:placeholder | push:placeholder | push:placeholder %}
+
+<!-- Index variables to find the highest post that is not in related -->
+{% assign highest = -5000 %}
+{% assign high_index = -1 %}
+{% assign goahead = true %}
+
+<!-- Fill related with the three score items with the highest related score -->
+{% for p in p_loop %}
+	{% for other in scores %}
+		{% if other[1] > highest %}
+
+			<!-- Skip if already in related -->
+			{% for related_post in related %}
+				{% if other[0].title == related_post[0].title %}
+					{% assign goahead = false %}
+				{% endif %}
+			{% endfor %}
+
+			<!-- Make this the new target -->
+			{% if goahead and other[0].title != page.title %}
+				{% assign highest = other[1] %}
+				{% assign high_index = forloop.index0 %}
+			{% endif %}
+
+		{% endif %}
+		{% assign goahead = true %}
+	{% endfor %}
+
+	<!-- Add related post -->
+	{% assign related = related | push:scores[high_index] %}
+
+	<!-- Reset variables -->
+	{% assign highest = -5000 %}
+	{% assign high_index = -1 %}
+
+{% endfor %}
+
+<!-- Display related posts -->
+{% for item in related %}
+<li><a href="{{ site.baseurl }}{{ item[0].url }}">{{ item[0].title }}</a></li>
+{% endfor %}
