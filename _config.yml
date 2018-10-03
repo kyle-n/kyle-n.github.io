@@ -1,14 +1,14 @@
 # Site settings
 title: Stories by Kyle Nazario
 email: kylebnazario@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
+description: >
   I built this website to store my previous work, some of which
   has vanished since publication. News stories tend not to have an
   incredibly long lifespan, especially on the internet. This site
   is a way to preserve my old stories and show my talents to 
   employers. Please feel free to contact me with any questions.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://www.kylenazario.com" # the base hostname & protocol for your site
+baseurl: ""
+url: "http://www.kylenazario.com"
 twitter_username: kbn_au
 github_username:  kyle-n
 facebook_username: knazario
