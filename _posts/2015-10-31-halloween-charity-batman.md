@@ -36,5 +36,3 @@ St. Pierre said news of the family's plight spread over social media and inspire
 "(This) gives our girls things they haven't had for a month," John said. "We appreciate it. It's nice to see people willing to help."
 
 If you'd like to donate gently used goods or toys, drop them off at the fire station at 200 North Oakley Drive, Columbus, GA 31907.
-
-{% include gallery dir="stpierre" caps="This is a test. | Yes it is. | Indeed." %}

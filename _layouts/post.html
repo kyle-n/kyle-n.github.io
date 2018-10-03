@@ -5,34 +5,34 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-	 <!-- Properly format date for display -->
-	 <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} | {{ page.org }}</p>
+    <!-- Properly format date for display -->
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} | {{ page.org }}</p>
   </header>
 
   <article class="post-content">
-			 <!-- Pull header image -->
-			 {% if page.image != null %}
-			 	{% include image src=page.image style="topImg" cap=page.cap %}
-			 {% endif %}
+    <!-- Pull header image -->
+    {% if page.image != null %}
+      {% include image src=page.image style="topImg" cap=page.cap %}
+    {% endif %}
 
-	 <!-- Article content -->
-	 <div class="article-text">
-    {{ content }}
-	 </div>
+    <!-- Article content -->
+    <div class="article-text">
+      {{ content }}
+    </div>
 
-	 <!-- Add source link if available -->
-	 {% if page.original != null %}
-	 <p>***</p>
-	 <p><a href="{{ page.original }}" target="_blank">Original Story</a>
-	 <br>
-	 <br>
-	 {% endif %}
+    <!-- Add source link if available -->
+    {% if page.original != null %}
+      <p>***</p>
+      <p><a href="{{ page.original }}" target="_blank">Original Story</a>
+      <br>
+      <br>
+    {% endif %}
 
-	 <!--Tag post with similar content-->
-	 <h4>Related posts</h4>
-	 	<ul>
+    <!--Tag post with similar content-->
+    <h4>Related posts</h4>
+    <ul>
 
-		</ul>
+    </ul>
 
   </article>
 

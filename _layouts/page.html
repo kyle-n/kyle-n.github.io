@@ -3,17 +3,14 @@ layout: default
 ---
 
 <div class="post">
-
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
-	 	<!-- Show header image if available -->
-		{% if page.image != null %}
-		<img src="/blog/assets/{{ page.image }}">
-		{% endif %}
+    <!-- Show header image if available -->
+    {% if page.image != null %}
+      <img src="/blog/assets/{{ page.image }}">
+    {% endif %}
   </header>
-
   <article class="post-content">
     {{ content }}
   </article>
-
 </div>
