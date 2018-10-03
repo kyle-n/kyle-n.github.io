@@ -5,10 +5,7 @@ title: Highlights
 
 <!-- Loop through paginated posts -->
 {% for post in site.posts %}
-{% if post.hl != null %}
-
-{% include teasers2.html %}
-
-{% endif %}
+  {% if post.hl != null %}
+    {% include teasers2.html %}
+  {% endif %}
 {% endfor %}
-
