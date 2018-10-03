@@ -3,51 +3,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- Meta content for Twitter cards. Requires a silly amount of conditional coding to accomodate regular pages and articles -->
+  <!-- Meta content for Twitter cards -->
   <meta name="twitter:site" content="{{ site.twitter_username }}">
   <meta name="twitter:creator" content="{{ site.twitter_username }}">
 
   {% if page.id %} <!-- Article -->
-		<meta name="twitter:card" content="summary">
-		<meta name="twitter:title" content="{{ page.title }}">
-		<meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
-	{% else %} <!-- Other page -->
-  		<meta name="twitter:card" content="I'm Kyle Nazario, and this is my work.">
-		<meta name="twitter:title" content="{{ site.title }}">
-		<meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.excerpt | strip_html }}">
+  {% else %} <!-- Other page -->
+    <meta name="twitter:card" content="I'm Kyle Nazario, and this is my work.">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
   {% endif %}
 
-	{% if page.url %}
-  		<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
-	{% endif %}
+  {% if page.url %}
+    <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  {% endif %}
 
-	{% if page.image %}
-		<meta name="twitter:image:src" content="{{ site.url }}/blog/assets/{{ page.image }}">
-	{% else %}
-		<meta name="twitter:image:src" content="{{ site.url }}/blog/assets/me.png">
-	{% endif %}
+  {% if page.image %}
+    <meta name="twitter:image:src" content="{{ site.url }}/blog/assets/{{ page.image }}">
+  {% else %}
+    <meta name="twitter:image:src" content="{{ site.url }}/blog/assets/me.png">
+  {% endif %}
 
-	<!-- Facebook Open Graph tags -->
-	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
-	<meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
-	<meta property="og:image" content="{% if page.image %}{{ site.url }}/blog/assets/{{ page.image }}{% else %}{{ site.url }}/blog/assets/me.png{% endif %}">
-	<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-	<meta property="og:site_name" content="{{ site.title }}">
-	<meta property="og:locale" content="en_us">
-	<meta property="fb:admins" content="1184042582">
-	<meta property="fb:app_id" content="794821543963847">
-	<meta property="article:author" content="https://www.facebook.com/knazario">
+  <!-- Facebook Open Graph tags -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.name }}{% endif %}">
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <meta property="og:image" content="{% if page.image %}{{ site.url }}/blog/assets/{{ page.image }}{% else %}{{ site.url }}/blog/assets/me.png{% endif %}">
+  <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:locale" content="en_us">
+  <meta property="fb:admins" content="1184042582">
+  <meta property="fb:app_id" content="794821543963847">
+  <meta property="article:author" content="https://www.facebook.com/knazario">
 
-	<!-- Google+ Authorship -->
-	<link rel="author" href="https://plus.google.com/+{{ site.author.google_plus }}">
+  <!-- Google+ Authorship -->
+  <link rel="author" href="https://plus.google.com/+{{ site.author.google_plus }}">
 
-	<!-- Verify ownership for Google -->
-	<meta name="google-site-verification" content="7BZuK1NLTofVMDEGKKNH363-otClVY9i9DagltvLJRQ" />
-  
-	<!-- Google keywords -->
-	<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}kyle nazario, journalist, auburn al, ledger-enquirer, technorms, the plainsman, writer{% endif %}">
+  <!-- Verify ownership for Google -->
+  <meta name="google-site-verification" content="7BZuK1NLTofVMDEGKKNH363-otClVY9i9DagltvLJRQ" />
 
-	<!-- Title and description -->
+  <!-- Google keywords -->
+  <meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}kyle nazario, journalist, auburn al, ledger-enquirer, technorms, the plainsman, writer{% endif %}">
+
+  <!-- Title and description -->
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% if page.keywords %} | {{ page.keywords }}{% endif %}{% else %}{{ site.description }}{% endif %}">
 

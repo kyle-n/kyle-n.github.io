@@ -1,16 +1,12 @@
 {% capture size %}{{ include.cap | size }}{% endcapture %}
-
-<!-- Imports an image and styles it properly, with caption if 
-included. -->
-
 <div class="{{ include.style }} {% if include.cap %}capbox {% endif %}" style="overflow: hidden;" >
-	<img class="inline {% if include.cap %}capped {% endif %}" src="/blog/assets/{{ include.src }}" alt="{{ include.cap }}">
-	{% if size != 0 %}
-		<div class="cap">
-			<p>{{ include.cap }}</p>
-		</div>
-	{% endif %}
-	{% if include.style != "topImg" %}
-	<hr>
-	{% endif %}
+  <img class="inline {% if include.cap %}capped {% endif %}" src="/blog/assets/{{ include.src }}" alt="{{ include.cap }}">
+  {% if size != 0 %}
+    <div class="cap">
+      <p>{{ include.cap }}</p>
+    </div>
+  {% endif %}
+  {% if include.style != "topImg" %}
+    <hr>
+  {% endif %}
 </div>
