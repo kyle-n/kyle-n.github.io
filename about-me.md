@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Meet Kyle Nazario
-permalink: index.html
+title: About my journalism
 image: me.png
 ---
 

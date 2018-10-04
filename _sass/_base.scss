@@ -6,7 +6,7 @@ html {
 	max-width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #fffff0;
+	background-color: #ecf0f1;
 }
 
 //Remove link underlines and boldface them
@@ -168,6 +168,17 @@ blockquote {
 	animation: toggle_footnote 0.5s backwards;
 }
 
+.portfolio-item {
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  display: flex;
+  padding: 2rem;
+  margin: 2rem;
+  max-width: 90%;
+  flex-wrap: wrap;
+  flex-basis: 150px;
+}
+
 //Display footnote animation
 @keyframes toggle_footnote {
 	from { opacity: 0; }
@@ -189,4 +200,7 @@ blockquote {
 		width: 15em;
 		clear: none;
 	}
+  .portfolio-item {
+    flex-wrap: nowrap;
+  }
 }
