@@ -4,14 +4,18 @@ title: About my journalism
 image: me.png
 ---
 
-I'm a journalist with experience working on newspapers, magazines, and most of all, the web. I've worked as a reporter, writer, editor, video producer, photographer and web producer.
+I have several years of experience as a journalist at newspapers, magazines and the web. I've worked as a reporter, writer, editor, video producer, photographer and web producer.
 
-My current job is at the Atlanta-Journal Constitution as a producer. I write, edit and help prepare content for our home & garden section as well as sponsorships. My work has helped the AJC deliver unparalleled sponsorship packages. 
+My current job is at the Atlanta-Journal Constitution as a producer. I write, edit and help prepare content from the wire as well as create videos and sponsorship content. My work has helped the AJC deliver unparalleled sponsorship packages. 
 
 The work done by our group has helped boost AJC traffic by millions of page views through unique distribution strategies and better SEO. 
 
-This work is a specialty of mine. I produce unique online content, whether it's an especially compelling gallery or an unusual feature story. During my time at the Ledger-Enquirer, I helped push our online traffic stats to record highs in McClatchy. 
+I also brought my coding ability to bear at the AJC, building Python scripts for myself and coworkers that saved us dozens of hours. I will not post them since they use internal AJC systems, but I can describe them. 
 
-I graduated from Auburn University with a bachelor's degree in journalism and computer science. I chose computer science as my minor to learn how to code and produce content for the Web. I am proficient in HTML, CSS and a little JavaScript. 
+The first was a notification script. When I published a wire story, it could be on five newspapers' websites. All of them had to be sent the URL for their site, in addition to updating an internal Slack channel to track these things. 
 
-I don't personally write as many stories as I used to (more editing), but you can read [a complete archive](blog/index.html) of my work or check out [the highlights](highlights.html).
+My script used RSS from our site to then scrape URLs for stories I would publish. The script would reformat, package them and send them via IFTTT to Slack and even email. I used an Outlook rule to redirect these emails to the right groups. 
+
+The second was a homepage-checking script. As stories were changed on ajc.com, our group's slots were often bumped. This script checked the homepage every 10 minutes and would message me on Slack if any of our stories were bumped. 
+
+You can read [a complete archive](blog/index.html) of my work or check out [the highlights](highlights.html).
