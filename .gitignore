@@ -219,3 +219,4 @@ pip-log.txt
 *.swo
 *.swm
 _site
+.DS_Store
