@@ -23,6 +23,8 @@ a {
 	float: left;
 	clear: left;
 	font-family: 'Lato', $base-font-family;	
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
 }
 #title-of-site > a:visited {
 	color: blue;
