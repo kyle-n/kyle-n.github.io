@@ -254,7 +254,7 @@ The whole cast is excellent. Regina King is correctly getting awards attention f
 
 It's Kiki Layne, however, who sings. She is a supernova. She is so good, it almost hurts the movie by making Stephan James (who is doing excellent acting!) look worse by comparison. 
 
-Kiki Layne effortlessly channels her characters emotions. She is fantastic and charismatic and a born star. My absolute favorite performance from an actress in 2018. 
+Kiki Layne effortlessly channels her character's emotions. She is fantastic and charismatic and a born star. My absolute favorite performance from an actress in 2018. 
 
 ## 7. *Spider-Man: Into the Spider-Verse*
 
