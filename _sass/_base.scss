@@ -2,7 +2,7 @@
 html {
 	font-family: $base-font-family;
 	font-size: $base-font-size;
-	text-color: $text-color;
+	color: $text-color;
 	max-width: 90%;
 	margin-left: auto;
 	margin-right: auto;
@@ -19,12 +19,10 @@ a {
 //Larger site title
 .site-title {
 	font-size: 2.5 * $base-font-size;
-	display:inline-block;
-	float: left;
+	display: block;
 	clear: left;
 	font-family: 'Lato', $base-font-family;	
-  border-bottom: 1px solid black;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 #title-of-site > a:visited {
 	color: blue;
