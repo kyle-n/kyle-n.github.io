@@ -41,7 +41,7 @@ Well-reviewed [Angular 2+ textbook](https://www.ng-book.com/2/), used it to make
 
 #### Work scripts
 
-I wrote a Python script to scrape the title and links of stories my newspaper group made. It sent these to email and Slack groups.
+I wrote a [Python script](https://www.kylenazario.com/scripts/notifier.py) to scrape the title and links of stories my newspaper group made. It sent these to email and Slack groups.
 
 ### Skills
 
