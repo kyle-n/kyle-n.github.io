@@ -9,7 +9,7 @@ I'm Kyle Nazario. I'm a full-stack web developer with a passion for learning.
 
 ### Experience
 
-#### Bachelor's degree with a minor in computer science (Auburn University, 2011 - 2015)
+<h4 id="minor-class-list">Bachelor's degree with a minor in computer science (Auburn University, 2011 - 2015)</h4>
 
 * [Software Modeling and Design](http://bulletin.auburn.edu/search/?P=COMP%203700)
 * [Introduction to Algorithms](http://bulletin.auburn.edu/search/?P=COMP%203270)
@@ -24,7 +24,7 @@ Well-reviewed [Angular 2+ textbook](https://www.ng-book.com/2/), used it to make
 
 <h4 id="rithm-list">Rithm School</h4>
 
-[Online courses](https://www.rithmschool.com/courses) that spend five months on the full stack with a focus on JavaScript. 
+[Online courses](https://www.rithmschool.com/courses) that spend five months on the full stack with a focus on JavaScript. I completed:
 
 * [Data Structures + Algorithms](https://www.rithmschool.com/courses/javascript-computer-science-fundamentals)
 * [Advanced JavaScript II](https://www.rithmschool.com/courses/advanced-javascript-part-2)
