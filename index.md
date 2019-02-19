@@ -5,7 +5,7 @@ permalink: index.html
 image: me.png
 ---
 
-I'm Kyle Nazario. I'm a full-stack web developer with a passion for learning and an aptitude for picking up new tools quickly.
+I'm Kyle Nazario. I'm a full-stack web developer with a passion for learning.
 
 ### Experience
 
@@ -45,7 +45,24 @@ I wrote a Python script to scrape the title and links of stories my newspaper gr
 
 ### Skills
 
-Angular 6-7, TypeScript, ES6 JavaScript, HTML5, CSS, jQuery, Node, Express.js, MongoDB, Mongoose, NPM, RESTful APIs, Bootstrap 4, Jekyll, Angular Material, Flexbox
+<ul class="multiple-col">
+<li>Angular 7</li>
+<li>TypeScript</li>
+<li>JavaScript ES6</li>
+<li>HTML5</li>
+<li>CSS</li>
+<li>jQuery</li>
+<li>Node</li>
+<li>Express.js</li>
+<li>MongoDB</li>
+<li>Mongoose</li>
+<li>NPM</li>
+<li>RESTful APIs</li>
+<li>Bootstrap 4</li>
+<li>Jekyll</li>
+<li>Angular Material</li>
+<li>Flexbox</li>
+</ul>
 
 ### Background
 

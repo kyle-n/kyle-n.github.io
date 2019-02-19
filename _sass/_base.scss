@@ -173,8 +173,7 @@ blockquote {
   border-radius: 0.25rem;
   display: flex;
   padding: 2rem;
-  margin: 2rem;
-  max-width: 90%;
+  margin: 2rem 0;
   flex-wrap: wrap;
   flex-basis: 150px;
 }
@@ -183,6 +182,10 @@ blockquote {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.multiple-col {
+	columns: 2;
 }
 
 //Display footnote animation
@@ -207,6 +210,9 @@ blockquote {
 		clear: none;
 	}
   .portfolio-item {
-    flex-wrap: nowrap;
-  }
+		flex-wrap: nowrap;
+	}
+	.multiple-col {
+		columns: 3;
+	}
 }
