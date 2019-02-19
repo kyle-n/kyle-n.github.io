@@ -6,7 +6,7 @@ html {
 	max-width: 90%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #ecf0f1;
+	//background-color: #ecf0f1;
 }
 
 //Remove link underlines and boldface them
@@ -21,15 +21,15 @@ a {
 	font-size: 2.5 * $base-font-size;
 	display: block;
 	clear: left;
-	font-family: 'Lato', $base-font-family;	
   margin-bottom: 2rem;
 }
 #title-of-site > a:visited {
 	color: blue;
 }
 
-h1, h2, h3 {
-	font-family: 'Lato', $base-font-family;	
+h1, h2, h3, h4, .site-title {
+	//font-family: 'Lato', $base-font-family;	
+	font-family: 'Montserrat', $base-font-family;
 }
 
 h2 {
@@ -177,6 +177,12 @@ blockquote {
   max-width: 90%;
   flex-wrap: wrap;
   flex-basis: 150px;
+}
+
+.portfolio-image {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 //Display footnote animation

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Meet Kyle Nazario
+title: Full-stack development
 permalink: index.html
 image: me.png
 ---
@@ -9,7 +9,7 @@ I'm Kyle Nazario. I'm a full-stack web developer with a passion for learning and
 
 ### Experience
 
-#### Bachelor's degree with a minor in computer science
+#### Bachelor's degree with a minor in computer science (Auburn University, 2011 - 2015)
 
 * [Software Modeling and Design](http://bulletin.auburn.edu/search/?P=COMP%203700)
 * [Introduction to Algorithms](http://bulletin.auburn.edu/search/?P=COMP%203270)
@@ -18,13 +18,13 @@ I'm Kyle Nazario. I'm a full-stack web developer with a passion for learning and
 * [Fundamentals of Computing II](http://bulletin.auburn.edu/search/?P=COMP%202210)
 * [Fundamentals of Computing I](http://bulletin.auburn.edu/search/?P=COMP%201210)
 
-#### [ng-book](https://www.ng-book.com/2/)
+#### ng-book
 
-Well-reviewed Angular 6 textbook, used it to make my [portfolio projects](#portfolio-header).
+Well-reviewed [Angular 2+ textbook](https://www.ng-book.com/2/), used it to make my [portfolio projects](#portfolio-header).
 
-#### [Rithm School courses](https://www.rithmschool.com/courses)
+#### Rithm School
 
-Five-month deep-dive on the entire stack with a focus on JavaScript. 
+[Online courses](https://www.rithmschool.com/courses) that spend five months on the full stack with a focus on JavaScript. 
 
 * [Data Structures + Algorithms](https://www.rithmschool.com/courses/javascript-computer-science-fundamentals)
 * [Advanced JavaScript II](https://www.rithmschool.com/courses/advanced-javascript-part-2)
@@ -55,10 +55,12 @@ After spending a few years [working in news](./about-me.html), I decided to purs
 
 ### My promise
 
-I am a self-taught web developer who loves solving problems. I spent two hours learning to code every day of the last year because I love it.
+I am a self-taught web developer who loves solving problems. I spent two hours learning web technologies every day of the last year because I love it.
 
-I will work hard and learn from anyone I can to become a better full-stack web developer. I hope to hear from you!
+I will work hard and learn from anyone I can to become a better full-stack web developer. I hope to [hear from you](#ftr)!
 
 <h3 id="portfolio-header">Portfolio</h3>
+
+I built these projects to showcase my development abilities. All are Angular 6+ applications served by Node servers. The first two implement the full MEAN stack. 
 
 {% include portfolio-items.html %}
