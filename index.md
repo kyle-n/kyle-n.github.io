@@ -78,8 +78,8 @@ I will work hard and learn from anyone I can to become a better full-stack web d
 
 <h3 id="portfolio-header">Portfolio</h3>
 
-Though I have not had the opportunity to work in the tech industry, I have pursued many opportunities to teach myself coding.
+Though I have not had the opportunity to work in the tech industry, I built these projects to showcase my development abilities.
 
-I built these projects to showcase my development abilities. All are Angular 6+ applications served by Node servers. The first two implement the full MEAN stack. 
+All are Angular 6+ applications served by Node servers. The first two implement the full MEAN stack. 
 
 {% include portfolio-items.html %}
