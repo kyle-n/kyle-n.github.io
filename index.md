@@ -22,7 +22,7 @@ I'm Kyle Nazario. I'm a full-stack web developer with a passion for learning.
 
 Well-reviewed [Angular 2+ textbook](https://www.ng-book.com/2/), used it to make my [portfolio projects](#portfolio-header).
 
-#### Rithm School
+<h4 id="rithm-list">Rithm School</h4>
 
 [Online courses](https://www.rithmschool.com/courses) that spend five months on the full stack with a focus on JavaScript. 
 
@@ -77,6 +77,8 @@ I am a self-taught web developer who loves solving problems. I spent two hours l
 I will work hard and learn from anyone I can to become a better full-stack web developer. I hope to [hear from you](#ftr)!
 
 <h3 id="portfolio-header">Portfolio</h3>
+
+Though I have not had the opportunity to work in the tech industry, I have pursued many opportunities to teach myself coding.
 
 I built these projects to showcase my development abilities. All are Angular 6+ applications served by Node servers. The first two implement the full MEAN stack. 
 

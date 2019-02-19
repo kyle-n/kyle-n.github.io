@@ -5,7 +5,7 @@
     </a>
     <p>Dragon Collector is a website for collecting and generating pixel art dragons.</p>
     <p><strong>Interesting problem</strong>: I had to figure out how to generate random shades of a specific color. </p>
-    <p>Building my <a href="https://github.com/kyle-n/dragon-collector/blob/master/db-code/dragonlogic/colorGenerator.js" target="_blank">color generation algorithm</a> was a fascinating look into RGB and hex codes. I loved solving a problem that probably no one else has had to solve.</p>
+    <p>My <a href="https://github.com/kyle-n/dragon-collector/blob/master/db-code/dragonlogic/colorGenerator.js" target="_blank">color generation algorithm</a> uses charts of color shades to establish bounds for RGB values, then generates random numbers within those values.</p>
     <p><strong>Tools</strong>: Angular 7, MongoDB, Mongoose, Express.js, Node, Angular Material, Passport.js, JWTs, bcrypt, RxJS</p>
     <p>> <a href="https://github.com/kyle-n/dragon-collector" target="_blank">Source code</a></p>
   </div>
@@ -21,7 +21,8 @@
     </a>
     <p>Backlogged is a simple and clean <a href="https://letterboxd.com" target="_blank">Letterboxd</a> for video games. Powered by the <a href="https://www.giantbomb.com/api/" target="_blank">Giant Bomb API</a>, it lets users track games they've played with lists and ratings.</p>
     <p><strong>Interesting problem</strong>: I created an <a href="https://github.com/kyle-n/backlogged/blob/master/backlogged-code/apiRoutes.js" target="_blank">API route</a> that would convert a list of game titles to an image for sharing on social media (<a href="/blog/assets/playedgames.png" target="_blank">example</a>).</p>
-    <p>I enjoyed figuring out how to lay out a block of text when you don't know how many items there are or how long those items will be. It was a great challenge to create the rules so that text block wouldn't just work, but look appealing (e.g. roughly equal height and width).</p>
+    <p>To create a column, my algorithm finds the longest title and uses that plus some padding for the column's width.</p>
+    <p>It also uses a system akin to CSS breakpoints to calculate how many rows there should be to have an appealing height-width ratio. It then lays out the titles across rows, concatenating the game titles into the total string as it goes.</p>
     <p><strong>Tools</strong>: Angular 6, MongoDB, Mongoose, Express.js, Node, Passport.js, request-promise, JWTs</p>
     <p>> <a href="https://github.com/kyle-n/backlogged" target="_blank">Source code</a></p>
   </div>
@@ -37,7 +38,7 @@
     </a>
     <p>What Should I Play Next is a client-side Angular app for finding new games to play based on their ratings. It uses the Giant Bomb API as well.</p>
     <p><strong>Interesting problem</strong>: I had to understand the minute details of the API in order to get the data I wanted (review scores sorted by platform), which was not supported.</p>
-    <p>It was a great learning experience to figure out how to take the data I could get and make it into the data I couldn't get (repeated requests to get reviews while filtering by platform).</p>
+    <p>To solve the problem, I did repeated requests against the API to get reviews then filtered those by platform.</p>
     <p><strong>Tools</strong>: Angular 6, Express.js, Node</p>
     <p>> <a href="https://github.com/kyle-n/playnext" target="_blank">Source code</a></p>
   </div>
