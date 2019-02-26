@@ -38,6 +38,8 @@ Well-reviewed [Angular 2+ textbook](https://www.ng-book.com/2/), used it to make
 * [HTML + CSS Basics](https://www.rithmschool.com/courses/html-css-fundamentals)
 * [Terminal and Unix](https://www.rithmschool.com/courses/terminal)
 * [Git and GitHub](https://www.rithmschool.com/courses/git)
+* [Intermediate SQL](https://www.rithmschool.com/courses/flask-fundamentals/sql-joins)
+* [Introduction to SQL](https://www.rithmschool.com/courses/flask-fundamentals/introduction-to-sql)
 
 #### Work scripts
 
