@@ -24,7 +24,7 @@ Well-reviewed [Angular 2+ textbook](https://www.ng-book.com/2/), used it to make
 
 <h4 id="rithm-list">Rithm School</h4>
 
-[Online courses](https://www.rithmschool.com/courses) that spend five months on the full stack with a focus on JavaScript. I completed:
+[Online courses](https://www.rithmschool.com/courses) that cover the full stack with a focus on JavaScript. I completed:
 
 * [Data Structures + Algorithms](https://www.rithmschool.com/courses/javascript-computer-science-fundamentals)
 * [Advanced JavaScript II](https://www.rithmschool.com/courses/advanced-javascript-part-2)
@@ -34,6 +34,7 @@ Well-reviewed [Angular 2+ textbook](https://www.ng-book.com/2/), used it to make
 * [Intermediate JavaScript II](https://www.rithmschool.com/courses/intermediate-javascript-part-2)
 * [Intermediate JavaScript I](https://www.rithmschool.com/courses/intermediate-javascript)
 * [Introduction to JavaScript](https://www.rithmschool.com/courses/javascript)
+* [React.js Fundamentals](https://www.rithmschool.com/courses/react-fundamentals)
 * [Intermediate CSS](https://www.rithmschool.com/courses/intermediate-css-bootstrap)
 * [HTML + CSS Basics](https://www.rithmschool.com/courses/html-css-fundamentals)
 * [Terminal and Unix](https://www.rithmschool.com/courses/terminal)
