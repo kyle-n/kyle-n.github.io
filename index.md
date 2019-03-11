@@ -52,13 +52,14 @@ I wrote a [Python script](https://www.kylenazario.com/scripts/notifier.py) to sc
 <li>Angular 7</li>
 <li>TypeScript</li>
 <li>JavaScript ES6</li>
+<li>Mocha, chai and sinon</li>
 <li>HTML5</li>
 <li>CSS</li>
 <li>jQuery</li>
 <li>Node</li>
 <li>Express.js</li>
 <li>MongoDB</li>
-<li>Mongoose</li>
+<li>PostgreSQL</li>
 <li>NPM</li>
 <li>RESTful APIs</li>
 <li>Bootstrap 4</li>
