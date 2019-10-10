@@ -1,13 +1,27 @@
 ---
 layout: page
-title: Full-stack development
+title: Frontend development
 permalink: index.html
 image: me.png
 ---
 
-I'm Kyle Nazario. I'm a full-stack web developer with a passion for learning.
+I'm Kyle Nazario. I'm a frontend web developer with a passion for learning.
 
 ### Experience
+
+#### Frontend developer, ServiceCore (October 2019 - Present)
+
+* Designed, built and tested new features for ServiceCore.com, a consumer-facing enterprise application
+* Promoted from junior to full developer within 6 months for "brilliant" work and professional development
+* Began and led a project to implement frontend unit, integration and end-to-end tests
+* Worked in an Agile scrum system
+* Helped design and test backend systems to sync customer data with QuickBooks Desktop and Online
+
+#### Junior frontend Angular developer, ServiceCore (April 2019 - October 2019)
+
+* Contributed code updates, bug fixes and new features to ServiceCore, a hybrid Angular 7 and Angular.js application
+* Learned the intricacies of a massive legacy codebase
+* Began and led a project to convert old Angular.js code to Angular 7
 
 <h4 id="minor-class-list">Bachelor's degree with a minor in computer science (Auburn University, 2011 - 2015)</h4>
 
@@ -18,72 +32,40 @@ I'm Kyle Nazario. I'm a full-stack web developer with a passion for learning.
 * [Fundamentals of Computing II](http://bulletin.auburn.edu/search/?P=COMP%202210)
 * [Fundamentals of Computing I](http://bulletin.auburn.edu/search/?P=COMP%201210)
 
-#### ng-book
+#### Personal projects
 
-Well-reviewed [Angular 2+ textbook](https://www.ng-book.com/2/), used it to make my [portfolio projects](#portfolio-header).
-
-<h4 id="rithm-list">Rithm School</h4>
-
-[Online courses](https://www.rithmschool.com/courses) that cover the full stack with a focus on JavaScript. I completed:
-
-* [Data Structures + Algorithms](https://www.rithmschool.com/courses/javascript-computer-science-fundamentals)
-* [Advanced JavaScript II](https://www.rithmschool.com/courses/advanced-javascript-part-2)
-* [Advanced JavaScript I](https://www.rithmschool.com/courses/advanced-javascript)
-* [Intermediate Node and Express.js](https://www.rithmschool.com/courses/intermediate-node-express)
-* [Node and Express.js Fundamentals](https://www.rithmschool.com/courses/node-express-fundamentals)
-* [Intermediate JavaScript II](https://www.rithmschool.com/courses/intermediate-javascript-part-2)
-* [Intermediate JavaScript I](https://www.rithmschool.com/courses/intermediate-javascript)
-* [Introduction to JavaScript](https://www.rithmschool.com/courses/javascript)
-* [React.js Fundamentals](https://www.rithmschool.com/courses/react-fundamentals)
-* [Intermediate CSS](https://www.rithmschool.com/courses/intermediate-css-bootstrap)
-* [HTML + CSS Basics](https://www.rithmschool.com/courses/html-css-fundamentals)
-* [Terminal and Unix](https://www.rithmschool.com/courses/terminal)
-* [Git and GitHub](https://www.rithmschool.com/courses/git)
-* [Intermediate SQL](https://www.rithmschool.com/courses/flask-fundamentals/sql-joins)
-* [Introduction to SQL](https://www.rithmschool.com/courses/flask-fundamentals/introduction-to-sql)
-
-#### Work scripts
-
-I wrote a [Python script](https://www.kylenazario.com/scripts/notifier.py) to scrape the title and links of stories my newspaper group made. It sent these to email and Slack groups.
+I love learning new development skills. Right now my side projects use technologies that include **React** and **Elm**. My interests include functional programming and JavaScript frameworks. 
 
 ### Skills
 
 <ul class="multiple-col">
 <li>Angular 7</li>
+<li>React</li>
 <li>TypeScript</li>
-<li>JavaScript ES6</li>
-<li>Mocha, chai and sinon</li>
+<li>JavaScript ES7</li>
+<li>Jasmine and Protractor</li>
 <li>HTML5</li>
 <li>CSS</li>
-<li>jQuery</li>
 <li>Node</li>
+<li>RxJS</li>
 <li>Express.js</li>
-<li>MongoDB</li>
-<li>PostgreSQL</li>
-<li>NPM</li>
+<li>SQL/NoSQL</li>
 <li>RESTful APIs</li>
-<li>Bootstrap 4</li>
-<li>Jekyll</li>
+<li>jQuery</li>
 <li>Angular Material</li>
 <li>Flexbox</li>
 </ul>
 
 ### Background
 
-I've always loved technology. As a teenager, I was fascinated by the process of jailbreaking my iPod Touch and replacing the Springboard background with a live HTML file that cycled background images.
+After spending a few years [working in news](./about-me.html), I got the chance to pursue my real passion, developing great software. 
 
-After spending a few years [working in news](./about-me.html), I decided to pursue my real passion. I spent the next year doing online classes to brush up on things I'd learned in my computer science minor. 
+I love everything about software engineering: planning a project, developing new features, shipping a tough project, even fixing bugs. 
+
+I love learning new tools as well. I keep busy outside work teaching myself new concepts and new areas of programming I don't understand. 
 
 ### My promise
 
-I am a self-taught web developer who loves solving problems. I spent two hours learning web technologies every day of the last year because I love it.
+I am a smart, dedicated, fast developer who is passionate about making great software.
 
 I will work hard and learn from anyone I can to become a better full-stack web developer. I hope to [hear from you](#ftr)!
-
-<h3 id="portfolio-header">Portfolio</h3>
-
-Though I have not had the opportunity to work in the tech industry, I built these projects to showcase my development abilities.
-
-All are Angular 6+ applications served by Node servers. The first two implement the full MEAN stack. 
-
-{% include portfolio-items.html %}
