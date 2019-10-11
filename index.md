@@ -18,7 +18,7 @@ I'm Kyle Nazario. I'm a frontend web developer with a passion for learning.
 * Worked in an Agile scrum system
 * Helped design and test backend systems to sync customer data with QuickBooks Desktop and Online
 
-#### Junior frontend Angular developer, ServiceCore (April 2019 - October 2019)
+#### Junior frontend developer, ServiceCore (April 2019 - October 2019)
 
 * Built a robust, powerful offline mode for the ServiceCore Ionic mobile app involving a SQLite database and advanced RxJS features
 * Contributed bug fixes and new features while learning the massive ServiceCore codebase
@@ -40,7 +40,7 @@ I love learning new development skills. Right now my side projects use technolog
 ### Skills
 
 <ul class="multiple-col">
-<li>Angular 7</li>
+<li>Angular</li>
 <li>React</li>
 <li>TypeScript</li>
 <li>JavaScript ES7</li>
@@ -50,9 +50,9 @@ I love learning new development skills. Right now my side projects use technolog
 <li>Node</li>
 <li>RxJS</li>
 <li>Express.js</li>
-<li>SQL/NoSQL</li>
+<li>SQL and NoSQL</li>
 <li>RESTful APIs</li>
-<li>Ionic/Cordova</li>
+<li>Ionic and Cordova</li>
 <li>Angular Material</li>
 <li>Flexbox</li>
 </ul>
@@ -61,12 +61,12 @@ I love learning new development skills. Right now my side projects use technolog
 
 After spending a few years [working in news](./about-me.html), I got the chance to pursue my real passion, developing great software. 
 
-I love everything about software engineering: planning a project, developing new features, shipping a tough project, even fixing bugs. 
+I love everything about software engineering: planning a project, developing new features, shipping a tough user story, even fixing bugs. 
 
-I love learning new tools as well. I keep busy outside work teaching myself new concepts and new areas of programming I don't understand. 
+I love learning new tools as well. I keep busy outside work teaching myself new concepts and new areas of programming. 
 
 ### My promise
 
 I am a smart, dedicated, fast developer who is passionate about making great software.
 
-I will work hard and learn from anyone I can to become a better full-stack web developer. I hope to [hear from you](#ftr)!
+I will work hard and learn from anyone I can to improve. I hope to hear from you!
