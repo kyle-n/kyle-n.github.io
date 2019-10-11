@@ -11,16 +11,17 @@ I'm Kyle Nazario. I'm a frontend web developer with a passion for learning.
 
 #### Frontend developer, ServiceCore (October 2019 - Present)
 
-* Designed, built and tested new features for ServiceCore.com, a consumer-facing enterprise application
+* Designed, built and tested new features for ServiceCore.com, a consumer-facing Angular 7/Angular.js enterprise application
 * Promoted from junior to full developer within 6 months for "brilliant" work and professional development
+* Helped design user interfaces and build components for the frontend
 * Began and led a project to implement frontend unit, integration and end-to-end tests
 * Worked in an Agile scrum system
 * Helped design and test backend systems to sync customer data with QuickBooks Desktop and Online
 
 #### Junior frontend Angular developer, ServiceCore (April 2019 - October 2019)
 
-* Contributed code updates, bug fixes and new features to ServiceCore, a hybrid Angular 7 and Angular.js application
-* Learned the intricacies of a massive legacy codebase
+* Built a robust, powerful offline mode for the ServiceCore Ionic mobile app involving a SQLite database and advanced RxJS features
+* Contributed bug fixes and new features while learning the massive ServiceCore codebase
 * Began and led a project to convert old Angular.js code to Angular 7
 
 <h4 id="minor-class-list">Bachelor's degree with a minor in computer science (Auburn University, 2011 - 2015)</h4>
@@ -51,7 +52,7 @@ I love learning new development skills. Right now my side projects use technolog
 <li>Express.js</li>
 <li>SQL/NoSQL</li>
 <li>RESTful APIs</li>
-<li>jQuery</li>
+<li>Ionic/Cordova</li>
 <li>Angular Material</li>
 <li>Flexbox</li>
 </ul>
