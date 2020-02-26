@@ -23,12 +23,14 @@ I'm Kyle Nazario. I'm a frontend web developer with a passion for learning.
 * Contributed bug fixes and new features while learning the massive ServiceCore codebase
 * Began and led a project to convert old Angular.js code to Angular 7
 
-#### 4K 4 U ([App Store](https://apps.apple.com/us/app/4k-4-u/id1499701546?ign-mpt=uo%3D2) / [Play Store](https://play.google.com/store/apps/details?id=com.kylenazario.fourK4U) / [Source](https://github.com/kyle-n/4k-redeem-guide)) (December 2019 - February 2019)
+#### 4K 4 U (December 2019 - February 2019)
 
 * Simple app to help cinephiles figure out where to redeem codes for digital copies of 4K DVDs
 * Users scan 4K DVD barcodes or search to find movies in the app
 * Special tablet-only, more dense UI layout - not just a stretched-out phone app
 * Built with React Native, Redux, TypeScript and NativeBase
+
+Available on the [App Store](https://apps.apple.com/us/app/4k-4-u/id1499701546?ign-mpt=uo%3D2) and [Play Store](https://play.google.com/store/apps/details?id=com.kylenazario.fourK4U). Read the [source code](https://github.com/kyle-n/4k-redeem-guide).
 
 <h4 id="minor-class-list">Bachelor's degree with a minor in computer science (Auburn University, 2011 - 2015)</h4>
 
