@@ -12,11 +12,10 @@ I'm Kyle Nazario. I'm a frontend web developer with a passion for learning.
 #### Frontend developer, ServiceCore (October 2019 - Present)
 
 * Designed, built and tested new features for ServiceCore.com, a consumer-facing Angular 7/Angular.js enterprise application
-* Promoted from junior to full developer within 6 months for "brilliant" work and professional development
-* Helped design user interfaces and build components for the frontend
-* Began and led a project to implement frontend unit, integration and end-to-end tests
-* Worked in an Agile scrum system
-* Helped design and test backend systems to sync customer data with QuickBooks Desktop and Online
+* Promoted from junior to full developer within 6 months for "brilliant" work
+* Helped design user interfaces and build components to display and update complex data
+* Began and led a project to implement frontend tests
+* Worked in a Scrum and Kanban system
 
 #### Junior frontend developer, ServiceCore (April 2019 - October 2019)
 
@@ -24,14 +23,17 @@ I'm Kyle Nazario. I'm a frontend web developer with a passion for learning.
 * Contributed bug fixes and new features while learning the massive ServiceCore codebase
 * Began and led a project to convert old Angular.js code to Angular 7
 
+#### 4K 4 U ([App Store](https://apps.apple.com/us/app/4k-4-u/id1499701546?ign-mpt=uo%3D2) / [Play Store](https://play.google.com/store/apps/details?id=com.kylenazario.fourK4U) / [Source](https://github.com/kyle-n/4k-redeem-guide)) (December 2019 - February 2019)
+
+* Simple app to help cinephiles figure out where to redeem codes for digital copies of 4K DVDs
+* Users scan 4K DVD barcodes or search to find movies in the app
+* Special tablet-only, more dense UI layout - not just a stretched-out phone app
+* Built with React Native, Redux, TypeScript and NativeBase
+
 <h4 id="minor-class-list">Bachelor's degree with a minor in computer science (Auburn University, 2011 - 2015)</h4>
 
-* [Software Modeling and Design](http://bulletin.auburn.edu/search/?P=COMP%203700)
-* [Introduction to Algorithms](http://bulletin.auburn.edu/search/?P=COMP%203270)
-* [Discrete Structures](http://bulletin.auburn.edu/search/?P=COMP%203240)
-* [Software Construction](http://bulletin.auburn.edu/search/?P=COMP%202710)
-* [Fundamentals of Computing II](http://bulletin.auburn.edu/search/?P=COMP%202210)
-* [Fundamentals of Computing I](http://bulletin.auburn.edu/search/?P=COMP%201210)
+* Classes included software modeling and algorithm design
+* Strong, cross-language education focusing on fundamentals of good software engineering
 
 #### Personal projects
 
@@ -49,7 +51,7 @@ I love learning new development skills. Right now my side projects use technolog
 <li>CSS</li>
 <li>Node</li>
 <li>RxJS</li>
-<li>Express.js</li>
+<li>React Native</li>
 <li>SQL and NoSQL</li>
 <li>RESTful APIs</li>
 <li>Ionic and Cordova</li>
