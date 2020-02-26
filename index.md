@@ -32,6 +32,12 @@ I'm Kyle Nazario. I'm a frontend web developer with a passion for learning.
 
 Available on the [App Store](https://apps.apple.com/us/app/4k-4-u/id1499701546?ign-mpt=uo%3D2) and [Play Store](https://play.google.com/store/apps/details?id=com.kylenazario.fourK4U). Read the [source code](https://github.com/kyle-n/4k-redeem-guide).
 
+<div style="display: flex; justify-content: space-between;">
+<img style="flex-grow: 1" src="/blog/assets/4k4u-ss-1.png" alt="4K 4 U showing preset searches">
+<img style="flex-grow: 1" src="/blog/assets/4k4u-ss-2.png" alt="4K 4 U showing search results for the 2019 movie Us">
+<img style="flex-grow: 1" src="/blog/assets/4k4u-ss-3.png" alt="4K 4 U showing detailed information for Arrival (2016)">
+</div>
+
 <h4 id="minor-class-list">Bachelor's degree with a minor in computer science (Auburn University, 2011 - 2015)</h4>
 
 * Classes included software modeling and algorithm design
