@@ -3,7 +3,7 @@ layout: post
 title: Every new movie I saw in 2018, ranked
 tags: movies, bestof, media, blog
 image: spider-verse.jpg
-cap: Gotta go Into the Spider-Verse.
+caption: Gotta go Into the Spider-Verse.
 ---
 
 I love movies and I love making lists, especially end-of-year rankings.
