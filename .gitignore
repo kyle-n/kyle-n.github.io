@@ -220,3 +220,4 @@ pip-log.txt
 *.swm
 _site
 .DS_Store
+.idea
