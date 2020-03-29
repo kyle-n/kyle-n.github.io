@@ -20,6 +20,12 @@ a {
   background: #424242;
   box-shadow:  20px 20px 60px #383838, -20px -20px 60px #4c4c4c;
   padding: 0 1em;
+
+  &:active {
+    border-radius: 50px;
+    background: #424242;
+    box-shadow: inset 20px 20px 60px #383838, inset -20px -20px 60px #4c4c4c;
+  }
 }
 
 .link-with-icon {
