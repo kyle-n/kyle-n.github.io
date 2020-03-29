@@ -1,7 +1,7 @@
 {% capture size %}{{ include.cap | size }}{% endcapture %}
 <div class="{{ include.classes }}">
-  <img src="/static/img/{{ include.src }}" alt="{{include.caption}}">
-  {% if size > 0 %}
+  <img src="{{ site.baseUrl }}/static/img/{{ include.src }}" alt="{{include.caption}}">
+  {% if size != "0" %}
     <p class="img-caption">{{ include.caption }}</p>
   {% endif %}
 </div>
