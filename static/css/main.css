@@ -2,6 +2,7 @@
 html {
   --main-bg-color: #424242;
   --main-color: #F6F5F7;
+  --header-font-size: 3rem;
 }
 
 .space-apart {
@@ -26,13 +27,24 @@ a {
   color: var(--main-color);
   text-decoration: none;
 }
-a:hover {
-  text-decoration: underline;
-}
 
 .link-container {
   border-radius: 50px;
   background: #424242;
   box-shadow:  20px 20px 60px #383838, -20px -20px 60px #4c4c4c;
   padding: 0 1em;
+}
+
+.link-with-icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1, #header-icon {
+  font-size: var(--header-font-size);
+}
+
+#header-icon {
+  margin-right: 1rem;
 }
