@@ -1,5 +1,8 @@
----
----
+/* Setting vars */
+html {
+  --main-bg-color: #424242;
+  --main-color: #F6F5F7;
+}
 
 .space-apart {
   display: flex;
@@ -14,6 +17,22 @@
 }
 
 body {
-  background-color: #424242;
-  color: #F6F5F7;
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
+  font-family: 'Muli', sans-serif;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.link-container {
+  border-radius: 50px;
+  background: #424242;
+  box-shadow:  20px 20px 60px #383838, -20px -20px 60px #4c4c4c;
+  padding: 0 1em;
 }
