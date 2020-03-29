@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<article>
+
+  <section class="post-header">
+    <h2>
+      {{ page.title }}
+    </h2>
+    <p class="post-metadata">
+      {{ page.date | date: "%b %-d, %Y" }} | {{ page.tags }}
+    </p>
+  </section>
+
+  <section id="post-content">
+    {{ content }}
+  </section>
+
+</article>
