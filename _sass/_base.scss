@@ -1,0 +1,11 @@
+body {
+  color: $main-color;
+  background-color: $main-bg-color;
+  font-family: 'Muli', sans-serif;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+/* a:hover toggles outline -> solid icon, see siteUI.js */

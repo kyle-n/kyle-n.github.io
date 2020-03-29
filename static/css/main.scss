@@ -1,9 +1,12 @@
-/* Setting vars */
-html {
-  --main-bg-color: #424242;
-  --main-color: #F6F5F7;
-  --header-font-size: 3rem;
-}
+---
+---
+@charset "utf-8";
+
+$main-bg-color: #424242;
+$main-color: #F6F5F7;
+$header-font-size: 3rem;
+
+@import "base";
 
 .space-apart {
   display: flex;
@@ -15,17 +18,6 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-body {
-  color: var(--main-color);
-  background-color: var(--main-bg-color);
-  font-family: 'Muli', sans-serif;
-}
-
-a {
-  color: var(--main-color);
-  text-decoration: none;
 }
 
 .link-container {
