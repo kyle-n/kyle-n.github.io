@@ -14,7 +14,7 @@ layout: default
   </section>
 
   <section id="post-main-image">
-    <img src="/static/img/{{page.image}}" alt="{{page.caption}}"
+    {% include image.html src=page.image caption=page.caption classes="main-image" %}
   </section>
 
   <section id="post-content">
