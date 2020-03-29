@@ -6,37 +6,11 @@ $main-bg-color: #424242;
 $main-color: #F6F5F7;
 $header-font-size: 3rem;
 
-@import "base";
-
-.space-apart {
-  display: flex;
-  justify-content: space-between;
-}
+@import "base", "header";
 
 .horizontal-list {
   list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-}
-
-.link-container {
-  border-radius: 50px;
-  background: #424242;
-  box-shadow:  20px 20px 60px #383838, -20px -20px 60px #4c4c4c;
-  padding: 0 1em;
-}
-
-.link-with-icon {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-h1, #header-icon {
-  font-size: var(--header-font-size);
-}
-
-#header-icon {
-  margin-right: 1rem;
 }
