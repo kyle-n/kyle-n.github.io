@@ -6,11 +6,4 @@ $main-bg-color: #424242;
 $main-color: #F6F5F7;
 $header-font-size: 3rem;
 
-@import "base", "header";
-
-.horizontal-list {
-  list-style-type: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+@import "base", "header", "misc";
