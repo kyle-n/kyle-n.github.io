@@ -1,0 +1,11 @@
+.space-apart {
+  display: flex;
+  justify-content: space-between;
+}
+
+.horizontal-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
