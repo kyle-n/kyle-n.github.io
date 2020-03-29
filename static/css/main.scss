@@ -2,8 +2,16 @@
 ---
 @charset "utf-8";
 
+// color and layout
 $main-bg-color: #424242;
 $main-color: #F6F5F7;
-$header-font-size: 3rem;
+$header-font-size: 4rem !important;
+$standard-padding: 1rem;
+
+// screens
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
 
 @import "base", "header", "misc";

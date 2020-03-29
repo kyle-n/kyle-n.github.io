@@ -2,6 +2,8 @@ body {
   color: $main-color;
   background-color: $main-bg-color;
   font-family: 'Muli', sans-serif;
+  max-width: 100%;
+  padding: 1rem;
 }
 
 a {
@@ -32,4 +34,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+img {
+  max-width: 100%;
 }

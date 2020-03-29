@@ -1,8 +1,24 @@
-h1 {
-  font-size: $header-font-size;
-}
-
-#header-icon {
-  margin-right: 1rem;
-  font-size: $header-font-size;
+header {
+  padding-top: $standard-padding;
+  flex-wrap: wrap;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div#header-container {
+      width: max-content;
+      a.link-with-icon {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        i {
+          margin-right: 1rem;
+          font-size: $header-font-size;
+        }
+        h1 {
+          font-size: $header-font-size;
+        }
+      }
+    }
+  }
 }
