@@ -1,6 +1,17 @@
 footer {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  margin-top: 3 * $standard-padding;
+
+  #footer-link-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    div {
+      margin: 0.5rem;
+    }
+  }
 }
