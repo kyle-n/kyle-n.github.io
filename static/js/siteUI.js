@@ -1,4 +1,3 @@
-//On DOM load (Before images and all other scripts
 document.addEventListener('DOMContentLoaded', function () {
 
   // -------------------------------------------------------------------------
