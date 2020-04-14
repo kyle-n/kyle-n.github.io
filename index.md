@@ -1,8 +1,7 @@
 ---
-layout: page
-title: Frontend development
+layout: default
+title: Frontend development by Kyle Nazario
 permalink: index.html
-image: me.png
 ---
 
 [Test]({% post_url 2019-01-09-favorite-movies-2018 %})
