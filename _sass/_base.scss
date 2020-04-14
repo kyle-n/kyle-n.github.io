@@ -17,16 +17,19 @@ a {
   justify-content: space-between;
 }
 
+$first-button-color: #2e2e2e;
+$second-button-color: #424242;
+
 .link-container {
   border-radius: 50px;
   background: #424242;
-  box-shadow:  5px 5px 15px #383838, -5px -5px 15px #4c4c4c;
+  box-shadow:  5px 5px 15px $first-button-color, -5px -5px 15px $second-button-color;
   padding: 0 1em;
 
   &:active {
     border-radius: 50px;
     background: #424242;
-    box-shadow: inset 5px 5px 15px #383838, inset -5px -5px 15px #4c4c4c;
+    box-shadow: inset 5px 5px 15px $first-button-color, inset -5px -5px 15px $second-button-color;
   }
 }
 
