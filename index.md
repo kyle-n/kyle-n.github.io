@@ -9,24 +9,19 @@ I'm Kyle Nazario. I'm a frontend web developer with a passion for learning.
 
 ### Experience
 
-#### Frontend developer, ServiceCore (October 2019 - Present)
+#### Software Engineer I, ServiceCore (April 2019 - Present)
 
-* Designed, built and tested new features for ServiceCore.com, a consumer-facing Angular 7/Angular.js enterprise application
+* Designed, built and tested new features for a consumer-facing Angular 7/Angular.js enterprise application
 * Promoted from junior to full developer within 6 months for "brilliant" work
-* Helped design user interfaces and build components to display and update complex data
-* Began and led a project to implement frontend tests
-* Worked in a Scrum and Kanban system
-
-#### Junior frontend developer, ServiceCore (April 2019 - October 2019)
-
-* Built a robust, powerful offline mode for the ServiceCore Ionic mobile app involving a SQLite database and advanced RxJS features
-* Contributed bug fixes and new features while learning the massive ServiceCore codebase
-* Began and led a project to convert old Angular.js code to Angular 7
+* Worked in a Scrum and Kanban system with heavy collaboration between product, backend, frontend and QA
+* Helped design user interfaces and components to display and update complex data
+* Wrote a robust, powerful offline mode for the ServiceCore Ionic app that stored customer data in a SQLite database before syncing it back to the server
+* Began and led a project to implement frontend unit tests
+* Began and led a project to convert old Angular.js components to Angular 7
 
 #### 4K 4 U (December 2019 - February 2019)
 
 * Simple app to help cinephiles figure out where to redeem codes for digital copies of 4K DVDs
-* Users scan 4K DVD barcodes or search to find movies in the app
 * Special tablet-only, more dense UI layout - not just a stretched-out phone app
 * Built with React Native, Redux, TypeScript and NativeBase
 
@@ -37,6 +32,13 @@ Available on the [App Store](https://apps.apple.com/us/app/4k-4-u/id1499701546?i
 <img style="flex-grow: 1" src="/blog/assets/4k4u-ss-2.png" alt="4K 4 U showing search results for the 2019 movie Us">
 <img style="flex-grow: 1" src="/blog/assets/4k4u-ss-3.png" alt="4K 4 U showing detailed information for Arrival (2016)">
 </div>
+
+#### Open source contributions
+
+* Published [unofficial-amazon-search](https://github.com/kyle-n/unofficial-amazon-search), an open-source API for
+Amazon search results
+* Wrote TypeScript declarations for [@types/gsheets](https://www.npmjs.com/package/@types/gsheets) and 
+[fallback-local-storage](https://github.com/r37r0m0d3l/fallback-local-storage)
 
 <h4 id="minor-class-list">Bachelor's degree with a minor in computer science (Auburn University, 2011 - 2015)</h4>
 
@@ -50,20 +52,20 @@ I love learning new development skills. Right now my side projects use technolog
 ### Skills
 
 <ul class="multiple-col">
-<li>Angular</li>
+<li>Angular 9</li>
 <li>React</li>
 <li>TypeScript</li>
-<li>JavaScript ES7</li>
+<li>JavaScript ES9</li>
 <li>Jasmine and Protractor</li>
 <li>HTML5</li>
-<li>CSS</li>
+<li>CSS4</li>
 <li>Node</li>
 <li>RxJS</li>
 <li>React Native</li>
-<li>SQL and NoSQL</li>
+<li>bash/zsh</li>
 <li>RESTful APIs</li>
-<li>Ionic and Cordova</li>
-<li>Angular Material</li>
+<li>Ionic 4 and Cordova</li>
+<li>Functional programming</li>
 <li>Flexbox</li>
 </ul>
 
