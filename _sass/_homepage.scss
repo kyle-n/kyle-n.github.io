@@ -3,6 +3,10 @@
   section {
     margin-bottom: $spacing * 3;
 
+    header {
+      width: 100%;
+    }
+
     &.card {
       max-width: $page-width * 0.75;
       margin-left: auto;
