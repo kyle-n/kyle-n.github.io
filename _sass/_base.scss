@@ -8,6 +8,14 @@ body {
 
 a {
   color: $color;
+
+  &.link-with-icon {
+    text-decoration: none;
+  }
+
+  span {
+    text-decoration: underline;
+  }
 }
 
 .space-apart {
