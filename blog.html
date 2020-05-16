@@ -1,0 +1,16 @@
+---
+layout: default
+title: Posts by Kyle Nazario
+---
+
+{% include header.html %}
+
+<section id="posts-list">
+  {% for post in site.posts %}
+    <div class="card light-bg post-teaser">
+      <h2>{{ post.tile }}</h2>
+      <img src="/static/img/{{ post.image }}" alt="{{ post.caption }}">
+      <p>{{ post.excerpt }}</p>
+    </div>
+  {% endfor %}
+</section>

@@ -31,6 +31,7 @@ array: []
 markdown: kramdown
 safe : true
 related_posts_max : 3
+excerpt_separator: <!--break-->
 
 # Social settings
 locale : en_us
