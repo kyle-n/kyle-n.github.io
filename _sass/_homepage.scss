@@ -58,4 +58,15 @@
     }
   }
 
+  #fourK-section {
+    @media screen and (min-width: $md) {
+      ul {
+        columns: 2;
+        column-gap: $spacing * 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+      }
+    }
+  }
+
 }
