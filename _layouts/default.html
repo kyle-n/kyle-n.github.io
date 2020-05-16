@@ -1,19 +1,11 @@
 <!DOCTYPE html>
-<html>
-  {% include head.html %}
-  
-  <body>
-    {% include header.html %}
-    <div id="pageContent" class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
+<html lang="en">
+{% include head.html %}
+<body>
+  <main id="page-content">
+    {{ content }}
     {% include footer.html %}
-    {% include google_analytics.html %}
-  </body>
-  <!-- Import jQuery -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <!-- For footnotes and dark mode -->
-  <script src="/scripts/siteUI.js"></script>
+  </main>
+</body>
+<script src="/static/js/siteUI.js"></script>
 </html>

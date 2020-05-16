@@ -1,39 +1,26 @@
 ---
 layout: default
 ---
-<div class="post">
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <!-- Properly format date for display -->
-    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} | {{ page.org }}</p>
-  </header>
+{% include header.html %}
 
-  <article class="post-content">
-    <!-- Pull header image -->
-    {% if page.image != null %}
-      {% include image src=page.image style="topImg" cap=page.cap %}
-    {% endif %}
+<article>
 
-    <!-- Article content -->
-    <div class="article-text">
-      {{ content }}
-    </div>
+  <section class="post-header">
+    <h2>
+      {{ page.title }}
+    </h2>
+    <p class="post-metadata">
+      {{ page.date | date: "%b %-d, %Y" }}
+    </p>
+  </section>
 
-    <!-- Add source link if available -->
-    {% if page.original != null %}
-      <p>***</p>
-      <p><a href="{{ page.original }}" target="_blank">Original Story</a>
-      <br>
-      <br>
-    {% endif %}
+  <section id="post-main-image">
+    {% include image.html src=page.image caption=page.caption classes="main-image" %}
+  </section>
 
-    <!--Tag post with similar content-->
-    <h4>Related posts</h4>
-    <ul>
-      {% include related_posts %}
-    </ul>
+  <section id="post-content">
+    {{ content }}
+  </section>
 
-  </article>
-
-</div>
+</article>

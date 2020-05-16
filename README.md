@@ -2,14 +2,8 @@
 
 ## About this site
 
-I originally built this website to store previous articles I'd written. You can still read those, but its primary purpose now is to keep a portfolio of my web development projects. 
+I originally built this back when I was a journalist to show off my portfolio. Now it's a lovely advertisement for my abilities as a frontend developer. Please do get in touch if you're interested. 
 
-## Tech
+## Technology
 
-This site uses Jekyll 3 to generate static HTML files. There is a little client-side JS to toggle night mode, because I love dark modes. 
-
-The heaviest lifting is done by my [related posts algoritm](https://github.com/kyle-n/kyle-n.github.io/blob/master/_includes/related_posts.html), which adds related stories based off my tags. This was very hard to do with a templating language, as you might imagine.
-
-## Contact
-
-If you are a potential employer in the Denver area, I would love to hear from you! Email me at kylebnazario at gmail dot com. 
+I know other technologies are the new hotness in static site generation, but I like Jekyll for its simple templating, fast builds and great GitHub Pages integration. Much obliged for the free hosting!

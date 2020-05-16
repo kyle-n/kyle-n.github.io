@@ -13,11 +13,10 @@ twitter_username: kbn_au
 github_username:  kyle-n
 facebook_username: knazario
 linkedin_username: kylenazario
-email: kylebnazario@gmail.com
-gems: [jekyll-paginate]
-paginate: 5
-paginate_path: "/blog/page:num/"
 permalink: /:year/:month/:day/:title.html
+sass:
+  style: expanded
+  sass_dir: _sass
 
 # Add Google Analytics tracking
 analytics :
@@ -32,11 +31,12 @@ array: []
 markdown: kramdown
 safe : true
 related_posts_max : 3
+excerpt_separator: <!--break-->
 
 # Social settings
 locale : en_us
 timezone : America/New_York
-icon : "{{ site.url }}/blog/assets/me.png"
+icon : "{{ site.url }}/static/img/me.png"
 author : 
    facebook : knazario
    twitter : kbn_au

@@ -6,6 +6,8 @@ keywords: privacy policy, android, iphone, camera permissions
 categories: 4k4u, app, dev
 ---
 
+The privacy policy is pretty simple.
+
 <!--break-->
 
 ### Camera
@@ -14,12 +16,12 @@ categories: 4k4u, app, dev
 
 * Use the barcode to look up the movie title
 
-It DOES NOT:
+It does NOT:
 
 * Take or save photos
 * Access any of your previously saved photos
 
-**4K 4 U** WILL NEVER:
+**4K 4 U** will NEVER:
 
 * Collect your personal information in any way. I don't want it!
 

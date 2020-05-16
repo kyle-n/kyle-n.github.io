@@ -1,0 +1,88 @@
+#homepage {
+
+  section {
+    margin-bottom: $spacing * 3;
+
+    header {
+      width: 100%;
+    }
+
+    &.card {
+      max-width: $page-width * 0.75;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  #intro-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    max-width: $page-width;
+
+    div {
+      flex-grow: 1;
+    }
+
+
+  }
+
+  #sc-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    #sc-logo-container {
+      width: 50%;
+    }
+    #sc-title-and-text {
+      width: 100%;
+    }
+
+    @media screen and (min-width: $md) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      #sc-logo-container {
+        order: 1;
+        width: 25%;
+      }
+      #sc-title-and-text {
+        width: 75%;
+        padding-right: $spacing * 2;
+      }
+    }
+  }
+
+  #fourK-section {
+    @media screen and (min-width: $md) {
+      ul {
+        columns: 2;
+        column-gap: $spacing * 2;
+        -webkit-columns: 2;
+        -moz-columns: 2;
+      }
+    }
+
+    #fourK-title {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: $spacing;
+
+      h2 {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  #hello-section {
+    font-size: $subhead-font-size;
+    margin-bottom: 0;
+    h2 {
+      margin-bottom: 0;
+    }
+  }
+
+}

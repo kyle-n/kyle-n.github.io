@@ -1,0 +1,44 @@
+#h1-link {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: $sm) {
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  #blog-link-container {
+    text-align: right;
+    margin-top: $spacing;
+    a {
+      justify-content: flex-end;
+      color: $card-color;
+
+      i {
+        font-size: $header-font-size;
+        text-decoration: none;
+        margin-right: 0;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-size: $subhead-font-size;
+    margin: 0;
+  }
+  p.subhead {
+    margin: 0;
+  }
+}

@@ -1,44 +1,139 @@
 ---
 layout: default
-title: Archive
+title: Kyle Nazario
 ---
 
-<!-- Loop through paginated posts -->
-{% for post in paginator.posts %}
-  <div class="teaserWrapper" style="max-width: 100%";>
-    <div class="teaser" style="{% if post.image != null %}max-width: 75%;{% endif %}display: inline-block;margin-bottom: 5%;margin-top: 5%;margin-right: 5%">
-      <h3>
-        <a href="{{ post.url }}">hey {{ post.title }}</a>
-      </h3>
-      <p class="author">
-        <span class="date">{{ post.date | date: "%B %d, %Y" }}{% if post.org %} | {{ post.org }}{% endif %}</span>
-        <div class="content">
-          {{ post.content | split:'<!--break-->' | first }}
-        </div>
-      </p>
+<div id="homepage">
+  <section id="intro-section">
+    {% include header.html %}
+  </section>
+
+  <section id="about-section">
+    <div>
+      <h2>About me</h2>
     </div>
-    {% if post.image != null %}
-      <div class="teaserImage" style="max-width: 20%;display: block;float: right;margin-bottom: 5%;margin-top: 5%;max-height: 100%;">
-        <img src-"assets/{{ post.image }}">		
+    <div class="sm-item-container">
+      <div>
+        <ul>
+          <li>Angular 9 and React</li>
+          <li>TypeScript</li>
+          <li>JavaScript ES2020</li>
+          <li>React Native and Ionic</li>
+          <li>Frontend testing</li>
+        </ul>
       </div>
-    {% endif %}
-    <hr style="max-width: 100%;clear: both;">
-  </div>
-{% endfor %}
+      <div>
+        <p>Bachelor's degree, Auburn University (2015)</p>
+        <p>Minor in computer science</p>
+      </div>
+      <div>
+        <p>
+          Team leads have said they are amazed how fast I pick up new concepts and tools. Bosses have called my work
+          "brilliant."
+        </p>
+      </div>
+    </div>
+  </section>
 
-<br>
+  <section id="sc-section" class="card light-bg">
+    <div id="sc-logo-container">
+      <img src="/static/img/sc-logo.png" alt="ServiceCore logo" id="sc-logo">
+    </div>
+    <div id="sc-title-and-text">
+      <div>
+        <h2>Software engineer, ServiceCore</h2>
+      </div>
+      <div>
+        <ul>
+          <li>
+            Designed, built and tested new features for a consumer-facing Angular 7/Angular.js enterprise application
+          </li>
+          <li>
+            Promoted from junior to full developer within 6 months for exceptional work
+          </li>
+          <li>
+            Worked in a Scrum and Kanban system with heavy collaboration between product, backend, frontend and QA
+          </li>
+          <li>
+            Helped design user interfaces and components to display and update complex data
+          </li>
+          <li>
+            Wrote a robust, powerful offline mode for the ServiceCore Ionic app that stored customer data in a SQLite
+            database before syncing it back to the server
+          </li>
+          <li>
+            Began and led a project to implement frontend unit tests
+          </li>
+          <li>
+            Began and led a project to convert old Angular.js components to Angular 7
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-<!-- Pagination links -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-  {% else %}
-    <span class="previous">Previous</span>
-  {% endif %}
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-  {% else %}
-    <span class="next ">Next</span>
-  {% endif %}
+  <section id="fourK-section">
+    <div id="fourK-title">
+      <!-- Janky id to maintain compatibility with links on old site -->
+      <h2 id="4k-4-u-december-2019---february-2019">4K 4 U</h2>
+      <aside>
+        <a href="https://apps.apple.com/us/app/4k-4-u/id1499701546?ign-mpt=uo%3D2" target="_blank">App Store</a>
+         /
+        <a href="https://play.google.com/store/apps/details?id=com.kylenazario.fourK4U" target="_blank">Play Store</a>
+         /
+        <a href="https://github.com/kyle-n/4k-redeem-guide" target="_blank"> Source code</a>
+      </aside>
+    </div>
+    <div class="space-apart">
+      <img style="flex-grow: 1" src="/static/img/4k4u-ss-1.png" alt="4K 4 U showing preset searches">
+      <img style="flex-grow: 1" src="/static/img/4k4u-ss-2.png" alt="4K 4 U showing search results for the 2019 movie Us">
+      <img style="flex-grow: 1" src="/static/img/4k4u-ss-3.png" alt="4K 4 U showing detailed information for Arrival (2016)">
+    </div>
+    <div>
+      <ul id="4k-info">
+        <li>
+          Simple app to help cinephiles figure out where to redeem codes for digital copies of 4K DVDs
+        </li>
+        <li>
+          Special tablet-only, more dense UI layout - not just a stretched-out phone app
+        </li>
+        <li>
+          Built with React Native, Redux, TypeScript and NativeBase
+        </li>
+        <li>
+          Developed simultaneously for iOS and Android
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="oss-section" class="card light-bg">
+    <div>
+      <h2>Open source</h2>
+    </div>
+    <div>
+      <ul>
+        <li>
+          Published
+          <a href="https://github.com/kyle-n/unofficial-amazon-search" target="_blank">unofficial-amazon-search</a>,
+          an open-source API for Amazon search results
+        </li>
+        <li>
+          Wrote TypeScript declarations for
+          <a href="https://www.npmjs.com/package/@types/gsheets" target="_blank">@types/gsheets</a>
+          and <a href="https://github.com/r37r0m0d3l/fallback-local-storage" target="_blank">fallback-local-storage</a>
+        </li>
+        <li>
+          Comfortable getting up to speed with an existing codebase, as well as working with existing maintainers.
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="hello-section">
+    <div>
+      <h2>Say hello</h2>
+    </div>
+  </section>
+
 </div>
