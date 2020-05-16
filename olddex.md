@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Frontend development by Kyle Nazario
-permalink: index.html
 ---
 
 [Test]({% post_url 2019-01-09-favorite-movies-2018 %})
