@@ -2,6 +2,12 @@
 
   section {
     margin-bottom: $spacing * 3;
+
+    &.card {
+      max-width: $page-width * 0.75;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   #intro-section {
@@ -9,6 +15,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-end;
+    max-width: $page-width;
 
     div {
       flex-grow: 1;

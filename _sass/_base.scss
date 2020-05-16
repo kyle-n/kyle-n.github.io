@@ -45,7 +45,7 @@ img {
 .card {
   background-color: $card-bg-color;
   border-radius: $border-radius;
-  box-shadow:  5px 5px 15px black;
+  box-shadow:  5px 5px 15px rgb(176, 176, 176);
   padding: $spacing (2 * $spacing);
 
   &.light-bg {
@@ -60,5 +60,26 @@ img {
       color: $card-color;
     }
   }
+}
 
+.sm-card-container {
+  display: flex;
+  justify-content: space-between;
+
+  .card {
+    margin-right: $spacing;
+    width: 30%;
+    padding: ($spacing / 2) $spacing;
+    box-shadow:  5px 5px 15px rgb(176, 176, 176);
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+main {
+  max-width: $page-width;
+  margin: 0 auto;
+  //border: 1px solid purple;
 }
