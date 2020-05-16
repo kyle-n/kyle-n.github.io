@@ -42,6 +42,11 @@ img {
   max-width: 100%;
 }
 
+ul {
+  padding: 0 0 0 1em;
+  list-style-type: circle;
+}
+
 .card {
   background-color: $card-bg-color;
   border-radius: $border-radius;
@@ -64,16 +69,27 @@ img {
 
 .sm-item-container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 
   div {
-    margin-right: $spacing;
-    width: 30%;
-    border-right: 1px solid $light-card-shadow;
+    width: 100%;
+    border-bottom: 1px solid $light-card-shadow;
 
     &:last-child {
-      margin-right: 0;
-      border-right: none;
+      border-bottom: none;
+    }
+
+    @media screen and (min-width: $sm) {
+      margin-right: $spacing;
+      margin-bottom: 0;
+      border-right: 1px solid $light-card-shadow;
+      border-bottom: 0;
+      width: 30%;
+      &:last-child {
+        margin-right: 0;
+        border-right: none;
+      }
     }
   }
 }
