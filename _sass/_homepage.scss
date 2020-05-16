@@ -32,12 +32,27 @@
   }
 
   #sc-section {
-    #sc-info-and-img {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 
-      div:first-child {
+    #sc-logo-container {
+      width: 50%;
+    }
+    #sc-title-and-text {
+      width: 100%;
+    }
+
+    @media screen and (min-width: $md) {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      #sc-logo-container {
+        order: 1;
+        width: 25%;
+      }
+      #sc-title-and-text {
+        width: 75%;
         padding-right: $spacing * 2;
       }
     }
