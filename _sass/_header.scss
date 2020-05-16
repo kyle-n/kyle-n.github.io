@@ -6,8 +6,29 @@
 }
 
 header {
+  display: flex;
+  flex-direction: column;
+
+  #blog-link-container {
+    text-align: right;
+    margin-top: $spacing;
+    a {
+      justify-content: flex-end;
+      color: $card-color;
+
+      i {
+        font-size: 1.5rem;
+        text-decoration: none;
+        margin-right: 0;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
   h1 {
-    font-size: $header-font-size;
+    font-size: $subhead-font-size;
     margin: 0;
   }
   p.subhead {
