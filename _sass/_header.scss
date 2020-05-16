@@ -9,6 +9,11 @@ header {
   display: flex;
   flex-direction: column;
 
+  @media screen and (min-width: $sm) {
+    flex-direction: row;
+    align-items: flex-end;
+  }
+
   #blog-link-container {
     text-align: right;
     margin-top: $spacing;
@@ -17,7 +22,7 @@ header {
       color: $card-color;
 
       i {
-        font-size: 1.5rem;
+        font-size: $header-font-size;
         text-decoration: none;
         margin-right: 0;
 
@@ -27,6 +32,7 @@ header {
       }
     }
   }
+
   h1 {
     font-size: $subhead-font-size;
     margin: 0;
