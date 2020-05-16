@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
   const goOutlined = link => {
     const linkIcon = link.querySelector('i.material-icons');
     if (linkIcon) {
-      linkIcon.classList.add('material-icons-outlined');
       linkIcon.classList.remove('material-icons');
+      linkIcon.classList.add('material-icons-outlined');
     }
   };
 
