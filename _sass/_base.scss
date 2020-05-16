@@ -1,48 +1,64 @@
 body {
-  color: $main-color;
-  background-color: $main-bg-color;
+  color: $color;
+  background-color: $bg-color;
   font-family: 'Muli', sans-serif;
   max-width: 100%;
   padding: 1rem;
 }
 
 a {
-  color: $main-color;
+  color: $color;
   text-decoration: none;
 }
-/* a:hover toggles outline -> solid icon, see siteUI.js */
 
 .space-apart {
   display: flex;
   justify-content: space-between;
 }
 
-$first-button-color: #2e2e2e;
-$second-button-color: #424242;
-
 .link-container {
-  border-radius: 50px;
+  border-radius: $border-radius;
   background: #424242;
-  box-shadow:  5px 5px 15px $first-button-color, -5px -5px 15px $second-button-color;
-  padding: 0 1em;
+  box-shadow:  5px 5px 15px green;
+  padding: 1rem 2rem;
+}
 
-  &:active {
-    border-radius: 50px;
-    background: #424242;
-    box-shadow: inset 5px 5px 15px $first-button-color, inset -5px -5px 15px $second-button-color;
-  }
+.subhead {
+  color: $secondary-color;
+  font-size: $subhead-font-size;
 }
 
 .link-with-icon {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 
   i {
-    margin-right: 0.5rem;
+    margin-right: $spacing / 2;
   }
 }
 
 img {
   max-width: 100%;
+}
+
+.card {
+  background-color: $card-bg-color;
+  border-radius: $border-radius;
+  box-shadow:  5px 5px 15px black;
+  padding: $spacing (2 * $spacing);
+
+  &.light-bg {
+    background-color: $light-card-bg-color;
+  }
+  &:not(.light-bg) {
+    color: $card-color;
+    .subhead {
+      color: $secondary-card-color;
+    }
+    a {
+      color: $card-color;
+    }
+  }
+
 }

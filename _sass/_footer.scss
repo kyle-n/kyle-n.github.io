@@ -1,7 +1,7 @@
 footer {
   display: flex;
   justify-content: center;
-  margin-top: 3 * $standard-padding;
+  margin-top: 3 * $spacing;
 
   #footer-link-container {
     display: flex;
@@ -11,7 +11,7 @@ footer {
     flex-wrap: wrap;
 
     div {
-      margin: 0.5rem;
+      margin: $spacing;
     }
   }
 }
