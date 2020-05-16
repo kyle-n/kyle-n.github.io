@@ -16,7 +16,9 @@ layout: default
   </section>
 
   <section id="post-main-image">
-    {% include image.html src=page.image caption=page.caption classes="main-image" %}
+    {% if page.image != null %}
+      {% include image.html src=page.image caption=page.caption classes="main-image" %}
+    {% endif %}
   </section>
 
   <section id="post-content">
