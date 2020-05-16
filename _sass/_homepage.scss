@@ -68,11 +68,16 @@
     #fourK-title {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
       align-items: flex-end;
       margin-bottom: $spacing;
 
       h2 {
         margin-bottom: 0;
+      }
+
+      @media screen and (min-width: $sm) {
+        flex-wrap: nowrap;
       }
     }
   }
