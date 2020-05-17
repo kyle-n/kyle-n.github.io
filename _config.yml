@@ -1,8 +1,8 @@
 # Site settings
-title: Webdev by Kyle Nazario
+title: Kyle Nazario
 email: kylebnazario@gmail.com
 description: >
-  Web development war stories and advice, by Kyle Nazario.
+  Web development posts and occasional movie roundups.
 baseurl: ""
 url: "http://www.kylenazario.com"
 twitter_username: kbn_au
@@ -35,9 +35,6 @@ excerpt_separator: <!--break-->
 locale : en_us
 timezone : America/New_York
 icon : "{{ site.url }}/static/img/me.png"
-author : 
-   facebook : knazario
-   twitter : kbn_au
-   picture: /static/img/me.png
+author : 'Kyle Nazario'
 fb_admins : '1184042582'
 fb_appid : 794821543963847
