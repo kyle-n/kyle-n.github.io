@@ -1,9 +1,25 @@
+@font-face {
+  font-family: 'Liberation Sans';
+  src: url('/static/fonts/liberationsans_regular_macroman/LiberationSans-Regular-webfont.eot');
+  src: url('/static/fonts/liberationsans_regular_macroman/LiberationSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('/static/fonts/liberationsans_regular_macroman/LiberationSans-Regular-webfont.woff') format('woff'),
+       url('/static/fonts/liberationsans_regular_macroman/LiberationSans-Regular-webfont.ttf')  format('truetype'),
+       url('/static/fonts/liberationsans_regular_macroman/LiberationSans-Regular-webfont.svg#svgFontName') format('svg');
+}
+
 body {
   color: $color;
   background-color: $bg-color;
-  font-family: 'Muli', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Liberation Sans', Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.005em;
+  line-height: 35px;
   max-width: 100%;
   padding: 1rem;
+}
+
+p {
+  padding-bottom: 5px;
 }
 
 a {
