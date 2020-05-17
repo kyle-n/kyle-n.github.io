@@ -9,9 +9,6 @@ twitter_username: kbn_au
 github_username:  kyle-n
 facebook_username: knazario
 linkedin_username: kylenazario
-author:
-  twitter: kbn_au
-  picture: /static/img/me.png
 permalink: /:year/:month/:day/:title.html
 sass:
   style: expanded
@@ -41,6 +38,6 @@ icon : "{{ site.url }}/static/img/me.png"
 author : 
    facebook : knazario
    twitter : kbn_au
-   google_plus : KyleNazario
+   picture: /static/img/me.png
 fb_admins : '1184042582'
 fb_appid : 794821543963847
