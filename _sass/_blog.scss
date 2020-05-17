@@ -1,5 +1,9 @@
+#rss-teaser {
+  margin: ($spacing * 3) 0 ($spacing * 2) 0;
+  text-align: center;
+}
+
 #posts-list {
-  margin: ($spacing * 3) 0;
   .post-teaser {
     margin-bottom: $spacing * 2;
   }

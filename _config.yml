@@ -2,21 +2,22 @@
 title: Webdev by Kyle Nazario
 email: kylebnazario@gmail.com
 description: >
-  I built this website to store my previous work, some of which
-  has vanished since publication. News stories tend not to have an
-  incredibly long lifespan, especially on the internet. This site
-  is a way to preserve my old stories and show my talents to 
-  employers. Please feel free to contact me with any questions.
+  Web development war stories and advice, by Kyle Nazario.
 baseurl: ""
 url: "http://www.kylenazario.com"
 twitter_username: kbn_au
 github_username:  kyle-n
 facebook_username: knazario
 linkedin_username: kylenazario
+author:
+  twitter: kbn_au
+  picture: /static/img/me.png
 permalink: /:year/:month/:day/:title.html
 sass:
   style: expanded
   sass_dir: _sass
+plugins:
+  - jekyll-feed
 
 # Add Google Analytics tracking
 analytics :
