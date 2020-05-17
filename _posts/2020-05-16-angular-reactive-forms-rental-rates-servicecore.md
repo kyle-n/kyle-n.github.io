@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Using Angular reactive forms to build a huge feature for ServiceCore,
+title: Using Angular reactive forms to build a huge feature for ServiceCore
 image: rental-rates.png
 caption: And it looks so simple from the outside to use.
 ---
