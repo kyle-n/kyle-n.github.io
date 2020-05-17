@@ -19,7 +19,7 @@ ServiceCore users are waste disposal businesses. A construction company might re
 
 ServiceCore users can create preset line item charges, like maintenance fees. Those line item charges can attach to a rental. 
 
-The problem that necessitated rental rates was these line item charges were static. There was no way to give a customer a special deal for a specific rental, like $0 service charges, there wasn't a way to do that. You'd have to override the line item on every single invoice created for that rental. Not fun for big companies doing thousands of invoices a day!
+The problem that necessitated rental rates was these line item charges were static. There was no way to give a customer a special deal for a specific rental, like $0 service charges. You'd have to override the line item on every single invoice created for that rental. Not fun for big companies doing thousands of invoices a day!
 
 With rental rates, users would be able to select any service charge and set special per-rental pricing, notes and taxable status.
 
