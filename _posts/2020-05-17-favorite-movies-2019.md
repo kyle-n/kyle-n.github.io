@@ -10,13 +10,18 @@ Is this post extremely late? Yes. Am I publishing just to get these on the recor
 This year I've included ratings according to my personal rating system!
 
 Half star (can't type this symbol) = Hate. Movie crimes only
+
 ★ = Did not like
+
 ★★ = Fine, whatever
+
 ★★★ = Good!
+
 ★★★★ = Really good, would recommend wholeheartedly
+
 ★★★★★ = I love this movie 
 
-Last year's five-★ movies were *Spider-Man: Into the Spider-Verse*, *Annihilation*, *Hereditary* and *Black Panther*. 
+[Last year]({% post_url 2019-01-09-favorite-movies-2018 %})'s five-★ movies were *Spider-Man: Into the Spider-Verse*, *Annihilation*, *Hereditary* and *Black Panther*. 
 
 ## The worst of the worst
 
@@ -26,7 +31,7 @@ Last year's five-★ movies were *Spider-Man: Into the Spider-Verse*, *Annihilat
 
  Sophie Turner might have been able to do *Game of Thrones*, but she is not a movie star. One of the worst performances of the year. 
 
-I cannot wait for Marvel to do the X-Men right and put this godforsaken take on the franchise into the ground. Good riddance.
+I cannot wait for Marvel to do the X-Men right and put this godforsaken take on the franchise into the ground.
 
 ### 53: *What Men Want* | ★
 
@@ -40,11 +45,11 @@ Boring.
 
 There's a bit on the excellent movie podcast Blank Check with Griffin and David where Griffin Newman compares the Terminator rights to a mummy's curse. They pass from studio to studio, convincing them that even though *every single* Terminator after *T2* was bad, *this one* will be good.
 
+I'll just say this: the curse is unbroken. 
+
 ### 50: *Dumbo* | ★
 
 Outside of *Ed Wood*, none of Tim Burton's movies speak to me. This one didn't either. 
-
-I'll just say this: the curse is unbroken. 
 
 ### 49: *Godzilla: King of Monsters* | ★
 
@@ -132,9 +137,9 @@ I remain unconvinced Tom Holland is a good Spider-Man (stop throwing things!). *
 
 ### 30: *Doctor Sleep* (director's cut) | ★★
 
- In the original *Shining*, the twin girls in the hallway and withered crone in the bathtub were not literal characters as much as manifestations of the madness of the Overlook Hotel. They were glimpses of greater powers that toyed with the main characters.
+ In the original *Shining*, the twin girls in the hallway and withered crone in the bathtub were not literal characters as much as manifestations of the madness of the Overlook Hotel. 
 
-In *Doctor Sleep*, Flanagan turns them into... I don't know, scary Pokemon? It sucks to see the  crone do the bathtub scare again and realize, oh, she's a specific spirit with a specific schtick. Maybe shrinking down the sights of the original was the point, but it was still for the worse.
+In *Doctor Sleep*, Flanagan turns them into... I don't know, scary Pokemon? It sucks to see the  crone do the bathtub scare again and realize, oh, she's a specific spirit with a specific schtick. It shrinks the unknowable terror of the original into a collection of kooky monsters.
 
 ### 29: *Shazam!* | ★★
 
@@ -142,13 +147,15 @@ A fine movie. Liked the ending.
 
 ### 28: *Ford v. Ferrari* | ★★
 
-God, does this movie make cars and racing look sexy. Good film about the struggle of the artist to create something beautiful within flawed, capitalistic systems. 
+God, does this movie make cars and racing look sexy. Good story about the struggle of the artist to create something beautiful within flawed, capitalistic systems. 
 
 ## The good ones
 
 ### 27: *Fast Color* | ★★★
 
 No one saw this movie, which sucks, because *Fast Color* is a breath of fresh air. It follows three generations of black women with powers that may save their dying world. The depictions of their gifts are *gorgeous*.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tySUZIiXObc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### 26: *Gemini Man* | ★★★
 
@@ -198,11 +205,11 @@ Tarantino's turned in another love letter to classic Hollywood and the films of 
 
 ### 17: *Little Women* | ★★★
 
-Greta Gerwig is an extremely smart person. She has made a *Little Women* adaptation that is simultaneously totally faithful and a critical reevaluation of its source material. Intercutting Jo's publisher telling her people want heroines to get married with Jo confessing her love to Professor Handsome McGenericGuy is ingenious. 
+Greta Gerwig is an extremely smart person. She has made a *Little Women* adaptation that is simultaneously totally faithful and a critical reevaluation of its source material. Intercutting Jo's publisher telling her audiences want heroines to marry with Jo confessing her love to Professor Handsome McGenericGuy is ingenious. 
 
 ### 16: *Happy Death Day 2U* | ★★★
 
-I feel like I am the only person who remembers that 2019 gave us a sequel to *Happy Death Day*, the first being a wonderful and funny horror movie that should be mandatory viewing for the country. *2U* amps up the action by taking things in a more emotionally grounded direction. Even if it apparently worked for no one else, I liked it.
+I feel like I am the only person who remembers that 2019 gave us a sequel to *Happy Death Day*. The first is a wonderful and funny horror movie that should be mandatory viewing for the country. *2U* amps up the action by taking things in a more emotionally grounded direction. Even if it apparently worked for no one else, I liked it.
 
 ### 15: *Ready Or Not* | ★★★
 
@@ -210,21 +217,21 @@ I feel like I am the only person who remembers that 2019 gave us a sequel to *Ha
 
 ### 14: *Portrait of a Lady on Fire* | ★★★
 
-A beautiful, aching, heartfelt love letter. *Portrait* is so good that even though you know their can't end any way other than disaster, you still want to experience every second of it. 
+A beautiful, aching, heartfelt love letter. *Portrait* is so good that even though you know their love can't end any way other than disaster, you still want to experience every second of it. 
 
 ### 13: *The Lighthouse* | ★★★
 
-Director Robert Eggers returns for a second movie after giving us *The Witch*, an excellent period horror flick. *The Lighthouse* is less horror and more... seagulls. It is undeniably the movie Eggers intended to make.
+Director Robert Eggers returns after *The Witch*, an excellent period horror flick. *The Lighthouse* is less horror and more... seagulls. It is undeniably the movie Eggers intended to make.
 
 ### 12: *The Irishman* | ★★★
 
-I don't know why people thought Martin Scorsese's send-off to the gangster movie was too long. It was the story of a life, told well. Three and a half hours and I was never bored *shrug*.
+I don't know why people thought Martin Scorsese's send-off to the gangster movie was too long. It was the story of a life, told well. Three and a half hours and I was never bored.
 
 ## Great effin' movies
 
 ### 11: *Always Be My Maybe* | ★★★★
 
-Putting *Always Be My Maybe* this high is not exactly popular, but I have to stand up for this thing. While the plot's a bit of a mess, Ali Wong and Randall Park give two charming performances in this charming-ass movie. Plus, it features an all-time great Keanu Reeves cameo.
+Putting *Always Be My Maybe* this high is not a conventional decision, but I have to stand up for this thing. While the plot's a bit of a mess, Ali Wong and Randall Park give two charming performances in this charming-ass movie. Plus, it features an all-time great Keanu Reeves cameo.
 
 ### 10: *Avengers: Endgame* | ★★★
 
@@ -254,11 +261,11 @@ Bad action movies use quick cuts and jumping around to hide fake or bad stunts. 
 
 French arthouse director Claire Denis has given us the dingiest sci-fi film since *Alien*. *High Life* loves dust, decay, grime and death. It revels in how things fall apart, and how just a few times they maybe sort of come back together. 
 
-Plus, it features André 3000 giving a great naturalistic performance. Put this man in more movies!
+It also has André 3000 giving a great naturalistic performance. Put this man in more movies!
 
 ### 5: *Knives Out* | ★★★
 
-The best trick director Rian Johnson (*The Last Jedi*) pulls in *Knives Out* is inverting murder-mystery tropes. These kinds of movies—*Clue*, *And Then There Were None*—usually focus on ensemble cast of variously villainous white characters, any of which could have done it, you get it.
+The best trick director Rian Johnson (*The Last Jedi*) pulls in *Knives Out* is inverting murder-mystery tropes. These kinds of movies—*Clue*, *And Then There Were None*—usually focus on ensemble cast of variously villainous white characters, any of which could have done it, yadda yadda.
 
 *Knives Out* shines because it places Marta Cabrera (Ana de Armas), the Latina nurse, at the center. You wouldn't know it from the trailers, but this is her heroic journey. 
 
@@ -268,9 +275,9 @@ It's a full-course acting role for Armas, who delivers everything asked of her. 
 
 ### 4: *A Beautiful Day in the Neighborhood* | ★★★★★
 
-I refrained from watching *A Beautiful Day in the Neighborhood* for a while because a Mr. Rogers biopic sounded maudlin and trite. Little did I realize director Marielle Heller beautifully used this stuffy-sounding idea as a vehicle for an aggressive, raw and emotional story about trauma and toxic masculinity. 
+I refrained from watching *A Beautiful Day in the Neighborhood* for a while because a Mr. Rogers biopic sounded maudlin and trite. Little did I realize director Marielle Heller uses *Neighborhood* as a vehicle for an aggressive, raw and emotional story about trauma and toxic masculinity. 
 
-Heller reframes Mr. Rogers as an advocate for the radical idea of emotional health. She hammers home a point stunning in its simplicity: If you don't process your feelings, they will eat you alive. 
+Heller hammers home a point stunning in its simplicity: If you don't process your feelings, they will eat you alive. 
 
 ### 3: *The Farewell* | ★★★★★
 
@@ -280,15 +287,15 @@ Awkwafina stars as Billi, a Chinese-American woman who goes to China to see her 
 
 Like many great movies, *The Farewell* at once specific and universal. Director Lulu Wang mines her own past to deliver a beautifully human story about the lies we tell each other to be happy. 
 
-That sounds serious, but *The Farewell* is funny. It bursts with lightness, bouncing you from joke to joke. And then it's too late.
+That sounds serious, but *The Farewell* is funny! It bursts with lightness, bouncing you from joke to joke. And then it's too late.
 
 *The Farewell* a wonderful movie, and I am thankful to have seen it.
 
 ### 2: *Parasite* | ★★★★★
 
-Months later, I cannot believe *Parasite* won Best Picture, Director and Original Screenplay. *Parasite* is a cool movie, the kind the Oscars always skip over. 
+Months later, I cannot believe *Parasite* won Best Picture, Director and Original Screenplay. *Parasite* is the kind the Oscars always skip over. 
 
-It's a South Korean thriller that shouldn't be explained, only experienced. Go in blind and enjoy this *wild* ride. Enjoy the scene with the housekeeper - you'll know the one. That is one of the most unnerving, memorable moments I've ever seen in a thriller. 
+It's a South Korean thriller that shouldn't be explained, only experienced. Go in blind and enjoy this *wild* ride. Enjoy the scene with the housekeeper - you'll know the one. That's one of the most unnerving, memorable moments I've ever seen in a thriller. 
 
 It is simply the best movie that came out in 2019. Not my favorite, but the best.
 
@@ -304,11 +311,11 @@ While I did not love *Us* at first, Jordan Peele's masterpiece offers endless de
 
 Everyone in the film, especially Winston Duke, turns in a great performance. Madison Curry's scary face is one of the most disconcerting things I've ever seen.
 
-<img src="/blog/assets/madison-curry.jpg" alt="Madison Curry, but scary">
+<img src="/static/img/madison-curry.jpg" alt="Madison Curry, but scary">
 
 The highlight, of course, is Lupita Nyong'o. Her dual performances as Adelaide and Red are both phenomenal. She embodies Adelaide's fears in a naturalistic turn as a "normal" person... and also gives a big, terrifying performance as Red.
 
-<iframe src="https://giphy.com/embed/52FTALvVqoUldFq3nD" width="480" height="199" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/SbKXI3yxofOOK7theN" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div>
 
 Everything in *Us* is intentional. It's not an accident that the family's white friends are slightly richer than them, or the Native American theme of the hall of mirrors is covered up in present day, or that Adelaide literally has trouble speaking sometimes. 
 
