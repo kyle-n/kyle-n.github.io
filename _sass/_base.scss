@@ -136,3 +136,8 @@ div.highlight {
   overflow: scroll;
   background-color: $light-card-bg-color;
 }
+
+iframe {
+  max-width: 100%;
+  height: auto;
+}
