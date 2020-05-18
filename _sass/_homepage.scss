@@ -65,6 +65,14 @@
       }
     }
 
+    div.space-apart {
+      max-width: 100%;
+      img {
+        height: auto;
+        max-width: 33%;
+      }
+    }
+
     #fourK-title {
       display: flex;
       justify-content: space-between;

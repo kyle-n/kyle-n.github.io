@@ -26,10 +26,14 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   // -------------------------------------------------------------------------
 
+
+  // -------------------------------------------------------------------------
+  // marks all iframes as lazy load
   const iframes = document.querySelectorAll('iframe');
   iframes.forEach(iframe => {
     iframe.setAttribute('loading', 'lazy')
   });
+  // -------------------------------------------------------------------------
 
 });
 
