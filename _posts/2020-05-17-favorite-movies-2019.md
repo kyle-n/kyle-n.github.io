@@ -7,6 +7,8 @@ image: lupita-red.jpg
 
 Is this post extremely late? Yes. Am I publishing just to get these on the record? Also yes. Late publication has its pluses, though - one 2019 movie in my top 10 was an April 2020 addition.
 
+<!--break-->
+
 This year I've included ratings according to my personal rating system!
 
 Half star (can't type this symbol) = Hate. Movie crimes only
