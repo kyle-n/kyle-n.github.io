@@ -1,6 +1,6 @@
 ---
 layout: post
-title: MacOS is drafting behind iOS
+title: Big Sur helps macOS draft behind iOS
 image: big-sur-preview.png
 keywords: macos, macos big sur, ios, catalyst, swiftui
 ---
