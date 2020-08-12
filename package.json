@@ -4,7 +4,7 @@
   "description": "## About this site",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "bundle exec jekyll build && node personal-server.js"
   },
   "repository": {
     "type": "git",
