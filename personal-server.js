@@ -5,7 +5,7 @@ const path = require('path');
 dotenv.config({path: __dirname + '/.env'});
 
 const app = express();
-app.use(express.static('_site'))
+app.use(express.static('_site'));
 
 const port = process.env.PORT || 80;
 app.listen(port, () => {
