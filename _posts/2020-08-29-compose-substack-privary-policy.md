@@ -5,6 +5,8 @@ title: Compose for Substack privacy policy
 
 Compose for Substack uses the bare minimum of your Substack information in order to function. 
 
+<!--break-->
+
 ## Information NOT stored:
 
 **Password**: Compose uses your password, if you have one, only to retrieve the cookie Substack uses to authenticate create/edit post requests. Your password is not and will never be stored. 
