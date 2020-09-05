@@ -19,7 +19,7 @@ Compose for Substack uses the bare minimum of your Substack information in order
 
 Everything on this list is stored **locally** and will never be shared with outside parties.
 
-**Cookie**: Upon login, Substack uses a cookie to authenticate requests to create and edit posts. Compose locally stores this cookie so you can create and edit posts in the app. 
+**Cookie**: Upon login, Substack uses a cookie to authenticate requests to create and edit posts. Compose locally stores this cookie so you can create and edit posts in the app.
 
 **Substack sub-domain**: Some operations, such as creating or scheduling posts, require sending a request to that newsletter's specific sub-domain. Compose stores the sub-domain of your newsletter in order to create, edit and schedule posts. 
 
@@ -31,6 +31,8 @@ Everything on this list is stored **locally** and will never be shared with outs
 Your email will never be shared with an outside party or spammed.
 
 **Substack Author ID**: Compose locally stores your author ID number in order to create new posts. 
+
+**Clipboard contents**: On opening the login page, Compose will check your clipboard for one of the links Substack emails you to use to log in. This is important because Substack allows users to not set a password on their account and to only log in via email. The clipboard is not read anywhere else in the application (as you can verify on iOS and iPadOS 14). 
 
 ## My app's promise
 
