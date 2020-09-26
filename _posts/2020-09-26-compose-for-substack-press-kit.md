@@ -35,6 +35,12 @@ Compose is available right now for iOS and iPadOS 14. The Mac version will launc
 
 [Download screenshots](https://kylenazario.com/static/img/compose-media.zip).
 
+### Links
+
+[@ComposeSubstack](compose-splash.png)
+
+[@kbn_au](https://twitter.com/kbn_au).
+
 ### About the tech
 
 Compose for Substack is almost all SwiftUI. It uses several of the awesome new SwiftUI APIs introduced for iOS 14, including the iPadOS three-column layout. 
