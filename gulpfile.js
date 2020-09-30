@@ -21,20 +21,20 @@ gulp.task('jekyll-build', function (done) {
 /*
  * Rebuild Jekyll & reload browserSync
  */
-gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+gulp.task('jekyll-rebuild', gulp.series('jekyll-build', function () {
 	browserSync.reload();
-});
+}));
 
 /*
  * Build the jekyll site and launch browser-sync
  */
-gulp.task('browser-sync', ['jekyll-build'], function() {
+gulp.task('browser-sync', gulp.series('jekyll-build', function() {
 	browserSync({
 		server: {
 			baseDir: '_site'
 		}
 	});
-});
+}));
 
 /*
 * Compile and minify sass
@@ -85,4 +85,4 @@ gulp.task('watch', function() {
 	gulp.watch(['*html', '_includes/*html', '_layouts/*.html'], ['jekyll-rebuild']);
 });
 
-gulp.task('default', ['js', 'sass', 'fonts', 'browser-sync', 'watch']);
+gulp.task('default', gulp.series('js', 'sass', 'fonts', 'browser-sync', 'watch'));

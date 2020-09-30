@@ -4,7 +4,7 @@
   "description": "This is a simple Jekyll theme for a minimal resume website.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch": "gulp"
   },
   "author": "Mauricio Urraco <mauriurraco@gmail.com>",
   "license": "MIT",
