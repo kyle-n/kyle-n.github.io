@@ -1,40 +1,16 @@
 # Site settings
 title: Kyle Nazario
+description: Frontend web developer
+url: https://www.kylenazario.com
+
+# User settings
+username: Kyle Nazario
+user_description: I am a fast, talented software engineer looking for a place to do great work. I love creating great apps, whether
+  on the web or mobile platforms. During the day I am a software engineer for <a href="https://www.servicecore.com/" target="_blank">ServiceCore</a>, developing an enterprise-scale product for running waste management businesses. At night, I make <a
+  href="https://composeforsubstack.app" target="_blank">Compose for Substack</a>, the first and only native Substack app.
+user_title: Software Engineer
 email: kylebnazario@gmail.com
-description: >
-  Web development posts and occasional movie roundups.
-baseurl: ""
-url: "http://www.kylenazario.com"
 twitter_username: kbn_au
 github_username:  kyle-n
-facebook_username: knazario
-linkedin_username: kylenazario
-permalink: /:year/:month/:day/:title.html
-sass:
-  style: expanded
-  sass_dir: _sass
-plugins:
-  - jekyll-feed
 
-# Add Google Analytics tracking
-analytics :
-  provider : google
-  google : 
-      tracking_id : 'UA-67452206-1'
-
-# Array builder
-array: []
-
-# Build settings
-markdown: kramdown
-safe : true
-related_posts_max : 3
-excerpt_separator: <!--break-->
-
-# Social settings
-locale : en_us
-timezone : America/New_York
-icon : "{{ site.url }}/static/img/me.png"
-author : 'Kyle Nazario'
-fb_admins : '1184042582'
-fb_appid : 794821543963847
+exclude: ['package.json', 'src' , 'node_modules']

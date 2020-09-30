@@ -1,0 +1,40 @@
+# Site settings
+title: Kyle Nazario
+email: kylebnazario@gmail.com
+description: >
+  Web development posts and occasional movie roundups.
+baseurl: ""
+url: "http://www.kylenazario.com"
+twitter_username: kbn_au
+github_username:  kyle-n
+facebook_username: knazario
+linkedin_username: kylenazario
+permalink: /:year/:month/:day/:title.html
+sass:
+  style: expanded
+  sass_dir: _sass
+plugins:
+  - jekyll-feed
+
+# Add Google Analytics tracking
+analytics :
+  provider : google
+  google : 
+      tracking_id : 'UA-67452206-1'
+
+# Array builder
+array: []
+
+# Build settings
+markdown: kramdown
+safe : true
+related_posts_max : 3
+excerpt_separator: <!--break-->
+
+# Social settings
+locale : en_us
+timezone : America/New_York
+icon : "{{ site.url }}/static/img/me.png"
+author : 'Kyle Nazario'
+fb_admins : '1184042582'
+fb_appid : 794821543963847

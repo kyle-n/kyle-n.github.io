@@ -1,29 +1,7 @@
-<footer>
-  <div id="footer-link-container">
-    {% include footer-link.html
-        href="mailto:kylebnazario+public@gmail.com"
-        iconName="email"
-        label="email"
-    %}
-    {% include footer-link.html
-        href="https://www.linkedin.com/in/kylenazario"
-        iconName="home_work"
-        label="linkedin"
-    %}
-    {% include footer-link.html
-        href="https://www.facebook.com/knazario"
-        iconName="thumb_up_alt"
-        label="facebook"
-    %}
-    {% include footer-link.html
-        href="https://twitter.com/kbn_au"
-        iconName="group"
-        label="twitter"
-    %}
-    {% include footer-link.html
-        href="https://github.com/kyle-n"
-        iconName="keyboard"
-        label="github"
-    %}
-  </div>
+<footer class="footer">
+    <!-- <p>&copy; {{ site.username }}</p> -->
+    <p>Built with Jekyll and <span class="love">❤</span> by <a href="https://github.com/murraco">Mauricio Urraco</a></p>
 </footer>
+<script src="//cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="{{ '/assets/js/sweet-scroll.min.js' | prepend: site.baseurl }}"></script>
+<script src="{{ '/assets/js/main.js' | prepend: site.baseurl }}"></script>
