@@ -5,14 +5,11 @@
     justify-content: flex-start;
     padding: $spacing-unit;
     border-bottom: 1px solid gray;
+    margin-top: 0;
   }
 
   h1 {
-    color: red;
+    margin-top: 0;
   }
 
-}
-
-html {
-  color: green !important;
 }
