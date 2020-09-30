@@ -15,3 +15,15 @@ twitter_username: kbn_au
 github_username:  kyle-n
 
 exclude: ['package.json', 'src' , 'node_modules']
+
+# Hyde theme
+markdown: redcarpet
+highlighter: pygments
+
+# Permalinks
+permalink: pretty
+relative_permalinks: true
+author:
+  name: 'Kyle Nazario'
+  url: https://twitter.com/kbn_au
+paginate: 5
