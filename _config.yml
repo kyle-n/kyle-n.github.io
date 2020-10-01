@@ -23,7 +23,6 @@ highlighter: pygments
 
 # Permalinks
 permalink: pretty
-relative_permalinks: true
 author:
   name: 'Kyle Nazario'
   url: https://twitter.com/kbn_au
