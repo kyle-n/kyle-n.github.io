@@ -84,6 +84,7 @@
     border-radius: 50%;
     border: 2px solid #FFF;
     transition: all .5s;
+    box-sizing: content-box;
     &:hover {
       color: $main;
       background: #FFF;
