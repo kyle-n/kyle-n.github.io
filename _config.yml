@@ -18,7 +18,6 @@ github_username:  kyle-n
 exclude: ['package.json', 'src' , 'node_modules']
 
 # Hyde theme
-markdown: redcarpet
 highlighter: pygments
 
 # Permalinks
