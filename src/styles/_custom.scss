@@ -24,3 +24,25 @@
     margin: 0 0.2rem;
   }
 }
+
+.user {
+
+  div {
+    margin: 0 0.5rem;
+    p {
+      margin-top: 1rem;
+      text-align: left;
+    }
+  }
+
+  @media screen and (max-width: $cut) {
+    display: flex;
+    flex-direction: column;
+    div {
+      width: 100%;
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
