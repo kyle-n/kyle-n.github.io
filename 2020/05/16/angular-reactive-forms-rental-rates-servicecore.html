@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Using Angular reactive forms to build a huge feature for ServiceCore
+    
+  </title>
+  <meta name="description" content="Frontend web developer">
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" type="image/png" href="/assets/favicon.png" >
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="">
+          Kyle Nazario
+        </a>
+      </h1>
+      <p class="lead">Frontend web developer</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/blog/">Kyle Nazario's Blog</a>
+          
+        
+      
+        
+      
+    </nav>
+
+    <p>&copy; 2020. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Using Angular reactive forms to build a huge feature for ServiceCore</h1>
+  <span class="post-date">16 May 2020</span>
+  
+    <img src="/static/img/rental-rates.png" alt="And it looks so simple from the outside to use." class="main-image">
+  
+  <p>At ServiceCore, we’re thrilled to ship <a href="https://support.servicecore.com/hc/en-us/articles/360041523411-Add-Rental-Rates">rental rates</a>! This was a months-long project that required massive collaboration between our product owner, frontend and backend engineers and QA.</p>
+
+<p>I wanted to highlight some work I did to make one small part of the system - the rental rate input table.</p>
+
+<!--break-->
+
+<h2 id="background">Background</h2>
+
+<p>Without going too deep into the portable toilet business, here’s what we were trying to build.</p>
+
+<p>ServiceCore users are waste disposal businesses. A construction company might rent 10 portable toilets per day for the next three months from a user. That user would create a rental in ServiceCore to track their inventory and billing for that construction site.</p>
+
+<p>ServiceCore users can create preset line item charges, like maintenance fees. Those line item charges can attach to a rental.</p>
+
+<p>The problem that necessitated rental rates was these line item charges were static. There was no way to give a customer a special deal for a specific rental, like $0 service charges. You’d have to override the line item on every single invoice created for that rental. Not fun for big companies doing thousands of invoices a day!</p>
+
+<p>With rental rates, users would be able to select any service charge and set special per-rental pricing, notes and taxable status.</p>
+
+<p>In order to set rental rates, however, we needed a rate input table.</p>
+
+<h2 id="product-requirements">Product requirements</h2>
+
+<p>The rental rate input table should display every product attached to a rental. Beneath each product is a dropdown of line item charges that could be attached to a product. Selectinga charge would add it to a table, with the default price, name, description and taxable status editable.</p>
+
+<p>So: rentals have products, products have line item charges, and rental rates are special per-rental instances of a line item charge. Make sense?</p>
+
+<p><img src="https://i.imgur.com/nbEwLVI.png" alt="Overall view of the rate input table" /></p>
+
+<p>The last two options in the line item dropdown should be “Add Service” and “Assign Service”, which I’ll explain later.</p>
+
+<h2 id="implementation">Implementation</h2>
+
+<h3 id="goals">Goals</h3>
+
+<p>As every frontend developer knows, forms are complicated. This form had a lot of moving parts, so the code could turn ugly quickly.</p>
+
+<p>I built this with three things in mind:</p>
+
+<ol>
+  <li>It needed to work well for rental rates</li>
+  <li>It needed to be reusable in case future features need a similar UI</li>
+  <li>It needed to keep the logic under control with reactive programming</li>
+</ol>
+
+<p>Angular’s <a href="https://angular.io/guide/reactive-forms">Reactive Forms</a> made the logic more functional and less imperative. Reactive Forms store form state in FormControls, which can be grouped inside FormGroups or FormArrays. FormGroups, FormArrays and FormControls all have first-class RxJS APIs. You can subscribe to <code class="language-plaintext highlighter-rouge">valueChanges</code> or <code class="language-plaintext highlighter-rouge">statusChanges</code> (valid/invalid) on any of them and <em>react</em> to form state updates.</p>
+
+<h3 id="overview">Overview</h3>
+
+<p>When the user opens the rental rate form, the <code class="language-plaintext highlighter-rouge">rental-rate-form</code> container component loads the rental’s data. It passes any existing rental rates into the <code class="language-plaintext highlighter-rouge">rate-input-table</code>, the actual UI. The <code class="language-plaintext highlighter-rouge">rental-rate-form</code> also <code class="language-plaintext highlighter-rouge">PATCH</code>es the rental with its new rates on submit.</p>
+
+<p>This component accomplishes goal #2, keeping the rental logic separate from the UI.</p>
+
+<p>On instantiation, the <code class="language-plaintext highlighter-rouge">rate-input-table</code> transforms input rates into table rows using pure static functions. This keeps the instantiation logic testable.</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">rate-input-table</code> stores its data as nested <code class="language-plaintext highlighter-rouge">AbstractControl</code>s (the base class of FormArray, FormGroup and FormControl). The structure goes: Products is a FormArray. Each product is a FormGroup that contains product name, quantity, and a FormArray of rates. Each rate is FormGroup that contains FormControls for line item name, description, price, and taxable status.</p>
+
+<p>Each product FormGroup also has a FormControl for the line item dropdown. Any value change there reactively adds the selected rate to the table.</p>
+
+<h3 id="wins">Wins</h3>
+
+<h4 id="rxjs-">RxJS ♥</h4>
+
+<p>Reactive programming is a blast. It contained the logic for each part of the form as subscriptions to that AbstractControl’s <code class="language-plaintext highlighter-rouge">valueChanges</code>.</p>
+
+<p>It also simplified working with asynchronous requests. For example, the <code class="language-plaintext highlighter-rouge">pipe</code> from add service dropdown takes the <code class="language-plaintext highlighter-rouge">valueChange</code> (the <code class="language-plaintext highlighter-rouge">id</code> of the selected service) and <code class="language-plaintext highlighter-rouge">flatMap</code>s it into a <code class="language-plaintext highlighter-rouge">GET</code> req for the full service. The full service is transformed into a new FormControl, which is pushed into the FormArray for the given product.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      // add new service on select
+      const newServiceSub = rateSelectChanges.pipe(
+        filter(serviceIdOrOption =&gt; {
+          // service ids come through as '11'
+          const serviceId = parseInt(serviceIdOrOption, 10);
+          return !Number.isNaN(serviceId);
+        }),
+        map((serviceId: string) =&gt; parseInt(serviceId, 10)),
+        flatMap(serviceId =&gt; this._serviceService.getService(serviceId))
+      ).subscribe((service: Service) =&gt; {
+          this.addServiceToRates(service, entityFormGroup.get('rates') as FormArray);
+          entityFormGroup.get('rateSelect').patchValue('choose');
+        }, error =&gt; this._userAlertService.error(error, true)
+      );
+
+</code></pre></div></div>
+
+<p>No <code class="language-plaintext highlighter-rouge">async</code>/<code class="language-plaintext highlighter-rouge">await</code> weirdness, no race conditions, no confusing logic. Just functional transformations. First-class RxJS support is far and away the best part of Angular. Just look at when we have to do something <em>really</em> complicated:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      const assignServiceSub = rateSelectChanges.pipe(
+        filter(selectVal =&gt; selectVal === 'assign'),
+        flatMap(() =&gt; {
+          const serviceIdsToExcludeFromAssociateDialog: number[] = entityFormGroup.value.entity.services
+            .map(service =&gt; service.id);
+          return this._serviceDialogService.openAssociateServiceDialog(
+            entityFormGroup.value.entity.id,
+            serviceIdsToExcludeFromAssociateDialog
+          );
+        }),
+        filter((updatedServices) =&gt; !!(updatedServices)),
+        map((allServices: Service[]) =&gt; {
+          const previousServiceIds: number[] = entityFormGroup.value.entity?.services?.map(service =&gt; service.id) || [];
+          return allServices.filter(serviceFromApi =&gt; !previousServiceIds.includes(serviceFromApi.id));
+        }),
+        map(newServices =&gt; newServices.map(newService =&gt; this._serviceService.getService(newService.id))),
+        flatMap(newServiceRequests =&gt; forkJoin(newServiceRequests))
+      ).subscribe(fullNewServices =&gt; {
+        if (fullNewServices?.length) {
+          fullNewServices.forEach(service =&gt; {
+            this.addServiceToRates(service, entityFormGroup.get('rates') as FormArray);
+          });
+        }
+        this.reloadFullServices(entityFormGroup as FormGroup);
+        entityFormGroup.get('rateSelect').patchValue('choose');
+      });
+
+</code></pre></div></div>
+
+<p>This block grabs services (line item charges) already associated to a product and passing them to a dialog. The dialog filters out these previously associated services. Then, if the user selects any services to add to a product in the dialog, these are passed out of the dialog’s Observable and transformed into requests for the full data for each newly associated service. When we’ve received all responses, the services are added to the table as rates. RxJS makes this kind of async work <em>easy</em>.</p>
+
+<h4 id="functional-programming-">Functional programming ♥</h4>
+
+<p>The last code win was creating the select service dropdown. It transformed an array of services into <code class="language-plaintext highlighter-rouge">&lt;options&gt;</code>, sorting by billing period on the service.</p>
+
+<p><img src="http://i.imgur.com/sJthlnx.png" alt="The add service dropdown for ServiceCore rental rates" /></p>
+
+<p>All that logic used a pure static class function, making it a breeze to unit test.</p>
+
+<h3 id="losses">Losses</h3>
+
+<p><code class="language-plaintext highlighter-rouge">rate-input-table</code> almost shipped without bugs, but for a hack I did.</p>
+
+<p>Our product owner wanted the users to be able to select the same service from the dropdown multiple times consecutively. But, choosing the same option twice in a <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code> does not fire the standard <code class="language-plaintext highlighter-rouge">change</code> event.</p>
+
+<p>Instead of reading the <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code> value on <code class="language-plaintext highlighter-rouge">change</code>, I tried reading it after the <code class="language-plaintext highlighter-rouge">click</code> event. On every browser I tested, <code class="language-plaintext highlighter-rouge">click</code> fired when you chose an option in the <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code>.</p>
+
+<p>However, Chrome on macOS fired the click event on open <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code>. Thus, you’d have to choose an <code class="language-plaintext highlighter-rouge">&lt;option&gt;</code>, then re-open the dropdown to add a service.</p>
+
+<p>When we got the bug report, I fixed it so on <code class="language-plaintext highlighter-rouge">change</code> we would grab the <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code> value, add a service, and reset the <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code> value.</p>
+
+<p>I tested this on Chrome for macOS and talked to our devops guy about fixing our company process to avoid mistakes like this. We shipped the fix the same day the bug was reported. No complaints since.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>If the drop-down bug hadn’t happened the UI would have been perfect. Normally ServiceCore sticks to standard HTML elements and doesn’t go too far off the road. It’s a lesson that if we want to try stuff like that, we need a better process.</p>
+
+<p>Still, the rental rates input UI has worked like a charm. The real test will be down the road if we try to reuse this work :).</p>
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2020/09/26/compose-for-substack-press-kit.html">
+            Compose for Substack press kit
+            <small>26 Sep 2020</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2020/08/29/compose-substack-privary-policy.html">
+            Compose for Substack privacy policy
+            <small>29 Aug 2020</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2020/08/29/compose-for-substack-help.html">
+            Get help with Compose for Substack
+            <small>29 Aug 2020</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,1219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Kyle Nazario</title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2020-10-01T09:28:23-06:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name></name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>Compose for Substack press kit</title>
+   <link href="http://localhost:4000/2020/09/26/compose-for-substack-press-kit.html"/>
+   <updated>2020-09-26T00:00:00-06:00</updated>
+   <id>http://localhost:4000/2020/09/26/compose-for-substack-press-kit</id>
+   <content type="html">&lt;p&gt;Please contact me using the links at the bottom of the page if you need any additional information to write about Compose, I am happy to help.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;h3 id=&quot;about-compose&quot;&gt;About Compose&lt;/h3&gt;
+
+&lt;p&gt;Compose for Substack is a simple, clean, beautiful native editor for writing Substack email newsletters in Markdown. No more juggling tabs in a web browser - Compose offers an iPhone and iPad-first experience.&lt;/p&gt;
+
+&lt;p&gt;Compose has full interoperability with the Substack web editor. Any changes you make in Substack’s web editor will be reflected in Compose and vice versa.&lt;/p&gt;
+
+&lt;p&gt;The app is free-to-try. You can publish or schedule up to three posts. After that, Compose requires a Pro Subscription for $5 a month, a common price for Patreons. Subscriptions fund ongoing work to keep Compose compatible with Substack and cool new features.&lt;/p&gt;
+
+&lt;p&gt;Compose is available right now for iOS and iPadOS 14. The Mac version will launch with macOS Big Sur.&lt;/p&gt;
+
+&lt;h3 id=&quot;editor-features&quot;&gt;Editor features&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Write in Markdown with live syntax highlighting&lt;/li&gt;
+  &lt;li&gt;Write in one of several beautiful sans-serif and serif fonts&lt;/li&gt;
+  &lt;li&gt;Log in via emailed link or password&lt;/li&gt;
+  &lt;li&gt;Send posts as emails or post to your Substack website&lt;/li&gt;
+  &lt;li&gt;Schedule posts for any time in the future&lt;/li&gt;
+  &lt;li&gt;Insert images straight from your camera roll&lt;/li&gt;
+  &lt;li&gt;Send yourself test emails to preview your newsletter&lt;/li&gt;
+  &lt;li&gt;Autosaves your progress as you type&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;media&quot;&gt;Media&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://kylenazario.com/static/img/compose-media.zip&quot;&gt;Download screenshots&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;links&quot;&gt;Links&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;compose-splash.png&quot;&gt;@ComposeSubstack&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://twitter.com/kbn_au&quot;&gt;@kbn_au&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;about-the-tech&quot;&gt;About the tech&lt;/h3&gt;
+
+&lt;p&gt;Compose for Substack is almost all SwiftUI. It uses several of the awesome new SwiftUI APIs introduced for iOS 14, including the iPadOS three-column layout.&lt;/p&gt;
+
+&lt;p&gt;The exception is the text editor, which wraps UIKit to provide live syntax highlighting.&lt;/p&gt;
+
+&lt;h3 id=&quot;about-the-developer&quot;&gt;About the developer&lt;/h3&gt;
+
+&lt;p&gt;Kyle Nazario is an indie developer best known for &lt;a href=&quot;https://github.com/kyle-n/HighlightedTextEditor&quot;&gt;HighlightedTextEditor&lt;/a&gt;, an open-source SwiftUI view that dynamically highlights text as the user types.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://raw.githubusercontent.com/kyle-n/kyle-n.github.io/master/static/img/hte-demo.gif&quot; alt=&quot;HighlightedTextEditor in action&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;HighlightedTextEditor is the core of the editor in Compose.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Compose for Substack privacy policy</title>
+   <link href="http://localhost:4000/2020/08/29/compose-substack-privary-policy.html"/>
+   <updated>2020-08-29T00:00:00-06:00</updated>
+   <id>http://localhost:4000/2020/08/29/compose-substack-privary-policy</id>
+   <content type="html">&lt;p&gt;Compose for Substack uses the bare minimum of your Substack information in order to function.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;h2 id=&quot;information-not-stored&quot;&gt;Information NOT stored:&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;Password&lt;/strong&gt;: Compose uses your password, if you have one, only to retrieve the cookie Substack uses to authenticate create/edit post requests. Your password is not and will never be stored.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Email contents&lt;/strong&gt;: The contents of your email newsletters and your account information is also not stored or tracked in any way.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Subscriber list&lt;/strong&gt;: The app does not access or track your subscriber list in any way.&lt;/p&gt;
+
+&lt;h2 id=&quot;information-compose-does-store&quot;&gt;Information Compose DOES store:&lt;/h2&gt;
+
+&lt;p&gt;Everything on this list is stored &lt;strong&gt;locally&lt;/strong&gt; and will never be shared with outside parties.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Cookie&lt;/strong&gt;: Upon login, Substack uses a cookie to authenticate requests to create and edit posts. Compose locally stores this cookie so you can create and edit posts in the app.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Substack sub-domain&lt;/strong&gt;: Some operations, such as creating or scheduling posts, require sending a request to that newsletter’s specific sub-domain. Compose stores the sub-domain of your newsletter in order to create, edit and schedule posts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Email&lt;/strong&gt;: Compose stores your email address locally in order to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Prefill the “Send Test Email” field, so you can send test emails to yourself&lt;/li&gt;
+  &lt;li&gt;Track how many posts are left in your free trial&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Your email will never be shared with an outside party or spammed.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Substack Author ID&lt;/strong&gt;: Compose locally stores your author ID number in order to create new posts.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Clipboard contents&lt;/strong&gt;: On opening the login page, Compose will check your clipboard for one of the links Substack emails you to use to log in. This is important because Substack allows users to not set a password on their account and to only log in via email. The clipboard is not read anywhere else in the application (as you can verify on iOS and iPadOS 14).&lt;/p&gt;
+
+&lt;h2 id=&quot;my-apps-promise&quot;&gt;My app’s promise&lt;/h2&gt;
+
+&lt;p&gt;Let me be clear. I am not interested in any kind of gross business model involving selling users’ personal information.&lt;/p&gt;
+
+&lt;p&gt;I want Compose to be the absolute best writing experience possible so you will &lt;em&gt;want&lt;/em&gt; to subscribe. To my mind, a great writing experience means never having to worry if you are the product.&lt;/p&gt;
+
+&lt;p&gt;With Compose, direct user support means there’s no skeezy middleman. It means everyone’s interests are aligned - you want a great writing app, and I want to earn your subscription by delivering a great writing app.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Get help with Compose for Substack</title>
+   <link href="http://localhost:4000/2020/08/29/compose-for-substack-help.html"/>
+   <updated>2020-08-29T00:00:00-06:00</updated>
+   <id>http://localhost:4000/2020/08/29/compose-for-substack-help</id>
+   <content type="html">&lt;p&gt;Need help with something with the Compose app? &lt;a href=&quot;mailto:composeforsubstack@gmail.com&quot;&gt;Shoot me an email&lt;/a&gt;.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;If you need help with general Substack issues, please &lt;a href=&quot;https://support.substack.com/hc/en-us?s=support%40substack.com&quot;&gt;contact their support&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>System76 Gazelle mini-review</title>
+   <link href="http://localhost:4000/2020/06/26/system76-gazelle-mini-review.html"/>
+   <updated>2020-06-26T00:00:00-06:00</updated>
+   <id>http://localhost:4000/2020/06/26/system76-gazelle-mini-review</id>
+   <content type="html">&lt;p&gt;Work bought us &lt;a href=&quot;https://system76.com/laptops/gazelle&quot;&gt;System76 Gazelle laptops&lt;/a&gt;. Quick thoughts after six months of use, coming from a MacBook Pro user:&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Chiclet keyboard feels nice to type on&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Plastic fake brushed-metal case is 🤮&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Battery life is about an hour, almost unusable away from a charger. If I were spending my own money on this laptop, this would be a dealbreaker.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Built-in display sucks. It’s allegedly matte, but still has incredibly high reflectiveness. 1080p resolution and just okay LCD color reproduction&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Fan noise is a serious issue. I made the mistake of un-muting myself on a video call while the fans were going and other people on the call immediately muted me. They thought I was in a wind tunnel.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Webcam quality is low. Video calls with an open window behind you mean you will be washed out by backlighting&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Performance is great. Runs a bunch of simultaneous headless Chrome browsers in Docker and completes our unit test suite pretty quickly.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The trackpad is truly horrendous. I use tap to click on my MBP, and I had to turn that off on the Gazelle real fast. Palm rejection is nonexistent - had false clicks every 15 minutes. That is not an exaggeration.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Keyboard is backlit&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;USB-A, HDMI, ethernet means it’s easy to use it as a desktop&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Built-in speakers sound tinny and low-quality&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Large and clunky, but weight isn’t bad&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I’m torn: Ubuntu and GNU/Linux generally are excellent developer environments, but the laptop hardware is horrible. It feels like the $600 Windows machines my friends used in college.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Big Sur helps macOS draft behind iOS</title>
+   <link href="http://localhost:4000/2020/06/23/apple-ios-macos-big-sur-catalyst-drafting.html"/>
+   <updated>2020-06-23T00:00:00-06:00</updated>
+   <id>http://localhost:4000/2020/06/23/apple-ios-macos-big-sur-catalyst-drafting</id>
+   <content type="html">&lt;p&gt;MacOS Big Sur is shocking, but it makes sense when you consider two things. &lt;!--break--&gt; One, as Johnny Sruiji said, Apple’s entire lineup will run off the same silicon. Two, this tweet from Marco Arment.&lt;/p&gt;
+
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;The entire OS looks like Catalyst apps now.&lt;br /&gt;&lt;br /&gt;This is not a compliment.&lt;/p&gt;&amp;mdash; Marco Arment (@marcoarment) &lt;a href=&quot;https://twitter.com/marcoarment/status/1275129517615599625?ref_src=twsrc%5Etfw&quot;&gt;June 22, 2020&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async=&quot;&quot; src=&quot;https://platform.twitter.com/widgets.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
+
+&lt;p&gt;This is actually the point of Big Sur. Grafting iOS visual language onto macOS and the ARM transition are meant to help macOS is &lt;a href=&quot;https://www.dictionary.com/browse/drafting&quot;&gt;draft&lt;/a&gt; off iOS.&lt;/p&gt;
+
+&lt;h2 id=&quot;desktops-are-not-the-center-of-computing&quot;&gt;Desktops are not the center of computing&lt;/h2&gt;
+
+&lt;p&gt;A simple fact is driving these radical changes. For the vast majority of people, the phone is the center of their computing life. &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; They might use desktops at work, or to write school papers, but most people do their computing on a phone. &lt;a href=&quot;https://www.dictionary.com/browse/drafting&quot;&gt;The numbers don’t lie&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Look at new desktop applications. So many are, to quote Satya Nadella, cloud-first and mobile-first. Lots have just a web app for desktop users. If they have a desktop application at all, it’s probably Electron.&lt;/p&gt;
+
+&lt;p&gt;This isn’t an attack on the Mac. I love my Mac, and prefer native apps. But spawning a rich ecosystem of third-party developers is &lt;a href=&quot;https://www.theverge.com/2017/10/10/16452162/windows-phone-history-glorious-failure&quot;&gt;one of the hardest challenges in technology&lt;/a&gt;. You have to create the conditions where it makes economic sense to develop for a platform.&lt;/p&gt;
+
+&lt;p&gt;The Mac and other desktop platforms certainly still enjoy new native applications, because there are some apps that make the most sense or are only possible running natively on a desktop. However, that ecosystem pales in comparison to iOS.&lt;/p&gt;
+
+&lt;h2 id=&quot;catalyst-at-all-costs&quot;&gt;Catalyst at all costs&lt;/h2&gt;
+
+&lt;p&gt;Apple’s solution: bring iOS apps to the Mac in some way that makes sense.&lt;/p&gt;
+
+&lt;p&gt;For apps being developed now, they gave us SwiftUI. For existing apps that care about giving users a good Mac experience, they gave us Catalyst. For everything else, Apple casually mentioned &lt;a href=&quot;https://www.engadget.com/ios-apps-arm-powered-macs-192046502.html&quot;&gt;those will run natively on ARM Macs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But - iOS ports aren’t “Mac-like.” They &lt;a href=&quot;https://twitter.com/stroughtonsmith/status/1273278521763418112?s=20&quot;&gt;can be polished&lt;/a&gt;, but a lot of developers won’t bother.&lt;/p&gt;
+
+&lt;p&gt;Hence, macOS Big Sur. If you Catalyst-ify the entire OS, iOS ports fit right in.&lt;/p&gt;
+
+&lt;p&gt;If developers won’t make native, Mac-like Mac apps, change the definition of Mac-like and import millions of existing apps. It makes sense.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;&lt;em&gt;Please&lt;/em&gt; do not tweet at me about how you personally use your desktop way more than your phone. Anecdotal data is just that. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Every new movie I saw in 2019, ranked</title>
+   <link href="http://localhost:4000/2020/05/17/favorite-movies-2019.html"/>
+   <updated>2020-05-17T00:00:00-06:00</updated>
+   <id>http://localhost:4000/2020/05/17/favorite-movies-2019</id>
+   <content type="html">&lt;p&gt;Is this post extremely late? Yes. Am I publishing just to get these on the record? Also yes. Late publication has its pluses, though - one 2019 movie in my top 10 was an April 2020 addition.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;This year I’ve included ratings according to my personal rating system!&lt;/p&gt;
+
+&lt;p&gt;Half star (can’t type this symbol) = Hate. Movie crimes only&lt;/p&gt;
+
+&lt;p&gt;★ = Did not like&lt;/p&gt;
+
+&lt;p&gt;★★ = Fine, whatever&lt;/p&gt;
+
+&lt;p&gt;★★★ = Good!&lt;/p&gt;
+
+&lt;p&gt;★★★★ = Really good, would recommend wholeheartedly&lt;/p&gt;
+
+&lt;p&gt;★★★★★ = I love this movie&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/2019/01/09/favorite-movies-2018.html&quot;&gt;Last year&lt;/a&gt;’s five-★ movies were &lt;em&gt;Spider-Man: Into the Spider-Verse&lt;/em&gt;, &lt;em&gt;Annihilation&lt;/em&gt;, &lt;em&gt;Hereditary&lt;/em&gt; and &lt;em&gt;Black Panther&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-worst-of-the-worst&quot;&gt;The worst of the worst&lt;/h2&gt;
+
+&lt;h3 id=&quot;54-dark-phoenix--half-star&quot;&gt;54: &lt;em&gt;Dark Phoenix&lt;/em&gt; | Half star&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/1-q8C_c-nlM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;em&gt;Dark Phoenix&lt;/em&gt; is a creatively bankrupt, despicable, irredeemable trash heap. I cannot emphasize enough how soulless and shitty this thing is.&lt;/p&gt;
+
+&lt;p&gt;Sophie Turner might have been able to do &lt;em&gt;Game of Thrones&lt;/em&gt;, but she is not a movie star. One of the worst performances of the year.&lt;/p&gt;
+
+&lt;p&gt;I cannot wait for Marvel to do the X-Men right and put this godforsaken take on the franchise into the ground.&lt;/p&gt;
+
+&lt;h3 id=&quot;53-what-men-want--&quot;&gt;53: &lt;em&gt;What Men Want&lt;/em&gt; | ★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/HeoLiTirRp4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Look, no disrespect to Taraji P. Henson, who does &lt;a href=&quot;https://www.imdb.com/title/tt6421110/?ref_=nm_flmg_act_9&quot;&gt;interesting projects&lt;/a&gt;. Inverting the original concept of &lt;em&gt;What Women Want&lt;/em&gt; does not make sense, and neither does this movie.&lt;/p&gt;
+
+&lt;h3 id=&quot;52-how-to-train-your-dragon-the-hidden-world--&quot;&gt;52: &lt;em&gt;How to Train Your Dragon: The Hidden World&lt;/em&gt; | ★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/SkcucKDrbOI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Boring.&lt;/p&gt;
+
+&lt;h3 id=&quot;51-terminator-dark-fate--&quot;&gt;51: &lt;em&gt;Terminator: Dark Fate&lt;/em&gt; | ★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/oxy8udgWRmo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;There’s a bit on the excellent movie podcast Blank Check with Griffin and David where Griffin Newman compares the Terminator rights to a mummy’s curse. They pass from studio to studio, convincing them that even though &lt;em&gt;every single&lt;/em&gt; Terminator after &lt;em&gt;T2&lt;/em&gt; was bad, &lt;em&gt;this one&lt;/em&gt; will be good.&lt;/p&gt;
+
+&lt;p&gt;I’ll just say this: the curse is unbroken.&lt;/p&gt;
+
+&lt;h3 id=&quot;50-dumbo--&quot;&gt;50: &lt;em&gt;Dumbo&lt;/em&gt; | ★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/ocWpGdITSR4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Outside of &lt;em&gt;Ed Wood&lt;/em&gt;, none of Tim Burton’s movies speak to me. This one didn’t either.&lt;/p&gt;
+
+&lt;h3 id=&quot;49-godzilla-king-of-monsters--&quot;&gt;49: &lt;em&gt;Godzilla: King of Monsters&lt;/em&gt; | ★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/B12REtkl2KY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Big, dumb, boring, despite the cool trailer. No stakes, no relatable characters, no cool Godzilla stuff.&lt;/p&gt;
+
+&lt;h3 id=&quot;48-the-lion-king--&quot;&gt;48: &lt;em&gt;The Lion King&lt;/em&gt; | ★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/7TavVZMewpY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The original cartoon was already good. Remaking it with realistic CGI only detracted.&lt;/p&gt;
+
+&lt;p&gt;I love Donald Glover, but he sounds like he recorded his lines in bed, right before falling asleep.&lt;/p&gt;
+
+&lt;h3 id=&quot;47-it-chapter-two--&quot;&gt;47: &lt;em&gt;It: Chapter Two&lt;/em&gt; | ★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/zqUopiAYdRg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Another bad movie with a great trailer. Maybe that’s how these movies are so successful even when they flub basic scares.&lt;/p&gt;
+
+&lt;h3 id=&quot;46-star-wars-episode-ix-the-rise-of-skywalker--&quot;&gt;46: &lt;em&gt;Star Wars Episode IX: The Rise of Skywalker&lt;/em&gt; | ★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/adzYW5DZoWs&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;A truly horrible film. Incoherent, messy, unsatisfying. Abandons everything good in &lt;em&gt;The Last Jedi&lt;/em&gt; and &lt;em&gt;The Force Awakens&lt;/em&gt;. I think as time passes this will be correctly evaluated as the worst Star Wars film since the prequels.&lt;/p&gt;
+
+&lt;p&gt;Also, when you consider Kelly Marie Tran is barely in the movie after being targeted with a racist backlash… sure looks like Disney caved to the worst people on the internet.&lt;/p&gt;
+
+&lt;h3 id=&quot;45-jojo-rabbit--&quot;&gt;45: &lt;em&gt;Jojo Rabbit&lt;/em&gt; | ★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/tL4McUzXfFI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Taika Waititi cashed in a big blank check after &lt;em&gt;Thor: Ragnarok&lt;/em&gt; to make a movie that is mostly about… nothing. There’s no deeper message here and no good jokes.&lt;/p&gt;
+
+&lt;h2 id=&quot;hey-this-was-just-okay&quot;&gt;“Hey, this was just okay”&lt;/h2&gt;
+
+&lt;h3 id=&quot;44-replicas--&quot;&gt;44: &lt;em&gt;Replicas&lt;/em&gt; | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/ze_ANsckvS0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;A fine, if forgettable Keanu programmer. Bizarre ending.&lt;/p&gt;
+
+&lt;h3 id=&quot;43-brightburn--&quot;&gt;43: &lt;em&gt;Brightburn&lt;/em&gt; | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/g6eB0JT1DI4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Bad execution of an interesting premise - what if young Superman but evil? The violence is thematically nonsense and unearned.&lt;/p&gt;
+
+&lt;h3 id=&quot;42-destroyer--&quot;&gt;42: &lt;em&gt;Destroyer&lt;/em&gt; | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/9g-j4wuEOPo&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I like director Karyn Kusama, but this is one of her least interesting works. Go watch her good horror movie &lt;em&gt;The Invitation&lt;/em&gt; on Netflix instead.&lt;/p&gt;
+
+&lt;h3 id=&quot;41-crawl--&quot;&gt;41: &lt;em&gt;Crawl&lt;/em&gt; | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/H6MLJG0RdDE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Alright little horror flick about a woman and her father braving a hurricane and homicidal alligators. Really sells the storm.&lt;/p&gt;
+
+&lt;h3 id=&quot;40-charlies-angels--&quot;&gt;40: &lt;em&gt;Charlie’s Angels&lt;/em&gt; | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/RSUq4VfWfjE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;em&gt;Charlie’s Angels&lt;/em&gt; was not made for me, and that’s fine! Speaking just for myself, though, I thought the action scenes were amateurish and the plot needlessly complicated.&lt;/p&gt;
+
+&lt;p&gt;The bright spot is Kristin Stewart, who projects 10,000-megawatt charm. If she ever decides to stop doing indie movies and be a movie star again, she will be a force to be reckoned with.&lt;/p&gt;
+
+&lt;h3 id=&quot;39-the-hole-in-the-ground&quot;&gt;39: &lt;em&gt;The Hole in the Ground&lt;/em&gt;&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/BxY2vnJiByw&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;A small horror movie from Ireland. Toys with some interesting ideas but doesn’t connect with any of them.&lt;/p&gt;
+
+&lt;h3 id=&quot;38-joker--&quot;&gt;38: &lt;em&gt;Joker&lt;/em&gt; | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/zAGVQLHvwOY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;em&gt;Joker&lt;/em&gt; has an effective take on its titular character - it makes him pathetic. We’ve never seen the Joker as a loser before, and it kind of works. Too bad the rest of the movie is incoherent.&lt;/p&gt;
+
+&lt;h3 id=&quot;37-hobbes--shaw--&quot;&gt;37: &lt;em&gt;Hobbes &amp;amp; Shaw&lt;/em&gt; | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube.com/embed/9SA7FaKxZVI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;As far as action movies go, this is alright. Not sure I’d ever watch it again.&lt;/p&gt;
+
+&lt;h3 id=&quot;36-burning--&quot;&gt;36: &lt;em&gt;Burning&lt;/em&gt; | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/oihHs2Errwk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Interesting Korean thriller focusing on class and gender. A bit slow for me.&lt;/p&gt;
+
+&lt;h3 id=&quot;35-midsommar--&quot;&gt;35: &lt;em&gt;Midsommar&lt;/em&gt; | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/1Vnghdsjmd0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;As the world’s number-one &lt;em&gt;Hereditary&lt;/em&gt; fan, I was disappointed by Ari Aster’s new project. &lt;em&gt;Midsommar&lt;/em&gt;’s emotional journey doesn’t quite get there, and there are precious few scares.&lt;/p&gt;
+
+&lt;h3 id=&quot;34-serenity--&quot;&gt;34: &lt;em&gt;Serenity&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/k3zMlsEK8xA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Matthew McConaughey stars in this insane fever dream movie that is, I shit you not, sci-fi. I’ve had a lot of fun describing the plot to people because it does not sound real. An instant classic of so-crazy-it’s-good.&lt;/p&gt;
+
+&lt;h3 id=&quot;33-alita-battle-angel--&quot;&gt;33: &lt;em&gt;Alita: Battle Angel&lt;/em&gt; | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/U3D2vmWD88w&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;You can catch glimpses of what the filmmakers were going for, and it’s an interesting vision. Christoph Waltz has an anime-sized scythe.&lt;/p&gt;
+
+&lt;h3 id=&quot;32-scary-stories-to-tell-in-the-dark--&quot;&gt;32: &lt;em&gt;Scary Stories to Tell in the Dark&lt;/em&gt; | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/A11tX8iu0zQ&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Never saw the original, but this was a fun little horror romp. Not doing anything groundbreaking, but executes well enough.&lt;/p&gt;
+
+&lt;h3 id=&quot;31-spider-man-far-from-home--&quot;&gt;31: &lt;em&gt;Spider-Man: Far From Home&lt;/em&gt; | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/Nt9L1jCKGnE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I remain unconvinced Tom Holland is a good Spider-Man (stop throwing things!). &lt;em&gt;Far From Home&lt;/em&gt; did, however, give us a great Crazy Gyllenhaal&lt;sup&gt;TM&lt;/sup&gt; performance.&lt;/p&gt;
+
+&lt;h3 id=&quot;30-doctor-sleep-directors-cut--&quot;&gt;30: &lt;em&gt;Doctor Sleep&lt;/em&gt; (director’s cut) | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/2msJTFvhkU4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;In the original &lt;em&gt;Shining&lt;/em&gt;, the twin girls in the hallway and withered crone in the bathtub were not literal characters as much as manifestations of the madness of the Overlook Hotel.&lt;/p&gt;
+
+&lt;p&gt;In &lt;em&gt;Doctor Sleep&lt;/em&gt;, Flanagan turns them into… I don’t know, scary Pokemon? It sucks to see the  crone do the bathtub scare again and realize, oh, she’s a specific spirit with a specific schtick. It shrinks the unknowable terror of the original into a collection of kooky monsters.&lt;/p&gt;
+
+&lt;h3 id=&quot;29-shazam--&quot;&gt;29: &lt;em&gt;Shazam!&lt;/em&gt; | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/-oD7B7oiBtw&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;A fine movie. Liked the ending.&lt;/p&gt;
+
+&lt;h3 id=&quot;28-ford-v-ferrari--&quot;&gt;28: &lt;em&gt;Ford v. Ferrari&lt;/em&gt; | ★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/zyYgDtY2AMY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;God, does this movie make cars and racing look sexy. Good story about the struggle of the artist to create something beautiful within flawed, capitalistic systems.&lt;/p&gt;
+
+&lt;h2 id=&quot;the-good-ones&quot;&gt;The good ones&lt;/h2&gt;
+
+&lt;h3 id=&quot;27-fast-color--&quot;&gt;27: &lt;em&gt;Fast Color&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/tySUZIiXObc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;No one saw this movie, which sucks, because &lt;em&gt;Fast Color&lt;/em&gt; is a breath of fresh air. It follows three generations of black women with powers that may save their dying world. The depictions of their gifts are &lt;em&gt;gorgeous&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;26-gemini-man--&quot;&gt;26: &lt;em&gt;Gemini Man&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/AbyJignbSj0&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I caught a screening of this in 120 FPS high framerate and it was fascinating. Ang Lee is doing work no one else in film will even try, and I love it.&lt;/p&gt;
+
+&lt;h3 id=&quot;25-escape-room--&quot;&gt;25: &lt;em&gt;Escape Room&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/6dSKUoV0SNI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;A shockingly good little PG-13 horror movie. Good performances, good script - this one will surprise you.&lt;/p&gt;
+
+&lt;h3 id=&quot;24-detective-pikachu---and-a-half&quot;&gt;24: &lt;em&gt;Detective Pikachu&lt;/em&gt; | ★★ and a half&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/1roy4o4tqQM&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;MY CLUES!!!&lt;/p&gt;
+
+&lt;h3 id=&quot;23-knock-down-the-house--&quot;&gt;23: &lt;em&gt;Knock Down the House&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/_wGZc8ZjFY4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;A touching portrait of people fighting their hardest to change the system. Alexandria Ocasio-Cortez shows why she is one of the Democratic Party’s brightest rising stars. I would happily watch ten hours of her tearing into Joe Crowley’s terrible mail ads.&lt;/p&gt;
+
+&lt;h3 id=&quot;22-cold-pursuit--&quot;&gt;22: &lt;em&gt;Cold Pursuit&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/0phuNQQ_gHI&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Liam Neeson left the public eye this year (&lt;a href=&quot;https://www.vanityfair.com/hollywood/2019/03/liam-neeson-revenge-story-apology&quot;&gt;maybe for good reason&lt;/a&gt;), but he left us a nice gift before he went. &lt;em&gt;Cold Pursuit&lt;/em&gt; is a surprisingly funny satire of a typical revenge film. It’s got a weird energy I liked.&lt;/p&gt;
+
+&lt;h3 id=&quot;21-hustlers--&quot;&gt;21: &lt;em&gt;Hustlers&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/lDv-TwjQ_o4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Downright criminal the Oscars ignored this fun romp. Jennifer Lopez delivers a flashy yet skilled performance, backed up by a rock-solid script and good supporting turn from Constance Wu.&lt;/p&gt;
+
+&lt;h3 id=&quot;20-1917--&quot;&gt;20: &lt;em&gt;1917&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/Jlqa_GCFfqE&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Seeing this in IMAX was overwhelming. It’s a chase movie with the imagination, skill and budget to realize an entire war as the backdrop.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.latimes.com/entertainment-arts/movies/story/2020-01-16/roger-deakins-sam-mendes-1917-key-scene&quot;&gt;One segment&lt;/a&gt; in particular has stuck with me. The main character is running through a bombed-out French city at night. The fires and occasional explosions cast lights across the ruins that make the whole thing look like an alien landscape. Striking, great stuff.&lt;/p&gt;
+
+&lt;h3 id=&quot;19-ad-astra--&quot;&gt;19: &lt;em&gt;Ad Astra&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/P6AaSMfXHbA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;More like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Dad Astra&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Sad Astra&lt;/em&gt;&lt;/li&gt;
+  &lt;li&gt;That’s all I got&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Brad Pitt has never looked more weathered than he does in &lt;em&gt;Ad Astra&lt;/em&gt;, a beautiful movie about men who have to launch themselves to the furthest reaches of the solar system to explore their feelings.&lt;/p&gt;
+
+&lt;h3 id=&quot;18-once-upon-a-time-in-hollywood--&quot;&gt;18: &lt;em&gt;Once Upon a Time in Hollywood&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/ELeMaP8EPAA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Tarantino’s turned in another love letter to classic Hollywood and the films of his youth. &lt;em&gt;OUTH&lt;/em&gt; is obsessed with fame (specifically movie stardom), and what people will do to get or keep it. It’s also an interesting examination of artists getting old and being baffled by the culture changing around them - something Quentin Tarantino might relate to.&lt;/p&gt;
+
+&lt;h3 id=&quot;17-little-women--&quot;&gt;17: &lt;em&gt;Little Women&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/AST2-4db4ic&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Greta Gerwig is an extremely smart person. She has made a &lt;em&gt;Little Women&lt;/em&gt; adaptation that is simultaneously totally faithful and a critical reevaluation of its source material. Intercutting Jo’s publisher telling her audiences want heroines to marry with Jo confessing her love to Professor Handsome McGenericGuy is ingenious.&lt;/p&gt;
+
+&lt;h3 id=&quot;16-happy-death-day-2u--&quot;&gt;16: &lt;em&gt;Happy Death Day 2U&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/AST2-4db4ic&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I feel like I am the only person who remembers that 2019 gave us a sequel to &lt;em&gt;Happy Death Day&lt;/em&gt;. The first is a wonderful and funny horror movie that should be mandatory viewing for the country. &lt;em&gt;2U&lt;/em&gt; amps up the action by taking things in a more emotionally grounded direction. Even if it apparently worked for no one else, I liked it.&lt;/p&gt;
+
+&lt;h3 id=&quot;15-ready-or-not--&quot;&gt;15: &lt;em&gt;Ready Or Not&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/39BnfiTeTac&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;em&gt;Ready Or Not&lt;/em&gt; is a horror movie about crazy in-laws hunting a newlywed in a lethal game of hide-and-seek. It’s as goofy as it is entertaining.&lt;/p&gt;
+
+&lt;h3 id=&quot;14-portrait-of-a-lady-on-fire--&quot;&gt;14: &lt;em&gt;Portrait of a Lady on Fire&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/R-fQPTwma9o&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;A beautiful, aching, heartfelt love letter. &lt;em&gt;Portrait&lt;/em&gt; is so good that even though you know their love can’t end any way other than disaster, you still want to experience every second of it.&lt;/p&gt;
+
+&lt;h3 id=&quot;13-the-lighthouse--&quot;&gt;13: &lt;em&gt;The Lighthouse&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/Hyag7lR8CPA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Director Robert Eggers returns after &lt;em&gt;The Witch&lt;/em&gt;, an excellent period horror flick. &lt;em&gt;The Lighthouse&lt;/em&gt; is less horror and more… seagulls. It is undeniably the movie Eggers intended to make.&lt;/p&gt;
+
+&lt;h3 id=&quot;12-the-irishman--&quot;&gt;12: &lt;em&gt;The Irishman&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/WHXxVmeGQUc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I don’t know why people thought Martin Scorsese’s send-off to the gangster movie was too long. It was the story of a life, told well. Three and a half hours and I was never bored.&lt;/p&gt;
+
+&lt;h2 id=&quot;great-effin-movies&quot;&gt;Great effin’ movies&lt;/h2&gt;
+
+&lt;h3 id=&quot;11-always-be-my-maybe--&quot;&gt;11: &lt;em&gt;Always Be My Maybe&lt;/em&gt; | ★★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/iHBcWHY9lN4&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Putting &lt;em&gt;Always Be My Maybe&lt;/em&gt; this high is not a conventional decision, but I have to stand up for this thing. While the plot’s a bit of a mess, Ali Wong and Randall Park give two charming performances in this charming-ass movie. Plus, it features an all-time great Keanu Reeves cameo.&lt;/p&gt;
+
+&lt;h3 id=&quot;10-avengers-endgame--&quot;&gt;10: &lt;em&gt;Avengers: Endgame&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/TcMBFSGVi1c&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;This is it. The culmination of a decade-plus of Marvel movies. The ending is pure payoff and I loved every second. There has never and may never be anything like this again.&lt;/p&gt;
+
+&lt;h3 id=&quot;9-glass--&quot;&gt;9: &lt;em&gt;Glass&lt;/em&gt; | ★★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/95ghQs5AmNk&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Most people hated M. Night Shymalan’s &lt;em&gt;Glass&lt;/em&gt; when it came out in January. Most people are wrong.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Glass&lt;/em&gt; is a hyper-ambitious movie, attempting to (and mostly succeeding at) melding genres and offering a meta-commentary on superhero movies. It understands why we like comic books, and it has a few things to say about that.&lt;/p&gt;
+
+&lt;h3 id=&quot;8-booksmart--&quot;&gt;8: &lt;em&gt;Booksmart&lt;/em&gt; | ★★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/Uhd3lo_IWJc&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Look, &lt;em&gt;Booksmart&lt;/em&gt; rules. That’s all there is to this. Olivia Wilde’s directorial debut is smart and funny as hell. Two nerdy teenage girls realize they’ve missed the fun of their high school years and embark on One Crazy Night.&lt;/p&gt;
+
+&lt;p&gt;The writing is stellar, the jokes all land and the performances are hilarious.&lt;/p&gt;
+
+&lt;p&gt;What makes &lt;em&gt;Booksmart&lt;/em&gt; special, though, is its humanistic worldview. No one in this movie is a bad guy or a two-dimensional caricature. Everybody is somebody, and it makes the movie so much better.&lt;/p&gt;
+
+&lt;h3 id=&quot;7-john-wick-chapter-3--parabellum--&quot;&gt;7: &lt;em&gt;John Wick: Chapter 3 — Parabellum&lt;/em&gt; | ★★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/pU8-7BX9uxs&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;John Wick takes on a group of assassins in a hallway full of knives and the results left my jaw on the floor.&lt;/p&gt;
+
+&lt;p&gt;Bad action movies use quick cuts and jumping around to hide fake or bad stunts. &lt;em&gt;John Wick 3&lt;/em&gt; luxuriates in long, unbroken shots of Keanu Reeves and Halle Berry. It doesn’t want to hide a moment of its best-in-Hollywood fight choreography.&lt;/p&gt;
+
+&lt;h3 id=&quot;6-high-life--&quot;&gt;6: &lt;em&gt;High Life&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/AtOwfo1ypOw&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;French arthouse director Claire Denis has given us the dingiest sci-fi film since &lt;em&gt;Alien&lt;/em&gt;. &lt;em&gt;High Life&lt;/em&gt; loves dust, decay, grime and death. It revels in how things fall apart, and how just a few times they maybe sort of come back together.&lt;/p&gt;
+
+&lt;p&gt;It also has André 3000 giving a great naturalistic performance. Put this man in more movies!&lt;/p&gt;
+
+&lt;h3 id=&quot;5-knives-out--&quot;&gt;5: &lt;em&gt;Knives Out&lt;/em&gt; | ★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/xi-1NchUqMA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The best trick director Rian Johnson (&lt;em&gt;The Last Jedi&lt;/em&gt;) pulls in &lt;em&gt;Knives Out&lt;/em&gt; is inverting murder-mystery tropes. These kinds of movies—&lt;em&gt;Clue&lt;/em&gt;, &lt;em&gt;And Then There Were None&lt;/em&gt;—usually focus on ensemble cast of variously villainous white characters, any of which could have done it, yadda yadda.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Knives Out&lt;/em&gt; shines because it places Marta Cabrera (Ana de Armas), the Latina nurse, at the center. You wouldn’t know it from the trailers, but this is her heroic journey.&lt;/p&gt;
+
+&lt;p&gt;It’s a full-course acting role for Armas, who delivers everything asked of her. In a movie about horrible people, she provides vital emotional grounding.&lt;/p&gt;
+
+&lt;h2 id=&quot;amazing-must-see-films&quot;&gt;Amazing, must-see films&lt;/h2&gt;
+
+&lt;h3 id=&quot;4-a-beautiful-day-in-the-neighborhood--&quot;&gt;4: &lt;em&gt;A Beautiful Day in the Neighborhood&lt;/em&gt; | ★★★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/-VLEPhfEN2M&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;I refrained from watching &lt;em&gt;A Beautiful Day in the Neighborhood&lt;/em&gt; for a while because a Mr. Rogers biopic sounded maudlin and trite. Little did I realize director Marielle Heller uses &lt;em&gt;Neighborhood&lt;/em&gt; as a vehicle for an aggressive, raw and emotional story about trauma and toxic masculinity.&lt;/p&gt;
+
+&lt;p&gt;Heller hammers home a point stunning in its simplicity: If you don’t process your feelings, they will eat you alive.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-the-farewell--&quot;&gt;3: &lt;em&gt;The Farewell&lt;/em&gt; | ★★★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/RofpAjqwMa8&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;&lt;em&gt;The Farewell&lt;/em&gt; is a stupendous film.&lt;/p&gt;
+
+&lt;p&gt;Awkwafina stars as Billi, a Chinese-American woman who goes to China to see her Nai Nai (grandmother). The family has not told Nai Nai she (Nai Nai) has terminal cancer. The wedding they’re allegedly gathering for is actually everyone’s last chance to say goodbye.&lt;/p&gt;
+
+&lt;p&gt;Like many great movies, &lt;em&gt;The Farewell&lt;/em&gt; at once specific and universal. Director Lulu Wang mines her own past to deliver a beautifully human story about the lies we tell each other to be happy.&lt;/p&gt;
+
+&lt;p&gt;That sounds serious, but &lt;em&gt;The Farewell&lt;/em&gt; is funny! It bursts with lightness, bouncing you from joke to joke. And then it’s too late.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The Farewell&lt;/em&gt; a wonderful movie, and I am thankful to have seen it.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-parasite--&quot;&gt;2: &lt;em&gt;Parasite&lt;/em&gt; | ★★★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/5xH0HfJHsaY&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;Months later, I cannot believe &lt;em&gt;Parasite&lt;/em&gt; won Best Picture, Director and Original Screenplay. &lt;em&gt;Parasite&lt;/em&gt; is the kind the Oscars always skip over.&lt;/p&gt;
+
+&lt;p&gt;It’s a South Korean thriller that shouldn’t be explained, only experienced. Go in blind and enjoy this &lt;em&gt;wild&lt;/em&gt; ride. Enjoy the scene with the housekeeper - you’ll know the one. That’s one of the most unnerving, memorable moments I’ve ever seen in a thriller.&lt;/p&gt;
+
+&lt;p&gt;It is simply the best movie that came out in 2019. Not my favorite, but the best.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-us--&quot;&gt;1: &lt;em&gt;Us&lt;/em&gt; | ★★★★★&lt;/h3&gt;
+
+&lt;iframe width=&quot;560&quot; height=&quot;315&quot; src=&quot;https://www.youtube-nocookie.com/embed/hNCmb-4oXJA&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;The film critic David Rees &lt;a href=&quot;https://soundcloud.com/griffin-and-david-present/spirited-away-with-david-rees&quot;&gt;once said&lt;/a&gt;, “All great movies are either puzzles or dreams.”&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Us&lt;/em&gt; is the latter, a creation of pure nightmare logic. Nothing makes literal sense and everything makes perfect sense.&lt;/p&gt;
+
+&lt;p&gt;While I did not love &lt;em&gt;Us&lt;/em&gt; at first, Jordan Peele’s masterpiece offers endless depths on rewatch. Do the Tethered represent America’s underclass? Is Peele saying true equality is possible only by violent uprising? Is Adelaide the only competent upper-worlder because she understands everything she has could be taken away in a moment? Is Peele saying this country has forgotten the violence used to gain its wealth? Is he saying wealth inherently requires violence?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Us&lt;/em&gt; cannot be solved, but god, I love trying.&lt;/p&gt;
+
+&lt;p&gt;Everyone in the film, especially Winston Duke, turns in a great performance. Madison Curry’s scary face is one of the most disconcerting things I’ve ever seen.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/static/img/madison-curry.jpg&quot; alt=&quot;Madison Curry, but scary&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The highlight, of course, is Lupita Nyong’o. Her dual performances as Adelaide and Red are both phenomenal. She embodies Adelaide’s fears in a naturalistic turn as a “normal” person… and also gives a big, terrifying performance as Red.&lt;/p&gt;
+
+&lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/SbKXI3yxofOOK7theN&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameborder=&quot;0&quot; class=&quot;giphy-embed&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;p&gt;Everything in &lt;em&gt;Us&lt;/em&gt; is intentional. It’s not an accident that the family’s white friends are slightly richer than them, or the Native American theme of the hall of mirrors is covered up in present day, or that Adelaide literally has trouble speaking sometimes.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Us&lt;/em&gt; confirms Jordan Peele as a master of the art form. It is a satisfying, ambitious work from a director who’s only growing more confident and competent.&lt;/p&gt;
+
+&lt;p&gt;If you see &lt;em&gt;Us&lt;/em&gt;, see it twice. If you’ve already seen it, watch it again.&lt;/p&gt;
+
+&lt;p&gt;We are so damn lucky to be alive while Jordan Peele makes movies.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Using Angular reactive forms to build a huge feature for ServiceCore</title>
+   <link href="http://localhost:4000/2020/05/16/angular-reactive-forms-rental-rates-servicecore.html"/>
+   <updated>2020-05-16T00:00:00-06:00</updated>
+   <id>http://localhost:4000/2020/05/16/angular-reactive-forms-rental-rates-servicecore</id>
+   <content type="html">&lt;p&gt;At ServiceCore, we’re thrilled to ship &lt;a href=&quot;https://support.servicecore.com/hc/en-us/articles/360041523411-Add-Rental-Rates&quot;&gt;rental rates&lt;/a&gt;! This was a months-long project that required massive collaboration between our product owner, frontend and backend engineers and QA.&lt;/p&gt;
+
+&lt;p&gt;I wanted to highlight some work I did to make one small part of the system - the rental rate input table.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+
+&lt;p&gt;Without going too deep into the portable toilet business, here’s what we were trying to build.&lt;/p&gt;
+
+&lt;p&gt;ServiceCore users are waste disposal businesses. A construction company might rent 10 portable toilets per day for the next three months from a user. That user would create a rental in ServiceCore to track their inventory and billing for that construction site.&lt;/p&gt;
+
+&lt;p&gt;ServiceCore users can create preset line item charges, like maintenance fees. Those line item charges can attach to a rental.&lt;/p&gt;
+
+&lt;p&gt;The problem that necessitated rental rates was these line item charges were static. There was no way to give a customer a special deal for a specific rental, like $0 service charges. You’d have to override the line item on every single invoice created for that rental. Not fun for big companies doing thousands of invoices a day!&lt;/p&gt;
+
+&lt;p&gt;With rental rates, users would be able to select any service charge and set special per-rental pricing, notes and taxable status.&lt;/p&gt;
+
+&lt;p&gt;In order to set rental rates, however, we needed a rate input table.&lt;/p&gt;
+
+&lt;h2 id=&quot;product-requirements&quot;&gt;Product requirements&lt;/h2&gt;
+
+&lt;p&gt;The rental rate input table should display every product attached to a rental. Beneath each product is a dropdown of line item charges that could be attached to a product. Selectinga charge would add it to a table, with the default price, name, description and taxable status editable.&lt;/p&gt;
+
+&lt;p&gt;So: rentals have products, products have line item charges, and rental rates are special per-rental instances of a line item charge. Make sense?&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/nbEwLVI.png&quot; alt=&quot;Overall view of the rate input table&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The last two options in the line item dropdown should be “Add Service” and “Assign Service”, which I’ll explain later.&lt;/p&gt;
+
+&lt;h2 id=&quot;implementation&quot;&gt;Implementation&lt;/h2&gt;
+
+&lt;h3 id=&quot;goals&quot;&gt;Goals&lt;/h3&gt;
+
+&lt;p&gt;As every frontend developer knows, forms are complicated. This form had a lot of moving parts, so the code could turn ugly quickly.&lt;/p&gt;
+
+&lt;p&gt;I built this with three things in mind:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;It needed to work well for rental rates&lt;/li&gt;
+  &lt;li&gt;It needed to be reusable in case future features need a similar UI&lt;/li&gt;
+  &lt;li&gt;It needed to keep the logic under control with reactive programming&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Angular’s &lt;a href=&quot;https://angular.io/guide/reactive-forms&quot;&gt;Reactive Forms&lt;/a&gt; made the logic more functional and less imperative. Reactive Forms store form state in FormControls, which can be grouped inside FormGroups or FormArrays. FormGroups, FormArrays and FormControls all have first-class RxJS APIs. You can subscribe to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;valueChanges&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;statusChanges&lt;/code&gt; (valid/invalid) on any of them and &lt;em&gt;react&lt;/em&gt; to form state updates.&lt;/p&gt;
+
+&lt;h3 id=&quot;overview&quot;&gt;Overview&lt;/h3&gt;
+
+&lt;p&gt;When the user opens the rental rate form, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rental-rate-form&lt;/code&gt; container component loads the rental’s data. It passes any existing rental rates into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rate-input-table&lt;/code&gt;, the actual UI. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rental-rate-form&lt;/code&gt; also &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PATCH&lt;/code&gt;es the rental with its new rates on submit.&lt;/p&gt;
+
+&lt;p&gt;This component accomplishes goal #2, keeping the rental logic separate from the UI.&lt;/p&gt;
+
+&lt;p&gt;On instantiation, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rate-input-table&lt;/code&gt; transforms input rates into table rows using pure static functions. This keeps the instantiation logic testable.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rate-input-table&lt;/code&gt; stores its data as nested &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AbstractControl&lt;/code&gt;s (the base class of FormArray, FormGroup and FormControl). The structure goes: Products is a FormArray. Each product is a FormGroup that contains product name, quantity, and a FormArray of rates. Each rate is FormGroup that contains FormControls for line item name, description, price, and taxable status.&lt;/p&gt;
+
+&lt;p&gt;Each product FormGroup also has a FormControl for the line item dropdown. Any value change there reactively adds the selected rate to the table.&lt;/p&gt;
+
+&lt;h3 id=&quot;wins&quot;&gt;Wins&lt;/h3&gt;
+
+&lt;h4 id=&quot;rxjs-&quot;&gt;RxJS ♥&lt;/h4&gt;
+
+&lt;p&gt;Reactive programming is a blast. It contained the logic for each part of the form as subscriptions to that AbstractControl’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;valueChanges&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;It also simplified working with asynchronous requests. For example, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pipe&lt;/code&gt; from add service dropdown takes the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;valueChange&lt;/code&gt; (the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id&lt;/code&gt; of the selected service) and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flatMap&lt;/code&gt;s it into a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GET&lt;/code&gt; req for the full service. The full service is transformed into a new FormControl, which is pushed into the FormArray for the given product.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      // add new service on select
+      const newServiceSub = rateSelectChanges.pipe(
+        filter(serviceIdOrOption =&amp;gt; {
+          // service ids come through as '11'
+          const serviceId = parseInt(serviceIdOrOption, 10);
+          return !Number.isNaN(serviceId);
+        }),
+        map((serviceId: string) =&amp;gt; parseInt(serviceId, 10)),
+        flatMap(serviceId =&amp;gt; this._serviceService.getService(serviceId))
+      ).subscribe((service: Service) =&amp;gt; {
+          this.addServiceToRates(service, entityFormGroup.get('rates') as FormArray);
+          entityFormGroup.get('rateSelect').patchValue('choose');
+        }, error =&amp;gt; this._userAlertService.error(error, true)
+      );
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;No &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;async&lt;/code&gt;/&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;await&lt;/code&gt; weirdness, no race conditions, no confusing logic. Just functional transformations. First-class RxJS support is far and away the best part of Angular. Just look at when we have to do something &lt;em&gt;really&lt;/em&gt; complicated:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      const assignServiceSub = rateSelectChanges.pipe(
+        filter(selectVal =&amp;gt; selectVal === 'assign'),
+        flatMap(() =&amp;gt; {
+          const serviceIdsToExcludeFromAssociateDialog: number[] = entityFormGroup.value.entity.services
+            .map(service =&amp;gt; service.id);
+          return this._serviceDialogService.openAssociateServiceDialog(
+            entityFormGroup.value.entity.id,
+            serviceIdsToExcludeFromAssociateDialog
+          );
+        }),
+        filter((updatedServices) =&amp;gt; !!(updatedServices)),
+        map((allServices: Service[]) =&amp;gt; {
+          const previousServiceIds: number[] = entityFormGroup.value.entity?.services?.map(service =&amp;gt; service.id) || [];
+          return allServices.filter(serviceFromApi =&amp;gt; !previousServiceIds.includes(serviceFromApi.id));
+        }),
+        map(newServices =&amp;gt; newServices.map(newService =&amp;gt; this._serviceService.getService(newService.id))),
+        flatMap(newServiceRequests =&amp;gt; forkJoin(newServiceRequests))
+      ).subscribe(fullNewServices =&amp;gt; {
+        if (fullNewServices?.length) {
+          fullNewServices.forEach(service =&amp;gt; {
+            this.addServiceToRates(service, entityFormGroup.get('rates') as FormArray);
+          });
+        }
+        this.reloadFullServices(entityFormGroup as FormGroup);
+        entityFormGroup.get('rateSelect').patchValue('choose');
+      });
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This block grabs services (line item charges) already associated to a product and passing them to a dialog. The dialog filters out these previously associated services. Then, if the user selects any services to add to a product in the dialog, these are passed out of the dialog’s Observable and transformed into requests for the full data for each newly associated service. When we’ve received all responses, the services are added to the table as rates. RxJS makes this kind of async work &lt;em&gt;easy&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;functional-programming-&quot;&gt;Functional programming ♥&lt;/h4&gt;
+
+&lt;p&gt;The last code win was creating the select service dropdown. It transformed an array of services into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;options&amp;gt;&lt;/code&gt;, sorting by billing period on the service.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/sJthlnx.png&quot; alt=&quot;The add service dropdown for ServiceCore rental rates&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;All that logic used a pure static class function, making it a breeze to unit test.&lt;/p&gt;
+
+&lt;h3 id=&quot;losses&quot;&gt;Losses&lt;/h3&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rate-input-table&lt;/code&gt; almost shipped without bugs, but for a hack I did.&lt;/p&gt;
+
+&lt;p&gt;Our product owner wanted the users to be able to select the same service from the dropdown multiple times consecutively. But, choosing the same option twice in a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;select&amp;gt;&lt;/code&gt; does not fire the standard &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;change&lt;/code&gt; event.&lt;/p&gt;
+
+&lt;p&gt;Instead of reading the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;select&amp;gt;&lt;/code&gt; value on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;change&lt;/code&gt;, I tried reading it after the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;click&lt;/code&gt; event. On every browser I tested, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;click&lt;/code&gt; fired when you chose an option in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;select&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;However, Chrome on macOS fired the click event on open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;select&amp;gt;&lt;/code&gt;. Thus, you’d have to choose an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;option&amp;gt;&lt;/code&gt;, then re-open the dropdown to add a service.&lt;/p&gt;
+
+&lt;p&gt;When we got the bug report, I fixed it so on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;change&lt;/code&gt; we would grab the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;select&amp;gt;&lt;/code&gt; value, add a service, and reset the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;select&amp;gt;&lt;/code&gt; value.&lt;/p&gt;
+
+&lt;p&gt;I tested this on Chrome for macOS and talked to our devops guy about fixing our company process to avoid mistakes like this. We shipped the fix the same day the bug was reported. No complaints since.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusions&quot;&gt;Conclusions&lt;/h2&gt;
+
+&lt;p&gt;If the drop-down bug hadn’t happened the UI would have been perfect. Normally ServiceCore sticks to standard HTML elements and doesn’t go too far off the road. It’s a lesson that if we want to try stuff like that, we need a better process.&lt;/p&gt;
+
+&lt;p&gt;Still, the rental rates input UI has worked like a charm. The real test will be down the road if we try to reuse this work :).&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>4K 4 U support</title>
+   <link href="http://localhost:4000/4k4u,/app,/dev/2020/02/19/4k-4-u-support.html"/>
+   <updated>2020-02-19T00:00:00-07:00</updated>
+   <id>http://localhost:4000/4k4u,/app,/dev/2020/02/19/4k-4-u-support</id>
+   <content type="html">&lt;p&gt;Please read this FAQ if you need help. To report a bug or get help with something not listed here, please email me at the address provided at the bottom of th epage.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;h3 id=&quot;faq&quot;&gt;FAQ&lt;/h3&gt;
+
+&lt;h4 id=&quot;can-you-update-or-change-the-information-for-a-movie-listing&quot;&gt;Can you update or change the information for a movie listing?&lt;/h4&gt;
+
+&lt;p&gt;No. 4K 4 U pulls data from the &lt;a href=&quot;1&quot;&gt;community-maintained spreadsheet&lt;/a&gt;. Get in contact with the spreadsheet’s maintainers for that.&lt;/p&gt;
+
+&lt;h3 id=&quot;contact-me&quot;&gt;Contact me&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;mailto:4k4uapp@gmail.com&quot;&gt;Send me an email&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Bruce Willis movie name generator</title>
+   <link href="http://localhost:4000/2019/01/21/bruce-willis-movie-title-name-generator.html"/>
+   <updated>2019-01-21T00:00:00-07:00</updated>
+   <id>http://localhost:4000/2019/01/21/bruce-willis-movie-title-name-generator</id>
+   <content type="html">&lt;p&gt;As pointed out in Blank Check’s &lt;a href=&quot;1&quot;&gt;&lt;em&gt;Glass&lt;/em&gt; episode&lt;/a&gt;, Bruce Willis has been in a lot of weird and bad movies. Meet his quote and he’ll appear in your knockoff of a knockoff of &lt;em&gt;Taken&lt;/em&gt;.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;Click the button below to generate Bruce’s next movie!&lt;/p&gt;
+
+&lt;div id=&quot;willis-title-box&quot;&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;button id=&quot;willis-button&quot;&gt;Generate title&lt;/button&gt;&lt;/p&gt;
+
+&lt;p&gt;I threw this together in an evening for fun, but I am trying to change careers into web development. If you know someone in the Denver area hiring entry-level full-stack developers with Angular 6 experience, my contact info is in the footer. Definitely get in touch if you also listen to Blank Check!
+&lt;script src=&quot;/static/js/willis.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
+&lt;style&gt;
+#willis-title-box {
+  margin: 1rem auto;
+  min-height: 3rem;
+  height: auto;
+  border: 1px solid black;
+  border-radius: 0.25rem;
+  font-size: 2.5rem;
+  color: #871010;
+  text-align: center;
+}
+#willis-button {
+  display: block;
+  margin: 0 auto;
+  height: 2.5rem;
+  font-size: 2rem;
+}
+&lt;/style&gt;
+
+</content>
+ </entry>
+ 
+ <entry>
+   <title>Every new movie I saw in 2018, ranked</title>
+   <link href="http://localhost:4000/2019/01/09/favorite-movies-2018.html"/>
+   <updated>2019-01-09T00:00:00-07:00</updated>
+   <id>http://localhost:4000/2019/01/09/favorite-movies-2018</id>
+   <content type="html">&lt;p&gt;I love movies and I love making lists, especially end-of-year rankings.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;This, the year of MoviePass, was a good year for that. RIP MoviePass and shine on, you &lt;a href=&quot;https://www.phillyvoice.com/moviepass-changes-subscription-membership-policy-fewer-movies-show-times-crazy-rich-asians/&quot;&gt;crazy gem&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This year, I saw 57 movies released (mostly) in 2018. Some of these premiered in 2017 at film festivals and opened wide this year, so consider “2018” a rough guide.&lt;/p&gt;
+
+&lt;p&gt;There are also a few movies left that I 100 percent will see and may land high on this list, including &lt;em&gt;Creed II&lt;/em&gt; and &lt;em&gt;Destroyer&lt;/em&gt; Just pencil those in for later.&lt;/p&gt;
+
+&lt;p&gt;I’m also aware of the takes within this list, takes that range from “moderately warm” to “fire hazard.” All I can say is it’s my list and I hope each entry explains my reasoning.&lt;/p&gt;
+
+&lt;p&gt;The list, from worst to best:&lt;/p&gt;
+
+&lt;h3 id=&quot;57-gotti&quot;&gt;57: &lt;em&gt;Gotti&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;John Travolta stars as your uncle doing a gangster impersonation. Dumb, bad, boring. Atrocious lighting.&lt;/p&gt;
+
+&lt;h3 id=&quot;56-the-sisters-brothers&quot;&gt;56: &lt;em&gt;The Sisters Brothers&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;I never walk out of movies, but I did here. Just dull, not to my taste and too long.&lt;/p&gt;
+
+&lt;h3 id=&quot;55-pacific-rim-uprising&quot;&gt;55: &lt;em&gt;Pacific Rim: Uprising&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;John Boyega didn’t deserve this.&lt;/p&gt;
+
+&lt;h3 id=&quot;54-the-happytime-murders&quot;&gt;54. &lt;em&gt;The Happytime Murders&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;You know what the worst part about this allegedly R-rated puppet sex movie? It’s not even that shocking.&lt;/p&gt;
+
+&lt;h3 id=&quot;53-the-death-of-stalin&quot;&gt;53. &lt;em&gt;The Death of Stalin&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;I get what they were going for but the sense of humor felt like nails on a chalkboard.&lt;/p&gt;
+
+&lt;h3 id=&quot;52-ready-player-one&quot;&gt;52. &lt;em&gt;Ready Player One&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;This movie is about flattering the audience for knowing pop culture trivia. It has nothing deeper to say about fandom or anything, really.&lt;/p&gt;
+
+&lt;h3 id=&quot;51-solo-a-star-wars-story&quot;&gt;51. &lt;em&gt;Solo: A Star Wars Story&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Solo&lt;/em&gt; should not exist. It is provides backstory that makes the universe worse. It wastes Thandie Newton. It was so bad it &lt;a href=&quot;https://www.forbes.com/sites/danidiplacido/2018/06/20/looks-like-solo-killed-the-star-wars-spin-offs/&quot;&gt;killed the Star Wars spin-offs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Alden Ehrenreich did alright at taking Han Solo from Harrison Ford, but the rest of the movie is awful.&lt;/p&gt;
+
+&lt;h3 id=&quot;50-jurassic-world-fallen-kingdom&quot;&gt;50. &lt;em&gt;Jurassic World: Fallen Kingdom&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Fallen Kingdom&lt;/em&gt; is not good. Chris Pratt and Bryce Dallas Howard, two actors I like, are useless in a weird plot involving clones (???). Still, the film has one good idea that it half-executes in its latter half: It turns into a slasher movie where the killer is a dinosaur. More of that, please.&lt;/p&gt;
+
+&lt;h3 id=&quot;49-mom-and-dad&quot;&gt;49. &lt;em&gt;Mom and Dad&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Not enough crazy Cage, but good to see Lance Henrikson again.&lt;/p&gt;
+
+&lt;h3 id=&quot;48-tomb-raider&quot;&gt;48. &lt;em&gt;Tomb Raider&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;It’s alright. Tonally discordant, forgettable.&lt;/p&gt;
+
+&lt;h3 id=&quot;47-mortal-engines&quot;&gt;47. &lt;em&gt;Mortal Engines&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;No one saw this, no one will. The opening scene where London (the city) chases down another city was cool, but otherwise a wasted opportunity.&lt;/p&gt;
+
+&lt;h3 id=&quot;46-skyscraper&quot;&gt;46. &lt;em&gt;Skyscraper&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;This was okay! The Rock is charismatic, even if the rest of the movie doesn’t have much going on. Some cool scenes. Would watch on an airplane (but not a tall building).&lt;/p&gt;
+
+&lt;h3 id=&quot;45-jinn&quot;&gt;45. &lt;em&gt;Jinn&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Jinn&lt;/em&gt; is an affectionate portrait of black Muslim life, led by the always compelling Simone Missick. The writing felt clunky and reminded me of the straight-to-DVD religious movies my super Christian relatives gave me as a kid (e.x. &lt;a href=&quot;https://en.wikipedia.org/wiki/Facing_the_Giants&quot;&gt;&lt;em&gt;Facing the Giants&lt;/em&gt;&lt;/a&gt;).&lt;/p&gt;
+
+&lt;h3 id=&quot;44-the-commuter&quot;&gt;44. &lt;em&gt;The Commuter&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;A decent Liam Neeson action movie. Too predictable, and too long.&lt;/p&gt;
+
+&lt;h3 id=&quot;43-hearts-beat-loud&quot;&gt;43. &lt;em&gt;Hearts Beat Loud&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;The most remarkable thing about &lt;em&gt;Hearts Beat Loud&lt;/em&gt; is how straight down the middle it is. The acting’s good, but not amazing. I liked one of the songs, but not the rest. The story is nice, but not deeply explored. It is okay.&lt;/p&gt;
+
+&lt;h3 id=&quot;42-a-wrinkle-in-time&quot;&gt;42. &lt;em&gt;A Wrinkle in Time&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Ava DuVernay attempted to film an unfilmable book. The result is… interesting. When &lt;em&gt;A Wrinkle in Time Works&lt;/em&gt;, it’s doing things no other movie does. When it doesn’t, it’s still so weird you can’t help but watch.&lt;/p&gt;
+
+&lt;h3 id=&quot;41-wont-you-be-my-neighbor&quot;&gt;41. &lt;em&gt;Won’t You Be My Neighbor?&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Mr. Rogers was a nice man who lived a nice life. This documentary is nice.&lt;/p&gt;
+
+&lt;h3 id=&quot;40-overlord&quot;&gt;40. &lt;em&gt;Overlord&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Decent but forgettable. The monster design is uninspiring. The shot of Mathilde Ollivier shooting a flamethrower is cool.&lt;/p&gt;
+
+&lt;h3 id=&quot;39-oceans-8&quot;&gt;39. &lt;em&gt;Ocean’s 8&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;The cast is good, the outfits pop, but there’s something missing from this.&lt;/p&gt;
+
+&lt;h3 id=&quot;38-avengers-infinity-war&quot;&gt;38. &lt;em&gt;Avengers: Infinity War&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;An overstuffed, overlong epic. In a year where we got a lot of extremely good comic book movies, the best thing I can say about &lt;em&gt;Infinity War&lt;/em&gt; was it was a way to spend a two and a half hours.&lt;/p&gt;
+
+&lt;h3 id=&quot;37-leave-no-trace&quot;&gt;37. &lt;em&gt;Leave No Trace&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Leave No Trace&lt;/em&gt; is an interesting piece about a veteran father trying to raise his daughter in the woods. It understands its characters and their relationship well.&lt;/p&gt;
+
+&lt;h3 id=&quot;36-unsane&quot;&gt;36. &lt;em&gt;Unsane&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Claire Foy impresses in this decent suspense thriller. It was shot on an iPhone, which is cool.&lt;/p&gt;
+
+&lt;h3 id=&quot;35-game-night&quot;&gt;35. &lt;em&gt;Game Night&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Game Night&lt;/em&gt; is a nice little comedy. Didn’t go where I expected and had plenty of good jokes.&lt;/p&gt;
+
+&lt;h3 id=&quot;34-cam&quot;&gt;34. &lt;em&gt;Cam&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Cam&lt;/em&gt; is a horror movie written by a former camgirl. The parts where it leans on her experience, it shines. The actual horror movie parts are not at all compelling. Should have been a drama about being a camgirl, honestly.&lt;/p&gt;
+
+&lt;h3 id=&quot;33-a-simple-favor&quot;&gt;33. &lt;em&gt;A Simple Favor&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;If I tried to describe the plot of &lt;em&gt;A Simple Favor&lt;/em&gt;, I’d sound like I was having a stroke. This movie is Paul Feig showing us what would happen if a character from a Paul Feig comedy (&lt;em&gt;Bridesmaids&lt;/em&gt;, &lt;em&gt;Ghostbusters&lt;/em&gt;) were caught up in a murder mystery. It is bananas.&lt;/p&gt;
+
+&lt;h3 id=&quot;32-the-rider&quot;&gt;32. &lt;em&gt;The Rider&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;A moody, interesting film about chasing your dreams and learning to let go. The lead, Brady Jandreau, is a natural despite not being an actor. Credit to &lt;a href=&quot;https://variety.com/2018/film/news/the-eternals-marvel-chloe-zhao-the-rider-director-1202952543/&quot;&gt;future Marvel director&lt;/a&gt; Chloe Zhao for spotting this guy. Whatever it is, he’s got it.&lt;/p&gt;
+
+&lt;h3 id=&quot;31-mandy&quot;&gt;31. &lt;em&gt;Mandy&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Mandy&lt;/em&gt; is a metal album cover come to life. It pulses, glows, threatens, confuses. It is the second-most visually gorgeous movie I saw in 2018. That said, there wasn’t as much thematic depth as I would have liked and the kills were just okay.&lt;/p&gt;
+
+&lt;h3 id=&quot;30-paddington-2&quot;&gt;30. &lt;em&gt;Paddington 2&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;I get why these movies have such a dedicated fanbase. &lt;em&gt;Paddington 2&lt;/em&gt; is committed to being a nice movie about nice people and a nice bear. Good kids movie with lots of genuinely clever jokes.&lt;/p&gt;
+
+&lt;h3 id=&quot;29-ralph-wrecks-the-internet&quot;&gt;29. &lt;em&gt;Ralph Wrecks the Internet&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;God, do these filmmakers understand how to make me sad. Hope you don’t have anyone you wish lived closer to you.&lt;/p&gt;
+
+&lt;p&gt;Most of &lt;em&gt;Ralph&lt;/em&gt; is decent. Ralph and Vanellope’s relationship is pure. The princess scene is ingenious.&lt;/p&gt;
+
+&lt;h3 id=&quot;28-sorry-to-bother-you&quot;&gt;28. &lt;em&gt;Sorry To Bother You&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Sorry To Bother You&lt;/em&gt; had me sold with the seconds-long shot of [CENSORED].&lt;/p&gt;
+
+&lt;p&gt;There are so many good actors doing great work in here: Lakeith Stanfield, Tessa Thompson, Steven Yeung, Armie Hammer. I can’t wait to see what Boots Riley does next.&lt;/p&gt;
+
+&lt;h3 id=&quot;27-deadpool-2&quot;&gt;27. &lt;em&gt;Deadpool 2&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;The highest compliment I can give &lt;em&gt;Deadpool 2&lt;/em&gt; is for me, the joke didn’t get old. With Disney buying Fox, we may never see Deadpool again, but at least he got a good sendoff.&lt;/p&gt;
+
+&lt;h3 id=&quot;26-eighth-grade&quot;&gt;26. &lt;em&gt;Eighth Grade&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Eighth Grade&lt;/em&gt; sees comedian Bo Burnham use his considerable talents in the director’s chair. He accurately portrays the loneliness and terror of existing at objectively the worst period of your life.&lt;/p&gt;
+
+&lt;p&gt;Credit to Bo for creating one of the only movies to really understand social media, phones and our relationships with each.&lt;/p&gt;
+
+&lt;h3 id=&quot;25-hotel-trannsylvania-3&quot;&gt;25. &lt;em&gt;Hotel Trannsylvania 3&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;It’s a fun kids movie! Selena Gomez is still weirdly good, Adam Sandler’s vampire schtick is still charming, it all still works.&lt;/p&gt;
+
+&lt;h3 id=&quot;24-minding-the-gap&quot;&gt;24. &lt;em&gt;Minding the Gap&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;A fascinating, intensely personal documentary about the director and his childhood friends. Their broken childhoods and lives spent in poverty in small-town America do not make easy viewing, but they are powerful.&lt;/p&gt;
+
+&lt;h3 id=&quot;23-the-ritual&quot;&gt;23. &lt;em&gt;The Ritual&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Good little horror movie about a group of hikers finding something unexpected in the woods. Beautiful shots of Sweden and an extremely cool design aesthetic. Would have liked it to rely less on sudden loud noises.&lt;/p&gt;
+
+&lt;h3 id=&quot;22-ant-man-and-the-wasp&quot;&gt;22. &lt;em&gt;Ant-Man and the Wasp&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;What sets &lt;em&gt;Ant-Man and the Wasp&lt;/em&gt; above regular comic book movies is its clarity of purpose. It is a fun, funny action comedy. Plus Evangeline Lilly ditched that ridiculous wig.&lt;/p&gt;
+
+&lt;h3 id=&quot;21-the-favourite&quot;&gt;21. &lt;em&gt;The Favourite&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Yorgos Lanthimos turns in another great comedy. &lt;em&gt;The Favourite&lt;/em&gt; is fascinated by power, relationships, love, sex, money, decadence and how people try to convert any one of those things into another.&lt;/p&gt;
+
+&lt;p&gt;It is anchored by three tremendous lead actress performances. Rachel Weisz, Olivia Colman and Emma Stone are all excellent.&lt;/p&gt;
+
+&lt;h3 id=&quot;20-upgrade&quot;&gt;20. &lt;em&gt;Upgrade&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;This is what I want out of my B-movies: good premise, acceptable acting and great kills. The ending surprised me and felt thematically coherent. &lt;em&gt;Upgrade&lt;/em&gt; knows what it is and executes well, pun intended.&lt;/p&gt;
+
+&lt;h3 id=&quot;19-support-the-girls&quot;&gt;19. &lt;em&gt;Support the Girls&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;A wonderful comedy with a bonanza of great actresses. Regina Hall, Haley Lu Richardson and Shayna McHayle are fantastic in this heartfelt comedy about a Hooters-esque sports bar. I would recommend this to anyone.&lt;/p&gt;
+
+&lt;h3 id=&quot;18-first-reformed&quot;&gt;18. &lt;em&gt;First Reformed&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;A prickly, cold, distant movie about a prickly, cold, distant man. I don’t love this movie, but I’ve grown to appreciate it. There’s a wild, feral quality hiding under its fancy title cards and ostensibly staid premise.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;First Reformed&lt;/em&gt; has a lot on its mind and by the end, you’ll understand why.&lt;/p&gt;
+
+&lt;h3 id=&quot;17-aquaman&quot;&gt;17. &lt;em&gt;Aquaman&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Aquaman&lt;/em&gt; felt thrilling to watch. I cannot believe any studio, let alone Warner Bros, let this movie be made.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Aquaman&lt;/em&gt; is a deeply nerdy movie that takes its titular hero seriously. It has discussions about Atlantean politics and an octopus playing the drums. It has a villain who unironically calls himself “the Oceanmaster.” It has Nicole Kidman hork down a goldfish five minutes into the movie.&lt;/p&gt;
+
+&lt;p&gt;It kinda rules.&lt;/p&gt;
+
+&lt;h3 id=&quot;16-incredibles-2&quot;&gt;16. &lt;em&gt;Incredibles 2&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;The first &lt;em&gt;Incredibles&lt;/em&gt; is a perfect movie. A sequel was always going to be hard. &lt;em&gt;Incredibles 2&lt;/em&gt; doesn’t fly that high, but it’s still good.&lt;/p&gt;
+
+&lt;h3 id=&quot;15-crazy-rich-asians&quot;&gt;15. &lt;em&gt;Crazy Rich Asians&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;I don’t generally like romantic comedies, but this one got me. It has living cinema legend Michelle Yeoh (&lt;em&gt;Crouching Tiger, Hidden Dragon&lt;/em&gt;)! It’s funny, touching and historic. It deserves every bit of its success as the &lt;a href=&quot;https://www.huffingtonpost.com/entry/crazy-rich-asians-box-office-rom-com-record_us_5ba932afe4b0375f8f9f8ce4&quot;&gt;highest-grossing romcom of the decade&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;14-blockers&quot;&gt;14. &lt;em&gt;Blockers&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Blockers&lt;/em&gt; was my favorite comedy of the year. Three parents freak out about their daughters’ prom-night pact to lose their virginities and hijinks ensue. I appreciated that at least one of the parents is along for the ride to stop the other two and thinks teenagers having sex is not a big deal.&lt;/p&gt;
+
+&lt;p&gt;Funny, profane and NSFW as hell.&lt;/p&gt;
+
+&lt;h3 id=&quot;13-mission-impossible--fallout&quot;&gt;13. &lt;em&gt;Mission: Impossible — Fallout&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Christopher McQuarrie is getting great at this. &lt;em&gt;Fallout&lt;/em&gt; is some of the best action filmmaking you’ll see this year. The stunts, the setpieces, all of it is an absolute blast. You don’t need to know anything about the &lt;em&gt;Mission: Impossible&lt;/em&gt; movies (though seeing &lt;em&gt;Rogue Nation&lt;/em&gt; would help) to appreciate some good chase sequences.&lt;/p&gt;
+
+&lt;h3 id=&quot;12-a-star-is-born&quot;&gt;12. &lt;em&gt;A Star Is Born&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;I didn’t love &lt;em&gt;A Star Is Born&lt;/em&gt;, but I did like it a lot. The scene where Bradley Cooper and Lady Gaga buy frozen peas for her hand is good.&lt;/p&gt;
+
+&lt;p&gt;Oh, and the soundtrack is incredible; I may or may not still listen to “Shallow.” No comment.&lt;/p&gt;
+
+&lt;h3 id=&quot;11-venom&quot;&gt;11. &lt;em&gt;Venom&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Venom&lt;/em&gt; is an objectively bad movie: bad CGI, bad fight scenes, bad writing for Michelle Williams, a bad villain, bad editing and a bad plot.&lt;/p&gt;
+
+&lt;p&gt;However.&lt;/p&gt;
+
+&lt;p&gt;Tom Hardy’s performance is so deranged it crosses into unintentional comedy. It’s like nothing I’ve ever seen before. &lt;em&gt;Venom&lt;/em&gt; is this high because I had a blast watching it. This is a trash masterpiece and one of the best worst movies of the year.&lt;/p&gt;
+
+&lt;h3 id=&quot;10-mary-and-the-witchs-flower&quot;&gt;10. &lt;em&gt;Mary and the Witch’s Flower&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;It’s something about the soundtrack. From the first action scene, I was spellbound by &lt;em&gt;Mary and the Witch’s Flower&lt;/em&gt;. It comes across as utterly sincere. &lt;em&gt;Mary&lt;/em&gt; is a wonderful tribute to Studio Ghibli.&lt;/p&gt;
+
+&lt;h3 id=&quot;9-a-quiet-place&quot;&gt;9. &lt;em&gt;A Quiet Place&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;A Quiet Place&lt;/em&gt; is one of the year’s best surprises. On the surface, it’s an enjoyable thrill ride built around a killer concept (the monsters hear everything!).&lt;/p&gt;
+
+&lt;p&gt;Going deeper, &lt;em&gt;A Quiet Place&lt;/em&gt; is about the terror of being a parent. How can you raise kids when there are dangers you cannot stop? What does it mean to have children in a dangerous world? What would you sacrifice for them?&lt;/p&gt;
+
+&lt;p&gt;I would recommend this to people who don’t normally watch horror movies. Lots of tension, minimal gore.&lt;/p&gt;
+
+&lt;h3 id=&quot;8-if-beale-street-could-talk&quot;&gt;8. &lt;em&gt;If Beale Street Could Talk&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;If Beale Street Could Talk&lt;/em&gt; is a story only Barry Jenkins could adapt this well. Every frame thrums with emotion. Jenkins, a filmmaker of boundless empathy, cares so much for these characters.&lt;/p&gt;
+
+&lt;p&gt;The whole cast is excellent. Regina King is correctly getting awards attention for her part. Brian Tyree Henry nails his one scene.&lt;/p&gt;
+
+&lt;p&gt;It’s Kiki Layne, however, who sings. She is a supernova. She is so good, it almost hurts the movie by making Stephan James (who is doing excellent acting!) look worse by comparison.&lt;/p&gt;
+
+&lt;p&gt;Kiki Layne effortlessly channels her character’s emotions. She is fantastic and charismatic and a born star. My absolute favorite performance from an actress in 2018.&lt;/p&gt;
+
+&lt;h3 id=&quot;7-spider-man-into-the-spider-verse&quot;&gt;7. &lt;em&gt;Spider-Man: Into the Spider-Verse&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;The last decade has not been kind to Peter Parker. When your high-water mark is &lt;em&gt;Spider-Man: Homecoming&lt;/em&gt;, a mediocre and forgettable movie, you are not in a good place.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Into the Spider-Verse&lt;/em&gt; leaves all that behind. It is the best expression of comics on the big screen I’ve ever seen. &lt;em&gt;Spider-Verse&lt;/em&gt; is gorgeous, pioneering a new blend of 2D and 3D animation. It demands to be seen in 3D.&lt;/p&gt;
+
+&lt;p&gt;Underneath that is a workmanlike, charming plot about Afro-Latino teenager Miles Morales. Comic fans will recognize him as an alternate version of Spider-Man. Marvel has made quite a few alternate Spider-People in spin-off comics, and it brings them together in this dimension-hopping adventure.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Into the Spider-Verse&lt;/em&gt; is a gorgeous action-comedy I would recommend to anyone.&lt;/p&gt;
+
+&lt;h3 id=&quot;6-widows&quot;&gt;6. &lt;em&gt;Widows&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Widows&lt;/em&gt; is the best movie this year that no one saw. It’s a taut thriller with an great cast. Viola Davis is a juggernaut and crushes every moment she’s on screen. Daniel Kaluuya’s gym scene is director Steve McQueen showing off his unimpeachable talent.&lt;/p&gt;
+
+&lt;p&gt;McQueen is on the ball from the opening shot to the weird ending. &lt;em&gt;Widows&lt;/em&gt; kicks ass.&lt;/p&gt;
+
+&lt;h3 id=&quot;5-blackkklansman&quot;&gt;5. &lt;em&gt;BlackKklansman&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;At this point, director Spike Lee is so good at what he does it almost feels like cheating. &lt;em&gt;BlackKklansman&lt;/em&gt; is nothing but Lee making offbeat, brilliant artistic choices.&lt;/p&gt;
+
+&lt;p&gt;Take, for example, the scene where protagonist Ron Stallworth goes undercover in a meeting of the local black student union. A worse movie would cut away after he went inside. Instead, Lee shows the speech from civil rights leader Kwame Ture (born Stokely Carmichael). He overlays the faces of the listeners as Ture speaks, showing how his words move the crowd. Lee does ingenious things like this the whole movie.&lt;/p&gt;
+
+&lt;p&gt;I won’t spoil the ending, but let’s just say Lee picked this story in 2018 for a reason. The stinger left my theater in stunned silence.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;BlackKklansman&lt;/em&gt; is an unsubtle movie, but these are unsubtle times.&lt;/p&gt;
+
+&lt;h3 id=&quot;4-revenge&quot;&gt;4. &lt;em&gt;Revenge&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;The rape-revenge genre (&lt;a href=&quot;https://en.wikipedia.org/wiki/Rape_and_revenge_film&quot;&gt;Wikipedia&lt;/a&gt;) is not the most reputable. These are three-step horror flicks:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;A woman is sexually assaulted&lt;/li&gt;
+  &lt;li&gt;She (or her loved ones, if she is killed) recover and regroup&lt;/li&gt;
+  &lt;li&gt;The woman or her loved ones kill the attackers&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;As you might guess, unscrupulous filmmakers have used this structure in gross ways.&lt;/p&gt;
+
+&lt;p&gt;This is why &lt;em&gt;Revenge&lt;/em&gt; is so fascinating. It was written and directed by Coralie Fargeat, a  female French director so new to the international stage she does not even have a Wikipedia page. She rewrote the genre tropes and made a feminist rape-revenge thriller.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Revenge&lt;/em&gt; follows a young woman who is assaulted and left for dead. Fargeat does not even show the assault. What she does show, however, is the protagonist Jen going on a rampage against those who wronged her.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Revenge&lt;/em&gt; is masterful filmmaking. I saw the opening 20 minutes compared to a Michael Bay movie, which feels right. Her action scenes go places I never imagined, to degrees I was not expecting.&lt;/p&gt;
+
+&lt;p&gt;This film is not an easy recommendation. Seriously: content warning for sexual violence, blood, gore, drowning… it a hard watch.&lt;/p&gt;
+
+&lt;p&gt;However, if you’re up for it, &lt;em&gt;Revenge&lt;/em&gt; is a fantastic horror movie.&lt;/p&gt;
+
+&lt;h3 id=&quot;3-black-panther&quot;&gt;3. &lt;em&gt;Black Panther&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Black Panther&lt;/em&gt; is a stunning masterpiece. It is a landmark work of &lt;a href=&quot;https://www.huffingtonpost.com/entry/opinion-broadnax-afrofuturism-black-panther_us_5a85f1b9e4b004fc31903b95&quot;&gt;Afrofuturism&lt;/a&gt;. It’s easily the best Marvel movie ever made. It stands as the best Ryan Cooler (&lt;em&gt;Creed&lt;/em&gt;, &lt;em&gt;Fruitvale Station&lt;/em&gt;) movie, which is saying something.&lt;/p&gt;
+
+&lt;p&gt;Start with the world. Coogler and his crew have built one of the best-realized fictional places in cinema. Wakanda is gorgeous. The costumes are amazing. The customs, the traditions, the chants, Forest Whittaker as the high priest - all of it works.&lt;/p&gt;
+
+&lt;p&gt;There is not one bad performance in the ensemble cast. Danai Gurira as Okoye, the badass general? Excellent. Daniel Kaluuya as W’Kabi, the shifty-eyed friend? Great as ever. Letitia Wright as the breakout star Shuri? So charming.&lt;/p&gt;
+
+&lt;p&gt;The real star of the show, of course, is Michael B. Jordan. It was brilliant to put his off-the-charts charisma behind Killmonger, a villain whose appeal is that he’s half right.&lt;/p&gt;
+
+&lt;p&gt;Jordan deserved an Oscar for &lt;em&gt;Creed&lt;/em&gt;, and he sure as hell deserves one now. Play the clip of him angrily wiping away a tear on loop forever.&lt;/p&gt;
+
+&lt;p&gt;And for god’s sake, give Coogler a Best Director nomination. The ending of &lt;em&gt;Black Panther&lt;/em&gt;, where Wakanda uses its resources to &lt;em&gt;open a community center in Oakland&lt;/em&gt;, is so smart and so good on a textual and metatextual level.&lt;/p&gt;
+
+&lt;h3 id=&quot;2-hereditary&quot;&gt;2. &lt;em&gt;Hereditary&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;Hereditary&lt;/em&gt; is one of the best horror movies I’ve ever seen. It’s as simple as that. Director Ari Aster, in his &lt;em&gt;first movie&lt;/em&gt;, has turned in something terrifying.&lt;/p&gt;
+
+&lt;p&gt;There’s a limit to what you can say about &lt;em&gt;Hereditary&lt;/em&gt; without giving away its tricks. The film circles and taunts the viewer. It’s not until the final reveal that you realize how bad things really are.&lt;/p&gt;
+
+&lt;p&gt;Like its subject matter, &lt;em&gt;Hereditary&lt;/em&gt; is densely packed with secrets. It’s slippery, elusive. Just when you think you know what’s going on, the movie comes to a head and veers in a new direction. It gets better every time I see it.&lt;/p&gt;
+
+&lt;p&gt;This may be the year of &lt;em&gt;The Favourite&lt;/em&gt; with regards to female acting Oscars, but I hope Toni Collette is not forgotten. She, Alex Wolff and Milly Shapiro turn in spellbinding performances.&lt;/p&gt;
+
+&lt;p&gt;It’s hard to talk about &lt;em&gt;Hereditary&lt;/em&gt;. Just watch it. You’ll see.&lt;/p&gt;
+
+&lt;h3 id=&quot;1-annihilation&quot;&gt;1. &lt;em&gt;Annihilation&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;To understand &lt;em&gt;Annihilation&lt;/em&gt;, you have to understand what it did to the people involved. It tanked the film career of director Alex Garland. It caused Paramount to write it off by selling the international distribution rights to Netflix.&lt;/p&gt;
+
+&lt;p&gt;Hollywood spit out the movie because Garland refused to change its ending. That ending, simply put, is the best 20 minutes I spent in a theater this year.&lt;/p&gt;
+
+&lt;p&gt;The ending of &lt;em&gt;Annihilation&lt;/em&gt; is pure and overwhelming. The heady sci-fi thriller discards all gestures toward literalism. The movie goes full &lt;em&gt;2001&lt;/em&gt; and overwhelms you with a wall of light and sound. It is weird and crazy and challenging and I loved every second.&lt;/p&gt;
+
+&lt;p&gt;Before that, Natalie Portman plays a scientist on an expedition into a zone where unexplained things are happening. Things quickly go wrong and the team finds themselves tested in ways they could never imagine.&lt;/p&gt;
+
+&lt;p&gt;Everyone here is at the top of their game. Jennifer Jason Leigh turns in another dynamite performance. Garland is still one of the few people in Hollywood who understands Oscar Isaac can be as scary as he is charming. The effects are creepy.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Annihilation&lt;/em&gt; is a top-tier science fiction film. It holds an emotional core about the ways we hurt ourselves. It has an ending that demands to be seen. It is far and away my favorite movie of 2018.&lt;/p&gt;
+</content>
+ </entry>
+ 
+
+</feed>
