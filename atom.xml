@@ -4,13 +4,24 @@
  <title>Kyle Nazario</title>
  <link href="https://www.kylenazario.com/atom.xml" rel="self"/>
  <link href="https://www.kylenazario.com/"/>
- <updated>2020-10-14T13:59:38-06:00</updated>
+ <updated>2020-10-14T14:49:26-06:00</updated>
  <id>https://www.kylenazario.com</id>
  <author>
    <name>Kyle Nazario</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Cinematic Widgets privacy policy</title>
+   <link href="https://www.kylenazario.com/2020/10/14/cinematic-widgets-privacy-policy/"/>
+   <updated>2020-10-14T00:00:00-06:00</updated>
+   <id>https://www.kylenazario.com/2020/10/14/cinematic-widgets-privacy-policy</id>
+   <content type="html">&lt;p&gt;Cinematic Widgets uses an anonymous ID in RevenueCat to check if you have bought any in-app purchases. This ID can be reset by uninstalling and reinstalling the app, then restoring your in-app purchases. This ID is not used for any other purpose.&lt;/p&gt;
+
+&lt;p&gt;Cinematic Widgets collects no other information about users.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Compose for Substack press kit</title>
