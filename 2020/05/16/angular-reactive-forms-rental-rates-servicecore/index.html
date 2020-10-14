@@ -12,7 +12,7 @@
       Using Angular reactive forms to build a huge feature for ServiceCore
     
   </title>
-  <meta name="description" content="Frontend web developer">
+  <meta name="description" content="Frontend web developer creating awesome projects for the web and mobile.">
 
   <link href="http://gmpg.org/xfn/11" rel="profile">
 
@@ -43,7 +43,7 @@
           Kyle Nazario
         </a>
       </h1>
-      <p class="lead">Frontend web developer</p>
+      <p class="lead">Frontend web developer creating awesome projects for the web and mobile.</p>
     </div>
 
     <nav class="sidebar-nav">
@@ -121,17 +121,17 @@
   <li>It needed to keep the logic under control with reactive programming</li>
 </ol>
 
-<p>Angular’s <a href="https://angular.io/guide/reactive-forms">Reactive Forms</a> made the logic more functional and less imperative. Reactive Forms store form state in FormControls, which can be grouped inside FormGroups or FormArrays. FormGroups, FormArrays and FormControls all have first-class RxJS APIs. You can subscribe to <code class="language-plaintext highlighter-rouge">valueChanges</code> or <code class="language-plaintext highlighter-rouge">statusChanges</code> (valid/invalid) on any of them and <em>react</em> to form state updates.</p>
+<p>Angular’s <a href="https://angular.io/guide/reactive-forms">Reactive Forms</a> made the logic more functional and less imperative. Reactive Forms store form state in FormControls, which can be grouped inside FormGroups or FormArrays. FormGroups, FormArrays and FormControls all have first-class RxJS APIs. You can subscribe to <code>valueChanges</code> or <code>statusChanges</code> (valid/invalid) on any of them and <em>react</em> to form state updates.</p>
 
 <h3 id="overview">Overview</h3>
 
-<p>When the user opens the rental rate form, the <code class="language-plaintext highlighter-rouge">rental-rate-form</code> container component loads the rental’s data. It passes any existing rental rates into the <code class="language-plaintext highlighter-rouge">rate-input-table</code>, the actual UI. The <code class="language-plaintext highlighter-rouge">rental-rate-form</code> also <code class="language-plaintext highlighter-rouge">PATCH</code>es the rental with its new rates on submit.</p>
+<p>When the user opens the rental rate form, the <code>rental-rate-form</code> container component loads the rental’s data. It passes any existing rental rates into the <code>rate-input-table</code>, the actual UI. The <code>rental-rate-form</code> also <code>PATCH</code>es the rental with its new rates on submit.</p>
 
 <p>This component accomplishes goal #2, keeping the rental logic separate from the UI.</p>
 
-<p>On instantiation, the <code class="language-plaintext highlighter-rouge">rate-input-table</code> transforms input rates into table rows using pure static functions. This keeps the instantiation logic testable.</p>
+<p>On instantiation, the <code>rate-input-table</code> transforms input rates into table rows using pure static functions. This keeps the instantiation logic testable.</p>
 
-<p>The <code class="language-plaintext highlighter-rouge">rate-input-table</code> stores its data as nested <code class="language-plaintext highlighter-rouge">AbstractControl</code>s (the base class of FormArray, FormGroup and FormControl). The structure goes: Products is a FormArray. Each product is a FormGroup that contains product name, quantity, and a FormArray of rates. Each rate is FormGroup that contains FormControls for line item name, description, price, and taxable status.</p>
+<p>The <code>rate-input-table</code> stores its data as nested <code>AbstractControl</code>s (the base class of FormArray, FormGroup and FormControl). The structure goes: Products is a FormArray. Each product is a FormGroup that contains product name, quantity, and a FormArray of rates. Each rate is FormGroup that contains FormControls for line item name, description, price, and taxable status.</p>
 
 <p>Each product FormGroup also has a FormControl for the line item dropdown. Any value change there reactively adds the selected rate to the table.</p>
 
@@ -139,11 +139,11 @@
 
 <h4 id="rxjs-">RxJS ♥</h4>
 
-<p>Reactive programming is a blast. It contained the logic for each part of the form as subscriptions to that AbstractControl’s <code class="language-plaintext highlighter-rouge">valueChanges</code>.</p>
+<p>Reactive programming is a blast. It contained the logic for each part of the form as subscriptions to that AbstractControl’s <code>valueChanges</code>.</p>
 
-<p>It also simplified working with asynchronous requests. For example, the <code class="language-plaintext highlighter-rouge">pipe</code> from add service dropdown takes the <code class="language-plaintext highlighter-rouge">valueChange</code> (the <code class="language-plaintext highlighter-rouge">id</code> of the selected service) and <code class="language-plaintext highlighter-rouge">flatMap</code>s it into a <code class="language-plaintext highlighter-rouge">GET</code> req for the full service. The full service is transformed into a new FormControl, which is pushed into the FormArray for the given product.</p>
+<p>It also simplified working with asynchronous requests. For example, the <code>pipe</code> from add service dropdown takes the <code>valueChange</code> (the <code>id</code> of the selected service) and <code>flatMap</code>s it into a <code>GET</code> req for the full service. The full service is transformed into a new FormControl, which is pushed into the FormArray for the given product.</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      // add new service on select
+<pre><code>      // add new service on select
       const newServiceSub = rateSelectChanges.pipe(
         filter(serviceIdOrOption =&gt; {
           // service ids come through as '11'
@@ -158,11 +158,11 @@
         }, error =&gt; this._userAlertService.error(error, true)
       );
 
-</code></pre></div></div>
+</code></pre>
 
-<p>No <code class="language-plaintext highlighter-rouge">async</code>/<code class="language-plaintext highlighter-rouge">await</code> weirdness, no race conditions, no confusing logic. Just functional transformations. First-class RxJS support is far and away the best part of Angular. Just look at when we have to do something <em>really</em> complicated:</p>
+<p>No <code>async</code>/<code>await</code> weirdness, no race conditions, no confusing logic. Just functional transformations. First-class RxJS support is far and away the best part of Angular. Just look at when we have to do something <em>really</em> complicated:</p>
 
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>      const assignServiceSub = rateSelectChanges.pipe(
+<pre><code>      const assignServiceSub = rateSelectChanges.pipe(
         filter(selectVal =&gt; selectVal === 'assign'),
         flatMap(() =&gt; {
           const serviceIdsToExcludeFromAssociateDialog: number[] = entityFormGroup.value.entity.services
@@ -189,13 +189,13 @@
         entityFormGroup.get('rateSelect').patchValue('choose');
       });
 
-</code></pre></div></div>
+</code></pre>
 
 <p>This block grabs services (line item charges) already associated to a product and passing them to a dialog. The dialog filters out these previously associated services. Then, if the user selects any services to add to a product in the dialog, these are passed out of the dialog’s Observable and transformed into requests for the full data for each newly associated service. When we’ve received all responses, the services are added to the table as rates. RxJS makes this kind of async work <em>easy</em>.</p>
 
 <h4 id="functional-programming-">Functional programming ♥</h4>
 
-<p>The last code win was creating the select service dropdown. It transformed an array of services into <code class="language-plaintext highlighter-rouge">&lt;options&gt;</code>, sorting by billing period on the service.</p>
+<p>The last code win was creating the select service dropdown. It transformed an array of services into <code>&lt;options&gt;</code>, sorting by billing period on the service.</p>
 
 <p><img src="http://i.imgur.com/sJthlnx.png" alt="The add service dropdown for ServiceCore rental rates" /></p>
 
@@ -203,15 +203,15 @@
 
 <h3 id="losses">Losses</h3>
 
-<p><code class="language-plaintext highlighter-rouge">rate-input-table</code> almost shipped without bugs, but for a hack I did.</p>
+<p><code>rate-input-table</code> almost shipped without bugs, but for a hack I did.</p>
 
-<p>Our product owner wanted the users to be able to select the same service from the dropdown multiple times consecutively. But, choosing the same option twice in a <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code> does not fire the standard <code class="language-plaintext highlighter-rouge">change</code> event.</p>
+<p>Our product owner wanted the users to be able to select the same service from the dropdown multiple times consecutively. But, choosing the same option twice in a <code>&lt;select&gt;</code> does not fire the standard <code>change</code> event.</p>
 
-<p>Instead of reading the <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code> value on <code class="language-plaintext highlighter-rouge">change</code>, I tried reading it after the <code class="language-plaintext highlighter-rouge">click</code> event. On every browser I tested, <code class="language-plaintext highlighter-rouge">click</code> fired when you chose an option in the <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code>.</p>
+<p>Instead of reading the <code>&lt;select&gt;</code> value on <code>change</code>, I tried reading it after the <code>click</code> event. On every browser I tested, <code>click</code> fired when you chose an option in the <code>&lt;select&gt;</code>.</p>
 
-<p>However, Chrome on macOS fired the click event on open <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code>. Thus, you’d have to choose an <code class="language-plaintext highlighter-rouge">&lt;option&gt;</code>, then re-open the dropdown to add a service.</p>
+<p>However, Chrome on macOS fired the click event on open <code>&lt;select&gt;</code>. Thus, you’d have to choose an <code>&lt;option&gt;</code>, then re-open the dropdown to add a service.</p>
 
-<p>When we got the bug report, I fixed it so on <code class="language-plaintext highlighter-rouge">change</code> we would grab the <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code> value, add a service, and reset the <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code> value.</p>
+<p>When we got the bug report, I fixed it so on <code>change</code> we would grab the <code>&lt;select&gt;</code> value, add a service, and reset the <code>&lt;select&gt;</code> value.</p>
 
 <p>I tested this on Chrome for macOS and talked to our devops guy about fixing our company process to avoid mistakes like this. We shipped the fix the same day the bug was reported. No complaints since.</p>
 
@@ -229,7 +229,7 @@
     
       <li>
         <h3>
-          <a href="/2020/09/26/compose-for-substack-press-kit.html">
+          <a href="/2020/09/26/compose-for-substack-press-kit/">
             Compose for Substack press kit
             <small>26 Sep 2020</small>
           </a>
@@ -238,7 +238,7 @@
     
       <li>
         <h3>
-          <a href="/2020/08/29/compose-substack-privary-policy.html">
+          <a href="/2020/08/29/compose-substack-privary-policy/">
             Compose for Substack privacy policy
             <small>29 Aug 2020</small>
           </a>
@@ -247,8 +247,8 @@
     
       <li>
         <h3>
-          <a href="/2020/08/29/compose-for-substack-help.html">
-            Get help with Compose for Substack
+          <a href="/2020/08/29/compose-for-substack-help/">
+            Get help with a Nazario Software LLC app
             <small>29 Aug 2020</small>
           </a>
         </h3>

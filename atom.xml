@@ -2,21 +2,21 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
  <title>Kyle Nazario</title>
- <link href="http://localhost:4000/atom.xml" rel="self"/>
- <link href="http://localhost:4000/"/>
- <updated>2020-10-01T09:28:23-06:00</updated>
- <id>http://localhost:4000</id>
+ <link href="https://www.kylenazario.com/atom.xml" rel="self"/>
+ <link href="https://www.kylenazario.com/"/>
+ <updated>2020-10-14T13:59:38-06:00</updated>
+ <id>https://www.kylenazario.com</id>
  <author>
-   <name></name>
+   <name>Kyle Nazario</name>
    <email></email>
  </author>
 
  
  <entry>
    <title>Compose for Substack press kit</title>
-   <link href="http://localhost:4000/2020/09/26/compose-for-substack-press-kit.html"/>
+   <link href="https://www.kylenazario.com/2020/09/26/compose-for-substack-press-kit/"/>
    <updated>2020-09-26T00:00:00-06:00</updated>
-   <id>http://localhost:4000/2020/09/26/compose-for-substack-press-kit</id>
+   <id>https://www.kylenazario.com/2020/09/26/compose-for-substack-press-kit</id>
    <content type="html">&lt;p&gt;Please contact me using the links at the bottom of the page if you need any additional information to write about Compose, I am happy to help.&lt;/p&gt;
 
 &lt;!--break--&gt;
@@ -72,9 +72,9 @@
  
  <entry>
    <title>Compose for Substack privacy policy</title>
-   <link href="http://localhost:4000/2020/08/29/compose-substack-privary-policy.html"/>
+   <link href="https://www.kylenazario.com/2020/08/29/compose-substack-privary-policy/"/>
    <updated>2020-08-29T00:00:00-06:00</updated>
-   <id>http://localhost:4000/2020/08/29/compose-substack-privary-policy</id>
+   <id>https://www.kylenazario.com/2020/08/29/compose-substack-privary-policy</id>
    <content type="html">&lt;p&gt;Compose for Substack uses the bare minimum of your Substack information in order to function.&lt;/p&gt;
 
 &lt;!--break--&gt;
@@ -119,11 +119,11 @@
  </entry>
  
  <entry>
-   <title>Get help with Compose for Substack</title>
-   <link href="http://localhost:4000/2020/08/29/compose-for-substack-help.html"/>
+   <title>Get help with a Nazario Software LLC app</title>
+   <link href="https://www.kylenazario.com/2020/08/29/compose-for-substack-help/"/>
    <updated>2020-08-29T00:00:00-06:00</updated>
-   <id>http://localhost:4000/2020/08/29/compose-for-substack-help</id>
-   <content type="html">&lt;p&gt;Need help with something with the Compose app? &lt;a href=&quot;mailto:composeforsubstack@gmail.com&quot;&gt;Shoot me an email&lt;/a&gt;.&lt;/p&gt;
+   <id>https://www.kylenazario.com/2020/08/29/compose-for-substack-help</id>
+   <content type="html">&lt;p&gt;Need help with something related to one of our apps? &lt;a href=&quot;mailto:composeforsubstack@gmail.com&quot;&gt;Shoot me an email&lt;/a&gt;.&lt;/p&gt;
 
 &lt;!--break--&gt;
 
@@ -133,9 +133,9 @@
  
  <entry>
    <title>System76 Gazelle mini-review</title>
-   <link href="http://localhost:4000/2020/06/26/system76-gazelle-mini-review.html"/>
+   <link href="https://www.kylenazario.com/2020/06/26/system76-gazelle-mini-review/"/>
    <updated>2020-06-26T00:00:00-06:00</updated>
-   <id>http://localhost:4000/2020/06/26/system76-gazelle-mini-review</id>
+   <id>https://www.kylenazario.com/2020/06/26/system76-gazelle-mini-review</id>
    <content type="html">&lt;p&gt;Work bought us &lt;a href=&quot;https://system76.com/laptops/gazelle&quot;&gt;System76 Gazelle laptops&lt;/a&gt;. Quick thoughts after six months of use, coming from a MacBook Pro user:&lt;/p&gt;
 
 &lt;!--break--&gt;
@@ -185,9 +185,9 @@
  
  <entry>
    <title>Big Sur helps macOS draft behind iOS</title>
-   <link href="http://localhost:4000/2020/06/23/apple-ios-macos-big-sur-catalyst-drafting.html"/>
+   <link href="https://www.kylenazario.com/2020/06/23/apple-ios-macos-big-sur-catalyst-drafting/"/>
    <updated>2020-06-23T00:00:00-06:00</updated>
-   <id>http://localhost:4000/2020/06/23/apple-ios-macos-big-sur-catalyst-drafting</id>
+   <id>https://www.kylenazario.com/2020/06/23/apple-ios-macos-big-sur-catalyst-drafting</id>
    <content type="html">&lt;p&gt;MacOS Big Sur is shocking, but it makes sense when you consider two things. &lt;!--break--&gt; One, as Johnny Sruiji said, Apple’s entire lineup will run off the same silicon. Two, this tweet from Marco Arment.&lt;/p&gt;
 
 &lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p lang=&quot;en&quot; dir=&quot;ltr&quot;&gt;The entire OS looks like Catalyst apps now.&lt;br /&gt;&lt;br /&gt;This is not a compliment.&lt;/p&gt;&amp;mdash; Marco Arment (@marcoarment) &lt;a href=&quot;https://twitter.com/marcoarment/status/1275129517615599625?ref_src=twsrc%5Etfw&quot;&gt;June 22, 2020&lt;/a&gt;&lt;/blockquote&gt;
@@ -228,9 +228,9 @@
  
  <entry>
    <title>Every new movie I saw in 2019, ranked</title>
-   <link href="http://localhost:4000/2020/05/17/favorite-movies-2019.html"/>
+   <link href="https://www.kylenazario.com/2020/05/17/favorite-movies-2019/"/>
    <updated>2020-05-17T00:00:00-06:00</updated>
-   <id>http://localhost:4000/2020/05/17/favorite-movies-2019</id>
+   <id>https://www.kylenazario.com/2020/05/17/favorite-movies-2019</id>
    <content type="html">&lt;p&gt;Is this post extremely late? Yes. Am I publishing just to get these on the record? Also yes. Late publication has its pluses, though - one 2019 movie in my top 10 was an April 2020 addition.&lt;/p&gt;
 
 &lt;!--break--&gt;
@@ -249,7 +249,7 @@
 
 &lt;p&gt;★★★★★ = I love this movie&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;/2019/01/09/favorite-movies-2018.html&quot;&gt;Last year&lt;/a&gt;’s five-★ movies were &lt;em&gt;Spider-Man: Into the Spider-Verse&lt;/em&gt;, &lt;em&gt;Annihilation&lt;/em&gt;, &lt;em&gt;Hereditary&lt;/em&gt; and &lt;em&gt;Black Panther&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;/2019/01/09/favorite-movies-2018/&quot;&gt;Last year&lt;/a&gt;’s five-★ movies were &lt;em&gt;Spider-Man: Into the Spider-Verse&lt;/em&gt;, &lt;em&gt;Annihilation&lt;/em&gt;, &lt;em&gt;Hereditary&lt;/em&gt; and &lt;em&gt;Black Panther&lt;/em&gt;.&lt;/p&gt;
 
 &lt;h2 id=&quot;the-worst-of-the-worst&quot;&gt;The worst of the worst&lt;/h2&gt;
 
@@ -663,9 +663,9 @@
  
  <entry>
    <title>Using Angular reactive forms to build a huge feature for ServiceCore</title>
-   <link href="http://localhost:4000/2020/05/16/angular-reactive-forms-rental-rates-servicecore.html"/>
+   <link href="https://www.kylenazario.com/2020/05/16/angular-reactive-forms-rental-rates-servicecore/"/>
    <updated>2020-05-16T00:00:00-06:00</updated>
-   <id>http://localhost:4000/2020/05/16/angular-reactive-forms-rental-rates-servicecore</id>
+   <id>https://www.kylenazario.com/2020/05/16/angular-reactive-forms-rental-rates-servicecore</id>
    <content type="html">&lt;p&gt;At ServiceCore, we’re thrilled to ship &lt;a href=&quot;https://support.servicecore.com/hc/en-us/articles/360041523411-Add-Rental-Rates&quot;&gt;rental rates&lt;/a&gt;! This was a months-long project that required massive collaboration between our product owner, frontend and backend engineers and QA.&lt;/p&gt;
 
 &lt;p&gt;I wanted to highlight some work I did to make one small part of the system - the rental rate input table.&lt;/p&gt;
@@ -710,17 +710,17 @@
   &lt;li&gt;It needed to keep the logic under control with reactive programming&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;Angular’s &lt;a href=&quot;https://angular.io/guide/reactive-forms&quot;&gt;Reactive Forms&lt;/a&gt; made the logic more functional and less imperative. Reactive Forms store form state in FormControls, which can be grouped inside FormGroups or FormArrays. FormGroups, FormArrays and FormControls all have first-class RxJS APIs. You can subscribe to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;valueChanges&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;statusChanges&lt;/code&gt; (valid/invalid) on any of them and &lt;em&gt;react&lt;/em&gt; to form state updates.&lt;/p&gt;
+&lt;p&gt;Angular’s &lt;a href=&quot;https://angular.io/guide/reactive-forms&quot;&gt;Reactive Forms&lt;/a&gt; made the logic more functional and less imperative. Reactive Forms store form state in FormControls, which can be grouped inside FormGroups or FormArrays. FormGroups, FormArrays and FormControls all have first-class RxJS APIs. You can subscribe to &lt;code&gt;valueChanges&lt;/code&gt; or &lt;code&gt;statusChanges&lt;/code&gt; (valid/invalid) on any of them and &lt;em&gt;react&lt;/em&gt; to form state updates.&lt;/p&gt;
 
 &lt;h3 id=&quot;overview&quot;&gt;Overview&lt;/h3&gt;
 
-&lt;p&gt;When the user opens the rental rate form, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rental-rate-form&lt;/code&gt; container component loads the rental’s data. It passes any existing rental rates into the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rate-input-table&lt;/code&gt;, the actual UI. The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rental-rate-form&lt;/code&gt; also &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;PATCH&lt;/code&gt;es the rental with its new rates on submit.&lt;/p&gt;
+&lt;p&gt;When the user opens the rental rate form, the &lt;code&gt;rental-rate-form&lt;/code&gt; container component loads the rental’s data. It passes any existing rental rates into the &lt;code&gt;rate-input-table&lt;/code&gt;, the actual UI. The &lt;code&gt;rental-rate-form&lt;/code&gt; also &lt;code&gt;PATCH&lt;/code&gt;es the rental with its new rates on submit.&lt;/p&gt;
 
 &lt;p&gt;This component accomplishes goal #2, keeping the rental logic separate from the UI.&lt;/p&gt;
 
-&lt;p&gt;On instantiation, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rate-input-table&lt;/code&gt; transforms input rates into table rows using pure static functions. This keeps the instantiation logic testable.&lt;/p&gt;
+&lt;p&gt;On instantiation, the &lt;code&gt;rate-input-table&lt;/code&gt; transforms input rates into table rows using pure static functions. This keeps the instantiation logic testable.&lt;/p&gt;
 
-&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rate-input-table&lt;/code&gt; stores its data as nested &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;AbstractControl&lt;/code&gt;s (the base class of FormArray, FormGroup and FormControl). The structure goes: Products is a FormArray. Each product is a FormGroup that contains product name, quantity, and a FormArray of rates. Each rate is FormGroup that contains FormControls for line item name, description, price, and taxable status.&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;rate-input-table&lt;/code&gt; stores its data as nested &lt;code&gt;AbstractControl&lt;/code&gt;s (the base class of FormArray, FormGroup and FormControl). The structure goes: Products is a FormArray. Each product is a FormGroup that contains product name, quantity, and a FormArray of rates. Each rate is FormGroup that contains FormControls for line item name, description, price, and taxable status.&lt;/p&gt;
 
 &lt;p&gt;Each product FormGroup also has a FormControl for the line item dropdown. Any value change there reactively adds the selected rate to the table.&lt;/p&gt;
 
@@ -728,11 +728,11 @@
 
 &lt;h4 id=&quot;rxjs-&quot;&gt;RxJS ♥&lt;/h4&gt;
 
-&lt;p&gt;Reactive programming is a blast. It contained the logic for each part of the form as subscriptions to that AbstractControl’s &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;valueChanges&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Reactive programming is a blast. It contained the logic for each part of the form as subscriptions to that AbstractControl’s &lt;code&gt;valueChanges&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;It also simplified working with asynchronous requests. For example, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pipe&lt;/code&gt; from add service dropdown takes the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;valueChange&lt;/code&gt; (the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;id&lt;/code&gt; of the selected service) and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;flatMap&lt;/code&gt;s it into a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;GET&lt;/code&gt; req for the full service. The full service is transformed into a new FormControl, which is pushed into the FormArray for the given product.&lt;/p&gt;
+&lt;p&gt;It also simplified working with asynchronous requests. For example, the &lt;code&gt;pipe&lt;/code&gt; from add service dropdown takes the &lt;code&gt;valueChange&lt;/code&gt; (the &lt;code&gt;id&lt;/code&gt; of the selected service) and &lt;code&gt;flatMap&lt;/code&gt;s it into a &lt;code&gt;GET&lt;/code&gt; req for the full service. The full service is transformed into a new FormControl, which is pushed into the FormArray for the given product.&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      // add new service on select
+&lt;pre&gt;&lt;code&gt;      // add new service on select
       const newServiceSub = rateSelectChanges.pipe(
         filter(serviceIdOrOption =&amp;gt; {
           // service ids come through as '11'
@@ -747,11 +747,11 @@
         }, error =&amp;gt; this._userAlertService.error(error, true)
       );
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;No &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;async&lt;/code&gt;/&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;await&lt;/code&gt; weirdness, no race conditions, no confusing logic. Just functional transformations. First-class RxJS support is far and away the best part of Angular. Just look at when we have to do something &lt;em&gt;really&lt;/em&gt; complicated:&lt;/p&gt;
+&lt;p&gt;No &lt;code&gt;async&lt;/code&gt;/&lt;code&gt;await&lt;/code&gt; weirdness, no race conditions, no confusing logic. Just functional transformations. First-class RxJS support is far and away the best part of Angular. Just look at when we have to do something &lt;em&gt;really&lt;/em&gt; complicated:&lt;/p&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;      const assignServiceSub = rateSelectChanges.pipe(
+&lt;pre&gt;&lt;code&gt;      const assignServiceSub = rateSelectChanges.pipe(
         filter(selectVal =&amp;gt; selectVal === 'assign'),
         flatMap(() =&amp;gt; {
           const serviceIdsToExcludeFromAssociateDialog: number[] = entityFormGroup.value.entity.services
@@ -778,13 +778,13 @@
         entityFormGroup.get('rateSelect').patchValue('choose');
       });
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;This block grabs services (line item charges) already associated to a product and passing them to a dialog. The dialog filters out these previously associated services. Then, if the user selects any services to add to a product in the dialog, these are passed out of the dialog’s Observable and transformed into requests for the full data for each newly associated service. When we’ve received all responses, the services are added to the table as rates. RxJS makes this kind of async work &lt;em&gt;easy&lt;/em&gt;.&lt;/p&gt;
 
 &lt;h4 id=&quot;functional-programming-&quot;&gt;Functional programming ♥&lt;/h4&gt;
 
-&lt;p&gt;The last code win was creating the select service dropdown. It transformed an array of services into &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;options&amp;gt;&lt;/code&gt;, sorting by billing period on the service.&lt;/p&gt;
+&lt;p&gt;The last code win was creating the select service dropdown. It transformed an array of services into &lt;code&gt;&amp;lt;options&amp;gt;&lt;/code&gt;, sorting by billing period on the service.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://i.imgur.com/sJthlnx.png&quot; alt=&quot;The add service dropdown for ServiceCore rental rates&quot; /&gt;&lt;/p&gt;
 
@@ -792,15 +792,15 @@
 
 &lt;h3 id=&quot;losses&quot;&gt;Losses&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;rate-input-table&lt;/code&gt; almost shipped without bugs, but for a hack I did.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;rate-input-table&lt;/code&gt; almost shipped without bugs, but for a hack I did.&lt;/p&gt;
 
-&lt;p&gt;Our product owner wanted the users to be able to select the same service from the dropdown multiple times consecutively. But, choosing the same option twice in a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;select&amp;gt;&lt;/code&gt; does not fire the standard &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;change&lt;/code&gt; event.&lt;/p&gt;
+&lt;p&gt;Our product owner wanted the users to be able to select the same service from the dropdown multiple times consecutively. But, choosing the same option twice in a &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; does not fire the standard &lt;code&gt;change&lt;/code&gt; event.&lt;/p&gt;
 
-&lt;p&gt;Instead of reading the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;select&amp;gt;&lt;/code&gt; value on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;change&lt;/code&gt;, I tried reading it after the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;click&lt;/code&gt; event. On every browser I tested, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;click&lt;/code&gt; fired when you chose an option in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;select&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Instead of reading the &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; value on &lt;code&gt;change&lt;/code&gt;, I tried reading it after the &lt;code&gt;click&lt;/code&gt; event. On every browser I tested, &lt;code&gt;click&lt;/code&gt; fired when you chose an option in the &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;However, Chrome on macOS fired the click event on open &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;select&amp;gt;&lt;/code&gt;. Thus, you’d have to choose an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;option&amp;gt;&lt;/code&gt;, then re-open the dropdown to add a service.&lt;/p&gt;
+&lt;p&gt;However, Chrome on macOS fired the click event on open &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt;. Thus, you’d have to choose an &lt;code&gt;&amp;lt;option&amp;gt;&lt;/code&gt;, then re-open the dropdown to add a service.&lt;/p&gt;
 
-&lt;p&gt;When we got the bug report, I fixed it so on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;change&lt;/code&gt; we would grab the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;select&amp;gt;&lt;/code&gt; value, add a service, and reset the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;select&amp;gt;&lt;/code&gt; value.&lt;/p&gt;
+&lt;p&gt;When we got the bug report, I fixed it so on &lt;code&gt;change&lt;/code&gt; we would grab the &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; value, add a service, and reset the &lt;code&gt;&amp;lt;select&amp;gt;&lt;/code&gt; value.&lt;/p&gt;
 
 &lt;p&gt;I tested this on Chrome for macOS and talked to our devops guy about fixing our company process to avoid mistakes like this. We shipped the fix the same day the bug was reported. No complaints since.&lt;/p&gt;
 
@@ -814,9 +814,9 @@
  
  <entry>
    <title>4K 4 U support</title>
-   <link href="http://localhost:4000/4k4u,/app,/dev/2020/02/19/4k-4-u-support.html"/>
+   <link href="https://www.kylenazario.com/4k4u,/app,/dev/2020/02/19/4k-4-u-support/"/>
    <updated>2020-02-19T00:00:00-07:00</updated>
-   <id>http://localhost:4000/4k4u,/app,/dev/2020/02/19/4k-4-u-support</id>
+   <id>https://www.kylenazario.com/4k4u,/app,/dev/2020/02/19/4k-4-u-support</id>
    <content type="html">&lt;p&gt;Please read this FAQ if you need help. To report a bug or get help with something not listed here, please email me at the address provided at the bottom of th epage.&lt;/p&gt;
 
 &lt;!--break--&gt;
@@ -835,9 +835,9 @@
  
  <entry>
    <title>Bruce Willis movie name generator</title>
-   <link href="http://localhost:4000/2019/01/21/bruce-willis-movie-title-name-generator.html"/>
+   <link href="https://www.kylenazario.com/2019/01/21/bruce-willis-movie-title-name-generator/"/>
    <updated>2019-01-21T00:00:00-07:00</updated>
-   <id>http://localhost:4000/2019/01/21/bruce-willis-movie-title-name-generator</id>
+   <id>https://www.kylenazario.com/2019/01/21/bruce-willis-movie-title-name-generator</id>
    <content type="html">&lt;p&gt;As pointed out in Blank Check’s &lt;a href=&quot;1&quot;&gt;&lt;em&gt;Glass&lt;/em&gt; episode&lt;/a&gt;, Bruce Willis has been in a lot of weird and bad movies. Meet his quote and he’ll appear in your knockoff of a knockoff of &lt;em&gt;Taken&lt;/em&gt;.&lt;/p&gt;
 
 &lt;!--break--&gt;
@@ -874,9 +874,9 @@
  
  <entry>
    <title>Every new movie I saw in 2018, ranked</title>
-   <link href="http://localhost:4000/2019/01/09/favorite-movies-2018.html"/>
+   <link href="https://www.kylenazario.com/2019/01/09/favorite-movies-2018/"/>
    <updated>2019-01-09T00:00:00-07:00</updated>
-   <id>http://localhost:4000/2019/01/09/favorite-movies-2018</id>
+   <id>https://www.kylenazario.com/2019/01/09/favorite-movies-2018</id>
    <content type="html">&lt;p&gt;I love movies and I love making lists, especially end-of-year rankings.&lt;/p&gt;
 
 &lt;!--break--&gt;
