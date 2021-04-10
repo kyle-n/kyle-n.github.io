@@ -23,4 +23,10 @@ The cognitive test actually made me laugh. Imagine a workplace where someone yel
 
 Anyway, hiring is broken, we all know it. I accepted a position with a [company](https://www.bitovi.com) that had a sane, speedy hiring process.
 
+---
+
+[Hacker News discussion](https://news.ycombinator.com/item?id=26763336)
+
+---
+
 [^1]: Veterinarians can do a residency if they want to specialize, like to be a neurologist or cardiologist. You get most residencies through “the match.” Prospective residents rank programs they’re most interested in, and the programs rank applicants. On a given date in the spring, you find out if or where you matched.<br><br>This is why for several weeks, I knew we would be in Tennessee, Florida, Indiana or California, but not the specific state. 
