@@ -4,13 +4,49 @@
  <title>Kyle Nazario</title>
  <link href="https://www.kylenazario.com/atom.xml" rel="self"/>
  <link href="https://www.kylenazario.com/"/>
- <updated>2020-10-22T08:59:53-06:00</updated>
+ <updated>2021-04-10T11:37:32-06:00</updated>
  <id>https://www.kylenazario.com</id>
  <author>
    <name>Kyle Nazario</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Things I was asked to do while job hunting</title>
+   <link href="https://www.kylenazario.com/2021/04/10/job-hunting-fun/"/>
+   <updated>2021-04-10T00:00:00-06:00</updated>
+   <id>https://www.kylenazario.com/2021/04/10/job-hunting-fun</id>
+   <content type="html">&lt;p&gt;I recently had to get a new job. My wife got a residency in another state, and my previous job is going back to in-person.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;I have two years’ experience working for a startup on enterprise-scale software. My day job is on the frontend with some backend from open source work.&lt;/p&gt;
+
+&lt;p&gt;Here are some things I was asked to do while job hunting:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Work as a contractor because the company forgot I said I’d be moving and didn’t want to file the paperwork in two states. At the time, I did not know the school or state of my wife’s residency.&lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; The company waffled, then pulled the offer with no explanation. They did at least pay me for time spent on the technical screen.&lt;/li&gt;
+  &lt;li&gt;Fill out a recruiter’s profile of me for him (Word doc and internal assessment and all).&lt;/li&gt;
+  &lt;li&gt;Pass a cognitive test asking me to do basic arithmetic and convert fractions as fast as I could.&lt;/li&gt;
+  &lt;li&gt;Take a personality test where I had to select adjectives I felt applied to me.&lt;/li&gt;
+  &lt;li&gt;Enter my years of experience with “Problem Solving.” I am 28 years old, so I put 28.&lt;/li&gt;
+  &lt;li&gt;Listen to a recruiter tell me I could move to South Florida for a job after a year because “who knows if you and your girlfriend will still be together.” I had referred to her as my wife on the same call.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The cognitive test actually made me laugh. Imagine a workplace where someone yells, “Nazario! Get over here, we need someone add some fractions! No calculators!!!”&lt;/p&gt;
+
+&lt;p&gt;Anyway, hiring is broken, we all know it. I accepted a position with a &lt;a href=&quot;https://www.bitovi.com&quot;&gt;company&lt;/a&gt; that had a sane, speedy hiring process.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;Veterinarians can do a residency if they want to specialize, like to be a neurologist or cardiologist. You get most residencies through “the match.” Prospective residents rank programs they’re most interested in, and the programs rank applicants. On a given date in the spring, you find out if or where you matched.&lt;br /&gt;&lt;br /&gt;This is why for several weeks, I knew we would be in Tennessee, Florida, Indiana or California, but not the specific state. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>System76 Gazelle mini-review</title>
