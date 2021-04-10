@@ -1,6 +1,12 @@
-# Things I was asked to do while job hunting
+---
+layout: post
+title: Things I was asked to do while job hunting
+keywords: jobs, career, personal
+---
 
 I recently had to get a new job. My wife got a residency in another state, and my previous job is going back to in-person.
+
+<!--break-->
 
 I have two years' experience working for a startup on enterprise-scale software. My day job is on the frontend with some backend from open source work.
  
