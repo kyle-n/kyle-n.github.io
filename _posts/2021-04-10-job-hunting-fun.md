@@ -12,7 +12,7 @@ I have two years' experience working for a startup on enterprise-scale software.
  
 Here are some things I was asked to do while job hunting:
 
-- Work as a contractor because the company forgot I said I'd be moving and didn’t want to file the paperwork in two states. At the time, I did not know the school or state of my wife’s residency.[^1] The company waffled, then pulled the offer with no explanation. They did at least pay me for time spent on the technical screen. 
+- Work as a contractor because the company forgot I said I'd be moving and didn’t want to file the paperwork in two states. That seemed reasonable, so I agreed. At the time, I did not know the school or state of my wife’s residency.[^1] The company waffled, then pulled the offer with no explanation. They did at least pay me for time spent on the technical screen. 
 - Fill out a recruiter’s profile of me for him (Word doc and internal assessment and all).
 - Pass a cognitive test asking me to do basic arithmetic and convert fractions as fast as I could.
 - Take a personality test where I had to select adjectives I felt applied to me.
