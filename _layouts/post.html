@@ -11,6 +11,18 @@ layout: hyde-default
   {{ content }}
 </div>
 
+{% if page.hn %}
+  <hr>
+  <a href="{{ page.hn }}" target="_blank" title="Hacker News discussion">Discuss on Hacker News</a>
+{% endif %}
+
+<hr>
+<div class="rss-call">
+  <p>
+    If you enjoyed this post, please <a href="{{ site.rss_url }}" title="RSS feed" target="_blank">follow my RSS feed</a>.
+  </p>
+</div>
+
 <div class="related">
   <h2>Related Posts</h2>
   <ul class="related-posts">
