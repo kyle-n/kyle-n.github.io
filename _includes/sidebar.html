@@ -25,6 +25,13 @@
           {% endif %}
         {% endif %}
       {% endfor %}
+
+      {% if site.rss_url %}
+        <a href="{{ site.rss_url }}" title="RSS feed" target="_blank" style="display: flex; align-items: flex-start;">
+          {% include rss_icon.html %}
+          <span>RSS feed</span>
+        </a>
+      {% endif %}
     </nav>
 
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>

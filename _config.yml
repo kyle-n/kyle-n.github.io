@@ -14,6 +14,7 @@ email: kylebnazario@gmail.com
 linkedin_username: kylenazario
 twitter_username: kbn_au
 github_username:  kyle-n
+rss_url: /atom.xml
 
 exclude: ['package.json', 'src' , 'node_modules']
 
