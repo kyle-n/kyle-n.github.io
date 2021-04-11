@@ -283,7 +283,7 @@ Greta Gerwig is an extremely smart person. She has made a *Little Women* adaptat
 
 ### 16: *Happy Death Day 2U* | ★★★
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AST2-4db4ic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/THq6KlWgiqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 I feel like I am the only person who remembers that 2019 gave us a sequel to *Happy Death Day*. The first is a wonderful and funny horror movie that should be mandatory viewing for the country. *2U* amps up the action by taking things in a more emotionally grounded direction. Even if it apparently worked for no one else, I liked it.
 
