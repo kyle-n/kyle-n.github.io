@@ -9,7 +9,7 @@
 
   <title>
     
-      System76 Gazelle mini-review
+      Why I chose Svelte for my new app
     
   </title>
   <meta name="description" content="Frontend web developer creating awesome projects for the web and mobile.">
@@ -84,55 +84,50 @@
 
     <div class="content container">
       <div class="post">
-  <h1 class="post-title">System76 Gazelle mini-review</h1>
-  <span class="post-date">26 Jun 2020</span>
+  <h1 class="post-title">Why I chose Svelte for my new app</h1>
+  <span class="post-date">14 May 2021</span>
   
-    <img src="/static/img/system76-gazelle.png" alt="" class="main-image">
+    <img src="/static/img/bnt-1.png" alt="" class="main-image">
   
-  <p>Work bought us <a href="https://system76.com/laptops/gazelle">System76 Gazelle laptops</a>. Quick thoughts after six months of use, coming from a MacBook Pro user:</p>
+  <p>I recently published <a href="https://apps.apple.com/us/app/beautiful-new-tabs/id1567068235">Beautiful New Tabs</a>. It replaces the new tab page in Safari with a nice wallpaper and weather widget.</p>
 
 <!--break-->
 
+<p>While it uses Swift to download and cache wallpapers in the background, everything in the new tab page is HTML, CSS and JS. That’s how you make <a href="https://developer.mozilla.org/en-US/docs/Glossary/WebExtensions">web extensions</a>, which Safari <a href="https://sixcolors.com/post/2021/01/safari-14-added-webextensions-support-so-where-are-the-extensions/">now supports</a>.</p>
+
+<p>After building a prototype in vanilla JS, I switched Beautiful New Tabs to <a href="https://svelte.dev">Svelte</a> and am happy with the results.</p>
+
+<h2 id="v1-vanilla-js">v1: Vanilla JS</h2>
+
+<p>The first version was vanilla JS filling in an HTML page. Displaying a wallpaper seemed too small for a framework.</p>
+
+<p>I also wanted the wallpaper to appear as quickly as possible. Cmd-T, see wallpaper. Cmd-N, see wallpaper. Even though Safari reads my JS bundle from file, not over the network, the bundle should still be small.</p>
+
+<p>The problem was my vanilla JS got imperative and messy, especially when I started adding features. The weather widget alone made me look for a new solution.</p>
+
+<h2 id="v2-svelte">v2: Svelte</h2>
+
+<p>I had read about Svelte and realized it was perfect for my use case. <a href="https://dev.to/joshnuss/svelte-compiler-under-the-hood-4j20">Svelte is a compiler</a> that turns declarative <code>.svelte</code> files into imperative, DOM-updating JS. With Svelte, I could break my application into reusable, declarative components and still ship a tiny bundle to customers. <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<p>And you know what? Svelte worked like a charm.</p>
+
 <ul>
-  <li>
-    <p>Chiclet keyboard feels nice to type on</p>
-  </li>
-  <li>
-    <p>Plastic fake brushed-metal case is 🤮</p>
-  </li>
-  <li>
-    <p>Battery life is about an hour, almost unusable away from a charger. If I were spending my own money on this laptop, this would be a dealbreaker.</p>
-  </li>
-  <li>
-    <p>Built-in display sucks. It’s allegedly matte, but still has incredibly high reflectiveness. 1080p resolution and just okay LCD color reproduction</p>
-  </li>
-  <li>
-    <p>Fan noise is a serious issue. I made the mistake of un-muting myself on a video call while the fans were going and other people on the call immediately muted me. They thought I was in a wind tunnel.</p>
-  </li>
-  <li>
-    <p>Webcam quality is low. Video calls with an open window behind you mean you will be washed out by backlighting</p>
-  </li>
-  <li>
-    <p>Performance is great. Runs a bunch of simultaneous headless Chrome browsers in Docker and completes our unit test suite pretty quickly.</p>
-  </li>
-  <li>
-    <p>The trackpad is truly horrendous. I use tap to click on my MBP, and I had to turn that off on the Gazelle real fast. Palm rejection is nonexistent - had false clicks every 15 minutes. That is not an exaggeration.</p>
-  </li>
-  <li>
-    <p>Keyboard is backlit</p>
-  </li>
-  <li>
-    <p>USB-A, HDMI, ethernet means it’s easy to use it as a desktop</p>
-  </li>
-  <li>
-    <p>Built-in speakers sound tinny and low-quality</p>
-  </li>
-  <li>
-    <p>Large and clunky, but weight isn’t bad</p>
-  </li>
+  <li><strong>Source code (TypeScript classes and Svelte components)</strong>: 16 KB</li>
+  <li><strong>Output bundle (minified)</strong>: 16 KB</li>
 </ul>
 
-<p>I’m torn: Ubuntu and GNU/Linux generally are excellent developer environments, but the laptop hardware is horrible. It feels like the $600 Windows machines my friends used in college.</p>
+<p>No extra KBs of data for a framework. It’s 16 KB because the app requires 16 KB of source code to juggle two APIs and a local cache. The bundle loads instantly.</p>
+
+<h2 id="ty-svelte">ty, Svelte</h2>
+
+<p>Svelte is new and still has rough edges, but I would recommend it as a way to write “vanilla” JS with the advantages of a framework.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I could have used <a href="https://dev.to/hanna/why-svelte-is-revolutionary-415e">another framework with small minified bundles</a>, but I wanted to try a cool new tool :). <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
 
 </div>
 
@@ -151,18 +146,18 @@
     
       <li>
         <h3>
-          <a href="/2021/05/14/why-svelte/">
-            Why I chose Svelte for my new app
-            <small>14 May 2021</small>
+          <a href="/2021/04/10/job-hunting-fun/">
+            Things I was asked to do while job hunting
+            <small>10 Apr 2021</small>
           </a>
         </h3>
       </li>
     
       <li>
         <h3>
-          <a href="/2021/04/10/job-hunting-fun/">
-            Things I was asked to do while job hunting
-            <small>10 Apr 2021</small>
+          <a href="/2020/06/26/system76-gazelle-mini-review/">
+            System76 Gazelle mini-review
+            <small>26 Jun 2020</small>
           </a>
         </h3>
       </li>

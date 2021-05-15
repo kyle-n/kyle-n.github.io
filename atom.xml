@@ -4,13 +4,60 @@
  <title>Kyle Nazario</title>
  <link href="https://www.kylenazario.com/atom.xml" rel="self"/>
  <link href="https://www.kylenazario.com/"/>
- <updated>2021-04-11T12:14:16-06:00</updated>
+ <updated>2021-05-15T09:27:47-06:00</updated>
  <id>https://www.kylenazario.com</id>
  <author>
    <name>Kyle Nazario</name>
    <email></email>
  </author>
 
+ 
+ <entry>
+   <title>Why I chose Svelte for my new app</title>
+   <link href="https://www.kylenazario.com/2021/05/14/why-svelte/"/>
+   <updated>2021-05-14T00:00:00-06:00</updated>
+   <id>https://www.kylenazario.com/2021/05/14/why-svelte</id>
+   <content type="html">&lt;p&gt;I recently published &lt;a href=&quot;https://apps.apple.com/us/app/beautiful-new-tabs/id1567068235&quot;&gt;Beautiful New Tabs&lt;/a&gt;. It replaces the new tab page in Safari with a nice wallpaper and weather widget.&lt;/p&gt;
+
+&lt;!--break--&gt;
+
+&lt;p&gt;While it uses Swift to download and cache wallpapers in the background, everything in the new tab page is HTML, CSS and JS. That’s how you make &lt;a href=&quot;https://developer.mozilla.org/en-US/docs/Glossary/WebExtensions&quot;&gt;web extensions&lt;/a&gt;, which Safari &lt;a href=&quot;https://sixcolors.com/post/2021/01/safari-14-added-webextensions-support-so-where-are-the-extensions/&quot;&gt;now supports&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After building a prototype in vanilla JS, I switched Beautiful New Tabs to &lt;a href=&quot;https://svelte.dev&quot;&gt;Svelte&lt;/a&gt; and am happy with the results.&lt;/p&gt;
+
+&lt;h2 id=&quot;v1-vanilla-js&quot;&gt;v1: Vanilla JS&lt;/h2&gt;
+
+&lt;p&gt;The first version was vanilla JS filling in an HTML page. Displaying a wallpaper seemed too small for a framework.&lt;/p&gt;
+
+&lt;p&gt;I also wanted the wallpaper to appear as quickly as possible. Cmd-T, see wallpaper. Cmd-N, see wallpaper. Even though Safari reads my JS bundle from file, not over the network, the bundle should still be small.&lt;/p&gt;
+
+&lt;p&gt;The problem was my vanilla JS got imperative and messy, especially when I started adding features. The weather widget alone made me look for a new solution.&lt;/p&gt;
+
+&lt;h2 id=&quot;v2-svelte&quot;&gt;v2: Svelte&lt;/h2&gt;
+
+&lt;p&gt;I had read about Svelte and realized it was perfect for my use case. &lt;a href=&quot;https://dev.to/joshnuss/svelte-compiler-under-the-hood-4j20&quot;&gt;Svelte is a compiler&lt;/a&gt; that turns declarative &lt;code&gt;.svelte&lt;/code&gt; files into imperative, DOM-updating JS. With Svelte, I could break my application into reusable, declarative components and still ship a tiny bundle to customers. &lt;sup id=&quot;fnref:1&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;And you know what? Svelte worked like a charm.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;strong&gt;Source code (TypeScript classes and Svelte components)&lt;/strong&gt;: 16 KB&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Output bundle (minified)&lt;/strong&gt;: 16 KB&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;No extra KBs of data for a framework. It’s 16 KB because the app requires 16 KB of source code to juggle two APIs and a local cache. The bundle loads instantly.&lt;/p&gt;
+
+&lt;h2 id=&quot;ty-svelte&quot;&gt;ty, Svelte&lt;/h2&gt;
+
+&lt;p&gt;Svelte is new and still has rough edges, but I would recommend it as a way to write “vanilla” JS with the advantages of a framework.&lt;/p&gt;
+&lt;div class=&quot;footnotes&quot; role=&quot;doc-endnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot; role=&quot;doc-endnote&quot;&gt;
+      &lt;p&gt;I could have used &lt;a href=&quot;https://dev.to/hanna/why-svelte-is-revolutionary-415e&quot;&gt;another framework with small minified bundles&lt;/a&gt;, but I wanted to try a cool new tool :). &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot; role=&quot;doc-backlink&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Things I was asked to do while job hunting</title>
