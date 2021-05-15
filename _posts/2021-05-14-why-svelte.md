@@ -3,6 +3,7 @@ layout: post
 title: Why I chose Svelte for my new app
 image: bnt-1.png
 keywords: svelte, fe, js, ts, bnt
+hn: https://news.ycombinator.com/item?id=27166097
 ---
 
 I recently published [Beautiful New Tabs](https://apps.apple.com/us/app/beautiful-new-tabs/id1567068235). It replaces the new tab page in Safari with a nice wallpaper and weather widget.
