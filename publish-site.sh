@@ -1,3 +1,4 @@
+JEKYLL_ENV=production
 bundle exec jekyll build
 cd _site
 git restore .nojekyll
