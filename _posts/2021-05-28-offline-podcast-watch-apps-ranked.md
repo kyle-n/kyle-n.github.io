@@ -9,11 +9,13 @@ I run alone most days in regular times and every day in quarantine. When running
 
 <!--break-->
 
-I bought Apple Watch Series 3 (Wifi) in 2019. With the Watch, runs require only a pair of Bluetooth headphones. No more awkwardly carrying my phone.
+I bought Apple Watch Series 3 (Wifi) in 2019. With the Watch, runs require only Bluetooth headphones. No more awkwardly carrying my phone. [^1]
 
-Offline Watch playback is crucial because I don’t want to pay for a second data plan. However, iOS podcast apps support offline Watch playback with varying levels of success.
+[^1]: I used to run with my iPhone 6 Plus in my pocket, until it bounced out and shattered on the pavement. In retrospect, it was a terrible idea.
 
-First, a disclaimer. This problem is hard. [Overcast](https://overcast.fm) developer [Marco Arment](https://twitter.com/marcoarment) has explained many times how hostile watchOS is to third-party developers. Any long-running or computationally expensive operation (like, say, downloading a two-hour audio file) is first on the OS’s hit list. On some episode of [ATP](https://atp.fm), he posited there is no way to do offline Watch playback in a way that makes everyone happy. He's probably right.
+Offline Watch playback is essential because I'm not going to pay for a second data plan. However, iOS podcast apps support offline Watch playback to varying success.
+
+First, a disclaimer. This feature is *hard*. [Overcast](https://overcast.fm) developer [Marco Arment](https://twitter.com/marcoarment) has said how hostile watchOS is to third-party developers. Any long-running or computationally expensive operation (like, say, downloading a two-hour audio file) is first on the OS’s hit list. On some episode of [ATP](https://atp.fm), he posited there is no implementation of offline Watch playback that makes everyone happy. He's probably right.
 
 This post will discuss where some podcast apps come short, but let’s acknowledge any kind of offline Watch playback is a minor miracle. All of these apps have good developers trying their best in an extremely hostile environment.
 
@@ -31,15 +33,15 @@ Negatives:
 
 I love listening to [comedians wax rhapsodic about *Robocop* for two-and-a-half hours](https://soundcloud.com/griffin-and-david-present/robocop), so this is a dealbreaker. 
 
-If I'm wrong about the time limit, or there is a way around it, please let me know. The problem could be general sync flakiness or something else I haven't thought of. 
+If I'm wrong about the time limit, or there is a way around it, please let me know. The problem could be general sync flakiness or something else. 
 
 ## [Overcast](https://apps.apple.com/us/app/overcast/id888422857) | 1/5 - Barely Usable
 
-Overcast used to have the implementation of offline playback that fit my needs best. Before, I could manually start a sync, track its progress, and run when it finished. Unfortunately, an update last year changed that.
+Overcast used to have the implementation of offline playback that fit my needs best. Before, I could manually start a sync, track its progress, and run when it finished. Unfortunately, an update last year [changed that](https://sixcolors.com/post/2021/03/running-with-the-new-overcast-watch-app/).
 
-In the new system, you set a podcast or playlist to auto-sync to the Watch. Alternatively, you can tap a button next to an episode to sync. In theory, the Watch will download the marked episodes on wifi. For me, it almost never did.
+In the new system, you set a podcast or playlist to auto-sync to the Watch. You can also tap a button next to an episode to sync. In theory, the Watch will download the marked episodes on wifi. For me, it almost never did.
 
-Maybe this is from having a now old, creaky wifi Series 3 Watch. Maybe I was doing something wrong. I could not figure it out. 
+Maybe this is because I have a creaky, slow Series 3 Watch. Maybe I was doing something wrong. I could not figure it out. 
 
 Positives:
 
@@ -54,15 +56,15 @@ Negatives:
 
 ## [Castro](https://apps.apple.com/us/app/castro-podcast-player/id1080840241) | 3/5 - Decent
 
-Castro offers offline Watch playback for subscribers to Castro Plus ($19/year). I get having subscription fatigue, but I welcome the chance to support good developers.
+Castro offers offline Watch playback for subscribers to Castro Plus ($19/year).
 
-In Castro, you tap a button below the episode to save a compressed copy and transfer it to the Watch ([full details](https://9to5mac.com/2019/11/18/castro-apple-watch-streaming-iphone-free-playback/)). Episodes played from the Watch have lower audio quality, with voice boost and trim silence baked in, but that's fine.
+You tap a button below the episode to create a compressed copy and transfer it to the Watch ([full details](https://9to5mac.com/2019/11/18/castro-apple-watch-streaming-iphone-free-playback/)). Episodes played from the Watch have lower audio quality, with voice boost and trim silence baked in, but that's fine.
 
 Positives:
 
 - Sync is reliable and fast
 - Sync seems faster when the Watch is on the charger?
-- Requires $19/year subscription. This lets you support a great indie iOS developer, but it is the priciest of the available options
+- Requires $19/year subscription. This lets you support a great indie iOS developer, but it is the priciest of the available options.
 - Great inbox-style UI in the phone app
 
 Negatives:
@@ -93,4 +95,4 @@ Negatives:
 
 ## Winner: Pocket Casts
 
-I love Castro and its inbox model, but the Watch playback bug and lack of an iPad app put it just behind Pocket Casts. Pocket Casts' UI is iffy, but that Watch app is rock solid.
+I love Castro and its inbox model. However, the Watch playback bug and lack of an iPad app put it just behind Pocket Casts. Pocket Casts' UI is iffy, but that Watch app is rock solid.
