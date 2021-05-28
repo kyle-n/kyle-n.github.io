@@ -17,7 +17,7 @@ github_username:  kyle-n
 rss_url: /atom.xml
 google_analytics: G-KZY3WL4S3X
 
-exclude: ['package.json', 'src' , 'node_modules']
+exclude: ['package.json', 'src' , 'node_modules', 'vendor']
 
 # Hyde theme
 highlighter: pygments
