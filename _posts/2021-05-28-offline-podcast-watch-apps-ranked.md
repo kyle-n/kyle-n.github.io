@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Offline podcast apps for Apple Watch, reviewed
+image: watch-apps.png
 tags: watch, iOS, watchOS, podcasts
 ---
 
@@ -14,9 +15,9 @@ Offline Watch playback is crucial because I don’t want to pay for a second dat
 
 First, a disclaimer. This problem is hard. [Overcast](https://overcast.fm) developer [Marco Arment](https://twitter.com/marcoarment) has explained many times how hostile watchOS is to third-party developers. Any long-running or computationally expensive operation (like, say, downloading a two-hour audio file) is first on the OS’s hit list. On some episode of [ATP](https://atp.fm), he posited there is no way to do offline Watch playback in a way that makes everyone happy. He's probably right.
 
-This post will discuss where some podcast apps come short, but let’s acknowledge any kind of offline Watch playback is a minor miracle.
+This post will discuss where some podcast apps come short, but let’s acknowledge any kind of offline Watch playback is a minor miracle. All of these apps have good developers trying their best in an extremely hostile environment.
 
-## Apple Podcasts | 0/5 - Unusable
+## [Apple Podcasts](https://apps.apple.com/us/app/apple-podcasts/id525463029) | 0/5 - Unusable
 
 Apple Podcasts is built into the OS and [supports offline Watch playback](https://support.apple.com/guide/watch/add-podcasts-apd14ab6460c/watchos). You can select which shows or stations to sync to the Watch.
 
@@ -28,13 +29,17 @@ Negatives:
 
 - Appears to not sync any episode over two hours. This limit is not documented anywhere, nor is it explained with an actionable error message. The episodes just… don’t sync.
 
-I love listening to [comedians wax rhapsodic about *Robocop* for two-and-a-half hours](https://soundcloud.com/griffin-and-david-present/robocop), so this is a dealbreaker.
+I love listening to [comedians wax rhapsodic about *Robocop* for two-and-a-half hours](https://soundcloud.com/griffin-and-david-present/robocop), so this is a dealbreaker. 
 
-## Overcast | 1/5 - Barely Usable
+If I'm wrong about the time limit, or there is a way around it, please let me know. The problem could be general sync flakiness or something else I haven't thought of. 
 
-Overcast used to have the implementation of offline playback that best fit my needs. Before, I could manually start a sync, track its progress, and run when it finished. Unfortunately, an update last year rendered offline sync useless for me.
+## [Overcast](https://apps.apple.com/us/app/overcast/id888422857) | 1/5 - Barely Usable
 
-In the new system, you set a podcast or playlist to auto-sync to the Watch. Alternatively, you can tap a button next to an episode to sync. In theory, the Watch will download the marked episodes on wifi. In practice, it almost never does.
+Overcast used to have the implementation of offline playback that fit my needs best. Before, I could manually start a sync, track its progress, and run when it finished. Unfortunately, an update last year changed that.
+
+In the new system, you set a podcast or playlist to auto-sync to the Watch. Alternatively, you can tap a button next to an episode to sync. In theory, the Watch will download the marked episodes on wifi. For me, it almost never did.
+
+Maybe this is from having a now old, creaky wifi Series 3 Watch. Maybe I was doing something wrong. I could not figure it out. 
 
 Positives:
 
@@ -47,22 +52,22 @@ Negatives:
 - No way to know what the Watch app is doing. No progress indicator, no active download, nothing. You just hope the little cloud icon goes away.
 - Sometimes an episode is marked as “downloaded,” you tap it and the Now Playing screen shows no title or progress indicator. The episode does not play.
 
-## Castro | 3/5 - Decent
+## [Castro](https://apps.apple.com/us/app/castro-podcast-player/id1080840241) | 3/5 - Decent
 
-Castro offers offline Watch playback for subscribers to Castro Plus ($19/year). A lot of people have subscription fatigue, but I welcome the chance to support good developers.
+Castro offers offline Watch playback for subscribers to Castro Plus ($19/year). I get having subscription fatigue, but I welcome the chance to support good developers.
 
 In Castro, you tap a button below the episode to save a compressed copy and transfer it to the Watch ([full details](https://9to5mac.com/2019/11/18/castro-apple-watch-streaming-iphone-free-playback/)). Episodes played from the Watch have lower audio quality, with voice boost and trim silence baked in, but that's fine.
 
 Positives:
 
 - Sync is reliable and fast
-- Seems faster when the Watch is on the charger?
+- Sync seems faster when the Watch is on the charger?
 - Requires $19/year subscription. This lets you support a great indie iOS developer, but it is the priciest of the available options
 - Great inbox-style UI in the phone app
 
 Negatives:
 
-- There's an irritating bug that loses your playback progress. If I'm 49:12 into [The Talk Show](https://daringfireball.net/thetalkshow/) on my phone but start an unplayed [Rocket](https://www.relay.fm/rocket) from my Watch, Castro will jump me to 49:12 in Rocket. I DM’d [@CastroSupport](https://twitter.com/CastroSupport) weeks ago with steps to reproduce this and got no reply.
+- There's an irritating bug that loses your playback progress. If I'm 49:12 into [The Talk Show](https://daringfireball.net/thetalkshow/) on my phone but start an unplayed [Rocket](https://www.relay.fm/rocket) from my Watch, Castro will jump me to 49:12 in Rocket. I DM’d [@CastroSupport](https://twitter.com/CastroSupport) weeks ago with steps to reproduce and got no reply.
 - No iPad app ([it's coming](https://twitter.com/CastroPodcasts/status/1341139082232008705?s=20))
 - No progress indicator for syncs
 
@@ -70,7 +75,7 @@ Negatives:
 
 Seems like a cool app, but I want a podcast app that runs on my phone and iPad too.
 
-## Pocket Casts | 4/5 - Good
+## [Pocket Casts](https://apps.apple.com/us/app/pocket-casts/id414834813) | 4/5 - Good
 
 Pocket Casts impressed me with its thoughtfully designed offline mode. It requires an in-app purchase, but their subscription is dirt cheap ($1/mo or $10/year).
 
