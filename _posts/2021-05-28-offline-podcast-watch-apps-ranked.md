@@ -33,7 +33,7 @@ Negatives:
 
 I love listening to [comedians wax rhapsodic about *Robocop* for two-and-a-half hours](https://soundcloud.com/griffin-and-david-present/robocop), so this is a dealbreaker. 
 
-If I'm wrong about the time limit, or there is a way around it, please let me know. The problem could be general sync flakiness or something else. 
+If I'm wrong about the time limit, or there is a workaround, please let me know. The problem could be general sync flakiness or something else. 
 
 ## [Overcast](https://apps.apple.com/us/app/overcast/id888422857) | 1/5 - Barely Usable
 
