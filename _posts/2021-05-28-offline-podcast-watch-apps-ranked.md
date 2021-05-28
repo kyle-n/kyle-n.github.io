@@ -11,7 +11,7 @@ I run alone most days in regular times and every day in quarantine. When running
 
 I bought Apple Watch Series 3 (Wifi) in 2019. With the Watch, runs require only Bluetooth headphones. No more awkwardly carrying my phone. [^1]
 
-[^1]: I used to run with my iPhone 6 Plus in my pocket, until it bounced out and shattered on the pavement. In retrospect, it was a terrible idea.
+[^1]: I used to run with my iPhone 6 Plus in my pocket, until it bounced out and shattered on the pavement. I'm not saying I'm smart.
 
 Offline Watch playback is essential because I'm not going to pay for a second data plan. However, iOS podcast apps support offline Watch playback to varying success.
 
