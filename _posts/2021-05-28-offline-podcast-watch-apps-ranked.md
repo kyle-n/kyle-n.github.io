@@ -1,21 +1,21 @@
----
+—
 layout: post
 title: Offline podcast apps for Apple Watch, reviewed
 image: watch-apps.png
 tags: watch, iOS, watchOS, podcasts
----
+—
 
-I run alone most days in regular times and every day in quarantine. When running alone, I fill the time with podcasts.
+When running alone, I fill the time with podcasts.
 
-<!--break-->
+<!—break—>
 
 I bought Apple Watch Series 3 (Wifi) in 2019. With the Watch, runs require only Bluetooth headphones. No more awkwardly carrying my phone. [^1]
 
-[^1]: I used to run with my iPhone 6 Plus in my pocket, until it bounced out and shattered on the pavement. I'm not saying I'm smart.
+[^1]: I used to run with my iPhone 6 Plus in my pocket, until it bounced out and shattered on the pavement. I’m not saying I’m smart.
 
-Offline Watch playback is essential because I'm not going to pay for a second data plan. However, iOS podcast apps support offline Watch playback to varying success.
+Offline Watch playback is essential because I’m not going to pay for a second data plan. However, iOS podcast apps support offline Watch playback to varying success.
 
-First, a disclaimer. This feature is *hard*. [Overcast](https://overcast.fm) developer [Marco Arment](https://twitter.com/marcoarment) has said how hostile watchOS is to third-party developers. Any long-running or computationally expensive operation (like, say, downloading a two-hour audio file) is first on the OS’s hit list. On some episode of [ATP](https://atp.fm), he posited there is no implementation of offline Watch playback that makes everyone happy. He's probably right.
+First, a disclaimer. This feature is *hard*. [Overcast](https://overcast.fm) developer [Marco Arment](https://twitter.com/marcoarment) has said how hostile watchOS is to third-party developers. Any long-running or computationally expensive operation (like, say, downloading a two-hour audio file) is first on the OS’s hit list. On some episode of [ATP](https://atp.fm), he posited there is no implementation of offline Watch playback that makes everyone happy. He’s probably right.
 
 This post will discuss where some podcast apps come short, but let’s acknowledge any kind of offline Watch playback is a minor miracle. All of these apps have good developers trying their best in an extremely hostile environment.
 
@@ -33,32 +33,31 @@ Negatives:
 
 I love listening to [comedians wax rhapsodic about *Robocop* for two-and-a-half hours](https://soundcloud.com/griffin-and-david-present/robocop), so this is a dealbreaker. 
 
-If I'm wrong about the time limit, or there is a workaround, please let me know. The problem could be general sync flakiness or something else. 
+If I’m wrong about the time limit, or there is a workaround, please let me know. The problem could be general sync flakiness or something else. 
 
 ## [Overcast](https://apps.apple.com/us/app/overcast/id888422857) | 1/5 - Barely Usable
 
 Overcast used to have the implementation of offline playback that fit my needs best. Before, I could manually start a sync, track its progress, and run when it finished. Unfortunately, an update last year [changed that](https://sixcolors.com/post/2021/03/running-with-the-new-overcast-watch-app/).
 
-In the new system, you set a podcast or playlist to auto-sync to the Watch. You can also tap a button next to an episode to sync. In theory, the Watch will download the marked episodes on wifi. For me, it almost never did.
+In the new system, you set a playlist to download up to 20 episodes to the Watch. Overcast says it will download the episodes on wifi when charging. For me, it almost never did. [^2]
 
-Maybe this is because I have a creaky, slow Series 3 Watch. Maybe I was doing something wrong. I could not figure it out. 
+[^2]: I used Overcast for several months like this, but I’ve been testing other podcast apps for the last month. I re-downloaded Overcast to see if my assessment was still accurate, and [this happened immediately](/static/img/71C53263-5EA4-4D0B-81CA-466DB5AA8F1F.jpeg).
 
 Positives:
 
 - Free, does not require subscription
+- Can manually start downloads on the Watch and track their progress
 
 Negatives:
 
-- Episodes rarely sync. Even after leaving my Watch on a charger for multiple nights right next to my router, maybe 10% of episodes ever downloaded. I just got used to checking my Watch before a run and being disappointed.
-- [There is no way to manually start a sync](https://twitter.com/OvercastFM/status/1258779092889096193?s=20). You just have to put the Watch on a charger and hope for the best.
-- No way to know what the Watch app is doing. No progress indicator, no active download, nothing. You just hope the little cloud icon goes away.
+- Downloads rarely succeed. Even after leaving my Watch on a charger for multiple nights right next to my router, maybe 10% of episodes ever downloaded. I just got used to checking my Watch before a run and being disappointed.
 - Sometimes an episode is marked as “downloaded,” you tap it and the Now Playing screen shows no title or progress indicator. The episode does not play.
 
 ## [Castro](https://apps.apple.com/us/app/castro-podcast-player/id1080840241) | 3/5 - Decent
 
 Castro offers offline Watch playback for subscribers to Castro Plus ($19/year).
 
-You tap a button below the episode to create a compressed copy and transfer it to the Watch ([full details](https://9to5mac.com/2019/11/18/castro-apple-watch-streaming-iphone-free-playback/)). Episodes played from the Watch have lower audio quality, with voice boost and trim silence baked in, but that's fine.
+You tap a button below the episode to create a compressed copy and transfer it to the Watch ([full details](https://9to5mac.com/2019/11/18/castro-apple-watch-streaming-iphone-free-playback/)). Episodes played from the Watch have lower audio quality, with voice boost and trim silence baked in, but that’s fine.
 
 Positives:
 
@@ -69,8 +68,8 @@ Positives:
 
 Negatives:
 
-- There's an irritating bug that loses your playback progress. If I'm 49:12 into [The Talk Show](https://daringfireball.net/thetalkshow/) on my phone but start an unplayed [Rocket](https://www.relay.fm/rocket) from my Watch, Castro will jump me to 49:12 in Rocket. I DM’d [@CastroSupport](https://twitter.com/CastroSupport) weeks ago with steps to reproduce and got no reply.
-- No iPad app ([it's coming](https://twitter.com/CastroPodcasts/status/1341139082232008705?s=20))
+- There’s an irritating bug that loses your playback progress. If I’m 49:12 into [The Talk Show](https://daringfireball.net/thetalkshow/) on my phone but start an unplayed [Rocket](https://www.relay.fm/rocket) from my Watch, Castro will jump me to 49:12 in Rocket. I DM’d [@CastroSupport](https://twitter.com/CastroSupport) weeks ago with steps to reproduce and got no reply.
+- No iPad app ([it’s coming](https://twitter.com/CastroPodcasts/status/1341139082232008705?s=20))
 - No progress indicator for syncs
 
 ## [Outcast](https://outcastapp.com) | Disqualified
@@ -95,4 +94,4 @@ Negatives:
 
 ## Winner: Pocket Casts
 
-I love Castro and its inbox model. However, the Watch playback bug and lack of an iPad app put it just behind Pocket Casts. Pocket Casts' UI is iffy, but that Watch app is rock solid.
+I love Castro and its inbox model. However, the Watch playback bug and lack of an iPad app put it just behind Pocket Casts. Pocket Casts’ UI is iffy, but that Watch app is rock solid.
