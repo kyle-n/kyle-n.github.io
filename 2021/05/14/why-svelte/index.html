@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      Why I chose Svelte for my new app
+    
+  </title>
+  <meta name="description" content="Frontend web developer creating awesome projects for the web and mobile.">
+
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/public/css/poole.css">
+  <link rel="stylesheet" href="/public/css/syntax.css">
+  <link rel="stylesheet" href="/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="shortcut icon" type="image/png" href="/assets/favicon.png" >
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="public/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  <!-- Google Analytics -->
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-KZY3WL4S3X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-KZY3WL4S3X');
+</script>
+  
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="">
+          Kyle Nazario
+        </a>
+      </h1>
+      <p class="lead">Frontend web developer creating awesome projects for the web and mobile.</p>
+    </div>
+
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item" href="/">Home</a>
+
+      
+
+      
+      
+        
+      
+        
+      
+        
+          
+            <a class="sidebar-nav-item" href="/blog/">Kyle Nazario's Blog</a>
+          
+        
+      
+
+      
+        <a href="/atom.xml" title="RSS feed" target="_blank" class="sidebar-nav-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+     style="margin-right: 0.25em; height: 1em; width: auto;">
+    <path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248-1.796 0-3.252-1.454-3.252-3.248 0-1.794 1.456-3.248 3.252-3.248 1.795.001 3.251 1.454 3.251 3.248zm-6.503-12.572v4.811c6.05.062 10.96 4.966 11.022 11.009h4.817c-.062-8.71-7.118-15.758-15.839-15.82zm0-3.368c10.58.046 19.152 8.594 19.183 19.188h4.817c-.03-13.231-10.755-23.954-24-24v4.812z"
+          style="fill: white;"
+    />
+</svg>
+          <span>RSS feed</span>
+        </a>
+      
+    </nav>
+
+    <p>&copy; 2021. All rights reserved.</p>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">Why I chose Svelte for my new app</h1>
+  <span class="post-date">14 May 2021</span>
+  
+    <img src="/static/img/bnt-1.png" alt="" class="main-image">
+  
+  <p>I recently published <a href="https://apps.apple.com/us/app/beautiful-new-tabs/id1567068235">Beautiful New Tabs</a>. It replaces the new tab page in Safari with a nice wallpaper and weather widget.</p>
+
+<!--break-->
+
+<p>While it uses Swift to download and cache wallpapers in the background, everything in the new tab page is HTML, CSS and JS. That’s how you make <a href="https://developer.mozilla.org/en-US/docs/Glossary/WebExtensions">web extensions</a>, which Safari <a href="https://sixcolors.com/post/2021/01/safari-14-added-webextensions-support-so-where-are-the-extensions/">now supports</a>.</p>
+
+<p>After building a prototype in vanilla JS, I switched Beautiful New Tabs to <a href="https://svelte.dev">Svelte</a> and am happy with the results.</p>
+
+<h2 id="v1-vanilla-js">v1: Vanilla JS</h2>
+
+<p>The first version was vanilla JS filling in an HTML page. Displaying a wallpaper seemed too small for a framework.</p>
+
+<p>I also wanted the wallpaper to appear as quickly as possible. Cmd-T, see wallpaper. Cmd-N, see wallpaper. Even though Safari reads my JS bundle from file, not over the network, the bundle should still be small.</p>
+
+<p>The problem was my vanilla JS got imperative and messy, especially when I started adding features. The weather widget alone made me look for a new solution.</p>
+
+<h2 id="v2-svelte">v2: Svelte</h2>
+
+<p>I had read about Svelte and realized it was perfect for my use case. <a href="https://dev.to/joshnuss/svelte-compiler-under-the-hood-4j20">Svelte is a compiler</a> that turns declarative <code>.svelte</code> files into imperative, DOM-updating JS. With Svelte, I could break my application into reusable, declarative components and still ship a tiny bundle to customers. <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup></p>
+
+<p>And you know what? Svelte worked like a charm.</p>
+
+<ul>
+  <li><strong>Source code (TypeScript classes and Svelte components)</strong>: 16 KB</li>
+  <li><strong>Output bundle (minified)</strong>: 16 KB</li>
+</ul>
+
+<p>No extra KBs of data for a framework. It’s 16 KB because the app requires 16 KB of source code to juggle two APIs and a local cache. The bundle loads instantly.</p>
+
+<h2 id="ty-svelte">ty, Svelte</h2>
+
+<p>Svelte is new and still has rough edges, but I would recommend it as a way to write “vanilla” JS with the advantages of a framework.</p>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>I could have used <a href="https://dev.to/hanna/why-svelte-is-revolutionary-415e">another framework with small minified bundles</a>, but I wanted to try a cool new tool :). <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+</div>
+
+
+  <hr>
+  <a href="https://news.ycombinator.com/item?id=27166097" target="_blank" title="Hacker News discussion">Discuss on Hacker News</a>
+
+
+<hr>
+<div class="rss-call">
+  <p>
+    If you enjoyed this post, please <a href="/atom.xml" title="RSS feed" target="_blank">follow my RSS feed</a>.
+  </p>
+  <p>You can also try <a href="https://www.nazariosoftware.com" title="Nazario Software LLC apps" target="_blank">my apps</a>:</p>
+  <ul>
+    <li>
+      <a href="https://www.nazariosoftware.com/2021/04/07/about-javasnipt.html" target="_blank">JavaSnipt</a>: JavaScript blocker and NoScript equivalent for Safari
+    </li>
+    <li>
+      <a href="https://www.nazariosoftware.com/2021/05/13/make-your-new-tab-page-gorgeous-with-beautiful-new-tabs.html" target="_blank">Beautiful New Tabs</a>: A gorgeous photo in every new Safari tab
+    </li>
+  </ul>
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/2021/05/28/offline-podcast-watch-apps-ranked/">
+            Offline podcast apps for Apple Watch, reviewed
+            <small>28 May 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2021/04/10/job-hunting-fun/">
+            Things I was asked to do while job hunting
+            <small>10 Apr 2021</small>
+          </a>
+        </h3>
+      </li>
+    
+      <li>
+        <h3>
+          <a href="/2020/06/26/system76-gazelle-mini-review/">
+            System76 Gazelle mini-review
+            <small>26 Jun 2020</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+</html>
