@@ -7,7 +7,7 @@ tags: watch, iOS, watchOS, podcasts
 
 When running alone, I fill the time with podcasts.
 
-<!—break—>
+<!--break-->
 
 I bought Apple Watch Series 3 (Wifi) in 2019. With the Watch, runs require only Bluetooth headphones. No more awkwardly carrying my phone. [^1]
 
@@ -52,6 +52,8 @@ Negatives:
 
 - Downloads rarely succeed. Even after leaving my Watch on a charger for multiple nights right next to my router, maybe 10% of episodes ever downloaded. I just got used to checking my Watch before a run and being disappointed.
 - Sometimes an episode is marked as “downloaded,” you tap it and the Now Playing screen shows no title or progress indicator. The episode does not play.
+
+Maybe it's because I have a creaky, slow Series 3 Watch. Maybe I was doing something wrong. I could not figure it out.
 
 ## [Castro](https://apps.apple.com/us/app/castro-podcast-player/id1080840241) | 3/5 - Decent
 
