@@ -255,6 +255,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll (~> 3.9.0)
+  jekyll-redirect-from
 
 BUNDLED WITH
    2.2.16

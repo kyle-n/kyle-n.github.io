@@ -28,3 +28,6 @@ author:
   name: 'Kyle Nazario'
   url: https://twitter.com/kbn_au
 paginate: 5
+
+plugins:
+  - jekyll-redirect-from
