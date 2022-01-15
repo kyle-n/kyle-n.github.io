@@ -2,6 +2,7 @@
 layout: post
 title: Bruce Willis movie name generator
 image: willis.jpg
+redirect_from: /blog/bruce-willis-name-generator.html
 ---
 
 As pointed out in Blank Check's [*Glass* episode](1), Bruce Willis has been in a lot of weird and bad movies. Meet his quote and he'll appear in your knockoff of a knockoff of *Taken*.
