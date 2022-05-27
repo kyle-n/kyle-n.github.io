@@ -7,7 +7,7 @@ caption: Via angular.io
 
 As an [Angular consultant](https://www.bitovi.com/frontend-javascript-consulting/angular-consulting), one of my favorite tricks to rapidly improve client code is to **make the components smaller**. 
 
-On a recent client project, it let me reduce calls to a complex function from 223,000 per render to 1,200. Smaller components make better, faster UIs. 
+On a recent client project, implementing best practices let me reduce calls to a complex function from 223,000 per render to 1,200. Smaller components make better, faster UIs. 
 
 ## Background
 
@@ -49,7 +49,13 @@ They recommend splitting this UI into five components:
 4. **ProductCategoryRow** (turquoise): displays a heading for each category
 5. **ProductRow** (red): displays a row for each product
 
-This is useful for a couple reasons.
+Could you split this into smaller components, like one for each cell? Sure, but to me that splits the atom. If your component directly displays one piece of data without even any logic around the rendering, that doesn't make sense. The component is just template interpolation with extra complexity. 
+
+Now, if each cell had complex currency formatting or a popover menu, that would be worth its own component. It's always a judgement call for how granular you want to go. 
+
+If you're stuck, just look at everything the component does and ask if it does one thing. Does it collect data for an API to pass to presenters? Does it present exactly one piece of data?
+
+Keeping components this small is useful for a couple reasons.
 
 - Easier to read
 - Easier to maintain
