@@ -21,7 +21,7 @@ On the other hand, it's fiddly as hell for a console. There's a full file system
 
 ## Hardware
 
-Hardware is hard - You can do almost everything correctly and ruin the whole product with one flaw. Look at Apple - they had a huge scandal because [cell reception was worse if you held the iPhone wrong](https://www.businessinsider.com/apple-antennagate-scandal-timeline-10-year-anniversary-2020-7). That's how easy it is to mess up hardware. 
+Hardware is hard - you can do almost everything correctly and ruin the whole product with one flaw. Look at Apple - they had a huge scandal because [cell reception was worse if you held the iPhone wrong](https://www.businessinsider.com/apple-antennagate-scandal-timeline-10-year-anniversary-2020-7). That's how easy it is to mess up hardware. 
 
 So it is with happiness that I can report Retroid got it right. The Pocket 2+ is adorable. It's tiny and fits right in your hands. It's perfect for throwing in a bag and taking with you. 
 
@@ -31,7 +31,7 @@ Even the battery life is good. Keep the wifi off and this thing will last you fo
 
 The biggest hardware downside is the screen. It is *so small*. Seriously, it's about the size of a playing card. If you are old (like me) or nearsighted (also me), beware. Old games expected a low resolution and don't have a ton of tiny text, but my god, the screen is small. It is *dwarfed* by the Switch's display.
 
-Second, the screen is too bright. That might sound like an odd thing to complain about, but play this thing in a dark room, you'll see what I mean. The [Screen Dimmer](https://play.google.com/store/apps/details?id=nu.screen.dimmer&hl=en_US&gl=US) helped me.
+Second, the screen is too bright. That might sound like an odd thing to complain about, but play this thing in a dark room, you'll see what I mean. The [Screen Dimmer](https://play.google.com/store/apps/details?id=nu.screen.dimmer&hl=en_US&gl=US) app helped me.
 
 ## Purchasing
 
