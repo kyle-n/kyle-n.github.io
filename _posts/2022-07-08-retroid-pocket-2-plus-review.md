@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Retroid Pocket 2+ review
-image: retroid.png
+image: retroid.jpg
 caption: My newly arrived Retroid Pocket 2+
 ---
 
