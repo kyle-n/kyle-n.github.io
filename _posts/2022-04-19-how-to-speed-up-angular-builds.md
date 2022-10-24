@@ -15,4 +15,4 @@ No wonder a Reddit engineer [announced](https://twitter.com/softwarejameson/sta
 
 So if you are running into slow Angular builds, try these steps to reduce build time. They are listed in order of increasing complexity.
 
-**[Read the rest at the Bitovi blog](https://www.bitovi.com/blog/how-to-speed-up-your-angular-builds)**.
+**[Read the rest at the Bitovi blog](https://www.bitovi.com/blog/how-to-speed-up-your-angular-builds)**.`
