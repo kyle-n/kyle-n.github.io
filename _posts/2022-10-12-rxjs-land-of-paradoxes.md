@@ -1,19 +1,19 @@
 ---
 layout: post
-title: 3 RxJS Paradoxes
+title: Avoiding common pitfalls in RxJS
 image: rxjs-logo.png
 caption: Via rxjs.dev
 ---
 
-RxJS is the most important thing about Angular that people misunderstand. RxJS is *everywhere* in Angular, and I still see developers struggle with it.
+As an [Angular consultant](https://www.bitovi.com/frontend-javascript-consulting/angular-consulting), I see people struggle with RxJS a lot. Which is understandable. Observables are a powerful tool for working with data streams, but they have quirks that can trip up developers new to the library. 
 
-Which is understandable. RxJS is a land of paradoxes. I love it, because I [love reactive programming]({% post_url 2020-05-16-angular-reactive-forms-rental-rates-servicecore %}), but RxJS's implementation has some... oddities. 
+In this blog post, we'll explore how to avoid three common pitfalls when using RxJS in your own projects. 
 
 ### Quick, what's an Observable?
 
 An [Observable](https://rxjs.dev/guide/observable) is a stream of values delivered over time. It's similar to a [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise). A Promise represents an asynchronous operation that completes or fails *once*, for all subscribers.
 
-RxJS is mind-bending because, depending on the Observable, it may behave like that or completely differently. 
+RxJS is mind-bending because, depending on the Observable, it may be synchronous or asynchronous, deliver one value or multiple, and share that value with one or multiple subscribers. 
 
 ### Paradox 1: Observables are asynchronous, unless they are synchronous
 
@@ -24,9 +24,7 @@ this.apiService.getSomeApiDataById(123)
   .subscribe(data => console.log(data));
 ```
 
-This is probably why many believe *all* Observables are asynchronous. They are not.
-
-Consider the Observable `sequence$` in the following code:
+This is probably why many believe *all* Observables are asynchronous. However, consider the Observable `sequence$` in the following code:
 
 ```typescript
 import { from } from 'rxjs';
@@ -47,9 +45,9 @@ before
 after
 ```
 
-`sequence$` will emit its values *synchronously*, block the main thread and complete before we get to the last line and log `after`. 
+`sequence$` will emit its values *synchronously* and complete before we get to the last line and log `after`. 
 
-Given that most Observables are async, this is... not a huge deal? It can be an issue when mocking Observables in unit tests. People substitute a network request with `of(someTestData)` and end up testing an imaginary version of their component where API calls run synchronously. 
+It helps to know Observables can be synchronous when mocking them in unit tests. People substitute a network request with `of(someTestData)` and end up testing an imaginary version of their component where API calls run synchronously. 
 
 ### Paradox 2: Observables do not run until subscribed to, unless they do
 
@@ -68,7 +66,7 @@ sequence$.subscribe(val => console.log(val));
 console.log('after')
 ```
 
-Run that and see:
+Run that and you'll see:
 
 ```
 before
@@ -84,7 +82,7 @@ after
 
 `sequence$` is a **cold** Observable. It won't run until we subscribe to it. That's why `before` is logged before `emitting 1`. 
 
-An Observable is just a stream of events. However, sometimes a stream of events is occurring regardless of whether we are listening to it. That's a **hot** Observable. 
+A **hot** Observable runs regardless of whether anything in your code is subscribed to it and listening for events. 
 
 ```typescript
 import { fromEvent } from 'rxjs';
@@ -101,10 +99,12 @@ In this case, we can subscribe or not subscribe to `userInput$`. Subscribing wil
 When an Observable is running, it can do one of three things:
 
 1. Emit a value
-2. Error, and never emit more values or complete
-3. Complete, and never emit more values or error
+2. Error, and never emit more values
+3. Complete, and never emit more values
 
-It's important to think about completing Observables, because you don't want subscriptions to them hanging around. They can hog memory or cause unwanted behavior. 
+If it errors, it cannot complete, and vice versa.
+
+It's important to think about completing Observables, because you don't want unneeded subscriptions hogging memory or causing unwanted behavior. 
 
 However, many developers don't realize some Observables complete themselves. Consider `sequence$`:
 
@@ -156,4 +156,4 @@ When working with Observables, ask *what thing an Observable models*. If it make
 
 ### Conclusion
 
-If all this sounds confusing... it is. Reactive programming can be hard to learn. It lets you write amazing, powerful code, though. Stick with it!
+Observables' quirks may be challenging to learn, but the benefits make the effort worthwhile. Reactive programming makes complex async logic easier to read, write and debug.
