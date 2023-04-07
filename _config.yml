@@ -2,22 +2,24 @@
 title: Kyle Nazario
 description: Frontend web developer creating awesome projects for the web and mobile.
 url: https://www.kylenazario.com
-baseurl: ''
+baseurl: ""
 
 # User settings
 username: Kyle Nazario
-user_description: I am a fast, talented software engineer looking for a place to do great work. I love creating great apps, whether
+user_description:
+  I am a fast, talented software engineer looking for a place to do great work. I love creating great apps, whether
   on the web or mobile platforms. During the day, I am a software engineer for <a href="https://www.bitovi.com/" target="_blank">Bitovi</a>, helping businesses create amazing Angular applications. At night, I make
   <a href="https://www.nazariosoftware.com" target="_blank">cool side projects</a>.
 user_title: Software Engineer
 email: kylebnazario@gmail.com
 linkedin_username: kylenazario
 twitter_username: kbn_au
-github_username:  kyle-n
+github_username: kyle-n
+mastodon_profile: https://hachyderm.io/@kn
 rss_url: /atom.xml
 google_analytics: G-KZY3WL4S3X
 
-exclude: ['package.json', 'src' , 'node_modules', 'vendor']
+exclude: ["package.json", "src", "node_modules", "vendor"]
 
 # Hyde theme
 highlighter: pygments
@@ -25,7 +27,7 @@ highlighter: pygments
 # Permalinks
 permalink: pretty
 author:
-  name: 'Kyle Nazario'
+  name: "Kyle Nazario"
   url: https://twitter.com/kbn_au
 paginate: 5
 
