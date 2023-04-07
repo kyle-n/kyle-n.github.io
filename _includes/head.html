@@ -15,6 +15,7 @@
     content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"
   />
 
+  <!-- Mastodon profile -->
   <link href="http://gmpg.org/xfn/11" rel="profile" />
   <a rel="me" href="https://hachyderm.io/@kn"></a>
 
@@ -33,16 +34,23 @@
 
   <!-- Icons -->
   <link
-    rel="shortcut icon"
-    type="image/png"
-    href="{{ '/assets/favicon.png' }}"
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="/public/apple-touch-icon.png"
   />
   <link
-    rel="apple-touch-icon-precomposed"
-    sizes="144x144"
-    href="{{ site.baseurl }}public/apple-touch-icon-144-precomposed.png"
+    rel="icon"
+    type="image/png"
+    sizes="32x32"
+    href="/public/favicon-32x32.png"
   />
-  <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico" />
+  <link
+    rel="icon"
+    type="image/png"
+    sizes="16x16"
+    href="/public/favicon-16x16.png"
+  />
+  <link rel="manifest" href="/site.webmanifest" />
 
   <!-- RSS -->
   <link
