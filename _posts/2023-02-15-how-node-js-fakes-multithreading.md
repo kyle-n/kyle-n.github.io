@@ -82,7 +82,7 @@ Node.js fakes multithreading by multitasking. It spreads out tasks, not across t
 
 The way Node hops around between tasks is explained by the reactor pattern. Node is structured like a reactor, where the flow of control swirls around the event loop, processing tasks as they come in.
 
-![A diagram demonstrating the reactor pattern in Node](/static/img/reactor-diagram.png)
+![A diagram demonstrating the reactor pattern in Node](/static/img/reactor-pattern.png)
 
 When you run a JavaScript file in Node, it starts at the top square, "Execute Handler." It will synchronously run the code provided until that code is finished. If an asynchronous operation is triggered while running the code, that operation is sent to the box on the left, the **event demultiplexer**.
 
