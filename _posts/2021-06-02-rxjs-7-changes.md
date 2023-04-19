@@ -26,7 +26,7 @@ And this chart of the same operator sizes in RxJS 7:
 
 Lesh's talk includes a long discussion about how many ways RxJS lets you share a stream (`multicast`, `shareReplay`, `refCount`, etc).
 
-RxJS 7 deprecates `multicast`, `publish`, `publishReplay`, `publishLast`, and `refCount`. `shareReplay` was too popular to deprecate in 7, but Lesh said it's next because it is "full of footguns." Long term, the only sharing operators will be `share`, `connect` and `connectable`. He recommends moving to `share` now.
+RxJS 7 deprecates `multicast`, `publish`, `publishReplay`, `publishLast`, and `refCount`. `shareReplay` was too popular to deprecate in 7, but Lesh said it's next because it is "full of footguns." Long term, the only sharing operators will be `share`, `connect` and `connectable`. He recommends moving to `share` now.
 
 `share` is picking up some new features as the single solution operator. It takes an optional config object as a parameter, where you can define custom behavior for the stream.
 
@@ -55,7 +55,7 @@ For teams that are unable to upgrade to TypeScript 4.2, Lesh recommended staying
 
 The problem with `toPromise()`, Lesh explained, was that it didn't make sense with Observables. Should a promise created by `toPromise()` resolve with the first or last value emitted from the source Observable?
 
-So, `toPromise()` is deprecated in favor of `lastValueFrom()` and `firstValueFrom()`. These new functions still convert Observables to Promises, but in a way that clarifies that value the Promise will resolve with.
+So, `toPromise()` is deprecated in favor of `lastValueFrom()` and `firstValueFrom()`. These new functions still convert Observables to Promises, but in a way that clarifies that value the Promise will resolve with.
 
 ```typescript
 const source = from([1, 2])
@@ -68,7 +68,7 @@ const lastVal = await lastValueFrom(source)
 console.log(lastVal) // 2
 ```
 
-If an Observable completes without emitting a value, the Promise created by `lastValueFrom` or `firstValueFromrejects`. If that is not desired behavior, you can configure the new Promise to resolve with a defaultValue.
+If an Observable completes without emitting a value, the Promise created by `lastValueFrom` or `firstValueFromrejects`. If that is not desired behavior, you can configure the new Promise to resolve with a defaultValue.
 
 ```typescript
 const emptyVal = await firstValueFrom(source, { defaultValue: 'empty' })
@@ -108,11 +108,11 @@ subscription
 
 ### Your `with` Is My Command
 
-- `combineLatest` operator renamed to `combineLatestWith`
-- `merge` operator renamed to `mergeWith`
-- `zip` operator renamed to `zipWith`
-- `race` operator renamed to `raceWith`
-- `concat` operator renamed to `concatWith`
+- `combineLatest` operator renamed to `combineLatestWith`
+- `merge` operator renamed to `mergeWith`
+- `zip` operator renamed to `zipWith`
+- `race` operator renamed to `raceWith`
+- `concat` operator renamed to `concatWith`
 
 ## Bitovi Recommendations for Migrating to RxJS 7
 

@@ -41,7 +41,7 @@ I tested every command-line option for ng build for its performance while enable
 
 [Hot module reloading (HMR) is much easier](https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7 "https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7") in Angular 11. When Angular rebuilds a module, it updates the app without reloading the page. It just swaps in new code.
 
-However, use caution as it has strange behaviour with RxJS subscriptions and WebSockets. If you don't [correctly unsubscribe](https://levelup.gitconnected.com/unsubscribing-in-angular-the-right-way-6ed82be43ccc "https://levelup.gitconnected.com/unsubscribing-in-angular-the-right-way-6ed82be43ccc") from either, it could create duplicate connections and confusing errors.
+However, use caution as it has strange behaviour with RxJS subscriptions and WebSockets. If you don't [correctly unsubscribe](https://levelup.gitconnected.com/unsubscribing-in-angular-the-right-way-6ed82be43ccc "https://levelup.gitconnected.com/unsubscribing-in-angular-the-right-way-6ed82be43ccc") from either, it could create duplicate connections and confusing errors.
 
 Step 3: Minimize the work required
 ----------------------------------

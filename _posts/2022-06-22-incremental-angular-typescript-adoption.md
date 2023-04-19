@@ -45,7 +45,7 @@ export class MenuComponent implements OnInit {
 }
 ```
 
-TypeScript throws a build error because `this.currentUser` is never assigned a value in the constructor or at declaration. This is correct! Until the `currentUser$.subscribe()` callback runs, `this.currentUser` *is* undefined. Its type should be `User | undefined`. This lets other developers who edit this component know they can't always rely on `this.currentUser` existing.
+TypeScript throws a build error because `this.currentUser` is never assigned a value in the constructor or at declaration. This is correct! Until the `currentUser$.subscribe()` callback runs, `this.currentUser` *is* undefined. Its type should be `User | undefined`. This lets other developers who edit this component know they can't always rely on `this.currentUser` existing.
 
 Strict mode is great for catching errors like this. With third-party help and planning, you can adopt it.
 
@@ -249,7 +249,7 @@ async addDish(dishId: number) {
 
 ### Don't: Multiple `tsconfig` files
 
-One piece of advice I see a lot online is to use multiple `tsconfig.json` files. This is inadvisable because you will have to run `tsc` once for each `tsconfig` file. There are other, easier options.
+One piece of advice I see a lot online is to use multiple `tsconfig.json` files. This is inadvisable because you will have to run `tsc` once for each `tsconfig` file. There are other, easier options.
 
 ### Do: Enable individual flags
 
