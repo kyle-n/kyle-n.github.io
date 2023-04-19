@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What’s New in RxJS 7: Small Bundles and Big Changes to share()
+title: What’s New in RxJS 7&#58; Small Bundles and Big Changes to share
 image: rxjs-logo.png
 ---
 
