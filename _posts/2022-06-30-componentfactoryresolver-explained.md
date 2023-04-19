@@ -212,7 +212,3 @@ export class FactoryExampleComponent {
   }
 }
 ```
-
-## Learn more
-
-Still curious about making powerful higher-order components in Angular? Our team of Angular experts is standing by. We're happy to help you level up your team or just build great code. [Get in touch today](https://www.bitovi.com/frontend-javascript-consulting/angular-consulting "https://www.bitovi.com/frontend-javascript-consulting/angular-consulting").

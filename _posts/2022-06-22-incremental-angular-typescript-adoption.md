@@ -282,4 +282,3 @@ The best way to adopt strict mode depends on your organization, team makeup, an
 
 -   If a strict mode sub-flag like `strictBindCallApply` generates so few errors you could fix them in a day, enable it immediately. Do this for all the "easy" flags.
 -   Use [typescript-strict-plugin](https://github.com/allegro/typescript-strict-plugin "https://github.com/allegro/typescript-strict-plugin") to exempt all existing code from strict mode, enable it for new code and periodically update the old code to be strict-compliant. That way you're not adding to the pile of strict mode updates.
--   Call the experts! If you need frontend help, Bitovi offers world-class [Angular consulting](https://www.bitovi.com/frontend-javascript-consulting/angular-consulting "https://www.bitovi.com/frontend-javascript-consulting/angular-consulting"). No matter your situation or code, we can help your team adopt best practices and set themselves up for success.

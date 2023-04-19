@@ -123,5 +123,3 @@ Important points to remember:
 - Replace your `toPromise` calls with `firstValueFrom` and `lastValueFrom`
 - Replace your `shareReplay` calls with `share`
 - Stop using `.add` chains to manage your subscriptions. Lesh [recommends `takeUntil`](https://medium.com/@benlesh/rxjs-dont-unsubscribe-6753ed4fda87)
-
-If you need help upgrading to RxJS 7, [fill out our form](https://www.bitovi.com/contact). Bitovi has a team of Angular and RxJS experts who can help your team.

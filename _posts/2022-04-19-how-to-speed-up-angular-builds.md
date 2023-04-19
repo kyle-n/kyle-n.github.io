@@ -81,7 +81,3 @@ If you need help upgrading your Angular app [fill out our form](https://www.bit
 Tools like Nx also cache build data in the cloud and share it among developers. They can be compelling if you don't mind introducing another dependency to the build process.
 
 If your builds are bottlenecked specifically during continuous integration, try caching your node_modules folder. People have reported up to [75% faster builds](https://medium.com/vendasta/how-to-speed-up-angular-build-times-with-caching-5856d369de88 "https://medium.com/vendasta/how-to-speed-up-angular-build-times-with-caching-5856d369de88") from preserving node_modules between CI runs.
-
-### Step 6: Get help from the professionals.
-
-Still can't get build times where you want them? [Get help from Bitovi's team of Angular experts](https://www.bitovi.com/frontend-javascript-consulting/angular-consulting "https://www.bitovi.com/frontend-javascript-consulting/angular-consulting"). They've worked with small, medium and large Angular applications and can meet your team's needs. Or ask a question in [Bitovi's Discord Community](https://discord.gg/J7ejFsZnJ4).
