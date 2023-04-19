@@ -31,11 +31,11 @@ RxJS 7 deprecates `multicast`, `publish`, `publishReplay`, `publishLast`, and
 `share` is picking up some new features as the single solution operator. It takes an optional config object as a parameter, where you can define custom behavior for the stream.
 
 ```typescript
-share({\
-  connector: () => new ReplaySubject(),\
-  resetOnRefCountZero: true,\
-  resetOnComplete: true,\
-  resetOnError: true\
+share({
+  connector: () => new ReplaySubject(),
+  resetOnRefCountZero: true,
+  resetOnComplete: true,
+  resetOnError: true
 })
 ```
 
@@ -44,8 +44,8 @@ share({\
 RxJS 7 [requires TypeScript 4.2](https://github.com/ReactiveX/rxjs/blob/6bd1c5f3cf0e387973b44698c48bc933e8c528aa/package.json#L9), Lesh said, because it contains features that enable more accurate, stricter types. One example he gave in his slides involved `Subject`:
 
 ```typescript
-// allowed in RxJS 6, errors in 7 because next() must be called with a number\
-const subject = new Subject<number>()\
+// allowed in RxJS 6, errors in 7 because next() must be called with a number
+const subject = new Subject<number>()
 subject.next()
 ```
 
@@ -64,14 +64,14 @@ const firstVal = await firstValueFrom(source)
 
 console.log(firstVal) // 1
 
-const lastVal = await lastValueFrom(source)\
+const lastVal = await lastValueFrom(source)
 console.log(lastVal) // 2
 ```
 
 If an Observable completes without emitting a value, the Promise created by `lastValueFrom` or `firstValueFromrejects`. If that is not desired behavior, you can configure the new Promise to resolve with a defaultValue.
 
 ```typescript
-const emptyVal = await firstValueFrom(source, { defaultValue: 'empty' })\
+const emptyVal = await firstValueFrom(source, { defaultValue: 'empty' })
 console.log(emptyVal) // 'empty'
 ```
 
@@ -80,38 +80,38 @@ console.log(emptyVal) // 'empty'
 Anywhere you can pass an Observable, RxJS 7 also lets you pass an AsyncIterable.
 
 ```typescript
-async function* ticket(delay: number) {\
-  let n = 0;\
-  while (true) {\
-    await sleep(delay);\
-    yield n;\
-  }\
+async function* ticket(delay: number) {
+  let n = 0;
+  while (true) {
+    await sleep(delay);
+    yield n;
+  }
 }
 ```
 
 ## Other Updates
 
-- `finalize()` operators now run in the order in which they are written in `pipe()`. In contrast, RxJS 6 ran them in reverse.\
+- `finalize()` operators now run in the order in which they are written in `pipe()`. In contrast, RxJS 6 ran them in reverse.
 - `subscription.add(someSubscription)` now returns void so people will stop writing `add()` chains, which Lesh says never worked.
 
 ```typescript
 // add() returns void, cannot be chained
 
-subscription\
-  .add(subOne)\
+subscription
+  .add(subOne)
   .add(subTwo) // errors
 ```
 
-- `animationFrames()` creates Observables to do animation logic reactively\
-- `switchScan()` operator, aka `switchMap` with an accumulator\
+- `animationFrames()` creates Observables to do animation logic reactively
+- `switchScan()` operator, aka `switchMap` with an accumulator
 - `throwError()` requires a callback, not an error, as the error captures the current stack at the moment of its creation
 
 ### Your `with` Is My Command
 
-- `combineLatest` operator renamed to `combineLatestWith`\
-- `merge` operator renamed to `mergeWith`\
-- `zip` operator renamed to `zipWith`\
-- `race` operator renamed to `raceWith`\
+- `combineLatest` operator renamed to `combineLatestWith`
+- `merge` operator renamed to `mergeWith`
+- `zip` operator renamed to `zipWith`
+- `race` operator renamed to `raceWith`
 - `concat` operator renamed to `concatWith`
 
 ## Bitovi Recommendations for Migrating to RxJS 7
@@ -120,8 +120,8 @@ If your project can be upgraded to RxJS 7, we would recommend doing so. The spee
 
 Important points to remember:
 
-- Replace your `toPromise` calls with `firstValueFrom` and `lastValueFrom`\
-- Replace your `shareReplay` calls with `share`\
+- Replace your `toPromise` calls with `firstValueFrom` and `lastValueFrom`
+- Replace your `shareReplay` calls with `share`
 - Stop using `.add` chains to manage your subscriptions. Lesh [recommends `takeUntil`](https://medium.com/@benlesh/rxjs-dont-unsubscribe-6753ed4fda87)
 
 If you need help upgrading to RxJS 7, [fill out our form](https://www.bitovi.com/contact). Bitovi has a team of Angular and RxJS experts who can help your team.
