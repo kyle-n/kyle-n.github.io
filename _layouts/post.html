@@ -6,28 +6,52 @@ layout: hyde-default
   <h1 class="post-title">{{ page.title }}</h1>
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {% if page.image != null %}
-    <img src="/static/img/{{ page.image }}" alt="{{ page.caption }}" class="main-image">
-  {% endif %}
-  {{ content }}
+  <img
+    src="/static/img/{{ page.image }}"
+    alt="{{ page.caption }}"
+    class="main-image"
+  />
+  {% endif %} {{ content }}
 </div>
 
 {% if page.hn %}
-  <hr>
-  <a href="{{ page.hn }}" target="_blank" title="Hacker News discussion">Discuss on Hacker News</a>
+<hr />
+<a href="{{ page.hn }}" target="_blank" title="Hacker News discussion"
+  >Discuss on Hacker News</a
+>
 {% endif %}
 
-<hr>
+<hr />
 <div class="rss-call">
   <p>
-    If you enjoyed this post, please <a href="{{ site.rss_url }}" title="RSS feed" target="_blank">follow my RSS feed</a>.
+    If you enjoyed this post, please
+    <a href="{{ site.rss_url }}" title="RSS feed" target="_blank"
+      >follow my RSS feed</a
+    >.
   </p>
-  <p>You can also try <a href="https://www.nazariosoftware.com" title="Nazario Software LLC apps" target="_blank">my apps</a>:</p>
+  <p>
+    You can also try
+    <a
+      href="https://www.nazariosoftware.com"
+      title="Nazario Software LLC apps"
+      target="_blank"
+      >my apps</a
+    >:
+  </p>
   <ul>
     <li>
-      <a href="https://www.nazariosoftware.com/2021/04/07/about-javasnipt.html" target="_blank">JavaSnipt</a>: JavaScript blocker and NoScript equivalent for Safari
+      <a
+        href="https://www.nazariosoftware.com/2021/04/07/about-javasnipt.html"
+        target="_blank"
+        >JavaSnipt</a
+      >: JavaScript blocker and NoScript equivalent for Safari
     </li>
     <li>
-      <a href="https://www.nazariosoftware.com/2021/05/13/make-your-new-tab-page-gorgeous-with-beautiful-new-tabs.html" target="_blank">Beautiful New Tabs</a>: A gorgeous photo in every new Safari tab
+      <a
+        href="https://www.nazariosoftware.com/2021/05/13/make-your-new-tab-page-gorgeous-with-beautiful-new-tabs.html"
+        target="_blank"
+        >Beautiful New Tabs</a
+      >: A gorgeous photo in every new Safari tab
     </li>
   </ul>
 </div>
@@ -36,14 +60,23 @@ layout: hyde-default
   <h2>Related Posts</h2>
   <ul class="related-posts">
     {% for post in site.related_posts limit:3 %}
-      <li>
-        <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
-          </a>
-        </h3>
-      </li>
+    <li>
+      <h3>
+        <a href="{{ post.url }}">
+          {{ post.title }}
+          <small>{{ post.date | date_to_string }}</small>
+        </a>
+      </h3>
+    </li>
     {% endfor %}
   </ul>
 </div>
+<script>
+  hljs.highlightAll();
+</script>
+<style>
+  pre code.hjls {
+    background-color: transparent !important;
+    padding: 0 !important;
+  }
+</style>
