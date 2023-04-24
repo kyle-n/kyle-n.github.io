@@ -8,7 +8,9 @@ As an Apple developer, one thing I would love to see at WWDC is a free large-lan
 
 This would be good for a couple reasons. 
 
-First, it would be incredibly useful for us third-party developers. I am currently writing a [web extension for autofilling email login codes](https://www.nazariosoftware.com/2023/04/14/log-in-seamlessly-with-autofill-email-codes.html). The app has an algorithm that finds login codes in the text of an email. It works pretty well, but you know what's even better? ChatGPT. ChatGPT finds the code every single time.
+First, it would be incredibly useful for us third-party developers. I am currently writing a [web extension for autofilling email login codes](https://www.nazariosoftware.com/2023/04/14/log-in-seamlessly-with-autofill-email-codes.html). The app has an algorithm that finds login codes in the text of an email. It works pretty well, but you know what's even better? ChatGPT. ChatGPT finds the code every single time.[^1]
+
+[^1]: I also tried machine learning, but it is not something I have a lot of expertise with. [Tensorflow.js](https://www.tensorflow.org/js) with the [Q&A model](https://github.com/tensorflow/tfjs-models/tree/master/qna) was slow and had a terrible accuracy rate. 
 
 Unfortunately, ChatGPT is not feasible in my app. Using their API would be an ongoing cost, which would require an ongoing subscription. Additionally, I don’t want to send users’ emails to OpenAI.
 
