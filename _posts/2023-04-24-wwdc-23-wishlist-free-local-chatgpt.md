@@ -4,7 +4,7 @@ title: WWDC Wishlist&#58; A free large-language model built into iOS and macOS
 image: wwdc23.jpg
 ---
 
-As an Apple developer, one thing I would love to see at WWDC is a free large-language model built into iOS and macOS. Ship GPT-whatever with the OS and let third-party apps call into it for free. 
+As an Apple developer, one thing I would love to see at WWDC is a free large-language model built into iOS and macOS. Ship GPT-whatever with the OS and let third-party apps call into it for free. It doesn't have to be as complex as ChatGPT, just something that can run on Apple Silicon. 
 
 This would be good for a couple reasons. 
 
