@@ -1,7 +1,7 @@
 ---
 layout: post
-title: My ebike has completely changed my daily routine
-image: ebike-overall.png
+title: An ebike has completely changed my daily routine
+image: ebike-overall.jpg
 ---
 
 I purchased an electric bike last year and wanted to review it from the perspective of someone who is not a cyclist or used to biking places. 
@@ -14,9 +14,9 @@ I live in Athens, Georgia, a small college town. I work from home five days a we
 
 However, I realized something. I never go anywhere more than two miles away. Isn't it silly to get in a huge, gas-powered machine for that? Isn’t transportation responsible for [one-fifth of global carbon emissions](https://ourworldindata.org/co2-emissions-from-transport)?
 
-So I walked. Short trips were easy, and the University of Georgia’s campus is friendly to pedestrians. However, walking is slow, and I am impatient.
+So I walked. Short trips were easy, and the University of Georgia’s campus is friendly to pedestrians. But walking is slow, and I am impatient.
 
-My dream of riding a regular bicycle died on Athens’ [brutal hills](https://reddit.com/r/Athens/comments/fwte3c/steepest_hill_in_athens_and_worst_hill_in_athens/). I tried riding to my Tuesday board game group and arrived exhausted, sweaty and stinky. I wouldn't want to play board games with me. 
+My dream of riding a regular bicycle died on Athens’ [brutal hills](https://reddit.com/r/Athens/comments/fwte3c/steepest_hill_in_athens_and_worst_hill_in_athens/). I rode to my Tuesday board game group and arrived exhausted, sweaty and stinky. I wouldn't want to play board games with me. 
 
 After that, I bought an ebike. 
 
@@ -42,19 +42,17 @@ The bike is heavy with the battery. Its black shell also chips easily. I don't c
 
 This thing is *fast*. A two-mile trip across town takes 15 minutes or less with pedal assist. At top speed, I can go 25-30 miles per hour. It's enough to keep up with traffic on slower roads. 
 
-The ebike is also fast because I don’t sit in traffic. I use the bike lane. It feels *so good* to zip by a massive line of cars during rush hour. Going to Monday running group took 45 minutes in my car. It’s a third or less on the ebike.
+The ebike is also fast because you don't sit in traffic in the bike lane. It feels *so good* to zip by a massive line of cars during rush hour. Going to Monday running group took 45 minutes in my car. It’s a third or less that on the ebike.
 
-It's made me get out more. If I want to have lunch from [my favorite restaurant](http://calintitos.com), it's easy to get there and back within my lunch break. No need to pay for food delivery. 
+It's made me get out more. If I want to have lunch from [my favorite restaurant](http://calintitos.com), I can get there and back within my lunch break. No need to pay for food delivery. 
 
 ### Reason #2: You’re not tired
 
-Ebikes are great because they make biking *easy*. I’m not nearly as tired or sweaty when I get places. I'll always be a little gross, because Georgia summers run hot and humid, but the ebike is a huge improvement. 
-
-Now, I can ride up Athens’ grueling hills without feeling like I’m going to have a heart attack.
+Ebikes are great because they make biking *easy*. I’m not nearly as tired or sweaty when I get places. It feels nice riding up Athens’ grueling hills without feeling like I’m going to have a heart attack.
 
 ### Reason #3: Saves money
 
-The ebike is already saving me money. While $1,000+ up front is steep, I save by not driving. Every day I don't use my car, I save on gas, depreciation and repairs. The [Department of Energy cost per mile calculator](https://afdc.energy.gov/calc/) says even my tiny commute at $3.35 per gallon costs roughly $386 per year. Ebikes, on the other hand, [are less than a penny per mile](https://www.calbike.org/e-bike-research-shows-environmental-and-economic-benefits/) to charge. The ebike should pay for itself in three years. 
+The ebike is already saving me money. While $1,000+ up front is steep, I save by not driving. The [Department of Energy cost per mile calculator](https://afdc.energy.gov/calc/) says even my tiny commute at $3.35 per gallon costs roughly $386 per year with gas, depreciation and repairs. Ebikes, on the other hand, [are less than a penny per mile](https://www.calbike.org/e-bike-research-shows-environmental-and-economic-benefits/) to charge. The ebike should pay for itself in three years. 
 
 The real financial boon, though, will be when I sell my car. I’m waiting to make absolutely sure the ebike fits all my needs, but I think I can make it work (see next section).
 
@@ -70,7 +68,7 @@ Additionally, if your town uses renewable energy, it's not even a big deal to ch
 
 If you purchase an ebike, there are a couple things I’d recommend. 
 
-First, invest in safety gear. American roads are unfortunately full of [gigantic, pedestrian-killing cars](https://www.theatlantic.com/ideas/archive/2021/12/suvs-trucks-killing-pedestrians-cyclists/621102/) driven by [people looking at their phones](https://injuryfacts.nsc.org/motor-vehicle/motor-vehicle-safety-issues/distracted-driving/). Make it hard for them to miss you. I never bike anywhere without a bright reflective vest ([$7 on Amazon](https://www.amazon.com/gp/product/B000IDSUS8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)) and a helmet. I also purchased a [rechargeable LED](https://www.amazon.com/gp/product/B07FDVSVDX/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) for the back of the bike. 
+First, invest in safety gear. American roads are unfortunately full of [gigantic, pedestrian-killing cars](https://www.theatlantic.com/ideas/archive/2021/12/suvs-trucks-killing-pedestrians-cyclists/621102/) driven by [people looking at their phones](https://injuryfacts.nsc.org/motor-vehicle/motor-vehicle-safety-issues/distracted-driving/). I never bike anywhere without a bright reflective vest ([$7 on Amazon](https://www.amazon.com/gp/product/B000IDSUS8/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&th=1)) and a helmet. I also purchased a [rechargeable LED](https://www.amazon.com/gp/product/B07FDVSVDX/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) for the back of the bike. 
 
 When riding, always wear your reflective gear. Avoid giant roads with high speed and lots of traffic. Use bike lanes wherever possible. Ride on the sidewalk if you have to, but avoid pedestrians. That’s the best advice I have as a new cyclist. 
 
