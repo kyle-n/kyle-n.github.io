@@ -1,21 +1,19 @@
 ---
 layout: post
 title: Above all else, code should be simple
-image: simplicity.png
+image: ocean.jpg
 caption: Via Stable Diffusion
 ---
 
 Last year, I read a book that profoundly affected how I think about writing software. [“A Philosophy of Software Design”](https://www.amazon.com/Philosophy-Software-Design-2nd/dp/173210221X/ref=monarch_sidesheet) by John K. Ousterhout is a short volume with a radical thesis: The most important quality your code can have is to be *simple*. [^1] Ousterhout argues simplicity affects code quality than any specific pattern or language or design choice.
 
-[^1]: Obviously the *most* most important quality of code is that it delivers some business value. Otherwise it’s just academic or for fun.
-
-> The greatest limitation in writing software is our ability to understand the systems we are creating. (Ch. 1)
-
 ## Software engineering is in the mind
 
 Ousterhout notes that other engineering disciplines face many constraints on their designs because they work in the physical world. There are only so many ways to build a bridge, because bridges have to deal with gravity.
 
-Software engineers, however, have fewer limitations. For low-level programs, we must worry about memory and file size, but our designs are mostly constrained only by our ability to *understand* them. 
+Software engineers, however, have fewer limitations. For low-level programs, we must worry about memory and file size, but otherwise:
+
+> The greatest limitation in writing software is our ability to understand the systems we are creating. (Ch. 1)
 
 The best way to make an application understandable is to write simple code. Simple code is also easy to build and easy to maintain. Simple code can have more features added to it before becoming unwieldy.
 
@@ -25,7 +23,7 @@ Ousterhout argues the enemy of good code is **complexity**.
 
 > Complexity is anything related to the structure of a software system that makes it hard to understand and modify the system. (Ch. 2)
 
-If simplicity makes apps easy and quick to update, complexity is the oppostive. It slows down new features. It demands extra rounds of QA. It leaves your customer waiting an extra week for that big feature.
+If simplicity makes apps easy and quick to update, complexity is the oppostive. It slows down new features. It demands extra rounds of QA. It leaves your customer waiting an extra week.
 
 There are many kinds of complexity, but the three most common symptoms are when updating the application requires:
 
@@ -168,3 +166,5 @@ With just a little bit of abstracting, we’ve made our code much easier to unde
 ## Conclusion
 
 The most important thing we can do as developers is to write code that meets business requirements. If our code isn’t worth money to somebody, then it’s useless. The second-most important thing we can do, however, is to write code that is *simple*. Simple code lets us write more features, fix more bugs and deliver business value faster. 
+
+[^1]: Obviously the *most* most important quality of code is that it delivers some business value. Otherwise it’s just academic or for fun.
