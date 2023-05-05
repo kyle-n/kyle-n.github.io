@@ -5,7 +5,7 @@ title: You should unit test component templates
 
 There is a common misconception among frontend developers that you should not unit test the template of a component. This is incorrect. Not only *can* you test your components' templates, but you *should*.
 
-## Reason #1: It's officially recommended by the Angular team
+## Reason #1: It's officially recommended
 
 The [official Angular documentation](https://angular.io/guide/testing-components-basics "https://angular.io/guide/testing-components-basics") says (emphasis mine):
 
@@ -53,7 +53,9 @@ export class SubmitButtonComponent {
 }
 ```
 
-This component is broken. Clicking the button in it doesn't do anything. However, this mistake would not be caught by a unit test that directly called `onSubmit()`. By simulating a click on the `<button>` in our test instead, we mimic real user behavior and catch the error.
+This component is broken. Clicking the button in it doesn't do anything. However, this mistake would not be caught by a unit test that directly called `onSubmit()`. By simulating a click on the `<button>` in our test instead, we mimic real user behavior and catch the error. For more, see [Kent C. Dodds' great post on shallow rendering](https://kentcdodds.com/blog/why-i-never-use-shallow-rendering#without-shallow-rendering).
+
+> The more your tests resemble the way your software is used, the more confidence they can give you.
 
 ## Reason #3: Test your component's public API (the template)
 
@@ -98,6 +100,7 @@ export class PasswordStrengthIndicatorComponent {
     }
   }
 
+  // Please excuse this hacky ngFor workaround
   get arrayForNgFor(): number[] {
     let numberOfBoxes = this.passwordStrength ?? 0;
     return new Array(numberOfBoxes).fill(0)
