@@ -12,3 +12,10 @@ export type BlogPostMetadata = {
   keywords?: string[];
   hn?: string;
 }
+
+export type BlogLandingPageLoadData = {
+  posts: Array<{
+    metadata: BlogPostMetadata;
+    postPath: string;
+  }>;
+};
