@@ -1,6 +1,5 @@
-export type BlogPostData = {
-  title: string;
-  date: Date;
+export type BlogPostLoadData = {
+  metadata: BlogPostMetadata;
   content: ConstructorOfATypedSvelteComponent;
 };
 
