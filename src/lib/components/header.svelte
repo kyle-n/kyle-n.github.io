@@ -1,5 +1,5 @@
 <header>
-  <h1>Kyle Nazario's Blog</h1>
+  <h1>Kyle Nazario</h1>
   <nav>
     <a href="/">Home</a> |
     <a href="/about">About</a> |
