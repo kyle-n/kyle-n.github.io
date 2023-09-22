@@ -226,3 +226,4 @@ node_modules
 package-lock.json
 .env
 .sass-cache
+.svelte-kit
