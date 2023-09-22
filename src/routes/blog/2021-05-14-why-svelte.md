@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Why I chose Svelte for my new app
+date: 2021-05-14
 image: bnt-1.png
 keywords: svelte, fe, js, ts, bnt
 hn: https://news.ycombinator.com/item?id=27166097
