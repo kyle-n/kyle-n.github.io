@@ -5,13 +5,13 @@ export type BlogPostData = {
 };
 
 export type BlogPostMetadata = {
-  layout: 'post',
+  layout: 'post';
   title: string;
   date: string;
   image?: string;
   keywords?: string[];
   hn?: string;
-}
+};
 
 export type BlogLandingPageLoadData = {
   posts: Array<{
