@@ -8,6 +8,7 @@ export type BlogPostMetadata = {
   title: string;
   date: string;
   image?: string;
+  caption?: string;
   keywords?: string[];
   hn?: string;
 };
