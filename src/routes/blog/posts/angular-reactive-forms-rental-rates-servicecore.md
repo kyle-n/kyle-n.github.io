@@ -2,8 +2,9 @@
 layout: post
 title: Using Angular reactive forms to build a huge feature for ServiceCore
 image: rental-rates.png
-date: 2020-05-16
 caption: And it looks so simple from the outside to use.
+date: 2020-05-16
+keywords: javascript, typescript, angular, rxjs, showcase, frontend
 ---
 
 At ServiceCore, we're thrilled to ship [rental rates](https://support.servicecore.com/hc/en-us/articles/360041523411-Add-Rental-Rates)! This was a months-long project that required massive collaboration between our product owner, frontend and backend engineers and QA. 

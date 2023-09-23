@@ -3,7 +3,7 @@ layout: post
 title: Offline podcast apps for Apple Watch, reviewed
 date: 2021-05-28
 image: watch-apps.png
-tags: watch, iOS, watchOS, podcasts
+tags: apple
 ---
 
 When running alone, I fill the time with podcasts.

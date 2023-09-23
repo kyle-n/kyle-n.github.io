@@ -2,7 +2,7 @@
 layout: post
 title: How to speed up your Angular builds
 date: 2022-04-19
-keywords: javascript, typescript, angular, frontend
+keywords: javascript, typescript, angular, frontend, tutorial
 image: fast_pc.jpg
 caption: Image via Mohamed Hassan on Pixabay
 ---

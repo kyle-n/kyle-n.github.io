@@ -2,7 +2,7 @@
 layout: post
 title: WWDC Wishlist- A free large-language model built into iOS and macOS
 date: 2023-04-24
-keywords: apple, swift
+keywords: apple, news, ai
 image: wwdc23.jpg
 ---
 

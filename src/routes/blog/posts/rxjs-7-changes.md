@@ -2,7 +2,7 @@
 layout: post
 title: What’s New in RxJS 7- Small Bundles and Big Changes to share
 date: 2021-06-02
-keywords: javascript, typescript, rxjs
+keywords: javascript, typescript, rxjs, news
 image: rxjs-logo.png
 ---
 

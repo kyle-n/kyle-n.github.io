@@ -2,7 +2,7 @@
 layout: post
 title: Things I was asked to do while job hunting
 date: 2021-04-10
-keywords: jobs, career, personal
+keywords: personal
 hn: https://news.ycombinator.com/item?id=26763336
 ---
 

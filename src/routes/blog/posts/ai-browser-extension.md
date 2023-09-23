@@ -2,7 +2,7 @@
 layout: post
 title: How AI helped me write a browser extension
 date: 2023-06-07
-keywords: ai, javascript, typescript, extensions
+keywords: ai, javascript, typescript, extensions, showcase, frontend
 image: ai.png
 ---
 

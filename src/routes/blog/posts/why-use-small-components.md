@@ -2,7 +2,7 @@
 layout: post
 title: Why smaller components are better
 date: 2022-05-23
-keywords: javascript, typescript, angular, frontend
+keywords: javascript, typescript, angular, frontend, tutorial, coding
 image: component-tree.png
 caption: Via angular.io
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: How to Incrementally Migrate an Angular Project to TypeScript Strict Mode
 date: 2022-06-22
-keywords: javascript, typescript, angular, frontend
+keywords: javascript, typescript, angular, frontend, tutorial
 image: typescript.png
 ---
 

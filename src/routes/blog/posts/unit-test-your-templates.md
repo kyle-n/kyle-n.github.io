@@ -1,7 +1,7 @@
 ---
 layout: post
 title: You should unit test component templates
-keywords: angular, typescript, testing, frontend
+keywords: angular, typescript, testing, frontend, tutorial
 date: 2023-05-04
 ---
 

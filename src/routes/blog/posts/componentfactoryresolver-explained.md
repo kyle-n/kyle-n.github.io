@@ -2,7 +2,7 @@
 layout: post
 title: How ComponentFactoryResolver can unlock powerful higher-order components
 date: 2022-06-30
-keywords: javascript, typescript, angular, frontend
+keywords: javascript, typescript, angular, frontend, tutorial
 image: factory.png
 caption: Via ArtsyBee on Pixabay
 ---

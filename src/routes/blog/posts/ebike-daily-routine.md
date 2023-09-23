@@ -2,7 +2,7 @@
 layout: post
 title: An ebike has completely changed my daily routine
 date: 2023-04-28
-keywords: personal, exercise
+keywords: personal
 image: ebike-overall.jpg
 ---
 
