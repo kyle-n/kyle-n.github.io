@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What’s New in RxJS 7&#58; Small Bundles and Big Changes to share
+title: What’s New in RxJS 7- Small Bundles and Big Changes to share
 date: 2021-06-02
 keywords: javascript, typescript, rxjs
 image: rxjs-logo.png
@@ -18,11 +18,11 @@ Lesh said while RxJS 7 was "a bit faster," the big improvement for the new versi
 
 See this chart of operator sizes in RxJS 6:
 
-![A chart showing the size of different RxJS 6 operators](/static/img/rxjs6-size.png)
+![A chart showing the size of different RxJS 6 operators](/img/rxjs6-size.png)
 
 And this chart of the same operator sizes in RxJS 7:
 
-![A chart showing the size of different RxJS 7 operators](/static/img/rxjs7-size.png)
+![A chart showing the size of different RxJS 7 operators](/img/rxjs7-size.png)
 
 ## Consolidating Sharing operators
 
