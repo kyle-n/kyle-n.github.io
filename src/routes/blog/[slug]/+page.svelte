@@ -22,7 +22,7 @@
     margin-bottom: 2rem;
 
     h2 {
-      margin-bottom: 0;
+      margin-bottom: 0.5rem;
     }
   }
 </style>
