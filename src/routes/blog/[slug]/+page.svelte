@@ -6,8 +6,8 @@
 
 <article>
   <div id="title-and-date">
-  <h2>{data.metadata.title}</h2>
-  <PostDate date={data.metadata.date} />
+    <h2>{data.metadata.title}</h2>
+    <PostDate date={data.metadata.date} />
   </div>
   {#if data.metadata.image}
     <img src="/img/{data.metadata.image}" alt={data.metadata.title} />

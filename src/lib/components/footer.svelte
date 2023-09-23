@@ -2,7 +2,7 @@
   const copyrightYear = new Date().getFullYear();
 </script>
 
-<hr>
+<hr />
 <footer>
   <p>© {copyrightYear} Kyle Nazario</p>
 </footer>
