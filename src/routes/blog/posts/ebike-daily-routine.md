@@ -24,19 +24,19 @@ After that, I bought an ebike.
 
 ## The bike
 
-![A Ride1Up Core-5 ebike](/static/img/ebike-overall.jpg)
+![A Ride1Up Core-5 ebike](/img/ebike-overall.jpg)
 
 I purchased the [Ride1Up Core-5](https://ride1up.com/product/core-5/) on the recommendation of Electrek, which called it [“one of the best bang-for-your-buck options.”](https://electrek.co/2023/04/02/here-are-the-best-electric-bikes-you-can-buy-at-every-price-level/) 
 
 The Core-5 ($1,045 at time of writing) resembles a regular bike. Look closely, though, and you see the frame holds a long, cyclindrical battery. That battery powers a small 750-watt motor to help you pedal. A small control panel by the left handlebar sets how much electrical assist is used.
 
-![The pedal assist control panel on the ebike](/static/img/ebike-panel.jpg)
+![The pedal assist control panel on the ebike](/img/ebike-panel.jpg)
 
 The more pedal assist, the faster the battery runs out. When that happens, I use a key to pop the battery out of the bike and plug it in inside my house to charge.
 
-![The Core-5 frame when the battery is removed](/static/img/ebike-battery-slot.jpg)
+![The Core-5 frame when the battery is removed](/img/ebike-battery-slot.jpg)
 
-![The Core-5 battery. Large black cylinder-ish object](/static/img/ebike-battery.jpg)
+![The Core-5 battery. Large black cylinder-ish object](/img/ebike-battery.jpg)
 
 The bike is heavy with the battery. Its black shell also chips easily. I don't care about any of that, though, because I love this bike.
 
