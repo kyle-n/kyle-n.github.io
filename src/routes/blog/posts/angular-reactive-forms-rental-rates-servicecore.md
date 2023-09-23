@@ -32,7 +32,7 @@ The rental rate input table should display every product attached to a rental. B
 
 So: rentals have products, products have line item charges, and rental rates are special per-rental instances of a line item charge. Make sense? 
 
-![Overall view of the rate input table](https://i.imgur.com/nbEwLVI.png)
+![Overall view of the rate input table](/img/rental-rates.png)
 
 The last two options in the line item dropdown should be "Add Service" and "Assign Service", which I'll explain later. 
 
@@ -126,7 +126,7 @@ This block grabs services (line item charges) already associated to a product an
 
 The last code win was creating the select service dropdown. It transformed an array of services into `<options>`, sorting by billing period on the service. 
 
-![The add service dropdown for ServiceCore rental rates](http://i.imgur.com/sJthlnx.png)
+![The add service dropdown for ServiceCore rental rates](/img/rental-rate-dropdown.png)
 
 All that logic used a pure static class function, making it a breeze to unit test. 
 
