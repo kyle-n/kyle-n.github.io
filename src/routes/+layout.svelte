@@ -1,13 +1,10 @@
 <script>
   import Header from '$lib/components/header.svelte';
-
-  const copyrightYear = new Date().getFullYear();
+  import Footer from '$lib/components/footer.svelte';
 </script>
 
 <Header />
 
 <slot />
 
-<footer>
-  <p>© {copyrightYear} Kyle Nazario</p>
-</footer>
+<Footer />
