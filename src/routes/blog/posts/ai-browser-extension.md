@@ -72,11 +72,11 @@ convert filled.png -resize 48x48 filled_48.png
 convert filled.png -resize 72x72 filled_72.png
 ```
 
-![image](/static/img/chatgpt-imagemagick-1.png)
+![image](/img/chatgpt-imagemagick-1.png)
 
 I also had it make inverted versions of each size for dark mode. It tripped up on this one and inverted a transparent background to white. I had to google the problem to know what instructions to give ChatGPT. 
 
-![image](/static/img/chatgpt-imagemagick-2.png)
+![image](/img/chatgpt-imagemagick-2.png)
 
 ChatGPT didn’t get it all right, but it still saved me time looking up documentation and writing shell scripts.
 
@@ -88,7 +88,7 @@ I chose Stable Diffusion because frankly the app icon didn’t need to be that g
 
 Stable Diffusion has a long way to go. It generated a speech bubble icon eventually, but only after a lot of misfires. I initially wanted it to create a background with some dice, but that was far too complicated. Stable Diffusion has absolutely no idea what a six-sided die looks like 🤦‍♂️. 
 
-![image](/static/img/mc-icon.png)
+![image](/img/mc-icon.png)
 
 Side note: ChatGPT was super helpful here again. It flawlessly wrote a bunch of ImageMagick commands to round the icon’s corners and shrink it to 80% size while keeping the canvas the same. Love not having to pay for Photoshop. 
 
