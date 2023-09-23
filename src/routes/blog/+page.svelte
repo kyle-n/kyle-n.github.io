@@ -14,10 +14,3 @@
     </a>
   </div>
 {/each}
-
-<style>
-  .post-preview {
-    border: 1px solid black;
-    padding: 1rem;
-  }
-</style>
