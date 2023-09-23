@@ -1,8 +1,8 @@
 <script lang="ts">
   import PostDate from '$lib/components/post-date.svelte';
-  import type { BlogLandingPageLoadData } from '$lib/types';
+  import type { ResolvedBlogPostList } from '$lib/types';
 
-  export let data: BlogLandingPageLoadData;
+  export let data: ResolvedBlogPostList;
 </script>
 
 <h2>Blog</h2>

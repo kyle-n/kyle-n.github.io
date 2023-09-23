@@ -1,6 +1,6 @@
-import type { BlogLandingPageLoadData, BlogPostMetadata } from '$lib/types';
+import type { ResolvedBlogPostList, BlogPostMetadata } from '$lib/types';
 
-export async function load(): Promise<BlogLandingPageLoadData> {
+export async function load(): Promise<ResolvedBlogPostList> {
   const pathPrefix = './posts/';
   const allPostFiles = import.meta.glob('./posts/*.md');
   const iterablePostFiles = Object.entries(allPostFiles);

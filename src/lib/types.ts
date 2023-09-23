@@ -1,4 +1,4 @@
-export type BlogPostLoadData = {
+export type ResolvedBlogPost = {
   metadata: BlogPostMetadata;
   content: ConstructorOfATypedSvelteComponent;
 };
@@ -13,7 +13,7 @@ export type BlogPostMetadata = {
   hn?: string;
 };
 
-export type BlogLandingPageLoadData = {
+export type ResolvedBlogPostList = {
   posts: Array<{
     metadata: BlogPostMetadata;
     postPath: string;
