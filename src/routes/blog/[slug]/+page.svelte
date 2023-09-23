@@ -17,7 +17,10 @@
     <svelte:component this={data.content} />
   </div>
 </article>
-<RelatedPosts parentPostKeywords={data.metadata.keywords} />
+<RelatedPosts
+  parentPostKeywords={data.metadata.keywords}
+  parentPostTitle={data.metadata.title}
+/>
 
 <style lang="scss">
   #title-and-date {

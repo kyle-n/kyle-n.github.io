@@ -17,3 +17,21 @@ export async function getAllPosts(): Promise<PostLink[]> {
   });
   return posts;
 }
+
+export async function getRelatedPosts(parentPostTitle: string, parentPostKeywords?: string): Promise<PostLink[]> {
+  const allPosts = await getAllPosts();
+  const parentKeywords = getKeywordArray(parentPostKeywords);
+
+  const relatedPosts = allPosts.filter(post => {
+    if (post.metadata.title === parentPostTitle) return false;
+
+    const postKeywords = getKeywordArray(post.metadata.keywords);
+    const intersection = parentKeywords.filter(keyword => postKeywords.includes(keyword));
+    return intersection.length > 0;
+  });
+  return relatedPosts.slice(0, 3);
+}
+
+function getKeywordArray(keywords?: string): string[] {
+  return keywords?.split(',').map(keyword => keyword.trim()) ?? [];
+}
