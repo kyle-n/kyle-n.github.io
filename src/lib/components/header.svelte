@@ -13,7 +13,7 @@
     display: flex;
     justify-content: space-around;
   }
-  
+
   /* Fixes jump on hover */
   nav a {
     border-bottom: 2px solid transparent;

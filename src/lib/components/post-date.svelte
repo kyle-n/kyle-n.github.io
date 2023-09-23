@@ -2,8 +2,10 @@
   import dayjs from 'dayjs';
   export let date: string | Date;
   const dateWithTimezoneOffset = new Date(date);
-  dateWithTimezoneOffset.setHours(dateWithTimezoneOffset.getHours() + 6)
-  const formattedPostDate = dayjs(dateWithTimezoneOffset).format('MMMM D, YYYY');
+  dateWithTimezoneOffset.setHours(dateWithTimezoneOffset.getHours() + 6);
+  const formattedPostDate = dayjs(dateWithTimezoneOffset).format(
+    'MMMM D, YYYY'
+  );
 </script>
 
 <div>{formattedPostDate}</div>
