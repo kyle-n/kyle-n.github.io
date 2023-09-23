@@ -1,9 +1,12 @@
 <script lang="ts">
-  import PostDate from '$lib/components/post-date.svelte';
+  import PageTitle from '$lib/components/page-title.svelte';
+import PostDate from '$lib/components/post-date.svelte';
   import type { ResolvedBlogPostList } from '$lib/types';
 
   export let data: ResolvedBlogPostList;
 </script>
+
+<PageTitle title="Blog" />
 
 <h2>Blog</h2>
 {#each data.posts as post}

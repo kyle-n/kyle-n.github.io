@@ -1,9 +1,12 @@
 <script lang="ts">
-  import PostDate from '$lib/components/post-date.svelte';
+  import PageTitle from '$lib/components/page-title.svelte';
+import PostDate from '$lib/components/post-date.svelte';
   import RelatedPosts from '$lib/components/related-posts.svelte';
   import type { ResolvedBlogPost } from '$lib/types';
   export let data: ResolvedBlogPost;
 </script>
+
+<PageTitle title={data.metadata.title} />
 
 <article>
   <div id="title-and-date">
