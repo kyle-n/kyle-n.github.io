@@ -14,8 +14,10 @@ export type BlogPostMetadata = {
 };
 
 export type ResolvedBlogPostList = {
-  posts: Array<{
+  posts: PostLink[];
+};
+
+export type PostLink = {
     metadata: BlogPostMetadata;
     postPath: string;
-  }>;
-};
+}

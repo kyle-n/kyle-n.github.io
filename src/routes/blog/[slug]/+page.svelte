@@ -1,5 +1,6 @@
 <script lang="ts">
   import PostDate from '$lib/components/post-date.svelte';
+  import RelatedPosts from '$lib/components/related-posts.svelte';
   import type { ResolvedBlogPost } from '$lib/types';
   export let data: ResolvedBlogPost;
 </script>
@@ -16,6 +17,7 @@
     <svelte:component this={data.content} />
   </div>
 </article>
+<RelatedPosts parentPostKeywords={data.metadata.keywords} />
 
 <style lang="scss">
   #title-and-date {
