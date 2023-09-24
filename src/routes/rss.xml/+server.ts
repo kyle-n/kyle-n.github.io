@@ -2,6 +2,8 @@ import { BLOG_DESCRIPTION, BLOG_TITLE, BLOG_URL } from '$lib/blog-metadata';
 import { getAllPosts } from '$lib/post-handlers';
 import { create } from 'xmlbuilder2';
 import { JSDOM } from 'jsdom';
+import { readFile } from 'fs/promises';
+import { Converter } from 'showdown';
 
 export async function GET() {
   const headers = {
@@ -13,7 +15,7 @@ export async function GET() {
 
 // prettier-ignore
 async function getRssXml(): Promise<string> {
-  const allPosts = await getAllPosts()
+  const allPosts = (await getAllPosts()).filter((post) => post.metadata.title === 'You should unit test component templates');
   const root = create({ version: '1.0' })
   .ele('rss', {
     'xmlns:dc': 'https://purl.org/dc/elements/1.1/',
@@ -27,12 +29,15 @@ async function getRssXml(): Promise<string> {
       .ele('description').txt(BLOG_DESCRIPTION).up()
       .ele('language').txt('en').up()
       .ele('lastBuildDate').txt(new Date().toUTCString()).up();
+  
+  const converter = new Converter();
 
   for await (const post of allPosts) {
     const pubDate = new Date(post.metadata.date).toUTCString();
     const postUrl = `${BLOG_URL}/blog/${post.postPath}`;
-    const postResponse = await fetch(postUrl);
-    const postHtml = await postResponse.text();
+    const postMarkdown = await readFile(`./src/routes/blog/posts/${post.postPath}.md`, 'utf-8');
+    const postHtml = converter.makeHtml(postMarkdown);
+    console.log(postHtml)
     const postHtmlWithoutHeader = getSanitizedPostHtml(postHtml);
     const description = getPostPreviewText(postHtml);
 
@@ -54,14 +59,7 @@ function getSanitizedPostHtml(postHtml: string): string {
   const dom = new JSDOM(postHtml);
 
   const elementsToRemove = [
-    ...Array.from(dom.window.document.getElementsByTagName('header')),
-    dom.window.document.getElementById('post-title'),
-    ...Array.from(
-      dom.window.document.getElementsByClassName('formatted-post-date')
-    ),
-    ...Array.from(
-      dom.window.document.getElementsByTagName('script')
-    ),
+    dom.window.document.getElementsByTagName('p')[0]
   ];
   elementsToRemove.forEach((element) => element?.remove());
   return dom.window.document.body.innerHTML;
