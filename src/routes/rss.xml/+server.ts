@@ -13,7 +13,8 @@ export async function GET() {
 
 // prettier-ignore
 async function getRssXml(): Promise<string> {
-  const allPosts = await getAllPosts()
+  let allPosts = await getAllPosts()
+  allPosts = allPosts.filter(post => post.metadata.title === 'How Node.js Fakes Multithreading');
   const root = create({ version: '1.0' })
   .ele('rss', {
     'xmlns:dc': 'https://purl.org/dc/elements/1.1/',
@@ -34,7 +35,7 @@ async function getRssXml(): Promise<string> {
     const postResponse = await fetch(postUrl);
     const postHtml = await postResponse.text();
     const postHtmlWithoutHeader = getSanitizedPostHtml(postHtml);
-    const description = getPostPreviewHtml(postHtml);
+    const description = getPostPreviewText(postHtml);
 
     root.ele('item')
       .ele('title').txt(post.metadata.title).up()
@@ -52,13 +53,22 @@ async function getRssXml(): Promise<string> {
 
 function getSanitizedPostHtml(postHtml: string): string {
   const dom = new JSDOM(postHtml);
-  Array.from(dom.window.document.getElementsByTagName('header')).forEach(header => header.remove());
-  dom.window.document.getElementById('post-title')?.remove()
-  Array.from(dom.window.document.getElementsByClassName('formatted-post-date')).forEach(div => div.remove());
+
+  const elementsToRemove = [
+    ...Array.from(dom.window.document.getElementsByTagName('header')),
+    dom.window.document.getElementById('post-title'),
+    ...Array.from(
+      dom.window.document.getElementsByClassName('formatted-post-date')
+    ),
+    ...Array.from(
+      dom.window.document.getElementsByTagName('script')
+    ),
+  ];
+  elementsToRemove.forEach((element) => element?.remove());
   return dom.window.document.body.innerHTML;
 }
 
-function getPostPreviewHtml(postHtml: string): string {
+function getPostPreviewText(postHtml: string): string {
   const dom = new JSDOM(postHtml);
   const firstParagraph = dom.window.document.querySelector('article p');
   return firstParagraph?.textContent?.trim() ?? '';
