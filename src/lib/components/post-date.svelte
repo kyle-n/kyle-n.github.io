@@ -8,7 +8,7 @@
   );
 </script>
 
-<div>{formattedPostDate}</div>
+<div class="formatted-post-date">{formattedPostDate}</div>
 
 <style>
   div {

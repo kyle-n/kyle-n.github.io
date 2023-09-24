@@ -1,6 +1,7 @@
 import { BLOG_DESCRIPTION, BLOG_TITLE, BLOG_URL } from '$lib/blog-metadata';
 import { getAllPosts } from '$lib/post-handlers';
 import { create } from 'xmlbuilder2';
+import { JSDOM } from 'jsdom';
 
 export async function GET() {
   const headers = {
@@ -32,15 +33,24 @@ async function getRssXml(): Promise<string> {
     const postUrl = `${BLOG_URL}/blog/${post.postPath}`;
     const postResponse = await fetch(postUrl);
     const postHtml = await postResponse.text();
+    const postHtmlWithoutHeader = getSanitizedPostHtml(postHtml);
 
     root.ele('item')
       .ele('title').txt(post.metadata.title).up()
       .ele('description').txt('description here').up()
       .ele('link').txt(postUrl).up()
       .ele('pubDate').txt(pubDate).up()
-      .ele('content:encoded').txt(postHtml).up()
+      .ele('content:encoded').txt(postHtmlWithoutHeader).up()
     .up();
   }
 
   return root.end()
+}
+
+function getSanitizedPostHtml(postHtml: string): string {
+  const dom = new JSDOM(postHtml);
+  Array.from(dom.window.document.getElementsByTagName('header')).forEach(header => header.remove());
+  dom.window.document.getElementById('post-title')?.remove()
+  Array.from(dom.window.document.getElementsByClassName('formatted-post-date')).forEach(div => div.remove());
+  return dom.window.document.body.innerHTML;
 }

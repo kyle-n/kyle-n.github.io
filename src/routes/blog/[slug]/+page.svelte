@@ -10,7 +10,7 @@ import PostDate from '$lib/components/post-date.svelte';
 
 <article>
   <div id="title-and-date">
-    <h2>{data.metadata.title}</h2>
+    <h2 id="post-title">{data.metadata.title}</h2>
     <PostDate date={data.metadata.date} />
   </div>
   {#if data.metadata.image}
