@@ -26,11 +26,11 @@ And this chart of the same operator sizes in RxJS 7:
 
 ## Consolidating Sharing operators
 
-Lesh's talk includes a long discussion about how many ways RxJS lets you share a stream (`multicast`, `shareReplay`, `refCount`, etc).
+Lesh's talk includes a long discussion about how many ways RxJS lets you share a stream (`multicast`, `shareReplay`, `refCount`, etc).
 
-RxJS 7 deprecates `multicast`, `publish`, `publishReplay`, `publishLast`, and `refCount`. `shareReplay` was too popular to deprecate in 7, but Lesh said it's next because it is "full of footguns." Long term, the only sharing operators will be `share`, `connect` and `connectable`. He recommends moving to `share` now.
+RxJS 7 deprecates `multicast`, `publish`, `publishReplay`, `publishLast`, and `refCount`. `shareReplay` was too popular to deprecate in 7, but Lesh said it's next because it is "full of footguns." Long term, the only sharing operators will be `share`, `connect` and `connectable`. He recommends moving to `share` now.
 
-`share` is picking up some new features as the single solution operator. It takes an optional config object as a parameter, where you can define custom behavior for the stream.
+`share` is picking up some new features as the single solution operator. It takes an optional config object as a parameter, where you can define custom behavior for the stream.
 
 ```typescript
 share({
@@ -43,7 +43,7 @@ share({
 
 ## Better TypeScript Typings
 
-RxJS 7 [requires TypeScript 4.2](https://github.com/ReactiveX/rxjs/blob/6bd1c5f3cf0e387973b44698c48bc933e8c528aa/package.json#L9), Lesh said, because it contains features that enable more accurate, stricter types. One example he gave in his slides involved `Subject`:
+RxJS 7 [requires TypeScript 4.2](https://github.com/ReactiveX/rxjs/blob/6bd1c5f3cf0e387973b44698c48bc933e8c528aa/package.json#L9), Lesh said, because it contains features that enable more accurate, stricter types. One example he gave in his slides involved `Subject`:
 
 ```typescript
 // allowed in RxJS 6, errors in 7 because next() must be called with a number
@@ -55,9 +55,9 @@ For teams that are unable to upgrade to TypeScript 4.2, Lesh recommended staying
 
 ### `toPromise()` Deprecated
 
-The problem with `toPromise()`, Lesh explained, was that it didn't make sense with Observables. Should a promise created by `toPromise()` resolve with the first or last value emitted from the source Observable?
+The problem with `toPromise()`, Lesh explained, was that it didn't make sense with Observables. Should a promise created by `toPromise()` resolve with the first or last value emitted from the source Observable?
 
-So, `toPromise()` is deprecated in favor of `lastValueFrom()` and `firstValueFrom()`. These new functions still convert Observables to Promises, but in a way that clarifies that value the Promise will resolve with.
+So, `toPromise()` is deprecated in favor of `lastValueFrom()` and `firstValueFrom()`. These new functions still convert Observables to Promises, but in a way that clarifies that value the Promise will resolve with.
 
 ```typescript
 const source = from([1, 2])
@@ -93,8 +93,8 @@ async function* ticket(delay: number) {
 
 ## Other Updates
 
-- `finalize()` operators now run in the order in which they are written in `pipe()`. In contrast, RxJS 6 ran them in reverse.
-- `subscription.add(someSubscription)` now returns void so people will stop writing `add()` chains, which Lesh says never worked.
+- `finalize()` operators now run in the order in which they are written in `pipe()`. In contrast, RxJS 6 ran them in reverse.
+- `subscription.add(someSubscription)` now returns void so people will stop writing `add()` chains, which Lesh says never worked.
 
 ```typescript
 // add() returns void, cannot be chained
@@ -104,14 +104,14 @@ subscription
   .add(subTwo) // errors
 ```
 
-- `animationFrames()` creates Observables to do animation logic reactively
-- `switchScan()` operator, aka `switchMap` with an accumulator
-- `throwError()` requires a callback, not an error, as the error captures the current stack at the moment of its creation
+- `animationFrames()` creates Observables to do animation logic reactively
+- `switchScan()` operator, aka `switchMap` with an accumulator
+- `throwError()` requires a callback, not an error, as the error captures the current stack at the moment of its creation
 
-### Your `with` Is My Command
+### Your `with` Is My Command
 
-- `combineLatest` operator renamed to `combineLatestWith`
-- `merge` operator renamed to `mergeWith`
+- `combineLatest` operator renamed to `combineLatestWith`
+- `merge` operator renamed to `mergeWith`
 - `zip` operator renamed to `zipWith`
 - `race` operator renamed to `raceWith`
 - `concat` operator renamed to `concatWith`
@@ -122,6 +122,6 @@ If your project can be upgraded to RxJS 7, we would recommend doing so. The spee
 
 Important points to remember:
 
-- Replace your `toPromise` calls with `firstValueFrom` and `lastValueFrom`
-- Replace your `shareReplay` calls with `share`
-- Stop using `.add` chains to manage your subscriptions. Lesh [recommends `takeUntil`](https://medium.com/@benlesh/rxjs-dont-unsubscribe-6753ed4fda87)
+- Replace your `toPromise` calls with `firstValueFrom` and `lastValueFrom`
+- Replace your `shareReplay` calls with `share`
+- Stop using `.add` chains to manage your subscriptions. Lesh [recommends `takeUntil`](https://medium.com/@benlesh/rxjs-dont-unsubscribe-6753ed4fda87)
