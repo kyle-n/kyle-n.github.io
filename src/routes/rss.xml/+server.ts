@@ -13,8 +13,7 @@ export async function GET() {
 
 // prettier-ignore
 async function getRssXml(): Promise<string> {
-  let allPosts = await getAllPosts()
-  allPosts = allPosts.filter(post => post.metadata.title === 'How Node.js Fakes Multithreading');
+  const allPosts = await getAllPosts()
   const root = create({ version: '1.0' })
   .ele('rss', {
     'xmlns:dc': 'https://purl.org/dc/elements/1.1/',
