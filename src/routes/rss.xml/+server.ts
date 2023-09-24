@@ -34,10 +34,11 @@ async function getRssXml(): Promise<string> {
     const postResponse = await fetch(postUrl);
     const postHtml = await postResponse.text();
     const postHtmlWithoutHeader = getSanitizedPostHtml(postHtml);
+    const description = getPostPreviewHtml(postHtml);
 
     root.ele('item')
       .ele('title').txt(post.metadata.title).up()
-      .ele('description').txt('description here').up()
+      .ele('description').txt(description).up()
       .ele('link').txt(postUrl).up()
       .ele('pubDate').txt(pubDate).up()
       .ele('content:encoded').txt(postHtmlWithoutHeader).up()
@@ -53,4 +54,10 @@ function getSanitizedPostHtml(postHtml: string): string {
   dom.window.document.getElementById('post-title')?.remove()
   Array.from(dom.window.document.getElementsByClassName('formatted-post-date')).forEach(div => div.remove());
   return dom.window.document.body.innerHTML;
+}
+
+function getPostPreviewHtml(postHtml: string): string {
+  const dom = new JSDOM(postHtml);
+  const firstParagraph = dom.window.document.querySelector('article p');
+  return firstParagraph?.textContent?.trim() ?? '';
 }
