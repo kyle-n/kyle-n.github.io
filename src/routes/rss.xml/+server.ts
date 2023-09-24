@@ -13,7 +13,7 @@ export async function GET() {
 
 // prettier-ignore
 async function getRssXml(): Promise<string> {
-  const allPosts = (await getAllPosts()).slice(0, 1)
+  const allPosts = await getAllPosts()
   const root = create({ version: '1.0' })
   .ele('rss', {
     'xmlns:dc': 'https://purl.org/dc/elements/1.1/',
@@ -39,6 +39,8 @@ async function getRssXml(): Promise<string> {
     root.ele('item')
       .ele('title').txt(post.metadata.title).up()
       .ele('description').txt(description).up()
+      .ele('guid').txt(postUrl).up()
+      .ele('dc:creator').txt('Kyle Nazario').up()
       .ele('link').txt(postUrl).up()
       .ele('pubDate').txt(pubDate).up()
       .ele('content:encoded').txt(postHtmlWithoutHeader).up()
