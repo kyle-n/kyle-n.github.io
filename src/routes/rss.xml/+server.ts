@@ -12,7 +12,7 @@ export async function GET() {
 
 // prettier-ignore
 async function getRssXml(): Promise<string> {
-  const allPosts = await getAllPosts();
+  const allPosts = (await getAllPosts()).slice(0, 1)
   const root = create({ version: '1.0' })
   .ele('rss', {
     'xmlns:dc': 'https://purl.org/dc/elements/1.1/',
@@ -29,11 +29,16 @@ async function getRssXml(): Promise<string> {
 
   for await (const post of allPosts) {
     const pubDate = new Date(post.metadata.date).toUTCString();
+    const postUrl = `${BLOG_URL}/blog/${post.postPath}`;
+    const postResponse = await fetch(postUrl);
+    const postHtml = await postResponse.text();
+
     root.ele('item')
       .ele('title').txt(post.metadata.title).up()
       .ele('description').txt('description here').up()
-      .ele('link').txt(`${BLOG_URL}/blog/${post.postPath}`).up()
+      .ele('link').txt(postUrl).up()
       .ele('pubDate').txt(pubDate).up()
+      .ele('content:encoded').txt(postHtml).up()
     .up();
   }
 
