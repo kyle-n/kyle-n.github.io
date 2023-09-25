@@ -1,6 +1,6 @@
 <script lang="ts">
   import KeywordLinks from '$lib/components/keyword-links.svelte';
-import PageTitle from '$lib/components/page-title.svelte';
+  import PageTitle from '$lib/components/page-title.svelte';
   import PostDate from '$lib/components/post-date.svelte';
   import RelatedPosts from '$lib/components/related-posts.svelte';
   import type { ResolvedBlogPost } from '$lib/types';
