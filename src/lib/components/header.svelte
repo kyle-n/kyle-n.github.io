@@ -1,8 +1,8 @@
 <script lang="ts">
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Contact', href: '/contact' },
-    { name: 'Blog', href: '/blog' }
+    { name: 'Blog', href: '/blog' },
+    { name: 'Contact', href: '/contact' }
   ];
 </script>
 
