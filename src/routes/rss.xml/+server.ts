@@ -30,37 +30,36 @@ async function getRssXml(): Promise<string> {
       .ele('name').txt(BLOG_AUTHOR).up()
       .ele('email').txt(BLOG_AUTHOR_EMAIL).up()
     .up()
-  
-  const converter = new Converter();
 
   for await (const post of allPosts) {
     const pubDate = new Date(post.metadata.date).toISOString();
     const postUrl = `${BLOG_URL}/blog/${post.postPath}`;
-    const postMarkdown = await readFile(`./src/routes/blog/posts/${post.postPath}.md`, 'utf-8');
-    const postHtml = converter.makeHtml(postMarkdown);
-    const postHtmlWithoutHeader = getSanitizedPostHtml(postHtml);
-    const description = getPostPreviewText(postHtml);
+    const postHtml = await getHtmlForPost(post.postPath);
 
     root.ele('entry')
       .ele('title').txt(post.metadata.title).up()
       .ele('link', { href: postUrl }).up()
       .ele('updated').txt(pubDate).up()
       .ele('id').txt(postUrl).up()
-      .ele('content', { type: 'html' }).txt(postHtmlWithoutHeader).up()
+      .ele('content', { type: 'html' }).txt(postHtml).up()
     .up();
   }
 
   return root.end()
 }
 
+const converter = new Converter();
+async function getHtmlForPost(postPath: string): Promise<string> {
+    const postMarkdownWithFrontmatter = await readFile(`./src/routes/blog/posts/${postPath}.md`, 'utf-8');
+    const postMarkdown = postMarkdownWithFrontmatter.split('---')[2].trim();
+    const postHtml = converter.makeHtml(postMarkdown);
+    return getSanitizedPostHtml(postHtml);
+}
+
 function getSanitizedPostHtml(postHtml: string): string {
   const dom = new JSDOM(postHtml);
 
-  const elementsToRemove = [
-    dom.window.document.getElementsByTagName('p')[0]
-  ];
-  elementsToRemove.forEach((element) => element?.remove());
-  return '<p>1</p>' + dom.window.document.body.innerHTML;
+  return '<p>3</p>' + dom.window.document.body.innerHTML;
 }
 
 function getPostPreviewText(postHtml: string): string {
