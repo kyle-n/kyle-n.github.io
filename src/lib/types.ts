@@ -17,6 +17,10 @@ export type ResolvedBlogPostList = {
   posts: PostLink[];
 };
 
+export type ResolvedKeywordPosts = ResolvedBlogPostList & {
+  keyword: string;
+};
+
 export type PostLink = {
   metadata: BlogPostMetadata;
   postPath: string;
