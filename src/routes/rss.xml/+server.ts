@@ -1,4 +1,10 @@
-import { BLOG_AUTHOR, BLOG_AUTHOR_EMAIL, BLOG_DESCRIPTION, BLOG_TITLE, BLOG_URL } from '$lib/blog-metadata';
+import {
+  BLOG_AUTHOR,
+  BLOG_AUTHOR_EMAIL,
+  BLOG_DESCRIPTION,
+  BLOG_TITLE,
+  BLOG_URL
+} from '$lib/blog-metadata';
 import { getAllPosts } from '$lib/post-handlers';
 import { create } from 'xmlbuilder2';
 import { JSDOM } from 'jsdom';
@@ -15,7 +21,7 @@ export async function GET() {
 
 // prettier-ignore
 async function getRssXml(): Promise<string> {
-  const allPosts = (await getAllPosts()).filter((post) => post.metadata.title === 'You should unit test component templates');
+  const allPosts = await getAllPosts();
   const rssUrl = `${BLOG_URL}/rss.xml`;
   const root = create({ version: '1.0', encoding: 'utf-8' })
   .ele('feed', {
@@ -30,11 +36,13 @@ async function getRssXml(): Promise<string> {
       .ele('name').txt(BLOG_AUTHOR).up()
       .ele('email').txt(BLOG_AUTHOR_EMAIL).up()
     .up()
+    .ele('subtitle').txt(BLOG_DESCRIPTION).up()
 
   for await (const post of allPosts) {
     const pubDate = new Date(post.metadata.date).toISOString();
     const postUrl = `${BLOG_URL}/blog/${post.postPath}`;
     const postHtml = await getHtmlForPost(post.postPath);
+    const postPreviewText = getPostPreviewText(postHtml);
 
     root.ele('entry')
       .ele('title').txt(post.metadata.title).up()
@@ -42,6 +50,7 @@ async function getRssXml(): Promise<string> {
       .ele('updated').txt(pubDate).up()
       .ele('id').txt(postUrl).up()
       .ele('content', { type: 'html' }).txt(postHtml).up()
+      .ele('summary').txt(postPreviewText).up()
     .up();
   }
 
@@ -50,16 +59,14 @@ async function getRssXml(): Promise<string> {
 
 const converter = new Converter();
 async function getHtmlForPost(postPath: string): Promise<string> {
-    const postMarkdownWithFrontmatter = await readFile(`./src/routes/blog/posts/${postPath}.md`, 'utf-8');
-    const postMarkdown = postMarkdownWithFrontmatter.split('---')[2].trim();
-    const postHtml = converter.makeHtml(postMarkdown);
-    return getSanitizedPostHtml(postHtml);
-}
-
-function getSanitizedPostHtml(postHtml: string): string {
-  const dom = new JSDOM(postHtml);
-
-  return '<p>3</p>' + dom.window.document.body.innerHTML;
+  const postMarkdownWithFrontmatter = await readFile(
+    `./src/routes/blog/posts/${postPath}.md`,
+    'utf-8'
+  );
+  const postMarkdown = postMarkdownWithFrontmatter.split('---')[2].trim();
+  const postHtml = converter.makeHtml(postMarkdown);
+  // prevents HTML in code tags from being rendered
+  return postHtml.replaceAll('&lt;', '&amp;lt;').replaceAll('&gt;', '&amp;gt;');
 }
 
 function getPostPreviewText(postHtml: string): string {
