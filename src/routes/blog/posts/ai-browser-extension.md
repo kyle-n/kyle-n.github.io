@@ -10,7 +10,7 @@ There’s a lot of AI hype. I understand if you are sick of it. I’m a little s
 
 To demonstrate, I’ll explain how AI helped me on my [latest side project](https://www.nazariosoftware.com/2023/06/02/play-in-peace-with-mute-chat-for-boardgamearena.html), a web browser extension. AI did not magically write the whole thing or do all the work, but it helped.
 
-## The extension, for context
+### The extension, for context
 
 I am an avid fan of [Euro-style board games](https://en.wikipedia.org/wiki/Eurogame) (think [Settlers of Catan](https://boardgamegeek.com/boardgame/152959/settlers-catan), [Wingspan](https://boardgamegeek.com/boardgame/266192/wingspan), [Terraforming Mars](https://boardgamegeek.com/boardgame/167791/terraforming-mars)). If I want to play a quick game on my lunch break, I use [BoardGameArena.com](https://boardgamearena.com). It's a great website that lets you play these games online against other people.
 
@@ -18,9 +18,9 @@ However, I’m not a fan of how BGA forces you into a chat room with your oppone
 
 So, I made a [browser extension](https://www.nazariosoftware.com/2023/06/02/play-in-peace-with-mute-chat-for-boardgamearena.html) to mute the chat on BGA. It doesn’t do anything fancy, it just adds a little CSS to remove the chat windows and notification noises. 
 
-## How AI helped
+### How AI helped
 
-### Copilot
+#### Copilot
 
 Generative AI helped me build this browser extension in a few ways. The first was [GitHub Copilot](https://copilot.github.com). Copilot wasn't something I initially interested in, but it's free for maintainers of "popular" open source projects. I tried it and liked it.
 
@@ -57,7 +57,7 @@ function unmuteChat() {
 
 None of this code is complicated. Copilot isn’t solving the traveling salesman problem here. But it did save me time writing boilerplate.
 
-### ChatGPT
+#### ChatGPT
 
 The second way generative AI aided this project was when I used ChatGPT to help generate image assets. I needed dark and light versions of my extension’s toolbar icon, in five different sizes. I knew there was a command-line tool for image editing called [ImageMagick](https://imagemagick.org), but I'd never used it and didn't want to invest a lot of time learning its flags. 
 
@@ -80,7 +80,7 @@ I also had it make inverted versions of each size for dark mode. It tripped up o
 
 ChatGPT didn’t get it all right, but it still saved me time looking up documentation and writing shell scripts.
 
-### Stable Diffusion
+#### Stable Diffusion
 
 When it came time to publish, I also needed an app icon. I tried [Diffusion Bee](https://diffusionbee.com) on my MacBook, but it was too slow. Instead, I ran [stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui) on my gaming PC. Much faster with an Nvidia 3070.
 
@@ -92,7 +92,7 @@ Stable Diffusion has a long way to go. It generated a speech bubble icon eventua
 
 Side note: ChatGPT was super helpful here again. It flawlessly wrote a bunch of ImageMagick commands to round the icon’s corners and shrink it to 80% size while keeping the canvas the same. Love not having to pay for Photoshop. 
 
-## AI: Not a magic bullet, but useful
+### AI: Not a magic bullet, but useful
 
 At no point in this process did generative AI completely do my job or become sentient or go, “I’m sorry Kyle, I can’t do that.” It was just… helpful. It made a couple things I’m not good at easier (shell scripting and graphic design). I wish Stable Diffusion was better at drawing dice, but you can’t have everything. 
 

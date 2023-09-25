@@ -20,7 +20,7 @@ First, a disclaimer. This feature is *hard*. [Overcast](https://overcast.fm) dev
 
 This post will discuss where some podcast apps come short, but let’s acknowledge any kind of offline Watch playback is a minor miracle. All of these apps have good developers trying their best in an extremely hostile environment.
 
-## [Apple Podcasts](https://apps.apple.com/us/app/apple-podcasts/id525463029) | 0/5 - Unusable
+### [Apple Podcasts](https://apps.apple.com/us/app/apple-podcasts/id525463029) | 0/5 - Unusable
 
 Apple Podcasts is built into the OS and [supports offline Watch playback](https://support.apple.com/guide/watch/add-podcasts-apd14ab6460c/watchos). You can select which shows or stations to sync to the Watch.
 
@@ -36,7 +36,7 @@ I love listening to [comedians wax rhapsodic about *Robocop* for two-and-a-half 
 
 If I’m wrong about the time limit, or there is a workaround, please let me know. The problem could be general sync flakiness or something else. 
 
-## [Overcast](https://apps.apple.com/us/app/overcast/id888422857) | 1/5 - Barely Usable
+### [Overcast](https://apps.apple.com/us/app/overcast/id888422857) | 1/5 - Barely usable
 
 Overcast used to have the implementation of offline playback that fit my needs best. Before, I could manually start a sync, track its progress, and run when it finished. Unfortunately, an update last year [changed that](https://sixcolors.com/post/2021/03/running-with-the-new-overcast-watch-app/).
 
@@ -56,7 +56,7 @@ Negatives:
 
 Maybe it's because I have a creaky, slow Series 3 Watch. Maybe I was doing something wrong. I could not figure it out.
 
-## [Castro](https://apps.apple.com/us/app/castro-podcast-player/id1080840241) | 3/5 - Decent
+### [Castro](https://apps.apple.com/us/app/castro-podcast-player/id1080840241) | 3/5 - Decent
 
 Castro offers offline Watch playback for subscribers to Castro Plus ($19/year).
 
@@ -75,11 +75,11 @@ Negatives:
 - No iPad app ([it’s coming](https://twitter.com/CastroPodcasts/status/1341139082232008705?s=20))
 - No progress indicator for syncs
 
-## [Outcast](https://outcastapp.com) | Disqualified
+### [Outcast](https://outcastapp.com) | Disqualified
 
 Seems like a cool app, but I want a podcast app that runs on my phone and iPad too.
 
-## [Pocket Casts](https://apps.apple.com/us/app/pocket-casts/id414834813) | 4/5 - Good
+### [Pocket Casts](https://apps.apple.com/us/app/pocket-casts/id414834813) | 4/5 - Good
 
 Pocket Casts impressed me with its thoughtfully designed offline mode. It requires an in-app purchase, but their subscription is dirt cheap ($1/mo or $10/year).
 
@@ -95,6 +95,6 @@ Negatives:
 
 - Weird, non-native phone UI. It works but it’s not amazing
 
-## Winner: Pocket Casts
+### Winner: Pocket Casts
 
 I love Castro and its inbox model. However, the Watch playback bug and lack of an iPad app put it just behind Pocket Casts. Pocket Casts’ UI is iffy, but that Watch app is rock solid.

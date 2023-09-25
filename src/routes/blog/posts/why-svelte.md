@@ -15,7 +15,7 @@ While it uses Swift to download and cache wallpapers in the background, everythi
 
 After building a prototype in vanilla JS, I switched Beautiful New Tabs to [Svelte](https://svelte.dev) and am happy with the results.
 
-## v1: Vanilla JS
+### v1: Vanilla JS
 
 The first version was vanilla JS filling in an HTML page. Displaying a wallpaper seemed too small for a framework.
 
@@ -23,7 +23,7 @@ I also wanted the wallpaper to appear as quickly as possible. Cmd-T, see wallpap
 
 The problem was my vanilla JS got imperative and messy, especially when I started adding features. The weather widget alone made me look for a new solution.
 
-## v2: Svelte
+### v2: Svelte
 
 I had read about Svelte and realized it was perfect for my use case. [Svelte is a compiler](https://dev.to/joshnuss/svelte-compiler-under-the-hood-4j20) that turns declarative `.svelte` files into imperative, DOM-updating JS. With Svelte, I could break my application into reusable, declarative components and still ship a tiny bundle to customers. [^1]
 
@@ -36,6 +36,6 @@ And you know what? Svelte worked like a charm.
 
 No extra KBs of data for a framework. It’s 16 KB because the app requires 16 KB of source code to juggle two APIs and a local cache. The bundle loads instantly.
 
-## ty, Svelte
+### ty, Svelte
 
 Svelte is new and still has rough edges, but I would recommend it as a way to write “vanilla” JS with the advantages of a framework.

@@ -7,7 +7,7 @@ date: 2023-05-04
 
 There is a common misconception among frontend developers that you should not unit test the template of a component. This is incorrect. Not only _can_ you test your components' templates, but you _should_.
 
-## Reason #1: It's officially recommended
+### Reason #1: It's officially recommended
 
 The [official Angular documentation](https://angular.io/guide/testing-components-basics 'https://angular.io/guide/testing-components-basics') says (emphasis mine):
 
@@ -17,7 +17,7 @@ The [official Angular documentation](https://angular.io/guide/testing-components
 
 The docs writers are arguing components, unlike other parts of an Angular application, are code _and_ markup, so both should be tested.
 
-## Reason #2: Tests should mimic real users
+### Reason #2: Tests should mimic real users
 
 The whole reason to write automated tests is to give yourself _confidence_ when shipping code. If you merge in a new feature and all the automated tests pass, you can be more confident your change has not caused a regression somewhere. You can't be 100% confident, because no test suite is perfect, but good tests lower the odds of regressions.
 
@@ -59,7 +59,7 @@ This component is broken. Clicking the button in it doesn't do anything. However
 
 > The more your tests resemble the way your software is used, the more confidence they can give you.
 
-## Reason #3: Test your component's public API (the template)
+### Reason #3: Test your component's public API (the template)
 
 It is generally a good idea to test modules of code through their public API.
 
@@ -149,7 +149,7 @@ export class PasswordStrengthIndicatorComponent {
 
 The "public API" of this component is its template. It's the number and color of the boxes displayed to the user. We _must_ test the template to see if it works.
 
-## How to test Angular components through the template
+### How to test Angular components through the template
 
 `PasswordStrengthIndicatorComponent` is a useful example to demonstrate how to unit test a component through its template. We want to see if it will render one box for each point of the user's password strength. To test that, we should start with the test file created when we ran `ng generate component`:
 
@@ -244,6 +244,6 @@ See? Not so bad.
 
 This test could have gone further and even used [snapshot testing](https://circleci.com/blog/snapshot-testing-with-jest/ 'https://circleci.com/blog/snapshot-testing-with-jest/') to verify that the `green` CSS class actually made the box green, but snapshot tests tend to be brittle. Again, we don't want to tie our tests too tightly to the current implementation of the component. Checking for the right CSS class should be enough.
 
-## Conclusion
+### Conclusion
 
 Components are the combination of logic and markup. To make sure they work for your users, you should test both of them, and that they work together correctly.

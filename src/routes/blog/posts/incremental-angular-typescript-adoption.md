@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Incrementally Migrate an Angular Project to TypeScript Strict Mode
+title: How to incrementally migrate an Angular project to TypeScript strict mode
 date: 2022-06-22
 keywords: javascript, typescript, angular, frontend, tutorial
 image: typescript.png
@@ -51,7 +51,7 @@ TypeScript throws a build error because `this.currentUser` is never assigned a v
 
 Strict mode is great for catching errors like this. With third-party help and planning, you can adopt it.
 
-## Background
+### Background
 
 As of TypeScript 4.7.3, the `strict` flag is shorthand for these compiler flags:
 
@@ -71,7 +71,7 @@ As of TypeScript 4.7.3, the `strict` flag is shorthand for these compiler flags:
 
 -   `useUnknownInCatchVariables`
 
-### [noImplicitAny](https://www.typescriptlang.org/tsconfig#noImplicitAny "https://www.typescriptlang.org/tsconfig#noImplicitAny")
+#### [noImplicitAny](https://www.typescriptlang.org/tsconfig#noImplicitAny "https://www.typescriptlang.org/tsconfig#noImplicitAny")
 
 Throws an error if the automatic type inference ever infers the type is `any`.
 
@@ -82,7 +82,7 @@ addDish(dishId) {
 }
 ```
 
-### [noImplicitThis](https://www.typescriptlang.org/tsconfig#noImplicitThis "https://www.typescriptlang.org/tsconfig#noImplicitThis")
+#### [noImplicitThis](https://www.typescriptlang.org/tsconfig#noImplicitThis "https://www.typescriptlang.org/tsconfig#noImplicitThis")
 
 Throws an error if the automatic type inference ever infers the type of `this` in a block of code is `any`.
 
@@ -95,7 +95,7 @@ getAddDishCallback() {
 }
 ```
 
-### [alwaysStrict](https://www.typescriptlang.org/tsconfig#alwaysStrict "https://www.typescriptlang.org/tsconfig#alwaysStrict")
+#### [alwaysStrict](https://www.typescriptlang.org/tsconfig#alwaysStrict "https://www.typescriptlang.org/tsconfig#alwaysStrict")
 
 Parses every TypeScript file using [ES5 strict JavaScript parsing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode"), which throws errors when trying to do something inadvisable. When not using ES5 strict parsing, these operations fail silently. As explained by MDN:
 
@@ -121,7 +121,7 @@ Object.preventExtensions(fixed);
 fixed.newProp = 'ohai'; // throws a TypeError
 ```
 
-### [strictBindCallApply](https://www.typescriptlang.org/tsconfig#strictBindCallApply "https://www.typescriptlang.org/tsconfig#strictBindCallApply")
+#### [strictBindCallApply](https://www.typescriptlang.org/tsconfig#strictBindCallApply "https://www.typescriptlang.org/tsconfig#strictBindCallApply")
 
 Requires correct argument types when using `bind()`, `call()` and `apply()`.
 
@@ -155,7 +155,7 @@ export class MenuComponent implements OnInit {
 }
 ```
 
-### [strictNullChecks](https://www.typescriptlang.org/tsconfig#strictNullChecks "https://www.typescriptlang.org/tsconfig#strictNullChecks")
+#### [strictNullChecks](https://www.typescriptlang.org/tsconfig#strictNullChecks "https://www.typescriptlang.org/tsconfig#strictNullChecks")
 
 If an variable's type is `T | undefined`, TypeScript throws an error if you treat it as just `T`. It also treats `null` and `undefined` as separate values.
 
@@ -167,7 +167,7 @@ addDish(dishId: number) {
 }
 ```
 
-### [strictFunctionTypes](https://www.typescriptlang.org/tsconfig#strictFunctionTypes "https://www.typescriptlang.org/tsconfig#strictFunctionTypes")
+#### [strictFunctionTypes](https://www.typescriptlang.org/tsconfig#strictFunctionTypes "https://www.typescriptlang.org/tsconfig#strictFunctionTypes")
 
 Requires function parameters and returns to be compatible to treat two functions as the same type.
 
@@ -194,7 +194,7 @@ Type '(id: number) => User' is not assignable to type '(name: string) => User'.
 */
 ```
 
-### [strictPropertyInitialization](https://www.typescriptlang.org/tsconfig#strictPropertyInitialization "https://www.typescriptlang.org/tsconfig#strictPropertyInitialization")
+#### [strictPropertyInitialization](https://www.typescriptlang.org/tsconfig#strictPropertyInitialization "https://www.typescriptlang.org/tsconfig#strictPropertyInitialization")
 
 If a property is not `T | undefined`, it must be assigned a value of type `T` in the constructor or when it is declared.
 
@@ -231,7 +231,7 @@ export class MenuComponent implements OnInit {
 }
 ```
 
-### [useUnknownInCatchVariables](https://www.typescriptlang.org/tsconfig#useUnknownInCatchVariables "https://www.typescriptlang.org/tsconfig#useUnknownInCatchVariables")
+#### [useUnknownInCatchVariables](https://www.typescriptlang.org/tsconfig#useUnknownInCatchVariables "https://www.typescriptlang.org/tsconfig#useUnknownInCatchVariables")
 
 Types the `err` variable in `catch()` blocks as `unknown`, not automatically `Error`. Technically you could `throw` anything in a `try` block.
 
@@ -247,13 +247,13 @@ async addDish(dishId: number) {
 }
 ```
 
-## Options for Incrementally Adopting Strict Mode
+### Options for incrementally adopting strict mode
 
-### Don't: Multiple `tsconfig` files
+#### Don't: Multiple `tsconfig` files
 
 One piece of advice I see a lot online is to use multiple `tsconfig.json` files. This is inadvisable because you will have to run `tsc` once for each `tsconfig` file. There are other, easier options.
 
-### Do: Enable individual flags
+#### Do: Enable individual flags
 
 As explained above, `"strict": true` is shorthand for several properties. One way to incrementally adopt strict mode is to run builds with individual `strict` properties enabled and see how many errors each flag generates. If a flag causes little to no build errors, these can be enabled immediately.
 
@@ -261,7 +261,7 @@ Over time, your team can enable each `strict` sub-flag. When all of them are act
 
 This approach gives your code some of the benefits of strict mode immediately. However, some sub-flags of strict mode are disproportionately difficult to enable. Even if you get `noImplicitThis` for free, `strictNullChecks` might require a large amount of work.
 
-### Do: Use `typescript-strict-plugin`
+#### Do: Use `typescript-strict-plugin`
 
 [typescript-strict-plugin](https://github.com/allegro/typescript-strict-plugin "https://github.com/allegro/typescript-strict-plugin") is an NPM package that allows you apply strict mode to either:
 
@@ -272,13 +272,13 @@ This plugin really breaks up the work of strict mode. You could, for example, in
 
 The biggest downside to this approach is it adds complexity to your build process by adding a third-party plugin.
 
-### Do: Use `ts-strictify`
+#### Do: Use `ts-strictify`
 
 [ts-strictify](https://www.npmjs.com/package/ts-strictify "https://www.npmjs.com/package/ts-strictify") requires developers to implement strict mode in any file they edit. It can be added as a pre-commit hook using [husky](https://www.npmjs.com/package/husky "https://www.npmjs.com/package/husky") or [lefthook](https://www.npmjs.com/package/@arkweid/lefthook "https://www.npmjs.com/package/@arkweid/lefthook").
 
 This package is a good way to require developers edit code moving forward, as opposed to relying on the product manager to prioritize stories to clean up old code. However, it sounds daunting to implement strict mode in giant old files.
 
-## Final Recommendation
+### Final recommendation
 
 The best way to adopt strict mode depends on your organization, team makeup, and story selection process. However, I would recommend a mix of three approaches:
 

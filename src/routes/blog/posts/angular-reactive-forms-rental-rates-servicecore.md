@@ -13,7 +13,7 @@ I wanted to highlight some work I did to make one small part of the system - the
 
 <!--break-->
 
-## Background
+### Background
 
 Without going too deep into the portable toilet business, here's what we were trying to build. 
 
@@ -27,7 +27,7 @@ With rental rates, users would be able to select any service charge and set spec
 
 In order to set rental rates, however, we needed a rate input table.
 
-## Product requirements
+### Product requirements
 
 The rental rate input table should display every product attached to a rental. Beneath each product is a dropdown of line item charges that could be attached to a product. Selectinga charge would add it to a table, with the default price, name, description and taxable status editable.
 
@@ -37,9 +37,9 @@ So: rentals have products, products have line item charges, and rental rates are
 
 The last two options in the line item dropdown should be "Add Service" and "Assign Service", which I'll explain later. 
 
-## Implementation
+### Implementation
 
-### Goals
+#### Goals
 
 As every frontend developer knows, forms are complicated. This form had a lot of moving parts, so the code could turn ugly quickly. 
 
@@ -51,7 +51,7 @@ I built this with three things in mind:
 
 Angular's [Reactive Forms](https://angular.io/guide/reactive-forms) made the logic more functional and less imperative. Reactive Forms store form state in FormControls, which can be grouped inside FormGroups or FormArrays. FormGroups, FormArrays and FormControls all have first-class RxJS APIs. You can subscribe to `valueChanges` or `statusChanges` (valid/invalid) on any of them and *react* to form state updates. 
 
-### Overview
+#### Overview
 
 When the user opens the rental rate form, the `rental-rate-form` container component loads the rental's data. It passes any existing rental rates into the `rate-input-table`, the actual UI. The `rental-rate-form` also `PATCH`es the rental with its new rates on submit. 
 
@@ -63,9 +63,9 @@ The `rate-input-table` stores its data as nested `AbstractControl`s (the base cl
 
 Each product FormGroup also has a FormControl for the line item dropdown. Any value change there reactively adds the selected rate to the table. 
 
-### Wins
+#### Wins
 
-#### RxJS &hearts;
+##### RxJS &hearts;
 
 Reactive programming is a blast. It contained the logic for each part of the form as subscriptions to that AbstractControl's `valueChanges`.
 
@@ -123,7 +123,7 @@ No `async`/`await` weirdness, no race conditions, no confusing logic. Just funct
 
 This block grabs services (line item charges) already associated to a product and passing them to a dialog. The dialog filters out these previously associated services. Then, if the user selects any services to add to a product in the dialog, these are passed out of the dialog's Observable and transformed into requests for the full data for each newly associated service. When we've received all responses, the services are added to the table as rates. RxJS makes this kind of async work *easy*.
 
-#### Functional programming &hearts;
+##### Functional programming &hearts;
 
 The last code win was creating the select service dropdown. It transformed an array of services into `<options>`, sorting by billing period on the service. 
 
@@ -131,7 +131,7 @@ The last code win was creating the select service dropdown. It transformed an ar
 
 All that logic used a pure static class function, making it a breeze to unit test. 
 
-### Losses
+#### Losses
 
 `rate-input-table` almost shipped without bugs, but for a hack I did.
 
@@ -145,7 +145,7 @@ When we got the bug report, I fixed it so on `change` we would grab the `<select
 
 I tested this on Chrome for macOS and talked to our devops guy about fixing our company process to avoid mistakes like this. We shipped the fix the same day the bug was reported. No complaints since.
 
-## Conclusions
+### Conclusions
 
 If the drop-down bug hadn't happened the UI would have been perfect. Normally ServiceCore sticks to standard HTML elements and doesn't go too far off the road. It's a lesson that if we want to try stuff like that, we need a better process.
 

@@ -17,13 +17,13 @@ No wonder a Reddit engineer [announced](https://twitter.com/softwarejameson/stat
 
 So if you are running into slow Angular builds, try these steps to reduce build time. They are listed in order of increasing complexity.
 
-## Step 1: Update your local environment
+### Step 1: Update your local environment
 
 First, increase Node’s memory limit. This consumes more RAM, but it helps.
 
 Second, keep ahead-of-time (AOT) compilation turned on. Builds will take slightly longer than just-in-time (JIT) compilation, but the page will refresh so quickly that it may be worth it.
 
-## Step 2: Check your build process
+### Step 2: Check your build process
 
 ![A chart of Angular build flags and their effect on compile times](/img/angular-build-flags.png)
 
@@ -39,7 +39,7 @@ I tested every command-line option for ng build for its performance while enable
 
 `--named-chunks` and `--vendor-chunk` help cache JavaScript bundles across builds. The flags in the prod column tend to optimize the build for smaller bundle sizes at the expense of compile time.
 
-### Try hot module reloading.
+#### Try hot module reloading.
 
 [Hot module reloading (HMR) is much easier](https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7 "https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7") in Angular 11. When Angular rebuilds a module, it updates the app without reloading the page. It just swaps in new code.
 
@@ -50,7 +50,7 @@ Step 3: Minimize the work required
 
 Builds are faster if there's less code. Consolidate components, delete old code and get rid of what you can.
 
-### Avoid custom build processes
+#### Avoid custom build processes
 
 Our [team of Angular experts](https://www.bitovi.com/frontend-javascript-consulting/angular-consulting "https://www.bitovi.com/frontend-javascript-consulting/angular-consulting") worked with one client whose builds were being slowed by localization files. They had eschewed Angular's localization system for a custom process that combined over a thousand JSON files at build time.
 
@@ -58,11 +58,11 @@ Avoid adding extra steps to the build process where possible. If Angular include
 
 If you have some pressing product needs and need to do a custom process during the build, consider whether that step can be done asynchronously.
 
-### Use small modules
+#### Use small modules
 
 Lastly, use small Angular modules. When an Angular application is being served, and a file changes, only the module containing that file is rebuilt.
 
-### Step 4: Upgrade Angular
+#### Step 4: Upgrade Angular
 
 Angular, unlike other frameworks, [includes batteries](https://dev.to/dubyabrian/comment/37cp "https://dev.to/dubyabrian/comment/37cp"). With React or Svelte, you can use a completely different and faster compiler. [Create-React-App](https://create-react-app.dev/ "https://create-react-app.dev") might start you with [webpack](https://webpack.js.org/ "https://webpack.js.org"), but you can speed up [esbuild](https://esbuild.github.io/ "https://esbuild.github.io").
 
@@ -78,7 +78,7 @@ Now, upgrading major Angular versions is easier said than done. Sometimes you're
 
 If you need help upgrading your Angular app [fill out our form](https://www.bitovi.com/frontend-javascript-consulting/angular-consulting "https://www.bitovi.com/frontend-javascript-consulting/angular-consulting") to get a free consultation! See also our guide to [migrating tslint to eslint](https://www.bitovi.com/blog/angular-upgrades-painless-migration-from-tslint-to-eslint "https://www.bitovi.com/blog/angular-upgrades-painless-migration-from-tslint-to-eslint").
 
-### Step 5: Use caching
+#### Step 5: Use caching
 
 Tools like Nx also cache build data in the cloud and share it among developers. They can be compelling if you don't mind introducing another dependency to the build process.
 

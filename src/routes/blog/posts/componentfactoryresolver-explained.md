@@ -15,7 +15,7 @@ Sometimes, the best option is to build a [higher-order component](https://reactj
 
 With a little help from `ComponentFactoryResolver`, we can do this in Angular too.
 
-## Why use ComponentFactoryResolver?
+### Why use ComponentFactoryResolver?
 
 Imagine you're creating a dashboard with two tables, each with a different layout. As indicated below, the top table is for transactions, and the bottom table is for users.
 
@@ -46,7 +46,7 @@ What we should do instead is create a higher-order checkbox table component that
 
 `ComponentFactoryResolver` will let us write our checkbox logic once and dynamically render row components at runtime .
 
-## Creating the Component UsingComponentFactoryResolver and ViewContainerRef
+### Creating the component using ComponentFactoryResolver and ViewContainerRef
 
 The table will create instances of our row component and render them into a `ViewContainerRef`s attached to `<tr>`s in our template. A `ViewContainerRef` is a container where one or more views can be attached, resulting in a [*host views*](https://angular.io/api/core/ViewContainerRef#description "https://angular.io/api/core/ViewContainerRef#description")*. *A host view is a view for the component containing its data. This is how Angular creates and renders components behind the scenes.
 
@@ -98,7 +98,7 @@ componentRef.instance.item = this.items[i];
 this._applicationRef.attachView(componentRef.hostView);
 ```
 
-## Content Projection
+### Content projection
 
 Our table can now render the row components needed to display users and transactions. Now we need to display the checkboxes using `ngContent` inside our user row component.
 
@@ -191,7 +191,7 @@ The result of all this is our table that we can plug into and use throughout our
 ></app-selectable-table>
 ```
 
-## Using ComponentFactoryResolver in Angular 13
+### Using ComponentFactoryResolver in Angular 13
 
 Angular 13 and newer no longer requires component factories. You can just inject an instance of a component class directly into a `ViewContainerRef`.
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: What’s New in RxJS 7- Small Bundles and Big Changes to share
+title: What’s new in RxJS 7- small bundles and big changes to share
 date: 2021-06-02
 keywords: javascript, typescript, rxjs, news
 image: rxjs-logo.png
@@ -10,7 +10,7 @@ RxJS 7 has shipped! For us Angular developers, it unfortunately did not ship in 
 
 I've summarized key takeaways from Ben Lesh’s talk from RxJS Live Asia and his slides below. Lesh is a member of the RxJS core team and formerly worked at Google on the Angular team.
 
-## Big Feature: Smaller Bundle Sizes
+### Big feature: smaller bundle sizes
 
 Lesh said while RxJS 7 was "a bit faster," the big improvement for the new version is its bundle size. RxJS 7 is 53% the size of RxJS 6. If your app used every operator in version 6, that would require 52 KB, but the same thing in RxJS 7 requires just 19 KB.
 
@@ -24,7 +24,7 @@ And this chart of the same operator sizes in RxJS 7:
 
 ![A chart showing the size of different RxJS 7 operators](/img/rxjs7-size.png)
 
-## Consolidating Sharing operators
+### Consolidating sharing operators
 
 Lesh's talk includes a long discussion about how many ways RxJS lets you share a stream (`multicast`, `shareReplay`, `refCount`, etc).
 
@@ -41,7 +41,7 @@ share({
 })
 ```
 
-## Better TypeScript Typings
+### Better TypeScript typings
 
 RxJS 7 [requires TypeScript 4.2](https://github.com/ReactiveX/rxjs/blob/6bd1c5f3cf0e387973b44698c48bc933e8c528aa/package.json#L9), Lesh said, because it contains features that enable more accurate, stricter types. One example he gave in his slides involved `Subject`:
 
@@ -53,7 +53,7 @@ subject.next()
 
 For teams that are unable to upgrade to TypeScript 4.2, Lesh recommended staying on RxJS 6, which the RxJS team will continue to support.
 
-### `toPromise()` Deprecated
+#### `toPromise()` deprecated
 
 The problem with `toPromise()`, Lesh explained, was that it didn't make sense with Observables. Should a promise created by `toPromise()` resolve with the first or last value emitted from the source Observable?
 
@@ -77,7 +77,7 @@ const emptyVal = await firstValueFrom(source, { defaultValue: 'empty' })
 console.log(emptyVal) // 'empty'
 ```
 
-## AsyncIterable support
+### AsyncIterable support
 
 Anywhere you can pass an Observable, RxJS 7 also lets you pass an AsyncIterable.
 
@@ -91,7 +91,7 @@ async function* ticket(delay: number) {
 }
 ```
 
-## Other Updates
+### Other updates
 
 - `finalize()` operators now run in the order in which they are written in `pipe()`. In contrast, RxJS 6 ran them in reverse.
 - `subscription.add(someSubscription)` now returns void so people will stop writing `add()` chains, which Lesh says never worked.
@@ -108,7 +108,7 @@ subscription
 - `switchScan()` operator, aka `switchMap` with an accumulator
 - `throwError()` requires a callback, not an error, as the error captures the current stack at the moment of its creation
 
-### Your `with` Is My Command
+#### Your `with` is my command
 
 - `combineLatest` operator renamed to `combineLatestWith`
 - `merge` operator renamed to `mergeWith`
@@ -116,7 +116,7 @@ subscription
 - `race` operator renamed to `raceWith`
 - `concat` operator renamed to `concatWith`
 
-## Bitovi Recommendations for Migrating to RxJS 7
+### Bitovi recommendations for migrating to RxJS 7
 
 If your project can be upgraded to RxJS 7, we would recommend doing so. The speed and bundle size improvements offer tangible, immediate benefits to end users.
 

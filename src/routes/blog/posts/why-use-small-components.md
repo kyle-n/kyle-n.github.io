@@ -11,7 +11,7 @@ As an [Angular consultant](https://www.bitovi.com/frontend-javascript-consulting
 
 On a recent client project, implementing best practices let me reduce calls to a complex function from 223,000 per render to 1,200. Smaller components make better, faster UIs. 
 
-## Background
+### Background
 
 A good component should:
 
@@ -25,7 +25,7 @@ This fits the [single-responsibility principle](https://en.wikipedia.org/wiki/Si
 
 > Every module, class or function in a computer program should have responsibility over a single part of that program's functionality, and it should encapsulate that part. All of that module, class or function's services should be narrowly aligned with that responsibility.
 
-## How small is small?
+### How small is small?
 
 Here's an example of how small components should be, pulled from the [React documentation](https://reactjs.org/docs/thinking-in-react.html). 
 
@@ -64,7 +64,7 @@ Keeping components this small is useful for a couple reasons.
 - Future development is faster, since you may be able to reuse some of your atoms
 - Follows single-responsibility principle
 
-## The alternative is worse
+### The alternative is worse
 
 Making granular components may seem like a pain at first, but believe me, the alternative is worse. 
 

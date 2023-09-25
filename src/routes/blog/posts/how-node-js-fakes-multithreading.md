@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How Node.js Fakes Multithreading
+title: How Node.js fakes multithreading
 date: 2023-02-15
 keywords: javascript, node
 image: reactor-pattern.png
@@ -13,7 +13,7 @@ The answer is something built into the language called **the reactor pattern**. 
 
 This post is based on and uses diagrams from [Node.js Design Patterns](https://www.nodejsdesignpatterns.com/) by Mario Casciaro and Luciano Mammino. It's an excellent book I would recommend to anyone interested in Node.
 
-## A Brief History of Web Servers
+### A brief history of web servers
 
 To understand Node.js, let's look at what web servers have to do.
 
@@ -42,7 +42,7 @@ This is a good, flexible approach to scaling. Just add more threads! The downsid
 
 ![A diagram showing multiple threads handling multiple connections to a server](/img/multithreading-1.png)
 
-## The Node.js Approach
+### The Node.js approach
 
 Node.js is written in JavaScript. It is single-threaded, meaning it can only do one thing at a time.
 
@@ -111,7 +111,7 @@ When the database request finishes, the event demultiplexer adds it to the event
 
 Node runs on a single piece of JavaScript until it's finished. Any async operations are added to the demultiplexer. When the operations finish, they're added to the event queue. When Node is done running the current piece of JS, it grabs the next item from the queue. If that item causes another async operation, that operation is added to the demultiplexer, and so on.
 
-## How Does Node.js "Multithreading" Scale?
+### How does Node.js "multithreading" scale?
 
 It's understandable to question how Node.js scales once you understand it only runs on one thread. How can this serve when you have many users?
 
@@ -119,7 +119,7 @@ First, even if JavaScript is not incredibly efficient, JavaScript interpreters a
 
 Second, scaling servers is actually a [whole other problem](https://www.quora.com/How-does-Node-js-handle-multiple-connections) that exists outside of your choice of server language. If you need industrial scale for your web app, you'll have to worry about load balancing and proxies and CDNs and lots of other things before the user even touches your server API code.
 
-#### Works Cited
+##### Works Cited
 
 -   [Node.js Design Patterns](https://www.nodejsdesignpatterns.com/) by Mario Casciaro and Luciano Mammino (3rd Ed.)
 -   [Understanding Reactor Pattern for Highly Scalable I/O Bound Web Server](https://tianpan.co/blog/2015-01-13-understanding-reactor-pattern-for-highly-scalable-i-o-bound-web-server) by Tian Pan
