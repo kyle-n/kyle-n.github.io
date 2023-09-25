@@ -1,10 +1,17 @@
+<script lang="ts">
+  const navLinks = [
+    { name: 'Home', href: '/' },
+    { name: 'Contact', href: '/contact' },
+    { name: 'Blog', href: '/blog' }
+  ];
+</script>
+
 <header>
   <h1>Kyle Nazario</h1>
   <nav>
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/blog">Blog</a>
-    <a href="/contact">Contact</a>
+    {#each navLinks as navLink}
+      <a href={navLink.href}>{navLink.name}</a>
+    {/each}
   </nav>
 </header>
 
