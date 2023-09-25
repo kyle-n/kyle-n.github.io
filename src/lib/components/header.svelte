@@ -10,7 +10,7 @@
   <h1>Kyle Nazario</h1>
   <nav>
     {#each navLinks as navLink}
-      <a href={navLink.href}>{navLink.name}</a>
+      <a href={navLink.href} class="jumpy-link">{navLink.name}</a>
     {/each}
   </nav>
 </header>
@@ -19,13 +19,5 @@
   nav {
     display: flex;
     justify-content: space-around;
-  }
-
-  /* Fixes jump on hover */
-  nav a {
-    border-bottom: 2px solid transparent;
-  }
-  nav a:hover {
-    border-bottom: 2px solid #d9d8dc;
   }
 </style>

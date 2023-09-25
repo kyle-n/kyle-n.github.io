@@ -12,7 +12,7 @@
 {#if keywords}
   <div class="keyword-links">
     {#each keywordList as keyword}
-      <a href="/blog/keyword/{keyword}">#{keyword}</a>
+      <a href="/blog/keyword/{keyword}" class="jumpy-link">#{keyword}</a>
     {/each}
   </div>
 {/if}
@@ -23,11 +23,6 @@
     a {
       display: block;
       margin-right: 1.5rem;
-      margin-bottom: 2px;
-
-      &:hover {
-        margin-bottom: 0;
-      }
     }
   }
 </style>
