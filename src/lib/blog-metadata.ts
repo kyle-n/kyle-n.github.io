@@ -12,3 +12,6 @@ export const BLOG_AUTHOR = 'Kyle Nazario';
 export const BLOG_AUTHOR_TWITTER = '@kbn_au';
 export const BLOG_AUTHOR_GITHUB = 'kyle-n';
 export const BLOG_AUTHOR_EMAIL = 'kylebnazario@gmail.com';
+export const BLOG_AUTHOR_LINKEDIN = 'kylenazario';
+export const BLOG_AUTHOR_MASTODON = '@kn';
+export const BLOG_AUTHOR_BLUESKY = 'kylenazario.com'
