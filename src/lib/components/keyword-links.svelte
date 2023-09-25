@@ -23,6 +23,11 @@
     a {
       display: block;
       margin-right: 1.5rem;
+      margin-bottom: 2px;
+
+      &:hover {
+        margin-bottom: 0;
+      }
     }
   }
 </style>
