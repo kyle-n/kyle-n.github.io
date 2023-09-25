@@ -10,7 +10,7 @@ redirect_from: /blog/bruce-willis-name-generator.html
   import WillisGenerator from '$lib/components/willis-generator.svelte'
 </script>
 
-As pointed out in Blank Check's [*Glass* episode](1), Bruce Willis has been in a lot of weird and bad movies. Meet his quote and he'll appear in your knockoff of a knockoff of *Taken*.
+As pointed out in Blank Check's [_Glass_ episode](1), Bruce Willis has been in a lot of weird and bad movies. Meet his quote and he'll appear in your knockoff of a knockoff of _Taken_.
 
 Click the button below to generate Bruce's next movie!
 

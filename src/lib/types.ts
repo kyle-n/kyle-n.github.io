@@ -18,6 +18,6 @@ export type ResolvedBlogPostList = {
 };
 
 export type PostLink = {
-    metadata: BlogPostMetadata;
-    postPath: string;
-}
+  metadata: BlogPostMetadata;
+  postPath: string;
+};

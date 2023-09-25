@@ -38,7 +38,7 @@ share({
   resetOnRefCountZero: true,
   resetOnComplete: true,
   resetOnError: true
-})
+});
 ```
 
 ### Better TypeScript typings
@@ -47,8 +47,8 @@ RxJS 7 [requires TypeScript 4.2](https://github.com/ReactiveX/rxjs/blob/6bd1c5f3
 
 ```typescript
 // allowed in RxJS 6, errors in 7 because next() must be called with a number
-const subject = new Subject<number>()
-subject.next()
+const subject = new Subject<number>();
+subject.next();
 ```
 
 For teams that are unable to upgrade to TypeScript 4.2, Lesh recommended staying on RxJS 6, which the RxJS team will continue to support.
@@ -60,21 +60,21 @@ The problem with `toPromise()`, Lesh explained, was that it didn't make sense wi
 So, `toPromise()` is deprecated in favor of `lastValueFrom()` and `firstValueFrom()`. These new functions still convert Observables to Promises, but in a way that clarifies that value the Promise will resolve with.
 
 ```typescript
-const source = from([1, 2])
+const source = from([1, 2]);
 
-const firstVal = await firstValueFrom(source)
+const firstVal = await firstValueFrom(source);
 
-console.log(firstVal) // 1
+console.log(firstVal); // 1
 
-const lastVal = await lastValueFrom(source)
-console.log(lastVal) // 2
+const lastVal = await lastValueFrom(source);
+console.log(lastVal); // 2
 ```
 
 If an Observable completes without emitting a value, the Promise created by `lastValueFrom` or `firstValueFromrejects`. If that is not desired behavior, you can configure the new Promise to resolve with a defaultValue.
 
 ```typescript
-const emptyVal = await firstValueFrom(source, { defaultValue: 'empty' })
-console.log(emptyVal) // 'empty'
+const emptyVal = await firstValueFrom(source, { defaultValue: 'empty' });
+console.log(emptyVal); // 'empty'
 ```
 
 ### AsyncIterable support
@@ -99,9 +99,7 @@ async function* ticket(delay: number) {
 ```typescript
 // add() returns void, cannot be chained
 
-subscription
-  .add(subOne)
-  .add(subTwo) // errors
+subscription.add(subOne).add(subTwo); // errors
 ```
 
 - `animationFrames()` creates Observables to do animation logic reactively

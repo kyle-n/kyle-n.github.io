@@ -16,7 +16,7 @@ I bought Apple Watch Series 3 (Wifi) in 2019. With the Watch, runs require only 
 
 Offline Watch playback is essential because I’m not going to pay for a second data plan. However, iOS podcast apps support offline Watch playback to varying success.
 
-First, a disclaimer. This feature is *hard*. [Overcast](https://overcast.fm) developer [Marco Arment](https://twitter.com/marcoarment) has said how hostile watchOS is to third-party developers. Any long-running or computationally expensive operation (like, say, downloading a two-hour audio file) is first on the OS’s hit list. On some episode of [ATP](https://atp.fm), he posited there is no implementation of offline Watch playback that makes everyone happy. He’s probably right.
+First, a disclaimer. This feature is _hard_. [Overcast](https://overcast.fm) developer [Marco Arment](https://twitter.com/marcoarment) has said how hostile watchOS is to third-party developers. Any long-running or computationally expensive operation (like, say, downloading a two-hour audio file) is first on the OS’s hit list. On some episode of [ATP](https://atp.fm), he posited there is no implementation of offline Watch playback that makes everyone happy. He’s probably right.
 
 This post will discuss where some podcast apps come short, but let’s acknowledge any kind of offline Watch playback is a minor miracle. All of these apps have good developers trying their best in an extremely hostile environment.
 
@@ -32,9 +32,9 @@ Negatives:
 
 - Appears to not sync any episode over two hours. This limit is not documented anywhere, nor is it explained with an actionable error message. The episodes just… don’t sync.
 
-I love listening to [comedians wax rhapsodic about *Robocop* for two-and-a-half hours](https://soundcloud.com/griffin-and-david-present/robocop), so this is a dealbreaker. 
+I love listening to [comedians wax rhapsodic about _Robocop_ for two-and-a-half hours](https://soundcloud.com/griffin-and-david-present/robocop), so this is a dealbreaker.
 
-If I’m wrong about the time limit, or there is a workaround, please let me know. The problem could be general sync flakiness or something else. 
+If I’m wrong about the time limit, or there is a workaround, please let me know. The problem could be general sync flakiness or something else.
 
 ### [Overcast](https://apps.apple.com/us/app/overcast/id888422857) | 1/5 - Barely usable
 

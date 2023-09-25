@@ -3,7 +3,7 @@
 
   let title = '';
   function updateTitle() {
-    title = generateTitle()
+    title = generateTitle();
   }
 </script>
 

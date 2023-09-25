@@ -33,7 +33,7 @@ What we should do instead is create a higher-order checkbox table component that
 
 ```html
 <h1>Dashboard</h1>
-<app-selectable-table 
+<app-selectable-table
   [items]="transactions"
   [rowComponent]="TransactionRowComponent"
 ></app-selectable-table>
@@ -48,7 +48,7 @@ What we should do instead is create a higher-order checkbox table component that
 
 ### Creating the component using ComponentFactoryResolver and ViewContainerRef
 
-The table will create instances of our row component and render them into a `ViewContainerRef`s attached to `<tr>`s in our template. A `ViewContainerRef` is a container where one or more views can be attached, resulting in a [*host views*](https://angular.io/api/core/ViewContainerRef#description "https://angular.io/api/core/ViewContainerRef#description")*. *A host view is a view for the component containing its data. This is how Angular creates and renders components behind the scenes.
+The table will create instances of our row component and render them into a `ViewContainerRef`s attached to `<tr>`s in our template. A `ViewContainerRef` is a container where one or more views can be attached, resulting in a [_host views_](https://angular.io/api/core/ViewContainerRef#description 'https://angular.io/api/core/ViewContainerRef#description')*. *A host view is a view for the component containing its data. This is how Angular creates and renders components behind the scenes.
 
 To return to our table example, we will pass in two inputs: the row component class and an array of items to render.
 
@@ -86,9 +86,8 @@ We will inject our row component into the `ViewContainerRef` of each `<tr>`. Eac
 We will inject our row component into the `ViewContainerRef` of each `<tr>`. Each row will display one item.The `ComponentFactoryResolver` will resolve a factory for making `rowComponent`instances. We will then assign the `items` of the table to `instance.item`. Finally, using the instance of the global Angular project, we will render the row component instance onto the page.
 
 ```typescript
-const rowComponentFactory = this._componentFactoryResolver.resolveComponentFactory(
-  this.rowComponent
-);
+const rowComponentFactory =
+  this._componentFactoryResolver.resolveComponentFactory(this.rowComponent);
 const componentRef = rowComponentFactory.create(
   template.injector,
   undefined,
@@ -180,7 +179,7 @@ The result of all this is our table that we can plug into and use throughout our
 
 ```html
 <h1>Dashboard</h1>
-<app-selectable-table 
+<app-selectable-table
   [items]="transactions"
   [rowComponent]="TransactionRowComponent"
 ></app-selectable-table>
@@ -196,20 +195,23 @@ The result of all this is our table that we can plug into and use throughout our
 Angular 13 and newer no longer requires component factories. You can just inject an instance of a component class directly into a `ViewContainerRef`.
 
 ```typescript
-import {Component, ViewChild, ViewContainerRef} from '@angular/core'
-import {SelectableTableRowCheckboxComponent} from '../selectable-table-row-checkbox/selectable-table-row-checkbox.component'
+import { Component, ViewChild, ViewContainerRef } from '@angular/core';
+import { SelectableTableRowCheckboxComponent } from '../selectable-table-row-checkbox/selectable-table-row-checkbox.component';
 
 @Component({
   selector: 'app-factory-example',
-  template: '<button (click)="add()">Add checkbox</button><ng-container #container></ng-container>'
+  template:
+    '<button (click)="add()">Add checkbox</button><ng-container #container></ng-container>'
 })
 export class FactoryExampleComponent {
-  @ViewChild('container', {read: ViewContainerRef}) private readonly container: ViewContainerRef;
+  @ViewChild('container', { read: ViewContainerRef })
+  private readonly container: ViewContainerRef;
 
-  constructor()
+  constructor();
 
   add() {
-    const componentRef = this.container.createComponent(SelectableTableRowCheckboxComponent
+    const componentRef = this.container.createComponent(
+      SelectableTableRowCheckboxComponent
     );
   }
 }

@@ -1,6 +1,6 @@
 <script>
   import {
-  BLOG_AUTHOR_BLUESKY,
+    BLOG_AUTHOR_BLUESKY,
     BLOG_AUTHOR_EMAIL,
     BLOG_AUTHOR_GITHUB,
     BLOG_AUTHOR_LINKEDIN,
@@ -12,9 +12,15 @@
   const accounts = [
     { name: 'Email', href: `mailto:${BLOG_AUTHOR_EMAIL}` },
     { name: 'GitHub', href: `https://github.com/${BLOG_AUTHOR_GITHUB}` },
-    { name: 'LinkedIn', href: `https://linkedin.com/in/${BLOG_AUTHOR_LINKEDIN}` },
+    {
+      name: 'LinkedIn',
+      href: `https://linkedin.com/in/${BLOG_AUTHOR_LINKEDIN}`
+    },
     { name: 'Mastodon', href: `https://hachyderm.io/${BLOG_AUTHOR_MASTODON}` },
-    { name: 'Bluesky', href: `https://bsky.app/profile/${BLOG_AUTHOR_BLUESKY}`},
+    {
+      name: 'Bluesky',
+      href: `https://bsky.app/profile/${BLOG_AUTHOR_BLUESKY}`
+    },
     { name: 'Twitter', href: `https://twitter.com/${BLOG_AUTHOR_TWITTER}` }
   ];
 </script>

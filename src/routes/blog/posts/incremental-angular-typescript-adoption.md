@@ -19,35 +19,33 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'pmo-menu',
-  template: `
-    <button (click)="addDish()">Add Dish</button>
-  `,
+  template: ` <button (click)="addDish()">Add Dish</button> `,
   styleUrls: ['./menu.component.less']
 })
 export class MenuComponent implements OnInit {
-
   currentUser: User;
 
   constructor(
     private dishService: DishService,
     private userService: UserService
-  ) { }
+  ) {}
 
   ngOnInit() {
-    this.userService.currentUser$.subscribe(currentUser => this.currentUser = currentUser);
+    this.userService.currentUser$.subscribe(
+      currentUser => (this.currentUser = currentUser)
+    );
 
     // fails because this.currentUser is undefined
-    console.log('currentUser:', this.currentUser.id)
+    console.log('currentUser:', this.currentUser.id);
   }
 
   addDish() {
     this.dishService.addDish(this.currentUser.id);
   }
-
 }
 ```
 
-TypeScript throws a build error because `this.currentUser` is never assigned a value in the constructor or at declaration. This is correct! Until the `currentUser$.subscribe()` callback runs, `this.currentUser` *is* undefined. Its type should be `User | undefined`. This lets other developers who edit this component know they can't always rely on `this.currentUser` existing.
+TypeScript throws a build error because `this.currentUser` is never assigned a value in the constructor or at declaration. This is correct! Until the `currentUser$.subscribe()` callback runs, `this.currentUser` _is_ undefined. Its type should be `User | undefined`. This lets other developers who edit this component know they can't always rely on `this.currentUser` existing.
 
 Strict mode is great for catching errors like this. With third-party help and planning, you can adopt it.
 
@@ -55,23 +53,23 @@ Strict mode is great for catching errors like this. With third-party help and pl
 
 As of TypeScript 4.7.3, the `strict` flag is shorthand for these compiler flags:
 
--   `noImplicitAny`
+- `noImplicitAny`
 
--   `noImplicitThis`
+- `noImplicitThis`
 
--   `alwaysStrict`
+- `alwaysStrict`
 
--   `strictBindCallApply`
+- `strictBindCallApply`
 
--   `strictNullChecks`
+- `strictNullChecks`
 
--   `strictFunctionTypes`
+- `strictFunctionTypes`
 
--   `strictPropertyInitialization`
+- `strictPropertyInitialization`
 
--   `useUnknownInCatchVariables`
+- `useUnknownInCatchVariables`
 
-#### [noImplicitAny](https://www.typescriptlang.org/tsconfig#noImplicitAny "https://www.typescriptlang.org/tsconfig#noImplicitAny")
+#### [noImplicitAny](https://www.typescriptlang.org/tsconfig#noImplicitAny 'https://www.typescriptlang.org/tsconfig#noImplicitAny')
 
 Throws an error if the automatic type inference ever infers the type is `any`.
 
@@ -82,7 +80,7 @@ addDish(dishId) {
 }
 ```
 
-#### [noImplicitThis](https://www.typescriptlang.org/tsconfig#noImplicitThis "https://www.typescriptlang.org/tsconfig#noImplicitThis")
+#### [noImplicitThis](https://www.typescriptlang.org/tsconfig#noImplicitThis 'https://www.typescriptlang.org/tsconfig#noImplicitThis')
 
 Throws an error if the automatic type inference ever infers the type of `this` in a block of code is `any`.
 
@@ -95,9 +93,9 @@ getAddDishCallback() {
 }
 ```
 
-#### [alwaysStrict](https://www.typescriptlang.org/tsconfig#alwaysStrict "https://www.typescriptlang.org/tsconfig#alwaysStrict")
+#### [alwaysStrict](https://www.typescriptlang.org/tsconfig#alwaysStrict 'https://www.typescriptlang.org/tsconfig#alwaysStrict')
 
-Parses every TypeScript file using [ES5 strict JavaScript parsing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode"), which throws errors when trying to do something inadvisable. When not using ES5 strict parsing, these operations fail silently. As explained by MDN:
+Parses every TypeScript file using [ES5 strict JavaScript parsing](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode'), which throws errors when trying to do something inadvisable. When not using ES5 strict parsing, these operations fail silently. As explained by MDN:
 
 ```javascript
 'use strict';
@@ -112,7 +110,11 @@ Object.defineProperty(obj1, 'x', { value: 42, writable: false });
 obj1.x = 9; // throws a TypeError
 
 // Assignment to a getter-only property
-var obj2 = { get x() { return 17; } };
+var obj2 = {
+  get x() {
+    return 17;
+  }
+};
 obj2.x = 5; // throws a TypeError
 
 // Assignment to a new property on a non-extensible object
@@ -121,7 +123,7 @@ Object.preventExtensions(fixed);
 fixed.newProp = 'ohai'; // throws a TypeError
 ```
 
-#### [strictBindCallApply](https://www.typescriptlang.org/tsconfig#strictBindCallApply "https://www.typescriptlang.org/tsconfig#strictBindCallApply")
+#### [strictBindCallApply](https://www.typescriptlang.org/tsconfig#strictBindCallApply 'https://www.typescriptlang.org/tsconfig#strictBindCallApply')
 
 Requires correct argument types when using `bind()`, `call()` and `apply()`.
 
@@ -130,32 +132,30 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'pmo-menu',
-  template: `
-
-  `,
+  template: ``,
   styleUrls: ['./menu.component.less']
 })
 export class MenuComponent implements OnInit {
-
   currentUser: User | undefined;
 
   constructor(
     private dishService: DishService,
     private userService: UserService
-  ) { }
+  ) {}
 
   ngOnInit() {
-    this.userService.currentUser$.subscribe(currentUser => this.currentUser = currentUser);
+    this.userService.currentUser$.subscribe(
+      currentUser => (this.currentUser = currentUser)
+    );
   }
 
   addDish(dishId: number) {
     this.dishService.addDish(dishId);
   }
-
 }
 ```
 
-#### [strictNullChecks](https://www.typescriptlang.org/tsconfig#strictNullChecks "https://www.typescriptlang.org/tsconfig#strictNullChecks")
+#### [strictNullChecks](https://www.typescriptlang.org/tsconfig#strictNullChecks 'https://www.typescriptlang.org/tsconfig#strictNullChecks')
 
 If an variable's type is `T | undefined`, TypeScript throws an error if you treat it as just `T`. It also treats `null` and `undefined` as separate values.
 
@@ -167,13 +167,12 @@ addDish(dishId: number) {
 }
 ```
 
-#### [strictFunctionTypes](https://www.typescriptlang.org/tsconfig#strictFunctionTypes "https://www.typescriptlang.org/tsconfig#strictFunctionTypes")
+#### [strictFunctionTypes](https://www.typescriptlang.org/tsconfig#strictFunctionTypes 'https://www.typescriptlang.org/tsconfig#strictFunctionTypes')
 
 Requires function parameters and returns to be compatible to treat two functions as the same type.
 
 ```typescript
 export class MenuComponent implements OnInit {
-
   currentUser: User | undefined;
 
   getUser: (name: string) => User;
@@ -181,7 +180,7 @@ export class MenuComponent implements OnInit {
   constructor(
     private dishService: DishService,
     private userService: UserService
-  ) { }
+  ) {}
 
   ngOnInit() {
     this.getCurrentUser = this.userService.getCurrentUser;
@@ -194,7 +193,7 @@ Type '(id: number) => User' is not assignable to type '(name: string) => User'.
 */
 ```
 
-#### [strictPropertyInitialization](https://www.typescriptlang.org/tsconfig#strictPropertyInitialization "https://www.typescriptlang.org/tsconfig#strictPropertyInitialization")
+#### [strictPropertyInitialization](https://www.typescriptlang.org/tsconfig#strictPropertyInitialization 'https://www.typescriptlang.org/tsconfig#strictPropertyInitialization')
 
 If a property is not `T | undefined`, it must be assigned a value of type `T` in the constructor or when it is declared.
 
@@ -203,35 +202,33 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'pmo-menu',
-  template: `
-    Add Dish
-  `,
+  template: ` Add Dish `,
   styleUrls: ['./menu.component.less']
 })
 export class MenuComponent implements OnInit {
-
   // TS2564: Property 'currentUser' has no initializer and is not definitely assigned in the constructor.
   currentUser: User;
 
   constructor(
     private dishService: DishService,
     private userService: UserService
-  ) { }
+  ) {}
 
   ngOnInit() {
-    this.userService.currentUser$.subscribe(currentUser => this.currentUser = currentUser);
+    this.userService.currentUser$.subscribe(
+      currentUser => (this.currentUser = currentUser)
+    );
 
-    console.log('currentUser:', this.currentUser.id)
+    console.log('currentUser:', this.currentUser.id);
   }
 
   addDish() {
     this.dishService.addDish(this.currentUser.id);
   }
-
 }
 ```
 
-#### [useUnknownInCatchVariables](https://www.typescriptlang.org/tsconfig#useUnknownInCatchVariables "https://www.typescriptlang.org/tsconfig#useUnknownInCatchVariables")
+#### [useUnknownInCatchVariables](https://www.typescriptlang.org/tsconfig#useUnknownInCatchVariables 'https://www.typescriptlang.org/tsconfig#useUnknownInCatchVariables')
 
 Types the `err` variable in `catch()` blocks as `unknown`, not automatically `Error`. Technically you could `throw` anything in a `try` block.
 
@@ -263,10 +260,10 @@ This approach gives your code some of the benefits of strict mode immediately. H
 
 #### Do: Use `typescript-strict-plugin`
 
-[typescript-strict-plugin](https://github.com/allegro/typescript-strict-plugin "https://github.com/allegro/typescript-strict-plugin") is an NPM package that allows you apply strict mode to either:
+[typescript-strict-plugin](https://github.com/allegro/typescript-strict-plugin 'https://github.com/allegro/typescript-strict-plugin') is an NPM package that allows you apply strict mode to either:
 
--   All files, with some exempted using `// @ts-strict-ignore`
--   Any directory or file specified in your `tsconfig.json`
+- All files, with some exempted using `// @ts-strict-ignore`
+- Any directory or file specified in your `tsconfig.json`
 
 This plugin really breaks up the work of strict mode. You could, for example, incrementally add directories to be parsed strictly. You could also require strict mode for all code except the files at time of setup, so all new code is strict.
 
@@ -274,7 +271,7 @@ The biggest downside to this approach is it adds complexity to your build proces
 
 #### Do: Use `ts-strictify`
 
-[ts-strictify](https://www.npmjs.com/package/ts-strictify "https://www.npmjs.com/package/ts-strictify") requires developers to implement strict mode in any file they edit. It can be added as a pre-commit hook using [husky](https://www.npmjs.com/package/husky "https://www.npmjs.com/package/husky") or [lefthook](https://www.npmjs.com/package/@arkweid/lefthook "https://www.npmjs.com/package/@arkweid/lefthook").
+[ts-strictify](https://www.npmjs.com/package/ts-strictify 'https://www.npmjs.com/package/ts-strictify') requires developers to implement strict mode in any file they edit. It can be added as a pre-commit hook using [husky](https://www.npmjs.com/package/husky 'https://www.npmjs.com/package/husky') or [lefthook](https://www.npmjs.com/package/@arkweid/lefthook 'https://www.npmjs.com/package/@arkweid/lefthook').
 
 This package is a good way to require developers edit code moving forward, as opposed to relying on the product manager to prioritize stories to clean up old code. However, it sounds daunting to implement strict mode in giant old files.
 
@@ -282,5 +279,5 @@ This package is a good way to require developers edit code moving forward, as op
 
 The best way to adopt strict mode depends on your organization, team makeup, and story selection process. However, I would recommend a mix of three approaches:
 
--   If a strict mode sub-flag like `strictBindCallApply` generates so few errors you could fix them in a day, enable it immediately. Do this for all the "easy" flags.
--   Use [typescript-strict-plugin](https://github.com/allegro/typescript-strict-plugin "https://github.com/allegro/typescript-strict-plugin") to exempt all existing code from strict mode, enable it for new code and periodically update the old code to be strict-compliant. That way you're not adding to the pile of strict mode updates.
+- If a strict mode sub-flag like `strictBindCallApply` generates so few errors you could fix them in a day, enable it immediately. Do this for all the "easy" flags.
+- Use [typescript-strict-plugin](https://github.com/allegro/typescript-strict-plugin 'https://github.com/allegro/typescript-strict-plugin') to exempt all existing code from strict mode, enable it for new code and periodically update the old code to be strict-compliant. That way you're not adding to the pile of strict mode updates.

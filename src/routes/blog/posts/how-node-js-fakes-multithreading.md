@@ -28,13 +28,13 @@ Here's what happens when a user sends a GET request:
 5.  It writes the response to the client
 6.  It closes the connection
 
-These steps are not true of *all* server connections---you might use `keep-alive`headers to [reuse the previous TCP connection](https://connectreport.com/blog/tuning-http-keep-alive-in-node-js/), or you might be using WebSockets, or you might not be using REST at all. But to explain a GET request to a RESTful JSON API, this model will suffice.
+These steps are not true of _all_ server connections---you might use `keep-alive`headers to [reuse the previous TCP connection](https://connectreport.com/blog/tuning-http-keep-alive-in-node-js/), or you might be using WebSockets, or you might not be using REST at all. But to explain a GET request to a RESTful JSON API, this model will suffice.
 
 One major problem facing web servers is the time it takes to read the database. Slow read times can be caused by a few things: database size, instance distribution, etc.
 
 Simultaneous connections compound the database read-time problem. Most websites are used by more than one person at a time. Your web server cannot just hang around waiting for the response from the database before responding to the next user! Imagine waiting in line to use Google.
 
-Servers have handled this problem in several different ways over the years. The first web server, [httpd](https://www.w3.org/Daemon/), would spin up a whole new process for each connection to it. This avoided multithreaded code, which is hard to write correctly, and weird race conditions. However, httpd consumed a *lot* of memory, and it hasn't been updated since 1997.
+Servers have handled this problem in several different ways over the years. The first web server, [httpd](https://www.w3.org/Daemon/), would spin up a whole new process for each connection to it. This avoided multithreaded code, which is hard to write correctly, and weird race conditions. However, httpd consumed a _lot_ of memory, and it hasn't been updated since 1997.
 
 So people moved on. These days, many server frameworks use a [thread pool](https://en.wikipedia.org/wiki/Thread_pool). Many requests come into a server, which assigns one thread to each request. Then, if the thread is waiting on a slow database request, it's no big deal to other users. Their fast request can complete on some other thread.
 
@@ -51,13 +51,13 @@ At first glance, this seems incompatible with serving multiple connections simul
 To return to your sandwich API, let's say the server uses this [Express](https://expressjs.com/) code to respond to GET requests:
 
 ```javascript
-router.get("/sandwiches/:id", (reg, res) => {
+router.get('/sandwiches/:id', (reg, res) => {
   const sandwichId = req.params.id;
   database.findOneById(sandwichId).then(sandwich => {
-    console.log("lunch time");
+    console.log('lunch time');
     res.json(sandwich);
   });
-  console.log("searching for sandwich");
+  console.log('searching for sandwich');
 });
 ```
 
@@ -95,13 +95,13 @@ When an async operation in the demultiplexer finishes, Node moves it to the even
 Let's return to your sandwich API one more time:
 
 ```javascript
-router.get("/sandwiches/:id", (reg, res) => {
+router.get('/sandwiches/:id', (reg, res) => {
   const sandwichId = req.params.id;
   database.findOneById(sandwichId).then(sandwich => {
-    console.log("lunch time");
+    console.log('lunch time');
     res.json(sandwich);
   });
-  console.log("searching for sandwich");
+  console.log('searching for sandwich');
 });
 ```
 
@@ -121,5 +121,5 @@ Second, scaling servers is actually a [whole other problem](https://www.quora.co
 
 ##### Works Cited
 
--   [Node.js Design Patterns](https://www.nodejsdesignpatterns.com/) by Mario Casciaro and Luciano Mammino (3rd Ed.)
--   [Understanding Reactor Pattern for Highly Scalable I/O Bound Web Server](https://tianpan.co/blog/2015-01-13-understanding-reactor-pattern-for-highly-scalable-i-o-bound-web-server) by Tian Pan
+- [Node.js Design Patterns](https://www.nodejsdesignpatterns.com/) by Mario Casciaro and Luciano Mammino (3rd Ed.)
+- [Understanding Reactor Pattern for Highly Scalable I/O Bound Web Server](https://tianpan.co/blog/2015-01-13-understanding-reactor-pattern-for-highly-scalable-i-o-bound-web-server) by Tian Pan

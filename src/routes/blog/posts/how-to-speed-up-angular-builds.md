@@ -29,30 +29,29 @@ Second, keep ahead-of-time (AOT) compilation turned on. Builds will take slightl
 
 I tested every command-line option for ng build for its performance while enabled and disabled. These are the flags I’d recommend using, depending on the context.
 
-|Dev only|Prod only|
-|--------|---------|
-|--named-chunks|--build-optimizer|
-|--vendor-chunk|--optimization|
-| |--output-hashing|
-| |--extract-licenses|
-| |--subresource-integrity|
+| Dev only       | Prod only               |
+| -------------- | ----------------------- |
+| --named-chunks | --build-optimizer       |
+| --vendor-chunk | --optimization          |
+|                | --output-hashing        |
+|                | --extract-licenses      |
+|                | --subresource-integrity |
 
 `--named-chunks` and `--vendor-chunk` help cache JavaScript bundles across builds. The flags in the prod column tend to optimize the build for smaller bundle sizes at the expense of compile time.
 
 #### Try hot module reloading.
 
-[Hot module reloading (HMR) is much easier](https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7 "https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7") in Angular 11. When Angular rebuilds a module, it updates the app without reloading the page. It just swaps in new code.
+[Hot module reloading (HMR) is much easier](https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7 'https://blog.angular.io/version-11-of-angular-now-available-74721b7952f7') in Angular 11. When Angular rebuilds a module, it updates the app without reloading the page. It just swaps in new code.
 
-However, use caution as it has strange behaviour with RxJS subscriptions and WebSockets. If you don't [correctly unsubscribe](https://levelup.gitconnected.com/unsubscribing-in-angular-the-right-way-6ed82be43ccc "https://levelup.gitconnected.com/unsubscribing-in-angular-the-right-way-6ed82be43ccc") from either, it could create duplicate connections and confusing errors.
+However, use caution as it has strange behaviour with RxJS subscriptions and WebSockets. If you don't [correctly unsubscribe](https://levelup.gitconnected.com/unsubscribing-in-angular-the-right-way-6ed82be43ccc 'https://levelup.gitconnected.com/unsubscribing-in-angular-the-right-way-6ed82be43ccc') from either, it could create duplicate connections and confusing errors.
 
-Step 3: Minimize the work required
-----------------------------------
+## Step 3: Minimize the work required
 
 Builds are faster if there's less code. Consolidate components, delete old code and get rid of what you can.
 
 #### Avoid custom build processes
 
-Our [team of Angular experts](https://www.bitovi.com/frontend-javascript-consulting/angular-consulting "https://www.bitovi.com/frontend-javascript-consulting/angular-consulting") worked with one client whose builds were being slowed by localization files. They had eschewed Angular's localization system for a custom process that combined over a thousand JSON files at build time.
+Our [team of Angular experts](https://www.bitovi.com/frontend-javascript-consulting/angular-consulting 'https://www.bitovi.com/frontend-javascript-consulting/angular-consulting') worked with one client whose builds were being slowed by localization files. They had eschewed Angular's localization system for a custom process that combined over a thousand JSON files at build time.
 
 Avoid adding extra steps to the build process where possible. If Angular includes some functionality, use it instead of rolling your own. Using built-in features, whether localization or scripting or bundling, will give you the benefit of work done by the Angular team to optimize build times.
 
@@ -64,22 +63,22 @@ Lastly, use small Angular modules. When an Angular application is being served, 
 
 #### Step 4: Upgrade Angular
 
-Angular, unlike other frameworks, [includes batteries](https://dev.to/dubyabrian/comment/37cp "https://dev.to/dubyabrian/comment/37cp"). With React or Svelte, you can use a completely different and faster compiler. [Create-React-App](https://create-react-app.dev/ "https://create-react-app.dev") might start you with [webpack](https://webpack.js.org/ "https://webpack.js.org"), but you can speed up [esbuild](https://esbuild.github.io/ "https://esbuild.github.io").
+Angular, unlike other frameworks, [includes batteries](https://dev.to/dubyabrian/comment/37cp 'https://dev.to/dubyabrian/comment/37cp'). With React or Svelte, you can use a completely different and faster compiler. [Create-React-App](https://create-react-app.dev/ 'https://create-react-app.dev') might start you with [webpack](https://webpack.js.org/ 'https://webpack.js.org'), but you can speed up [esbuild](https://esbuild.github.io/ 'https://esbuild.github.io').
 
-With Angular, the compiler the framework ships is the one you get. Updating to new major versions of Angular will get you faster, with fewer buggy compilers with better build times. Angular 9 and Ivy are [especially fast](https://www.piotrl.net/angular-ivy-build-performance/ "https://www.piotrl.net/angular-ivy-build-performance/").
+With Angular, the compiler the framework ships is the one you get. Updating to new major versions of Angular will get you faster, with fewer buggy compilers with better build times. Angular 9 and Ivy are [especially fast](https://www.piotrl.net/angular-ivy-build-performance/ 'https://www.piotrl.net/angular-ivy-build-performance/').
 
 ![A bar chart showing how Ivy has made dev and prod builds faster](/img/ivy-build-comparison.png)
 
-Performance for a production build, [as tested by Piotr Lewandowski](https://indepth.dev/posts/1221/angular-with-ivy-build-performance-review "https://indepth.dev/posts/1221/angular-with-ivy-build-performance-review").
+Performance for a production build, [as tested by Piotr Lewandowski](https://indepth.dev/posts/1221/angular-with-ivy-build-performance-review 'https://indepth.dev/posts/1221/angular-with-ivy-build-performance-review').
 
-When you do the upgrade, be sure to use `ng update`. The Angular CLI will apply migrations to your build config to [automatically use the fastest settings](https://github.com/angular/angular/issues/42100#issuecomment-847331725 "https://github.com/angular/angular/issues/42100#issuecomment-847331725"). After the upgrade, you can also run these migrations (`ng update @angular/cli --migrate-only`).
+When you do the upgrade, be sure to use `ng update`. The Angular CLI will apply migrations to your build config to [automatically use the fastest settings](https://github.com/angular/angular/issues/42100#issuecomment-847331725 'https://github.com/angular/angular/issues/42100#issuecomment-847331725'). After the upgrade, you can also run these migrations (`ng update @angular/cli --migrate-only`).
 
 Now, upgrading major Angular versions is easier said than done. Sometimes you're working on a massive old enterprise app, and there's just no time or budget to upgrade .
 
-If you need help upgrading your Angular app [fill out our form](https://www.bitovi.com/frontend-javascript-consulting/angular-consulting "https://www.bitovi.com/frontend-javascript-consulting/angular-consulting") to get a free consultation! See also our guide to [migrating tslint to eslint](https://www.bitovi.com/blog/angular-upgrades-painless-migration-from-tslint-to-eslint "https://www.bitovi.com/blog/angular-upgrades-painless-migration-from-tslint-to-eslint").
+If you need help upgrading your Angular app [fill out our form](https://www.bitovi.com/frontend-javascript-consulting/angular-consulting 'https://www.bitovi.com/frontend-javascript-consulting/angular-consulting') to get a free consultation! See also our guide to [migrating tslint to eslint](https://www.bitovi.com/blog/angular-upgrades-painless-migration-from-tslint-to-eslint 'https://www.bitovi.com/blog/angular-upgrades-painless-migration-from-tslint-to-eslint').
 
 #### Step 5: Use caching
 
 Tools like Nx also cache build data in the cloud and share it among developers. They can be compelling if you don't mind introducing another dependency to the build process.
 
-If your builds are bottlenecked specifically during continuous integration, try caching your node_modules folder. People have reported up to [75% faster builds](https://medium.com/vendasta/how-to-speed-up-angular-build-times-with-caching-5856d369de88 "https://medium.com/vendasta/how-to-speed-up-angular-build-times-with-caching-5856d369de88") from preserving node_modules between CI runs.
+If your builds are bottlenecked specifically during continuous integration, try caching your node_modules folder. People have reported up to [75% faster builds](https://medium.com/vendasta/how-to-speed-up-angular-build-times-with-caching-5856d369de88 'https://medium.com/vendasta/how-to-speed-up-angular-build-times-with-caching-5856d369de88') from preserving node_modules between CI runs.

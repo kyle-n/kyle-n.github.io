@@ -6,7 +6,7 @@
   export let parentPostTitle: string;
 
   let relatedPosts: PostLink[] = [];
-  getRelatedPosts(parentPostTitle, parentPostKeywords).then((posts) => {
+  getRelatedPosts(parentPostTitle, parentPostKeywords).then(posts => {
     relatedPosts = posts;
   });
 </script>
