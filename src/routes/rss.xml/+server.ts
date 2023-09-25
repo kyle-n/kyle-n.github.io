@@ -1,4 +1,4 @@
-import { BLOG_DESCRIPTION, BLOG_TITLE, BLOG_URL } from '$lib/blog-metadata';
+import { BLOG_AUTHOR, BLOG_AUTHOR_EMAIL, BLOG_DESCRIPTION, BLOG_TITLE, BLOG_URL } from '$lib/blog-metadata';
 import { getAllPosts } from '$lib/post-handlers';
 import { create } from 'xmlbuilder2';
 import { JSDOM } from 'jsdom';
@@ -16,39 +16,37 @@ export async function GET() {
 // prettier-ignore
 async function getRssXml(): Promise<string> {
   const allPosts = (await getAllPosts()).filter((post) => post.metadata.title === 'You should unit test component templates');
-  const root = create({ version: '1.0' })
-  .ele('rss', {
-    'xmlns:dc': 'https://purl.org/dc/elements/1.1/',
-    'xmlns:content': 'https://purl.org/rss/1.0/modules/content/',
-    'xmlns:atom': 'https://www.w3.org/2005/Atom',
-    version: '2.0'
+  const rssUrl = `${BLOG_URL}/rss.xml`;
+  const root = create({ version: '1.0', encoding: 'utf-8' })
+  .ele('feed', {
+    xmlns: 'http://www.w3.org/2005/Atom',
   })
-    .ele('channel')
-      .ele('title').txt(BLOG_TITLE).up()
-      .ele('link').txt(BLOG_URL).up()
-      .ele('description').txt(BLOG_DESCRIPTION).up()
-      .ele('language').txt('en').up()
-      .ele('lastBuildDate').txt(new Date().toUTCString()).up();
+    .ele('title').txt(BLOG_TITLE).up()
+    .ele('link', { href: BLOG_URL }).up()
+    .ele('link', { rel: 'self', href: rssUrl }).up()
+    .ele('updated').txt(new Date().toISOString()).up()
+    .ele('id').txt(BLOG_URL).up()
+    .ele('author')
+      .ele('name').txt(BLOG_AUTHOR).up()
+      .ele('email').txt(BLOG_AUTHOR_EMAIL).up()
+    .up()
   
   const converter = new Converter();
 
   for await (const post of allPosts) {
-    const pubDate = new Date(post.metadata.date).toUTCString();
+    const pubDate = new Date(post.metadata.date).toISOString();
     const postUrl = `${BLOG_URL}/blog/${post.postPath}`;
     const postMarkdown = await readFile(`./src/routes/blog/posts/${post.postPath}.md`, 'utf-8');
     const postHtml = converter.makeHtml(postMarkdown);
-    console.log(postHtml)
     const postHtmlWithoutHeader = getSanitizedPostHtml(postHtml);
     const description = getPostPreviewText(postHtml);
 
-    root.ele('item')
+    root.ele('entry')
       .ele('title').txt(post.metadata.title).up()
-      .ele('description').txt(description).up()
-      .ele('guid').txt(postUrl).up()
-      .ele('dc:creator').txt('Kyle Nazario').up()
-      .ele('link').txt(postUrl).up()
-      .ele('pubDate').txt(pubDate).up()
-      .ele('content:encoded').txt(postHtmlWithoutHeader).up()
+      .ele('link', { href: postUrl }).up()
+      .ele('updated').txt(pubDate).up()
+      .ele('id').txt(postUrl).up()
+      .ele('content', { type: 'html' }).txt(postHtmlWithoutHeader).up()
     .up();
   }
 
@@ -62,7 +60,7 @@ function getSanitizedPostHtml(postHtml: string): string {
     dom.window.document.getElementsByTagName('p')[0]
   ];
   elementsToRemove.forEach((element) => element?.remove());
-  return dom.window.document.body.innerHTML;
+  return '<p>1</p>' + dom.window.document.body.innerHTML;
 }
 
 function getPostPreviewText(postHtml: string): string {
