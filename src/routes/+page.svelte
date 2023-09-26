@@ -5,34 +5,74 @@
 <PageTitle title="Home" />
 
 <main>
-  <section id="welcome-header">
-    <div>
-      <h1>Kyle Nazario</h1>
-      <h2>Software Engineer</h2>
+  <section id="welcome-section">
+    <div id="welcome-header">
+      <img src="/img/me.jpeg" alt="Kyle Nazario" />
+      <div>
+        <h1>Kyle Nazario</h1>
+        <h2>Software Engineer</h2>
+      </div>
     </div>
-    <img src="/img/me.jpeg" alt="Kyle Nazario" />
+    <div id="welcome-text">
+      <p>
+        Helping teams ship great frontends with <a
+          href="https://www.bitovi.com"
+          target="_blank">Bitovi</a
+        >
+        by day, making
+        <a href="https://www.nazariosoftware.com" target="_blank"
+          >cool side projects</a
+        > by night.
+      </p>
+    </div>
   </section>
   <section>
-    <p>
-      Helping teams ship great software. Frontend consultant for <a
-        href="https://www.bitovi.com"
-        target="_blank">Bitovi</a
-      >
-      by day, making
-      <a href="https://www.nazariosoftware.com" target="_blank"
-        >cool side projects</a
-      > by night.
-    </p>
+    <ul>
+      <li>
+        Experienced building enterprise-scale frontends with Angular, React and
+        Svelte
+      </li>
+      <li>Deep expertise with TypeScript and JavaScript</li>
+      <li>
+        Proficient with modern development tools, including git, webpack,
+        esbuild, and Docker
+      </li>
+      <li>
+        Multiple published, commercially successful <a
+          href="https://www.nazariosoftware.com"
+          target="_blank"
+        >
+          web extensions</a
+        >
+      </li>
+    </ul>
   </section>
 </main>
 
 <style lang="scss">
+  main {
+    padding: 2em 0 1em 0;
+  }
+  #welcome-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2em;
+    div {
+      width: 50%;
+    }
+  }
   #welcome-header {
     display: flex;
-    align-items: flex-end;
-    margin-bottom: 2em;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    div {
+      width: 100%;
+    }
 
     h1 {
+      margin-top: 0.4em;
       margin-bottom: 0.3em;
     }
     h2 {
@@ -45,7 +85,18 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    margin-top: 0;
     margin-bottom: 0;
-    margin-left: 2em;
+    padding: 20px;
+    border: 4px solid;
+  }
+
+  #welcome-text {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  ul {
+    margin-bottom: 0;
   }
 </style>
