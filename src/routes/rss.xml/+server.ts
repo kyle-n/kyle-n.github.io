@@ -9,7 +9,7 @@ import { getAllPosts } from '$lib/post-handlers';
 import { create } from 'xmlbuilder2';
 import { JSDOM } from 'jsdom';
 import { readFile } from 'fs/promises';
-import { Converter } from 'showdown';
+import showdown from 'showdown';
 
 export async function GET() {
   const headers = {
@@ -57,7 +57,7 @@ async function getRssXml(): Promise<string> {
   return root.end()
 }
 
-const converter = new Converter();
+const converter = new showdown.Converter();
 async function getHtmlForPost(postPath: string): Promise<string> {
   const postMarkdownWithFrontmatter = await readFile(
     `./src/routes/blog/posts/${postPath}.md`,
