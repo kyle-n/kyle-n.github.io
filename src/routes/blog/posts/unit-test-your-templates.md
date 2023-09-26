@@ -71,7 +71,7 @@ For Angular components, the template is the "public API" our users will use. The
 
 For example, here is a [sample Angular project](https://github.com/kyle-n/template-demo 'https://github.com/kyle-n/template-demo') ([StackBlitz](https://stackblitz.com/edit/angular-rks7bk?file=src/app/app.component.ts 'https://stackblitz.com/edit/angular-rks7bk?file=src/app/app.component.ts')) with a basic signup form. The user can type in a username and password. As they type in the password field, they see up to three colored boxes rating the strength of their chosen password. For a password that meets all the requirements, they will see three green boxes.
 
-![A screenshot of my 'Template Demo' app with a signup form and password strength component. It is displaying three green boxes to show maximum password strength.](/img/template-demo.png)
+<InlineImage filename="template-demo.png" alt="A screenshot of my 'Template Demo' app with a signup form and password strength component. It is displaying three green boxes to show maximum password strength." />
 
 The green boxes are a [presenter component](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0 'https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0') that accepts the user's password strength as an input and [renders it as up to three colored boxes](https://github.com/kyle-n/template-demo/tree/main/src/app/password-strength-indicator 'https://github.com/kyle-n/template-demo/tree/main/src/app/password-strength-indicator').
 
@@ -247,3 +247,7 @@ This test could have gone further and even used [snapshot testing](https://circl
 ### Conclusion
 
 Components are the combination of logic and markup. To make sure they work for your users, you should test both of them, and that they work together correctly.
+
+<script lang="ts">
+  import InlineImage from '$lib/components/inline-image.svelte'
+</script>

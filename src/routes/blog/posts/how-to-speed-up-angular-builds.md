@@ -9,7 +9,7 @@ caption: Image via Mohamed Hassan on Pixabay
 
 Slow builds [stop developers' productivity cold](https://steven-lemon182.medium.com/a-guide-to-reducing-development-wait-time-part-1-why-9dcbbfdc1224). If code takes even two minutes to compile, it's easy to get distracted. You lose your train of thought or, god forbid, open social media.
 
-![An XKCD comic of two programmers fighting with toy swords. Their boss yells at them to work, but they say their code is compiling.](/img/compiling.png)
+<InlineImage filename="compiling.png" alt="An XKCD comic of two programmers fighting with toy swords. Their boss yells at them to work, but they say their code is compiling.">
 
 Slow builds are also expensive. Imagine you have one developer paid $100,000 a year, approximately [the average salary of a software engineer in the United States](https://www.ziprecruiter.com/Salaries/Software-Engineer-Salary). That's $50 an hour, assuming they get two weeks off and work 40 hours a week. If they rebuild the app ten times a day and each rebuild takes two minutes, that person is paid $3,320 per year to watch a progress bar. And that's not even factoring in the cost of running builds on cloud infrastructure.
 
@@ -25,7 +25,7 @@ Second, keep ahead-of-time (AOT) compilation turned on. Builds will take slightl
 
 ### Step 2: Check your build process
 
-![A chart of Angular build flags and their effect on compile times](/img/angular-build-flags.png)
+<InlineImage filename="angular-build-flags.png" alt="A chart of Angular build flags and their effect on compile times" />
 
 I tested every command-line option for ng build for its performance while enabled and disabled. These are the flags I’d recommend using, depending on the context.
 
@@ -67,7 +67,7 @@ Angular, unlike other frameworks, [includes batteries](https://dev.to/dubyabrian
 
 With Angular, the compiler the framework ships is the one you get. Updating to new major versions of Angular will get you faster, with fewer buggy compilers with better build times. Angular 9 and Ivy are [especially fast](https://www.piotrl.net/angular-ivy-build-performance/ 'https://www.piotrl.net/angular-ivy-build-performance/').
 
-![A bar chart showing how Ivy has made dev and prod builds faster](/img/ivy-build-comparison.png)
+<InlineImage filename="ivy-build-comparison.png" alt="A bar chart showing how Ivy has made dev and prod builds faster" />
 
 Performance for a production build, [as tested by Piotr Lewandowski](https://indepth.dev/posts/1221/angular-with-ivy-build-performance-review 'https://indepth.dev/posts/1221/angular-with-ivy-build-performance-review').
 
@@ -82,3 +82,7 @@ If you need help upgrading your Angular app [fill out our form](https://www.bito
 Tools like Nx also cache build data in the cloud and share it among developers. They can be compelling if you don't mind introducing another dependency to the build process.
 
 If your builds are bottlenecked specifically during continuous integration, try caching your node_modules folder. People have reported up to [75% faster builds](https://medium.com/vendasta/how-to-speed-up-angular-build-times-with-caching-5856d369de88 'https://medium.com/vendasta/how-to-speed-up-angular-build-times-with-caching-5856d369de88') from preserving node_modules between CI runs.
+
+<script lang="ts">
+  import InlineImage from '$lib/components/inline-image.svelte'
+</script>

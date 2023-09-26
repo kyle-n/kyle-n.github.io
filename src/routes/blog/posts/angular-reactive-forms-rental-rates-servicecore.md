@@ -33,7 +33,7 @@ The rental rate input table should display every product attached to a rental. B
 
 So: rentals have products, products have line item charges, and rental rates are special per-rental instances of a line item charge. Make sense?
 
-![Overall view of the rate input table](/img/rental-rates.png)
+<InlineImage filename="rental-rates.png" alt="Overall view of the rate input table" />
 
 The last two options in the line item dropdown should be "Add Service" and "Assign Service", which I'll explain later.
 
@@ -127,7 +127,7 @@ This block grabs services (line item charges) already associated to a product an
 
 The last code win was creating the select service dropdown. It transformed an array of services into `<options>`, sorting by billing period on the service.
 
-![The add service dropdown for ServiceCore rental rates](/img/rental-rate-dropdown.png)
+<InlineImage filename="rental-rate-dropdown.png" alt="The add service dropdown for ServiceCore rental rates" />
 
 All that logic used a pure static class function, making it a breeze to unit test.
 
@@ -150,3 +150,7 @@ I tested this on Chrome for macOS and talked to our devops guy about fixing our 
 If the drop-down bug hadn't happened the UI would have been perfect. Normally ServiceCore sticks to standard HTML elements and doesn't go too far off the road. It's a lesson that if we want to try stuff like that, we need a better process.
 
 Still, the rental rates input UI has worked like a charm. The real test will be down the road if we try to reuse this work :).
+
+<script lang="ts">
+  import InlineImage from '$lib/components/inline-image.svelte'
+</script>
