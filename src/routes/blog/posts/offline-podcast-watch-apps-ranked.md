@@ -42,7 +42,7 @@ Overcast used to have the implementation of offline playback that fit my needs b
 
 In the new system, you set a playlist to download up to 20 episodes to the Watch. Overcast says it will download the episodes on wifi when charging. For me, it almost never did. [^2]
 
-[^2]: I used Overcast for several months like this, but I’ve been testing other podcast apps for the last month. I re-downloaded Overcast to see if my assessment was still accurate, and [this happened immediately](/img/oh-overcast.jpeg).
+[^2]: I used Overcast for several months like this, but I’ve been testing other podcast apps for the last month. I re-downloaded Overcast to see if my assessment was still accurate, and [this happened immediately]({base}/img/oh-overcast.jpeg).
 
 Positives:
 
@@ -98,3 +98,7 @@ Negatives:
 ### Winner: Pocket Casts
 
 I love Castro and its inbox model. However, the Watch playback bug and lack of an iPad app put it just behind Pocket Casts. Pocket Casts’ UI is iffy, but that Watch app is rock solid.
+
+<script lang="ts">
+  import { base } from '$app/paths';
+</script>
