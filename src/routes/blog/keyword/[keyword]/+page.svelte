@@ -5,11 +5,12 @@
   import type { ResolvedKeywordPosts } from '$lib/types';
 
   export let data: ResolvedKeywordPosts;
+  const title = `#${data.keyword}`;
 </script>
 
-<PageTitle title={data.keyword} />
+<PageTitle {title} />
 
-<h2>{data.keyword}</h2>
+<h2>{title}</h2>
 <PostList posts={data.posts} />
 
 <div id="pagination">
