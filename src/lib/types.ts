@@ -15,8 +15,6 @@ export type BlogPostMetadata = {
 
 export type ResolvedBlogPostList = {
   posts: PostLink[];
-  totalPageCount: number;
-  currentPage: number;
 };
 
 export type ResolvedKeywordPosts = ResolvedBlogPostList & {

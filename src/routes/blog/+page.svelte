@@ -1,6 +1,5 @@
 <script lang="ts">
   import PageTitle from '$lib/components/page-title.svelte';
-  import PaginationLinks from '$lib/components/pagination-links.svelte';
   import PostList from '$lib/components/post-list.svelte';
   import RssLink from '$lib/components/rss-link.svelte';
   import type { ResolvedBlogPostList } from '$lib/types';
@@ -18,10 +17,6 @@
 </div>
 <PostList posts={data.posts} />
 
-<div id="pagination">
-  <PaginationLinks currentPage={data.currentPage} totalPageCount={data.totalPageCount} />
-</div>
-
 <style lang="scss">
   #blog-page-header {
     display: flex;
@@ -31,8 +26,5 @@
       align-self: flex-end;
       margin-bottom: 15px;
     }
-  }
-  #pagination {
-    margin-top: 2rem;
   }
 </style>
