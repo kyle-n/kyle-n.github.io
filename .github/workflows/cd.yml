@@ -26,12 +26,12 @@ jobs:
           BASE_PATH: '/kyle-n.github.io'
         run: |
           npm run build
-          touch build/.nojekyll
+          touch .svelte-kit/output/.nojekyll
 
       - name: Upload Artifacts
         uses: actions/upload-pages-artifact@v1
         with:
-          path: 'build/'
+          path: '.svelte-kit/output/'
 
   deploy:
     needs: build_site
