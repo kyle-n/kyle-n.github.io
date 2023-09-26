@@ -225,4 +225,6 @@ _site
 node_modules
 .env
 .sass-cache
-.svelte-kit
+.svelte-kit/generated
+.svelte-kit/output
+.svelte-kit/build
