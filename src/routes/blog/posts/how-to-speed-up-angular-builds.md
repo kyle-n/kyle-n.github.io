@@ -9,7 +9,7 @@ caption: Image via Mohamed Hassan on Pixabay
 
 Slow builds [stop developers' productivity cold](https://steven-lemon182.medium.com/a-guide-to-reducing-development-wait-time-part-1-why-9dcbbfdc1224). If code takes even two minutes to compile, it's easy to get distracted. You lose your train of thought or, god forbid, open social media.
 
-<InlineImage filename="compiling.png" alt="An XKCD comic of two programmers fighting with toy swords. Their boss yells at them to work, but they say their code is compiling.">
+<InlineImage filename="compiling.png" alt="An XKCD comic of two programmers fighting with toy swords. Their boss yells at them to work, but they say their code is compiling." />
 
 Slow builds are also expensive. Imagine you have one developer paid $100,000 a year, approximately [the average salary of a software engineer in the United States](https://www.ziprecruiter.com/Salaries/Software-Engineer-Salary). That's $50 an hour, assuming they get two weeks off and work 40 hours a week. If they rebuild the app ten times a day and each rebuild takes two minutes, that person is paid $3,320 per year to watch a progress bar. And that's not even factoring in the cost of running builds on cloud infrastructure.
 
