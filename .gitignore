@@ -225,3 +225,4 @@ _site
 node_modules
 .env
 .sass-cache
+.svelte-kit
