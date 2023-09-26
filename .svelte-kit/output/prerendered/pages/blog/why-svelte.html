@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../img/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    
+		<link href="../_app/immutable/assets/0.c9dc93fe.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/5.bb950bb0.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/post-date.e48032c5.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.9023fadb.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.63274e7e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.c8a3f3e0.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.a45c3d45.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.a4192956.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.9f372ec1.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.54178ba0.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/5.9a4ae76b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/post-date.5bc99a03.js">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/sakura.css/css/sakura.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/sakura.css/css/sakura-vader.css"
+      media="screen and (prefers-color-scheme: dark)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-xonokai.min.css"
+      integrity="sha512-WMvUL/ap3JTqQEo4CIbB0jR2ACx+Qxg78UdKIWzV31CrefYZGtxuSod8uJwWDyzeVpQ0vKnXA41vS4UEvlNkoQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">  <header data-svelte-h="svelte-jaj4c8"><h1>Kyle Nazario</h1> <nav class="svelte-60lm3e"><a href="/" class="svelte-60lm3e">Home</a> <a href="/about" class="svelte-60lm3e">About</a> <a href="/blog" class="svelte-60lm3e">Blog</a> <a href="/contact" class="svelte-60lm3e">Contact</a></nav> </header> <article><div id="title-and-date" class="svelte-1gdvj1q"><h2 class="svelte-1gdvj1q">Why I chose Svelte for my new app</h2> <div class="svelte-1m8gdcp">May 14, 2021</div></div> <img src="/img/bnt-1.png" alt="Why I chose Svelte for my new app"> <div><p data-svelte-h="svelte-1syuky6">I recently published <a href="https://apps.apple.com/us/app/beautiful-new-tabs/id1567068235" rel="nofollow">Beautiful New Tabs</a>. It replaces the new tab page in Safari with a nice wallpaper and weather widget.</p>  <p data-svelte-h="svelte-1qdl7de">While it uses Swift to download and cache wallpapers in the background, everything in the new tab page is HTML, CSS and JS. That’s how you make <a href="https://developer.mozilla.org/en-US/docs/Glossary/WebExtensions" rel="nofollow">web extensions</a>, which Safari <a href="https://sixcolors.com/post/2021/01/safari-14-added-webextensions-support-so-where-are-the-extensions/" rel="nofollow">now supports</a>.</p> <p data-svelte-h="svelte-f30zhl">After building a prototype in vanilla JS, I switched Beautiful New Tabs to <a href="https://svelte.dev" rel="nofollow">Svelte</a> and am happy with the results.</p> <h2 data-svelte-h="svelte-9joj1b">v1: Vanilla JS</h2> <p data-svelte-h="svelte-1ubs82">The first version was vanilla JS filling in an HTML page. Displaying a wallpaper seemed too small for a framework.</p> <p data-svelte-h="svelte-1aiwahg">I also wanted the wallpaper to appear as quickly as possible. Cmd-T, see wallpaper. Cmd-N, see wallpaper. Even though Safari reads my JS bundle from file, not over the network, the bundle should still be small.</p> <p data-svelte-h="svelte-1y7dcr5">The problem was my vanilla JS got imperative and messy, especially when I started adding features. The weather widget alone made me look for a new solution.</p> <h2 data-svelte-h="svelte-1ure6fn">v2: Svelte</h2> <p data-svelte-h="svelte-1sc6zm2">I had read about Svelte and realized it was perfect for my use case. <a href="https://dev.to/joshnuss/svelte-compiler-under-the-hood-4j20" rel="nofollow">Svelte is a compiler</a> that turns declarative <code>.svelte</code> files into imperative, DOM-updating JS. With Svelte, I could break my application into reusable, declarative components and still ship a tiny bundle to customers. [^1]</p> <p data-svelte-h="svelte-16ghu8v">[^1]: I could have used <a href="https://dev.to/hanna/why-svelte-is-revolutionary-415e" rel="nofollow">another framework with small minified bundles</a>, but I wanted to try a cool new tool :).</p> <p data-svelte-h="svelte-rm4sqs">And you know what? Svelte worked like a charm.</p> <ul data-svelte-h="svelte-1a2omet"><li><strong>Source code (TypeScript classes and Svelte components)</strong>: 16 KB</li> <li><strong>Output bundle (minified)</strong>: 16 KB</li></ul> <p data-svelte-h="svelte-1kxrb4z">No extra KBs of data for a framework. It’s 16 KB because the app requires 16 KB of source code to juggle two APIs and a local cache. The bundle loads instantly.</p> <h2 data-svelte-h="svelte-1du2dd6">ty, Svelte</h2> <p data-svelte-h="svelte-12hdi6b">Svelte is new and still has rough edges, but I would recommend it as a way to write “vanilla” JS with the advantages of a framework.</p></div> </article> <hr class="svelte-y12ktw"> <footer><p>© 2023 Kyle Nazario</p> </footer> 
+			
+			<script>
+				{
+					__sveltekit_pm65wa = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.9023fadb.js"),
+						import("../_app/immutable/entry/app.a45c3d45.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 5],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

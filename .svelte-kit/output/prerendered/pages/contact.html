@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="./img/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    
+		<link href="./_app/immutable/assets/0.c9dc93fe.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.9023fadb.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.63274e7e.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.c8a3f3e0.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.a45c3d45.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.a4192956.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.9f372ec1.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.54178ba0.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/6.30a82549.js">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/sakura.css/css/sakura.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/sakura.css/css/sakura-vader.css"
+      media="screen and (prefers-color-scheme: dark)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-xonokai.min.css"
+      integrity="sha512-WMvUL/ap3JTqQEo4CIbB0jR2ACx+Qxg78UdKIWzV31CrefYZGtxuSod8uJwWDyzeVpQ0vKnXA41vS4UEvlNkoQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">  <header data-svelte-h="svelte-jaj4c8"><h1>Kyle Nazario</h1> <nav class="svelte-60lm3e"><a href="/" class="svelte-60lm3e">Home</a> <a href="/about" class="svelte-60lm3e">About</a> <a href="/blog" class="svelte-60lm3e">Blog</a> <a href="/contact" class="svelte-60lm3e">Contact</a></nav> </header>  <hr class="svelte-y12ktw"> <footer><p>© 2023 Kyle Nazario</p> </footer> 
+			
+			<script>
+				{
+					__sveltekit_pm65wa = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.9023fadb.js"),
+						import("./_app/immutable/entry/app.a45c3d45.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 6],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

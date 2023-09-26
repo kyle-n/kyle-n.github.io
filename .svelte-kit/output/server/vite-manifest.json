@@ -1,0 +1,292 @@
+{
+  ".svelte-kit/generated/server/internal.js": {
+    "file": "internal.js",
+    "imports": [
+      "_internal.js"
+    ],
+    "isEntry": true,
+    "src": ".svelte-kit/generated/server/internal.js"
+  },
+  "_internal.js": {
+    "file": "chunks/internal.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_post-date.js": {
+    "css": [
+      "_app/immutable/assets/post-date.e48032c5.css"
+    ],
+    "file": "chunks/post-date.js",
+    "imports": [
+      "_ssr.js"
+    ]
+  },
+  "_ssr.js": {
+    "file": "chunks/ssr.js"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/components/error.svelte": {
+    "file": "entries/fallbacks/error.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/@sveltejs/kit/src/runtime/components/error.svelte"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/server/index.js": {
+    "file": "index.js",
+    "imports": [
+      "_internal.js",
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "node_modules/@sveltejs/kit/src/runtime/server/index.js"
+  },
+  "post-date.css": {
+    "file": "_app/immutable/assets/post-date.e48032c5.css",
+    "src": "post-date.css"
+  },
+  "src/routes/+layout.css": {
+    "file": "_app/immutable/assets/_layout.c9dc93fe.css",
+    "src": "src/routes/+layout.css"
+  },
+  "src/routes/+layout.svelte": {
+    "css": [
+      "_app/immutable/assets/_layout.c9dc93fe.css"
+    ],
+    "file": "entries/pages/_layout.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+layout.svelte"
+  },
+  "src/routes/+layout.ts": {
+    "file": "entries/pages/_layout.ts.js",
+    "isEntry": true,
+    "src": "src/routes/+layout.ts"
+  },
+  "src/routes/+page.svelte": {
+    "file": "entries/pages/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/+page.svelte"
+  },
+  "src/routes/about/+page.svelte": {
+    "file": "entries/pages/about/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/about/+page.svelte"
+  },
+  "src/routes/blog/+page.svelte": {
+    "file": "entries/pages/blog/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_post-date.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/blog/+page.svelte"
+  },
+  "src/routes/blog/+page.ts": {
+    "dynamicImports": [
+      "src/routes/blog/posts/ai-browser-extension.md",
+      "src/routes/blog/posts/angular-reactive-forms-rental-rates-servicecore.md",
+      "src/routes/blog/posts/code-simplicity.md",
+      "src/routes/blog/posts/componentfactoryresolver-explained.md",
+      "src/routes/blog/posts/ebike-daily-routine.md",
+      "src/routes/blog/posts/how-node-js-fakes-multithreading.md",
+      "src/routes/blog/posts/how-to-speed-up-angular-builds.md",
+      "src/routes/blog/posts/incremental-angular-typescript-adoption.md",
+      "src/routes/blog/posts/job-hunting-fun.md",
+      "src/routes/blog/posts/offline-podcast-watch-apps-ranked.md",
+      "src/routes/blog/posts/rxjs-7-changes.md",
+      "src/routes/blog/posts/rxjs-land-of-paradoxes.md",
+      "src/routes/blog/posts/unit-test-your-templates.md",
+      "src/routes/blog/posts/why-svelte.md",
+      "src/routes/blog/posts/why-use-small-components.md",
+      "src/routes/blog/posts/wwdc-23-wishlist-free-local-chatgpt.md"
+    ],
+    "file": "entries/pages/blog/_page.ts.js",
+    "isEntry": true,
+    "src": "src/routes/blog/+page.ts"
+  },
+  "src/routes/blog/[slug]/+page.css": {
+    "file": "_app/immutable/assets/_page.bb950bb0.css",
+    "src": "src/routes/blog/[slug]/+page.css"
+  },
+  "src/routes/blog/[slug]/+page.svelte": {
+    "css": [
+      "_app/immutable/assets/_page.bb950bb0.css"
+    ],
+    "file": "entries/pages/blog/_slug_/_page.svelte.js",
+    "imports": [
+      "_ssr.js",
+      "_post-date.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/blog/[slug]/+page.svelte"
+  },
+  "src/routes/blog/[slug]/+page.ts": {
+    "dynamicImports": [
+      "src/routes/blog/posts/ai-browser-extension.md",
+      "src/routes/blog/posts/angular-reactive-forms-rental-rates-servicecore.md",
+      "src/routes/blog/posts/code-simplicity.md",
+      "src/routes/blog/posts/componentfactoryresolver-explained.md",
+      "src/routes/blog/posts/ebike-daily-routine.md",
+      "src/routes/blog/posts/how-node-js-fakes-multithreading.md",
+      "src/routes/blog/posts/how-to-speed-up-angular-builds.md",
+      "src/routes/blog/posts/incremental-angular-typescript-adoption.md",
+      "src/routes/blog/posts/job-hunting-fun.md",
+      "src/routes/blog/posts/offline-podcast-watch-apps-ranked.md",
+      "src/routes/blog/posts/rxjs-7-changes.md",
+      "src/routes/blog/posts/rxjs-land-of-paradoxes.md",
+      "src/routes/blog/posts/unit-test-your-templates.md",
+      "src/routes/blog/posts/why-svelte.md",
+      "src/routes/blog/posts/why-use-small-components.md",
+      "src/routes/blog/posts/wwdc-23-wishlist-free-local-chatgpt.md"
+    ],
+    "file": "entries/pages/blog/_slug_/_page.ts.js",
+    "isEntry": true,
+    "src": "src/routes/blog/[slug]/+page.ts"
+  },
+  "src/routes/blog/posts/ai-browser-extension.md": {
+    "file": "chunks/ai-browser-extension.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/ai-browser-extension.md"
+  },
+  "src/routes/blog/posts/angular-reactive-forms-rental-rates-servicecore.md": {
+    "file": "chunks/angular-reactive-forms-rental-rates-servicecore.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/angular-reactive-forms-rental-rates-servicecore.md"
+  },
+  "src/routes/blog/posts/code-simplicity.md": {
+    "file": "chunks/code-simplicity.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/code-simplicity.md"
+  },
+  "src/routes/blog/posts/componentfactoryresolver-explained.md": {
+    "file": "chunks/componentfactoryresolver-explained.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/componentfactoryresolver-explained.md"
+  },
+  "src/routes/blog/posts/ebike-daily-routine.md": {
+    "file": "chunks/ebike-daily-routine.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/ebike-daily-routine.md"
+  },
+  "src/routes/blog/posts/how-node-js-fakes-multithreading.md": {
+    "file": "chunks/how-node-js-fakes-multithreading.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/how-node-js-fakes-multithreading.md"
+  },
+  "src/routes/blog/posts/how-to-speed-up-angular-builds.md": {
+    "file": "chunks/how-to-speed-up-angular-builds.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/how-to-speed-up-angular-builds.md"
+  },
+  "src/routes/blog/posts/incremental-angular-typescript-adoption.md": {
+    "file": "chunks/incremental-angular-typescript-adoption.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/incremental-angular-typescript-adoption.md"
+  },
+  "src/routes/blog/posts/job-hunting-fun.md": {
+    "file": "chunks/job-hunting-fun.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/job-hunting-fun.md"
+  },
+  "src/routes/blog/posts/offline-podcast-watch-apps-ranked.md": {
+    "file": "chunks/offline-podcast-watch-apps-ranked.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/offline-podcast-watch-apps-ranked.md"
+  },
+  "src/routes/blog/posts/rxjs-7-changes.md": {
+    "file": "chunks/rxjs-7-changes.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/rxjs-7-changes.md"
+  },
+  "src/routes/blog/posts/rxjs-land-of-paradoxes.md": {
+    "file": "chunks/rxjs-land-of-paradoxes.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/rxjs-land-of-paradoxes.md"
+  },
+  "src/routes/blog/posts/unit-test-your-templates.md": {
+    "file": "chunks/unit-test-your-templates.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/unit-test-your-templates.md"
+  },
+  "src/routes/blog/posts/why-svelte.md": {
+    "file": "chunks/why-svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/why-svelte.md"
+  },
+  "src/routes/blog/posts/why-use-small-components.md": {
+    "file": "chunks/why-use-small-components.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/why-use-small-components.md"
+  },
+  "src/routes/blog/posts/wwdc-23-wishlist-free-local-chatgpt.md": {
+    "file": "chunks/wwdc-23-wishlist-free-local-chatgpt.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/routes/blog/posts/wwdc-23-wishlist-free-local-chatgpt.md"
+  },
+  "src/routes/contact/+page.svelte": {
+    "file": "entries/pages/contact/_page.svelte.js",
+    "imports": [
+      "_ssr.js"
+    ],
+    "isEntry": true,
+    "src": "src/routes/contact/+page.svelte"
+  }
+}

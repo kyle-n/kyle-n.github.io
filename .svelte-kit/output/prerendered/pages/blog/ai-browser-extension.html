@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../img/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    
+		<link href="../_app/immutable/assets/0.c9dc93fe.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/5.bb950bb0.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/post-date.e48032c5.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.9023fadb.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.63274e7e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.c8a3f3e0.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.a45c3d45.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.a4192956.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.9f372ec1.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.54178ba0.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/5.9a4ae76b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/post-date.5bc99a03.js">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/sakura.css/css/sakura.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/sakura.css/css/sakura-vader.css"
+      media="screen and (prefers-color-scheme: dark)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-xonokai.min.css"
+      integrity="sha512-WMvUL/ap3JTqQEo4CIbB0jR2ACx+Qxg78UdKIWzV31CrefYZGtxuSod8uJwWDyzeVpQ0vKnXA41vS4UEvlNkoQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">  <header data-svelte-h="svelte-jaj4c8"><h1>Kyle Nazario</h1> <nav class="svelte-60lm3e"><a href="/" class="svelte-60lm3e">Home</a> <a href="/about" class="svelte-60lm3e">About</a> <a href="/blog" class="svelte-60lm3e">Blog</a> <a href="/contact" class="svelte-60lm3e">Contact</a></nav> </header> <article><div id="title-and-date" class="svelte-1gdvj1q"><h2 class="svelte-1gdvj1q">How AI helped me write a browser extension</h2> <div class="svelte-1m8gdcp">June 7, 2023</div></div> <img src="/img/ai.png" alt="How AI helped me write a browser extension"> <div><p data-svelte-h="svelte-xliz5i">There’s a lot of AI hype. I understand if you are sick of it. I’m a little sick of it. However, I want to make the case that generative AI is not something that <em>will</em> be great, but something that is <em>already</em> useful.</p> <p data-svelte-h="svelte-ahma3b">To demonstrate, I’ll explain how AI helped me on my <a href="https://www.nazariosoftware.com/2023/06/02/play-in-peace-with-mute-chat-for-boardgamearena.html" rel="nofollow">latest side project</a>, a web browser extension. AI did not magically write the whole thing or do all the work, but it helped.</p> <h2 data-svelte-h="svelte-1cewplo">The extension, for context</h2> <p data-svelte-h="svelte-o629i9">I am an avid fan of <a href="https://en.wikipedia.org/wiki/Eurogame" rel="nofollow">Euro-style board games</a> (think <a href="https://boardgamegeek.com/boardgame/152959/settlers-catan" rel="nofollow">Settlers of Catan</a>, <a href="https://boardgamegeek.com/boardgame/266192/wingspan" rel="nofollow">Wingspan</a>, <a href="https://boardgamegeek.com/boardgame/167791/terraforming-mars" rel="nofollow">Terraforming Mars</a>). If I want to play a quick game on my lunch break, I use <a href="https://boardgamearena.com" rel="nofollow">BoardGameArena.com</a>. It’s a great website that lets you play these games online against other people.</p> <p data-svelte-h="svelte-17eq0b8">However, I’m not a fan of how BGA forces you into a chat room with your opponents when you play a game. I was into <a href="https://hearthstone.blizzard.com/en-us" rel="nofollow">Hearthstone</a> for several years and received a surprising amount of racial slurs and abuse. That experience killed my enthusiasm for chatting with strangers in online gaming.</p> <p data-svelte-h="svelte-1vbvr7y">So, I made a <a href="https://www.nazariosoftware.com/2023/06/02/play-in-peace-with-mute-chat-for-boardgamearena.html" rel="nofollow">browser extension</a> to mute the chat on BGA. It doesn’t do anything fancy, it just adds a little CSS to remove the chat windows and notification noises.</p> <h2 data-svelte-h="svelte-h3f5ik">How AI helped</h2> <h3 data-svelte-h="svelte-r8uvku">Copilot</h3> <p data-svelte-h="svelte-1dzkn8z">Generative AI helped me build this browser extension in a few ways. The first was <a href="https://copilot.github.com" rel="nofollow">GitHub Copilot</a>. Copilot wasn’t something I initially interested in, but it’s free for maintainers of “popular” open source projects. I tried it and liked it.</p> <p data-svelte-h="svelte-qd7bz6">Copilot is the best AI product I’ve used. It’s not life-changing or amazing, but it is <em>useful</em>. For years, IDEs have had autocomplete for things like variable names and object properties. Copilot is autocomplete for whole lines of text. It is especially good at recognizing patterns and offering to autocomplete the next thing. For example, after I wrote this function…</p> <pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token keyword">function</span> <span class="token function">muteChat</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'muting chat'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> plopper <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span>
+    <span class="token string">'audiosrc_o_alt_Plop'</span>
+  <span class="token punctuation">)</span> <span class="token keyword">as</span> HTMLAudioElement <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>plopper<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    plopper<span class="token punctuation">.</span>muted <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    plopper<span class="token punctuation">.</span><span class="token function">pause</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre> <p data-svelte-h="svelte-1selv6x">…it offered to autocomplete this…</p> <pre class="language-typescript"><!-- HTML_TAG_START --><code class="language-typescript"><span class="token keyword">function</span> <span class="token function">unmuteChat</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+  <span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'unmuting chat'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> plopper <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span>
+    <span class="token string">'audiosrc_o_alt_Plop'</span>
+  <span class="token punctuation">)</span> <span class="token keyword">as</span> HTMLAudioElement <span class="token operator">|</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>plopper<span class="token punctuation">)</span> <span class="token punctuation">&#123;</span>
+    plopper<span class="token punctuation">.</span>muted <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  <span class="token punctuation">&#125;</span>
+<span class="token punctuation">&#125;</span></code><!-- HTML_TAG_END --></pre> <p data-svelte-h="svelte-1rz6ox8">…which was correct. That was the next function I wanted to write.</p> <p data-svelte-h="svelte-mtlgsy">None of this code is complicated. Copilot isn’t solving the traveling salesman problem here. But it did save me time writing boilerplate.</p> <h3 data-svelte-h="svelte-1dqnj5n">ChatGPT</h3> <p data-svelte-h="svelte-rk43oh">The second way generative AI aided this project was when I used ChatGPT to help generate image assets. I needed dark and light versions of my extension’s toolbar icon, in five different sizes. I knew there was a command-line tool for image editing called <a href="https://imagemagick.org" rel="nofollow">ImageMagick</a>, but I’d never used it and didn’t want to invest a lot of time learning its flags.</p> <p data-svelte-h="svelte-kxt23t">So, I installed ImageMagick and had ChatGPT write me shell scripts downsizing a source image into multiple smaller sizes.</p> <pre class="language-shell"><!-- HTML_TAG_START --><code class="language-shell">convert filled.png <span class="token parameter variable">-resize</span> 16x16 filled_16.png
+convert filled.png <span class="token parameter variable">-resize</span> 19x19 filled_19.png
+convert filled.png <span class="token parameter variable">-resize</span> 32x32 filled_32.png
+convert filled.png <span class="token parameter variable">-resize</span> 38x38 filled_38.png
+convert filled.png <span class="token parameter variable">-resize</span> 48x48 filled_48.png
+convert filled.png <span class="token parameter variable">-resize</span> 72x72 filled_72.png</code><!-- HTML_TAG_END --></pre> <p data-svelte-h="svelte-1hrr4dt"><img src="/static/img/chatgpt-imagemagick-1.png" alt="image"></p> <p data-svelte-h="svelte-9kdci5">I also had it make inverted versions of each size for dark mode. It tripped up on this one and inverted a transparent background to white. I had to google the problem to know what instructions to give ChatGPT.</p> <p data-svelte-h="svelte-c3adco"><img src="/static/img/chatgpt-imagemagick-2.png" alt="image"></p> <p data-svelte-h="svelte-fpnupi">ChatGPT didn’t get it all right, but it still saved me time looking up documentation and writing shell scripts.</p> <h3 data-svelte-h="svelte-146uyi8">Stable Diffusion</h3> <p data-svelte-h="svelte-18k5ytr">When it came time to publish, I also needed an app icon. I tried <a href="https://diffusionbee.com" rel="nofollow">Diffusion Bee</a> on my MacBook, but it was too slow. Instead, I ran <a href="https://github.com/AUTOMATIC1111/stable-diffusion-webui" rel="nofollow">stable-diffusion-webui</a> on my gaming PC. Much faster with an Nvidia 3070.</p> <p data-svelte-h="svelte-178d056">I chose Stable Diffusion because frankly the app icon didn’t need to be that good. It’s a small browser extension people will install once and interact with rarely. I could draw it myself, but I don’t enjoy graphic design and <a href="https://www.nazariosoftware.com/2021/04/07/about-javasnipt.html" rel="nofollow">am not that good at it</a>.</p> <p data-svelte-h="svelte-92z3m0">Stable Diffusion has a long way to go. It generated a speech bubble icon eventually, but only after a lot of misfires. I initially wanted it to create a background with some dice, but that was far too complicated. Stable Diffusion has absolutely no idea what a six-sided die looks like 🤦‍♂️.</p> <p data-svelte-h="svelte-149wkm2"><img src="/static/img/mc-icon.png" alt="image"></p> <p data-svelte-h="svelte-z469re">Side note: ChatGPT was super helpful here again. It flawlessly wrote a bunch of ImageMagick commands to round the icon’s corners and shrink it to 80% size while keeping the canvas the same. Love not having to pay for Photoshop.</p> <h2 data-svelte-h="svelte-dl9ql2">AI: Not a magic bullet, but useful</h2> <p data-svelte-h="svelte-13ic9cp">At no point in this process did generative AI completely do my job or become sentient or go, “I’m sorry Kyle, I can’t do that.” It was just… helpful. It made a couple things I’m not good at easier (shell scripting and graphic design). I wish Stable Diffusion was better at drawing dice, but you can’t have everything.</p> <p data-svelte-h="svelte-1jw7rpl">In June 2023, AI is not a magic bullet, but it is <em>useful</em>. I will happily keep using Copilot, ChatGPT and Stable Diffusion for future projects.</p></div> </article> <hr class="svelte-y12ktw"> <footer><p>© 2023 Kyle Nazario</p> </footer> 
+			
+			<script>
+				{
+					__sveltekit_pm65wa = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.9023fadb.js"),
+						import("../_app/immutable/entry/app.a45c3d45.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 5],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>

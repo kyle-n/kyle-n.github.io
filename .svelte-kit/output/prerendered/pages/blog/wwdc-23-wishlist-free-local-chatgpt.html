@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="../img/favicon.png" />
+    <meta name="viewport" content="width=device-width" />
+    
+		<link href="../_app/immutable/assets/0.c9dc93fe.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/5.bb950bb0.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/post-date.e48032c5.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.9023fadb.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.63274e7e.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.c8a3f3e0.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.a45c3d45.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.a4192956.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.9f372ec1.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.54178ba0.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/5.9a4ae76b.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/post-date.5bc99a03.js">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/sakura.css/css/sakura.css"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/sakura.css/css/sakura-vader.css"
+      media="screen and (prefers-color-scheme: dark)"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism-themes/1.9.0/prism-xonokai.min.css"
+      integrity="sha512-WMvUL/ap3JTqQEo4CIbB0jR2ACx+Qxg78UdKIWzV31CrefYZGtxuSod8uJwWDyzeVpQ0vKnXA41vS4UEvlNkoQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body data-sveltekit-preload-data="hover">
+    <div style="display: contents">  <header data-svelte-h="svelte-jaj4c8"><h1>Kyle Nazario</h1> <nav class="svelte-60lm3e"><a href="/" class="svelte-60lm3e">Home</a> <a href="/about" class="svelte-60lm3e">About</a> <a href="/blog" class="svelte-60lm3e">Blog</a> <a href="/contact" class="svelte-60lm3e">Contact</a></nav> </header> <article><div id="title-and-date" class="svelte-1gdvj1q"><h2 class="svelte-1gdvj1q">WWDC Wishlist- A free large-language model built into iOS and macOS</h2> <div class="svelte-1m8gdcp">April 24, 2023</div></div> <img src="/img/wwdc23.jpg" alt="WWDC Wishlist- A free large-language model built into iOS and macOS"> <div><p data-svelte-h="svelte-1tp09oz">As an Apple developer, one thing I would love to see at WWDC is a free large-language model built into iOS and macOS. Ship GPT-whatever with the OS and let third-party apps call into it for free. It doesn’t have to be as complex as ChatGPT, just something that can run on Apple Silicon.</p> <p data-svelte-h="svelte-lo7my">This would be good for a couple reasons.</p> <p data-svelte-h="svelte-iiikz7">First, it would be incredibly useful for us third-party developers. I am currently writing a <a href="https://www.nazariosoftware.com/2023/04/14/log-in-seamlessly-with-autofill-email-codes.html" rel="nofollow">web extension for autofilling email login codes</a>. The app has an algorithm that finds login codes in the text of an email. It works pretty well, but you know what’s even better? ChatGPT. ChatGPT finds the code every single time.[^1]</p> <p data-svelte-h="svelte-1p444v1">[^1]: I also tried machine learning, but it is not something I have a lot of expertise with. <a href="https://www.tensorflow.org/js" rel="nofollow">Tensorflow.js</a> with the <a href="https://github.com/tensorflow/tfjs-models/tree/master/qna" rel="nofollow">Q&amp;A model</a> was slow and had a terrible accuracy rate.</p> <p data-svelte-h="svelte-zmtlbj">Unfortunately, ChatGPT is not feasible in my app. Using their API would be an ongoing cost, which would require an ongoing subscription. Additionally, I don’t want to send users’ emails to OpenAI.</p> <p data-svelte-h="svelte-o9ot7r">I could ship an LLM like <a href="https://github.com/ggerganov/llama.cpp" rel="nofollow">llama.cpp</a> with my app but LLMs are, at the moment, too large. I don’t want to include a multi-gigabyte model file in a web extension. Better for Apple to put it in the OS once and share it across all apps.</p> <p data-svelte-h="svelte-1ff1uzv">Apple could also implement a locally run LLM more efficiently than any third party. Last year, they patched CoreML and <a href="https://arstechnica.com/information-technology/2022/12/apple-slices-its-ai-image-synthesis-times-in-half-with-new-stable-diffusion-fix/" rel="nofollow">made Stable Diffusion run twice as fast</a>.</p> <p data-svelte-h="svelte-189ftkm">A free and locally run LLM would be good for Apple users’ privacy as well. If I were Tim Cook, I might be concerned about lots of apps on my platform using LLM services that keep user data to train their models. If Apple provided a free, local, private LLM for developers instead, it would encourage third-party developers to not use other services.</p> <p data-svelte-h="svelte-1m53d4">It would even encourage developers to create only for Apple platforms. This theoretical LLM, if it ever exists, will be enabled by Apple Silicon. It will be possible only because of hardware you can’t get on other platforms.</p> <p data-svelte-h="svelte-1xzwzf1">So, fingers crossed. Here’s hoping for something great this year at WWDC with generative AI.</p></div> </article> <hr class="svelte-y12ktw"> <footer><p>© 2023 Kyle Nazario</p> </footer> 
+			
+			<script>
+				{
+					__sveltekit_pm65wa = {
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.9023fadb.js"),
+						import("../_app/immutable/entry/app.a45c3d45.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 5],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+  </body>
+</html>
