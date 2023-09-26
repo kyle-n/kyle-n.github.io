@@ -20,6 +20,7 @@
 <style lang="scss">
   .keyword-links {
     display: flex;
+    flex-wrap: wrap;
     a {
       display: block;
       margin-right: 1.5rem;

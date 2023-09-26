@@ -50,6 +50,7 @@
 </main>
 
 <style lang="scss">
+  $mobile: 768px;
   main {
     padding: 2em 0 1em 0;
   }
@@ -59,6 +60,15 @@
     margin-bottom: 2em;
     div {
       width: 50%;
+    }
+
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 0;
+      div {
+        width: 100%;
+      }
     }
   }
   #welcome-header {
@@ -94,6 +104,9 @@
   #welcome-text {
     padding-top: 2em;
     padding-bottom: 2em;
+    @media screen and (max-width: $mobile) {
+      padding: 0;
+    }
   }
 
   ul {
