@@ -72,7 +72,11 @@ convert filled.png -resize 48x48 filled_48.png
 convert filled.png -resize 72x72 filled_72.png
 ```
 
-![image](/img/chatgpt-imagemagick-1.png)
+<script lang="ts">
+  import { base } from '$app/paths';
+</script>
+
+![image]({base}/img/chatgpt-imagemagick-1.png)
 
 I also had it make inverted versions of each size for dark mode. It tripped up on this one and inverted a transparent background to white. I had to google the problem to know what instructions to give ChatGPT.
 
