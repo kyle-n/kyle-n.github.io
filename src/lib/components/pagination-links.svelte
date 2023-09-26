@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { page } from '$app/stores';
+
   export let currentPage: number;
   export let totalPageCount: number;
 
@@ -8,15 +10,19 @@
   }
 </script>
 
-<section>
-  {#each pageNumbers as pageNumber}
-    {#if pageNumber === currentPage}
-      <div>{pageNumber}</div>
-    {:else}
-      <a href={`/blog?page=${pageNumber}`} class="jumpy-link">{pageNumber}</a>
-    {/if}
-  {/each}
-</section>
+{#if totalPageCount > 1}
+  <section>
+    {#each pageNumbers as pageNumber}
+      {#if pageNumber === currentPage}
+        <div>{pageNumber}</div>
+      {:else}
+        <a href={`${$page.url.pathname}?page=${pageNumber}`} class="jumpy-link"
+          >{pageNumber}</a
+        >
+      {/if}
+    {/each}
+  </section>
+{/if}
 
 <style lang="scss">
   section {
