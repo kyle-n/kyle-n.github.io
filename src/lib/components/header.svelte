@@ -1,9 +1,14 @@
 <script lang="ts">
+  import { base } from '$app/paths';
+
   const navLinks = [
     { name: 'Home', href: '/' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' }
-  ];
+  ].map(link => ({
+    ...link,
+    href: base + link.href
+  }));
 </script>
 
 <header>

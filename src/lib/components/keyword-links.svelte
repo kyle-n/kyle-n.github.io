@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { base } from '$app/paths';
+
   export let keywords: string | undefined;
 
   let keywordList = new Set<string>();
@@ -12,7 +14,9 @@
 {#if keywords}
   <div class="keyword-links">
     {#each keywordList as keyword}
-      <a href="/blog/keyword/{keyword}" class="jumpy-link">#{keyword}</a>
+      <a href={base + '/blog/keyword/' + keyword} class="jumpy-link"
+        >#{keyword}</a
+      >
     {/each}
   </div>
 {/if}

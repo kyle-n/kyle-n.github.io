@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import type { PostLink } from '$lib/types';
   import PostDate from './post-date.svelte';
 
@@ -7,7 +8,7 @@
 
 {#each posts as post}
   <div class="post-preview">
-    <a href="/blog/{post.postPath}">
+    <a href={base + '/blog/' + post.postPath}>
       <h3>{post.metadata.title}</h3>
       <PostDate date={post.metadata.date} />
     </a>

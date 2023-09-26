@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import { page } from '$app/stores';
 
   export let currentPage: number;
@@ -16,7 +17,7 @@
       {#if pageNumber === currentPage}
         <div>{pageNumber}</div>
       {:else}
-        <a href={`${$page.url.pathname}?page=${pageNumber}`} class="jumpy-link"
+        <a href={`${base}${$page.url.pathname}?page=${pageNumber}`} class="jumpy-link"
           >{pageNumber}</a
         >
       {/if}

@@ -1,4 +1,10 @@
-<a href="/rss.xml" target="_blank" title="RSS feed">
+<script lang="ts">
+  import { base } from '$app/paths';
+
+  const href = base + '/rss.xml';
+</script>
+
+<a {href} target="_blank" title="RSS feed">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"
