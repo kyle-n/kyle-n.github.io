@@ -25,9 +25,9 @@ const config = {
       precompress: false,
       strict: false
     }),
-    paths: {
-      base: dev ? '' : 'https://www.kylenazario.com'
-    }
+    // paths: {
+    //   base: dev ? '' : 'https://www.kylenazario.com'
+    // }
   }
 };
 
