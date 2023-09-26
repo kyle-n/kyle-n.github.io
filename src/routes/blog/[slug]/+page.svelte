@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from '$app/paths';
   import KeywordLinks from '$lib/components/keyword-links.svelte';
   import PageTitle from '$lib/components/page-title.svelte';
   import PostDate from '$lib/components/post-date.svelte';
@@ -16,7 +17,7 @@
     <KeywordLinks keywords={data.metadata.keywords} />
   </div>
   {#if data.metadata.image}
-    <img src="/img/{data.metadata.image}" alt={data.metadata.title} />
+    <img src={base + '/img/' + data.metadata.image} alt={data.metadata.title} />
   {/if}
   <div>
     <svelte:component this={data.content} />

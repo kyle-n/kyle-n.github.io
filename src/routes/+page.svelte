@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   import PageTitle from '$lib/components/page-title.svelte';
 </script>
 
@@ -7,7 +8,7 @@
 <main>
   <section id="welcome-section">
     <div id="welcome-header">
-      <img src="/img/me.jpeg" alt="Kyle Nazario" />
+      <img src={base + '/img/me.jpeg'} alt="Kyle Nazario" />
       <div>
         <h1>Kyle Nazario</h1>
         <h2>Software Engineer</h2>
