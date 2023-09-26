@@ -1,6 +1,6 @@
 <script lang="ts">
   import { base } from '$app/paths';
-import { getRelatedPosts } from '$lib/post-handlers';
+  import { getRelatedPosts } from '$lib/post-handlers';
   import type { PostLink } from '$lib/types';
 
   export let parentPostKeywords: string | undefined;
@@ -18,7 +18,7 @@ import { getRelatedPosts } from '$lib/post-handlers';
     <ul>
       {#each relatedPosts as post}
         <li>
-          <a href={base + "/blog/" + post.postPath}>{post.metadata.title}</a>
+          <a href={base + '/blog/' + post.postPath}>{post.metadata.title}</a>
         </li>
       {/each}
     </ul>
