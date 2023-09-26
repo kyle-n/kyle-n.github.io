@@ -34,8 +34,7 @@
       </li>
       <li>Deep expertise with TypeScript and JavaScript</li>
       <li>
-        Proficient with modern development tools, including git, webpack,
-        esbuild, and Docker
+        Expert at reducing frontend complexity and improving test coverage
       </li>
       <li>
         Multiple published, commercially successful <a
