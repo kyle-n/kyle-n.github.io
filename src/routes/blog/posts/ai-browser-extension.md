@@ -72,7 +72,7 @@ convert filled.png -resize 48x48 filled_48.png
 convert filled.png -resize 72x72 filled_72.png
 ```
 
-![A screenshot of ChatGPT writing a shell script using ImageMagick](/img/chatgpt-imagemagick-1.png)
+![A screenshot of ChatGPT writing a shell script using ImageMagick]({base}/img/chatgpt-imagemagick-1.png)
 
 I also had it make inverted versions of each size for dark mode. It tripped up on this one and inverted a transparent background to white. I had to google the problem to know what instructions to give ChatGPT.
 
@@ -100,4 +100,5 @@ In June 2023, AI is not a magic bullet, but it is _useful_. I will happily keep 
 
 <script lang="ts">
   import InlineImage from '$lib/components/inline-image.svelte'
+  import { base } from '$app/paths';
 </script>
