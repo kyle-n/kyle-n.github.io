@@ -18,6 +18,9 @@
   </div>
   {#if data.metadata.image}
     <img src={base + '/img/' + data.metadata.image} alt={data.metadata.title} />
+    {#if data.metadata.caption}
+      <p class="caption">{data.metadata.caption}</p>
+    {/if}
   {/if}
   <div>
     <svelte:component this={data.content} />
@@ -35,5 +38,13 @@
     h2 {
       margin-bottom: 0.5rem;
     }
+  }
+
+  img {
+    margin-bottom: 0;
+  }
+
+  .caption {
+    color: #666;
   }
 </style>
