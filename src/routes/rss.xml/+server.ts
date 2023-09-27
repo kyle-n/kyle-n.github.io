@@ -11,6 +11,8 @@ import { JSDOM } from 'jsdom';
 import { readFile } from 'fs/promises';
 import showdown from 'showdown';
 
+export const prerender = true;
+
 export async function GET() {
   const headers = {
     'Cache-Control': 'max-age=0, s-maxage=3600',
