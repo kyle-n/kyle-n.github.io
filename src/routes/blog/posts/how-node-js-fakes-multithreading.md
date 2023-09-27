@@ -40,7 +40,7 @@ So people moved on. These days, many server frameworks use a [thread pool](https
 
 This is a good, flexible approach to scaling. Just add more threads! The downside is it can also take up a lot of memory. Consider this diagram of a server that uses one thread per connection.
 
-<InlineImage filename="multithreading-1.png" alt="A diagram showing multiple threads handling multiple connections to a server" />
+![A diagram showing multiple threads handling multiple connections to a server]({base}/img/multithreading-1.png)
 
 ### The Node.js approach
 
@@ -80,11 +80,11 @@ Think of Node as a chef running around the kitchen. The chef can set a pot of wa
 
 Node.js fakes multithreading by multitasking. It spreads out tasks, not across threads or processes, but **time**.
 
-<InlineImage filename="multithreading-2.png" alt="A diagram showing a Node server handling multiple connections on one thread over time" />
+![A diagram showing a Node server handling multiple connections on one thread over time]({base}/img/multithreading-2.png)
 
 The way Node hops around between tasks is explained by the reactor pattern. Node is structured like a reactor, where the flow of control swirls around the event loop, processing tasks as they come in.
 
-<InlineImage filename="reactor-pattern.png" alt="A diagram demonstrating the reactor pattern in Node" />
+![A diagram demonstrating the reactor pattern in Node]({base}/img/reactor-pattern.png)
 
 When you run a JavaScript file in Node, it starts at the top square, "Execute Handler." It will synchronously run the code provided until that code is finished. If an asynchronous operation is triggered while running the code, that operation is sent to the box on the left, the **event demultiplexer**.
 
@@ -125,5 +125,5 @@ Second, scaling servers is actually a [whole other problem](https://www.quora.co
 - [Understanding Reactor Pattern for Highly Scalable I/O Bound Web Server](https://tianpan.co/blog/2015-01-13-understanding-reactor-pattern-for-highly-scalable-i-o-bound-web-server) by Tian Pan
 
 <script lang="ts">
-  import InlineImage from '$lib/components/inline-image.svelte'
+  import { base } from '$app/paths';
 </script>

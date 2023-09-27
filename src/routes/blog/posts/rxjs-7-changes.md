@@ -18,11 +18,11 @@ Lesh said while RxJS 7 was "a bit faster," the big improvement for the new versi
 
 See this chart of operator sizes in RxJS 6:
 
-<InlineImage filename="rxjs6-size.png" alt="A chart showing the size of different RxJS 6 operators" />
+![A chart showing the size of different RxJS 6 operators]({base}/img/rxjs6-size.png)
 
 And this chart of the same operator sizes in RxJS 7:
 
-<InlineImage filename="rxjs7-size.png" alt="A chart showing the size of different RxJS 7 operators" />
+![A chart showing the size of different RxJS 7 operators]({base}/img/rxjs7-size.png)
 
 ### Consolidating sharing operators
 
@@ -125,5 +125,5 @@ Important points to remember:
 - Stop using `.add` chains to manage your subscriptions. Lesh [recommends `takeUntil`](https://medium.com/@benlesh/rxjs-dont-unsubscribe-6753ed4fda87)
 
 <script lang="ts">
-  import InlineImage from '$lib/components/inline-image.svelte'
+  import { base } from '$app/paths';
 </script>

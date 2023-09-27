@@ -31,13 +31,13 @@ Here's an example of how small components should be, pulled from the [React docu
 
 Imagine we're making a simple web app for our online store. We have a frontend calling an API to get a list of products, then displaying that list.
 
-<InlineImage filename="web-store-ui.png" alt="A basic UI listing products for sale" />
+![A basic UI listing products for sale]({base}/img/web-store-ui.png)
 
 It is an easy mistake to look at this code and assume it should all be one component.
 
 Here's the official recommendation on how granular the components should be to build this UI - and remember, this is the recommendation of a bunch of Meta engineers who spend all day building a component-based framework:
 
-<InlineImage filename="web-store-ui.png" alt="A basic UI listing products for sale split into sub-components" />
+![A basic UI listing products for sale split into sub-components]({base}/img/web-store-ui.png)
 
 They recommend splitting this UI into five components:
 
@@ -71,5 +71,5 @@ _These files were impossible to edit_. Our scrum team tripled our time estimates
 Small components don't let that happen. They do exactly one thing and are so easy to understand and modify they don't slow you down one bit.
 
 <script lang="ts">
-  import InlineImage from '$lib/components/inline-image.svelte'
+  import { base } from '$app/paths';
 </script>
