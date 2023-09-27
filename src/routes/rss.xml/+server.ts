@@ -10,6 +10,7 @@ import { create } from 'xmlbuilder2';
 import { JSDOM } from 'jsdom';
 import { readFile } from 'fs/promises';
 import showdown from 'showdown';
+import { base } from '$app/paths';
 
 export const prerender = true;
 
@@ -43,7 +44,7 @@ async function getRssXml(): Promise<string> {
   for await (const post of allPosts) {
     const pubDate = new Date(post.metadata.date).toISOString();
     const postUrl = `${BLOG_URL}/blog/${post.postPath}`;
-    const postHtml = await getHtmlForPost(post.postPath);
+    const postHtml = await getHtmlForPost(post.postPath, post.metadata.image);
     const postPreviewText = getPostPreviewText(postHtml);
 
     root.ele('entry')
@@ -60,15 +61,27 @@ async function getRssXml(): Promise<string> {
 }
 
 const converter = new showdown.Converter();
-async function getHtmlForPost(postPath: string): Promise<string> {
+async function getHtmlForPost(
+  postPath: string,
+  leadImageFilename?: string
+): Promise<string> {
   const postMarkdownWithFrontmatter = await readFile(
     `./src/routes/blog/posts/${postPath}.md`,
     'utf-8'
   );
   const postMarkdown = postMarkdownWithFrontmatter.split('---')[2].trim();
-  const postHtml = converter.makeHtml(postMarkdown);
+  let postHtml = converter.makeHtml(postMarkdown);
   // prevents HTML in code tags from being rendered
-  return postHtml.replaceAll('&lt;', '&amp;lt;').replaceAll('&gt;', '&amp;gt;');
+  postHtml = postHtml
+    .replaceAll('&lt;', '&amp;lt;')
+    .replaceAll('&gt;', '&amp;gt;');
+  if (leadImageFilename) {
+    const dom = new JSDOM();
+    const leadImage = dom.window.document.createElement('img');
+    leadImage.src = `${base}/img/${leadImageFilename}`;
+    postHtml = leadImage.outerHTML + postHtml;
+  }
+  return postHtml;
 }
 
 function getPostPreviewText(postHtml: string): string {
