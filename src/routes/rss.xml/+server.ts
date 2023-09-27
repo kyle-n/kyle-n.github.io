@@ -74,7 +74,8 @@ async function getHtmlForPost(
   // prevents HTML in code tags from being rendered
   postHtml = postHtml
     .replaceAll('&lt;', '&amp;lt;')
-    .replaceAll('&gt;', '&amp;gt;');
+    .replaceAll('&gt;', '&amp;gt;')
+    .replaceAll('{base}', '');
   if (leadImageFilename) {
     const dom = new JSDOM();
     const leadImage = dom.window.document.createElement('img');
