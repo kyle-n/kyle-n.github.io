@@ -44,7 +44,7 @@ async function getRssXml(): Promise<string> {
   for await (const post of allPosts) {
     const pubDate = new Date(post.metadata.date).toISOString();
     const postUrl = `${BLOG_URL}/blog/${post.postPath}`;
-    const postHtml = await getHtmlForPost(post.postPath, post.metadata.image);
+    const postHtml = await getHtmlForPost(post.postPath, post.metadata.image, post.metadata.caption);
     const postPreviewText = getPostPreviewText(postHtml);
 
     root.ele('entry')
@@ -63,7 +63,8 @@ async function getRssXml(): Promise<string> {
 const converter = new showdown.Converter();
 async function getHtmlForPost(
   postPath: string,
-  leadImageFilename?: string
+  leadImageFilename?: string,
+  leadImageCaption?: string
 ): Promise<string> {
   const postMarkdownWithFrontmatter = await readFile(
     `./src/routes/blog/posts/${postPath}.md`,
@@ -80,6 +81,11 @@ async function getHtmlForPost(
     const dom = new JSDOM();
     const leadImage = dom.window.document.createElement('img');
     leadImage.src = `${base}/img/${leadImageFilename}`;
+    if (leadImageCaption) {
+      const caption = dom.window.document.createElement('caption');
+      caption.textContent = leadImageCaption;
+      postHtml = caption.outerHTML + postHtml;
+    }
     postHtml = leadImage.outerHTML + postHtml;
   }
   return postHtml;
