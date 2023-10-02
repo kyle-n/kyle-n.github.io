@@ -1,7 +1,30 @@
 <script>
   import Header from '$lib/components/header.svelte';
   import Footer from '$lib/components/footer.svelte';
+  import { BLOG_DESCRIPTION, BLOG_DOMAIN, BLOG_IMAGE, BLOG_TITLE, BLOG_URL } from '$lib/blog-metadata';
+  import { base } from '$app/paths';
 </script>
+
+<svelte:head>
+  <!-- HTML meta tags -->
+  <meta name="description" content={BLOG_DESCRIPTION} />
+
+  <!-- Facebook -->
+  <meta property="og:url" content={BLOG_URL} />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content={BLOG_TITLE} />
+  <meta property="og:description" content={BLOG_DESCRIPTION} />
+  <meta property="og:image" content={BLOG_IMAGE} />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:domain" content={BLOG_DOMAIN} />
+  <meta property="twitter:url" content={BLOG_URL} />
+  <meta property="twitter:title" content={BLOG_TITLE} />
+  <meta property="twitter:description" content={BLOG_DESCRIPTION} />
+  <meta property="twitter:image" content={BLOG_IMAGE} />
+
+</svelte:head>
 
 <Header />
 
