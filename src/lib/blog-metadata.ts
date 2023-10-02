@@ -18,6 +18,6 @@ export const BLOG_AUTHOR_EMAIL = 'kylebnazario@gmail.com';
 export const BLOG_AUTHOR_LINKEDIN = 'kylenazario';
 export const BLOG_AUTHOR_MASTODON = '@kn';
 export const BLOG_AUTHOR_BLUESKY = 'kylenazario.com';
-export const BLOG_IMAGE = `${base}/img/me.jpeg`;
+export const BLOG_IMAGE = `${BLOG_URL}/img/me.jpeg`;
 
 export const DEFAULT_POSTS_PER_PAGE = 10;
