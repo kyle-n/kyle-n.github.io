@@ -29,7 +29,6 @@
 </svelte:head>
 
 <PageTitle title={BLOG_TITLE} />
-<LeadImage filename={BLOG_IMAGE} alt={BLOG_TITLE} hideImage={true} />
 
 <Header />
 

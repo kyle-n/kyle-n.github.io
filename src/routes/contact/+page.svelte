@@ -5,8 +5,15 @@
     BLOG_AUTHOR_GITHUB,
     BLOG_AUTHOR_LINKEDIN,
     BLOG_AUTHOR_MASTODON,
-    BLOG_AUTHOR_TWITTER
+    BLOG_AUTHOR_TWITTER,
+
+    BLOG_IMAGE
+,
+
+    BLOG_TITLE
+
   } from '$lib/blog-metadata';
+  import LeadImage from '$lib/components/lead-image.svelte';
   import PageTitle from '$lib/components/page-title.svelte';
 
   const accounts = [
@@ -26,6 +33,7 @@
 </script>
 
 <PageTitle title="Contact" />
+<LeadImage filename={BLOG_IMAGE} alt={BLOG_TITLE} hideImage={true} />
 
 <h2>Contact</h2>
 <main>

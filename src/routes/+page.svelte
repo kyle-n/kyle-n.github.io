@@ -1,9 +1,12 @@
 <script>
   import { base } from '$app/paths';
+  import { BLOG_IMAGE, BLOG_TITLE } from '$lib/blog-metadata';
+  import LeadImage from '$lib/components/lead-image.svelte';
   import PageTitle from '$lib/components/page-title.svelte';
 </script>
 
 <PageTitle title="Home" />
+<LeadImage filename={BLOG_IMAGE} alt={BLOG_TITLE} hideImage={true} />
 
 <main>
   <section id="welcome-section">
