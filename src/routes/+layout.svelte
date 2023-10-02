@@ -9,6 +9,7 @@
     BLOG_URL
   } from '$lib/blog-metadata';
   import PageTitle from '$lib/components/page-title.svelte';
+  import LeadImage from '$lib/components/lead-image.svelte';
 </script>
 
 <svelte:head>
@@ -28,6 +29,7 @@
 </svelte:head>
 
 <PageTitle title={BLOG_TITLE} />
+<LeadImage filename={BLOG_IMAGE} alt={BLOG_TITLE} hideImage={true} />
 
 <Header />
 

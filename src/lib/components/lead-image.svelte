@@ -4,6 +4,7 @@
 
   export let filename: string;
   export let alt: string;
+  export let hideImage: boolean = false;
 
   const src = `${base}/img/${filename}`;
   const content = `${BLOG_URL}/img/${filename}`
@@ -14,4 +15,6 @@
   <meta property="twitter:image" {content} />
 </svelte:head>
 
-<img {src} {alt} />
+{#if !hideImage}
+  <img {src} {alt} />
+{/if}
