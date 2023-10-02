@@ -4,12 +4,10 @@
   import {
     BLOG_DESCRIPTION,
     BLOG_DOMAIN,
-    BLOG_IMAGE,
     BLOG_TITLE,
     BLOG_URL
   } from '$lib/blog-metadata';
   import PageTitle from '$lib/components/page-title.svelte';
-  import LeadImage from '$lib/components/lead-image.svelte';
 </script>
 
 <svelte:head>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { BLOG_IMAGE, BLOG_TITLE } from '$lib/blog-metadata';
+  import { BLOG_IMAGE_FILENAME, BLOG_TITLE } from '$lib/blog-metadata';
   import LeadImage from '$lib/components/lead-image.svelte';
   import PageTitle from '$lib/components/page-title.svelte';
   import PostList from '$lib/components/post-list.svelte';
@@ -10,7 +10,7 @@
 </script>
 
 <PageTitle title="Blog" />
-<LeadImage filename={BLOG_IMAGE} alt={BLOG_TITLE} hideImage={true} />
+<LeadImage filename={BLOG_IMAGE_FILENAME} alt={BLOG_TITLE} hideImage={true} />
 
 <div id="blog-page-header">
   <h2>Blog</h2>
