@@ -19,14 +19,12 @@
   <meta property="og:url" content={BLOG_URL} />
   <meta property="og:type" content="website" />
   <meta property="og:description" content={BLOG_DESCRIPTION} />
-  <meta property="og:image" content={BLOG_IMAGE} />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary" />
   <meta property="twitter:domain" content={BLOG_DOMAIN} />
   <meta property="twitter:url" content={BLOG_URL} />
   <meta property="twitter:description" content={BLOG_DESCRIPTION} />
-  <meta property="twitter:image" content={BLOG_IMAGE} />
 </svelte:head>
 
 <PageTitle title={BLOG_TITLE} />

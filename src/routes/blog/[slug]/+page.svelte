@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { base } from '$app/paths';
   import KeywordLinks from '$lib/components/keyword-links.svelte';
+  import LeadImage from '$lib/components/lead-image.svelte';
   import PageTitle from '$lib/components/page-title.svelte';
   import PostDate from '$lib/components/post-date.svelte';
   import RelatedPosts from '$lib/components/related-posts.svelte';
@@ -17,7 +17,9 @@
     <KeywordLinks keywords={data.metadata.keywords} />
   </div>
   {#if data.metadata.image}
-    <img src={base + '/img/' + data.metadata.image} alt={data.metadata.title} />
+    <div id="lead-image-container">
+      <LeadImage filename={data.metadata.image} alt={data.metadata.title} />
+    </div>
     {#if data.metadata.caption}
       <p class="caption">{data.metadata.caption}</p>
     {/if}
@@ -41,7 +43,7 @@
     }
   }
 
-  img {
+  #lead-image-container {
     margin-bottom: 0;
   }
 
