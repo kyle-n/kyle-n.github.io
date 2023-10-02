@@ -29,6 +29,7 @@
 <RelatedPosts
   parentPostKeywords={data.metadata.keywords}
   parentPostTitle={data.metadata.title}
+  parentPostHnLink={data.metadata.hn}
 />
 
 <style lang="scss">
