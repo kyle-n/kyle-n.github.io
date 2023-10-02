@@ -1,5 +1,4 @@
 import { dev } from '$app/environment';
-import { base } from '$app/paths';
 
 export const BLOG_TITLE = 'Kyle Nazario';
 export let BLOG_URL: string;
