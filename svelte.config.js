@@ -2,6 +2,8 @@ import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 import { mdsvex } from 'mdsvex';
 import remarkFootnotes from 'remark-footnotes';
+import rehypeSlug from 'rehype-slug';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 
 const dev = process.argv.includes('dev');
 
@@ -11,7 +13,8 @@ const config = {
     vitePreprocess(),
     mdsvex({
       extension: '.md',
-      remarkPlugins: [remarkFootnotes]
+      remarkPlugins: [remarkFootnotes],
+      rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings]
     })
   ],
 

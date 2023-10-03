@@ -8,6 +8,7 @@
     BLOG_URL
   } from '$lib/blog-metadata';
   import PageTitle from '$lib/components/page-title.svelte';
+  import './app.scss'
 </script>
 
 <svelte:head>
