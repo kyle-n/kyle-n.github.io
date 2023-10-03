@@ -1,11 +1,13 @@
 <script>
   import { base } from '$app/paths';
-  import { BLOG_IMAGE_FILENAME, BLOG_TITLE } from '$lib/blog-metadata';
+  import { BLOG_DESCRIPTION, BLOG_IMAGE_FILENAME, BLOG_TITLE } from '$lib/blog-metadata';
   import LeadImage from '$lib/components/lead-image.svelte';
+  import PageDescription from '$lib/components/page-description.svelte';
   import PageTitle from '$lib/components/page-title.svelte';
 </script>
 
 <PageTitle title="Home" />
+<PageDescription description={BLOG_DESCRIPTION} />
 <LeadImage filename={BLOG_IMAGE_FILENAME} alt={BLOG_TITLE} hideImage={true} />
 
 <main>
