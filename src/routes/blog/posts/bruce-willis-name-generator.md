@@ -3,6 +3,7 @@ layout: post
 title: Bruce Willis movie name generator
 date: 2019-01-21
 image: willis.jpg
+description: Find out Bruce's next movie!
 ---
 
 <script lang="ts">

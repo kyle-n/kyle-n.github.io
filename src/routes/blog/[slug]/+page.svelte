@@ -1,6 +1,7 @@
 <script lang="ts">
   import KeywordLinks from '$lib/components/keyword-links.svelte';
   import LeadImage from '$lib/components/lead-image.svelte';
+  import PageDescription from '$lib/components/page-description.svelte';
   import PageTitle from '$lib/components/page-title.svelte';
   import PostDate from '$lib/components/post-date.svelte';
   import RelatedPosts from '$lib/components/related-posts.svelte';
@@ -9,6 +10,7 @@
 </script>
 
 <PageTitle title={data.metadata.title} />
+<PageDescription description={data.metadata.description} />
 
 <article>
   <div id="title-and-date">

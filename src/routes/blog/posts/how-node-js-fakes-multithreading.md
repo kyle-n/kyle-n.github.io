@@ -5,6 +5,7 @@ date: 2023-02-15
 keywords: javascript, node
 image: reactor-pattern.png
 caption: From Node.js Design Patterns by Mario Casciaro and Luciano Mammino
+description: Who needs multithreading when you have a reactor?
 ---
 
 [Node.js](https://www.bitovi.com/backend-consulting/nodejs-consulting) is one of the most popular languages for web servers, even though [JavaScript is single-threaded](https://codeburst.io/is-javascript-single-threaded-youre-kidding-me-80b11d74f4e5). This might seem contradictory at first---don't web servers need to handle simultaneous connections?

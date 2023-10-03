@@ -4,6 +4,7 @@ title: WWDC Wishlist- A free large-language model built into iOS and macOS
 date: 2023-04-24
 keywords: apple, news, ai
 image: wwdc23.jpg
+description: Making the case Apple should ship AI on the device.
 ---
 
 As an Apple developer, one thing I would love to see at WWDC is a free large-language model built into iOS and macOS. Ship GPT-whatever with the OS and let third-party apps call into it for free. It doesn't have to be as complex as ChatGPT, just something that can run on Apple Silicon.

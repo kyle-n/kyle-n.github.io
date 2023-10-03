@@ -4,6 +4,7 @@ title: Offline podcast apps for Apple Watch, reviewed
 date: 2021-05-28
 image: watch-apps.png
 tags: apple
+description: For when you want to run without your phone.
 ---
 
 When running alone, I fill the time with podcasts.

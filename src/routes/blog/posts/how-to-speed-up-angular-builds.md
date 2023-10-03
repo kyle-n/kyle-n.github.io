@@ -5,6 +5,7 @@ date: 2022-04-19
 keywords: javascript, typescript, angular, frontend, tutorial
 image: fast_pc.jpg
 caption: Image via Mohamed Hassan on Pixabay
+description: And stop slowly losing your mind. 
 ---
 
 Slow builds [stop developers' productivity cold](https://steven-lemon182.medium.com/a-guide-to-reducing-development-wait-time-part-1-why-9dcbbfdc1224). If code takes even two minutes to compile, it's easy to get distracted. You lose your train of thought or, god forbid, open social media.

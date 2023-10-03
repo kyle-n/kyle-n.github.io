@@ -5,6 +5,7 @@ date: 2023-05-03
 keywords: coding, books
 image: ocean.jpg
 caption: Via Stable Diffusion
+description: A review of John K. Ousterhout's "A Philosophy of Software Design."
 ---
 
 Last year, I read a book that profoundly affected how I think about writing software. [“A Philosophy of Software Design”](https://www.amazon.com/Philosophy-Software-Design-2nd/dp/173210221X/ref=monarch_sidesheet) by John K. Ousterhout is a short volume with a radical thesis: The most important quality your code can have is to be _simple_. [^1] Ousterhout argues simplicity affects code quality than any specific pattern or language or design choice.

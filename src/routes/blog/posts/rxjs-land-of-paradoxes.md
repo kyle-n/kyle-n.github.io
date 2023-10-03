@@ -5,6 +5,7 @@ date: 2022-10-12
 keywords: javascript, typescript, rxjs, tutorial
 image: rxjs-logo.png
 caption: Via rxjs.dev
+description: Everything new developers should know.
 ---
 
 As an [Angular consultant](https://www.bitovi.com/frontend-javascript-consulting/angular-consulting), I see people struggle with RxJS a lot. Which is understandable. Observables are a powerful tool for working with data streams, but they have quirks that can trip up developers new to the library.

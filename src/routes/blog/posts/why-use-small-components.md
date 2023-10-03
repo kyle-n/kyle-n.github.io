@@ -5,6 +5,7 @@ date: 2022-05-23
 keywords: javascript, typescript, angular, frontend, tutorial, coding
 image: component-tree.png
 caption: Via angular.io
+description: The single-responsibility principle didn't go away when we went to components.
 ---
 
 As an [Angular consultant](https://www.bitovi.com/frontend-javascript-consulting/angular-consulting), one of my favorite tricks to rapidly improve client code is to **make the components smaller**.

@@ -5,6 +5,7 @@ image: rental-rates.png
 caption: And it looks so simple from the outside to use.
 date: 2020-05-16
 keywords: javascript, typescript, angular, rxjs, showcase, frontend
+description: How our team took advantage of Angular to make a powerful, useful feature.
 ---
 
 At ServiceCore, we're thrilled to ship [rental rates](https://support.servicecore.com/hc/en-us/articles/360041523411-Add-Rental-Rates)! This was a months-long project that required massive collaboration between our product owner, frontend and backend engineers and QA.

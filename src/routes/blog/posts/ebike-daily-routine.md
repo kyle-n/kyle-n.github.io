@@ -4,6 +4,7 @@ title: An ebike has completely changed my daily routine
 date: 2023-04-28
 keywords: personal
 image: ebike-overall.jpg
+description: For the better.
 ---
 
 I purchased an electric bike last year and wanted to review it from the perspective of someone who is not a cyclist or used to biking places.

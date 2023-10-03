@@ -6,6 +6,7 @@ export type ResolvedBlogPost = {
 export type BlogPostMetadata = {
   layout: 'post';
   title: string;
+  description: string;
   date: string;
   image?: string;
   caption?: string;

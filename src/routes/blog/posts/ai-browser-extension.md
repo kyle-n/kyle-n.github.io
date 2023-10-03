@@ -4,6 +4,7 @@ title: How AI helped me write a browser extension
 date: 2023-06-07
 keywords: ai, javascript, typescript, extensions, showcase, frontend
 image: ai.png
+description: Making the case AI is not magic, but it is useful.
 ---
 
 There’s a lot of AI hype. I understand if you are sick of it. I’m a little sick of it. However, I want to make the case that generative AI is not something that _will_ be great, but something that is _already_ useful.

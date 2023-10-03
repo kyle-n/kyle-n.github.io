@@ -5,6 +5,7 @@ date: 2022-06-30
 keywords: javascript, typescript, angular, frontend, tutorial
 image: factory.png
 caption: Via ArtsyBee on Pixabay
+description: Dynamic component instantiation in Angular
 ---
 
 If you work with any component-based framework long enough, you'll run into a problem. How do you share functionality across components?

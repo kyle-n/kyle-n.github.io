@@ -3,6 +3,7 @@ layout: post
 title: You should unit test component templates
 keywords: angular, typescript, testing, frontend, tutorial
 date: 2023-05-04
+description: A unit test is not just its class.
 ---
 
 There is a common misconception among frontend developers that you should not unit test the template of a component. This is incorrect. Not only _can_ you test your components' templates, but you _should_.

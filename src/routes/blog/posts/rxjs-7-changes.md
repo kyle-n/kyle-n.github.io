@@ -4,6 +4,7 @@ title: What’s new in RxJS 7- small bundles and big changes to share
 date: 2021-06-02
 keywords: javascript, typescript, rxjs, news
 image: rxjs-logo.png
+description: Slow and steady refactoring pays dividends.
 ---
 
 RxJS 7 has shipped! For us Angular developers, it unfortunately did not ship in time for Angular 12.
