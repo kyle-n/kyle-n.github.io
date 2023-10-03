@@ -5,7 +5,7 @@ import {
   BLOG_TITLE,
   BLOG_URL
 } from '$lib/blog-metadata';
-import { getAllPosts } from '$lib/post-handlers';
+import { getAllPosts, getCorrectedPostDate } from '$lib/post-handlers';
 import { create } from 'xmlbuilder2';
 import { JSDOM } from 'jsdom';
 import { readFile } from 'fs/promises';
@@ -42,10 +42,10 @@ async function getRssXml(): Promise<string> {
     .ele('subtitle').txt(BLOG_DESCRIPTION).up()
 
   for await (const post of allPosts) {
-    const pubDate = new Date(post.metadata.date).toISOString();
+    const pubDate = getCorrectedPostDate(post.metadata.date);
     const postUrl = `${BLOG_URL}/blog/${post.postPath}`;
     const postHtml = await getHtmlForPost(post.postPath, post.metadata.image, post.metadata.caption);
-    const postPreviewText = getPostPreviewText(postHtml);
+    const summary = post.metadata.description;
 
     root.ele('entry')
       .ele('title').txt(post.metadata.title).up()
@@ -53,7 +53,7 @@ async function getRssXml(): Promise<string> {
       .ele('updated').txt(pubDate).up()
       .ele('id').txt(postUrl).up()
       .ele('content', { type: 'html' }).txt(postHtml).up()
-      .ele('summary').txt(postPreviewText).up()
+      .ele('summary').txt(summary).up()
     .up();
   }
 
@@ -89,10 +89,4 @@ async function getHtmlForPost(
     postHtml = leadImage.outerHTML + postHtml;
   }
   return postHtml;
-}
-
-function getPostPreviewText(postHtml: string): string {
-  const dom = new JSDOM(postHtml);
-  const firstParagraph = dom.window.document.querySelector('article p');
-  return firstParagraph?.textContent?.trim() ?? '';
 }

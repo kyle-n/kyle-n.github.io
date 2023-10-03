@@ -49,3 +49,9 @@ export async function getRelatedPosts(
 function getKeywordArray(keywords?: string): string[] {
   return keywords?.split(',').map(keyword => keyword.trim()) ?? [];
 }
+
+export function getCorrectedPostDate(date: Date | string): string {
+  const dateWithTimezoneOffset = new Date(date);
+  dateWithTimezoneOffset.setHours(dateWithTimezoneOffset.getHours() + 6);
+  return dateWithTimezoneOffset.toISOString().split('T')[0];
+}
