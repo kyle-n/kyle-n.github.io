@@ -6,19 +6,17 @@ keywords: javascript, typescript, showcase, frontend, svelte, tutorial
 description: Time to escape some HTML tags
 ---
 
-I've enjoyed rebuilding my blog using [SvelteKit](https://kit.svelte.dev). SvelteKit is a framework for building full-stack web apps with Node and [Svelte](https://svelte.dev). 
+I recently rebuilt this blog in [SvelteKit](https://kit.svelte.dev) using [Josh Collinsworth's awesome guide](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog). I highly recommend his post for anyone wanting to do the same. 
 
-It also, with a [special adapter](https://kit.svelte.dev/docs/adapter-static), can prerender the entire site. You can use it as a (complicated) static site generator!
+I also spent some time adding an RSS feed with the full content of every post. As a longtime RSS user, I prefer blogs that don't make me click through to the website. 
 
-I followed [Josh Collinsworth's guide to building a static SvelteKit Markdown blog](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog) to rebuild my existing Markdown blog in SvelteKit. I highly, highly recommend Josh's post for anyone wanting to do the same. It is thorough and will get you a fast, awesome SvelteKit blog. 
-
-I won't discuss how to make a SvelteKit blog because frankly I'd just be restating Josh's guide. Instead, we'll build a full-content RSS feed with SvelteKit. Our RSS feed will have the full content of every blog post, something RSS users greatly appreciate.
+Let's be the change we want to see in the world and build a full-content RSS feed in SvelteKit.
 
 ### Prerendering
 
-To make an RSS feed for your SvelteKit blog, create a new folder under `/routes` called `rss.xml`. This file will technically be an [Atom](https://en.wikipedia.org/wiki/Atom_(web_standard)) feed, but Atom feeds are functionally the same as RSS. I'm going to use the term RSS for the rest of this post just because that's the popular term and the difference doesn't matter (do not @ me). 
+To make an RSS feed for your SvelteKit blog, create a new folder under `/routes` called `rss.xml`. This file will technically be an [Atom](https://en.wikipedia.org/wiki/Atom_(web_standard)) feed, not RSS, but the difference is irrelevant and I'm just going to use the term "RSS" in this post (do not @ me). 
 
-Inside `/routes/rss.xml`, create `+server.ts`. In a normal SvelteKit app, this would be your server code. With a static, pre-rendered website, you can actually use this "server route" to create a file at build time. 
+Inside `/routes/rss.xml`, create `+server.ts`. In a normal SvelteKit app, this would be a Node API route. With a static, pre-rendered website, this "server route" creates a file at build time. 
 
 ```typescript
 export const prerender = true;
@@ -36,11 +34,11 @@ Now when we build the site, a file called `rss.xml` will be created at the site 
 
 ### Building the XML
 
-A lot of examples online just use string interpolation to build their RSS XML files. Frankly, any kind of heavy string concatenation always makes me feel suspicious, like I'm about to get in trouble. 
+A lot of RSS examples online just use string interpolation to build their RSS XML files. Frankly, any kind of heavy string interpolation or concatenation makes me like I'm about to get in trouble. 
 
 So let's use a library. Run `npm i -D xmlbuilder2` to install [xmlbuilder2](https://oozcitak.github.io/xmlbuilder2/). This will let us build XML using nice, safe JavaScript. 
 
-Now we can add a function called `getRssXml()`, which looks like this:
+Now we can add a function called `getRssXml()`:
 
 ```typescript
 import {
@@ -73,7 +71,9 @@ async function getRssXml(): Promise<string> {
 }
 ```
 
-The blog metadata is a separate file I keep for site information. It's just stuff like:
+`xmlbuilder2` syntax is one big chained function call. `.ele()` starts a new XML tag, `.txt()` puts content inside it, and `.up()` closes it.
+
+The blog metadata is a separate file I keep for site information. 
 
 ```typescript
 import { dev } from '$app/environment';
@@ -122,7 +122,7 @@ The only thing missing are the posts.
 
 ### Loading post content
 
-I have a function in my `$lib` called `getAllPosts()`. This is taken from [Josh Collinsworth's tutorial](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog):
+I have a function in my `$lib` called `getAllPosts()`. This is adapted from [Josh Collinsworth's tutorial](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog):
 
 ```typescript
 export async function getAllPosts(): Promise<PostLink[]> {
@@ -230,7 +230,7 @@ Inside the `for await` loop in `getRssXml()`, add:
 
 ```typescript
     const postUrl = `${BLOG_URL}/blog/${post.postPath}`;
-    const postHtml = await getHtmlForPost(post.postPath);
+    const postHtml = await getHtmlForPost(post.postPath); // <-- new
     const summary = post.metadata.description;
 ```
 
@@ -276,9 +276,9 @@ The feed's better! Looks like we can finally- wait a minute, is a real HTML butt
 
 There shouldn't be real button in that code snippet.
 
-Turns out if you put valid HTML tags in your Markdown, even if they're inside a `<code>` block, they will be rendered in the RSS reader. This is unfortunate for me, a frontend dev who often writes posts containing HTML.
+If you put valid HTML tags in your Markdown, even inside a `<code>` block, they will be rendered in RSS readers. This is unfortunate for me, a frontend dev who often writes posts with HTML snippets.
 
-After a *lot* of experimenting and pain, I figured out when Showdown converts your Markdown to HTML, it will encode the tag arrows. `<button>` becomes `&amp;lt;button&amp;gt;` However, the RSS reader will *un-encode* those arrows and just render the word `<button>` as a real button. 
+After a *lot* of experimenting and pain, I figured out when Showdown converts your Markdown to HTML, it will encode the tag arrows. `<button>` becomes `&amp;lt;button&amp;gt;` However, RSS readers will *un-encode* those arrows and just render the word `<button>` as a real button. 
 
 To fix this, we have to double-encode our HTML tags:
 
@@ -377,6 +377,18 @@ My posts also have an optional `caption` property. We can add that on too.
   }
 ```
 
+### RSS file size
+
+Last, we should make sure the file size of `rss.xml` never gets too big.
+
+```typescript
+async function getRssXml(): Promise<string> {
+  const allPosts = await getAllPosts();
+  const rssPosts = allPosts.slice(0, 10);
+// ...
+  for await (const post of rssPosts) {
+```
+
 ### Conclusion
 
 The final `+server.ts` file looks like this:
@@ -409,6 +421,7 @@ export async function GET() {
 // prettier-ignore
 async function getRssXml(): Promise<string> {
   const allPosts = await getAllPosts();
+  const rssPosts = allPosts.slice(0, 10);
   const rssUrl = `${BLOG_URL}/rss.xml`;
   const root = create({ version: '1.0', encoding: 'utf-8' })
   .ele('feed', {
@@ -425,7 +438,7 @@ async function getRssXml(): Promise<string> {
     .up()
     .ele('subtitle').txt(BLOG_DESCRIPTION).up()
 
-  for await (const post of allPosts) {
+  for await (const post of rssPosts) {
     const pubDate = getCorrectedPostDate(post.metadata.date);
     const postUrl = `${BLOG_URL}/blog/${post.postPath}`;
     const postHtml = await getHtmlForPost(post.postPath, post.metadata.image, post.metadata.caption);
