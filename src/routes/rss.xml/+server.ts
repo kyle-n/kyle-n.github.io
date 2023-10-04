@@ -25,6 +25,7 @@ export async function GET() {
 // prettier-ignore
 async function getRssXml(): Promise<string> {
   const allPosts = await getAllPosts();
+  const rssPosts = allPosts.slice(0, 10);
   const rssUrl = `${BLOG_URL}/rss.xml`;
   const root = create({ version: '1.0', encoding: 'utf-8' })
   .ele('feed', {
@@ -41,7 +42,7 @@ async function getRssXml(): Promise<string> {
     .up()
     .ele('subtitle').txt(BLOG_DESCRIPTION).up()
 
-  for await (const post of allPosts) {
+  for await (const post of rssPosts) {
     const pubDate = getCorrectedPostDate(post.metadata.date);
     const postUrl = `${BLOG_URL}/blog/${post.postPath}`;
     const postHtml = await getHtmlForPost(post.postPath, post.metadata.image, post.metadata.caption);
