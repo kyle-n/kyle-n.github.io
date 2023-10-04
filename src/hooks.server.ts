@@ -1,4 +1,42 @@
 import { redirect } from '@sveltejs/kit';
+import { minify } from 'html-minifier';
+import { building } from '$app/environment';
+
+export async function handle({ event, resolve }) {
+  let redirectTo = redirectUrls[event.url.pathname];
+  redirectTo = redirectTo ?? redirectUrls[event.url.pathname + '/'];
+  if (redirectTo) {
+    throw redirect(301, redirectTo);
+  }
+  let page = '';
+  return resolve(event, {
+    transformPageChunk: ({ html, done }) => {
+			page += html;
+			if (done) {
+				return building ? minify(page, minificationOptions) : page;
+			}
+		}
+  });
+}
+
+const minificationOptions = {
+  collapseBooleanAttributes: true,
+	collapseWhitespace: true,
+	conservativeCollapse: true,
+	decodeEntities: true,
+	html5: true,
+	ignoreCustomComments: [/^#/],
+	minifyCSS: true,
+	minifyJS: true,
+	removeAttributeQuotes: true,
+	removeComments: false, // some hydration code needs comments, so leave them in
+	removeOptionalTags: true,
+	removeRedundantAttributes: true,
+	removeScriptTypeAttributes: true,
+	removeStyleLinkTypeAttributes: true,
+	sortAttributes: true,
+	sortClassName: true
+};
 
 const redirectUrls: { [oldUrl: string]: string } = {
   '/blog/bruce-willis-name-generator.html': '/blog/bruce-willis-name-generator',
@@ -28,12 +66,3 @@ const redirectUrls: { [oldUrl: string]: string } = {
   '/2023/05/04/unit-test-your-templates/': '/blog/unit-test-your-templates',
   '/2023/06/07/ai-browser-extension/': '/blog/ai-browser-extension'
 };
-
-export async function handle({ event, resolve }) {
-  let redirectTo = redirectUrls[event.url.pathname];
-  redirectTo = redirectTo ?? redirectUrls[event.url.pathname + '/'];
-  if (redirectTo) {
-    throw redirect(301, redirectTo);
-  }
-  return resolve(event);
-}
