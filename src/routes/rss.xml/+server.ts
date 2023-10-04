@@ -71,7 +71,11 @@ async function getHtmlForPost(
     `./src/routes/blog/posts/${postPath}.md`,
     'utf-8'
   );
-  const postMarkdown = postMarkdownWithFrontmatter.split('---')[2].trim();
+  const postMarkdown = postMarkdownWithFrontmatter
+    .split('---')
+    .slice(2)
+    .join('---')
+    .trim();
   let postHtml = converter.makeHtml(postMarkdown);
   // prevents HTML in code tags from being rendered
   postHtml = postHtml
