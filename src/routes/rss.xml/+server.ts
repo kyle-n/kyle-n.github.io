@@ -85,13 +85,7 @@ async function getHtmlForPost(
   const postDom = new JSDOM();
   postDom.window.document.body.innerHTML = postHtml;
 
-  // replace <InlineImage> components with <img> tags
-  const images = Array.from(postDom.window.document.querySelectorAll('InlineImage'));
-  images.forEach((inlineImg) => {
-    const filename = inlineImg.getAttribute('filename');
-    const alt = inlineImg.getAttribute('alt');
-    inlineImg.outerHTML = `<img src="${base}/img/${filename}" alt="${alt}" />`;
-  });
+  convertInlineImagesToImgTags(postDom);
 
   if (leadImageFilename) {
     const leadImage = postDom.window.document.createElement('img');
@@ -104,4 +98,13 @@ async function getHtmlForPost(
     postDom.window.document.body.prepend(leadImage);
   }
   return postDom.window.document.body.innerHTML;
+}
+
+function convertInlineImagesToImgTags(dom: JSDOM): void {
+  const images = Array.from(dom.window.document.querySelectorAll('InlineImage'));
+  images.forEach((inlineImg) => {
+    const filename = inlineImg.getAttribute('filename');
+    const alt = inlineImg.getAttribute('alt');
+    inlineImg.outerHTML = `<img src="${base}/img/${filename}" alt="${alt}" />`;
+  });
 }
