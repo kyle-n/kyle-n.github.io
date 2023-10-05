@@ -38,7 +38,7 @@ It is an easy mistake to look at this code and assume it should all be one compo
 
 Here's the official recommendation on how granular the components should be to build this UI - and remember, this is the recommendation of a bunch of Meta engineers who spend all day building a component-based framework:
 
-![A basic UI listing products for sale split into sub-components](web-store-ui.png)
+![A basic UI listing products for sale split into sub-components](web-store-ui-split.png)
 
 They recommend splitting this UI into five components:
 
