@@ -85,6 +85,11 @@ async function getHtmlForPost(
 
   const postDom = new JSDOM();
   postDom.window.document.body.innerHTML = postHtml;
+  const images = Array.from(postDom.window.document.querySelectorAll('img'));
+  images.forEach((image) => {
+    const filename = image.src;
+    image.src = `${base}/img/${filename}`;
+  });
 
   if (leadImageFilename) {
     const leadImage = postDom.window.document.createElement('img');
