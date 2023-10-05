@@ -41,7 +41,7 @@ So people moved on. These days, many server frameworks use a [thread pool](https
 
 This is a good, flexible approach to scaling. Just add more threads! The downside is it can also take up a lot of memory. Consider this diagram of a server that uses one thread per connection.
 
-![A diagram showing multiple threads handling multiple connections to a server]({base}/img/multithreading-1.png)
+![A diagram showing multiple threads handling multiple connections to a server](multithreading-1.png)
 
 ### The Node.js approach
 
@@ -81,11 +81,11 @@ Think of Node as a chef running around the kitchen. The chef can set a pot of wa
 
 Node.js fakes multithreading by multitasking. It spreads out tasks, not across threads or processes, but **time**.
 
-![A diagram showing a Node server handling multiple connections on one thread over time]({base}/img/multithreading-2.png)
+![A diagram showing a Node server handling multiple connections on one thread over time](multithreading-2.png)
 
 The way Node hops around between tasks is explained by the reactor pattern. Node is structured like a reactor, where the flow of control swirls around the event loop, processing tasks as they come in.
 
-![A diagram demonstrating the reactor pattern in Node]({base}/img/reactor-pattern.png)
+![A diagram demonstrating the reactor pattern in Node](reactor-pattern.png)
 
 When you run a JavaScript file in Node, it starts at the top square, "Execute Handler." It will synchronously run the code provided until that code is finished. If an asynchronous operation is triggered while running the code, that operation is sent to the box on the left, the **event demultiplexer**.
 

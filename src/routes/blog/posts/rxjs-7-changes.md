@@ -19,11 +19,11 @@ Lesh said while RxJS 7 was "a bit faster," the big improvement for the new versi
 
 See this chart of operator sizes in RxJS 6:
 
-![A chart showing the size of different RxJS 6 operators]({base}/img/rxjs6-size.png)
+![A chart showing the size of different RxJS 6 operators](rxjs6-size.png)
 
 And this chart of the same operator sizes in RxJS 7:
 
-![A chart showing the size of different RxJS 7 operators]({base}/img/rxjs7-size.png)
+![A chart showing the size of different RxJS 7 operators](rxjs7-size.png)
 
 ### Consolidating sharing operators
 

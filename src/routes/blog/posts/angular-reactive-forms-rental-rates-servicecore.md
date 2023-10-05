@@ -34,7 +34,7 @@ The rental rate input table should display every product attached to a rental. B
 
 So: rentals have products, products have line item charges, and rental rates are special per-rental instances of a line item charge. Make sense?
 
-![Overall view of the rate input table]({base}/img/rental-rates.png)
+![Overall view of the rate input table](rental-rates.png)
 
 The last two options in the line item dropdown should be "Add Service" and "Assign Service", which I'll explain later.
 
@@ -73,53 +73,71 @@ Reactive programming is a blast. It contained the logic for each part of the for
 It also simplified working with asynchronous requests. For example, the `pipe` from add service dropdown takes the `valueChange` (the `id` of the selected service) and `flatMap`s it into a `GET` req for the full service. The full service is transformed into a new FormControl, which is pushed into the FormArray for the given product.
 
 ```typescript
-      // add new service on select
-      const newServiceSub = rateSelectChanges.pipe(
-        filter(serviceIdOrOption => {
-          // service ids come through as '11'
-          const serviceId = parseInt(serviceIdOrOption, 10);
-          return !Number.isNaN(serviceId);
-        }),
-        map((serviceId: string) => parseInt(serviceId, 10)),
-        flatMap(serviceId => this._serviceService.getService(serviceId))
-      ).subscribe((service: Service) => {
-          this.addServiceToRates(service, entityFormGroup.get('rates') as FormArray);
-          entityFormGroup.get('rateSelect').patchValue('choose');
-        }, error => this._userAlertService.error(error, true)
+// add new service on select
+const newServiceSub = rateSelectChanges
+  .pipe(
+    filter(serviceIdOrOption => {
+      // service ids come through as '11'
+      const serviceId = parseInt(serviceIdOrOption, 10);
+      return !Number.isNaN(serviceId);
+    }),
+    map((serviceId: string) => parseInt(serviceId, 10)),
+    flatMap(serviceId => this._serviceService.getService(serviceId))
+  )
+  .subscribe(
+    (service: Service) => {
+      this.addServiceToRates(
+        service,
+        entityFormGroup.get('rates') as FormArray
       );
-
+      entityFormGroup.get('rateSelect').patchValue('choose');
+    },
+    error => this._userAlertService.error(error, true)
+  );
 ```
 
 No `async`/`await` weirdness, no race conditions, no confusing logic. Just functional transformations. First-class RxJS support is far and away the best part of Angular. Just look at when we have to do something _really_ complicated:
 
 ```typescript
-      const assignServiceSub = rateSelectChanges.pipe(
-        filter(selectVal => selectVal === 'assign'),
-        flatMap(() => {
-          const serviceIdsToExcludeFromAssociateDialog: number[] = entityFormGroup.value.entity.services
-            .map(service => service.id);
-          return this._serviceDialogService.openAssociateServiceDialog(
-            entityFormGroup.value.entity.id,
-            serviceIdsToExcludeFromAssociateDialog
-          );
-        }),
-        filter((updatedServices) => !!(updatedServices)),
-        map((allServices: Service[]) => {
-          const previousServiceIds: number[] = entityFormGroup.value.entity?.services?.map(service => service.id) || [];
-          return allServices.filter(serviceFromApi => !previousServiceIds.includes(serviceFromApi.id));
-        }),
-        map(newServices => newServices.map(newService => this._serviceService.getService(newService.id))),
-        flatMap(newServiceRequests => forkJoin(newServiceRequests))
-      ).subscribe(fullNewServices => {
-        if (fullNewServices?.length) {
-          fullNewServices.forEach(service => {
-            this.addServiceToRates(service, entityFormGroup.get('rates') as FormArray);
-          });
-        }
-        this.reloadFullServices(entityFormGroup as FormGroup);
-        entityFormGroup.get('rateSelect').patchValue('choose');
+const assignServiceSub = rateSelectChanges
+  .pipe(
+    filter(selectVal => selectVal === 'assign'),
+    flatMap(() => {
+      const serviceIdsToExcludeFromAssociateDialog: number[] =
+        entityFormGroup.value.entity.services.map(service => service.id);
+      return this._serviceDialogService.openAssociateServiceDialog(
+        entityFormGroup.value.entity.id,
+        serviceIdsToExcludeFromAssociateDialog
+      );
+    }),
+    filter(updatedServices => !!updatedServices),
+    map((allServices: Service[]) => {
+      const previousServiceIds: number[] =
+        entityFormGroup.value.entity?.services?.map(service => service.id) ||
+        [];
+      return allServices.filter(
+        serviceFromApi => !previousServiceIds.includes(serviceFromApi.id)
+      );
+    }),
+    map(newServices =>
+      newServices.map(newService =>
+        this._serviceService.getService(newService.id)
+      )
+    ),
+    flatMap(newServiceRequests => forkJoin(newServiceRequests))
+  )
+  .subscribe(fullNewServices => {
+    if (fullNewServices?.length) {
+      fullNewServices.forEach(service => {
+        this.addServiceToRates(
+          service,
+          entityFormGroup.get('rates') as FormArray
+        );
       });
-
+    }
+    this.reloadFullServices(entityFormGroup as FormGroup);
+    entityFormGroup.get('rateSelect').patchValue('choose');
+  });
 ```
 
 This block grabs services (line item charges) already associated to a product and passing them to a dialog. The dialog filters out these previously associated services. Then, if the user selects any services to add to a product in the dialog, these are passed out of the dialog's Observable and transformed into requests for the full data for each newly associated service. When we've received all responses, the services are added to the table as rates. RxJS makes this kind of async work _easy_.
@@ -128,7 +146,7 @@ This block grabs services (line item charges) already associated to a product an
 
 The last code win was creating the select service dropdown. It transformed an array of services into `<options>`, sorting by billing period on the service.
 
-![The add service dropdown for ServiceCore rental rates]({base}/img/rental-rate-dropdown.png)
+![The add service dropdown for ServiceCore rental rates](rental-rate-dropdown.png)
 
 All that logic used a pure static class function, making it a breeze to unit test.
 
