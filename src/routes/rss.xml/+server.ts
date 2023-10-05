@@ -81,6 +81,7 @@ async function getHtmlForPost(
   postHtml = postHtml
     .replaceAll('&lt;', '&amp;lt;')
     .replaceAll('&gt;', '&amp;gt;')
+    .replaceAll('{base}', '');
 
   const postDom = new JSDOM();
   postDom.window.document.body.innerHTML = postHtml;
@@ -101,8 +102,10 @@ async function getHtmlForPost(
 }
 
 function convertInlineImagesToImgTags(dom: JSDOM): void {
-  const images = Array.from(dom.window.document.querySelectorAll('InlineImage'));
-  images.forEach((inlineImg) => {
+  const images = Array.from(
+    dom.window.document.querySelectorAll('InlineImage')
+  );
+  images.forEach(inlineImg => {
     const filename = inlineImg.getAttribute('filename');
     const alt = inlineImg.getAttribute('alt');
     inlineImg.outerHTML = `<img src="${base}/img/${filename}" alt="${alt}" />`;
