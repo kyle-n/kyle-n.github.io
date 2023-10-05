@@ -81,17 +81,17 @@ async function getHtmlForPost(
   postHtml = postHtml
     .replaceAll('&lt;', '&amp;lt;')
     .replaceAll('&gt;', '&amp;gt;')
-    .replaceAll('{base}', '');
+
+  const postDom = new JSDOM();
+  postDom.window.document.body.innerHTML = postHtml;
 
   // replace <InlineImage> components with <img> tags
-  const postDom = new JSDOM(postHtml);
   const images = Array.from(postDom.window.document.querySelectorAll('InlineImage'));
   images.forEach((inlineImg) => {
-    const src = inlineImg.getAttribute('filename');
+    const filename = inlineImg.getAttribute('filename');
     const alt = inlineImg.getAttribute('alt');
-    inlineImg.outerHTML = `<img src="${base}/img/${src}" alt="${alt}" />`;
+    inlineImg.outerHTML = `<img src="${base}/img/${filename}" alt="${alt}" />`;
   });
-  postHtml = postDom.window.document.body.innerHTML;
 
   if (leadImageFilename) {
     const leadImage = postDom.window.document.createElement('img');
@@ -99,9 +99,9 @@ async function getHtmlForPost(
     if (leadImageCaption) {
       const caption = postDom.window.document.createElement('caption');
       caption.textContent = leadImageCaption;
-      postHtml = caption.outerHTML + postHtml;
+      postDom.window.document.body.prepend(caption);
     }
-    postHtml = leadImage.outerHTML + postHtml;
+    postDom.window.document.body.prepend(leadImage);
   }
-  return postHtml;
+  return postDom.window.document.body.innerHTML;
 }
