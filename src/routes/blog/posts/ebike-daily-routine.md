@@ -86,7 +86,3 @@ Lastly, consider weather. If you live somewhere that gets a lot of rain or ice o
 ### Conclusion
 
 I am happy with my purchase. An ebike has allowed me to embrace a more free, active lifestyle with less environmental impact. I would highly recommend it.
-
-<script lang="ts">
-  import { base } from '$app/paths';
-</script>

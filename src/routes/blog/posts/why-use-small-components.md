@@ -70,7 +70,3 @@ I worked in an application where large chunks of the code were contained in just
 _These files were impossible to edit_. Our scrum team tripled our time estimates when we had to touch these files. It was impossible to navigate them, impossible to reuse code, just impossible to ship features.
 
 Small components don't let that happen. They do exactly one thing and are so easy to understand and modify they don't slow you down one bit.
-
-<script lang="ts">
-  import { base } from '$app/paths';
-</script>

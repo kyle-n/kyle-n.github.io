@@ -248,7 +248,3 @@ This test could have gone further and even used [snapshot testing](https://circl
 ### Conclusion
 
 Components are the combination of logic and markup. To make sure they work for your users, you should test both of them, and that they work together correctly.
-
-<script lang="ts">
-  import { base } from '$app/paths';
-</script>

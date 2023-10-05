@@ -99,7 +99,3 @@ Negatives:
 ### Winner: Pocket Casts
 
 I love Castro and its inbox model. However, the Watch playback bug and lack of an iPad app put it just behind Pocket Casts. Pocket Casts’ UI is iffy, but that Watch app is rock solid.
-
-<script lang="ts">
-  import { base } from '$app/paths';
-</script>

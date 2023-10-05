@@ -98,7 +98,3 @@ Side note: ChatGPT was super helpful here again. It flawlessly wrote a bunch of 
 At no point in this process did generative AI completely do my job or become sentient or go, “I’m sorry Kyle, I can’t do that.” It was just… helpful. It made a couple things I’m not good at easier (shell scripting and graphic design). I wish Stable Diffusion was better at drawing dice, but you can’t have everything.
 
 In June 2023, AI is not a magic bullet, but it is _useful_. I will happily keep using Copilot, ChatGPT and Stable Diffusion for future projects.
-
-<script lang="ts">
-  import { base } from '$app/paths';
-</script>

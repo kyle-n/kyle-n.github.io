@@ -169,7 +169,3 @@ I tested this on Chrome for macOS and talked to our devops guy about fixing our 
 If the drop-down bug hadn't happened the UI would have been perfect. Normally ServiceCore sticks to standard HTML elements and doesn't go too far off the road. It's a lesson that if we want to try stuff like that, we need a better process.
 
 Still, the rental rates input UI has worked like a charm. The real test will be down the road if we try to reuse this work :).
-
-<script lang="ts">
-  import { base } from '$app/paths';
-</script>

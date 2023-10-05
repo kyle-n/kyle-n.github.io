@@ -124,7 +124,3 @@ Important points to remember:
 - Replace your `toPromise` calls with `firstValueFrom` and `lastValueFrom`
 - Replace your `shareReplay` calls with `share`
 - Stop using `.add` chains to manage your subscriptions. Lesh [recommends `takeUntil`](https://medium.com/@benlesh/rxjs-dont-unsubscribe-6753ed4fda87)
-
-<script lang="ts">
-  import { base } from '$app/paths';
-</script>

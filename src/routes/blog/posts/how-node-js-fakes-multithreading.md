@@ -124,7 +124,3 @@ Second, scaling servers is actually a [whole other problem](https://www.quora.co
 
 - [Node.js Design Patterns](https://www.nodejsdesignpatterns.com/) by Mario Casciaro and Luciano Mammino (3rd Ed.)
 - [Understanding Reactor Pattern for Highly Scalable I/O Bound Web Server](https://tianpan.co/blog/2015-01-13-understanding-reactor-pattern-for-highly-scalable-i-o-bound-web-server) by Tian Pan
-
-<script lang="ts">
-  import { base } from '$app/paths';
-</script>
