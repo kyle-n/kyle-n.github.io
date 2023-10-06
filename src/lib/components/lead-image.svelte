@@ -3,7 +3,7 @@
   import { BLOG_URL } from '$lib/blog-metadata';
 
   export let filename: string;
-  export let alt: string;
+  export let alt: string | undefined = undefined;
   export let hideImage: boolean = false;
 
   const src = `${base}/img/${filename}`;
