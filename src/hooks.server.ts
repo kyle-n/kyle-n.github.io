@@ -28,7 +28,6 @@ const minificationOptions = {
 	ignoreCustomComments: [/^#/],
 	minifyCSS: true,
 	minifyJS: true,
-	removeAttributeQuotes: true,
 	removeComments: false, // some hydration code needs comments, so leave them in
 	removeOptionalTags: true,
 	removeRedundantAttributes: true,
