@@ -1,4 +1,3 @@
-
 <script lang="ts">
   import { BLOG_IMAGE_FILENAME, BLOG_TITLE } from '$lib/blog-metadata';
   import LeadImage from '$lib/components/lead-image.svelte';
@@ -26,7 +25,10 @@
 <PostList posts={data.posts} />
 
 <section id="pagination">
-<PaginationLinks currentPage={data.currentPage} totalPageCount={data.totalPageCount} />
+  <PaginationLinks
+    currentPage={data.currentPage}
+    totalPageCount={data.totalPageCount}
+  />
 </section>
 
 <style lang="scss">

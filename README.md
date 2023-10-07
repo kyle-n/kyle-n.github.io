@@ -1,6 +1,6 @@
 # kylenazario.com
 
-This is the source code for my personal blog, [kylenazario.com](https://www.kylenazario.com). It's a good website. You should check it out. 
+This is the source code for my personal blog, [kylenazario.com](https://www.kylenazario.com). It's a good website. You should check it out.
 
 ## Usage notes
 

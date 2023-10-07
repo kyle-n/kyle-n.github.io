@@ -17,9 +17,8 @@
       {#if pageNumber === currentPage}
         <div>{pageNumber}</div>
       {:else}
-        <a
-          href={`${base}/blog/page/${pageNumber}`}
-          class="jumpy-link">{pageNumber}</a
+        <a href={`${base}/blog/page/${pageNumber}`} class="jumpy-link"
+          >{pageNumber}</a
         >
       {/if}
     {/each}

@@ -12,7 +12,7 @@
 </script>
 
 <PageTitle {title} />
-<PageDescription description={description} />
+<PageDescription {description} />
 <LeadImage filename={BLOG_IMAGE_FILENAME} alt={BLOG_TITLE} hideImage={true} />
 
 <h2>{title}</h2>

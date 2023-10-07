@@ -4,7 +4,7 @@ import { mdsvex } from 'mdsvex';
 import remarkFootnotes from 'remark-footnotes';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import imgLinks from '@pondorasti/remark-img-links'
+import imgLinks from '@pondorasti/remark-img-links';
 
 const dev = process.argv.includes('dev');
 const base = dev ? '' : process.env.BASE_PATH;
@@ -21,9 +21,10 @@ const config = {
     vitePreprocess(),
     mdsvex({
       extension: '.md',
-      remarkPlugins: [remarkFootnotes, [
-        imgLinks, { absolutePath: BLOG_URL + '/img/'}
-      ]],
+      remarkPlugins: [
+        remarkFootnotes,
+        [imgLinks, { absolutePath: BLOG_URL + '/img/' }]
+      ],
       rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings]
     })
   ],
@@ -39,7 +40,7 @@ const config = {
       strict: false
     }),
     paths: {
-    base
+      base
     }
   }
 };

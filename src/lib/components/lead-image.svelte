@@ -7,7 +7,7 @@
   export let hideImage: boolean = false;
 
   const src = `${base}/img/${filename}`;
-  const content = `${BLOG_URL}/img/${filename}`
+  const content = `${BLOG_URL}/img/${filename}`;
 </script>
 
 <svelte:head>

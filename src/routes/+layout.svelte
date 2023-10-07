@@ -1,11 +1,8 @@
 <script>
   import Header from '$lib/components/header.svelte';
   import Footer from '$lib/components/footer.svelte';
-  import {
-    BLOG_DOMAIN,
-    BLOG_URL
-  } from '$lib/blog-metadata';
-  import './app.scss'
+  import { BLOG_DOMAIN, BLOG_URL } from '$lib/blog-metadata';
+  import './app.scss';
 </script>
 
 <svelte:head>
