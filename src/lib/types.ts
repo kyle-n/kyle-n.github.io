@@ -1,6 +1,8 @@
+import type { ComponentType, SvelteComponent } from "svelte";
+
 export type ResolvedBlogPost = {
   metadata: BlogPostMetadata;
-  content: ConstructorOfATypedSvelteComponent;
+  content: ComponentType<SvelteComponent>;
 };
 
 export type BlogPostMetadata = {
@@ -17,6 +19,11 @@ export type BlogPostMetadata = {
 export type ResolvedBlogPostList = {
   posts: PostLink[];
 };
+
+export type ResolvedPaginatedBlogPostList = ResolvedBlogPostList & {
+  currentPage: number;
+  totalPageCount: number;
+}
 
 export type ResolvedKeywordPosts = ResolvedBlogPostList & {
   keyword: string;

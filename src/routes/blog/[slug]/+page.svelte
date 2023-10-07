@@ -1,6 +1,6 @@
 <script lang="ts">
   import { BLOG_IMAGE_FILENAME } from '$lib/blog-metadata';
-import KeywordLinks from '$lib/components/keyword-links.svelte';
+  import KeywordLinks from '$lib/components/keyword-links.svelte';
   import LeadImage from '$lib/components/lead-image.svelte';
   import PageDescription from '$lib/components/page-description.svelte';
   import PageTitle from '$lib/components/page-title.svelte';

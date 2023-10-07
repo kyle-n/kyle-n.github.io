@@ -18,7 +18,7 @@
         <div>{pageNumber}</div>
       {:else}
         <a
-          href={`${base}${$page.url.pathname}?page=${pageNumber}`}
+          href={`${base}/blog/page/${pageNumber}`}
           class="jumpy-link">{pageNumber}</a
         >
       {/if}

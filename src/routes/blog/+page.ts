@@ -1,5 +1,5 @@
 import { getAllPosts } from '$lib/post-handlers';
-import type { ResolvedBlogPostList, BlogPostMetadata } from '$lib/types';
+import type { ResolvedBlogPostList } from '$lib/types';
 
 export async function load(): Promise<ResolvedBlogPostList> {
   const posts = await getAllPosts();
