@@ -24,12 +24,12 @@
 
 <PostList posts={data.posts} />
 
-<section id="pagination">
+<div id="pagination">
   <PaginationLinks
     currentPage={data.currentPage}
     totalPageCount={data.totalPageCount}
   />
-</section>
+</div>
 
 <style lang="scss">
   #blog-page-header {
