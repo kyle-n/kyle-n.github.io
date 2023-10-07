@@ -3,7 +3,7 @@
 
   const navLinks = [
     { name: 'Home', href: '/' },
-    { name: 'Blog', href: '/blog' },
+    { name: 'Blog', href: '/blog/page/1' },
     { name: 'Contact', href: '/contact' }
   ].map(link => ({
     ...link,

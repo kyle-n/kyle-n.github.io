@@ -63,5 +63,6 @@ const redirectUrls: { [oldUrl: string]: string } = {
   '/2023/04/28/ebike-daily-routine/': '/blog/ebike-daily-routine',
   '/2023/05/03/code-simplicity/': '/blog/code-simplicity',
   '/2023/05/04/unit-test-your-templates/': '/blog/unit-test-your-templates',
-  '/2023/06/07/ai-browser-extension/': '/blog/ai-browser-extension'
+  '/2023/06/07/ai-browser-extension/': '/blog/ai-browser-extension',
+  '/blog/': '/blog/page/1'
 };
