@@ -1,8 +1,8 @@
 import type { BlogPostMetadata, PostLink } from './types';
 
 export async function getAllPosts(): Promise<PostLink[]> {
-  const pathPrefix = '../routes/blog/posts/';
-  const allPostFiles = import.meta.glob('../routes/blog/posts/*.md');
+  const pathPrefix = '../../posts/';
+  const allPostFiles = import.meta.glob('../../posts/*.md');
   const iterablePostFiles = Object.entries(allPostFiles);
   const postJobs = iterablePostFiles.map(async ([path, resolver]) => {
     const { metadata } = (await resolver()) as { metadata: BlogPostMetadata };

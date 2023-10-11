@@ -68,7 +68,7 @@ async function getHtmlForPost(
   leadImageCaption?: string
 ): Promise<string> {
   const postMarkdownWithFrontmatter = await readFile(
-    `./src/routes/blog/posts/${postPath}.md`,
+    `./posts/${postPath}.md`,
     'utf-8'
   );
   const postMarkdown = postMarkdownWithFrontmatter

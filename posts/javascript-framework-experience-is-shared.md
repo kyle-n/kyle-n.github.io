@@ -10,7 +10,7 @@ caption: Via wallpaper.com
 
 I want to state this once, for the record, for easy reference.
 
-**Recruiters: if someone has experience in a frontend framework like Angular, Vue, React or Svelte, they have experience in *all* of them.**
+**Recruiters: if someone has experience in a frontend framework like Angular, Vue, React or Svelte, they have experience in _all_ of them.**
 
 Here are three reasons why.
 
@@ -26,7 +26,7 @@ This may not be clear if you have not done a lot of frontend coding, but having 
 - Compiled with similar tools (webpack / Vite / etc)
 - Built with the same third-party libraries (from NPM)
 
-[^1]: TypeScript is JavaScript with better editor hints. 
+[^1]: TypeScript is JavaScript with better editor hints.
 
 They even solve that problem the same way, by breaking up the website you see into small, reusable components. Those components display data, accept user input or both. The things that make a good React component are simplicity, low coupling, having a single responsibility, and reusability. This is also true of Angular, Svelte and Vue.
 
@@ -72,5 +72,4 @@ If the hiring manager tells you candidates have to have Angular experience becau
 
 Look, I get it. Most people hiring aren’t trying to be brave. You don’t want to go out on a limb arguing to your boss that someone with three years’ experience in React can learn Vue, or vice versa.
 
-But I promise you, as long as that person seems even a little bit good at software engineering, *they can*.
-
+But I promise you, as long as that person seems even a little bit good at software engineering, _they can_.
