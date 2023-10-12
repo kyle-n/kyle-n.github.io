@@ -18,13 +18,13 @@
   </svg>
 </a>
 
-<style>
+<style lang="scss">
   path {
     fill: black;
-  }
-  @media (prefers-color-scheme: dark) {
-    path {
-      fill: white;
+    @media (prefers-color-scheme: dark) {
+      & {
+        fill: white;
+      }
     }
   }
 </style>
