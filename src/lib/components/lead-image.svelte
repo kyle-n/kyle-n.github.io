@@ -18,3 +18,9 @@
 {#if !hideImage}
   <img {src} {alt} />
 {/if}
+
+<style lang="scss">
+  img {
+    margin-bottom: 0;
+  }
+</style>
