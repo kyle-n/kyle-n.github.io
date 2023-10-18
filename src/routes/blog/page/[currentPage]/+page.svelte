@@ -7,6 +7,7 @@
   import RssLink from '$lib/components/rss-link.svelte';
   import PaginationLinks from '$lib/components/pagination-links.svelte';
   import type { ResolvedPaginatedBlogPostList } from '$lib/types';
+  import AllKeywordsLink from '$lib/components/all-keywords-link.svelte';
 
   export let data: ResolvedPaginatedBlogPostList;
 </script>
@@ -17,7 +18,8 @@
 
 <div id="blog-page-header">
   <h2>Blog</h2>
-  <div>
+  <div id="link-container">
+    <AllKeywordsLink />
     <RssLink />
   </div>
 </div>
@@ -44,5 +46,9 @@
 
   #pagination {
     margin-top: 1em;
+  }
+
+  :global(#link-container a) {
+    margin-right: 1em;
   }
 </style>
