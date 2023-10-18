@@ -33,3 +33,7 @@ export type PostLink = {
   metadata: BlogPostMetadata;
   postPath: string;
 };
+
+export type ResolvedKeywordList = {
+  keywords: string[];
+};
