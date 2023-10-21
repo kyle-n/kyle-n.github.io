@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite dev",
     "build": "vite build",
-    "test": "vitest",
+    "test": "vitest run",
+    "test:watch": "vitest",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
@@ -45,7 +46,8 @@
     "tslib": "^2.4.1",
     "typescript": "^5.2.2",
     "vite": "^4.4.2",
-    "vitest": "^0.34.6"
+    "vitest": "^0.34.6",
+    "vitest-dom": "^0.1.1"
   },
   "type": "module",
   "prettier": {

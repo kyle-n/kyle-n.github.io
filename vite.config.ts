@@ -7,5 +7,8 @@ export default defineConfig({
     fs: {
       allow: ['./posts']
     }
+  },
+  test: {
+    environment: 'jsdom'
   }
 });

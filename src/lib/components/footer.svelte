@@ -6,7 +6,7 @@
 
 <hr />
 <footer>
-  <p>© {copyrightYear} Kyle Nazario</p>
+  <p data-testid="copyright">© {copyrightYear} Kyle Nazario</p>
   <RssLink />
 </footer>
 
