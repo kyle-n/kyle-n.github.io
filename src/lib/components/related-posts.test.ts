@@ -18,7 +18,7 @@ const { mockRelatedPosts } = vi.hoisted(() => ({
       },
       postPath: 'foo'
     }
-  ]
+  ] as PostLink[]
 }));
 
 describe('RelatedPosts', () => {
@@ -56,5 +56,30 @@ describe('RelatedPosts', () => {
     await act(async () => await new Promise(r => setTimeout(r, 1)));
 
     expect(screen.getByText('foo title')).toBeInTheDocument();
+  });
+
+  test('render the HN discussion link', async () => {
+    vi.mock('$lib/post-handlers', () => {
+      return {
+        getRelatedPosts: vi.fn().mockResolvedValue(mockRelatedPosts)
+      };
+    });
+    const env = render(RelatedPosts, {
+      parentPostTitle: 'foo',
+      parentPostHnLink: undefined,
+      parentPostKeywords: undefined
+    });
+    await act(async () => await new Promise(r => setTimeout(r, 1)));
+
+    expect(screen.queryByText('Hacker News discussion')).not.toBeInTheDocument();
+
+    env.rerender({
+      parentPostTitle: 'foo',
+      parentPostHnLink: 'foo',
+      parentPostKeywords: undefined
+    });
+    await act(async () => await new Promise(r => setTimeout(r, 1)));
+
+    expect(screen.getByText('Hacker News discussion')).toBeInTheDocument();
   });
 });
