@@ -75,7 +75,7 @@ describe('RelatedPosts', () => {
       screen.queryByText('Hacker News discussion')
     ).not.toBeInTheDocument();
 
-    env.rerender({
+    env.component.$set({
       parentPostTitle: 'foo',
       parentPostHnLink: 'foo',
       parentPostKeywords: undefined
