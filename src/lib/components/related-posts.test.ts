@@ -3,6 +3,7 @@ import { act, render, screen } from '@testing-library/svelte';
 import RelatedPosts from './related-posts.svelte';
 import 'vitest-dom/extend-expect';
 import type { PostLink } from '$lib/types';
+import { whenStable } from '../../tests/helpers';
 
 const { mockRelatedPosts } = vi.hoisted(() => ({
   mockRelatedPosts: [
@@ -52,7 +53,7 @@ describe('RelatedPosts', () => {
       parentPostHnLink: undefined,
       parentPostKeywords: undefined
     });
-    await act(async () => await new Promise(r => setTimeout(r, 1)));
+    await whenStable()
 
     expect(screen.getByText('foo title')).toBeInTheDocument();
   });
@@ -68,7 +69,7 @@ describe('RelatedPosts', () => {
       parentPostHnLink: undefined,
       parentPostKeywords: undefined
     });
-    await act(async () => await new Promise(r => setTimeout(r, 1)));
+    await whenStable()
 
     expect(
       screen.queryByText('Hacker News discussion')
@@ -79,7 +80,7 @@ describe('RelatedPosts', () => {
       parentPostHnLink: 'foo',
       parentPostKeywords: undefined
     });
-    await act(async () => await new Promise(r => setTimeout(r, 1)));
+    await whenStable()
 
     expect(screen.getByText('Hacker News discussion')).toBeInTheDocument();
   });
