@@ -4,6 +4,23 @@ import RelatedPosts from './related-posts.svelte';
 import 'vitest-dom/extend-expect';
 import type { PostLink } from '$lib/types';
 
+const { mockRelatedPosts } = vi.hoisted(() => ({
+  mockRelatedPosts: [
+    {
+      metadata: {
+        layout: 'post',
+        title: 'foo title',
+        description: 'foo',
+        date: 'foo',
+        image: 'foo',
+        caption: 'foo',
+        keywords: 'foo'
+      },
+      postPath: 'foo'
+    }
+  ]
+}));
+
 describe('RelatedPosts', () => {
   beforeEach(() => {
     document.body.innerHTML = '';
@@ -28,21 +45,7 @@ describe('RelatedPosts', () => {
   test('renders related posts', async () => {
     vi.mock('$lib/post-handlers', () => {
       return {
-        getRelatedPosts: vi.fn().mockResolvedValue([
-          {
-            metadata: {
-              layout: 'post',
-              title: 'foo title',
-              description: 'foo',
-              date: 'foo',
-              image: 'foo',
-              caption: 'foo',
-              keywords: 'foo',
-              hn: 'foo'
-            },
-            postPath: 'foo'
-          }
-        ] as PostLink[])
+        getRelatedPosts: vi.fn().mockResolvedValue(mockRelatedPosts)
       };
     });
     render(RelatedPosts, {
