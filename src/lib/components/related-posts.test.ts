@@ -53,7 +53,7 @@ describe('RelatedPosts', () => {
       parentPostHnLink: undefined,
       parentPostKeywords: undefined
     });
-    await whenStable()
+    await whenStable();
 
     expect(screen.getByText('foo title')).toBeInTheDocument();
   });
@@ -69,7 +69,7 @@ describe('RelatedPosts', () => {
       parentPostHnLink: undefined,
       parentPostKeywords: undefined
     });
-    await whenStable()
+    await whenStable();
 
     expect(
       screen.queryByText('Hacker News discussion')
@@ -80,7 +80,7 @@ describe('RelatedPosts', () => {
       parentPostHnLink: 'foo',
       parentPostKeywords: undefined
     });
-    await whenStable()
+    await whenStable();
 
     expect(screen.getByText('Hacker News discussion')).toBeInTheDocument();
   });
