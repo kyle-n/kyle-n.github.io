@@ -7,5 +7,9 @@ export default defineConfig({
     fs: {
       allow: ['./posts']
     }
+  },
+  test: {
+    environment: 'jsdom',
+    setupFiles: ['./src/tests/setup.ts']
   }
 });
