@@ -1,7 +1,6 @@
 import { describe, test, expect } from 'vitest';
 import { render, screen } from '@testing-library/svelte';
 import KeywordLinks from './keyword-links.svelte';
-import 'vitest-dom/extend-expect';
 
 describe('KeywordLinks', () => {
   test('displays keywords', () => {

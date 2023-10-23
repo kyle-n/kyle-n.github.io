@@ -1,7 +1,6 @@
 import { describe, test, expect, beforeEach } from 'vitest';
 import { render, screen } from '@testing-library/svelte';
 import Footer from './footer.svelte';
-import 'vitest-dom/extend-expect';
 
 describe('Footer', () => {
   beforeEach(() => {

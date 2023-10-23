@@ -1,7 +1,6 @@
 import { describe, test, expect, beforeEach, vi } from 'vitest';
-import { act, render, screen } from '@testing-library/svelte';
+import { render, screen } from '@testing-library/svelte';
 import RelatedPosts from './related-posts.svelte';
-import 'vitest-dom/extend-expect';
 import type { PostLink } from '$lib/types';
 import { whenStable } from '../../tests/helpers';
 
