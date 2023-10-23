@@ -1,5 +1,5 @@
-import { describe, test, expect, beforeEach, vi, afterEach } from 'vitest';
-import { act, cleanup, render, screen } from '@testing-library/svelte';
+import { describe, test, expect, beforeEach, vi } from 'vitest';
+import { act, render, screen } from '@testing-library/svelte';
 import RelatedPosts from './related-posts.svelte';
 import 'vitest-dom/extend-expect';
 import type { PostLink } from '$lib/types';
@@ -24,10 +24,6 @@ const { mockRelatedPosts } = vi.hoisted(() => ({
 describe('RelatedPosts', () => {
   beforeEach(() => {
     vi.mock('$lib/post-handlers');
-  });
-
-  afterEach(() => {
-    cleanup();
   });
 
   test('renders nothing with no related posts', () => {

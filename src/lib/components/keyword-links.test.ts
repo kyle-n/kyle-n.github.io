@@ -1,13 +1,9 @@
-import { describe, test, expect, beforeEach, afterEach } from 'vitest';
-import { cleanup, render, screen } from '@testing-library/svelte';
+import { describe, test, expect } from 'vitest';
+import { render, screen } from '@testing-library/svelte';
 import KeywordLinks from './keyword-links.svelte';
 import 'vitest-dom/extend-expect';
 
 describe('KeywordLinks', () => {
-  afterEach(() => {
-    cleanup();
-  });
-
   test('displays keywords', () => {
     render(KeywordLinks, { keywords: 'foo, bar' });
 
