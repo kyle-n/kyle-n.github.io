@@ -4,7 +4,6 @@ import PaginationLinks from './pagination-links.svelte';
 import 'vitest-dom/extend-expect';
 
 describe('PaginationLinks', () => {
-
   test('displays pagination links', () => {
     render(PaginationLinks, { currentPage: 1, totalPageCount: 3 });
 

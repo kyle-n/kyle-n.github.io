@@ -86,4 +86,3 @@ Now when writing Markdown, you can simply put:
 ```
 
 No `<script>` import, no `{base}` - just put the filename of the image at the folder indicated by the `absolutePath` in your `svelte.config.js`.
-
