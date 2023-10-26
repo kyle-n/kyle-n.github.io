@@ -50,36 +50,23 @@ import {
 } from '$lib/blog-metadata';
 import { create } from 'xmlbuilder2';
 
+// prettier-ignore
 async function getRssXml(): Promise<string> {
   const rssUrl = `${BLOG_URL}/rss.xml`;
   const root = create({ version: '1.0', encoding: 'utf-8' })
-    .ele('feed', {
-      xmlns: 'http://www.w3.org/2005/Atom'
-    })
-    .ele('title')
-    .txt(BLOG_TITLE)
-    .up()
-    .ele('link', { href: BLOG_URL })
-    .up()
-    .ele('link', { rel: 'self', href: rssUrl })
-    .up()
-    .ele('updated')
-    .txt(new Date().toISOString())
-    .up()
-    .ele('id')
-    .txt(BLOG_URL)
-    .up()
+  .ele('feed', {
+    xmlns: 'http://www.w3.org/2005/Atom',
+  })
+    .ele('title').txt(BLOG_TITLE).up()
+    .ele('link', { href: BLOG_URL }).up()
+    .ele('link', { rel: 'self', href: rssUrl }).up()
+    .ele('updated').txt(new Date().toISOString()).up()
+    .ele('id').txt(BLOG_URL).up()
     .ele('author')
-    .ele('name')
-    .txt(BLOG_AUTHOR)
+      .ele('name').txt(BLOG_AUTHOR).up()
+      .ele('email').txt(BLOG_AUTHOR_EMAIL).up()
     .up()
-    .ele('email')
-    .txt(BLOG_AUTHOR_EMAIL)
-    .up()
-    .up()
-    .ele('subtitle')
-    .txt(BLOG_DESCRIPTION)
-    .up();
+    .ele('subtitle').txt(BLOG_DESCRIPTION).up()
 
   return root.end();
 }
@@ -323,12 +310,14 @@ Much better.
 Another issue I ran into was with image URLs. When I add an image within the body of my post, I use this syntax:
 
 ```markdown
-![Alt text here](filename.ts
+![Alt text here]({base}/img/filename.ts)
 
 <script lang="ts">import { base } from '$app/paths';</script>
 ```
 
 Writing `{base}` before every image URL is a pain in the ass, to be honest. [Get in touch]({base}/contact) if you have a better way.
+
+**Update**: There is [a better way]({base}/blog/markdown-images-for-sveltekit-blogs).
 
 Using `{base}` in every image URL is also disadvantageous because Showdown does not understand it. The inline images URLs in your RSS feed will 404.
 
