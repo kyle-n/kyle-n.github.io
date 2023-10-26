@@ -205,6 +205,7 @@ async function getRssXml(): Promise<string> {
 
 Once we've loaded all posts, we can iterate over them and add their metadata as XML.
 
+<!-- prettier-ignore -->
 ```typescript
 for await (const post of allPosts) {
   const pubDate = post.metadata.date;
@@ -213,20 +214,11 @@ for await (const post of allPosts) {
 
   root
     .ele('entry')
-    .ele('title')
-    .txt(post.metadata.title)
-    .up()
-    .ele('link', { href: postUrl })
-    .up()
-    .ele('updated')
-    .txt(pubDate)
-    .up()
-    .ele('id')
-    .txt(postUrl)
-    .up()
-    .ele('summary')
-    .txt(summary)
-    .up()
+      .ele('title').txt(post.metadata.title).up()
+      .ele('link', { href: postUrl }).up()
+      .ele('updated').txt(pubDate).up()
+      .ele('id').txt(postUrl).up()
+      .ele('summary').txt(summary).up()
     .up();
 }
 ```
