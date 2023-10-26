@@ -80,8 +80,7 @@ async function getHtmlForPost(
   // prevents HTML in code tags from being rendered
   postHtml = postHtml
     .replaceAll('&lt;', '&amp;lt;')
-    .replaceAll('&gt;', '&amp;gt;')
-    .replaceAll('{base}', '');
+    .replaceAll('&gt;', '&amp;gt;');
 
   const postDom = new JSDOM();
   postDom.window.document.body.innerHTML = postHtml;
@@ -90,6 +89,8 @@ async function getHtmlForPost(
     const filename = image.src;
     image.src = `${base}/img/${filename}`;
   });
+
+  removeBasePrefixFromElements(postDom);
 
   if (leadImageFilename) {
     const leadImage = postDom.window.document.createElement('img');
@@ -102,4 +103,19 @@ async function getHtmlForPost(
     postDom.window.document.body.prepend(leadImage);
   }
   return postDom.window.document.body.innerHTML;
+}
+
+function removeBasePrefixFromElements(dom: JSDOM): void {
+  const basePrefix = '{base}';
+  const allElements = Array.from(dom.window.document.getElementsByTagName('*'));
+  allElements.forEach(element => {
+    const href = element.getAttribute('href');
+    if (href?.startsWith(basePrefix)) {
+      element.setAttribute('href', href.slice(basePrefix.length));
+    }
+    const src = element.getAttribute('src');
+    if (src?.startsWith(basePrefix)) {
+      element.setAttribute('src', src.slice(basePrefix.length));
+    }
+  });
 }
