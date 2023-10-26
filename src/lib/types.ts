@@ -14,6 +14,7 @@ export type BlogPostMetadata = {
   caption?: string;
   keywords?: string;
   hn?: string;
+  discussions?: Record<string, string>;
 };
 
 export type ResolvedBlogPostList = {
