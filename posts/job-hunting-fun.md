@@ -3,8 +3,9 @@ layout: post
 title: Things I was asked to do while job hunting
 date: 2021-04-10
 keywords: personal
-hn: https://news.ycombinator.com/item?id=26763336
 description: The hiring process could stand some improvements.
+discussions:
+  Hacker News: https://news.ycombinator.com/item?id=26763336
 ---
 
 I recently had to get a new job. My wife got a residency in another state, and my previous job is going back to in-person.

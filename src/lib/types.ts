@@ -13,7 +13,6 @@ export type BlogPostMetadata = {
   image?: string;
   caption?: string;
   keywords?: string;
-  hn?: string;
   discussions?: Record<string, string>;
 };
 

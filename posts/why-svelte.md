@@ -4,8 +4,10 @@ title: Why I chose Svelte for my new app
 date: 2021-05-14
 image: bnt-1.png
 keywords: svelte, frontend, javascript, typescript, extensions, showcase
-hn: https://news.ycombinator.com/item?id=27166097
 description: When you need a little interactivity but a lot of performance
+discussions:
+  Hacker News: https://news.ycombinator.com/item?id=27166097
+  Reddit: https://old.reddit.com/r/sveltejs/comments/ndc2j8/why_i_chose_svelte_for_my_new_app/
 ---
 
 I recently published [Beautiful New Tabs](https://apps.apple.com/us/app/beautiful-new-tabs/id1567068235). It replaces the new tab page in Safari with a nice wallpaper and weather widget.
