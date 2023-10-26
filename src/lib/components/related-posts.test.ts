@@ -1,8 +1,7 @@
 import { describe, test, expect, beforeEach, vi } from 'vitest';
-import { render, screen } from '@testing-library/svelte';
+import { render, screen, waitFor } from '@testing-library/svelte';
 import RelatedPosts from './related-posts.svelte';
 import type { PostLink } from '$lib/types';
-import { whenStable } from '../../tests/helpers';
 
 const { mockRelatedPosts } = vi.hoisted(() => ({
   mockRelatedPosts: [
@@ -52,9 +51,10 @@ describe('RelatedPosts', () => {
       parentPostHnLink: undefined,
       parentPostKeywords: undefined
     });
-    await whenStable();
 
-    expect(screen.getByText('foo title')).toBeInTheDocument();
+    await waitFor(() => {
+      expect(screen.getByText('foo title')).toBeInTheDocument();
+    });
   });
 
   test('render the HN discussion link', async () => {
@@ -68,19 +68,21 @@ describe('RelatedPosts', () => {
       parentPostHnLink: undefined,
       parentPostKeywords: undefined
     });
-    await whenStable();
 
-    expect(
-      screen.queryByText('Hacker News discussion')
-    ).not.toBeInTheDocument();
+    await waitFor(() => {
+      expect(
+        screen.queryByText('Hacker News discussion')
+      ).not.toBeInTheDocument();
+    });
 
     env.component.$set({
       parentPostTitle: 'foo',
       parentPostHnLink: 'foo',
       parentPostKeywords: undefined
     });
-    await whenStable();
 
-    expect(screen.getByText('Hacker News discussion')).toBeInTheDocument();
+    await waitFor(() => {
+      expect(screen.getByText('Hacker News discussion')).toBeInTheDocument();
+    });
   });
 });
