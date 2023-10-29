@@ -1,4 +1,4 @@
-import { describe, test, expect, beforeEach, vi } from 'vitest';
+import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { render, screen, waitFor } from '@testing-library/svelte';
 import RelatedPosts from './related-posts.svelte';
 import type { PostLink } from '$lib/types';
@@ -25,7 +25,7 @@ describe('RelatedPosts', () => {
     vi.mock('$lib/post-handlers');
   });
 
-  test('renders nothing with no related posts', () => {
+  it('renders nothing with no related posts', () => {
     vi.mock('$lib/post-handlers', () => {
       return {
         getRelatedPosts: vi.fn().mockResolvedValue([])
@@ -40,7 +40,7 @@ describe('RelatedPosts', () => {
     expect(container.querySelector('div')?.childElementCount).toBe(0);
   });
 
-  test('renders related posts', async () => {
+  it('renders related posts', async () => {
     vi.mock('$lib/post-handlers', () => {
       return {
         getRelatedPosts: vi.fn().mockResolvedValue(mockRelatedPosts)
@@ -57,7 +57,7 @@ describe('RelatedPosts', () => {
     });
   });
 
-  test('render the HN discussion link', async () => {
+  it('render the HN discussion link', async () => {
     vi.mock('$lib/post-handlers', () => {
       return {
         getRelatedPosts: vi.fn().mockResolvedValue(mockRelatedPosts)
