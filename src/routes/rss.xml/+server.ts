@@ -28,8 +28,7 @@ export async function GET() {
 
 // prettier-ignore
 async function getRssXml(): Promise<string> {
-  const x = await getAllPosts();
-  const allPosts = x.filter(p => p.metadata.title === 'Above all else, code should be simple')
+  const allPosts = await getAllPosts();
   const rssPosts = allPosts.slice(0, 10);
   const rssUrl = `${BLOG_URL}/rss.xml`;
   const root = create({ version: '1.0', encoding: 'utf-8' })
