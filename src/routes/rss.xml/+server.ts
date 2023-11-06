@@ -13,7 +13,6 @@ import { unified } from 'unified';
 import rehypeStringify from 'rehype-stringify';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
-import remarkFootnotes from 'remark-footnotes';
 import remarkGfm from 'remark-gfm';
 import { base } from '$app/paths';
 
@@ -82,7 +81,6 @@ async function getHtmlForPost(
     .trim();
   const processedMarkdown = await unified()
     .use(remarkParse)
-    .use(remarkFootnotes)
     .use(remarkRehype)
     .use(rehypeStringify)
     .use(remarkGfm)
