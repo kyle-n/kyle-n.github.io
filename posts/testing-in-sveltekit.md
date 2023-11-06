@@ -28,7 +28,7 @@ describe('EmailInputComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [EmailInputComponent],
+      declarations: [EmailInputComponent]
     });
     fixture = TestBed.createComponent(EmailInputComponent);
     component = fixture.componentInstance;
@@ -112,7 +112,7 @@ If you log the virtual DOM in the second test, you will see two copies of `<Keyw
 
 Damned if I know why it’s happening. I poked around the Svelte Testing Library source code and [it looks like the library calls ](https://github.com/testing-library/svelte-testing-library/blob/800e33e1e9b816203e1a2105e5a9c7f415f56972/src/test-setup.js#L10)`cleanup()`. They even have [tests verifying it](https://github.com/testing-library/svelte-testing-library/blob/main/src/tests/auto-cleanup.test.js). I might have just done something wrong, but the bug happens with the create-svelte-app Wordle preset app too 🤷‍♂️.
 
-It's probably just a bug, but boy, imagine a junior on your team running into this. It would be torture trying to figure out why tests that should be valid are failing. 
+It's probably just a bug, but boy, imagine a junior on your team running into this. It would be torture trying to figure out why tests that should be valid are failing.
 
 #### Async updates are difficult
 
@@ -182,7 +182,7 @@ describe('RelatedPosts', () => {
       parentPostHnLink: undefined,
       parentPostKeywords: undefined
     });
-    
+
     // ???
     await act(async () => await new Promise(resolve => setTimeout(resolve, 1)));
 
@@ -199,7 +199,7 @@ Again, maybe this is because I don't have as much experience with Testing Librar
 
 ### It’s a tough situation
 
-I really don’t want to be mean to Svelte Testing Library. Anybody doing open source work is a hero who deserves our love, support, and *money*. But as a consultant and someone who constantly pitches clients on technology, I would hesitate to suggest SvelteKit, because of testing. 
+I really don’t want to be mean to Svelte Testing Library. Anybody doing open source work is a hero who deserves our love, support, and _money_. But as a consultant and someone who constantly pitches clients on technology, I would hesitate to suggest SvelteKit, because of testing.
 
 Which sucks! SvelteKit is great, and more people should use it.
 

@@ -138,14 +138,16 @@ function removeBasePrefixFromElements(dom: JSDOM): void {
 }
 
 function inlineFootnotes(dom: JSDOM): void {
-  const footnoteLinkPrefix = '#user-content-fn-'
-  const prefixToRemove = '#user-content-'
+  const footnoteLinkPrefix = '#user-content-fn-';
+  const prefixToRemove = '#user-content-';
   const allLinks = Array.from(dom.window.document.getElementsByTagName('a'));
   allLinks.forEach(link => {
     const href = link.getAttribute('href');
     if (href?.startsWith(footnoteLinkPrefix)) {
       const newFootnoteHref = '#' + href.slice(prefixToRemove.length);
-      const footnoteContentElem = dom.window.document.getElementById(href.slice(1)) as HTMLLIElement | null;
+      const footnoteContentElem = dom.window.document.getElementById(
+        href.slice(1)
+      ) as HTMLLIElement | null;
       footnoteContentElem?.setAttribute('id', newFootnoteHref.slice(1));
       link.setAttribute('href', newFootnoteHref);
     }
