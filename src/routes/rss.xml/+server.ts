@@ -10,6 +10,12 @@ import { create } from 'xmlbuilder2';
 import { JSDOM } from 'jsdom';
 import { readFile } from 'fs/promises';
 import showdown from 'showdown';
+import { unified } from 'unified';
+import rehypeStringify from 'rehype-stringify';
+import remarkParse from 'remark-parse';
+import remarkRehype from 'remark-rehype';
+import remarkFootnotes from 'remark-footnotes';
+import remarkGfm from 'remark-gfm';
 import { base } from '$app/paths';
 
 export const prerender = true;
@@ -76,7 +82,14 @@ async function getHtmlForPost(
     .slice(2)
     .join('---')
     .trim();
-  let postHtml = converter.makeHtml(postMarkdown);
+  const processedMarkdown = await unified()
+    .use(remarkParse)
+    .use(remarkFootnotes)
+    .use(remarkRehype)
+    .use(rehypeStringify)
+    .use(remarkGfm)
+    .process(postMarkdown);
+  let postHtml = processedMarkdown.toString();
   // prevents HTML in code tags from being rendered
   postHtml = postHtml
     .replaceAll('&lt;', '&amp;lt;')
@@ -107,15 +120,22 @@ async function getHtmlForPost(
 
 function removeBasePrefixFromElements(dom: JSDOM): void {
   const basePrefix = '{base}';
+  const encodedBasePrefix = encodeURIComponent(basePrefix);
   const allElements = Array.from(dom.window.document.getElementsByTagName('*'));
   allElements.forEach(element => {
     const href = element.getAttribute('href');
     if (href?.startsWith(basePrefix)) {
       element.setAttribute('href', href.slice(basePrefix.length));
     }
+    if (href?.startsWith(encodedBasePrefix)) {
+      element.setAttribute('href', href.slice(encodedBasePrefix.length));
+    }
     const src = element.getAttribute('src');
     if (src?.startsWith(basePrefix)) {
       element.setAttribute('src', src.slice(basePrefix.length));
+    }
+    if (src?.startsWith(encodedBasePrefix)) {
+      element.setAttribute('src', src.slice(encodedBasePrefix.length));
     }
   });
 }
