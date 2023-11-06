@@ -9,7 +9,6 @@ import { getAllPosts, getCorrectedPostDate } from '$lib/post-handlers';
 import { create } from 'xmlbuilder2';
 import { JSDOM } from 'jsdom';
 import { readFile } from 'fs/promises';
-import showdown from 'showdown';
 import { unified } from 'unified';
 import rehypeStringify from 'rehype-stringify';
 import remarkParse from 'remark-parse';
@@ -67,7 +66,6 @@ async function getRssXml(): Promise<string> {
   return root.end()
 }
 
-const converter = new showdown.Converter();
 async function getHtmlForPost(
   postPath: string,
   leadImageFilename?: string,
