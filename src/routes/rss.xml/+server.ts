@@ -28,7 +28,8 @@ export async function GET() {
 
 // prettier-ignore
 async function getRssXml(): Promise<string> {
-  const allPosts = await getAllPosts();
+  const x = await getAllPosts();
+  const allPosts = x.filter(p => p.metadata.title === 'Above all else, code should be simple')
   const rssPosts = allPosts.slice(0, 10);
   const rssUrl = `${BLOG_URL}/rss.xml`;
   const root = create({ version: '1.0', encoding: 'utf-8' })
@@ -100,6 +101,7 @@ async function getHtmlForPost(
   });
 
   removeBasePrefixFromElements(postDom);
+  inlineFootnotes(postDom);
 
   if (leadImageFilename) {
     const leadImage = postDom.window.document.createElement('img');
@@ -132,6 +134,21 @@ function removeBasePrefixFromElements(dom: JSDOM): void {
     }
     if (src?.startsWith(encodedBasePrefix)) {
       element.setAttribute('src', src.slice(encodedBasePrefix.length));
+    }
+  });
+}
+
+function inlineFootnotes(dom: JSDOM): void {
+  const footnoteLinkPrefix = '#user-content-fn-'
+  const prefixToRemove = '#user-content-'
+  const allLinks = Array.from(dom.window.document.getElementsByTagName('a'));
+  allLinks.forEach(link => {
+    const href = link.getAttribute('href');
+    if (href?.startsWith(footnoteLinkPrefix)) {
+      const newFootnoteHref = '#' + href.slice(prefixToRemove.length);
+      const footnoteContentElem = dom.window.document.getElementById(href.slice(1)) as HTMLLIElement | null;
+      footnoteContentElem?.setAttribute('id', newFootnoteHref.slice(1));
+      link.setAttribute('href', newFootnoteHref);
     }
   });
 }
