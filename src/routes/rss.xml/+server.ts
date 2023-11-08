@@ -112,7 +112,9 @@ async function getHtmlForPost(
 }
 
 function addBasePrefixToImages(dom: JSDOM): void {
-  const allImages = Array.from(dom.window.document.getElementsByTagName('img')) as HTMLImageElement[];
+  const allImages = Array.from(
+    dom.window.document.getElementsByTagName('img')
+  ) as HTMLImageElement[];
   allImages.forEach(image => {
     const src = image.getAttribute('src');
     if (src) {
