@@ -93,12 +93,8 @@ async function getHtmlForPost(
 
   const postDom = new JSDOM();
   postDom.window.document.body.innerHTML = postHtml;
-  const images = Array.from(postDom.window.document.querySelectorAll('img'));
-  images.forEach(image => {
-    const filename = image.src;
-    image.src = `${base}/img/${filename}`;
-  });
 
+  addBasePrefixToImages(postDom);
   removeBasePrefixFromElements(postDom);
   inlineFootnotes(postDom);
 
@@ -113,6 +109,16 @@ async function getHtmlForPost(
     postDom.window.document.body.prepend(leadImage);
   }
   return postDom.window.document.body.innerHTML;
+}
+
+function addBasePrefixToImages(dom: JSDOM): void {
+  const allImages = Array.from(dom.window.document.getElementsByTagName('img')) as HTMLImageElement[];
+  allImages.forEach(image => {
+    const src = image.getAttribute('src');
+    if (src) {
+      image.setAttribute('src', `${base}/img/${src}`);
+    }
+  });
 }
 
 function removeBasePrefixFromElements(dom: JSDOM): void {
