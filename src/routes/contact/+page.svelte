@@ -5,7 +5,7 @@
     BLOG_AUTHOR_GITHUB,
     BLOG_AUTHOR_LINKEDIN,
     BLOG_AUTHOR_MASTODON,
-    BLOG_AUTHOR_TWITTER,
+    BLOG_AUTHOR_TWITTER
   } from '$lib/blog-metadata';
   import DefaultLeadImage from '$lib/components/default-lead-image.svelte';
   import PageDescription from '$lib/components/page-description.svelte';
@@ -34,10 +34,10 @@
 <h2>Contact</h2>
 <main>
   <ul>
-    {#each accounts as account}
+    {#each accounts as { name, href }}
       <li>
-        <a href={account.href} target="_blank" rel="noopener noreferrer">
-          {account.name}
+        <a {href} target="_blank" rel="noopener noreferrer">
+          {name}
         </a>
       </li>
     {/each}
