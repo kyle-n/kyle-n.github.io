@@ -14,8 +14,8 @@
 <header>
   <h1>Kyle Nazario</h1>
   <nav>
-    {#each navLinks as navLink}
-      <a href={navLink.href} class="jumpy-link">{navLink.name}</a>
+    {#each navLinks as { name, href }}
+      <a {href} class="jumpy-link">{name}</a>
     {/each}
   </nav>
 </header>
