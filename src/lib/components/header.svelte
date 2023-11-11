@@ -1,5 +1,6 @@
 <script lang="ts">
   import { base } from '$app/paths';
+  import { BLOG_TITLE } from '$lib/blog-metadata';
 
   const navLinks = [
     { name: 'Home', href: '/' },
@@ -12,7 +13,7 @@
 </script>
 
 <header>
-  <h1>Kyle Nazario</h1>
+  <h1>{BLOG_TITLE}</h1>
   <nav>
     {#each navLinks as { name, href }}
       <a {href} class="jumpy-link">{name}</a>
