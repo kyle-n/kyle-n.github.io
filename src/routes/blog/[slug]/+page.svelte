@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { BLOG_IMAGE_FILENAME } from '$lib/blog-metadata';
+  import DefaultLeadImage from '$lib/components/default-lead-image.svelte';
   import KeywordLinks from '$lib/components/keyword-links.svelte';
   import LeadImage from '$lib/components/lead-image.svelte';
   import PageDescription from '$lib/components/page-description.svelte';
@@ -27,7 +27,7 @@
       <p class="caption">{data.metadata.caption}</p>
     {/if}
   {:else}
-    <LeadImage filename={BLOG_IMAGE_FILENAME} hideImage={true} />
+    <DefaultLeadImage />
   {/if}
   <div>
     <svelte:component this={data.content} />

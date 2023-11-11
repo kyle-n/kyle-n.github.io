@@ -6,10 +6,8 @@
     BLOG_AUTHOR_LINKEDIN,
     BLOG_AUTHOR_MASTODON,
     BLOG_AUTHOR_TWITTER,
-    BLOG_IMAGE_FILENAME,
-    BLOG_TITLE
   } from '$lib/blog-metadata';
-  import LeadImage from '$lib/components/lead-image.svelte';
+  import DefaultLeadImage from '$lib/components/default-lead-image.svelte';
   import PageDescription from '$lib/components/page-description.svelte';
   import PageTitle from '$lib/components/page-title.svelte';
 
@@ -31,7 +29,7 @@
 
 <PageTitle title="Contact" />
 <PageDescription description="Contact information" />
-<LeadImage filename={BLOG_IMAGE_FILENAME} alt={BLOG_TITLE} hideImage={true} />
+<DefaultLeadImage />
 
 <h2>Contact</h2>
 <main>

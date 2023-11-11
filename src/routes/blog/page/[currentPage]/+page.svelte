@@ -1,6 +1,4 @@
 <script lang="ts">
-  import { BLOG_IMAGE_FILENAME, BLOG_TITLE } from '$lib/blog-metadata';
-  import LeadImage from '$lib/components/lead-image.svelte';
   import PageDescription from '$lib/components/page-description.svelte';
   import PageTitle from '$lib/components/page-title.svelte';
   import PostList from '$lib/components/post-list.svelte';
@@ -8,13 +6,14 @@
   import PaginationLinks from '$lib/components/pagination-links.svelte';
   import type { ResolvedPaginatedBlogPostList } from '$lib/types';
   import AllKeywordsLink from '$lib/components/all-keywords-link.svelte';
+  import DefaultLeadImage from '$lib/components/default-lead-image.svelte';
 
   export let data: ResolvedPaginatedBlogPostList;
 </script>
 
 <PageTitle title="Blog" />
 <PageDescription description="All blog posts" />
-<LeadImage filename={BLOG_IMAGE_FILENAME} alt={BLOG_TITLE} hideImage={true} />
+<DefaultLeadImage />
 
 <div id="blog-page-header">
   <h2>Blog</h2>
