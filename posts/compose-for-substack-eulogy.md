@@ -5,23 +5,23 @@ date: 2023-11-14
 keywords: apple, personal
 ---
 
-I try to spend my time on this blog showcasing [things I'm proud of]({base}/blog/keyword/showcase) - [clever side projects]({base}/blog/why-svelte), [AI tricks]({base}/blog/ai-browser-extension), [achievements in reactive programing]({base}/blog/angular-reactive-forms-rental-rates-servicecore), that kind of thing.
+I try to spend my time on this blog showcasing [things I'm proud of]({base}/blog/keyword/showcase) - [cool side projects]({base}/blog/why-svelte), [AI tricks]({base}/blog/ai-browser-extension), [clever reactive programing]({base}/blog/angular-reactive-forms-rental-rates-servicecore), that kind of thing.
 
 <script>
   import {base} from '$app/paths';
 </script>
 
-But I also wanted to once, permanently, write down what happened to my least successful side project. It's the time I poured hundreds of hours into an extremely bad app no one used - not even me. 
+But I also wanted to once, permanently, write down what happened to my least successful side project. It's the time I poured hundreds of hours into a terrible app no one used.
 
 It's time to write about the time I went stir-crazy during COVID and reverse-engineered Substack's private API. 
 
 ### The setting
 
-You have to understand I was in a bad place. It was June 2020. I was living in across the country from my friends and family in a small one-bedroom apartment. COVID lockdowns were in effect. I'd not seen almost anyone in person for months at this point.
+I was in a bad headspace in June 2020. I was living across the country from my friends and family in a small one-bedroom apartment. COVID lockdowns were in effect. I'd barely seen anyone in person except my partner for months.
 
-I was also frustrated with my job. I was working as a frontend developer at a local SaaS company that was, well, *chaotic*. I wanted a new job but didn't have the resume to get one with one year of experience and no computer science degree. 
+My job was frustrating. I was working as a frontend developer at a local SaaS company that was, well, *chaotic*. To give a sense of things, our DevOps guy caught a company VIP browsing 4Chan at work. With one year of experience and no computer science degree, I wanted a new job but could not get one.
 
-I couldn't change my resume, so I fixated on gaining notoriety with a side project. Make something amazing and maybe somebody at a *good* company would notice me and offer a golden ticket out of my dreary day job (this did not work).
+I couldn't change my resume, so I fixated on gaining notoriety with a side project. Make something amazing and maybe somebody at a *good* company would notice and offer a golden ticket out of my dreary day job (this did not work).
 
 ### The idea
 
@@ -33,27 +33,25 @@ Thus, Compose for Substack was born.
 
 ### The app
 
-It would be a native iOS and iPadOS app for newsletter authors. You'd compose Substack newsletter drafts using Markdown. You would be able to save and publish drafts, all from a well-designed, native interface.
+It would be a native iOS, iPadOS and macOS app for newsletter authors. You'd compose Substack newsletter drafts using Markdown, then save and publish, all from a well-designed, native interface.
 
 ![A screenshot of Compose for Substack. No draft is selected](compose-no-draft-selected.png) 
 
-I didn't have any iOS or macOS development experience, but Apple had just announced version 2 of [SwiftUI](https://developer.apple.com/xcode/swiftui/). SwiftUI is their declarative framework for writing iOS and macOS apps. It felt similar to React, which I knew somewhat well, and so I decided Compose should be written in SwiftUI. This plan seemed like the best way to create a high-quality, native iOS and macOS interfaces without learning the intricacies of UIKit and AppKit. 
+I didn't have any iOS or macOS development experience, but Apple had just announced version 2 of [SwiftUI](https://developer.apple.com/xcode/swiftui/). SwiftUI is their declarative framework for writing apps. It felt similar to React, which I knew somewhat well, and so I decided Compose should be written in SwiftUI. This plan seemed like the best way to create a high-quality, native iOS and macOS interfaces without learning the intricacies of UIKit and AppKit. 
 
-If you are an Apple ecosystem developer, you may already see some problems with this idea. We'll get to those.
+If you are an Apple ecosystem developer, you may already see some problems with this idea.
 
 ### The API
 
-Compose for Substack had an ambitious goal - total interoperability with the Substack web app. My goal was to let the user start a draft in Compose, then view it on the web app and have it be exactly the same. 
+Compose for Substack had an ambitious goal - total interoperability with the Substack web app. My goal was to let the user start a draft in Compose, then view it substack.com and have it be exactly the same. 
 
-For this reason, Compose only lightly used [CloudKit](https://developer.apple.com/icloud/cloudkit/) and [Core Data](https://developer.apple.com/documentation/coredata/). The most important data, the user's blog posts, was actually stored on Substack's servers as a normal draft post - as if the user had written in on substack.com. 
+For this reason, Compose only lightly used [CloudKit](https://developer.apple.com/icloud/cloudkit/) and [Core Data](https://developer.apple.com/documentation/coredata/). The most important data, the blog posts, was actually stored on Substack's servers as a normal draft post - as if the user had written it on substack.com. 
 
-This (way too ambitious) goal required reverse-engineering Substack's private drafts API. They had no public-facing API at the time and zero documentation for third-party developers. 
+This (way too ambitious) goal required reverse-engineering Substack's private, undocumented drafts API. I played around with the web editor, keeping an eye on the network tab of the Chrome dev tools. I traced every request, building a mental model of how Substack's frontend communicated with the backend. 
 
-So, I played around with the web editor, keeping an eye on the network tab of the Chrome dev tools. I traced every network request, building a mental model of how Substack's web app saved data to the backend. 
+I could see why they hadn't opened it to third-parties. One of the properties on the draft response object actually used the ❤ character as a property key, I think to indicate how many favorites it had. 
 
-I could see why they hadn't opened it to third-parties. One of the properties on the `Draft` response object actually used the ❤ character as a property key, I think to indicate how many favorites it had. 
-
-If you did a GET publication data, it returned just a whole kitchen sink of data, with no way to filter it.
+If you tried to load data for a user's publication, it just returned a whole kitchen sink. Look at all this.
 
 ```swift
 // SubstackPublication.swift
@@ -152,7 +150,7 @@ struct SubstackPublication: Codable {
 }
 ```
 
-The API wasn't bad, just messy and not built for outside use. It took a *lot* of experimentation to decipher which properties I needed to send in my PUT requests to save updated newsletter drafts.
+The API wasn't bad, just messy and not built for outside use. It took a *lot* of experimentation to decipher which properties to send in PUT requests to save updated newsletter drafts.
 
 One of the hardest parts was reverse-engineering how Substack saved post contents. It looked like they were using [Prosemirror](https://prosemirror.net) and saving the text as one big JSON object. I had to write what was, as far as I knew, the world's only [Swift-language Markdown-Prosemirror converter](https://gist.github.com/kyle-n/ecbd81c97f2415a35356f197f9ccf965). I'm proud of that one. 
 
@@ -164,7 +162,7 @@ I wanted an editor like [Byword](https://www.bywordapp.com) (which I am using to
 
 ![Compose for Substack showing a list of drafts next to the editor](compose-drafts.png)
 
-Apple's documentation for [how to wrap UIKit components for SwiftUI](https://developer.apple.com/documentation/swiftui/uiviewrepresentable) is actually decent, so I learned just enough UIKit to render a text editor that formatted your text as your typed. It took a long time and a lot of effort, and it still [slows down if you write too much](https://github.com/kyle-n/HighlightedTextEditor/issues/25), but I got it working. The editor took Markdown, and, after the user had stopped typing for a few seconds, converted it to Prosemirror and synced it to substack.com.
+Nothing fit, so I learned just enough UIKit and AppKit to write a text editor that formats as you type. It took a long time and a lot of effort, and it still [slows down if you write too much](https://github.com/kyle-n/HighlightedTextEditor/issues/25), but it worked. The editor took Markdown, and, after the user had stopped tpyping for a few seconds, converted it to Prosemirror and synced it to substack.com.
 
 That was about the extend of my SwiftUI success. 
 
@@ -172,15 +170,15 @@ That was about the extend of my SwiftUI success.
 
 ![A screenshot of an iPad displaying a login screen in Compose](compose-login.png)
 
-SwiftUI has good qualities. UIs are easier to build declaratively. It's one reason React has taken over frontend web dev. It feels more intuitive than making subclasses and overriding parent functions, like in UIKit. 
+I like SwiftUI. Interfaces are easier to build declaratively, one reason React has taken over frontend web dev. It feels more intuitive than making subclasses and overriding parent functions, like in UIKit. 
 
 However.
 
-SwiftUI is a work in progress. Every year, Apple makes it more powerful and less buggy, but there are enough rough edges some people have [sworn off it entirely](https://mastodon.social/@stroughtonsmith/110277575917369837).
+SwiftUI has enough rough edges, some indie devs have [sworn off it entirely](https://mastodon.social/@stroughtonsmith/110277575917369837). Every year, though, Apple makes it more powerful and less buggy.
 
-In 2020, the rough edges were twice as bad. AppKit-flavored SwiftUI, which of course I picked, is twice *that*. I picked SwiftUI to avoid learning AppKit and UIKit, but it lacked so much I *still* ended up learning both. SwiftUI often produced UIs that were good but not amazing.
+In 2020, the rough edges were twice as bad. AppKit-flavored SwiftUI, which of course I picked, is twice *that*. I picked SwiftUI to avoid learning AppKit and UIKit, but it lacked so much I still ended up learning both.
 
-This was my mistake. To create a high-quality, boutique iOS & Mac app, avoid brand-new frameworks with tons of rough edges. It's possible to make great apps in SwiftUI, but 2020 was the wrong year for a junior to try it.
+This was my mistake. To create a high-quality, boutique iOS & Mac app, avoid brand-new frameworks with tons of rough edges. 2020-era SwiftUI was a bad choice for a junior trying to make something nice.
 
 ### The price
 
@@ -211,7 +209,7 @@ After several weeks, my total subscribers were...
 
 Zero. 
 
-I can't remember how many people downloaded it, but it wasn't more than 40. Obviously no one subscribed. It is the worst-performing side project I've ever made. 
+I can't remember how many people downloaded it, but it wasn't more than 40. It is the worst-performing side project I've ever made.
 
 I was so embarrassed I pulled it off the App Store after just a few weeks. The product-market mismatch was so obvious, more development seemed like a waste. 
 
@@ -227,4 +225,6 @@ If nothing else, the whole fiasco was a good learning experience.
 - Either build something for yourself, or something you're **extremely** confident other people will use. 
 - Use third-party tools like RevenueCat or Firebase if they help you build faster. It doesn't matter if they take a bigger cut of your profits. Your top priority is to get out the door and figure out if your app is something people actually want.
 
-The project wasn't a total loss. I spent some time breaking out my text editor into an open source project, [HighlightedTextEditor](https://github.com/kyle-n/HighlightedTextEditor). It's been decently successful - 643 stars, with a fair number of issues and PRs on GitHub. I'm glad people are using it.
+The project wasn't a total loss. I spent some time breaking out my text editor into an open source project, [HighlightedTextEditor](https://github.com/kyle-n/HighlightedTextEditor). It's been decently successful - 643 stars, with a fair number of issues and PRs on GitHub. I'm glad people are using it, and happy to give back to the iOS dev community. 
+
+It's the least I can do, since I can't make a good Substack app 😉.
