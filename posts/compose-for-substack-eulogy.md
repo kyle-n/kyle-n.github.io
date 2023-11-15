@@ -3,6 +3,8 @@ layout: post
 title: The time I went stir-crazy during Covid and reverse-engineered Substack’s private API
 date: 2023-11-14
 keywords: apple, personal
+image: envelopes.png
+caption: Via Stable Diffusion
 ---
 
 I try to spend my time on this blog showcasing [things I'm proud of]({base}/blog/keyword/showcase) - [cool side projects]({base}/blog/why-svelte), [AI tricks]({base}/blog/ai-browser-extension), [clever reactive programing]({base}/blog/angular-reactive-forms-rental-rates-servicecore), that kind of thing.
