@@ -70,7 +70,7 @@ My second concern is on the Svelte Testing Library’s [GitHub page](https://git
 
 I don't love this. Discord is terrible for support. It is hard to search, [inaccessible](https://drewdevault.com/2021/12/28/Dont-use-Discord-for-FOSS.html), [not private](https://sneak.berlin/20200220/discord-is-not-an-acceptable-choice-for-free-software-projects/) and [chaotic](https://kraktoos.com/posts/dont-use-discord-as-forum/). I get that it’s easier for small teams to just hang out on an app they already use and answer questions as they come in, but it's a mistake. [^1]
 
-[^1]: I’m aware Discord has a new, opt-in [forum-like UI](https://support.discord.com/hc/en-us/articles/4403205878423-Threads-FAQ) ([screenshot]({base}/img/discord-threads.png)). The official Svelte Discord uses this, and it looks… fine. Svelte Testing Library doesn’t use it. Regardless, content in it doesn't show up on Google. 
+[^1]: I’m aware Discord has a new, opt-in [forum-like UI](https://support.discord.com/hc/en-us/articles/4403205878423-Threads-FAQ) ([screenshot]({base}/img/discord-threads.png)). The official Svelte Discord uses this, and it looks… fine. Svelte Testing Library doesn’t use it. Regardless, content in it doesn't show up on Google.
 
 Discord is a step backward from using a public forum. Forum pages show up on Google. Forums also don’t require you to download a gamer chat app. That can be awkward in corporate environments! One of my clients doesn’t even allow Discord on their network.
 
