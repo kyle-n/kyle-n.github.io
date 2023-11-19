@@ -88,8 +88,7 @@ async function getHtmlForPost(
   let postHtml = processedMarkdown.toString();
   // prevents HTML in code tags from being rendered
   postHtml = postHtml
-    .replaceAll('&lt;', '&amp;lt;')
-    .replaceAll('&gt;', '&amp;gt;');
+    .replaceAll('&#x3C;', '&amp;lt;');
 
   const postDom = new JSDOM();
   postDom.window.document.body.innerHTML = postHtml;
