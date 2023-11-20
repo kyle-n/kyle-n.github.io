@@ -2,9 +2,11 @@
 layout: post
 title: How to incrementally migrate an Angular project to TypeScript strict mode
 date: 2022-06-22
-keywords: javascript, typescript, angular, frontend, tutorial
+keywords: javascript, typescript, angular, frontend, tutorial, bitovi
 image: typescript.png
 description: Your team needs strict mode, and now there's no excuse.
+relatedLinks:
+  Original post on bitovi.com: https://www.bitovi.com/blog/how-to-incrementally-migrate-an-angular-project-to-typescript-strict-mode
 ---
 
 Enabling [strict mode](https://www.typescriptlang.org/tsconfig#strict) for TypeScript is one of the best ways to ensure code quality on a project. It forces developers to handle edge cases and avoid risky type coercions. It also exposes hidden bugs.

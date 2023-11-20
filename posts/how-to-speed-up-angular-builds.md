@@ -2,10 +2,12 @@
 layout: post
 title: How to speed up your Angular builds
 date: 2022-04-19
-keywords: javascript, typescript, angular, frontend, tutorial
+keywords: javascript, typescript, angular, frontend, tutorial, bitovi
 image: fast_pc.jpg
 caption: Image via Mohamed Hassan on Pixabay
 description: And stop slowly losing your mind.
+relatedLinks:
+  Original post on bitovi.com: https://www.bitovi.com/blog/how-to-speed-up-your-angular-builds
 ---
 
 Slow builds [stop developers' productivity cold](https://steven-lemon182.medium.com/a-guide-to-reducing-development-wait-time-part-1-why-9dcbbfdc1224). If code takes even two minutes to compile, it's easy to get distracted. You lose your train of thought or, god forbid, open social media.

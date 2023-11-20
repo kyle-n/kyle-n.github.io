@@ -2,10 +2,12 @@
 layout: post
 title: How ComponentFactoryResolver can unlock powerful higher-order components
 date: 2022-06-30
-keywords: javascript, typescript, angular, frontend, tutorial
+keywords: javascript, typescript, angular, frontend, tutorial, bitovi
 image: factory.png
 caption: Via ArtsyBee on Pixabay
 description: Dynamic component instantiation in Angular
+relatedLinks:
+  Original post on bitovi.com: https://www.bitovi.com/blog/how-componentfactoryresolver-can-unlock-powerful-higher-order-components
 ---
 
 If you work with any component-based framework long enough, you'll run into a problem. How do you share functionality across components?
