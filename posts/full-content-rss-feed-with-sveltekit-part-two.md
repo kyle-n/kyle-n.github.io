@@ -4,6 +4,8 @@ title: How to make an RSS feed for your SvelteKit blog, part 2
 keywords: showcase, frontend, svelte, tutorial
 description: How to put the full contents of every post into your RSS feed, now with better parsing.
 date: 2023-11-19
+image: glowing-rss.png
+caption: DALL-E 2 - "a glowing orange rss icon floating in the middle of a dark library"
 ---
 
 <script>
