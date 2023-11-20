@@ -34,7 +34,7 @@ describe('RelatedPosts', () => {
     const { container } = render(RelatedPosts, {
       parentPostTitle: 'foo',
       parentPostKeywords: undefined,
-      parentPostRelatedLinkss: undefined
+      parentPostRelatedLinks: undefined
     });
 
     expect(container.querySelector('div')?.childElementCount).toBe(0);
@@ -49,7 +49,7 @@ describe('RelatedPosts', () => {
     render(RelatedPosts, {
       parentPostTitle: 'foo',
       parentPostKeywords: undefined,
-      parentPostRelatedLinkss: undefined
+      parentPostRelatedLinks: undefined
     });
 
     await waitFor(() => {
@@ -66,7 +66,7 @@ describe('RelatedPosts', () => {
     const env = render(RelatedPosts, {
       parentPostTitle: 'foo',
       parentPostKeywords: undefined,
-      parentPostRelatedLinkss: undefined
+      parentPostRelatedLinks: undefined
     });
 
     await waitFor(() => {
@@ -78,8 +78,8 @@ describe('RelatedPosts', () => {
     env.component.$set({
       parentPostTitle: 'foo',
       parentPostKeywords: undefined,
-      parentPostRelatedLinkss: {
-        'Hacker News': 'https://news.ycombinator.com/item?id=1'
+      parentPostRelatedLinks: {
+        'Hacker News discussion': 'https://news.ycombinator.com/item?id=1'
       }
     });
 
