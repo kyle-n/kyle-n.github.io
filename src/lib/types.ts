@@ -13,7 +13,7 @@ export type BlogPostMetadata = {
   image?: string;
   caption?: string;
   keywords?: string;
-  discussions?: Record<string, string>;
+  relatedLinks?: Record<string, string>;
 };
 
 export type ResolvedBlogPostList = {

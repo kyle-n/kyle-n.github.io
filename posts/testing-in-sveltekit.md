@@ -6,8 +6,8 @@ keywords: svelte, testing, opinion
 description: Why a good framework needs to do more before it's ready for everyone.
 image: pixel-computer-man.png
 caption: DALL-E 2 - "a computer being tested by a man wearing a lab coat. pixel art"
-discussions:
-  Mastodon: https://hachyderm.io/@kn/111301829286345500
+relatedLinks:
+  Mastodon discussion: https://hachyderm.io/@kn/111301829286345500
 ---
 
 I recently rebuilt this blog in [SvelteKit](https://kit.svelte.dev) and [had a blast doing it]({base}/blog/full-content-rss-feed-with-sveltekit). As someone who's spent the past four years working on Angular apps, I enjoyed a lot about Svelte and SvelteKit. It gets the big things right, with one major exception.

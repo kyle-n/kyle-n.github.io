@@ -5,7 +5,7 @@
 
   export let parentPostKeywords: string | undefined;
   export let parentPostTitle: string;
-  export let parentPostDiscussions: Record<string, string> | undefined;
+  export let parentPostRelatedLinks: Record<string, string> | undefined;
 
   let relatedPosts: PostLink[] = [];
   getRelatedPosts(parentPostTitle, parentPostKeywords).then(posts => {
@@ -17,9 +17,9 @@
   <div class="related-posts">
     <h2>See also</h2>
     <ul>
-      {#each Object.entries(parentPostDiscussions ?? {}) as [site, href]}
+      {#each Object.entries(parentPostRelatedLinks ?? {}) as [name, href]}
         <li>
-          <a {href} target="_blank">{site} discussion</a>
+          <a {href} target="_blank">{name}</a>
         </li>
       {/each}
       {#each relatedPosts as post}

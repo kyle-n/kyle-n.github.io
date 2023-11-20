@@ -36,7 +36,7 @@
 <RelatedPosts
   parentPostKeywords={data.metadata.keywords}
   parentPostTitle={data.metadata.title}
-  parentPostDiscussions={data.metadata.discussions}
+  parentPostRelatedLinks={data.metadata.relatedLinks}
 />
 
 <style lang="scss">
