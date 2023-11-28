@@ -1,5 +1,13 @@
 $mobile: 768px;
 
+blockquote p {
+  margin-top: 2.5rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
 a.jumpy-link {
   margin-bottom: 2px;
 
