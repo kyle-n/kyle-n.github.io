@@ -145,9 +145,8 @@ Suffice to say we should escape HTML code snippets to avoid rendering errors.
 
 ```typescript
 // ...
-  postHtml = postHtml
-    .replaceAll('&#x3C;', '&amp;lt;');
-````
+postHtml = postHtml.replaceAll('&#x3C;', '&amp;lt;');
+```
 
 #### Fix broken image links
 
@@ -195,7 +194,7 @@ When I write a link to another blog post, I put:
 [my AI post]({base}/blog/ai-browser-extension)
 ```
 
-When Svelte compiles the site for the web, it converts `{base}` into the base prefix, the path the site is served on. 
+When Svelte compiles the site for the web, it converts `{base}` into the base prefix, the path the site is served on.
 
 However, when we created `postHtml` with `remark`, `remark` left these `{base}` references alone. The link above, when compiled by `remark`, looks like:
 
@@ -249,9 +248,9 @@ Here's how to fix it:
 ```typescript
 // ...
 
-  addBasePrefixToImages(postDom);
-  removeBasePrefixFromElements(postDom);
-  inlineFootnotes(postDom);
+addBasePrefixToImages(postDom);
+removeBasePrefixFromElements(postDom);
+inlineFootnotes(postDom);
 
 // ...
 
@@ -288,8 +287,7 @@ async function getHtmlForPost(
   leadImageFilename?: string,
   leadImageCaption?: string
 ): Promise<string> {
-
-// ...
+  // ...
 
   if (leadImageFilename) {
     const leadImage = postDom.window.document.createElement('img');
@@ -305,7 +303,7 @@ async function getHtmlForPost(
 }
 
 // ...
-````
+```
 
 And that's it!
 
