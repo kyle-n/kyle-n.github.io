@@ -6,6 +6,8 @@ description: A Mac user reflects of what Windows PC gaming gets right.
 date: 2023-11-27
 image: xbox-controller.jpg
 caption: Image by Florian Bollmann on Pixabay
+relatedLinks:
+  Mastodon discussion: https://hachyderm.io/@kn/111494531451923444
 ---
 
 Five years ago, longtime Apple blogger John Gruber said on [a podcast](https://daringfireball.net/thetalkshow/2018/07/27/ep-226) that his son wanted a gaming PC and, after some discussion, he decided to buy him a Windows PC.
