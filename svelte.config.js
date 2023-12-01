@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-static';
+import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 import { mdsvex } from 'mdsvex';
 import remarkFootnotes from 'remark-footnotes';
@@ -33,15 +33,14 @@ const config = {
 
   kit: {
     adapter: adapter({
-      pages: 'build',
-      assets: 'build',
-      fallback: undefined,
-      precompress: false,
-      strict: false
+      routes: {
+        exclude: ['<files>', '<prerendered>']
+      }
     }),
     paths: {
       base
-    }
+    },
+    outDir: '.svelte-kit/cloudflare',
   }
 };
 
