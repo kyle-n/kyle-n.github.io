@@ -34,6 +34,7 @@ const config = {
   kit: {
     adapter: adapter({
       routes: {
+        include: ['/*'],
         exclude: ['<files>', '<prerendered>']
       }
     }),
