@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "/blog",
+      "destination": "/blog/page/1",
+      "permanent": true
+    },
+    {
+      "source": "/blog/bruce-willis-name-generator.html",
+      "destination": "/blog/bruce-willis-name-generator",
+      "permanent": true
+    },
+    {
+      "source": "/2019/01/21/bruce-willis-movie-title-name-generator/",
+      "destination": "/blog/bruce-willis-name-generator",
+      "permanent": true
+    }
+  ]
+}
