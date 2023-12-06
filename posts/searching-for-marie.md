@@ -13,7 +13,7 @@ I [recently watched](https://letterboxd.com/kyle_nazario/films/diary/for/2023/12
 
 One of the most enigmatic and fascinating scenes in the movie is when a furious mob of French peasants shows up outside the palace at Versailles. Marie Antoinette, played by Kirsten Dunst, walks out onto the balcony overlooking them. She gazes upon the angry crowd. The ill-fated French queen bows her head deeply and retreats without a word.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nYg5Xg5sgss?si=2yNlz_EHuVkaP5KY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nYg5Xg5sgss?si=u2lBZk01aTfYTZG-&amp;start=94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Is it an act of submission? Contrition? An apology? A plea for mercy? Dunst and Coppola give us no obvious answer. It's striking filmmaking.
 
@@ -73,7 +73,7 @@ My question should not have been hard. I should be able to type it into a search
 
 This is probably not a surprise to anyone who's done a lot of searches in the last few years. Most blame Google, but frankly I feel sympathy for them. Their job is to index the world's information, and that information is full of crap. Good user-generated content has moved to Facebook, Tiktok, and other social platforms. It's why everyone [appends "reddit" to their searches](https://old.reddit.com/r/CasualConversation/comments/r2020w/does_anyone_else_google_something_and_add_reddit/).
 
-What's left on the public web is junky, lazy, unsourced and riddled with ads and AI nonsense. Google's work is only getting harder.
+A lot of what's left on the public web is junky, lazy, unsourced SEO spam riddled with ads and fact-free AI nonsense. Google has its work cut out for it.
 
 No, what I feel most pessimistic about is AI. Quora tried to answer my question with ChatGPT and failed. It's also hard not to look at all the blog spam I dug through and imagine even more of it, created at AI volumes.
 
