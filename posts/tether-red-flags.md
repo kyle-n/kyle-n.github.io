@@ -12,7 +12,7 @@ keywords: opinion, news, cryptocurrency
   import {base} from '$app/paths';
 </script>
 
-Although I dislike cryptocurrency, I am fascinated by [Tether](https://tether.to). I can't believe a company so insanely shady is a foundational part of the web3 ecosystem. Tether is, as Bloomberg crypto reporter [Zeke Faux][fauxfile] memorably [put it][wheretether], "practically quilted out of red flags". 
+Although I dislike cryptocurrency, I am fascinated by [Tether](https://tether.to). I can't believe a company so insanely shady is a foundational part of the web3 ecosystem. Tether is, as Bloomberg crypto reporter [Zeke Faux][fauxfile] memorably [put it][wheretether], "practically quilted out of red flags".
 
 Here are some of those red flags, as best I understand them. Please [@ me]({base}/contact) if I got something wrong [^1], since I am not a crypto expert.
 
@@ -23,7 +23,7 @@ Here are some of those red flags, as best I understand them. Please [@ me]({base
 > It's the biggest fraud of all time or the most successful, misunderstood business ever. There's no in between.
 >
 > \*Tether is a fraud btw.\*
-> 
+>
 > \- [@NotChaseColeman][chase]
 
 ### Red flags
@@ -33,14 +33,14 @@ Here are some of those red flags, as best I understand them. Please [@ me]({base
 [^2]: Amusingly, Binance [also refuses to reveal][secrethq] their HQ's location ([archive][secrethqarchive]).
 
 - [No one can find the offices][hiddenhq] of Tether's parent company, iFinex. [^2]
-- Tether is run by Giancarlo Devasini, a [former plastic surgeon][wheretether] who was once fined for selling counterfeit Microsoft software. According to [*Number Go Up*][numbergoup], "Tether has said Devasini was unaware the software was unlicensed."
+- Tether is run by Giancarlo Devasini, a [former plastic surgeon][wheretether] who was once fined for selling counterfeit Microsoft software. According to [_Number Go Up_][numbergoup], "Tether has said Devasini was unaware the software was unlicensed."
 - In 2008, a factory Devasini owned stopped being profitable. It was shortly destroyed by a fire.
 
 > "He basically built a power plant in the back and it went up in smoke," [Devasini's former business partner Marco] Fuxa told me. But a newly unprofitable factory burning down in a mysterious fire struck me as a potential red flag.
 >
-> \- Zeke Faux, [*Number Go Up*][numbergoup]
+> \- Zeke Faux, [_Number Go Up_][numbergoup]
 
-- According to *Number Go Up*, Devasini wrote "almost admiringly" about Bernie Madoff in a 2008 blog post.
+- According to _Number Go Up_, Devasini wrote "almost admiringly" about Bernie Madoff in a 2008 blog post.
 
 #### Legal risk
 
@@ -49,22 +49,22 @@ Here are some of those red flags, as best I understand them. Please [@ me]({base
 - Tether [used criminal money launderers][patio2019] to access the banking system so they could accept dollars for tethers and vice versa. This launderer skimmed millions from customers.
 - Even a crypto-friendly U.S. senator is [calling for the Department of Justice to investigate Tether][tetherletter].
 - Tether has bragged on its company blog that it helps users break the law and [avoid capital controls][capctrls].
-- Official Tether documentation [instructed users to lie][patio2019] on wire transfers, so as not to alert banks they were dealing with crypto. 
+- Official Tether documentation [instructed users to lie][patio2019] on wire transfers, so as not to alert banks they were dealing with crypto.
 
 > “It’s not about one report,” Sen. Elizabeth Warren (D-Mass.) told us Monday night. “It’s about the whole structure of crypto that attracts some of the worst people around the world to move value around in a way that they cannot do through the ordinary banking system.”
-> 
+>
 > \- Brendan Petersen, [Punchbowl News][punchbowl]
 
-#### Reserves 
+#### Reserves
 
 - Tether has [never undergone a full, independent audit][audit] of its reserves.
 - Tether has [been caught lying][pationov] several times about the composition and amount in their reserves.
 - For example, they [claimed][nopaper] their reserves did not include Chinese commercial paper. When Bloomberg and CoinDesk filed a public records request to obtain information on this subject, Tether fought them in court. The records revealed [Tether lied][chinesepaper].
-- Tether [required recapitalization at least twice in 2022][pationov] and did not disclose it. 
+- Tether [required recapitalization at least twice in 2022][pationov] and did not disclose it.
 - In 2019 and 2020, Tether [issued huge numbers of new tethers][anon] whenever their court case with the New York attorney general went badly.
 - Tether issues new tokens in blocks of [suspiciously round numbers][anon], implying demand is not genuine.
 - Tether [gives lots of tethers to offshore crypto exchanges][anon]. The exchanges give these away as freebies to entice new users to sign up. The volume and ease with which the exchanges hand out tethers implies they value them at less than $1 apiece.
-- According to *Number Go Up*, Tether was cut off from the banking system by U.S. and Taiwanese banks in 2017. It literally could not accept dollars for the entire summer. During this time, it issued 200 million new tethers. 
+- According to _Number Go Up_, Tether was cut off from the banking system by U.S. and Taiwanese banks in 2017. It literally could not accept dollars for the entire summer. During this time, it issued 200 million new tethers.
 - Former Celsius CEO Alex Mashinsky (since [charged with fraud][mashfraud]) revealed Tether prints new tethers and loans them to other crypto businesses in exchange for crypto collateral. If Tether's reserves were really as good as they claim, [these loans make no sense][tetherloan].
 - Tether, according to its own attestations, is [massively leveraged][pationov] and has taken on huge amounts of risk.
 
@@ -74,9 +74,9 @@ Three things seem clear.
 
 One, Tether has been backed and unbacked at different points in time. They hide the contents, location and composition of their reserves so we can't know when they're in trouble. I don't know if they are backed as of writing this.
 
-Two, I have no idea when or if Tether will fail. It *should* fail. But, Tether's proven adept at [buying time][pationov], and stranger things have happened. 
+Two, I have no idea when or if Tether will fail. It _should_ fail. But, Tether's proven adept at [buying time][pationov], and stranger things have happened.
 
-One note on that subject. I am not excited for Tether's fall. I have little sympathy for crypto boosters who knew what they were getting into, but it'll also hurt regular people whose only crime was falling for the hype. 
+One note on that subject. I am not excited for Tether's fall. I have little sympathy for crypto boosters who knew what they were getting into, but it'll also hurt regular people whose only crime was falling for the hype.
 
 For example—if you want to have a bad time—read the [letters to the judge from Celsius creditors][celsiusletters].
 
@@ -88,7 +88,7 @@ People would lose college savings, money from their family, retirement funds and
 
 It would substantially damage crypto as a whole, because tethers are so deeply embedded in the ecosystem.
 
-> If you believe [an] asset is riskless for long enough it will find itself in the infinite variety of structures which need a riskless asset, and when those structures suddenly have a hole where their riskless asset should be, calamity quickly follows. 
+> If you believe [an] asset is riskless for long enough it will find itself in the infinite variety of structures which need a riskless asset, and when those structures suddenly have a hole where their riskless asset should be, calamity quickly follows.
 >
 > \- [Patrick McKenzie][patio2019]
 
@@ -98,8 +98,8 @@ I think the DoJ will do something, even if it's just a fine. They've [dithered f
 
 ### Recommended reading
 
-- The [first][patio2019], [second][patiomay] and [third][pationov] posts on Tether by Patrick McKenzie, a former Stripe employee and financial writer. Makes a convincing case Tether has been under-capitalized several times in the recent past. 
-- [*Number Go Up*][numbergoup] by Zeke Faux. Faux uncovers some truly eyebrow-raising details about the Tether founders, like the factory fire.
+- The [first][patio2019], [second][patiomay] and [third][pationov] posts on Tether by Patrick McKenzie, a former Stripe employee and financial writer. Makes a convincing case Tether has been under-capitalized several times in the recent past.
+- [_Number Go Up_][numbergoup] by Zeke Faux. Faux uncovers some truly eyebrow-raising details about the Tether founders, like the factory fire.
 - Matt Levine on [Tether's "loan" business][tetherloan].
 - ["The Bit Short: Inside Crypto’s Doomsday Machine"][anon]: Take this with a grain of salt, as it's anonymous and unconfirmed. It sketches a convincing theory Tether is printing unbacked tokens to hold up the price of Bitcoin (which Tether [confirmed][tetherloan]).
 - [Faux's 2021 Bloomberg article][wheretether] exploring where exactly Tether keeps its holdings.
