@@ -48,6 +48,7 @@ Runes bypass the problem by unifying change detection. There're only `$state` va
 
 ```svelte
 <script>
+  // via https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_stores
   import { alert } from '../stores.js';
   import { onDestroy } from 'svelte';
 
@@ -58,8 +59,6 @@ Runes bypass the problem by unifying change detection. There're only `$state` va
   onDestroy(unsubscribe);
 </script>
 
-// via
-https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_stores
 {#if alertContent}
   <div on:click={() => (alertContent = '')}>
     <p>{alertContent}</p>
@@ -82,7 +81,7 @@ To create derived state in Svelte 5:
 
 The bit inside `$derived()`, `count * 2`, is a JavaScript [expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators). Expressions evaluate to a value.
 
-This is fine for one-line expressions, but painful for calculating derived state with multiple steps. There's no way to split it up without using more than one `$derived` variable. I would love to be wrong about this. Please [let me know]({base}/contact) if I am.
+This is fine for short pieces of logic, but painful for calculating derived state with multiple steps. There's no way to split it up without using more than one `$derived` variable. I would love to be wrong about this. Please [let me know]({base}/contact) if I am.
 
 <script>
   import {base} from '$app/paths';
@@ -127,7 +126,7 @@ let knownForCredits = $derived(
 
 It would be nice to be able to provide `$derived()` an anonymous callback function. Then I could split the calculations multiple lines without `(() => { ... })()`.
 
-I got this idea from derived signals in Angular, which [accept callbacks](https://angular.io/guide/signals#computed-signals):
+I got this idea from Angular. Their version of `$derived()`, `computed()`, [accepts a callback](https://angular.io/guide/signals#computed-signals):
 
 ```typescript
 // via angular.io
