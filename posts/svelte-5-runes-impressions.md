@@ -18,7 +18,7 @@ I was skeptical about runes, but on balance, they're an improvement.
 
 #### Explicitness
 
-Runes give variables clear roles. Updating a `$state()` variable updates the component. `$derived()` variables also update the component, but obviously you don't manage those. 
+Runes give variables clear roles. Updating a `$state()` variable updates the component. `$derived()` variables also update the component, but obviously you don't manage those.
 
 #### Simplicity
 
@@ -32,7 +32,7 @@ Experienced developers are used to `export let` and `$`, but spare a thought for
 
 #### Unified change detection
 
-Any complex frontend has a _structure_ and a _superstructure_. The structure is UI components, what the user sees. 
+Any complex frontend has a _structure_ and a _superstructure_. The structure is UI components, what the user sees.
 
 The superstructure is everything else. It's:
 
@@ -40,29 +40,30 @@ The superstructure is everything else. It's:
 - The code sharing state among multiple components
 - The class that caches app data to `localStorage`
 
-...and so on. 
+...and so on.
 
 As an app grows more complex, it accumulates superstructure. However, in Svelte 4, that superstructure has a different change detection system than the components upon which it rests. `let` variables are normal JavaScript, and updating them does not update your components. [Stores](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_stores) exist to solve this problem.
 
 Runes bypass the problem by unifying change detection. There're only `$state` variables in the structure and superstructure.
 
 ```svelte
-// via https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_stores
 <script>
-  import { alert } from '../stores.js'
-  import { onDestroy } from 'svelte'
+  import { alert } from '../stores.js';
+  import { onDestroy } from 'svelte';
 
   // alertContent is redundant! Runes let me use alert directly
-  let alertContent = ''
-  const unsubscribe = alert.subscribe((value) => alertContent = value)
+  let alertContent = '';
+  const unsubscribe = alert.subscribe(value => (alertContent = value));
 
-  onDestroy(unsubscribe)
+  onDestroy(unsubscribe);
 </script>
 
+// via
+https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_stores
 {#if alertContent}
-<div on:click={() => alertContent = ''}>
-  <p>{ alertContent }</p>
-</div>
+  <div on:click={() => (alertContent = '')}>
+    <p>{alertContent}</p>
+  </div>
 {/if}
 ```
 
