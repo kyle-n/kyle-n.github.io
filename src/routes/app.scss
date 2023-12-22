@@ -21,6 +21,16 @@ a.jumpy-link {
   }
 }
 
+p {
+  img {
+    margin-bottom: 0;
+  }
+
+  &:has(> img) {
+    margin-bottom: 0;
+  }
+}
+
 :where(h2, h3, h4, h5, h6) {
   .icon-link {
     position: relative;
