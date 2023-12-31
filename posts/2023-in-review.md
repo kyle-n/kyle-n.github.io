@@ -20,7 +20,7 @@ But I digress. 2023 was an eventful year, filled with challenges and improvement
 
 At work, I spent the year helping clients with their frontends. I solved one particularly thorny issue for a client whose Angular app needed to collect data from several different microservices. I'll have a long post about that one soon.
 
-For my personal projects, I spent a fair bit of time rewriting this website in [SvelteKit](https://kit.svelte.dev). Svelte was a joy to learn and even more to write. I loved [building a full-content RSS feed]({base}/blog/full-content-rss-feed-with-sveltekit-part-two) for my posts and [contributing to Svelte open source]({base}blog/svelte-testing-library-pr-globals). I also figured out a neat trick to write [even shorter Markdown image syntax]({base}/blog/markdown-images-for-sveltekit-blogs) using Remark.
+For my personal projects, I spent a fair bit of time rewriting this website in [SvelteKit](https://kit.svelte.dev). Svelte was a joy to learn and even more to write. I loved [building a full-content RSS feed]({base}/blog/full-content-rss-feed-with-sveltekit-part-two) for my posts and [contributing to Svelte open source]({base}/blog/svelte-testing-library-pr-globals). I also figured out a neat trick to write [even shorter Markdown image syntax]({base}/blog/markdown-images-for-sveltekit-blogs) using Remark.
 
 I love the site. It's reinvigorated my love of blogging, which I am trying to do every week. Nothing improves your writing more than doing it as much as possible. It's been wonderful to reconnect to an old passion of mine.
 
