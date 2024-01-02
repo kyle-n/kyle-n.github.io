@@ -12,7 +12,7 @@ Coworkers at software companies are sometimes surprised to learn I went to schoo
 
 Sometimes people ask me why I left journalism. I left for two reasons.
 
-First, "reporting" and "speaking to strangers" was tough for an introvert. I prefer my sitting in my office solving logic puzzles ("programming").
+First, reporting and speaking to strangers was tough for an introvert. I prefer sitting in my office solving logic puzzles ("programming").
 
 The other reason is sad. The news industry is dying. I don't think non-journalists realize how bleak things are. I got out in 2019 when the getting was good.
 
@@ -78,14 +78,14 @@ An extremely orange photo of my AJC squad at dinner. Love y'all.
 
 I liked my coworkers, who were smart, funny, hardworking people. The problem was the AJC treated contractors _terribly_.
 
-One of the breaking news reporters was a contractor. Like me, she had no benefits or paid time off. She gave birth and was back at work **three days** later. Couldn't afford maternity leave.
+One of the breaking news reporters was a contractor. Like me, she had no benefits or paid time off. She gave birth and was back at work **three days** later. Couldn't afford unpaid maternity leave.
 
-Many younger AJC employees were contractors in name only. We performed the exact same jobs as full-time employees, using company equipment, during company hours, working on projects chosen by the company. It sure seemed like a violation of labor law. [^2] [^3]
+Many younger AJC employees were contractors in name only. We performed the exact same jobs as full-time employees, using company equipment, during company hours, working on projects chosen by the company. I don't know if it was a violation of labor law, but it felt unfair and disrespectful. [^2] [^3]
 
 [^2]: Not the only questionable thing the AJC did! I once shared a wire story on ajc.com about how to cancel your cable for streaming services. The story was taken down (not by me) because the AJC is part of the same corporate conglomerate as cable provider [Cox Communications](https://en.wikipedia.org/wiki/Cox_Communications). I was told, "We shouldn't encourage people to cancel their cable."
 [^3]: Okay, one more AJC story. There was a famously dirty, unsafe Kroger east of Midtown. It was known as [Murder Kroeger](https://atlanta.curbed.com/2014/8/15/10060010/murder-kroger), on account of the [murders](https://en.wikipedia.org/wiki/Murder_Kroger#Murders_and_victims). My team was told to never publish that name because Kroeger was a huge advertiser.
 
-In the first year, my supervisor promised she'd look into making me full-time. That never happened.
+My supervisor promised she'd look into making me full-time. That never happened.
 
 One reason for the company's poor treatment of staff was its dire financials. Every quarter, we had an all-staff meeting. They were surprisingly candid. I learned, for example, the AJC's revenue had fallen 6.3% for the last few years, every year.
 
@@ -97,7 +97,7 @@ I couldn't comprehend this. In the three years I'd been at the AJC, we'd put so 
 
 Pictured: [Jan. 6, 2010](https://web.archive.org/web/20100106092524/http://www.ajc.com/). Traffic only got worse from here.
 
-Ben Thompson was right. The water was rising.
+My work didn't matter. Ben Thompson was right - the water was rising.
 
 ### Software
 
