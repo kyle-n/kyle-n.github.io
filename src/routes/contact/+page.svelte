@@ -3,6 +3,7 @@
     BLOG_AUTHOR_BLUESKY,
     BLOG_AUTHOR_EMAIL,
     BLOG_AUTHOR_GITHUB,
+    BLOG_AUTHOR_INSTAGRAM,
     BLOG_AUTHOR_LINKEDIN,
     BLOG_AUTHOR_MASTODON,
     BLOG_AUTHOR_TWITTER
@@ -23,7 +24,11 @@
       name: 'Bluesky',
       href: `https://bsky.app/profile/${BLOG_AUTHOR_BLUESKY}`
     },
-    { name: 'Twitter', href: `https://twitter.com/${BLOG_AUTHOR_TWITTER}` }
+    { name: 'Twitter', href: `https://twitter.com/${BLOG_AUTHOR_TWITTER}` },
+    {
+      name: 'Instagram',
+      href: `https://instagram.com/${BLOG_AUTHOR_INSTAGRAM}`
+    }
   ];
 </script>
 

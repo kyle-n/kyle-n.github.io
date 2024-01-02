@@ -12,6 +12,8 @@ I also spent some time adding an RSS feed with the full content of every post. A
 
 Let's be the change we want to see in the world and build a full-content RSS feed in SvelteKit.
 
+**Update Dec. 2023:** This guide is partially outdated. Please see the [updated version]({base}/blog/full-content-rss-feed-with-sveltekit-part-two).
+
 ### Prerendering
 
 To make an RSS feed for your SvelteKit blog, create a new folder under `/routes` called `rss.xml`. This file will technically be an [Atom](<https://en.wikipedia.org/wiki/Atom_(web_standard)>) feed, not RSS, but the difference is irrelevant and I'm just going to use the term "RSS" in this post (do not @ me).
