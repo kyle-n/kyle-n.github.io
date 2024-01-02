@@ -2,7 +2,7 @@
 layout: post
 title: Why I left journalism for software
 description: What to do when you love your field, but it doesn't love you back.
-date: 2023-12-20
+date: 2024-01-01
 keywords: personal
 image: ajc-team.jpg
 caption: My awesome Atlanta Journal-Constitution team
