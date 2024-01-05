@@ -1,4 +1,4 @@
-import { BLOG_URL, DEFAULT_POSTS_PER_PAGE } from '$lib/blog-metadata';
+import { BLOG_URL } from '$lib/blog-metadata';
 import { getAllPosts, getCorrectedPostDate } from '$lib/post-handlers';
 import { create } from 'xmlbuilder2';
 
