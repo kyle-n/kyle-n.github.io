@@ -143,6 +143,8 @@ const conditionalCount = computed(() => {
 
 This is more flexible and less verbose than IIFEs. I always misplace a parenthesis writing those.
 
+**Edit January 2024**: Please visit the [GitHub issue](https://github.com/sveltejs/svelte/issues/9968) discussing this issue if you wish to weigh in.
+
 #### TypeScript syntax for `$props`
 
 I wish the TypeScript syntax for passing props into a component were shorter.
