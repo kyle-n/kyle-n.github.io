@@ -81,7 +81,7 @@ async function getHtmlForPost(
     .trim();
   const processedMarkdown = await unified()
     .use(remarkParse)
-    .use(remarkRehype)
+    .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeStringify)
     .use(remarkGfm)
     .process(postMarkdown);
