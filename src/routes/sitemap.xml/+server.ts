@@ -15,7 +15,6 @@ export async function GET() {
 // prettier-ignore
 async function getSitemapXml(): Promise<string> {
   const allPosts = await getAllPosts();
-  const sitemapPosts = allPosts.slice(0, DEFAULT_POSTS_PER_PAGE);
   const root = create({ version: '1.0', encoding: 'utf-8' })
   .ele('urlset', {
     xmlns: 'http://www.sitemaps.org/schemas/sitemap/0.9',
@@ -26,7 +25,7 @@ async function getSitemapXml(): Promise<string> {
     'xmlns:video': 'http://www.google.com/schemas/sitemap-video/1.1',
   })
 
-  for await (const post of sitemapPosts) {
+  for await (const post of allPosts) {
     const postUrl = `${BLOG_URL}/blog/${post.postPath}`;
     const pubDate = getCorrectedPostDate(post.metadata.date);
 
