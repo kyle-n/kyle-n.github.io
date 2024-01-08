@@ -29,7 +29,7 @@ export async function GET() {
 // prettier-ignore
 async function getRssXml(): Promise<string> {
   const allPosts = await getAllPosts();
-  const rssPosts = allPosts.slice(0, 10);
+  const rssPosts = allPosts.slice(0, 10).filter(post => post.metadata.title === 'Why is it so hard to find out one fact about Marie Antoinette?')
   const rssUrl = `${BLOG_URL}/rss.xml`;
   const root = create({ version: '1.0', encoding: 'utf-8' })
   .ele('feed', {
@@ -95,7 +95,10 @@ async function getHtmlForPost(
   addBasePrefixToImages(postDom);
   removeBasePrefixFromElements(postDom);
   inlineFootnotes(postDom);
-  convertYouTubeEmbedsToLinks(postDom);
+  // convertYouTubeEmbedsToLinks(postDom);
+  postDom.window.document.body.innerHTML = stripScriptTags(
+    postDom.window.document.body.innerHTML
+  );
 
   if (leadImageFilename) {
     const leadImage = postDom.window.document.createElement('img');
@@ -163,7 +166,10 @@ function inlineFootnotes(dom: JSDOM): void {
 
 function convertYouTubeEmbedsToLinks(dom: JSDOM): void {
   dom.window.document.body.innerHTML =
-    dom.window.document.body.innerHTML.replaceAll('&amp;lt;iframe', '&#x3C;iframe');
+    dom.window.document.body.innerHTML.replaceAll(
+      '&amp;lt;iframe',
+      '&#x3C;iframe'
+    );
   const youtubeIframes = Array.from(
     dom.window.document.getElementsByTagName('iframe')
   ).filter(iframe => {
@@ -179,4 +185,19 @@ function convertYouTubeEmbedsToLinks(dom: JSDOM): void {
     link.textContent = `https://youtu.be/${videoId}`;
     iframe.replaceWith(link);
   });
+}
+
+function stripScriptTags(postHtml: string): string {
+  const encodedOpeningScriptTag = '&amp;lt;script&gt';
+  const encodedClosingScriptTag = '&amp;lt;/script&gt;';
+  const openingIndex = postHtml.indexOf(encodedOpeningScriptTag);
+  const closingIndex = postHtml.indexOf(encodedClosingScriptTag);
+  if (openingIndex !== -1 && closingIndex !== -1) {
+    postHtml =
+      postHtml.slice(0, openingIndex) +
+      postHtml.slice(closingIndex + encodedClosingScriptTag.length);
+    return stripScriptTags(postHtml);
+  } else {
+    return postHtml;
+  }
 }
