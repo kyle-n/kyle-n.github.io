@@ -95,6 +95,7 @@ async function getHtmlForPost(
   addBasePrefixToImages(postDom);
   removeBasePrefixFromElements(postDom);
   inlineFootnotes(postDom);
+  convertYouTubeEmbedsToLinks(postDom);
 
   if (leadImageFilename) {
     const leadImage = postDom.window.document.createElement('img');
@@ -157,5 +158,25 @@ function inlineFootnotes(dom: JSDOM): void {
       footnoteContentElem?.setAttribute('id', newFootnoteHref.slice(1));
       link.setAttribute('href', newFootnoteHref);
     }
+  });
+}
+
+function convertYouTubeEmbedsToLinks(dom: JSDOM): void {
+  dom.window.document.body.innerHTML =
+    dom.window.document.body.innerHTML.replaceAll('&amp;lt;iframe', '&#x3C;iframe');
+  const youtubeIframes = Array.from(
+    dom.window.document.getElementsByTagName('iframe')
+  ).filter(iframe => {
+    const src = iframe.getAttribute('src') ?? '';
+    return src.startsWith('https://www.youtube.com/embed/');
+  }) as HTMLIFrameElement[];
+
+  youtubeIframes.forEach(iframe => {
+    const src = iframe.getAttribute('src') ?? '';
+    const videoId = src.slice('https://www.youtube.com/embed/'.length);
+    const link = dom.window.document.createElement('a');
+    link.setAttribute('href', `https://youtu.be/${videoId}`);
+    link.textContent = `https://youtu.be/${videoId}`;
+    iframe.replaceWith(link);
   });
 }
