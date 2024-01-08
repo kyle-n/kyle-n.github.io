@@ -97,7 +97,7 @@ async function getHtmlForPost(
   removeBasePrefixFromElements(postDom);
   inlineFootnotes(postDom);
   convertYouTubeEmbedsToLinks(postDom);
-  stripScriptTags(postDom);
+  stripScriptsAndComments(postDom);
 
   if (leadImageFilename) {
     const leadImage = postDom.window.document.createElement('img');
@@ -193,13 +193,15 @@ function convertYouTubeEmbedsToLinks(dom: JSDOM): void {
 
 // Removes top-level <script> base imports from the post body
 // Should leave <script>s in code blocks alone
-function stripScriptTags(dom: JSDOM): void {
+function stripScriptsAndComments(dom: JSDOM): void {
   const encodedScriptOpeningTag = '&lt;script';
+  const encodedCommentOpeningTag = '&lt;!--';
   dom.window.document.body.childNodes.forEach(node => {
     const textContent = node.textContent?.trim() ?? '';
     if (
       node.nodeType === dom.window.Node.TEXT_NODE &&
-      textContent.startsWith(encodedScriptOpeningTag)
+      (textContent.startsWith(encodedScriptOpeningTag) ||
+        textContent.startsWith(encodedCommentOpeningTag))
     ) {
       node.remove();
     }
