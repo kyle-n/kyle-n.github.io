@@ -97,9 +97,7 @@ async function getHtmlForPost(
   removeBasePrefixFromElements(postDom);
   inlineFootnotes(postDom);
   convertYouTubeEmbedsToLinks(postDom);
-  postDom.window.document.body.innerHTML = stripScriptTags(
-    postDom.window.document.body.innerHTML
-  );
+  stripScriptTags(postDom);
 
   if (leadImageFilename) {
     const leadImage = postDom.window.document.createElement('img');
@@ -193,17 +191,17 @@ function convertYouTubeEmbedsToLinks(dom: JSDOM): void {
   });
 }
 
-function stripScriptTags(postHtml: string): string {
-  const encodedOpeningScriptTag = '&amp;lt;script&gt';
-  const encodedClosingScriptTag = '&amp;lt;/script&gt;';
-  const openingIndex = postHtml.indexOf(encodedOpeningScriptTag);
-  const closingIndex = postHtml.indexOf(encodedClosingScriptTag);
-  if (openingIndex !== -1 && closingIndex !== -1) {
-    postHtml =
-      postHtml.slice(0, openingIndex) +
-      postHtml.slice(closingIndex + encodedClosingScriptTag.length);
-    return stripScriptTags(postHtml);
-  } else {
-    return postHtml;
-  }
+// Removes top-level <script> base imports from the post body
+// Should leave <script>s in code blocks alone
+function stripScriptTags(dom: JSDOM): void {
+  const encodedScriptOpeningTag = '&lt;script';
+  dom.window.document.body.childNodes.forEach(node => {
+    const textContent = node.textContent?.trim() ?? '';
+    if (
+      node.nodeType === dom.window.Node.TEXT_NODE &&
+      textContent.startsWith(encodedScriptOpeningTag)
+    ) {
+      node.remove();
+    }
+  });
 }
