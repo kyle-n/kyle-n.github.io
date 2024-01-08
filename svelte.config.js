@@ -12,7 +12,7 @@ let BLOG_URL;
 if (dev) {
   BLOG_URL = 'http://localhost:5173';
 } else {
-  BLOG_URL = 'https://www.kylenazario.com';
+  BLOG_URL = 'https://kylenazario.com';
 }
 
 /** @type {import('@sveltejs/kit').Config} */
