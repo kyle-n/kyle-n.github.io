@@ -20,7 +20,7 @@ Building a sitemap is similar to [creating an RSS feed]({base}/blog/full-content
 
 ### Steps
 
-First, install [xmlbuilder2](https://oozcitak.github.io/xmlbuilder2/) using NPM. 
+First, install [xmlbuilder2](https://oozcitak.github.io/xmlbuilder2/) using NPM.
 
 Second, create a function called `getAllPosts()` that returns an array of file paths to your blog posts. See [this guide](https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog#writing-a-utility-to-fetch-posts) or [my implementation](https://github.com/kyle-n/kyle-n.github.io/blob/d1671c1eec8fd2da93b5a5abdffb805fa8e4b4c0/src/lib/post-handlers.ts#L3).
 
@@ -40,11 +40,11 @@ export async function GET() {
 }
 ```
 
-When SvelteKit builds the site, it will create a file `sitemap.xml` accessible at `yourdomain.com/sitemap.xml`. We'll give this URL to Google later. 
+When SvelteKit builds the site, it will create `sitemap.xml` at `yourdomain.com/sitemap.xml`. We'll give this URL to Google later.
 
 ### Build the XML
 
-We'll use `xmlbuilder2` to create the file without messy string interpolation.
+We'll use `xmlbuilder2` to create the sitemap without messy string interpolation.
 
 ```typescript
 // src/routes/sitemap.xml/+server.ts
@@ -61,7 +61,7 @@ async function getSitemapXml(): Promise<string> {
     'xmlns:news': 'http://www.google.com/schemas/sitemap-news/0.9',
     'xmlns:video': 'http://www.google.com/schemas/sitemap-video/1.1',
   })
-  
+
 // ...
 ```
 
@@ -80,6 +80,7 @@ This will produce an XML shell...
 
 ...which we can fill in with links to our blog posts.
 
+<!-- prettier-ignore -->
 ```typescript
 // src/routes/sitemap.xml/+server.ts
 // ...
@@ -168,6 +169,6 @@ async function getSitemapXml(): Promise<string> {
 }
 ```
 
-Publish your site. Make sure you can see the XML file content at `yourdomain.com/sitemap.xml`. 
+Publish your site. Make sure you can see the XML file content at `yourdomain.com/sitemap.xml`.
 
 Last, follow [Google's instructions](https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap#addsitemap) to submit a sitemap in the Search Console. They will periodically crawl your site from now on to get an index of pages.
