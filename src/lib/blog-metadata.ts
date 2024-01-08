@@ -5,7 +5,7 @@ export let BLOG_URL: string;
 if (dev) {
   BLOG_URL = 'http://localhost:5173';
 } else {
-  BLOG_URL = 'https://www.kylenazario.com';
+  BLOG_URL = 'https://kylenazario.com';
 }
 export const BLOG_DOMAIN = 'kylenazario.com';
 export const BLOG_DESCRIPTION =
