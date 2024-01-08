@@ -3,7 +3,8 @@ import {
   BLOG_AUTHOR_EMAIL,
   BLOG_DESCRIPTION,
   BLOG_TITLE,
-  BLOG_URL
+  BLOG_URL,
+  DEFAULT_POSTS_PER_PAGE
 } from '$lib/blog-metadata';
 import { getAllPosts, getCorrectedPostDate } from '$lib/post-handlers';
 import { create } from 'xmlbuilder2';
@@ -29,7 +30,7 @@ export async function GET() {
 // prettier-ignore
 async function getRssXml(): Promise<string> {
   const allPosts = await getAllPosts();
-  const rssPosts = allPosts.slice(0, 10).filter(post => post.metadata.title === 'Why is it so hard to find out one fact about Marie Antoinette?')
+  const rssPosts = allPosts.slice(0, DEFAULT_POSTS_PER_PAGE);
   const rssUrl = `${BLOG_URL}/rss.xml`;
   const root = create({ version: '1.0', encoding: 'utf-8' })
   .ele('feed', {
@@ -95,7 +96,7 @@ async function getHtmlForPost(
   addBasePrefixToImages(postDom);
   removeBasePrefixFromElements(postDom);
   inlineFootnotes(postDom);
-  // convertYouTubeEmbedsToLinks(postDom);
+  convertYouTubeEmbedsToLinks(postDom);
   postDom.window.document.body.innerHTML = stripScriptTags(
     postDom.window.document.body.innerHTML
   );
@@ -169,6 +170,11 @@ function convertYouTubeEmbedsToLinks(dom: JSDOM): void {
     dom.window.document.body.innerHTML.replaceAll(
       '&amp;lt;iframe',
       '&#x3C;iframe'
+    );
+  dom.window.document.body.innerHTML =
+    dom.window.document.body.innerHTML.replaceAll(
+      '&amp;lt;/iframe',
+      '&#x3C;/iframe'
     );
   const youtubeIframes = Array.from(
     dom.window.document.getElementsByTagName('iframe')
