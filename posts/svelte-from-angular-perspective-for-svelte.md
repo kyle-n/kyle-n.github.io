@@ -11,11 +11,11 @@ image: angular-svelte.png
   import { base } from '$app/paths';
 </script>
 
-Last year, I rewrote this blog in [SvelteKit](https://kit.svelte.dev). Svelte was a nice change of pace from my day job helping clients build Angular apps (please [get in touch](https://www.bitovi.com/services/frontend-development-consulting) if you need help!).
+Last year, I rewrote this blog in [SvelteKit](https://kit.svelte.dev). It was a nice change of pace from my day job helping clients build Angular apps (please [get in touch](https://www.bitovi.com/services/frontend-development-consulting) if you need help!).
 
-As someone who's been primarily Angular-focused for the last four and a half years, I found SvelteKit great in most ways and lacking in others. This post will be for Svelte devs - you don't need to know anything about Angular.
+As someone who's been Angular-focused for the last four and a half years, I found SvelteKit great in most ways and lacking in others. This post will be for Svelte devs - you don't need to know anything about Angular.
 
-(I'll write a separate post for Angular devs with my Svelte impressions.)
+(I have a [separate post for Angular devs]({base}/blog/svelte-from-angular-perspective-for-angular) with my Svelte impressions.)
 
 ### Simplicity
 
@@ -25,19 +25,19 @@ Angular is a ["batteries-included"](https://en.wikipedia.org/wiki/Batteries_Incl
 
 Everything in Angular is _useful_, but, as [Johanna Pearce](https://toot.cat/@johanna) pointed out in her great [ng-conf](https://ng-conf.org) talk last year (sadly not online), putting it all in the framework can be overwhelming. There's no progressive disclosure.
 
-SvelteKit is far more minimalist. It does components, and routing, and some state management, and... that's it. It'll ask if you want unit and end-to-end tests when generating a new project, but they're optional.
+SvelteKit is minimalist. It provides a Node server, routing, server-side rendering, components, some state management, and... that's it. Even the unit and end-to-end tests are optional. 
 
 It's just so much less to learn. I would much rather teach Svelte than Angular to a team new to frontend.
 
 ### Full stack by default
 
-In recent years, frontend frameworks have become more full stack. It's not enough to have components. You have to have a way to serve them from a Node app. That lets you do [server-side rendering](https://www.reddit.com/r/Frontend/comments/vjok9v/what_is_server_side_rendering/) and share code with your JS backed. It's a really powerful way to create a full stack app quickly.
+In recent years, frontend frameworks have become more full stack. It's not enough to have components. You have to have a way to serve them from a Node app. That lets you do [server-side rendering](https://www.reddit.com/r/Frontend/comments/vjok9v/what_is_server_side_rendering/) and share code with your JS backend. It's a really powerful way to create a full stack app quickly.
 
 Angular is adapting with [Angular Universal](https://github.com/angular/universal) and some [recent SSR improvements](https://blog.angular.io/introducing-angular-v17-4d7033312e4b). However, Angular Universal feels halfhearted compared to Next.js and SvelteKit. The latter two have more features and feel more production-ready. You can't even selectively prerender some routes with Angular Universal - it requires SSR for the whole app.
 
 ### No RxJS
 
-I was once out to dinner with some coworkers. We were discussing different programming languages and tools. One of my coworkers asked why functional programming has never caught on. People who try it love it, he said.
+I was once out to dinner with some coworkers. We were discussing different programming languages and tools. One of my coworkers asked why functional programming has never caught on. People who try it love it, this coworker said.
 
 Our team lead, who's been in the industry for years, sighed. "For most people, functional programming is just too hard."
 
