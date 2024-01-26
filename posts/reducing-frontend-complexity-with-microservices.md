@@ -8,7 +8,7 @@ caption: DALL-E 2 - "a web page connected to a constellation of servers. 1950s p
 keywords: angular, showcase, frontend, typescript, javascript, node, tutorial, bitovi, rxjs
 ---
 
-Six months ago, a Bitovi client needed help with their web app. The frontend was too complicated and hard to test. They weren't sure how to fix it. I presented three approaches and helped rewrite the frontend to be simpler and more testable.
+Six months ago, a Bitovi client needed help with their web app. The frontend was too complicated and hard to test. They weren't sure how to fix it. I presented three approaches and helped rewrite the frontend to be simpler and more testable. It was a fascinating problem to solve.
 
 To protect the client's privacy, the [sample code](https://github.com/kyle-n/catering-masters) for this article will be a web app I wrote to demonstrate the problem. The [sample project](https://github.com/kyle-n/catering-masters) has separate branches for each possible solution. Like the real client's app, it's written in Angular. However, the problem it demonstrates can happen in any frontend framework.
 
@@ -109,9 +109,9 @@ It loads this data for the template:
 ></app-submit-buttons>
 ```
 
-- It needs customer$ and address$ to display the customer's name and address in the header
-- It needs address$ to get products$ to display a list of possible products
-- It needs products$ to get lineItems$ to display a table of line items
+- It needs `customer$` and `address$` to display the customer's name and address in the header
+- It needs `address$` to get `products$` to display a list of possible products
+- It needs `products$` to get `lineItems$` to display a table of line items
 
 And yet, that `constructor()` is impossible to test.
 
@@ -441,7 +441,7 @@ Overall, though, the separation of concerns and ease of testing make NgRx a grea
 
 One more potential solution is to create *another* server. This server will sit between the frontend and existing microservices. It will talk to them for the frontend, process the data and return only what the client needs. This is the [backend for frontend pattern](https://samnewman.io/patterns/architectural/bff/).
 
-> The BFF is tightly coupled to a specific user experience, and will typically be maintained by the same team as the user interface, thereby making it easier to define and adapt the API as the UI requires, while also simplifying process of lining up release of both the client and server components.
+> The BFF is tightly coupled to a specific user experience, and will typically be maintained by the same team as the user interface, thereby making it easier to define and adapt the API as the UI requires, while also simplifying process of lining up release of both the client and server components.
 
 Since a BFF will be maintained by the frontend team, you should write it in TypeScript. Since it will be tightly coupled to the UI, you should include it in the frontend repository. Last, since the frontend is in Angular, your backend could use "Angular for the server" - [NestJS](https://nestjs.com).
 
