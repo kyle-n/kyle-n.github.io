@@ -5,7 +5,7 @@
   export let date: Date | string;
 
   const dateWithTimezoneOffset = getCorrectedPostDate(date);
-  const content = dayjs(dateWithTimezoneOffset).toISOString();
+  const content = dayjs(dateWithTimezoneOffset).format();
 </script>
 
 <svelte:head>
