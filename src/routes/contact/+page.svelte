@@ -8,6 +8,7 @@
     BLOG_AUTHOR_MASTODON,
     BLOG_AUTHOR_TWITTER
   } from '$lib/blog-metadata';
+  import BuildTimePublishDate from '$lib/components/build-time-publish-date.svelte';
   import CanonicalUrl from '$lib/components/canonical-url.svelte';
   import DefaultLeadImage from '$lib/components/default-lead-image.svelte';
   import PageDescription from '$lib/components/page-description.svelte';
@@ -36,6 +37,7 @@
 <PageTitle title="Contact" />
 <PageDescription description="Contact information" />
 <CanonicalUrl path="/contact" />
+<BuildTimePublishDate />
 <DefaultLeadImage />
 
 <h2>Contact</h2>

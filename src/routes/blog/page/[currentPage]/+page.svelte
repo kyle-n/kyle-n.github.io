@@ -8,6 +8,7 @@
   import AllKeywordsLink from '$lib/components/all-keywords-link.svelte';
   import DefaultLeadImage from '$lib/components/default-lead-image.svelte';
   import CanonicalUrl from '$lib/components/canonical-url.svelte';
+  import BuildTimePublishDate from '$lib/components/build-time-publish-date.svelte';
 
   export let data: ResolvedPaginatedBlogPostList;
 </script>
@@ -15,6 +16,7 @@
 <PageTitle title="Blog" />
 <PageDescription description="All blog posts" />
 <CanonicalUrl path={`/blog/page/${data.currentPage}`} />
+<BuildTimePublishDate />
 <DefaultLeadImage />
 
 <div id="blog-page-header">
