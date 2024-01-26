@@ -1,6 +1,7 @@
 <script>
   import { base } from '$app/paths';
   import { BLOG_DESCRIPTION } from '$lib/blog-metadata';
+  import CanonicalUrl from '$lib/components/canonical-url.svelte';
   import DefaultLeadImage from '$lib/components/default-lead-image.svelte';
   import PageDescription from '$lib/components/page-description.svelte';
   import PageTitle from '$lib/components/page-title.svelte';
@@ -8,6 +9,7 @@
 
 <PageTitle title="Home" />
 <PageDescription description={BLOG_DESCRIPTION} />
+<CanonicalUrl path="/" />
 <DefaultLeadImage />
 
 <main>

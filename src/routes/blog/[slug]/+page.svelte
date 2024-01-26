@@ -1,4 +1,5 @@
 <script lang="ts">
+  import CanonicalUrl from '$lib/components/canonical-url.svelte';
   import DefaultLeadImage from '$lib/components/default-lead-image.svelte';
   import KeywordLinks from '$lib/components/keyword-links.svelte';
   import LeadImage from '$lib/components/lead-image.svelte';
@@ -12,6 +13,7 @@
 
 <PageTitle title={data.metadata.title} />
 <PageDescription description={data.metadata.description} />
+<CanonicalUrl path={`/blog/${data.slug}`} />
 
 <article>
   <div id="title-and-date">

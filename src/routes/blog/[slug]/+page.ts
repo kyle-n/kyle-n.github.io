@@ -6,6 +6,7 @@ export async function load({ params }): Promise<ResolvedBlogPost> {
   const content = post.default;
   return {
     metadata: post.metadata,
-    content
+    content,
+    slug
   };
 }
