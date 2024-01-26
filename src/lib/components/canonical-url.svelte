@@ -8,4 +8,5 @@
 
 <svelte:head>
   <link rel="canonical" {href} />
+  <meta property="og:url" content={href} />
 </svelte:head>

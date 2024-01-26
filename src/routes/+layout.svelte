@@ -7,7 +7,6 @@
 
 <svelte:head>
   <!-- Facebook -->
-  <meta property="og:url" content={BLOG_URL} />
   <meta property="og:type" content="website" />
 
   <!-- Twitter -->
