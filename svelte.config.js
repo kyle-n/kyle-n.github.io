@@ -37,7 +37,8 @@ const config = {
     }),
     paths: {
       base
-    }
+    },
+    inlineStyleThreshold: 1024
   }
 };
 
