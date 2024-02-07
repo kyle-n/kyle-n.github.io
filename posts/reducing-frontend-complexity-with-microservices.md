@@ -1,11 +1,13 @@
 ---
 layout: post
-title: 3 ways to reduce frontend complexity when loading data from multiple microservices
+title: 3 Ways to simplify frontends with multiple microservices
 description: How to use microservices without spaghetti UI code
 date: 2024-01-25
 image: 1950s-servers.png
 caption: DALL-E 2 - "a web page connected to a constellation of servers. 1950s pop art"
 keywords: angular, showcase, frontend, typescript, javascript, node, tutorial, bitovi, rxjs
+relatedLinks:
+  Original post on bitovi.com: https://www.bitovi.com/blog/3-ways-to-simplify-frontends-with-multiple-microservices
 ---
 
 Six months ago, a Bitovi client needed help with their web app. The frontend was too complicated and hard to test. They weren't sure how to fix it. I presented three approaches and helped rewrite the frontend to be simpler and more testable. It was a fascinating problem to solve.
@@ -218,7 +220,7 @@ constructor(productService: ProductService, activatedRoute: ActivatedRoute) {
 //...
 ```
 
-The customer resolver simplifies the `CreateInvoicePageComponent`. It lets you loads customer data into the component with one line, without injecting the `CustomerService`. You can also reuse the customer resolver for other components that need customer data.
+The customer resolver simplifies the `CreateInvoicePageComponent`. It lets you load customer data into the component with one line, without injecting the `CustomerService`. You can also reuse the customer resolver for other components that need customer data.
 
 However, resolvers are a poor solution for loading data that depends on other loaded data. On the [original create invoice page](https://github.com/kyle-n/catering-masters/blob/main/src/app/containers/create-invoice-page/create-invoice-page.component.ts), you had to load `address$` to load `products$` to load `lineItems$`. Resolvers run independently and simultaneously when the user opens the route they're attached to.
 
