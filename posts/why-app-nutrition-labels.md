@@ -8,11 +8,11 @@ image: nutrition-label.png
 caption: Via Google ImageFX
 ---
 
-Whenever I publish an app, I also publish its [nutrition label](https://www.nazariosoftware.com/tags.html#h-privacy-policy). The nutrition label tells users what third-party code runs in the app. As I write in my apps' privacy policies:
+Whenever I release an app, I also publish its [nutrition label](https://www.nazariosoftware.com/tags.html#h-privacy-policy). The nutrition label tells users what third-party code runs in the app. As I write in the privacy policy:
 
 > You shouldn’t have to worry [App Name] is using some privacy-sucking third-party library. Apps shouldn't be mystery meat. You should know what code goes into them.
 
-I write browser extensions, so I usually list the app's NPM packages. For example, here is the [privacy label](https://www.nazariosoftware.com/2023/06/02/mute-chat-privacy-policy.html) for [Mute Chat for BoardGameArena](https://www.nazariosoftware.com/2023/06/02/play-in-peace-with-mute-chat-for-boardgamearena.html):
+For example, here is the [privacy label](https://www.nazariosoftware.com/2023/06/02/mute-chat-privacy-policy.html) for [Mute Chat for BoardGameArena](https://www.nazariosoftware.com/2023/06/02/play-in-peace-with-mute-chat-for-boardgamearena.html):
 
 > ### Third-party code included in Mute Chat
 >
@@ -35,29 +35,27 @@ I write browser extensions, so I usually list the app's NPM packages. For exampl
 
 I know this is unusual. I do it for a few reasons. 
 
-First and most importantly, I just don't think apps should be mystery meat. You shouldn't have to worry if an app is using some privacy-destroying SDK. 
+First and most importantly, I just think it's the right thing to do. Apps shouldn't be mystery meat. The least I can do is show the top-level NPM dependencies for my browser extensions.
 
-Second, it's a gesture of respect to the user. My code is closed source [^1], but they can at least see I'm trying to be straightforward. A nutrition label and a regular privacy policy make a promise to users - kick me a couple bucks and you get an app. No funny business.
+Second, it's a gesture of respect to the user. My code is closed source [^1], but users can at least see I'm trying to be straightforward. A nutrition label and privacy policy make a promise - kick me a couple bucks and you get an app. No funny business.
 
 [^1]: I develop browser extensions. Never tried open-sourcing any of them. I've heard from other iOS devs if your open source app gets popular enough, people will just upload copies of it to the App Store. I don't want to spend my time filing takedown requests.
 
-Third, it increases credibility with technical users. Most customers don't know web dev, but some of them do. Some of them know JavaScript developers have a reputation for [solving every problem with a new NPM dependency](https://blog.appsignal.com/2020/04/09/ride-down-the-javascript-dependency-hell.html). By listing my dependencies and the reasons for them, technical users can see I add packages for a reason. Those are the kind of people who write scathing reviews on Hacker News and Reddit talking about "bloat." Don't want to make them angry!
+Third, it increases credibility with technical users. Most customers don't know web dev, but some of them do. Some of them know JavaScript developers have a reputation for [solving every problem with a new NPM dependency](https://blog.appsignal.com/2020/04/09/ride-down-the-javascript-dependency-hell.html). This way, technical users can see I add packages for a reason. These are the kind of people who write scathing comments on Hacker News and Reddit complaining about bundle sizes. Don't want to make them angry!
 
 Fourth, it's a way to get credit. I don't bloat my apps with unnecessary packages and SDKs and dependencies. My bundle sizes are better than many competitors. Users should *see* how little third-party code is taking up space on their device.
 
 Fourth, it's interesting to other developers. They can see what tools I'm using without de-minimizers or any of that nonsense.
 
-I hope sharing my dependencies will inspire others to do the same. I would like it if more apps I used did this. 
-
 ### Caveats
 
 I know this idea has limits. 
 
-- Most users won't care
-- Users who do have to rely on me instead of open source code
-- The labels also don't list *every* dependency, just the top-level NPM packages I've installed
-- Where do you draw the line? Should you list [Blink](https://www.chromium.org/blink/) or [JavaScriptCore](https://developer.apple.com/documentation/javascriptcore)?
+1. Most users won't care
+2. Users who do have to rely on me instead of open source code
+3. The labels also don't list *every* dependency, just the top-level NPM packages I've installed
+4. Where do you draw the line? Should you list [Blink](https://www.chromium.org/blink/) or [JavaScriptCore](https://developer.apple.com/documentation/javascriptcore)?
 
-Those are valid downsides, especially the last one. For me, I draw the line at top-level NPM dependencies. First-party stuff like the JavaScript engine doesn't need calling out. You already trust Apple with JavaScriptCore. That runs *all* the code in Safari. 
+Those are valid downsides, especially the last one. For me, I draw the line at top-level NPM dependencies. It's not perfect, but a little disclosure is better than none.
 
-All that said, I think it's still worth doing. I hope more people try it.
+I think it's worth doing, and I hope more people try it.
