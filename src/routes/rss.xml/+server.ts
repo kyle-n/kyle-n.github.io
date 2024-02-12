@@ -29,8 +29,7 @@ export async function GET() {
 
 // prettier-ignore
 async function getRssXml(): Promise<string> {
-  const x = await getAllPosts();
-  const allPosts = x.filter(post => post.metadata.title === '3 ways to reduce frontend complexity when loading data from multiple microservices')
+  const allPosts = await getAllPosts();
   const rssPosts = allPosts.slice(0, DEFAULT_POSTS_PER_PAGE);
   const rssUrl = `${BLOG_URL}/rss.xml`;
   const root = create({ version: '1.0', encoding: 'utf-8' })
