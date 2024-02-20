@@ -201,7 +201,7 @@ const routes: Routes = [
       customer: resolveCustomer
     }
   }
-]
+];
 
 // ...
 ```
@@ -405,24 +405,24 @@ It is straightforward to test effects. When one action comes in, something else 
 
 // ...
 
-  it('should start loading customer and address when create page is opened', done => {
-    service.createPageOpened
-      .pipe(
-        take(2),
-        reduce((acc, action) => [...acc, action], [] as Action[])
-      )
-      .subscribe({
-        next: actions => {
-          expect(actions).toEqual([
-            GetCustomer({ customerId: mockCustomer.id }),
-            GetAddress({ customerId: mockCustomer.id })
-          ]);
-        },
-        complete: done
-      });
+it('should start loading customer and address when create page is opened', done => {
+  service.createPageOpened
+    .pipe(
+      take(2),
+      reduce((acc, action) => [...acc, action], [] as Action[])
+    )
+    .subscribe({
+      next: actions => {
+        expect(actions).toEqual([
+          GetCustomer({ customerId: mockCustomer.id }),
+          GetAddress({ customerId: mockCustomer.id })
+        ]);
+      },
+      complete: done
+    });
 
-    mockActions$.next(OpenedCreateInvoicePage({ customerId: mockCustomer.id }));
-  });
+  mockActions$.next(OpenedCreateInvoicePage({ customerId: mockCustomer.id }));
+});
 
 // ...
 ```
@@ -441,13 +441,13 @@ Overall, though, the separation of concerns and ease of testing make NgRx a grea
 
 ### Solution #3: Backend for frontend
 
-One more potential solution is to create *another* server. This server will sit between the frontend and existing microservices. It will talk to them for the frontend, process the data and return only what the client needs. This is the [backend for frontend pattern](https://samnewman.io/patterns/architectural/bff/).
+One more potential solution is to create _another_ server. This server will sit between the frontend and existing microservices. It will talk to them for the frontend, process the data and return only what the client needs. This is the [backend for frontend pattern](https://samnewman.io/patterns/architectural/bff/).
 
 > The BFF is tightly coupled to a specific user experience, and will typically be maintained by the same team as the user interface, thereby making it easier to define and adapt the API as the UI requires, while also simplifying process of lining up release of both the client and server components.
 
 Since a BFF will be maintained by the frontend team, you should write it in TypeScript. Since it will be tightly coupled to the UI, you should include it in the frontend repository. Last, since the frontend is in Angular, your backend could use "Angular for the server" - [NestJS](https://nestjs.com).
 
-*([Angular Universal](https://www.bitovi.com/blog/improve-angular-performance-and-seo-with-angular-universal) would also work, but Nest has more features. My client's app also relied on libraries incompatible with [server-side rendering](https://angular.io/guide/ssr), which Angular Universal requires).*
+_([Angular Universal](https://www.bitovi.com/blog/improve-angular-performance-and-seo-with-angular-universal) would also work, but Nest has more features. My client's app also relied on libraries incompatible with [server-side rendering](https://angular.io/guide/ssr), which Angular Universal requires)._
 
 You'll create a Nest app doing two things: serving your Angular app and taking API requests from it. Angular will know nothing about any microservice. It will know only what Nest returns.
 
@@ -479,10 +479,7 @@ export class HeaderComponent {
 <!-- https://github.com/kyle-n/catering-masters/blob/main/src/app/components/header/header.component.html -->
 
 <h2>{{ customerName }}</h2>
-<div *ngIf="address">
-  {{ address.street }}
-  {{ address.city }}
-</div>
+<div *ngIf="address">{{ address.street }} {{ address.city }}</div>
 ```
 
 To get this data, the app loaded `address$` and `customer$` in the parent component:
@@ -493,12 +490,12 @@ To get this data, the app loaded `address$` and `customer$` in the parent compon
 
 //...
 
-    this.customer$ = this.customerId$.pipe(
-      mergeMap(customerId => customerService.getCustomer(customerId))
-    );
-    this.address$ = this.customerId$.pipe(
-      mergeMap(customerId => addressService.getAddress(customerId))
-    );
+this.customer$ = this.customerId$.pipe(
+  mergeMap(customerId => customerService.getCustomer(customerId))
+);
+this.address$ = this.customerId$.pipe(
+  mergeMap(customerId => addressService.getAddress(customerId))
+);
 
 //...
 ```
@@ -533,7 +530,7 @@ export type InvoiceHeaderCustomerData = {
   name: string;
   street: string;
   city: string;
-}
+};
 ```
 
 Next, replace your Angular services for loading customer, address and product data with Nest services. The customer microservice gets its own Nest service, the address gets its own, and so on.
@@ -547,7 +544,7 @@ Then, create a new Nest API endpoint specifically for loading header data.
 import { Controller, Get, Param, ParseIntPipe } from '@nestjs/common';
 import { InvoiceHeaderCustomerData } from '@shared/types';
 import { Observable, forkJoin } from 'rxjs';
-import { map } from 'rxjs/operators'
+import { map } from 'rxjs/operators';
 import { mapCustomerToInvoiceHeaderCustomerData } from 'src/mappers/invoice-header-customer-data.mapper';
 import { AddressService } from 'src/services/address.service';
 import { CustomerService } from 'src/services/customer.service';
@@ -719,7 +716,7 @@ If your Nest app sends many outgoing requests to your microservices, Nest [can a
 
 The downside of this approach is it adds more layers to the app. It may require infrastructure changes. It's also overkill most of the time. Most websites don't need an intermediary to collect data from multiple microservices.
 
-But, since the catering app *does* need that, it's a good call.
+But, since the catering app _does_ need that, it's a good call.
 
 ### The best solution: BFF
 
@@ -727,7 +724,7 @@ I presented the three prototypes and my recommendations to the client.
 
 Reducers were the wrong choice. They work if all your data loads are independent. Unfortunately, the client's were not, and chained resolvers would be difficult to maintain.
 
-NgRx, in my opinion, was a great option. It added complexity, but made testing *easy*. It is good at loading and combining data.
+NgRx, in my opinion, was a great option. It added complexity, but made testing _easy_. It is good at loading and combining data.
 
 The BFF pattern, though, was my favorite. It was like one giant [adapter](https://en.wikipedia.org/wiki/Adapter_pattern), providing an ergonomic, UI-friendly API for the existing microservices. It also made testing easier.
 

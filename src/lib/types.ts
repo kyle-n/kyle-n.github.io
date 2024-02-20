@@ -3,7 +3,7 @@ import type { ComponentType, SvelteComponent } from 'svelte';
 export type ResolvedBlogPost = {
   metadata: BlogPostMetadata;
   content: ComponentType<SvelteComponent>;
-  slug: string
+  slug: string;
 };
 
 export type BlogPostMetadata = {

@@ -25,7 +25,7 @@ Angular is a ["batteries-included"](https://en.wikipedia.org/wiki/Batteries_Incl
 
 Everything in Angular is _useful_, but, as [Johanna Pearce](https://toot.cat/@johanna) pointed out in her great [ng-conf](https://ng-conf.org) talk last year (sadly not online), putting it all in the framework can be overwhelming. There's no progressive disclosure.
 
-SvelteKit is minimalist. It provides a Node server, routing, server-side rendering, components, some state management, and... that's it. Even the unit and end-to-end tests are optional. 
+SvelteKit is minimalist. It provides a Node server, routing, server-side rendering, components, some state management, and... that's it. Even the unit and end-to-end tests are optional.
 
 It's just so much less to learn. I would much rather teach Svelte than Angular to a team new to frontend.
 

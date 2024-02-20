@@ -12,7 +12,7 @@ image: angular-svelte.png
 
 Last year, I rewrote this blog in [SvelteKit](https://kit.svelte.dev). It was a nice change of pace from my day job helping clients build Angular apps (please [get in touch](https://www.bitovi.com/services/frontend-development-consulting) if you need help!).
 
-As someone who's been Angular-focused for the last four and a half years, I found SvelteKit great in most ways and lacking in others. This post will be for Angular devs - you don't need to know anything about Svelte. 
+As someone who's been Angular-focused for the last four and a half years, I found SvelteKit great in most ways and lacking in others. This post will be for Angular devs - you don't need to know anything about Svelte.
 
 (I have a [separate post for Svelte devs]({base}/blog/svelte-from-angular-perspective-for-svelte) with my impressions.)
 
@@ -22,7 +22,7 @@ This may be a hot take in 2024's React-ified world, but I like Angular. I like t
 
 But that's the problem - Angular's features are useful _once you learn them_. It's a lot to learn! I've been forced to reckon with this having spent the last year and a half teaching Angular to backend devs going full stack. You don't realize how deep Angular goes until somebody on your team wants to know why you keep adding [OnPush change detection](https://angular.io/api/core/ChangeDetectionStrategy) to components.
 
-SvelteKit is minimalist. It provides a Node server, routing, server-side rendering, components, some state management, and... that's it. Even the unit and end-to-end tests are optional. 
+SvelteKit is minimalist. It provides a Node server, routing, server-side rendering, components, some state management, and... that's it. Even the unit and end-to-end tests are optional.
 
 Svelte feels like the bare minimum implementation of a component-based framework. It's the answer to the question of "what's the least syntax we need to put an app on screen, without using vanilla HTML / CSS / JS." I mean, look at this syntax:
 
@@ -98,15 +98,15 @@ It's just so much less to learn. I would rather teach Svelte than Angular to a t
 
 ### Components are all in one file
 
-This is petty, but I prefer Svelte's approach to code organization. Everything related to a component goes in one file - styles, markup and logic. 
+This is petty, but I prefer Svelte's approach to code organization. Everything related to a component goes in one file - styles, markup and logic.
 
-You can do the same thing in Angular, but most projects don't. `ng generate component` creates multiple files by default.  
+You can do the same thing in Angular, but most projects don't. `ng generate component` creates multiple files by default.
 
 ### More front in the frontend
 
 Learning Angular requires learning HTML, JavaScript and CSS. It also requires learning dependency injection, services, change detection, lifecycle hooks and all that fun framework nonsense.
 
-Svelte and SvelteKit feel closer to vanilla HTML, JavaScript and CSS. It feels like the web plus components (but not [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)). 
+Svelte and SvelteKit feel closer to vanilla HTML, JavaScript and CSS. It feels like the web plus components (but not [Web Components](https://developer.mozilla.org/en-US/docs/Web/API/Web_components)).
 
 I like that! I like that the framework gets out of the way as much as possible and lets you get closer to your actual content. I _really_ like that [Svelte is a compiler](https://dev.to/joshnuss/svelte-compiler-under-the-hood-4j20) that turns your declarative components into imperative JavaScript. No [shadow DOM](https://legacy.reactjs.org/docs/faq-internals.html) needed. It's all the advantages of vanilla JS without _writing_ vanilla JS.
 
@@ -142,13 +142,13 @@ If you want Signals without waiting years for Angular to update every part of th
 
 ### Testing
 
-I have never loved Angular testing. I understand _why_ [TestBed](https://angular.io/api/core/testing/TestBed) is the way it is, but I've never enjoyed it. Stubbing injected services and sub-components to do proper [shallow unit tests](https://www.reddit.com/r/reactjs/comments/t9dpgz/whats_the_point_of_shallow_rendering_tests/) is verbose and annoying. 
+I have never loved Angular testing. I understand _why_ [TestBed](https://angular.io/api/core/testing/TestBed) is the way it is, but I've never enjoyed it. Stubbing injected services and sub-components to do proper [shallow unit tests](https://www.reddit.com/r/reactjs/comments/t9dpgz/whats_the_point_of_shallow_rendering_tests/) is verbose and annoying.
 
-Using Svelte, however, made me appreciate Angular testing more. Major system modules like [HttpClientModule](https://angular.io/api/common/http/HttpClientModule) have test-friendly equivalents like [HttpClientTestingModule](https://angular.io/api/common/http/testing/HttpClientTestingModule). 
+Using Svelte, however, made me appreciate Angular testing more. Major system modules like [HttpClientModule](https://angular.io/api/common/http/HttpClientModule) have test-friendly equivalents like [HttpClientTestingModule](https://angular.io/api/common/http/testing/HttpClientTestingModule).
 
-Testing also gets significant attention from the Angular team! TestBed is built into the framework and gets updated with Angular. The team is [adding support for Jest](https://blog.angular.io/moving-angular-cli-to-jest-and-web-test-runner-ef85ef69ceca). They have also worked on [speeding up tests](https://github.com/angular/angular/issues/12409) for years. 
+Testing also gets significant attention from the Angular team! TestBed is built into the framework and gets updated with Angular. The team is [adding support for Jest](https://blog.angular.io/moving-angular-cli-to-jest-and-web-test-runner-ef85ef69ceca). They have also worked on [speeding up tests](https://github.com/angular/angular/issues/12409) for years.
 
-Svelte outsources testing to [Testing Library](https://testing-library.com), a large open source test suite with versions for each framework. The [Svelte Testing Library](https://testing-library.com/docs/svelte-testing-library/intro)... [could be better]({base}/blog/testing-in-sveltekit). Documentation is sparse. Support is limited to one Discord. A Discord! One of my Angular clients blocked Discord on their network. 
+Svelte outsources testing to [Testing Library](https://testing-library.com), a large open source test suite with versions for each framework. The [Svelte Testing Library](https://testing-library.com/docs/svelte-testing-library/intro)... [could be better]({base}/blog/testing-in-sveltekit). Documentation is sparse. Support is limited to one Discord. A Discord! One of my Angular clients blocked Discord on their network.
 
 As I wrote in a [previous post]({base}/blog/testing-in-sveltekit):
 

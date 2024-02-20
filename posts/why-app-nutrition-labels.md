@@ -21,9 +21,9 @@ For example, here is the [privacy label](https://www.nazariosoftware.com/2023/06
 > - [detect-browser](https://www.npmjs.com/package/detect-browser): Small tool to check which browser is running Mute Chat so the extension can use the correct icon image. This information is not logged or shared.
 > - [webextension-polyfill](https://github.com/mozilla/webextension-polyfill): A Mozilla library that smoothes over differences between web browsers, allowing Mute Chat to run on all of them with the same code.
 >
-> ### Third-party code used to build BNT 
+> ### Third-party code used to build BNT
 >
-> This code does *not* run on your device.
+> This code does _not_ run on your device.
 >
 > **The app**
 >
@@ -33,7 +33,7 @@ For example, here is the [privacy label](https://www.nazariosoftware.com/2023/06
 >
 > [...]
 
-I know this is unusual. I do it for a few reasons. 
+I know this is unusual. I do it for a few reasons.
 
 First and most importantly, I just think it's the right thing to do. Apps shouldn't be mystery meat. The least I can do is show the top-level NPM dependencies for my browser extensions.
 
@@ -43,17 +43,17 @@ Second, it's a gesture of respect to the user. My code is closed source [^1], bu
 
 Third, it increases credibility with technical users. Most customers don't know web dev, but some of them do. Some of them know JavaScript developers have a reputation for [solving every problem with a new NPM dependency](https://blog.appsignal.com/2020/04/09/ride-down-the-javascript-dependency-hell.html). This way, technical users can see I add packages for a reason. These are the kind of people who write scathing comments on Hacker News and Reddit complaining about bundle sizes. Don't want to make them angry!
 
-Fourth, it's a way to get credit. I don't bloat my apps with unnecessary packages and SDKs and dependencies. My bundle sizes are better than many competitors. Users should *see* how little third-party code is taking up space on their device.
+Fourth, it's a way to get credit. I don't bloat my apps with unnecessary packages and SDKs and dependencies. My bundle sizes are better than many competitors. Users should _see_ how little third-party code is taking up space on their device.
 
 Fourth, it's interesting to other developers. They can see what tools I'm using without de-minimizers or any of that nonsense.
 
 ### Caveats
 
-I know this idea has limits. 
+I know this idea has limits.
 
 1. Most users won't care
 2. Users who do have to rely on me instead of open source code
-3. The labels also don't list *every* dependency, just the top-level NPM packages I've installed
+3. The labels also don't list _every_ dependency, just the top-level NPM packages I've installed
 4. Where do you draw the line? Should you list [Blink](https://www.chromium.org/blink/) or [JavaScriptCore](https://developer.apple.com/documentation/javascriptcore)?
 
 Those are valid downsides, especially the last one. For me, I draw the line at top-level NPM dependencies. It's not perfect, but a little disclosure is better than none.
