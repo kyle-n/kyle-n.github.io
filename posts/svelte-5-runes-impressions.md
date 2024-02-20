@@ -70,6 +70,8 @@ Runes bypass the problem by unifying change detection. There're only `$state` va
 
 #### No `$derived` callbacks
 
+**Update February 2024**: [This feature has been added]({base}/blog/svelte-5-rune-derived-call).
+
 To create derived state in Svelte 5:
 
 ```svelte
