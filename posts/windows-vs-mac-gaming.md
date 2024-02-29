@@ -10,6 +10,10 @@ relatedLinks:
   Mastodon discussion: https://hachyderm.io/@kn/111494531451923444
 ---
 
+<script>
+  import YoutubeEmbed from '$lib/components/youtube-embed.svelte'
+</script>
+
 Five years ago, longtime Apple blogger John Gruber said on [a podcast](https://daringfireball.net/thetalkshow/2018/07/27/ep-226) that his son wanted a gaming PC and, after some discussion, he decided to buy him a Windows PC.
 
 On an [episode](https://daringfireball.net/thetalkshow/2023/10/27/ep-387) from a month ago, Gruber offered a fascinating piece of follow-up. [^1]
@@ -30,7 +34,7 @@ Not every game comes to PC, but every PC game is on Windows. Using a Windows PC 
 
 Consider the _Resident Evil_ franchise. I love these games. They're goofy, scary, campy and over-the-top.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/apWYo8Z-t8U?si=SZbbytx0AuTc4lc5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<YoutubeEmbed id="apWYo8Z-t8U" />
 
 At WWDC 2022, Apple made a big deal of getting iOS and macOS ports of [_Resident Evil: Village_](https://mobilesyrup.com/2022/06/06/capcom-resident-evil-village-mac-wwdc-2022/) and [the _RE4_ remake](https://toucharcade.com/2023/11/07/resident-evil-4-remake-iphone-15-pro-release-date-ipad-mac-m1-m2-m3-apple-capcom/). Those are both great games, and Apple is right to be proud to snag them.
 

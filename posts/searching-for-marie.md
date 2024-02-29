@@ -7,13 +7,14 @@ description: I just want to know if the French queen bowed to a mob.
 
 <script>
   import {base} from '$app/paths';
+  import YoutubeEmbed from '$lib/components/youtube-embed.svelte'
 </script>
 
 I [recently watched](https://letterboxd.com/kyle_nazario/films/diary/for/2023/12/02/) Sophia Coppola's _Marie Antoinette_. I had never seen one of her movies and wanted to prepare for _Priscilla_.
 
 One of the most enigmatic and fascinating scenes in the movie is when a furious mob of French peasants shows up outside the palace at Versailles. Marie Antoinette, played by Kirsten Dunst, walks out onto the balcony overlooking them. She gazes upon the angry crowd. The ill-fated French queen bows her head deeply and retreats without a word.
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/nYg5Xg5sgss?si=u2lBZk01aTfYTZG-&amp;start=94" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<YoutubeEmbed id="nYg5Xg5sgss" />
 
 Is it an act of submission? Contrition? An apology? A plea for mercy? Dunst and Coppola give us no obvious answer. It's striking filmmaking.
 
