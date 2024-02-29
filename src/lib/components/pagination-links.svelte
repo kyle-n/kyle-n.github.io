@@ -14,7 +14,7 @@
   <section>
     {#each pageNumbers as pageNumber}
       {#if pageNumber === currentPage}
-        <div>{pageNumber}</div>
+        <span>{pageNumber}</span>
       {:else}
         <a href={`${base}/blog/page/${pageNumber}`} class="jumpy-link"
           >{pageNumber}</a
@@ -28,7 +28,7 @@
   section {
     display: flex;
     a,
-    div {
+    span {
       margin-right: 1.5rem;
     }
   }
