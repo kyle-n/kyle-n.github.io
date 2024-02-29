@@ -29,8 +29,7 @@ export async function GET() {
 
 // prettier-ignore
 async function getRssXml(): Promise<string> {
-  const x = await getAllPosts();
-  const allPosts = [x[0]]
+  const allPosts = await getAllPosts();
   const rssPosts = allPosts.slice(0, DEFAULT_POSTS_PER_PAGE);
   const rssUrl = `${BLOG_URL}/rss.xml`;
   const root = create({ version: '1.0', encoding: 'utf-8' })
@@ -97,7 +96,7 @@ async function getHtmlForPost(
   addBasePrefixToImages(postDom);
   removeBasePrefixFromElements(postDom);
   inlineFootnotes(postDom);
-  convertYouTubeEmbedsToLinks(postDom);
+  await convertYouTubeEmbedsToLinks(postDom);
   stripScriptsAndComments(postDom);
 
   if (leadImageFilename) {
@@ -164,7 +163,7 @@ function inlineFootnotes(dom: JSDOM): void {
   });
 }
 
-function convertYouTubeEmbedsToLinks(dom: JSDOM): void {
+async function convertYouTubeEmbedsToLinks(dom: JSDOM): Promise<void> {
   dom.window.document.body.innerHTML =
     dom.window.document.body.innerHTML.replaceAll(
       '&amp;lt;iframe',
@@ -175,28 +174,8 @@ function convertYouTubeEmbedsToLinks(dom: JSDOM): void {
       '&amp;lt;/iframe',
       '&#x3C;/iframe'
     );
-  const youtubeIframes = Array.from(
-    dom.window.document.getElementsByTagName('iframe')
-  ).filter(iframe => {
-    const src = iframe.getAttribute('src') ?? '';
-    return src.startsWith('https://www.youtube.com/embed/');
-  }) as HTMLIFrameElement[];
 
-  function createYouTubeLink(videoId: string): HTMLAnchorElement {
-    const link = dom.window.document.createElement('a');
-    link.setAttribute('href', `https://youtu.be/${videoId}`);
-    link.textContent = `https://youtu.be/${videoId}`;
-    return link;
-  }
-
-  youtubeIframes.forEach(iframe => {
-    const src = iframe.getAttribute('src') ?? '';
-    const videoId = src.slice('https://www.youtube.com/embed/'.length);
-    const link = createYouTubeLink(videoId);
-    iframe.replaceWith(link);
-  });
-
-  const youtubeEmbedComponents = []; // Type: Node[]
+  const youtubeEmbedComponentTextNodes: Node[] = [];
   const walker = dom.window.document.createTreeWalker(
     dom.window.document.body,
     4
@@ -207,17 +186,28 @@ function convertYouTubeEmbedsToLinks(dom: JSDOM): void {
         ?.toLowerCase()
         .startsWith('\n&lt;youtubeembed')
     ) {
-      youtubeEmbedComponents.push(walker.currentNode);
+      youtubeEmbedComponentTextNodes.push(walker.currentNode);
     }
   }
-  youtubeEmbedComponents.forEach(embedComponent => {
-    const youtubeEmbed = embedComponent.textContent?.trim() ?? '';
+  const files = import.meta.glob('../../lib/components/youtube-embed.svelte', {
+    as: 'svelte'
+  });
+  const component = (await Object.values(files)[0]()) as {
+    default: { render: (props: { id: string }) => { html: string } };
+  };
+  youtubeEmbedComponentTextNodes.forEach(embedComponentTextNode => {
+    const youtubeEmbed = embedComponentTextNode.textContent?.trim() ?? '';
     const videoId = youtubeEmbed.slice(
       youtubeEmbed.indexOf('id="') + 'id="'.length,
       youtubeEmbed.indexOf('"', youtubeEmbed.indexOf('id="') + 'id="'.length)
     );
-    const link = createYouTubeLink(videoId);
-    embedComponent.parentElement?.replaceChild(link, embedComponent);
+    const embedHtml = component.default.render({ id: videoId }).html;
+    const iframeContainer = dom.window.document.createElement('div');
+    iframeContainer.innerHTML = embedHtml;
+    embedComponentTextNode.parentElement?.replaceChild(
+      iframeContainer,
+      embedComponentTextNode
+    );
   });
 }
 
