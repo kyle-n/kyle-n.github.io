@@ -4,10 +4,12 @@ title: The 10 best new movies I saw in 2023
 description: A surprisingly good year for movies!
 date: 2024-02-27
 keywords: personal, best-movies
+image: godzilla-theater.jpg
+caption: Gemini - "Generate an image from the back of a movie theater. A Godzilla movie is playing on screen. Godzilla's head is coming out of the screen toward the audience"
 ---
 
 <script>
-  import YouTubeEmbed from '$lib/components/youtube-embed.svelte'
+  import YoutubeEmbed from '$lib/components/youtube-embed.svelte'
 </script>
 
 This was a surprisingly good year for movies, and not just because of [Barbenheimer](https://en.wikipedia.org/wiki/Barbenheimer) (which has a Wikipedia page? Amazing). In between all the chuff were a couple really great movies. Nothing I loved, but a lot to recommend.
