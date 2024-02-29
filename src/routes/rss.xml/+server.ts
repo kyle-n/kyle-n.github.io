@@ -29,7 +29,8 @@ export async function GET() {
 
 // prettier-ignore
 async function getRssXml(): Promise<string> {
-  const allPosts = await getAllPosts();
+  const x = await getAllPosts();
+  const allPosts = [x[0]]
   const rssPosts = allPosts.slice(0, DEFAULT_POSTS_PER_PAGE);
   const rssUrl = `${BLOG_URL}/rss.xml`;
   const root = create({ version: '1.0', encoding: 'utf-8' })
@@ -181,13 +182,42 @@ function convertYouTubeEmbedsToLinks(dom: JSDOM): void {
     return src.startsWith('https://www.youtube.com/embed/');
   }) as HTMLIFrameElement[];
 
-  youtubeIframes.forEach(iframe => {
-    const src = iframe.getAttribute('src') ?? '';
-    const videoId = src.slice('https://www.youtube.com/embed/'.length);
+  function createYouTubeLink(videoId: string): HTMLAnchorElement {
     const link = dom.window.document.createElement('a');
     link.setAttribute('href', `https://youtu.be/${videoId}`);
     link.textContent = `https://youtu.be/${videoId}`;
+    return link;
+  }
+
+  youtubeIframes.forEach(iframe => {
+    const src = iframe.getAttribute('src') ?? '';
+    const videoId = src.slice('https://www.youtube.com/embed/'.length);
+    const link = createYouTubeLink(videoId);
     iframe.replaceWith(link);
+  });
+
+  const youtubeEmbedComponents = []; // Type: Node[]
+  const walker = dom.window.document.createTreeWalker(
+    dom.window.document.body,
+    4
+  );
+  while (walker.nextNode()) {
+    if (
+      walker.currentNode.textContent
+        ?.toLowerCase()
+        .startsWith('\n&lt;youtubeembed')
+    ) {
+      youtubeEmbedComponents.push(walker.currentNode);
+    }
+  }
+  youtubeEmbedComponents.forEach(embedComponent => {
+    const youtubeEmbed = embedComponent.textContent?.trim() ?? '';
+    const videoId = youtubeEmbed.slice(
+      youtubeEmbed.indexOf('id="') + 'id="'.length,
+      youtubeEmbed.indexOf('"', youtubeEmbed.indexOf('id="') + 'id="'.length)
+    );
+    const link = createYouTubeLink(videoId);
+    embedComponent.parentElement?.replaceChild(link, embedComponent);
   });
 }
 
