@@ -96,21 +96,15 @@ No movie on this list is harder to recommend than _Beau Is Afraid_. It is three 
 
 But reader - those people are _wrong_
 
-_Beau Is Afraid_ is a masterful piece of horror movie about living with and loving an abusive narcissist.
-
-It's a kind of person I am unfortunately familiar with. There is Someone in my extended family and friends who matches Beau's mom to a T [^1]. _Beau Is Afraid_ was like a documentary of that Someone: the coy hints of displeasure, eidetic memory of wrongs against them, guilt trips, dizzying mood swings, paranoia, and conditional, easily withdrawn affection.
-
-[^1]: It is not my mother, who is kind and thoughtful and cooked me a delicious soup last time I visited home.
+_Beau Is Afraid_ is a masterful piece of horror movie about living with and loving an abusive narcissist. If you've ever known someone like this, _Beau Is Afraid_ plays like a documentary: the coy hints of displeasure, eidetic memory of wrongs against them, guilt trips, dizzying mood swings, paranoia, and conditional, easily withdrawn affection.
 
 As the film critic David Ehrlich put it, "Anyone who would sooner die for their mom than answer the phone when she calls should probably mix a few Zoloft into their popcorn just to be safe."
-
-Christ, there's a lot of dark stuff on this list.
 
 ### 4: _Killers of the Flower Moon_ | ★★★★
 
 <YoutubeEmbed id="EG0si5bSd6I" />
 
-There's nobody better at depicting gangsters than Martin Scorsese. The guy who made _Goodfellas_, _Casino_ and _The Wolf of Wall Street_ gets criminals on a bone-deep level. He understands them better than they understand themselves. He sees their vanity, pride, egotism, chauvinism, and raw greed. Scorsese knows a gangster can wear any costume and live in any social class, no matter how "respectable." Fitting, then, he turns his attention to the American frontier.
+There's nobody better at depicting gangsters than Martin Scorsese. The guy who made _Goodfellas_, _Casino_ and _The Wolf of Wall Street_ gets criminals on a bone-deep level. He sees their vanity, pride, egotism, chauvinism, and raw greed. Scorsese knows a gangster can wear any costume and live in any social class, no matter how "respectable." Fitting, then, he turns his attention to the American frontier.
 
 _Killers of the Flower Moon_ is based on a [true story](https://www.amazon.com/Killers-Flower-Moon-Murders-Random/dp/1524755931/ref=asc_df_1524755931/). A century ago, the Osage tribe was forced to move to a rocky, unfarmable patch of nowhere in Oklahoma. It was the least valuable corner of the state, right up until they found oil.
 
@@ -132,7 +126,7 @@ My favorite turn has to be Mark Ruffalo, though. He plays a preening, pompous wa
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oA1d_VZ5XQc?si=gPQCTOAiu4YdqMPj&amp;start=355" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
 
-If nothing else, you have to salute the fabulous costumes. Bella's outfits as she mentally ages from baby to adult are striking and somehow perfect for this upside-down world.
+If nothing else, you have to salute the fabulous costumes.
 
 ### 2: _The Holdovers_ | ★★★★
 
@@ -140,13 +134,9 @@ If nothing else, you have to salute the fabulous costumes. Bella's outfits as sh
 
 Between ages 14 and 18, I went to an all-boys Catholic preparatory school. It was high school, but with demanding academics and mandatory Mass. The high stress caused dozens of students to drop out of my class over four years.
 
-I loved my friends and my time there, but it was stifling. Mandatory dress codes, no dating and intense schoolwork make a volatile mix for teenagers.
+All this is to say when Paul Giamatti comes on screen as a beleaguered classical history teacher, I immediately recognized him. His background, history, ambitions and personality are perfectly written. He feels like someone who should've taught Latin at our school.
 
-We responded to the pressure and rules by lashing out at teachers. Pranks, backtalk, _really_ personal insults we shouldn't have said. The teachers got us back, though. You could tell which ones enjoyed getting revenge.
-
-All this is to say when Paul Giamatti comes on screen as a beleaguered classical history teacher, I immediately recognized him. His background, history, ambitions and personality are perfectly written. He is exactly A Kind of Guy.
-
-The rest of the movie is simply beautiful. Giamatti, a student and a cook are stuck at school over Christmas and wouldn't you know it, they become a kind of found family. Even though its predictable, the movie just has a kind of integrity you can't question. It means what it says.
+Giamatti, a student and a cook are stuck at school over Christmas and wouldn't you know it, they become a kind of found family. Even though its predictable, the movie just has a kind of integrity you can't question. It means what it says.
 
 ### 1: _The Boy and the Heron_ | ★★★★
 
@@ -158,7 +148,7 @@ _The Boy and the Heron_ is his swan song (pun intended), a final [goodbye to his
 
 The movie follows a boy who loses his mother to a fire from a bombing in World War II. He moves to the countryside, where a strange heron begins taunting him.
 
-Don't expect a ton of literal narrative. _The Boy and the Heron_ gets abstract at points. According to a podcast I heard, even Miyazaki doesn't know what it all means. He just loaded the movie with imagery that works on some level I can't describe.
+Don't expect a ton of literal narrative. _The Boy and the Heron_ gets abstract at points. According to a [podcast](https://soundcloud.com/griffin-and-david-present/the-boy-and-the-heron) I heard, even Miyazaki doesn't know what it all means. He just loaded the movie with imagery that works on some level I can't describe.
 
 At the end of the movie, the boy finds an old man alone in a tower. The old man tells him he's waited for him, that the boy must take over his role as ruler of his fantasy world. The man produces a handful of white stone toy blocks and demands the boy stack them (one of the blocks is a sphere). Stack the blocks, the man says, and the fantasy world will continue. Let them fall, and everything ends.
 
