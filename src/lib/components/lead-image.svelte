@@ -6,8 +6,12 @@
   export let alt: string | undefined = undefined;
   export let hideImage: boolean = false;
 
-  const src = `${base}/img/${filename}`;
-  const content = `${BLOG_URL}/img/${filename}`;
+  let content: string;
+  let src: string;
+  $: {
+    src = `${base}/img/${filename}`;
+    content = `${BLOG_URL}/img/${filename}`;
+  }
 </script>
 
 <svelte:head>
