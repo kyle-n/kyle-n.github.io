@@ -91,7 +91,7 @@ This is fine for short pieces of logic, but painful for calculating derived stat
 
 One workaround to use an [immediately invoked function expression](https://developer.mozilla.org/en-US/docs/Glossary/IIFE) (IIFE). Here's one I wrote for my Oscars fan site:
 
-```svelte
+```typescript
 let knownForCredits = $derived(
   (() => {
     let knownForJobTitle = 'Actor';
