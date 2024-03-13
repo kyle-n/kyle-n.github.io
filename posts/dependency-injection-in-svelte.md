@@ -10,7 +10,7 @@ keywords: frontend, tutorial, svelte, testing
 
 As your Svelte app grows, you will need tests. Tests help you ship new features faster. They provide some assurance your code change hasn't broken anything. 
 
-A good practice when unit testing is to test each component independent of its dependencies. However, this can be difficult with Svelte components.
+It's good to unit test each component independent of its dependencies. However, this can be difficult with Svelte components.
 
 Consider this component I recently wrote for my new browser extension [Replies for Hacker News](https://www.nazariosoftware.com/2024/02/23/never-miss-a-conversation-with-replies-for-hacker-news.html) [^1]. The code pings my website to display a list of my other apps.
 
@@ -55,9 +55,9 @@ const singleton = new ExternalConnector();
 export default singleton;
 ```
 
-If I try to test `<OtherApps />` as is, the component will make a real network request to my website. That's bad! My website or internet could be down. Tests should never fail because of bad internet.
+If I test `<OtherApps />` as is, the component will make a network request to my website. That's bad! My website or internet could be down. Tests should never rely on having good internet.
 
-We could [stub `fetch()`](https://stackoverflow.com/questions/73597037/how-to-test-mock-a-fetch-api-in-a-react-component-using-jest), but that infects the `<OtherApps />` test with knowledge of `ExternalConnector`'s internals. The best thing to stub is `ExternalConnector`. If we make that class return fake data, then testing is easy.
+We could [stub `fetch()`](https://stackoverflow.com/questions/73597037/how-to-test-mock-a-fetch-api-in-a-react-component-using-jest), but that infects the `<OtherApps />` test with knowledge of `ExternalConnector`'s internals. The best thing to stub is `ExternalConnector`. We can make it return fake data.
 
 There are ways to mock imports with Jest, but those are difficult and fiddly. We have a better option - dependency injection.
 
@@ -67,13 +67,13 @@ James Shore, author of [The Art of Agile Development](https://www.jamesshore.com
 
 > "Dependency Injection" is a 25-dollar term for a 5-cent concept... [it] means giving an object its instance variables. Really. That’s it.
 
-DI is a common programming pattern for providing instance variables to an object. Instead of hardcoding `ExternalConnector` into our component, we'll ask the DI system to give us a class capable of getting the app links.
+DI is a common programming pattern for providing instance variables to an object. Instead of hardcoding an instance of `ExternalConnector` into our component, we'll ask the DI system for it. That will make testing easier.
 
 ### Svelte DI
 
 For Svelte, we're going to use a specific flavor of dependency injection - the Composition Root pattern. I learned this from reading [Simon B. Støvring's writeup](https://simonbs.dev/posts/introducing-the-composition-root-pattern-in-a-swift-codebase/) of how to do it in Swift, which is based off [the same pattern in .NET](https://www.amazon.com/gp/product/1935182501).
 
-We are going to create one class that provides all our app's dependencies. 
+First, we create our app's classes...
 
 ```typescript
 // types.ts
@@ -101,26 +101,31 @@ export class ExternalConnector implements ExternalConnectorClass {
 }
 ```
 
+...then a class that provides our dependencies.
+
 ```typescript
 // composition-root.ts
 import type { ExternalConnectorClass } from './types';
 import { ExternalConnector } from './external-connector';
 
-class CompositionRoot {
-  get ExternalConnector(): ExternalConnector {
-    return this.externalConnector;
+export default class CompositionRoot {
+  static shared: CompositionRoot;
+
+  // Should be called in the app root as close to app initialization as possible
+  static initialize(classes: {externalConnectorClass: ExternalConnectorClass}) {
+    CompositionRoot.shared = new CompositionRoot(classes)
   }
 
   private externalConnector: ExternalConnectorClass;
 
-  // Should be called in the app root as close to app initialization as possible
-  initialize(classes: {externalConnectorClass: ExternalConnectorClass}) {
+  get ExternalConnector(): ExternalConnector {
+    return this.externalConnector;
+  }
+
+  constructor(classes: {externalConnectorClass: ExternalConnectorClass}) {
     this.externalConnector = new classes.externalConnectorClass();
   }
 }
-
-const singleton = new CompositionRoot();
-export default singleton;
 ```
 
 Now, in the component, we can use the composition root:
@@ -129,7 +134,7 @@ Now, in the component, we can use the composition root:
 <!-- other-apps.svelte -->
 <script>
   import CompositionRoot from './composition-root';
-  const ExternalConnector = CompositionRoot.ExternalConnector;
+  const ExternalConnector = CompositionRoot.shared.ExternalConnector;
   const gettingAppLinks = ExternalConnector.getAppLinks();
 </script>
 
@@ -194,4 +199,4 @@ class CompositionRoot {
 
 This extra layer of indirection is, to be clear, not needed on most projects. If you're not super worried about testing, or you have a small app, you don't need a DI system. 
 
-However, if you are worried about stubbing dependencies for tests, dependency injection is how you do it. 
+However, if you are worried about stubbing dependencies for tests, dependency injection is a scalable, useful way to do it.
