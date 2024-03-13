@@ -8,7 +8,7 @@ caption: Gemini - "Create a comic book style panel of a bunch of ones and zeroes
 keywords: frontend, tutorial, svelte, testing
 ---
 
-As your Svelte app grows, you will need tests. Tests help you ship new features faster. They provide some assurance your code change hasn't broken anything. 
+As your Svelte app grows, you will need tests. Tests help you ship new features faster. They provide some assurance your code change hasn't broken anything.
 
 It's good to unit test each component independent of its dependencies. However, this can be difficult with Svelte components.
 
@@ -84,7 +84,7 @@ export type AppLink = {
 };
 
 export interface ExternalConnectorClass {
-  getAppLinks: () => Promise<AppLink>
+  getAppLinks: () => Promise<AppLink>;
 }
 ```
 
@@ -94,7 +94,7 @@ import type { ExternalConnectorClass } from './types';
 
 export class ExternalConnector implements ExternalConnectorClass {
   async getAppLinks() {
-  return fetch(
+    return fetch(
       'https://www.nazariosoftware.com/assets/json/app-list.json'
     ).then(res => res.json());
   }
@@ -112,8 +112,10 @@ export default class CompositionRoot {
   static shared: CompositionRoot;
 
   // Should be called in the app root as close to app initialization as possible
-  static initialize(classes: {externalConnectorClass: ExternalConnectorClass}) {
-    CompositionRoot.shared = new CompositionRoot(classes)
+  static initialize(classes: {
+    externalConnectorClass: ExternalConnectorClass;
+  }) {
+    CompositionRoot.shared = new CompositionRoot(classes);
   }
 
   private externalConnector: ExternalConnectorClass;
@@ -122,7 +124,7 @@ export default class CompositionRoot {
     return this.externalConnector;
   }
 
-  constructor(classes: {externalConnectorClass: ExternalConnectorClass}) {
+  constructor(classes: { externalConnectorClass: ExternalConnectorClass }) {
     this.externalConnector = new classes.externalConnectorClass();
   }
 }
@@ -150,7 +152,7 @@ Now, in the component, we can use the composition root:
 </ul>
 ```
 
-This approach, while requiring extra boilerplate, provides a few advantages. 
+This approach, while requiring extra boilerplate, provides a few advantages.
 
 First and most importantly, it lets us stub `ExternalConnector` when testing `<OtherApps />`.
 
@@ -159,12 +161,14 @@ First and most importantly, it lets us stub `ExternalConnector` when testing `<O
 // ...
 class MockExternalConnector implements ExternalConnectorClass {
   async getAppLinks() {
-    return Promise.resolve([{name: 'test', href: '#', description: 'test link'}])
+    return Promise.resolve([
+      { name: 'test', href: '#', description: 'test link' }
+    ]);
   }
 }
 beforeEach(() => {
-  CompositionRoot.initialize({externalConnectorClass: MockExternalConnector})
-})
+  CompositionRoot.initialize({ externalConnectorClass: MockExternalConnector });
+});
 // ...
 ```
 
@@ -197,6 +201,6 @@ class CompositionRoot {
 
 ### Conclusion
 
-This extra layer of indirection is, to be clear, not needed on most projects. If you're not super worried about testing, or you have a small app, you don't need a DI system. 
+This extra layer of indirection is, to be clear, not needed on most projects. If you're not super worried about testing, or you have a small app, you don't need a DI system.
 
 However, if you are worried about stubbing dependencies for tests, dependency injection is a scalable, useful way to do it.
