@@ -2,7 +2,7 @@
 layout: post
 title: Why I chose Svelte for my new app
 date: 2021-05-14
-image: bnt-1.png
+image: bnt-1.webp
 keywords: svelte, frontend, javascript, typescript, extensions, showcase
 description: When you need a little interactivity but a lot of performance
 relatedLinks:
