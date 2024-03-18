@@ -4,7 +4,7 @@ title: Why Windows is better for gaming, from a longtime Mac user
 keywords: apple, opinion, gaming
 description: A Mac user reflects of what Windows PC gaming gets right.
 date: 2023-11-27
-image: xbox-controller.jpg
+image: xbox-controller.webp
 caption: Image by Florian Bollmann on Pixabay
 relatedLinks:
   Mastodon discussion: https://hachyderm.io/@kn/111494531451923444

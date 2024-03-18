@@ -2,7 +2,7 @@
 layout: post
 title: Offline podcast apps for Apple Watch, reviewed
 date: 2021-05-28
-image: watch-apps.png
+image: watch-apps.webp
 tags: apple
 description: For when you want to run without your phone.
 ---
@@ -43,7 +43,7 @@ Overcast used to have the implementation of offline playback that fit my needs b
 
 In the new system, you set a playlist to download up to 20 episodes to the Watch. Overcast says it will download the episodes on wifi when charging. For me, it almost never did. [^2]
 
-[^2]: I used Overcast for several months like this, but I’ve been testing other podcast apps for the last month. I re-downloaded Overcast to see if my assessment was still accurate, and [this happened immediately]({base}/img/oh-overcast.jpeg).
+[^2]: I used Overcast for several months like this, but I’ve been testing other podcast apps for the last month. I re-downloaded Overcast to see if my assessment was still accurate, and [this happened immediately]({base}/img/oh-overcast.webp).
 
 Positives:
 

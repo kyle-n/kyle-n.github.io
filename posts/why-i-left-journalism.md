@@ -4,7 +4,7 @@ title: Why I left journalism for software
 description: What to do when you love your field, but it doesn't love you back.
 date: 2024-01-01
 keywords: personal
-image: ajc-team.jpg
+image: ajc-team.webp
 caption: My awesome Atlanta Journal-Constitution team
 ---
 
@@ -22,7 +22,7 @@ I graduated from Auburn University in 2015. My girlfriend at the time was going 
 
 I managed the website, covered breaking news, and collected arrest reports from the jail. I worked most holidays. I was 22, it was my first job, and I was thrilled to be paid $32,000 a year.
 
-![A Ledger-Enquirer issue from May 26, 2015. I wrote the front page story](le-issue.jpg)
+![A Ledger-Enquirer issue from May 26, 2015. I wrote the front page story](le-issue.webp)
 
 The job also gave me firsthand experience with the dysfunction plaguing local news, which is that **it does not make money**.
 
@@ -72,7 +72,7 @@ So I packed up my stuff for Athens, Georgia, and moved in with my partner. I got
 
 The AJC hired me as a full-time contractor. I made $36,500 a year, but had no health insurance or paid time off. Thankfully, I was 23 and could stay on my mother's generous health insurance. I was to manage a team of freelancers, help with breaking news, update the website and republish wire stories for Atlanta audiences.
 
-![An extremely orange photo of my AJC squad at dinner](ajc-team.jpg)
+![An extremely orange photo of my AJC squad at dinner](ajc-team.webp)
 
 An extremely orange photo of my AJC squad at dinner. Love y'all.
 
@@ -93,7 +93,7 @@ The thing that truly broke my brain, though, was the chart of page views on ajc.
 
 I couldn't comprehend this. In the three years I'd been at the AJC, we'd put so much effort into making the website better. Better content, better headlines, better social strategies, better everything. The 2010 website was leftovers from the print edition, and its traffic was over 50% better.
 
-![A screenshot of ajc.com on Jan. 6, 2010](ajc-2010.png)
+![A screenshot of ajc.com on Jan. 6, 2010](ajc-2010.webp)
 
 Pictured: [Jan. 6, 2010](https://web.archive.org/web/20100106092524/http://www.ajc.com/). Traffic only got worse from here.
 

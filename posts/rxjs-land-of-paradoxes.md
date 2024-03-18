@@ -3,7 +3,7 @@ layout: post
 title: Avoiding common pitfalls in RxJS
 date: 2022-10-12
 keywords: javascript, typescript, rxjs, tutorial
-image: rxjs-logo.png
+image: rxjs-logo.webp
 caption: Via rxjs.dev
 description: Everything new developers should know.
 ---

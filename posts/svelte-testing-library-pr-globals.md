@@ -3,7 +3,7 @@ layout: post
 title: Improving Svelte testing, one documentation PR at a time
 date: 2023-11-12
 keywords: svelte
-image: dramatic-book-guy.png
+image: dramatic-book-guy.webp
 caption: DALL-E 2 - "a person dramatically throwing a book on top of a pile of books, as a ring of hooded figures surrounds the pile and looks on approvingly. Neon colors, realistic, digital art"
 description: How I'm trying to give back to the Svelte testing scene.
 ---

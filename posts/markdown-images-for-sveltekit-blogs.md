@@ -11,7 +11,7 @@ Quick note for anybody trying to set up a blog using [SvelteKit](https://kit.sve
 Normally, Markdown image syntax is:
 
 ```other
-![A black lab dog looking at the camera](https://i.imgur.com/zfwjIxQg.jpg)
+![A black lab dog looking at the camera](https://i.imgur.com/zfwjIxQg.webp)
 ```
 
 If your image is hosted somewhere else, you're good. Just put the URL for the image.
@@ -19,7 +19,7 @@ If your image is hosted somewhere else, you're good. Just put the URL for the im
 However, if your image is stored as a file in your SvelteKit blog's `/static` folder, you need to reference it using the `base` path.
 
 ```other
-![Blog logo]({base}/img/blog-logo.png)
+![Blog logo]({base}/img/blog-logo.webp)
 
 <script>
   import {base} from '$app/paths';
@@ -82,7 +82,7 @@ export default config;
 Now when writing Markdown, you can simply put:
 
 ```javascript
-![Blog logo](blog-logo.png)
+![Blog logo](blog-logo.webp)
 ```
 
 No `<script>` import, no `{base}` - just put the filename of the image at the folder indicated by the `absolutePath` in your `svelte.config.js`.

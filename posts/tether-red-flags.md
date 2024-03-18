@@ -3,7 +3,7 @@ layout: post
 title: An incomplete list of Tether red flags
 description: Seems like a company with some suspicious aspects!
 date: 2023-12-06
-image: tether-red-flag.png
+image: tether-red-flag.webp
 caption: Graphic design is my passion.
 keywords: opinion, news, cryptocurrency
 ---

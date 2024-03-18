@@ -3,7 +3,7 @@ layout: post
 title: The time I went stir-crazy during Covid and reverse-engineered Substack’s private API
 date: 2023-11-14
 keywords: apple, personal
-image: envelopes.png
+image: envelopes.webp
 caption: Via Stable Diffusion
 ---
 
@@ -37,7 +37,7 @@ Thus, Compose for Substack was born.
 
 It would be a native iOS, iPadOS and macOS app for newsletter authors. You'd compose Substack newsletter drafts using Markdown, then save and publish, all from a well-designed, native interface.
 
-![A screenshot of Compose for Substack. No draft is selected](compose-no-draft-selected.png)
+![A screenshot of Compose for Substack. No draft is selected](compose-no-draft-selected.webp)
 
 I didn't have any iOS or macOS development experience, but Apple had just announced version 2 of [SwiftUI](https://developer.apple.com/xcode/swiftui/). SwiftUI is their declarative framework for writing apps. It felt similar to React, which I knew somewhat well, and so I decided Compose should be written in SwiftUI. This plan seemed like the best way to create a high-quality, native iOS and macOS interfaces without learning the intricacies of UIKit and AppKit.
 
@@ -162,7 +162,7 @@ I also faced the small issue that no one had written an open-source text editor 
 
 I wanted an editor like [Byword](https://www.bywordapp.com) (which I am using to write this post), which uses Markdown patterns to apply formatting as you type, without removing the formatting characters. If you type `**hello**` in Byword, it leaves the asterisks and makes the "hello" between them bold.
 
-![Compose for Substack showing a list of drafts next to the editor](compose-drafts.png)
+![Compose for Substack showing a list of drafts next to the editor](compose-drafts.webp)
 
 Nothing fit, so I learned just enough UIKit and AppKit to write a text editor that formats as you type. It took a long time and a lot of effort, and it still [slows down if you write too much](https://github.com/kyle-n/HighlightedTextEditor/issues/25), but it worked. The editor took Markdown, and, after the user had stopped tpyping for a few seconds, converted it to Prosemirror and synced it to substack.com.
 
@@ -170,7 +170,7 @@ That was about the extend of my SwiftUI success.
 
 ### The framework
 
-![A screenshot of an iPad displaying a login screen in Compose](compose-login.png)
+![A screenshot of an iPad displaying a login screen in Compose](compose-login.webp)
 
 I like SwiftUI. Interfaces are easier to build declaratively, one reason React has taken over frontend web dev. It feels more intuitive than making subclasses and overriding parent functions, like in UIKit.
 
@@ -188,7 +188,7 @@ The app would be free to download. You would be able to publish three posts befo
 
 The subscription was necessary because this app would require ongoing updates to keep it compatible with the Substack API. "Lifetime purchase" was also a bad option, since Substack could cut me off at any time. Better to charge month to month.
 
-![The settings screen of Compose for Substack](compose-settings.png)
+![The settings screen of Compose for Substack](compose-settings.webp)
 
 I investigated in-app payments. On one hand, RevenueCat seemed like a fast way to get out the door. StoreKit seemed complicated.
 

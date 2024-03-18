@@ -3,7 +3,7 @@ layout: post
 title: Dependency injection in Svelte for fun and profit
 description: How to instantiate dependencies in a way that makes testing easy.
 date: 2024-03-11
-image: flowing-code.jpg
+image: flowing-code.webp
 caption: Gemini - "Create a comic book style panel of a bunch of ones and zeroes flowing into a computer"
 keywords: frontend, tutorial, svelte, testing
 ---

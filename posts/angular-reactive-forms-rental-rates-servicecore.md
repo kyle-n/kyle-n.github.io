@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Using Angular reactive forms to build a huge feature for ServiceCore
-image: rental-rates.png
+image: rental-rates.webp
 caption: And it looks so simple from the outside to use.
 date: 2020-05-16
 keywords: javascript, typescript, angular, rxjs, showcase, frontend
@@ -34,7 +34,7 @@ The rental rate input table should display every product attached to a rental. B
 
 So: rentals have products, products have line item charges, and rental rates are special per-rental instances of a line item charge. Make sense?
 
-![Overall view of the rate input table](rental-rates.png)
+![Overall view of the rate input table](rental-rates.webp)
 
 The last two options in the line item dropdown should be "Add Service" and "Assign Service", which I'll explain later.
 
@@ -146,7 +146,7 @@ This block grabs services (line item charges) already associated to a product an
 
 The last code win was creating the select service dropdown. It transformed an array of services into `<options>`, sorting by billing period on the service.
 
-![The add service dropdown for ServiceCore rental rates](rental-rate-dropdown.png)
+![The add service dropdown for ServiceCore rental rates](rental-rate-dropdown.webp)
 
 All that logic used a pure static class function, making it a breeze to unit test.
 

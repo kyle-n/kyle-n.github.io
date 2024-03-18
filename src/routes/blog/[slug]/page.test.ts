@@ -37,14 +37,14 @@ describe('Blog post page', () => {
   });
 
   it('should render the lead image', () => {
-    mockResolvedBlogPost.metadata.image = 'https://example.com/image.jpg';
+    mockResolvedBlogPost.metadata.image = 'https://example.com/image.webp';
     cleanup();
     render(BlogPostPage, { data: mockResolvedBlogPost });
     expect(screen.getByRole('img')).toBeInTheDocument();
   });
 
   it('should render the image caption if present', () => {
-    mockResolvedBlogPost.metadata.image = 'https://example.com/image.jpg';
+    mockResolvedBlogPost.metadata.image = 'https://example.com/image.webp';
     mockResolvedBlogPost.metadata.caption = 'Test caption';
     cleanup();
     render(BlogPostPage, { data: mockResolvedBlogPost });

@@ -2,7 +2,7 @@
 layout: post
 title: Explaining Docker through an example
 date: 2023-10-16
-image: future-whale.png
+image: future-whale.webp
 caption: DALL-E 2 - "a blue whale leaping through the air. The background is full of digital rain and numbers and neon lights"
 description: A short anecdote illustrating why Docker is useful.
 ---

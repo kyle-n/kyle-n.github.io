@@ -2,7 +2,7 @@
 title: How I have staved off repetitive stress injury as a software developer (so far)
 keywords: personal
 date: 2024-03-05
-image: rsi-typing.jpeg
+image: rsi-typing.webp
 caption: FastSDXL.ai - "Ink drawing of a main with RSI from typing"
 ---
 

@@ -8,7 +8,7 @@ image: three-browsers.webp
 
 I recently published a browser extension, [Replies for Hacker News](https://www.nazariosoftware.com/2024/02/23/never-miss-a-conversation-with-replies-for-hacker-news.html). It notifies you if somebody replies to one of your posts on [Hacker News](https://news.ycombinator.com) and adds a link to quickly view that reply. I wrote it because I was tired of missing good replies to my comments.
 
-![The top bar of Hacker News with a link to your unread replies, added by my extension](rhn-top-bar.png)
+![The top bar of Hacker News with a link to your unread replies, added by my extension](rhn-top-bar.webp)
 
 I made a version of the extension for three browsers:
 
@@ -46,7 +46,7 @@ My extension is free to trial for 14 days. After that, a one-time payment of $2 
 
 On Chrome and Firefox, that payment is through Stripe. The user clicks the "Purchase" button and is redirected to a purchase URL, where they pay and provide an email address. That email unlocks the extension for them (see my [previous post on creating a paid Chrome extension](https://kylenazario.com/blog/paid-extension-setup-with-cloudflare)).
 
-![The settings of my extension. There's a link to open the purchase page and a box to restore your purchase](rhn-settings.png)
+![The settings of my extension. There's a link to open the purchase page and a box to restore your purchase](rhn-settings.webp)
 
 On Safari, you can't use Stripe for in-app purchases. Not if you want to distribute the extension through the App Store, which is required to reach users on iOS and iPadOS. In-app purchases with Safari have to go through the App Store and [StoreKit](https://developer.apple.com/storekit/). 
 

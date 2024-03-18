@@ -4,7 +4,7 @@ title: The 10 best new movies I saw in 2023
 description: A surprisingly good year for movies!
 date: 2024-02-27
 keywords: personal, best-movies
-image: godzilla-theater.jpg
+image: godzilla-theater.webp
 caption: Gemini - "Generate an image from the back of a movie theater. A Godzilla movie is playing on screen. Godzilla's head is coming out of the screen toward the audience"
 ---
 

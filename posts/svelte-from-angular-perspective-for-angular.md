@@ -3,7 +3,7 @@ title: Svelte from the perspective of an Angular developer (for Angular devs)
 description: Impressions of a new framework after living in Observable land for years.
 date: 2024-01-17
 keywords: svelte, angular, opinion
-image: angular-svelte.png
+image: angular-svelte.webp
 ---
 
 <script lang="ts">

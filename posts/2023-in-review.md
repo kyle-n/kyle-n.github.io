@@ -4,7 +4,7 @@ title: 2023 in review
 description: Looking back on a busy year
 date: 2023-12-31
 keywords: personal, year-in-review
-image: fireworks.png
+image: fireworks.webp
 caption: DALL-E 2 - "a man sitting at a computer writing code. There is a city visible through his window with bright neon colors. There are fireworks going off outside the window for new year's eve. pixel art"
 ---
 

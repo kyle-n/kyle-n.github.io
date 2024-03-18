@@ -3,7 +3,7 @@ layout: post
 title: Above all else, code should be simple
 date: 2023-05-03
 keywords: coding, books
-image: ocean.jpg
+image: ocean.webp
 caption: Via Stable Diffusion
 description: A review of John K. Ousterhout's "A Philosophy of Software Design."
 ---

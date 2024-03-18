@@ -9,5 +9,5 @@ This is the source code for my personal blog, [kylenazario.com](https://www.kyle
 Svelte does some (very useful) preprocessing with remark and rehype, so inline image URLs need only the filename. All images should be stored in `/static/img`.
 
 ```markdown
-![Alt text here](my-pic.jpg)
+![Alt text here](my-pic.webp)
 ```

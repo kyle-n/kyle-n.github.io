@@ -4,7 +4,7 @@ title: How to make an RSS feed for your SvelteKit blog, part 2
 keywords: showcase, frontend, svelte, tutorial
 description: How to put the full contents of every post into your RSS feed, now with better parsing.
 date: 2023-11-19
-image: glowing-rss.png
+image: glowing-rss.webp
 caption: DALL-E 2 - "a glowing orange rss icon floating in the middle of a dark library"
 ---
 
@@ -239,7 +239,7 @@ function removeBasePrefixFromElements(dom: JSDOM): void {
 
 The last super fiddly bit of HTML fixing we need is around footnotes. A properly rendered footnote will appear as a link on the web and as an inline button in RSS readers like [NetNewsWire](https://netnewswire.com).
 
-![A screenshot of a footnote. There is a small button with a 1, and a popover connected to it. The footnote says 'TypeScript is JavaScript with better editor hints.'](inline-footnote.png)
+![A screenshot of a footnote. There is a small button with a 1, and a popover connected to it. The footnote says 'TypeScript is JavaScript with better editor hints.'](inline-footnote.webp)
 
 Incorrectly rendered footnotes will appear as links in the RSS reader and bounce your audience to the web version of your post. Even worse, they may not even link to the right footnote!
 

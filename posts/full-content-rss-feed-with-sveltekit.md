@@ -98,7 +98,7 @@ export const BLOG_AUTHOR_EMAIL = 'kylebnazario@gmail.com';
 export const BLOG_AUTHOR_LINKEDIN = 'kylenazario';
 export const BLOG_AUTHOR_MASTODON = '@kn';
 export const BLOG_AUTHOR_BLUESKY = 'kylenazario.com';
-export const BLOG_IMAGE_FILENAME = 'banner.png';
+export const BLOG_IMAGE_FILENAME = 'banner.webp';
 export const BLOG_IMAGE = `${BLOG_URL}/img/${BLOG_IMAGE_FILENAME}`;
 ```
 
@@ -179,7 +179,7 @@ layout: post
 title: How AI helped me write a browser extension
 date: 2023-06-07
 keywords: ai, javascript, typescript, extensions, showcase, frontend
-image: ai.png
+image: ai.webp
 description: Making the case AI is not magic, but it is useful.
 ---
 ```
@@ -258,7 +258,7 @@ This code reads the Markdown from the blog post file and converts it to HTML. Si
 
 However, if you preview the RSS feed, you will see something unfortunate.
 
-![A post in an RSS feed with the YAML frontmatter displayed](bad-feed-1.png)
+![A post in an RSS feed with the YAML frontmatter displayed](bad-feed-1.webp)
 
 Showdown tries to render the YAML frontmatter as content. We don't want any of that.
 
@@ -277,7 +277,7 @@ The feed's better! Looks like we can finally- wait a minute, is a real HTML butt
 
 #### Escape the HTML
 
-![A post in an RSS reader. A clickable button is displayed inside a code snippet](bad-feed-2.png)
+![A post in an RSS reader. A clickable button is displayed inside a code snippet](bad-feed-2.webp)
 
 There shouldn't be real button in that code snippet.
 
@@ -303,7 +303,7 @@ async function getHtmlForPost(postPath: string): Promise<string> {
 }
 ```
 
-![A post in an RSS reader. HTML code is displayed in a code snippet](good-feed-1.png)
+![A post in an RSS reader. HTML code is displayed in a code snippet](good-feed-1.webp)
 
 Much better.
 

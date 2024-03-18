@@ -26,21 +26,21 @@ I searched "marie antoinette bow" on Google. The top result was from [Quora](htt
 
 I did not realize tapping this link would open a portal into pure madness.
 
-![A screenshot of a Quora page not answering the question of Marie Antoinette bowing the the mob](marie-search-2.png)
+![A screenshot of a Quora page not answering the question of Marie Antoinette bowing the the mob](marie-search-2.webp)
 
 The title of the page, "Did Marie Antoinette really bow to the crowd," seems promising. That's my question. Under that is an ad for narcissistic abuse. Hard to tell where the ad stops. Under that is a box where I can ask ChatGPT the question.
 
-![A screenshot of ChatGPT saying it is a legend she bowed](marie-search-3.png)
+![A screenshot of ChatGPT saying it is a legend she bowed](marie-search-3.webp)
 
 ChatGPT says it is just a legend she bowed to the crowd. However, ChatGPT is terrible for historical questions. It puts together statistically likely words, and sometimes those words are [completely wrong](https://stratechery.com/2022/ai-homework/) and don't match, you know, _actual history_.
 
 I closed the ChatGPT window on Quora's website and checked the answer, written by "Michael." Michael's bio is "I have lived a lot of it." Okay!
 
-![A screenshot of a Quora answer with an expand button](marie-search-4.png)
+![A screenshot of a Quora answer with an expand button](marie-search-4.webp)
 
 He wrote a lot about the history of Marie Antoinette, but he never actually answers the question. In fact, his answer is cut off by a box asking me to sign up for Quora Plus.
 
-![A screenshot of Quora asking me to sign up](marie-search-5.png)
+![A screenshot of Quora asking me to sign up](marie-search-5.webp)
 
 I don't think his full answer will tell me if Marie Antoinette bowed to the mob. I don't think his answer has anything to do with the question, actually. I think Quora auto-generated this page, because people search for it, but they don't have an answer from a real user. They just gamed Google Search enough to get to the top.
 
@@ -50,7 +50,7 @@ Quora confounded me [^1] and did not answer the question.
 
 Next, I tried digging through some blog spam.
 
-"All That's Interesting" [claims](https://allthatsinteresting.com/marie-antoinette-death) it's a legend, but judging by their name and [copious weight-loss ads]({base}/img/marie-search-6.png), they seem not credible.
+"All That's Interesting" [claims](https://allthatsinteresting.com/marie-antoinette-death) it's a legend, but judging by their name and [copious weight-loss ads]({base}/img/marie-search-6.webp), they seem not credible.
 
 I refined my Google search to "did marie antoinette bow before the mob." The top snippet was from an [article in the Independent](https://www.independent.co.uk/arts-entertainment/films/features/queen-fatale-there-s-something-about-marie-6230917.html), from when _Marie Antoinette_ released in 2006. That article claims she _did_ face the crowd, but it cites no sources. I also can't tell if it's talking about the events of the film or reality.
 
@@ -58,7 +58,7 @@ The next Google result is from [nobility.org](https://nobility.org/2012/03/marie
 
 The website claims Marie Antoinette appeared before the crowd, but cites no sources.
 
-[HistoryAnswers.co.uk](https://www.historyanswers.co.uk/kings-queens/marie-antoinette-the-hated-queen/), the next Google result, claims she faced the crowd. Maybe she faced the crowd but did not literally bow? It's also hard to trust HistoryAnswers.co.uk given the name and [vaguely NSFW chumbox advertising]({base}/img/marie-search-7.png).
+[HistoryAnswers.co.uk](https://www.historyanswers.co.uk/kings-queens/marie-antoinette-the-hated-queen/), the next Google result, claims she faced the crowd. Maybe she faced the crowd but did not literally bow? It's also hard to trust HistoryAnswers.co.uk given the name and [vaguely NSFW chumbox advertising]({base}/img/marie-search-7.webp).
 
 ### Smithsonian
 

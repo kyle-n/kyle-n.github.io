@@ -3,7 +3,7 @@ layout: post
 title: Why smaller components are better
 date: 2022-05-23
 keywords: javascript, typescript, angular, frontend, tutorial, coding
-image: component-tree.png
+image: component-tree.webp
 caption: Via angular.io
 description: The single-responsibility principle didn't go away when we went to components.
 ---
@@ -32,13 +32,13 @@ Here's an example of how small components should be, pulled from the [React docu
 
 Imagine we're making a simple web app for our online store. We have a frontend calling an API to get a list of products, then displaying that list.
 
-![A basic UI listing products for sale](web-store-ui.png)
+![A basic UI listing products for sale](web-store-ui.webp)
 
 It is an easy mistake to look at this code and assume it should all be one component.
 
 Here's the official recommendation on how granular the components should be to build this UI - and remember, this is the recommendation of a bunch of Meta engineers who spend all day building a component-based framework:
 
-![A basic UI listing products for sale split into sub-components](web-store-ui-split.png)
+![A basic UI listing products for sale split into sub-components](web-store-ui-split.webp)
 
 They recommend splitting this UI into five components:
 

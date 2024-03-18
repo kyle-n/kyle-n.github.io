@@ -3,7 +3,7 @@ layout: post
 title: Sometimes efficiency is bad
 date: 2023-10-30
 keywords: personal, opinion
-image: magical-radio.png
+image: magical-radio.webp
 caption: Dall-E 2 - "a small radio in a drag office blasting colors and lights and musical notes. digital art, high quality"
 description: Sometimes, the reason something inefficient is good is because it's inefficient.
 ---

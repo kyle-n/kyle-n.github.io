@@ -2,7 +2,7 @@
 layout: post
 title: How to create a paid Chrome browser extension
 description: The quickest way to create a paid browser extension without running a server
-image: chrome-money.png
+image: chrome-money.webp
 caption: Google ImageGen 2 - "A picture of the Google Chrome browser icon surrounded by dollar bills."
 date: 2024-02-09
 keywords: javascript, extensions, tutorial
@@ -36,13 +36,13 @@ Next, sign up for [Cloudflare](https://www.cloudflare.com).
 
 Stripe has a feature called [Payment Links](https://stripe.com/payments/payment-links). They let you create a URL with a checkout form - no code required.
 
-![A screenshot of Mac Safari showing a Stripe Payment Link page](stripe-payment-link.png)
+![A screenshot of Mac Safari showing a Stripe Payment Link page](stripe-payment-link.webp)
 
 When users click "Purchase" in your extension, you'll redirect them to this payment link page. Stripe handles all the logic for credit cards, taxes, payment apps and those things.
 
 Create a payment link in your Stripe dashboard. Set the name and pricing to whatever you want. Open the link's details in the Stripe dashboard and scroll down to the "Metadata" section. Click "Edit metadata" and add a new field: `app_id`. Its value should be some unique key identifying your extension. For my extension [Mute Chat for BoardGameArena](https://www.nazariosoftware.com/2023/06/02/play-in-peace-with-mute-chat-for-boardgamearena.html), I made it the extension's Safari bundle id (`com.nazariosoftware.Mute-Chat-for-BoardGameArena`).
 
-![A screenshot of my Payment Link dashboard showing I've set the app_id metadata](payment-link-metadata.png)
+![A screenshot of my Payment Link dashboard showing I've set the app_id metadata](payment-link-metadata.webp)
 
 This metadata will tell you which of your apps the user purchased.
 

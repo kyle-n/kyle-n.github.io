@@ -3,7 +3,7 @@ layout: post
 title: 3 Ways to simplify frontends with multiple microservices
 description: How to use microservices without spaghetti UI code
 date: 2024-01-25
-image: 1950s-servers.png
+image: 1950s-servers.webp
 caption: DALL-E 2 - "a web page connected to a constellation of servers. 1950s pop art"
 keywords: angular, showcase, frontend, typescript, javascript, node, tutorial, bitovi, rxjs
 relatedLinks:

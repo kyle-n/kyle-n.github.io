@@ -17,7 +17,7 @@
 <main>
   <section id="welcome-section">
     <div id="welcome-header">
-      <img src={base + '/img/me.jpeg'} alt="Kyle Nazario" />
+      <img src={base + '/img/me.webp'} alt="Kyle Nazario" />
       <div>
         <h1>Kyle Nazario</h1>
         <h2>Software Engineer</h2>

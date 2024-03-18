@@ -4,7 +4,7 @@ title: Svelte 5 will have derived runes with callbacks
 description: Great news for fans of computed state and short syntax.
 keywords: svelte, news
 date: 2024-02-20
-image: dog-writer.png
+image: dog-writer.webp
 caption: Google ImageFX - "Impressionist painting of a dog wearing an orange cape writing in the library. The dog looks happy."
 relatedLinks:
   Pull request merging first version of derived.by: https://github.com/sveltejs/svelte/pull/10240

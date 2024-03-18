@@ -4,7 +4,7 @@ title: Experience in any JavaScript framework applies to every JavaScript framew
 date: 2023-10-10
 keywords: typescript, javascript, frontend, angular, rxjs, svelte, react
 description: Recruiters, please broaden your job descriptions.
-image: frontend-frameworks.jpg
+image: frontend-frameworks.webp
 caption: Via wallpaper.com
 ---
 

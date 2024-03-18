@@ -4,7 +4,7 @@ title: Svelte 5 is good, but runes need improvement
 description: Begging for function callbacks.
 date: 2023-12-14
 keywords: opinion, svelte
-image: nordic-runes.jpg
+image: nordic-runes.webp
 caption: Via Yuliya Pauliukevich on Vecteezy
 ---
 

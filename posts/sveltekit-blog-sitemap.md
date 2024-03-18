@@ -4,7 +4,7 @@ title: How to create a sitemap for your SvelteKit blog
 description: Boost your SEO!
 date: 2024-01-05
 keywords: svelte, tutorial
-image: google-map-cartoon.png
+image: google-map-cartoon.webp
 caption: DALL-E 2 - "a map with the google logo in the upper left. Cute, cartoony, pastel colors"
 ---
 

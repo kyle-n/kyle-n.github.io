@@ -4,7 +4,7 @@ title: Why my apps include nutrition labels
 description: Show users you respect them by never shipping mystery meat.
 date: 2024-01-27
 keywords: opinion, javascript, frontend
-image: nutrition-label.png
+image: nutrition-label.webp
 caption: Via Google ImageFX
 ---
 

@@ -3,7 +3,7 @@ layout: post
 title: How ComponentFactoryResolver can unlock powerful higher-order components
 date: 2022-06-30
 keywords: javascript, typescript, angular, frontend, tutorial, bitovi
-image: factory.png
+image: factory.webp
 caption: Via ArtsyBee on Pixabay
 description: Dynamic component instantiation in Angular
 relatedLinks:
@@ -22,9 +22,9 @@ With a little help from `ComponentFactoryResolver`, we can do this in Angular to
 
 Imagine you're creating a dashboard with two tables, each with a different layout. As indicated below, the top table is for transactions, and the bottom table is for users.
 
-![A screenshot of a table showing two transactions. It has columns for transaction ID, amount and details](transaction-table.png)
+![A screenshot of a table showing two transactions. It has columns for transaction ID, amount and details](transaction-table.webp)
 
-![A screenshot of a table showing two users. It has columns for user name and salary](user-table.png)
+![A screenshot of a table showing two users. It has columns for user name and salary](user-table.webp)
 
 The **transactions table** has checkboxes and three columns showing a number, currency and date, respectively. While the **user table** also has a checkbox, it displays only two additional columns, the first rendering a string and the second a currency value .
 

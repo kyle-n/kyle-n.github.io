@@ -3,7 +3,7 @@ layout: post
 title: How to incrementally migrate an Angular project to TypeScript strict mode
 date: 2022-06-22
 keywords: javascript, typescript, angular, frontend, tutorial, bitovi
-image: typescript.png
+image: typescript.webp
 description: Your team needs strict mode, and now there's no excuse.
 relatedLinks:
   Original post on bitovi.com: https://www.bitovi.com/blog/how-to-incrementally-migrate-an-angular-project-to-typescript-strict-mode
