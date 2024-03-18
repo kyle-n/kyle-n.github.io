@@ -12,7 +12,7 @@ I recently published a browser extension, [Replies for Hacker News](https://www.
 
 I made a version of the extension for three browsers:
 
-1. [Chrome](https://chromewebstore.google.com/detail/replies-for-hacker-news/kjoojcgancofjkmknljjcedlkilcbdbb?pli=1), because it has the most desktop users. 
+1. [Chrome](https://chromewebstore.google.com/detail/replies-for-hacker-news/kjoojcgancofjkmknljjcedlkilcbdbb?pli=1), because it has the most desktop users.
 2. [Firefox](https://addons.mozilla.org/en-US/firefox/addon/replies-for-hacker-news/), because it required changing one line of code from Chrome.
 3. [Safari](https://apps.apple.com/us/app/replies-for-hacker-news/id6477880820), because I wanted to use my own extension in my favorite desktop browser.
 
@@ -48,7 +48,7 @@ On Chrome and Firefox, that payment is through Stripe. The user clicks the "Purc
 
 ![The settings of my extension. There's a link to open the purchase page and a box to restore your purchase](rhn-settings.webp)
 
-On Safari, you can't use Stripe for in-app purchases. Not if you want to distribute the extension through the App Store, which is required to reach users on iOS and iPadOS. In-app purchases with Safari have to go through the App Store and [StoreKit](https://developer.apple.com/storekit/). 
+On Safari, you can't use Stripe for in-app purchases. Not if you want to distribute the extension through the App Store, which is required to reach users on iOS and iPadOS. In-app purchases with Safari have to go through the App Store and [StoreKit](https://developer.apple.com/storekit/).
 
 As far as I know, there is no way to initiate a StoreKit purchase on the web. So, I rewrote the Mac and iPhone container apps for my extension in SwiftUI (which I learned a few years ago foolishly [trying to make a third-party Substack app](https://kylenazario.com/blog/compose-for-substack-eulogy)). [^2]
 
