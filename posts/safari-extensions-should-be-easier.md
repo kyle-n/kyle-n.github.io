@@ -16,7 +16,7 @@ I made a version of the extension for three browsers:
 2. [Firefox](https://addons.mozilla.org/en-US/firefox/addon/replies-for-hacker-news/), because it required changing one line of code from Chrome.
 3. [Safari](https://apps.apple.com/us/app/replies-for-hacker-news/id6477880820), because I wanted to use my own extension in my favorite desktop browser.
 
-That's right, I said it. I like Safari. I like that it feels most native to the Mac. I like that it's fast, and has [privacy features](https://www.apple.com/safari/docs/Safari_White_Paper_Nov_2019.pdf). Most of all, I like that [it crushes Chromium-based browsers at power efficiency](https://medium.com/homullus/8-browsers-in-a-tiny-car-energy-efficiency-benchmark-fe3ca82f1690). I can work outside on my MacBook for a couple hours without murdering my battery with tabs.
+That's right, I said it. I like Safari. Some frontend developers are probably yelling about WebKit-only bugs, but I don't care. I like that Safari feels most native to the Mac of the major browsers. I like that it's fast, and has [privacy features](https://www.apple.com/safari/docs/Safari_White_Paper_Nov_2019.pdf). Most of all, I like that [it crushes Chromium-based browsers at power efficiency](https://medium.com/homullus/8-browsers-in-a-tiny-car-energy-efficiency-benchmark-fe3ca82f1690). I can work outside on my MacBook for a couple hours without murdering my battery with tabs.
 
 Supporting Safari was no small choice. It has less market share, and it more than **doubled** my workload.
 
