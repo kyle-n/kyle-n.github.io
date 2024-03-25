@@ -20,6 +20,8 @@ But I digress. 2023 was an eventful year, filled with challenges and improvement
 
 At work, I spent the year helping clients with their frontends. I solved one particularly thorny issue for a client whose Angular app needed to collect data from several different microservices. I'll have a long post about that one soon.
 
+**Edit March 2024**: [3 Ways to simplify frontends with multiple microservices](https://kylenazario.com/blog/reducing-frontend-complexity-with-microservices).
+
 For my personal projects, I spent a fair bit of time rewriting this website in [SvelteKit](https://kit.svelte.dev). Svelte was a joy to learn and even more to write. I loved [building a full-content RSS feed]({base}/blog/full-content-rss-feed-with-sveltekit-part-two) for my posts and [contributing to Svelte open source]({base}/blog/svelte-testing-library-pr-globals). I also figured out a neat trick to write [even shorter Markdown image syntax]({base}/blog/markdown-images-for-sveltekit-blogs) using Remark.
 
 I love the site. It's reinvigorated my love of blogging, which I am trying to do every week. Nothing improves your writing more than doing it as much as possible. It's been wonderful to reconnect to an old passion of mine.
@@ -60,6 +62,8 @@ Looking ahead to 2024, I can't wait to play _Persona 3: Reloaded_ and _Final Fan
 #### Movies
 
 I have too many thoughts about the movies I saw this year. That'll be a separate post. For now, see my [2023 Letterboxd list](https://letterboxd.com/kyle_nazario/list/2023/).
+
+**Edit March 2024**: [My top 10 films of the year](https://kylenazario.com/blog/best-new-movies-2023).
 
 #### Books
 

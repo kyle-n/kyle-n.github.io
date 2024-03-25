@@ -12,9 +12,9 @@ caption: Gemini - "Generate an image from the back of a movie theater. A Godzill
   import YoutubeEmbed from '$lib/components/youtube-embed.svelte'
 </script>
 
-This was a surprisingly good year for movies, and not just because of [Barbenheimer](https://en.wikipedia.org/wiki/Barbenheimer) (which has a Wikipedia page? Amazing). In between all the chuff were a couple really great movies. Nothing I loved, but a lot to recommend.
+This was a surprisingly good year for movies, and not just because of [Barbenheimer](https://en.wikipedia.org/wiki/Barbenheimer) (which has a Wikipedia page? Amazing). In between all the chuff were a couple really great movies.
 
-Here's my 10 favorites of the year. See [the full list on Letterboxd](https://letterboxd.com/kyle_nazario/list/2023/).
+See [the full list on Letterboxd](https://letterboxd.com/kyle_nazario/list/2023/).
 
 (Ratings are out of 5. 3 stars is good, 4 is great, 5 is 😍).
 
@@ -32,7 +32,7 @@ The whole movie is terrific, but the moment that stuck with me most was an [impr
 
 That's the movie right there in a nutshell. The destructive power of a god is being controlled by... humans. Hundreds of thousands live or die based on where some bureaucrat went on vacation.
 
-Oppenheimer gave us the power to destroy ourselves. Nolan points out in this movie, correctly, we are not qualified.
+Oppenheimer gave us the power to destroy ourselves. Nolan points out in this movie, correctly, we are not qualified and there's no going back through the door.
 
 ### 9: _Barbie_ | ★★★★
 
@@ -60,19 +60,19 @@ Via [BoundingComics](https://boundingintocomics.com/2023/12/12/godzilla-minus-on
 
 The first time he fires his heat laser is one of the best, scariest moments in a theater last year.
 
-The creators of this movie just understand that it's not enough to make something big. You should be afraid of Godzilla. No, more afraid.
+The creators of this movie just understand that it's not enough to make something big. You should be terrified of Godzilla.
 
 ### 7: _Talk to Me_ | ★★★★
 
 <YoutubeEmbed id="aLAKJu9aJys" />
 
-I'm not going to do a better job of summing up _Talk to Me_ than [this Letterboxd review](https://letterboxd.com/mjohnson18/film/talk-to-me-2022/):
+I can't describe _Talk to Me_ better than [this Letterboxd review](https://letterboxd.com/mjohnson18/film/talk-to-me-2022/):
 
 > Somehow two dudes who ran a horror-comedy YouTube channel and whose most well-known film work was done as crew hands on [_The Babadook_](https://en.wikipedia.org/wiki/The_Babadook) churned out a tense, atmospheric mindfuck masterpiece, joining [Jordan Peele](https://en.wikipedia.org/wiki/Jordan_Peele) and [Zach Cregger](https://www.imdb.com/name/nm1199107/) as career comedians who apparently have the souls of demons.
 
 _Talk to Me_ is pound-for-pound the scariest movie I've seen in years. It's 90 minutes long and feels like three hours. It is _intense_. It's not even that gory.
 
-The movie follows a group of Australian teenagers who try a fun party game. Your friends tie you to a chair. Then, you reach out and hold the haunted ceramic hand and say, "Talk to me." Then... someone does.
+The movie follows a group of Australian teenagers who try a fun party game. Your friends tie you to a chair. You reach out and hold a haunted ceramic hand and say, "Talk to me." Then... someone does.
 
 Phenomenal work from two up-and-coming directors. Can't wait to see what they do next.
 
@@ -82,9 +82,9 @@ Phenomenal work from two up-and-coming directors. Can't wait to see what they do
 
 Speaking of horror movies, Todd Haynes' _May December_ is one of the most uncomfortable watches of 2023.
 
-Natalie Portman plays an actress staying with a family in Georgia. She's going to play the family's mom in a TV movie. 20 years before the movie starts, the mom (in her 30s) slept with a 13-year-old boy (her current husband).
+Natalie Portman plays an actress staying with a family in Georgia. She's going to play the family's mom in a TV movie. 20 years prior, the mom (then in her 30s) slept with a 13-year-old boy (her current husband, now early 30s).
 
-As you might imagine, there's still a lot of tension. Neighbors, friends and family have to live with the aftermath of an unimaginable crime, one whose evidence is in front of them every day.
+Unsurprisingly, this family has a lot of tension. Neighbors, friends and family have to live with the aftermath of an unimaginable crime, one whose evidence is in front of them every day.
 
 The performances are what make the movie. Portman and Julianne Moore are creepy frenemies. Charles Melton is the grown-up kid and the beating heart of the film, the conscience who begins to realize the wrong done to him.
 
@@ -94,21 +94,21 @@ The performances are what make the movie. Portman and Julianne Moore are creepy 
 
 No movie on this list is harder to recommend than _Beau Is Afraid_. It is three hours of postmodern horror focused on toxic family relationships. When it finished, people in our theater scoffed.
 
-But reader - those people are _wrong_
+Reader - those people are _wrong_
 
-_Beau Is Afraid_ is a masterful piece of horror movie about living with and loving an abusive narcissist. If you've ever known someone like this, _Beau Is Afraid_ plays like a documentary: the coy hints of displeasure, eidetic memory of wrongs against them, guilt trips, dizzying mood swings, paranoia, and conditional, easily withdrawn affection.
+_Beau Is Afraid_ is a horror masterpiece about living with and loving an abusive narcissist. If you've ever known someone like this, _Beau Is Afraid_ plays like a documentary: the coy hints of displeasure, eidetic memory of wrongs, guilt trips, dizzying mood swings, paranoia, and conditional, easily withdrawn affection.
 
-As the film critic David Ehrlich put it, "Anyone who would sooner die for their mom than answer the phone when she calls should probably mix a few Zoloft into their popcorn just to be safe."
+As the film critic David Ehrlich [put it](https://www.indiewire.com/criticism/movies/beau-is-afraid-review-ari-aster-1234827032/), "Anyone who would sooner die for their mom than answer the phone when she calls should probably mix a few Zoloft into their popcorn just to be safe."
 
 ### 4: _Killers of the Flower Moon_ | ★★★★
 
 <YoutubeEmbed id="EG0si5bSd6I" />
 
-There's nobody better at depicting gangsters than Martin Scorsese. The guy who made _Goodfellas_, _Casino_ and _The Wolf of Wall Street_ gets criminals on a bone-deep level. He sees their vanity, pride, egotism, chauvinism, and raw greed. Scorsese knows a gangster can wear any costume and live in any social class, no matter how "respectable." Fitting, then, he turns his attention to the American frontier.
+There's nobody better at depicting gangsters than Martin Scorsese. The guy who made _Goodfellas_, _Casino_ and _The Wolf of Wall Street_ gets criminals on a bone-deep level. He sees their vanity, pride, egotism, chauvinism, and raw greed. Scorsese knows a gangster can wear any costume and live in any social class, no matter how "respectable." Fitting, then, that he turns his attention to the American frontier.
 
 _Killers of the Flower Moon_ is based on a [true story](https://www.amazon.com/Killers-Flower-Moon-Murders-Random/dp/1524755931/ref=asc_df_1524755931/). A century ago, the Osage tribe was forced to move to a rocky, unfarmable patch of nowhere in Oklahoma. It was the least valuable corner of the state, right up until they found oil.
 
-The vast oil riches put the Osage in a historically strange position. They had more money than most people'd see in a lifetime, but the government didn't consider them citizens. They were multi-millionaires with no legal protection.
+The vast oil riches put the Osage in a historically strange position. They were multi-millionaires who couldn't vote. They had more money than most people'd see in a lifetime, but the government offered almost no protection.
 
 This paradox created, in Scorsese terms, an entire town of gangsters. Untold numbers of white citizens began killing their Osage neighbors for their oil rights. The book the movie's based on talks about healthy Osage men in their 40s dropping dead one day of "natural causes." Murdering them was basically legal.
 
@@ -118,15 +118,13 @@ It's a story worth telling and remembering. Scorsese's not Osage, so his perspec
 
 <YoutubeEmbed id="RlbR5N6veqw" />
 
-Yorgos Lanthimos is one of the best weirdos working in cinema. I am always happy to see new movies from the warped mind that brought us [_The Lobster_](https://www.imdb.com/title/tt3464902/) and [_The Killing of a Sacred Deer_](https://en.wikipedia.org/wiki/The_Killing_of_a_Sacred_Deer).
+Yorgos Lanthimos is one of my favorite weirdos working in cinema. I am always happy to see new movies from the warped mind that brought us [_The Lobster_](https://www.imdb.com/title/tt3464902/) and [_The Killing of a Sacred Deer_](https://en.wikipedia.org/wiki/The_Killing_of_a_Sacred_Deer).
 
 This time, the movie is about a mad scientist who implants a baby's brain into the body of an adult woman (Emma Stone). Stone is transfixing as a Frankenstein's monster growing to realize she is much smarter than the dumb men around her. Her performance is, politely, deranged.
 
 My favorite turn has to be Mark Ruffalo, though. He plays a preening, pompous wannabe ladykiller who quickly falls to pieces before Bella. It is one of the best comedic performances of the year. My friends and I still giggle at the way he screams "BEEEEEEEEEEEEEEEELLLLAAAAAAAAAAA!!!"
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oA1d_VZ5XQc?si=gPQCTOAiu4YdqMPj&amp;start=355" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-
-If nothing else, you have to salute the fabulous costumes.
 
 ### 2: _The Holdovers_ | ★★★★
 
