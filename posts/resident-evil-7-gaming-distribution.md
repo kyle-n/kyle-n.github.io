@@ -51,4 +51,4 @@ As Capcom Europe COO Stuart Turner put it:
 1. Products have more shelf life. It's not like the old days where a big box store would bump you from the shelf to make room for the new release. You can keep selling *forever*. 
 2. You can be more niche. Products don't have to appeal to the median shopper. You just have to find the 13 million people who like silly and scary horror games. 
 
-It's a brand new world out there, and we're [about to see something wonderful](https://www.youtube.com/watch?v=XffGGslt3H8) (NSFW). 
+It's a brand new world out there, and we're about to see something wonderful.
