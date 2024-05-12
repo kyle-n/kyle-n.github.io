@@ -10,7 +10,7 @@ image: corman.webp
   import YoutubeEmbed from '$lib/components/youtube-embed.svelte'
 </script>
 
-[Roger Corman died today](https://www.hollywoodreporter.com/movies/movie-news/roger-corman-dead-independent-director-producer-king-of-the-b-1235896846/). I recommend his [obituary](https://www.hollywoodreporter.com/movies/movie-news/roger-corman-dead-independent-director-producer-king-of-the-b-1235896846/) in *The Hollywood Reporter*, which is a fair and respectful overview of his life. Basically, Corman made a *lot* of bad movies. He was polite, kind, and unpretentious. You can’t be when you’re producing [*Night of the Blood Beast*](https://en.wikipedia.org/wiki/Night_of_the_Blood_Beast).
+[Roger Corman died today](https://www.hollywoodreporter.com/movies/movie-news/roger-corman-dead-independent-director-producer-king-of-the-b-1235896846/). I recommend his [obituary](https://www.hollywoodreporter.com/movies/movie-news/roger-corman-dead-independent-director-producer-king-of-the-b-1235896846/) in _The Hollywood Reporter_, which is a fair and respectful overview of his life. Basically, Corman made a _lot_ of bad movies. He was polite, kind, and unpretentious. You can’t be when you’re producing [_Night of the Blood Beast_](https://en.wikipedia.org/wiki/Night_of_the_Blood_Beast).
 
 ![Night of the Blood Beast cover](https://upload.wikimedia.org/wikipedia/en/5/55/Nightofthebloodbeast.jpg)
 
@@ -20,23 +20,23 @@ If his movies look terrible, it’s because they are. They’re usually cheesy, 
 
 I love these kinds of movies, though.
 
-Terrible movies can surprise you. A bad enough film can almost feel like avante garde. Watch this scene from [*The Room*](https://en.wikipedia.org/wiki/The_Room) and tell me the dialogue is not practically [Lynchian](https://en.wikipedia.org/wiki/David_Lynch). It’s (unintentionally) grade-A surrealism. 
+Terrible movies can surprise you. A bad enough film can almost feel like avante garde. Watch this scene from [_The Room_](https://en.wikipedia.org/wiki/The_Room) and tell me the dialogue is not practically [Lynchian](https://en.wikipedia.org/wiki/David_Lynch). It’s (unintentionally) grade-A surrealism.
 
 <YoutubeEmbed id="KIkoXhgtI58" />
 
-One time, I was watching a Corman movie called [*Caged Heat*](https://www.imdb.com/title/tt0071266/). It’s about a bunch of female prisoners fighting an evil doctor and warden. It’s pretty trashy. 
+One time, I was watching a Corman movie called [_Caged Heat_](https://www.imdb.com/title/tt0071266/). It’s about a bunch of female prisoners fighting an evil doctor and warden. It’s pretty trashy.
 
-*Caged Heat* was directed by one of Corman’s protégés - a guy named [Jonathan Demme](https://en.wikipedia.org/wiki/Jonathan_Demme). He was working with a newbie cinematographer, [Tak Fujimoto](https://en.wikipedia.org/wiki/Tak_Fujimoto). You can tell it was Demme’s first directing job and Fujimoto’s third cinematography gig. The movie is bad, except for one insanely good shot where a person stares straight into the camera from an inch away. 
+_Caged Heat_ was directed by one of Corman’s protégés - a guy named [Jonathan Demme](https://en.wikipedia.org/wiki/Jonathan_Demme). He was working with a newbie cinematographer, [Tak Fujimoto](https://en.wikipedia.org/wiki/Tak_Fujimoto). You can tell it was Demme’s first directing job and Fujimoto’s third cinematography gig. The movie is bad, except for one insanely good shot where a person stares straight into the camera from an inch away.
 
-*(I tried to find a screenshot of this, but I can't find remember which actor does it, and I don't want to watch the movie again. The [whole movie](https://www.youtube.com/watch?v=nTedhTrzeNk) is on YouTube).*
+_(I tried to find a screenshot of this, but I can't find remember which actor does it, and I don't want to watch the movie again. The [whole movie](https://www.youtube.com/watch?v=nTedhTrzeNk) is on YouTube)._
 
-Demme and Fujimoto parked the camera an inch from the actor’s face. They fill the screen, blasting you with the full power of their gaze. The effect is flooring. 
+Demme and Fujimoto parked the camera an inch from the actor’s face. They fill the screen, blasting you with the full power of their gaze. The effect is flooring.
 
-You probably know this shot from the movie Demme and Fujimoto did 20 years later, a little film called [*The Silence of the Lambs*](https://en.wikipedia.org/wiki/The_Silence_of_the_Lambs_(film)).
+You probably know this shot from the movie Demme and Fujimoto did 20 years later, a little film called [_The Silence of the Lambs_](<https://en.wikipedia.org/wiki/The_Silence_of_the_Lambs_(film)>).
 
 ![Hannibal Lecter staring directly at the camera](lecter.webp)
 
-This is one of the scariest shots ever put in a movie. It makes me want to flee the country. It’s phenomenal. 
+This is one of the scariest shots ever put in a movie. It makes me want to flee the country. It’s phenomenal.
 
 NPR's culture critic Glen Weldon wrote a [wonderful obituary](https://www.npr.org/2017/04/26/525716786/jonathan-demme-and-the-simple-power-of-the-close-up) of Demme (who sadly predeceased his mentor, Corman) breaking down the power of the ultra close-up:
 
@@ -50,8 +50,8 @@ NPR's culture critic Glen Weldon wrote a [wonderful obituary](https://www.npr.or
 >
 > Into us.
 
-Seeing the ultra close-up in *Caged Heat* makes the rest of that bad movie worth it. It’s neat to see Demme figure out the shot that’ll help him [win Best Picture](https://en.wikipedia.org/wiki/64th_Academy_Awards) someday. Seeing it in the middle of that pile of garbage redeems the rest of the movie. Well, almost. [^1]
+Seeing the ultra close-up in _Caged Heat_ makes the rest of that bad movie worth it. It’s neat to see Demme figure out the shot that’ll help him [win Best Picture](https://en.wikipedia.org/wiki/64th_Academy_Awards) someday. Seeing it in the middle of that pile of garbage redeems the rest of the movie. Well, almost. [^1]
 
-[^1]: The ultra close-up lives on, by the way. [Barry Jenkins](https://en.wikipedia.org/wiki/Barry_Jenkins), who Demme mentored, [used the shot to powerful effect](https://thefilmstage.com/cinematographer-james-laxton-on-capturing-the-romance-of-if-beale-street-could-talk-close-ups-and-errol-morris/) in [*If Beale Street Could Talk*](https://en.wikipedia.org/wiki/If_Beale_Street_Could_Talk_(film)). 
+[^1]: The ultra close-up lives on, by the way. [Barry Jenkins](https://en.wikipedia.org/wiki/Barry_Jenkins), who Demme mentored, [used the shot to powerful effect](https://thefilmstage.com/cinematographer-james-laxton-on-capturing-the-romance-of-if-beale-street-could-talk-close-ups-and-errol-morris/) in [_If Beale Street Could Talk_](<https://en.wikipedia.org/wiki/If_Beale_Street_Could_Talk_(film)>).
 
-Bad movies are fun, because you never know what you'll find. Rest in peace, Roger Corman. Your movies were awful. We’ll miss you. 
+Bad movies are fun, because you never know what you'll find. Rest in peace, Roger Corman. Your movies were awful. We’ll miss you.
