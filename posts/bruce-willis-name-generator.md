@@ -4,6 +4,7 @@ title: Bruce Willis movie name generator
 date: 2019-01-21
 image: willis.webp
 description: Find out Bruce's next movie!
+keywords: film
 ---
 
 <script lang="ts">
