@@ -22,14 +22,14 @@ A Big Deal is different from Regular Chaos. The latter is dysfunctional software
 
 For example, imagine you've joined a new team that seems a bit chaotic. They claim to follow scrum, but story and bug tickets have one sentence at most. The QA test environment regularly goes down, sometimes for hours. There's no continuous deployment. When bugs are found, they're added to the sprint with the expectation that they will be completed in addition to the previously planned sprint work.
 
-None of those things are ideal, but I would classify them all as Regular Chaos except for the last one. Adding stories to the sprint without taking anything out is a Big Deal. 
+None of those things are ideal, but I would classify them all as Regular Chaos except for the last one. Adding stories to the sprint without taking anything out is a Big Deal.
 
 Increasing sprint workload on the fly is a recipe for one of two things: overtime (which you should [never give managers]({base}/blog/unpaid-overtime-and-managers) - too addictive), or missed expectations. If you limit your work to 40 hours a week, as you should, you'll absolutely get pulled into a meeting where your manager will ask in a concerned tone if you're having trouble meeting expectations. Never mind that those expectations are insane! You aren't meeting them.
 
-The best way to handle a Big Deal is clear, open, direct, honest communication. Disarm the bomb as soon as you can. In our example, you could use your happiest, nicest voice to tell your manager that you'd be happy to work on whatever was added to the sprint, but you're *so busy* this week and what story would they like bumped to the backlog?
+The best way to handle a Big Deal is clear, open, direct, honest communication. Disarm the bomb as soon as you can. In our example, you could use your happiest, nicest voice to tell your manager that you'd be happy to work on whatever was added to the sprint, but you're _so busy_ this week and what story would they like bumped to the backlog?
 
 (If your manager does not accept this solution, you may want to get advice from other people at the company. Worst case, start brushing up your resume).
 
-Differentiating Regular Chaos and Big Deals seems simple, but it requires you as a developer to always ask, "Is this going to seriously impede me or the project, or is it just annoying?" You have to let go of a *lot* of annoying practices with the understanding they are ultimately not going to stop you or the project from succeeding.
+Differentiating Regular Chaos and Big Deals seems simple, but it requires you as a developer to always ask, "Is this going to seriously impede me or the project, or is it just annoying?" You have to let go of a _lot_ of annoying practices with the understanding they are ultimately not going to stop you or the project from succeeding.
 
 Again, seems obvious, but some of us have had to learn this the hard way 😅.
