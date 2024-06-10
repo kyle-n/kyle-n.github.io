@@ -75,3 +75,8 @@ h6 {
 .footnote-backref {
   margin-left: 0.5ch;
 }
+
+table {
+  // Sakura sets text-align: justify and it looks weird
+  text-align: left;
+}
