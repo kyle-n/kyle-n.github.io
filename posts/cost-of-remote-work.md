@@ -2,7 +2,7 @@
 layout: post
 title: How much have I spent to work from home?
 description: The surprising cost of remote work.
-date: 2024-06-06
+date: 2024-06-11
 keywords: personal
 image: money-wfh.webp
 caption: CGDream.ai - "watercolor of a white male software engineer working from home. He has three computer monitors on his desk and each one has a dollar sign on the screen"
