@@ -83,7 +83,7 @@ A second bedroom is also good for storage and putting up family when they visit.
 
 ### Part 3: Where I make myself feel better by thinking about cars
 
-No matter how much it costs to work from home, it lets me avoid driving. After three years of commuting into Atlanta, [^2] I would _pay_ to avoid driving.
+No matter how much it costs to work from home, it lets me avoid driving. After three years of commuting into Atlanta, [^2] I would _pay_ not to drive.
 
 [^2]: Atlanta is home to some of [the worst traffic bottlenecks in America](https://www.fox5atlanta.com/news/atlanta-traffic-bottlenecks-study-interstate-spaghetti-junction). My commute hit #4, the aptly named "Spaghetti Junction." It's worse than it sounds.
 
@@ -98,10 +98,10 @@ We'll use UC Santa Barbara's [commute calculator](https://www.tps.ucsb.edu/commu
 
 Well. That makes me feel better. Even a short commute costs almost _three grand_ a year. That's fine on a software engineer's salary, but still pretty high in absolute terms. [Mandatory car ownership is a regressive tax](https://twitter.com/jbouie/status/1479824804433772545?s=21).
 
-The cost of the average commute is even crazier at $14,515 a year. Reading [AAA's ownership cost formula](https://newsroom.aaa.com/wp-content/uploads/2022/08/2022-YourDrivingCosts-FactSheet-7-1.pdf), it looks like that comes from depreciation, financing, insurance, taxes and repairs. Their formula assumes my vehicle is worth more than it is (and thus loses more to depreciation), but just as a ballpark figure, it's shocking. If I did the average American's commute, it would cost me almost as much as paying for an extra bedroom in downtown luxury housing, _and_ I'd have to sit in traffic for hours every day. No thank you!
+The cost of the average commute is even crazier at $14,515 a year. Reading [AAA's ownership cost formula](https://newsroom.aaa.com/wp-content/uploads/2022/08/2022-YourDrivingCosts-FactSheet-7-1.pdf), it looks like that comes from depreciation, financing, insurance, taxes and repairs. Their formula assumes my vehicle is worth more than it is (and thus loses more to depreciation), but just as a ballpark figure, it's shocking. The average American's commute costs as much as multiple years of paying for an extra bedroom in downtown luxury housing, _and_ you have to sit in traffic for hours every day. No thank you!
 
-### Conclusion: Housing is the killer
+### Conclusion: Housing is the WFH killer
 
-When I started this blog post, I believed the most expensive parts of my work from home setup were the desk, chair and monitors. Those are _peanuts_ compared to renting an extra bedroom in expensive downtown luxury housing or having a long commute.
+When I started this blog post, I naively thought the most expensive parts of my work from home setup were the desk, chair and monitors. Those are _peanuts_ compared to renting an extra bedroom in expensive downtown luxury housing.
 
-I'm in a low cost of living town at the moment. However, if and when we move back to a high cost-of-living area, I do not plan to make this mistake again. I'll fit the desk in my damn bedroom.
+I just moved to a cheap town. However, if and when we move back to a high cost-of-living area, I do not plan to make this mistake again. I'll fit the desk in my damn bedroom.
