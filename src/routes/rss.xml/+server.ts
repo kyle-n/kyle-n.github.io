@@ -29,7 +29,8 @@ export async function GET() {
 
 // prettier-ignore
 async function getRssXml(): Promise<string> {
-  const allPosts = await getAllPosts();
+  const x = await getAllPosts();
+  const allPosts = [x[1]]
   const rssPosts = allPosts.slice(0, DEFAULT_POSTS_PER_PAGE);
   const rssUrl = `${BLOG_URL}/rss.xml`;
   const root = create({ version: '1.0', encoding: 'utf-8' })
@@ -80,6 +81,9 @@ async function getHtmlForPost(
     .slice(2)
     .join('---')
     .trim();
+
+  testContentForNonBreakingSpaces(postMarkdown, postPath);
+
   const processedMarkdown = await unified()
     .use(remarkParse)
     .use(remarkRehype, { allowDangerousHtml: true })
@@ -226,4 +230,15 @@ function stripScriptsAndComments(dom: JSDOM): void {
       node.remove();
     }
   });
+}
+
+// Non-standard spaces break the HTML parsing in feed readers
+function testContentForNonBreakingSpaces(postContent: string, postPath: string) {
+  for (let i = 0; i < postContent.length; i++) {
+    if (postContent.charCodeAt(i) === 160) {
+      const errorMessage = 'Post contains non-breaking spaces: ' + postPath;
+      console.error(errorMessage, postPath);
+      throw new Error(errorMessage);
+    }
+  }
 }
