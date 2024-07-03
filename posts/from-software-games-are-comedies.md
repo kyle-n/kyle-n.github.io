@@ -8,7 +8,7 @@ caption: Via Fextralife
 keywords: gaming, personal
 ---
 
-_Note: This post includes spoilers for_ Dark Souls*,* Dark Souls II*,* Bloodborne _and_ Sekiro*.*
+_Note: This post includes spoilers for Dark Souls, Dark Souls II, Bloodborne and Sekiro._
 
 Games made by From Software have a certain “hardcore” aura. These are tough, serious games for tough, serious gamers, or so their reputation would have it. The PC port of the first _Dark Souls_ was [literally subtitled](https://store.steampowered.com/app/211420/DARK_SOULS_Prepare_To_Die_Edition/) “Prepare to Die.”
 
@@ -16,7 +16,7 @@ This grimdark reputation is not unearned. _Dark Souls_ and _Elden Ring_ are dark
 
 But this reputation doesn’t do the games justice. FromSoft’s creations are so much more than grim - they’re _funny_.
 
-In fact, I would argue they are fully comedies, and not just because from the [jokes](https://www.youtube.com/watch?v=HPjJCVylFBo) From [intentionally](https://web.archive.org/web/20140412071342/https://www.kotaku.com.au/2014/04/dark-souls-iis-best-early-joke/) puts in [them](https://giphy.com/embed/lNRbem6CEQsz8x64cS). The FromSoft Experience™️ is inherently funny. Games journalist Jordan Forward’s [story about getting stomped in _Elden Ring_](https://www.pcgamesn.com/elden-ring/funny-game) captures what I mean:
+In fact, I would argue they are fully comedies, and not just because from the [jokes](https://www.youtube.com/watch?v=HPjJCVylFBo) From [intentionally](https://web.archive.org/web/20140412071342/https://www.kotaku.com.au/2014/04/dark-souls-iis-best-early-joke/) puts in [them](https://giphy.com/embed/lNRbem6CEQsz8x64cS). The FromSoft Experience™️ is inherently funny. Games journalist Jordan Forward’s [story about getting stomped in _Elden Ring_](https://www.pcgamesn.com/elden-ring/funny-game) captures what I mean:
 
 > Around 20 hours into _Elden Ring_, I stumble across a crumbling old church near a lake. Inside, a giant tortoise wearing a papal mitre greets me and teaches me some powerful new sorceries. Just a short ride from the church I see a gigantic lobster. It seems friendly enough, but it’s facing away from me, so I get off my horse and approach it on foot. Just as I expect the ‘talk’ prompt to flash up, it spins around, snatches me up with one pincer, and then repeatedly snips at my face with the other before casting my lifeless body into the murky swamp waters. As everything fades to black and ‘You Died’ appears on-screen, I let out a chortle that lasts for nearly a minute.
 
