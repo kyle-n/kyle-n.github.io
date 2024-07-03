@@ -29,8 +29,7 @@ export async function GET() {
 
 // prettier-ignore
 async function getRssXml(): Promise<string> {
-  const x = await getAllPosts();
-  const allPosts = [x[1]]
+  const allPosts = await getAllPosts();
   const rssPosts = allPosts.slice(0, DEFAULT_POSTS_PER_PAGE);
   const rssUrl = `${BLOG_URL}/rss.xml`;
   const root = create({ version: '1.0', encoding: 'utf-8' })
@@ -236,7 +235,10 @@ function stripScriptsAndComments(dom: JSDOM): void {
 function testContentForNonBreakingSpaces(postContent: string, postPath: string) {
   for (let i = 0; i < postContent.length; i++) {
     if (postContent.charCodeAt(i) === 160) {
-      const errorMessage = 'Post contains non-breaking spaces: ' + postPath;
+      const leftBound = Math.max(0, i - 10);
+      const rightBound = Math.min(postContent.length, i + 10);
+      const snippet = postContent.slice(leftBound, rightBound);
+      const errorMessage = `Post contains non-breaking spaces: ${postPath}\n\n${snippet}`;
       console.error(errorMessage, postPath);
       throw new Error(errorMessage);
     }
