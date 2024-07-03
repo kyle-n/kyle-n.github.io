@@ -232,7 +232,10 @@ function stripScriptsAndComments(dom: JSDOM): void {
 }
 
 // Non-standard spaces break the HTML parsing in feed readers
-function testContentForNonBreakingSpaces(postContent: string, postPath: string) {
+function testContentForNonBreakingSpaces(
+  postContent: string,
+  postPath: string
+) {
   for (let i = 0; i < postContent.length; i++) {
     if (postContent.charCodeAt(i) === 160) {
       const leftBound = Math.max(0, i - 10);
