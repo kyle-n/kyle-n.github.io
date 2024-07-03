@@ -12,13 +12,13 @@ keywords: tutorial, teams
 
 You can separate most software companies into two general buckets: top-down and bottom-up. The tech career advice site [Merit](https://www.get-merit.com) has [a good breakdown](https://blog.get-merit.com/top-down-versus-bottom-up-management-in-tech/) of the differences:
 
-> In a **top-down team**, decision-making is typically centralized. Senior leaders or managers make key decisions with minimal input from lower-level employees. These decisions are then communicated down the hierarchy for implementation. Indicators might include:
+> In a **top-down team**, decision-making is typically centralized. Senior leaders or managers make key decisions with minimal input from lower-level employees. These decisions are then communicated down the hierarchy for implementation. Indicators might include:
 >
 > * Clear hierarchy where instruction flows from the top
 > * Limited access to input on strategic decisions
 > * Focus and adherence to established procedures and policies
 >
-> Conversely, a **bottom-up team** is characterized by a more inclusive approach to decision-making. In these teams, ideas and feedback are actively solicited from members at all levels. Look out for indicators such as:
+> Conversely, a **bottom-up team** is characterized by a more inclusive approach to decision-making. In these teams, ideas and feedback are actively solicited from members at all levels. Look out for indicators such as:
 >
 > * Encouragement of innovation, and idea sharing from all team members - if you have to deal with the decision, you generally make it
 > * Democratic decision-making processes where the input from various levels is valued and considered
