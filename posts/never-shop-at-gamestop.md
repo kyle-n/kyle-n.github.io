@@ -36,6 +36,8 @@ Let's go over the many, _many_ reasons GameStop will be smaller or dead in 10 ye
 
 **Are you going to talk about MOASS or [insert conspiracy here]?** No. We're staying in reality today. We're discussing the real store and real gaming industry.
 
+**Isn't it obvious GameStop is in trouble?** Yes! It is, and yet hundreds of thousands of people are subscribed to subreddits claiming it isn't. So here we are.
+
 So. Let's get down to business and explain why GameStop is toast.
 
 ### 1. Digital downloads are replacing their business
