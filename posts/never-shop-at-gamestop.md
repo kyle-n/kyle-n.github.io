@@ -28,7 +28,7 @@ Let's go over the many, _many_ reasons GameStop will be smaller or dead in 10 ye
 
 **What are your qualifications?** Being an enthusiastic gamer for a couple decades and dealing with GameStop. That's all. I'm not a financial analyst or anything.
 
-**Are you a paid shill, writing this to spread disinfo and bring down the stock price?** Please. I am a professional software developer who blogs for fun. No one has ever paid me a cent for anything on this personal blog. Also, no one would, because my traffic is not exactly amazing
+**Are you a paid shill, writing this to spread disinfo and bring down the stock price?** Please. I am a professional software developer who blogs for fun. No one has ever paid me a cent for anything on this personal blog. Also, no one would, because my traffic is not exactly amazing.
 
 ![A screenshot of this website's traffic analytics showing less than 25 views per post for the top posts](blog-traffic.webp)
 
