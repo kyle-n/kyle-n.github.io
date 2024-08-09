@@ -87,7 +87,7 @@ The iOS app uses two different layouts: one for narrow screens and one for wide.
 
 #### New: Add website modal
 
-JavaSnipt 1 had a difficult-to-spot text input that always showed above the list of your targeted websites. This was ugly and inconsistent with standard iOS design patterns. 
+JavaSnipt 1 had a difficult-to-spot text input that always showed above the list of your targeted websites. This was ugly and inconsistent with standard iOS design patterns.
 
 Version 2 replaces it with a popup with a text field. This lets the list take up the rest of the screen and display more content.
 
