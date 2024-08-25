@@ -150,6 +150,6 @@ private func alertUserToConfirmRemovingTargetedSite(host: String, isBlacklist: B
 }
 ```
 
-`async`/`await` provides a natural way to wait for a real-world operation, in this case the user's choice on the confirm dialog. Once it completes, we step to the next item in the branching UI flow. 
+`async`/`await` provides a natural way to wait for a real-world operation, in this case the user's choice on the confirm dialog. Once it completes, we step to the next item in the branching UI flow.
 
-It feels far easier to read and reason about than the Combine equivalent. I still believe reactive programming is a powerful programming paradigm, but `async`/`await` feels more appropriate to this use case. 
+It feels far easier to read and reason about than the Combine equivalent. I still believe reactive programming is a powerful programming paradigm, but `async`/`await` feels more appropriate to this use case.

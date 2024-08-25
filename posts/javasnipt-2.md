@@ -7,6 +7,10 @@ image: js-2.webp
 keywords: extensions, showcase, apple, swift
 ---
 
+<script>
+  import {base} from '$app/paths';
+</script>
+
 I recently released version 2 of [JavaSnipt](https://apps.apple.com/us/app/javasnipt/id1561868291)! The iOS app has been completely rewritten to be faster, more intuitive, and easier to use.
 
 I wanted to highlight new features users will love, as well as explain why I rebuilt the iOS app.
@@ -25,7 +29,7 @@ I also wanted to adopt powerful new features added Swift in the three years sinc
 
 JavaSnipt 1 used [Combine](https://developer.apple.com/documentation/combine) extensively for asynchronous work, but honestly it didn't need it. The app needs only some basic asynchronous code, and not the kind that requires full reactive programming. I wanted to adopt `async`/`await` because it seemed like a great tool that best matched my needs.
 
-For example, `async`/`await` helped me recode the iOS share extension, which has a fairly complex branching path.
+For example, `async`/`await` [helped me recode the iOS share extension]({base}/blog/refactoring-swift-combine-to-async-await), which has a fairly complex branching path.
 
 ```swift
 // AddURLiOSShareController.swift
