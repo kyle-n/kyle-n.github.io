@@ -100,6 +100,7 @@ async function getHtmlForPost(
   removeBasePrefixFromElements(postDom);
   inlineFootnotes(postDom);
   await convertYouTubeEmbedsToLinks(postDom);
+  await convertVideoComponentsToVideos(postDom);
   stripScriptsAndComments(postDom);
 
   if (leadImageFilename) {
@@ -246,4 +247,44 @@ function testContentForNonBreakingSpaces(
       throw new Error(errorMessage);
     }
   }
+}
+
+async function convertVideoComponentsToVideos(
+  dom: JSDOM
+): Promise<void> {
+  const videoComponentTextNodes: Node[] = [];
+  const walker = dom.window.document.createTreeWalker(
+    dom.window.document.body,
+    4
+  );
+  while (walker.nextNode()) {
+    if (
+      walker.currentNode.textContent
+        ?.toLowerCase()
+        .startsWith('\n&lt;inlinevideo')
+    ) {
+      videoComponentTextNodes.push(walker.currentNode);
+    }
+  }
+  const files = import.meta.glob('../../lib/components/inline-video.svelte', {
+    as: 'svelte'
+  });
+  const component = (await Object.values(files)[0]()) as {
+    default: { render: (props: { filename: string }) => { html: string } };
+  };
+  videoComponentTextNodes.forEach(videoComponentTextNode => {
+    const videoComponent = videoComponentTextNode.textContent?.trim() ?? '';
+    const prefix = 'filename="';
+    const videoSrc = videoComponent.slice(
+      videoComponent.indexOf(prefix) + prefix.length,
+      videoComponent.indexOf('"', videoComponent.indexOf(prefix) + prefix.length)
+    );
+    const videoHtml = component.default.render({ filename: videoSrc }).html;
+    const videoContainer = dom.window.document.createElement('div');
+    videoContainer.innerHTML = videoHtml;
+    videoComponentTextNode.parentElement?.replaceChild(
+      videoContainer,
+      videoComponentTextNode
+    );
+  });
 }
