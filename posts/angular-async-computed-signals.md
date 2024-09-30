@@ -25,7 +25,7 @@ Computed Signals are an awesome tool in any developer's toolbox because they let
 
 After some experimentation, I figured out how to do it. You actually have to go back to RxJS and wrap it with [`toSignal()`](https://angular.dev/guide/signals/rxjs-interop#tosignal).
 
-I've set up an example project here. It allows the user to search the [Dad Joke API](https://icanhazdadjoke.com/api) for "jokes." I've made a component with a debounced text field that sends requests to the API and displays the results. This kind of asynchronous work would be complicated to do with Signals, but RxJS could it. The [`debounceTime()`](https://rxjs.dev/api/operators/debounceTime) and [`switchMap()`](https://rxjs.dev/api/index/function/switchMapTo) operators would be perfect for debouncing input and asynchronously loading search results.
+I've created an example project ([GitHub](https://github.com/kyle-n/dad-joker), [StackBlitz](https://stackblitz.com/github/kyle-n/dad-joker?file=README.md)). It allows the user to search the [Dad Joke API](https://icanhazdadjoke.com/api) for "jokes." I've made a component with a debounced text field that sends requests to the API and displays the results. This kind of asynchronous work would be complicated to do with Signals, but RxJS could it. The [`debounceTime()`](https://rxjs.dev/api/operators/debounceTime) and [`switchMap()`](https://rxjs.dev/api/index/function/switchMapTo) operators would be perfect for debouncing input and asynchronously loading search results.
 
 So, let's just use RxJS. First, we'll change our service to return a Signal instead of an Observable.
 
