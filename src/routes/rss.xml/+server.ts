@@ -249,9 +249,7 @@ function testContentForNonBreakingSpaces(
   }
 }
 
-async function convertVideoComponentsToVideos(
-  dom: JSDOM
-): Promise<void> {
+async function convertVideoComponentsToVideos(dom: JSDOM): Promise<void> {
   const videoComponentTextNodes: Node[] = [];
   const walker = dom.window.document.createTreeWalker(
     dom.window.document.body,
@@ -277,7 +275,10 @@ async function convertVideoComponentsToVideos(
     const prefix = 'filename="';
     const videoSrc = videoComponent.slice(
       videoComponent.indexOf(prefix) + prefix.length,
-      videoComponent.indexOf('"', videoComponent.indexOf(prefix) + prefix.length)
+      videoComponent.indexOf(
+        '"',
+        videoComponent.indexOf(prefix) + prefix.length
+      )
     );
     const videoHtml = component.default.render({ filename: videoSrc }).html;
     const videoContainer = dom.window.document.createElement('div');
