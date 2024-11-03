@@ -6,7 +6,7 @@ date: 2024-11-02
 keywords: angular, rxjs, news
 ---
 
-I recently did a presentation at work about [Angular Signals](https://angular.dev/guide/signals). One section comparing RxJS and Signals noted that RxJS remained better at asynchronous work. Consider, for example, an input that takes user input and maps it into API search results.
+I recently did a presentation at work about [Angular Signals](https://angular.dev/guide/signals). One section comparing RxJS and Signals noted that RxJS remained better at asynchronous work. Consider, for example, a text field that takes user input and maps it into API search results.
 
 ```typescript
 const searchResults$ = queryValue.pipe(
@@ -44,8 +44,8 @@ export class SearchComponent {
 }
 ```
 
-This tells Angular, "if `this.query` ever changes, ping the API using this async method and return the results in `this.searchResults`, a Signal we can use anywhere in the class."
+This tells Angular, "if `this.query` ever changes, ping the API using this async method and return the results in `this.searchResults`, a Signal we can use anywhere in the class or template."
 
-This API will arrive with Angular 19. There's [a bunch of other stuff](https://www.telerik.com/blogs/getting-started-resource-api-angular) you can do with it too. At the moment, the only downside I can see is that it can't easily do some things RxJS makes easy, like [debouncing](https://rxjs.dev/api/operators/debounceTime).
+`resource()` will arrive with Angular 19. There's [a bunch of other stuff](https://www.telerik.com/blogs/getting-started-resource-api-angular) you can do with it too. At the moment, the only downside I can see is that it can't easily do some RxJS things, like [debouncing](https://rxjs.dev/api/operators/debounceTime).
 
-But you know what? It's a really promising start. I'm just excited we got an official way to make async computed Signals.
+But you know what? `resource()` is a promising start. I'm excited we got an official way to make async computed Signals.
