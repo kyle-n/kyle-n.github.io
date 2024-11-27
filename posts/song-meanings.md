@@ -6,9 +6,15 @@ keywords: personal
 date: 2024-11-27
 ---
 
+<script>
+  import YoutubeEmbed from '$lib/components/youtube-embed.svelte'
+</script>
+
 I recently stumbled upon an incredible website, [SongMeanings.com](https://songmeanings.com). It includes a large database of lyrics for various songs with comments from users attempting to explain said lyrics.
 
 Most of the comments are from well-meaning people who have different interpretations of a song. What I love, though, are the people who are extremely confident about their insane interpretation.
+
+<YoutubeEmbed id="8vN2vqaEBhM" />
 
 For example, consider the classic [Arcade Fire](https://www.arcadefire.com) song ["Rebellion (Lies)"](https://songmeanings.com/songs/view/3530822107858509599/). Most people think it's about [the melancholy of growing up](https://www.reddit.com/r/lyricheads/comments/4xmj20/test_post_whats_the_meaning_of_arcade_fire/). The geniuses at SongMeanings.com, though, know otherwise. User [doughbro](https://songmeanings.com/threads/c/73014754140/) writes:
 
@@ -19,6 +25,8 @@ For example, consider the classic [Arcade Fire](https://www.arcadefire.com) song
 > They're not saying don't sleep at all... they're saying you don't have to sleep when society tells you to and that its just a social convention that should be broken and that there are plenty others like that.
 
 "You don't have to sleep when society tells you" will live rent-free in my head _forever_.
+
+<YoutubeEmbed id="RIZdjT1472Y" />
 
 Let's keep exploring. What do these titanic minds make of ["Human"](https://songmeanings.com/songs/view/3530822107858741590/) by [The Killers](https://www.thekillersmusic.com/#/), a song whose lyrics are so nonsensical that the chorus asks, "Are we human, or are we dancer?"
 
@@ -42,11 +50,9 @@ Let's keep exploring. What do these titanic minds make of ["Human"](https://song
 >
 > Thats my 2 cents Jason
 
-Who is Jason??? Unclear. Anyway.
+Who is Jason??? Unclear.
 
-What about ["Would?"](https://songmeanings.com/songs/view/11829/) by [Alice in Chains](https://aliceinchains.com)? The boring "[conventional view](https://en.wikipedia.org/wiki/Would%3F)" is that it's a tribute to [Andrew Wood](<https://en.wikipedia.org/wiki/Andrew_Wood_(singer)>), a singer who died of a heroin overdose in 1990 at 24. Not to user [soulbot](https://songmeanings.com/threads/c/73014846615/)!
-
-> its about anakin skywalker. listen to this song, you can't miss it. take a journey to the sun with layne, he'll show you what it really means.
+<YoutubeEmbed id="jRGrNDV2mKc" />
 
 Lastly, I could not help but look up the nu-metal classic ["Freak on a Leash"](https://songmeanings.com/songs/view/41/), by [KoЯn](https://kornofficial.com). What's this song about, user [Dreadlock](https://songmeanings.com/threads/c/73015893369/):
 
