@@ -5,6 +5,7 @@ description: Need a starting point for one of the best film podcasts?
 date: 2024-12-08
 image: blank-check.webp
 caption: From left - Producer Ben Hosley, host Griffin Newman, (departed) social producer Angela Ferraguto and host David Sims in 2019. (Via Instagram)
+keywords: personal, film
 ---
 
 I love [Blank Check with Griffin & David](https://www.blankcheckpod.com). It's a wonderful film podcast hosted by an actor/comedian and the film critic for [The Atlantic](https://www.theatlantic.com). I've been a loyal listener since 2017 for almost all their nearly 10-year run.
