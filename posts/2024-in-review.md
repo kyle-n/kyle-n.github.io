@@ -27,7 +27,7 @@ In my personal time, I published two browser extensions. [Replies for Hacker New
 
 #### Video games
 
-This year, I went crazy for From Software games (which are [secretly comedies](http://localhost:5173/blog/from-software-games-are-comedies)). I played:
+This year, I went crazy for From Software games (which are [secretly comedies](/blog/from-software-games-are-comedies)). I played:
 
 - _Elden Ring_
 - _Final Fantasy VII Remake_
