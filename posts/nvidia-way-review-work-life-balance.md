@@ -2,7 +2,7 @@
 layout: post
 title: The price of success
 description: It's hard to change the world in 40 hours a week.
-date: 2025-01-013
+date: 2025-01-13
 keywords: books, opinion, coding
 image: nvidia-sticker.webp
 caption: Via StockSnap on Pixabay
