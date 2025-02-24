@@ -2,9 +2,10 @@ import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 import { mdsvex } from 'mdsvex';
 import remarkFootnotes from 'remark-footnotes';
+import remarkImgLinks from '@pondorasti/remark-img-links';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import imgLinks from '@pondorasti/remark-img-links';
+import rehypeLazyLoadImages from 'rehype-plugin-image-native-lazy-loading';
 
 const dev = process.argv.includes('dev');
 const base = dev ? '' : process.env.BASE_PATH;
@@ -23,9 +24,9 @@ const config = {
       extension: '.md',
       remarkPlugins: [
         remarkFootnotes,
-        [imgLinks, { absolutePath: BLOG_URL + '/img/' }]
+        [remarkImgLinks, { absolutePath: BLOG_URL + '/img/' }]
       ],
-      rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings]
+      rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings, rehypeLazyLoadImages]
     })
   ],
 

@@ -17,6 +17,7 @@
     "@vercel/speed-insights": "^1.0.1",
     "dayjs": "^1.11.10",
     "jsdom": "^22.1.0",
+    "rehype-plugin-image-native-lazy-loading": "^1.2.0",
     "sass": "^1.68.0",
     "svelte": "^4.0.5",
     "xmlbuilder2": "^3.1.1"
