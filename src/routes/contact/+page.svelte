@@ -5,8 +5,7 @@
     BLOG_AUTHOR_GITHUB,
     BLOG_AUTHOR_INSTAGRAM,
     BLOG_AUTHOR_LINKEDIN,
-    BLOG_AUTHOR_MASTODON,
-    BLOG_AUTHOR_TWITTER
+    BLOG_AUTHOR_MASTODON
   } from '$lib/blog-metadata';
   import BuildTimePublishDate from '$lib/components/build-time-publish-date.svelte';
   import CanonicalUrl from '$lib/components/canonical-url.svelte';
@@ -26,7 +25,6 @@
       name: 'Bluesky',
       href: `https://bsky.app/profile/${BLOG_AUTHOR_BLUESKY}`
     },
-    { name: 'Twitter', href: `https://twitter.com/${BLOG_AUTHOR_TWITTER}` },
     {
       name: 'Instagram',
       href: `https://instagram.com/${BLOG_AUTHOR_INSTAGRAM}`
