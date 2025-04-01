@@ -3,7 +3,7 @@ layout: post
 title: Studio Ghibli can never be captured by AI
 description: Hayao Miyazaki's work is so much more than a visual aesthetic.
 date: 2025-04-01
-keywords: ai, opinion, film
+keywords: ai, film
 image: boy-heron-blocks.webp
 caption: Granduncle tests the blocks to see if the world will last one more day.
 ---
@@ -12,7 +12,7 @@ I have mixed thoughts about [OpenAI's Studio Ghibli image generator](https://www
 
 On one hand, the ChatGPT Ghibli-fyer is a tremendous technological achievement. I remember playing with the original [Stable Diffusion](https://en.wikipedia.org/wiki/Stable_Diffusion) years ago and never getting anything close to this. As a piece of technology, it's stunning.
 
-![Me with my friend's kitten Louisa](me-ghibli.webp)
+![A man with long brown hair in a red sweatshirt with a brown kitten standing on his shoulder.](me-ghibli.webp)
 
 Me with my friend's kitten Louisa.
 
