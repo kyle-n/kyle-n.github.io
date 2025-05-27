@@ -7,6 +7,8 @@ tags: apple
 description: For when you want to run without your phone.
 ---
 
+**2025 update**: I've [re-reviewed all these apps, plus Spotify](/blog/offline-podcast-watch-apps-ranked-2025).
+
 When running alone, I fill the time with podcasts.
 
 <!--break-->

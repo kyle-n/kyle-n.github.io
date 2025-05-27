@@ -7,7 +7,7 @@ tags: apple
 description: For when you want to run without your phone.
 ---
 
-Exactly four years ago, I reviewed [Apple Watch podcast apps with offline playback](/posts/offline-podcast-watch-apps-ranked). I wanted to do a very simple thing: go running without my phone. Apparently this is rocket science. Of 2021's major apps, just [Pocket Casts](https://apps.apple.com/us/app/pocket-casts/id414834813) offered consistent, bug-free offline Watch playback.
+Exactly four years ago, I reviewed [Apple Watch podcast apps with offline playback](/blog/offline-podcast-watch-apps-ranked). I wanted to do a very simple thing: go running without my phone. Apparently this is rocket science. Of 2021's major apps, just [Pocket Casts](https://apps.apple.com/us/app/pocket-casts/id414834813) offered consistent, bug-free offline Watch playback.
 
 I _was_ a happy Pocket Casts. Their Watch app did the impossible: it consistently downloaded new episodes for offline playback, and played them without major bugs.
 
