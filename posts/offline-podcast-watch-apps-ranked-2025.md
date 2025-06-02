@@ -7,9 +7,7 @@ tags: apple
 description: For when you want to run without your phone.
 ---
 
-Exactly four years ago, I reviewed [Apple Watch podcast apps with offline playback](/blog/offline-podcast-watch-apps-ranked). I wanted to do a very simple thing: go running without my phone. Apparently this is rocket science. Of 2021's major apps, just [Pocket Casts](https://apps.apple.com/us/app/pocket-casts/id414834813) offered consistent, bug-free offline Watch playback.
-
-I _was_ a happy Pocket Casts. Their Watch app did the impossible: it consistently downloaded new episodes for offline playback, and played them without major bugs.
+Exactly four years ago, I reviewed [Apple Watch podcast apps with offline playback](/blog/offline-podcast-watch-apps-ranked) because I wanted go running without my phone. Apparently this is rocket science. Of 2021's major apps, just [Pocket Casts](https://apps.apple.com/us/app/pocket-casts/id414834813) offered consistent, bug-free offline Watch playback.
 
 Until recently. These days, I open Pocket Casts on Apple Watch and find my queue has not downloaded. Worse, there is no way to manually trigger a download. You just have to hope the files found their way home while the Watch charged overnight.
 
@@ -21,7 +19,7 @@ This has inspired me to re-check the state of offline Watch podcast playback, a 
 
 ### [Pocket Casts](https://apps.apple.com/us/app/pocket-casts/id414834813) | 2/5 - Bad
 
-Pocket Casts for Apple Watch plays audio well, but downloads are painful. As far as I can tell, episodes download under one of two conditions:
+Pocket Casts for Apple Watch plays audio well, but downloads are inconsistent. As far as I can tell, episodes download under one of two conditions:
 
 1. At some indeterminate point overnight, while the Watch is charging.
 2. While the app is open.
