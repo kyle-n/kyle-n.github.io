@@ -18,7 +18,7 @@ With CGNAT, I can't open a public port for loading Plex content. I share the sam
 
 Enter [Cloudflare](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/):
 
-> Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. With Tunnel, you do not send traffic to an external IP — instead, a lightweight daemon in your infrastructure (cloudflared) creates [outbound-only connections](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/#outbound-only-connection) to Cloudflare's global network.
+> Cloudflare Tunnel provides you with a secure way to connect your resources to Cloudflare without a publicly routable IP address. With Tunnel, you do not send traffic to an external IP — instead, a lightweight daemon in your infrastructure (cloudflared) creates [outbound-only connections](https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/#outbound-only-connection) to Cloudflare's global network.
 
 You can set up a Cloudflare Tunnel to give a local process on your machine a publicly accessible address. I recommend [this guide](https://mythofechelon.co.uk/blog/2024/1/7/how-to-set-up-free-secure-high-quality-remote-access-for-plex) ([archive](https://web.archive.org/web/20241224205238/https://mythofechelon.co.uk/blog/2024/1/7/how-to-set-up-free-secure-high-quality-remote-access-for-plex)), which is perfect, but for one final step, which I found in the post's [comments](http://disq.us/p/2z0v4bh).
 
