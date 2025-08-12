@@ -28,7 +28,7 @@ Although I had to fine-tune my prompt (see the next section), I appreciated the 
 
 ### Tip 2: Label the steps of your prompt chain explicitly
 
-When I first ran my prompt chain, I noticed Copilot performed the steps out of order, even though I'd written in the style of "First do this, then do this, then this."
+When I first ran [my prompt chain](https://justpaste.it/gwk7z), I noticed Copilot performed the steps out of order, even though I'd written in the style of "First do this, then do this, then this."
 
 Large language models are strange and require explicit instructions to perform steps in order. I found Copilot would follow my prompt chain correctly only with this at the top:
 
