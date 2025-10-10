@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Building a native Mac app for movies in my hometown
+title: Building a native Mac app for movies in my town
 description: Sometimes building the most uncommercial possible project is fun.
 keywords: showcase, apple, swift, movies
 date: 2025-10-10
