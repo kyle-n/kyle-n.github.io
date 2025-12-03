@@ -11,7 +11,9 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "lint": "prettier --plugin-search-dir . --check . && eslint .",
-    "format": "prettier --plugin-search-dir . --write ."
+    "prettify": "prettier --plugin-search-dir . --write .",
+    "standardize-spaces": "node spacer.cjs posts",
+    "format": "npm run standardize-spaces && npm run prettify"
   },
   "dependencies": {
     "@vercel/speed-insights": "^1.0.1",
