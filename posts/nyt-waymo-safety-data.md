@@ -15,7 +15,7 @@ During a visit to San Francisco last February, I rode in a Waymo and [was amazed
 
 Well, now Waymo has data backing up this impression. The _New York Times_ has an [essay](https://www.nytimes.com/2025/12/02/opinion/self-driving-cars.html) from a neurosurgeon advocating for wider self-driving adoption:
 
-> Self-driving car company Waymo recently [released](https://waymo.com/safety/impact/) data covering nearly 100 million driverless miles in four American cities through June 2025, the biggest trove of information released so far about safety. I spent weeks analyzing the data. The results were impressive. When compared to human drivers on the same roads, Waymo’s self-driving cars were involved in 91 percent fewer serious-injury-or-worse crashes and 80 percent fewer crashes causing any injury. It showed a 96 percent lower rate of injury-causing crashes at intersections.
+> Self-driving car company Waymo recently [released](https://waymo.com/safety/impact/) data covering nearly 100 million driverless miles in four American cities through June 2025, the biggest trove of information released so far about safety. I spent weeks analyzing the data. The results were impressive. When compared to human drivers on the same roads, Waymo’s self-driving cars were involved in 91 percent fewer serious-injury-or-worse crashes and 80 percent fewer crashes causing any injury. It showed a 96 percent lower rate of injury-causing crashes at intersections.
 
 The author mentions one thing some drivers dislike about Waymos:
 
