@@ -14,7 +14,7 @@ caption: From "I Saw the TV Glow"
 
 It's been a weird year for film. The writer and actor strikes left us without a ton of obvious awards contenders. Still, we managed to get plenty of interesting and exciting films. Here were some of my favorites (and you can find the full list on [my Letterboxd](https://letterboxd.com/kyle_nazario/list/2024/)).
 
-## _I Saw the TV Glow_
+### _I Saw the TV Glow_
 
 <YoutubeEmbed id="kymDzCgPwj0" />
 
@@ -34,7 +34,7 @@ The film is designed to crack the shell of anyone not living their true life. It
 
 _I Saw the TV Glow_ is a capital-g Great horror film, because it mines one of the scariest feelings a person can experience - the feeling of being trapped in the wrong life, and knowing you need to change.
 
-## _Challengers_
+### _Challengers_
 
 <YoutubeEmbed id="AXEK7y1BuNQ" />
 
@@ -44,7 +44,7 @@ The boys are great, but the star is Zendaya. She portrays a complex character th
 
 I would also be remiss to not shout out the stunning score by Trent Reznor and Atticus Ross ([YouTube](https://www.youtube.com/watch?v=WhDfboK6JaQ&list=PLRW80bBvVD3V5exsDBVoe_3hFh7gP8SqK), [Spotify](https://open.spotify.com/album/2NHhf3qtcoVPDEb03G8RFv?si=7SOIU4-nRpGzdLr1ELqsvQ)). Their synth-y tracks are instantly iconic and their best work since _The Social Network_.
 
-## _Twisters_
+### _Twisters_
 
 <YoutubeEmbed id="wdok0rZdmx4" />
 
@@ -58,7 +58,7 @@ The thing is, though, _Twisters_ rocks. It’s directed by [Lee Isaac Chung](htt
 
 _Twisters_ is probably long gone from your local theater. On the off chance it comes back in the future, do not miss it. This movie demands to be seen on the biggest screen possible.
 
-## _Sasquatch Sunset_
+### _Sasquatch Sunset_
 
 <YoutubeEmbed id="GFbw0VwSKhU" />
 
@@ -70,7 +70,7 @@ Here’s an example of what I like, without spoiling too much (can an English-fr
 
 I don’t know. Maybe I’m reading too much into the grunting. That happens with sasquatch movies.
 
-## _The Substance_
+### _The Substance_
 
 **(NSFW trailer)**
 
@@ -84,7 +84,7 @@ _The Substance_ is proof I actually underestimated her. Fargeat has proved herse
 
 Only one of the two can be conscious at any given time. Elisabeth and Sue switch off every seven days, or else. Things obviously unravel, but they unravel to insane, Cronenbergian degrees. This movie contains some of the most intense body horror I’ve ever seen. It a rough, _rough_ watch.
 
-## _The People’s Joker_
+### _The People’s Joker_
 
 <YoutubeEmbed id="9M00AB03S_4" />
 
@@ -100,7 +100,7 @@ Drew is a talented filmmaker. Her pre-movie digital short, in which she marries 
 
 Not to be corny, but _The People’s Joker_ embodies the spirit of the Joker better than anything since _The Dark Knight_. For one, they did [not have Warner Bros’ permission to use its universe](https://exclaim.ca/film/article/the-people-s-joker-vera-drew-interview). For another, they use that universe to tell the story of a transgender woman, something a major corporation would not touch with a 10,000-foot pole in today’s bigoted climate. You couldn’t ask for more from a Joker movie.
 
-## _Megalopolis_
+### _Megalopolis_
 
 <YoutubeEmbed id="pq6mvHZU0fc" />
 
@@ -112,13 +112,13 @@ _Megalopolis_ features Adam Driver as a visionary genius architect / engineer wh
 
 This is Coppola’s ode to the creative process. Adam Driver represents the artist. He dreams of the future, and then shares that dream with humanity. What is a piece of art if not a moment in time, frozen on the page or screen? Art reflects us, challenges us and pushes us toward utopia, or something like it. By having the conversation, we create utopia.
 
-## _Kinds of Kindness_
+### _Kinds of Kindness_
 
 <YoutubeEmbed id="8fYtuE_ZJ4E" />
 
 It’s nice to see director Yorgos Lanthimos let loose. That guy’s been too uptight for his last couple movies, which were [very normal](https://www.youtube.com/shorts/Fjx1xMugn_k). _Kinds of Kindness_ is a triptych of nasty little modern-day fairy tales. It’s bad people making worse decisions, plus a [funny little dance](https://www.youtube.com/watch?v=kasU2M62p3g).
 
-## _Furiosa_
+### _Furiosa_
 
 <YoutubeEmbed id="XJMuhwVlca4" />
 
@@ -126,7 +126,7 @@ Director George Miller returned this year with a prequel to _Mad Max: Fury Road_
 
 _Furiosa_ has some of that. Miller gives us a chase scene or two, just enough to remind us he is the best living action director. But this time, he’s more interested in the emotions of the wasteland. He dives deep into the psychology of the survivors. In his world, everyone is wounded. Everyone’s just a few steps from madness. The difference between a hero and a villain, according to Miller, is those who stop walking.
 
-## _Love Lies Bleeding_
+### _Love Lies Bleeding_
 
 **(NSFW trailer)**
 
