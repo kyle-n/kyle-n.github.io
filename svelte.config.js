@@ -26,7 +26,7 @@ const config = {
       remarkPlugins: [
         remarkFootnotes,
         [remarkImgLinks, { absolutePath: BLOG_URL + '/img/' }],
-        [remarkBehead, {minDepth: 3}]
+        [remarkBehead, { minDepth: 3 }]
       ],
       rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings, rehypeLazyLoadImages]
     })
