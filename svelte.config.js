@@ -3,6 +3,7 @@ import { vitePreprocess } from '@sveltejs/kit/vite';
 import { mdsvex } from 'mdsvex';
 import remarkFootnotes from 'remark-footnotes';
 import remarkImgLinks from '@pondorasti/remark-img-links';
+import remarkBehead from 'remark-behead';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import rehypeLazyLoadImages from 'rehype-plugin-image-native-lazy-loading';
@@ -24,7 +25,8 @@ const config = {
       extension: '.md',
       remarkPlugins: [
         remarkFootnotes,
-        [remarkImgLinks, { absolutePath: BLOG_URL + '/img/' }]
+        [remarkImgLinks, { absolutePath: BLOG_URL + '/img/' }],
+        [remarkBehead, {minDepth: 3}]
       ],
       rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings, rehypeLazyLoadImages]
     })

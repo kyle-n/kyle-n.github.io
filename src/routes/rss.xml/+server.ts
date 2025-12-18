@@ -15,6 +15,7 @@ import rehypeStringify from 'rehype-stringify';
 import remarkParse from 'remark-parse';
 import remarkRehype from 'remark-rehype';
 import remarkGfm from 'remark-gfm';
+import remarkBehead from 'remark-behead';
 import { base } from '$app/paths';
 
 export const prerender = true;
@@ -88,6 +89,7 @@ async function getHtmlForPost(
     .use(remarkRehype, { allowDangerousHtml: true })
     .use(rehypeStringify)
     .use(remarkGfm)
+    .use(remarkBehead, { minDepth: 3 })
     .process(postMarkdown);
   let postHtml = processedMarkdown.toString();
   // prevents HTML in code tags from being rendered
