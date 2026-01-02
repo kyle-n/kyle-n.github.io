@@ -58,6 +58,8 @@ _Silksong_ I have to shout out for sheer audaciousness. It sure was a choice to 
 
 I'm still working on my top 10 films of the year. Been a slow year, to be honest. Check out [my Letterboxd](https://letterboxd.com/kyle_nazario/list/2025) to see what I'm leaning toward.
 
+**Update Jan. 2026**: [Published](/blog/best-new-movies-2025).
+
 #### Books
 
 This year, I read:
