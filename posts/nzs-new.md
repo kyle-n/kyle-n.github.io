@@ -38,6 +38,7 @@ Performing redirects means running a server. That ruled out GitHub Pages. The be
 After adding a [quick GitHub Action](https://github.com/nazariosoftwarellc/nazariosoftwarellc.github.io/blob/main/.github/workflows/cd.yml) to deploy all pushes to `main` and moving over my custom domain, I was done! The new NazarioSoftware.com was live on Cloudflare.
 
 There’s only one dumb mistake left to fix. All my Mac apps have an option to view more of my apps. That option loads a JSON file of other apps. Unfortunately, I decided to source the JSON from:
+
 ```
 https://github.com/nazariosoftwarellc/nazariosoftwarellc.github.io/raw/refs/heads/main/assets/json/app-list.json
 ```
