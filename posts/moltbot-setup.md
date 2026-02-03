@@ -7,7 +7,7 @@ date: 2026-01-29
 keywords: ai, tutorial
 ---
 
-I run a Mac mini home server for [Plex streaming](/why-plex-music), so I had to try [Moltbot](https://www.molt.bot) ([neé Clawdbot](https://mashable.com/article/clawdbot-changes-name-to-moltbot)). [Major security issues notwithstanding](https://www.theregister.com/2026/01/27/clawdbot_moltbot_security_concerns/), it's a cool glimpse at the future of AI assistants.
+I run a Mac mini home server for [Plex streaming](/blog/why-plex-music), so I had to try [Moltbot](https://www.molt.bot) ([neé Clawdbot](https://mashable.com/article/clawdbot-changes-name-to-moltbot)). [Major security issues notwithstanding](https://www.theregister.com/2026/01/27/clawdbot_moltbot_security_concerns/), it's a cool glimpse at the future of AI assistants.
 
 However, setting up Moltbot took me most my morning. The setup docs mention features that don't work and skip required steps. Which is fine! The project's maintained by unpaid volunteers who suddenly have _way_ more users than they expected. They're doing their best.
 
