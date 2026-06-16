@@ -4,6 +4,7 @@ title: I wish building a Safari extension was easier
 date: 2024-03-18
 description: I like Safari and wish it was easier to support.
 image: three-browsers.webp
+keywords: extensions, apple, opinion
 ---
 
 I recently published a browser extension, [Replies for Hacker News](https://www.nazariosoftware.com/2024/02/23/never-miss-a-conversation-with-replies-for-hacker-news.html). It notifies you if somebody replies to one of your posts on [Hacker News](https://news.ycombinator.com) and adds a link to quickly view that reply. I wrote it because I was tired of missing good replies to my comments.
