@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex } from 'mdsvex';
 import remarkFootnotes from 'remark-footnotes';
@@ -11,6 +11,7 @@ import rehypeLazyLoadImages from 'rehype-plugin-image-native-lazy-loading';
 const dev = process.argv.includes('dev');
 const base = dev ? '' : process.env.BASE_PATH;
 let BLOG_URL;
+
 if (dev) {
   BLOG_URL = 'http://localhost:5173';
 } else {
@@ -31,14 +32,10 @@ const config = {
       rehypePlugins: [rehypeSlug, rehypeAutolinkHeadings, rehypeLazyLoadImages]
     })
   ],
-
   extensions: ['.svelte', '.md'],
-
   kit: {
     adapter: adapter(),
-    paths: {
-      base
-    },
+    paths: { base },
     inlineStyleThreshold: 1024
   }
 };
