@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@pondorasti/remark-img-links": "^1.0.8",
-    "@sveltejs/adapter-cloudflare": "^7.2.4",
+    "@sveltejs/adapter-auto": "^7.0.1",
     "@sveltejs/kit": "^2.49.1",
     "@sveltejs/vite-plugin-svelte": "7.2.0",
     "@testing-library/svelte": "^4.0.4",
