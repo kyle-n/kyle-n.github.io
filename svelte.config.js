@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 import { mdsvex } from 'mdsvex';
 import remarkFootnotes from 'remark-footnotes';
@@ -35,10 +35,7 @@ const config = {
   extensions: ['.svelte', '.md'],
 
   kit: {
-    adapter: adapter({
-      memory: 128,
-      runtime: 'nodejs22.x'
-    }),
+    adapter: adapter(),
     paths: {
       base
     },
