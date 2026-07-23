@@ -25,9 +25,6 @@
   .keyword-links {
     display: flex;
     flex-wrap: wrap;
-    a {
-      display: block;
-      margin-right: 1.5rem;
-    }
+    gap: 0 1.5rem;
   }
 </style>
