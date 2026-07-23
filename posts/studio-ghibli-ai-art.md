@@ -20,7 +20,7 @@ As someone who loves Studio Ghibli, though, and the work of [Hayao Miyazaki](htt
 
 Take [this scene](https://vimeo.com/373831201) from [_Spirited Away_][spiritedaway]. The protagonist, Chihiro, has just escaped from a bathhouse for spirits. She trudges through still ankle-deep water until she reaches a train platform. There, she boards a train car full of silent ghosts. The train flies through strange country leaving ripples in its wake.
 
-<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/373831201?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="The Train Scene - Spirited Away [High Definition]"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/373831201?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="The Train Scene - Spirited Away [High Definition]"></iframe></div>
 
 The scene is haunting. Something about a silent train with ghostly passengers moving through shallow water just... _speaks to me_. Watching this feels like looking into someone's dream. It's beautiful and moving on a level I can't even explain. Nothing makes literal sense, but everything makes perfect sense. [^1]
 

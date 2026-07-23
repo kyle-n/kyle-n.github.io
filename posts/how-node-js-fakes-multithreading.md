@@ -79,7 +79,7 @@ Node.js can fake multithreading and multiple clients because, during steps 4 and
 
 Think of Node as a chef running around the kitchen. The chef can set a pot of water to boil, then jump over and chop some onions, then put dry spaghetti in the water, then chop some carrots. The chef can only do one thing at a time, but they can **multitask**.
 
-<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/UovJw8VQReFiiIy8C9" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/team17-overcooked-2-overcooked2-UovJw8VQReFiiIy8C9">via GIPHY</a></p>
+<div style="width:100%;height:0;padding-bottom:56%;position:relative;"><iframe src="https://giphy.com/embed/UovJw8VQReFiiIy8C9" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen title="Overcooked gameplay GIF"></iframe></div><p><a href="https://giphy.com/gifs/team17-overcooked-2-overcooked2-UovJw8VQReFiiIy8C9">via GIPHY</a></p>
 
 Node.js fakes multithreading by multitasking. It spreads out tasks, not across threads or processes, but **time**.
 

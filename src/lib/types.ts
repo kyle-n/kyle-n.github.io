@@ -1,8 +1,8 @@
-import type { ComponentType, SvelteComponent } from 'svelte';
+import type { Component } from 'svelte';
 
 export type ResolvedBlogPost = {
   metadata: BlogPostMetadata;
-  content: ComponentType<SvelteComponent>;
+  content: Component;
   slug: string;
 };
 

@@ -72,7 +72,7 @@ So I packed up my stuff for Athens, Georgia, and moved in with my partner. I got
 
 The AJC hired me as a full-time contractor. I made $36,500 a year, but had no health insurance or paid time off. Thankfully, I was 23 and could stay on my mother's generous health insurance. I was to manage a team of freelancers, help with breaking news, update the website and republish wire stories for Atlanta audiences.
 
-![An extremely orange photo of my AJC squad at dinner](ajc-team.webp)
+![My AJC squad at dinner in extremely orange lighting](ajc-team.webp)
 
 An extremely orange photo of my AJC squad at dinner. Love y'all.
 

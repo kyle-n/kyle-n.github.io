@@ -30,7 +30,7 @@ Megaplex proved the easiest to integrate. Their website displays data from `http
 
 Loading movie screenings from The Utah Theatre, however, was more complicated. Not only do they have no API, their entire website is one image. Let me repeat that - _their website is an image_. Every month or so, they just replace it with a new JPG of their schedule. The "links" on page to follow them on social media? Those links are just clickable regions drawn on top of the schedule. Genuinely didn't even know you could do that.
 
-![A screenshot of browser dev tools displaying the Utah Theatre website source code, which is just an image](utah-theatre-code.webp)
+![Browser dev tools displaying the Utah Theatre website source code, which is a single JPEG](utah-theatre-code.webp)
 
 The Utah Theatre presents a difficult problem. A human has no trouble looking at a calendar and parsing it. Computers, however, struggle.
 

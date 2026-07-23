@@ -17,6 +17,8 @@ import remarkRehype from 'remark-rehype';
 import remarkGfm from 'remark-gfm';
 import remarkBehead from 'remark-behead';
 import { base } from '$app/paths';
+import { render } from 'svelte/server';
+import type { Component } from 'svelte';
 
 export const prerender = true;
 
@@ -199,7 +201,7 @@ async function convertYouTubeEmbedsToLinks(dom: JSDOM): Promise<void> {
     as: 'svelte'
   });
   const component = (await Object.values(files)[0]()) as {
-    default: { render: (props: { id: string }) => { html: string } };
+    default: Component<{ id: string }>;
   };
   youtubeEmbedComponentTextNodes.forEach(embedComponentTextNode => {
     const youtubeEmbed = embedComponentTextNode.textContent?.trim() ?? '';
@@ -207,7 +209,9 @@ async function convertYouTubeEmbedsToLinks(dom: JSDOM): Promise<void> {
       youtubeEmbed.indexOf('id="') + 'id="'.length,
       youtubeEmbed.indexOf('"', youtubeEmbed.indexOf('id="') + 'id="'.length)
     );
-    const embedHtml = component.default.render({ id: videoId }).html;
+    const embedHtml = render(component.default, {
+      props: { id: videoId }
+    }).body;
     const iframeContainer = dom.window.document.createElement('div');
     iframeContainer.innerHTML = embedHtml;
     embedComponentTextNode.parentElement?.replaceChild(
@@ -270,7 +274,7 @@ async function convertVideoComponentsToVideos(dom: JSDOM): Promise<void> {
     as: 'svelte'
   });
   const component = (await Object.values(files)[0]()) as {
-    default: { render: (props: { filename: string }) => { html: string } };
+    default: Component<{ filename: string }>;
   };
   videoComponentTextNodes.forEach(videoComponentTextNode => {
     const videoComponent = videoComponentTextNode.textContent?.trim() ?? '';
@@ -282,7 +286,9 @@ async function convertVideoComponentsToVideos(dom: JSDOM): Promise<void> {
         videoComponent.indexOf(prefix) + prefix.length
       )
     );
-    const videoHtml = component.default.render({ filename: videoSrc }).html;
+    const videoHtml = render(component.default, {
+      props: { filename: videoSrc }
+    }).body;
     const videoContainer = dom.window.document.createElement('div');
     videoContainer.innerHTML = videoHtml;
     videoComponentTextNode.parentElement?.replaceChild(

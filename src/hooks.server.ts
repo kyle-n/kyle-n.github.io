@@ -1,4 +1,4 @@
-import { minify } from 'html-minifier';
+import { minify } from 'html-minifier-terser';
 import { building } from '$app/environment';
 
 export async function handle({ event, resolve }) {

@@ -3,13 +3,16 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [sveltekit()],
+  build: {
+    rollupOptions: {
+      checks: {
+        pluginTimings: false
+      }
+    }
+  },
   server: {
     fs: {
       allow: ['./posts']
     }
-  },
-  test: {
-    environment: 'jsdom',
-    setupFiles: ['./src/tests/setup.ts']
   }
 });

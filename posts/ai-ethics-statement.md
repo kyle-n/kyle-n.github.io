@@ -15,4 +15,4 @@ AI is _not_ used for any written content whatsoever. All thoughts published here
 
 I'm also moving away from using AI header art. It was a fun novelty, but I've grown frustrated with its inconsistency. I can get better results in less time with a little creativity. [This article](/blog/using-a-pc-from-the-keyboard), for example, uses a picture I took of my keyboard with a bunch of [Acorn](https://flyingmeat.com/acorn/) filters on top. Looks way better than the AI keyboard art I tried to make at the time.
 
-![A stylized black and white image of a keyboard](kb-stylized.webp)
+![Stylized black and white keyboard](kb-stylized.webp)

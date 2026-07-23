@@ -30,4 +30,4 @@ As Kirk Hamilton put it for [Kotaku Australia](https://web.archive.org/web/20140
 
 Anyway, this post was inspired by the Guardian Ape boss fight in _Sekiro: Shadows Die Twice_. You fight like hell to decapitate this giant poop-flinging ape, and then this happens:
 
-<iframe src="https://giphy.com/embed/lNRbem6CEQsz8x64cS" width="480" height="271" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+<iframe src="https://giphy.com/embed/lNRbem6CEQsz8x64cS" width="480" height="271" style="" frameBorder="0" class="giphy-embed" allowFullScreen title="Guardian Ape boss fight GIF"></iframe>
