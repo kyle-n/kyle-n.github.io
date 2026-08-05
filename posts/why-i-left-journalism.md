@@ -83,6 +83,7 @@ One of the breaking news reporters was a contractor. Like me, she had no benefit
 Many younger AJC employees were contractors in name only. We performed the exact same jobs as full-time employees, using company equipment, during company hours, working on projects chosen by the company. I don't know if it was a violation of labor law, but it felt unfair and disrespectful. [^2] [^3]
 
 [^2]: Not the only questionable thing the AJC did! I once shared a wire story on ajc.com about how to cancel your cable for streaming services. The story was taken down (not by me) because the AJC is part of the same corporate conglomerate as cable provider [Cox Communications](https://en.wikipedia.org/wiki/Cox_Communications). I was told, "We shouldn't encourage people to cancel their cable."
+
 [^3]: Okay, one more AJC story. There was a famously dirty, unsafe Kroger east of Midtown. It was known as [Murder Kroeger](https://atlanta.curbed.com/2014/8/15/10060010/murder-kroger), on account of the [murders](https://en.wikipedia.org/wiki/Murder_Kroger#Murders_and_victims). My team was told to never publish that name because Kroeger was a huge advertiser.
 
 My supervisor promised she'd look into making me full-time. That never happened.

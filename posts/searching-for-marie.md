@@ -82,4 +82,5 @@ No, what I feel most pessimistic about is AI. Quora tried to answer my question 
 Feels like the internet will get worse as AI content spam spreads. [Balk's Third Law](https://www.theawl.com/2016/11/the-spirit-of-the-internet/) [^2] strikes again.
 
 [^1]: A friend is obsessed with [Quorators](https://www.youtube.com/channel/UChmiXKcdz-YDi7Ti73cR5VA), an entire podcast dedicated to answering the question, "What is Quora?"
+
 [^2]: "If you think the Internet is terrible now, just wait a while."
