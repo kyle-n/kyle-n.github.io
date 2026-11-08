@@ -227,3 +227,5 @@ node_modules
 .sass-cache
 .svelte-kit
 .vercel
+.wrangler
+.dev.vars*
