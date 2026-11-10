@@ -11,10 +11,11 @@
     "lint": "prettier --plugin-search-dir . --check . && eslint .",
     "prettify": "prettier --plugin-search-dir . --write .",
     "standardize-spaces": "node spacer.cjs posts",
-    "format": "npm run standardize-spaces && npm run prettify"
+    "format": "npm run standardize-spaces && npm run prettify",
+    "preview:worker": "npm run build && wrangler dev",
+    "deploy": "npm run build && wrangler deploy"
   },
   "dependencies": {
-    "@vercel/speed-insights": "^1.0.1",
     "dayjs": "^1.11.10",
     "html-minifier-terser": "^7.2.0",
     "jsdom": "^22.1.0",
@@ -25,7 +26,7 @@
   },
   "devDependencies": {
     "@pondorasti/remark-img-links": "^1.0.8",
-    "@sveltejs/adapter-vercel": "^6.3.4",
+    "@sveltejs/adapter-cloudflare": "^7.2.10",
     "@sveltejs/kit": "^2.70.1",
     "@sveltejs/vite-plugin-svelte": "^7.2.0",
     "@types/html-minifier-terser": "^7.0.2",
@@ -50,7 +51,8 @@
     "svelte-check": "^4.7.3",
     "tslib": "^2.4.1",
     "typescript": "^5.2.2",
-    "vite": "^8.1.5"
+    "vite": "^8.1.5",
+    "wrangler": "^4.158.0"
   },
   "type": "module",
   "overrides": {
