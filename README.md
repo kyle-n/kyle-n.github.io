@@ -30,11 +30,6 @@ For Cloudflare Workers Builds, connect this repository to the existing Worker,
 use `npm run build` as the build command, and `npx wrangler deploy` as the deploy
 command. Use `npx wrangler versions upload` for non-production branch previews.
 
-GitHub Actions checks, builds, and deploys the `kn-site` Worker after every push
-to `main`. Add a repository Actions secret named `CLOUDFLARE_API_TOKEN` containing
-a Cloudflare API token scoped to this account with Workers Scripts edit access.
-The workflow can also be started manually from the repository's Actions tab.
-
 Pages are prerendered at build time, including blog posts, pagination, keyword
 pages, `/rss.xml`, and `/sitemap.xml`. The full-content feed generation continues
 to run in Node during the build; the deployed feed is a static XML asset. Rebuild
