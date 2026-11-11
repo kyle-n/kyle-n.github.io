@@ -94,8 +94,36 @@ async function getHtmlForPost(
     .use(remarkBehead, { minDepth: 3 })
     .process(postMarkdown);
   let postHtml = processedMarkdown.toString();
-  // prevents HTML in code tags from being rendered
-  postHtml = postHtml.replaceAll('&#x3C;', '&amp;lt;');
+
+  // prevents HTML in code tags from being rendered, while preserving raw HTML in post Markdown
+  let codeBlockTally = 0;
+  const preStart = '<pre>';
+  const preEnd = '</pre>';
+  const encodedLeftArrow = '&#x3C;';
+  const encodedPreEnd = encodedLeftArrow + '/pre>'
+  const dummyLeftArrow = '&amp;lt;';
+  for (let i = 0; i < postHtml.length; i++) {
+    const possiblePreStart = postHtml.slice(i, i + preStart.length);
+    if (possiblePreStart === preStart) {
+      codeBlockTally++;
+    }
+
+    const possiblePreEnd = postHtml.slice(i, i + preEnd.length);
+    if (possiblePreEnd === preEnd) {
+      codeBlockTally--;
+    }
+
+    const possibleEncodedLeftArrow = postHtml.slice(i, i + encodedLeftArrow.length)
+    if (possibleEncodedLeftArrow === encodedLeftArrow) {
+      const isEncodedPreEnd = postHtml.slice(i, i + encodedPreEnd.length) === encodedPreEnd
+      if (codeBlockTally > 0 && !isEncodedPreEnd) {
+        postHtml = postHtml.slice(0, i) + dummyLeftArrow + postHtml.slice(i + encodedLeftArrow.length)
+      } else {
+        postHtml = postHtml.slice(0, i) + '<' + postHtml.slice(i + encodedLeftArrow.length);
+      }
+      i = i - 2;
+    }
+  }
 
   const postDom = new JSDOM();
   postDom.window.document.body.innerHTML = postHtml;
