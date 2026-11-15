@@ -13,6 +13,7 @@ export default defineConfig({
   server: {
     fs: {
       allow: ['./posts']
-    }
+    },
+    host: '0.0.0.0'
   }
 });
