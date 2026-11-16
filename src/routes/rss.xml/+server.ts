@@ -100,7 +100,7 @@ async function getHtmlForPost(
   const preStart = '<pre>';
   const preEnd = '</pre>';
   const encodedLeftArrow = '&#x3C;';
-  const encodedPreEnd = encodedLeftArrow + '/pre>'
+  const encodedPreEnd = encodedLeftArrow + '/pre>';
   const dummyLeftArrow = '&amp;lt;';
   for (let i = 0; i < postHtml.length; i++) {
     const possiblePreStart = postHtml.slice(i, i + preStart.length);
@@ -113,13 +113,23 @@ async function getHtmlForPost(
       codeBlockTally--;
     }
 
-    const possibleEncodedLeftArrow = postHtml.slice(i, i + encodedLeftArrow.length)
+    const possibleEncodedLeftArrow = postHtml.slice(
+      i,
+      i + encodedLeftArrow.length
+    );
     if (possibleEncodedLeftArrow === encodedLeftArrow) {
-      const isEncodedPreEnd = postHtml.slice(i, i + encodedPreEnd.length) === encodedPreEnd
+      const isEncodedPreEnd =
+        postHtml.slice(i, i + encodedPreEnd.length) === encodedPreEnd;
       if (codeBlockTally > 0 && !isEncodedPreEnd) {
-        postHtml = postHtml.slice(0, i) + dummyLeftArrow + postHtml.slice(i + encodedLeftArrow.length)
+        postHtml =
+          postHtml.slice(0, i) +
+          dummyLeftArrow +
+          postHtml.slice(i + encodedLeftArrow.length);
       } else {
-        postHtml = postHtml.slice(0, i) + '<' + postHtml.slice(i + encodedLeftArrow.length);
+        postHtml =
+          postHtml.slice(0, i) +
+          '<' +
+          postHtml.slice(i + encodedLeftArrow.length);
       }
       i = i - 2;
     }
