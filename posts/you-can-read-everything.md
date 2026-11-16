@@ -2,8 +2,10 @@
 layout: post
 title: You can read everything
 description: Unraveling Elizabeth Holmes.
-date: 2026-11-08
+date: 2026-11-15
 keywords: books, film, industry
+image: holmes.webp
+caption: Elizabeth Holmes being filmed to create a 3D AI avatar of her.
 ---
 
 Everyone who walks out of _You Can See Everything_ has the same questions. Is Elizabeth Holmes for real? On the autism spectrum? Or is she just an evil genius?
